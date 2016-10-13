@@ -7,8 +7,7 @@ B2LINK_WorkSpace_JS
 
 
 @ DataBase
-  - MongoDB는 직접 전송 받는다.
-  - GitHub에 upload가 안됨.
+  - bin.zip 압축 해제 한다.
 
 @ DataBase_Schema
   - MongoDB의 Procedure가 주를 이룬다.
