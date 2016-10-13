@@ -1,0 +1,23 @@
+[
+	"000_define_window.b2link",
+	"100_define_window.b2link.STATIC",
+	"101_define_window.b2link.STATIC.CONFIG",
+	"101_define_window.b2link.STATIC.CONST",
+	"101_define_window.b2link.STATIC.UI",
+	"200_define_window.b2link.common",
+	"200_define_window.b2link.console",
+	"200_define_window.b2link.date",
+	"200_define_window.b2link.dom",
+	"200_define_window.b2link.element",
+	"200_define_window.b2link.fn",
+	"200_define_window.b2link.html",
+	"200_define_window.b2link.log",
+	"200_define_window.b2link.math",
+	"200_define_window.b2link.obj",
+	"200_define_window.b2link.service",
+	"200_define_window.b2link.session",
+	"200_define_window.b2link.sesson",
+	"200_define_window.b2link.ui",
+	"200_define_window.b2link.util",
+	"200_define_window.b2link.xhr"
+]

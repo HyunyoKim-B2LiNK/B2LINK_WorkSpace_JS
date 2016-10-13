@@ -1,0 +1,10 @@
+[
+	"req$member_basic$getAllList",
+	"req$member_basic$getAllList__nm",
+	"req$member_session$checkSession__Sign_In",
+	"req$member_session_log$getAllList",
+	"res$member_basic$getAllList",
+	"res$member_basic$getAllList__nm",
+	"res$member_session$checkSession__Sign_In",
+	"res$member_session_log$getAllList"
+]
