@@ -1,0 +1,9 @@
+[
+	"000_define_global.b2link_api",
+	"200_define_global.b2link_api.baidu",
+	"200_define_global.b2link_api.booxen",
+	"200_define_global.b2link_api.google",
+	"200_define_global.b2link_api.kakao",
+	"200_define_global.b2link_api.naver",
+	"200_define_global.b2link_api.red"
+]

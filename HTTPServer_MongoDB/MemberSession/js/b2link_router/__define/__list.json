@@ -1,0 +1,9 @@
+[
+	"000_define_global.b2link_router",
+	"100_define_global.b2link_router.STATIC",
+	"101_define_global.b2link_router.STATIC.CONFIG",
+	"101_define_global.b2link_router.STATIC.CONST",
+	"200_define_global.b2link_router.member_basic",
+	"200_define_global.b2link_router.member_session",
+	"200_define_global.b2link_router.member_session_log"
+]

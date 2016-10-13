@@ -1,0 +1,5 @@
+[
+	"get",
+	"get__member_session$checkSession",
+	"get__member_session$checkSessionAndReqMongoDB"
+]

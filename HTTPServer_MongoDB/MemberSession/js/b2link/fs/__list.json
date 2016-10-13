@@ -1,0 +1,10 @@
+[
+	"getDirectoryList",
+	"getFile",
+	"getFileList",
+	"getFileList_Extension",
+	"getFile_UTF8",
+	"writeFile",
+	"writeFile_Binary",
+	"writeFile_UTF8"
+]

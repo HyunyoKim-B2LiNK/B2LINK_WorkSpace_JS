@@ -1,0 +1,5 @@
+[
+	"checkSession",
+	"checkSession__Sign_In",
+	"destroySession"
+]
