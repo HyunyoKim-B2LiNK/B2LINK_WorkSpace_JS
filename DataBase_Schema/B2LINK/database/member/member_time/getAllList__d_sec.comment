@@ -1,0 +1,5 @@
+/**
+ * Return d_sec(date_secession)
+ * @function
+ * @return {Array} [ d_sec, d_sec, ... ]
+ */

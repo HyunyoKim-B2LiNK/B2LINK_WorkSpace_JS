@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @param {Document} d { _"id" : NaN, "uid" : "", "upw" : "", "nSignInFail" : NaN, ... }
+ */

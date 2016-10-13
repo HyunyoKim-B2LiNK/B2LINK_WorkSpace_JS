@@ -1,0 +1,5 @@
+/**
+ * update rank -1 to 0
+ * @function
+ * @return {uint} 1
+ */

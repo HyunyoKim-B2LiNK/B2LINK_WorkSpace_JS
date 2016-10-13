@@ -1,0 +1,11 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * { uid : "", upw : "" }
+ * </code>
+ * @return {uint} 0, 1
+ *
+ * @example
+ * member_time$sign_up( { "uid" : "thdtjsdn@gmail.com", "upw" : "123qweasd" } )' );
+ */
