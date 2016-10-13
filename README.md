@@ -15,10 +15,13 @@ B2LINK_WorkSpace_JS
   - bin에 있는 BatchFile 구동을 통해 MongoDB에 추가 된다.
 
 @ HTTPServer_MongoDB
-  - MongoDB의 데이터 서비스 서버
+  - MongoDB의 데이터 서비스 Server
 
 @ HTTPServer_WebPage
-  - WebPage를 서비스 하는 서버
+  - WebPage를 서비스 하는 Server
+  
+@ MongoDB
+  - Data Folder
 
 @ WebPage
   - Client Web Page 다.
