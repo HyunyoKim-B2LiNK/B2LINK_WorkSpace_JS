@@ -14,11 +14,12 @@ window.b2link_ui.member_session.checkSession__Sign_In = function()
     var _url = window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SESSION;
     var _nm = "checkSession__Sign_In";
     
-	var _nmFileHTML = window.b2link.ui.__getFileNM_HTML( _url, _nm );
-	var _nmFileJS = window.b2link.ui.__getFileNM_JS( _url, _nm );
+	var html = window.b2link.ui.__getFileNM_HTML( _url, _nm );
+	var js = window.b2link.ui.__getFileNM_JS( _url, _nm );
+    var css = window.b2link.ui.__getFileNM_CSS( "./css_ui/", "div__member_session-" + _nm );
 
-	var f = window.b2link.util.importHTMLJS__And_Add_b2link_STATIC_UI;
-	var o = f( _nm, _nmFileHTML, _nmFileJS, "div_0__UI_Component_Fixed" );
+	var f = window.b2link.util.importHTMLJSCSS__And_Add_b2link_STATIC_UI;
+	var o = f( _nm, html, js, css, "div_0__UI_Component_Fixed" );
 
 		o[ 1 ].setEvt_Complete__SignIn( function( result ){
 			window.TtwLog.timeStamp( "[ S ] - o[ 1 ].setEvt_Complete__SignIn( function( result ){----------" );

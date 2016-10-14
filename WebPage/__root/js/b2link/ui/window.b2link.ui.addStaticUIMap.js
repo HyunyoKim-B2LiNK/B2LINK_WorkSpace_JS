@@ -1,23 +1,26 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/util/window.b2link.util.importJS.js";
+var fileNm = "js/b2link/ui/window.b2link.ui.addStaticUIMap.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 /**
  * @function
- * @param {String} url
- * @return {*}
+ * @param {String} key
+ * @param {Array} t [ HTMLElement, {} ]
  */
-window.b2link.util.importJS = function( url )
+window.b2link.ui.addStaticUIMap = function( key, t )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.util.importJS():{*}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.addStaticUIMap():void----------" );
 
-	var r = SUtilTemplateHTML.addJS__URL( url );
-		console.log( r );
+	if( window.b2link.STATIC.UI[ key ] )
+	{
+		var s = "UI Map에 key - " + key + " 가 이미 존재합니다";
+		console.error( s );
+		alert( s );
+	}
+	else window.b2link.STATIC.UI[ key ] = t;
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.util.importJS():{*}----------" );
-
-	return r;
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.addStaticUIMap():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

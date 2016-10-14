@@ -20,13 +20,13 @@ window.b2link.util.importHTMLJS__And_Add_b2link_STATIC_UI = function( key, htmlU
 	window.TtwLog.timeStamp( "targetElementID : " + targetElementID );
 
 	var r = SUtilTemplateHTML.addHTMLJS__URL_Return( htmlURL, jsURL, targetElementID );
-	//수정 - 20161005 - 중복키 인식 처리;
-	window.b2link.STATIC.UI[ key ] = r;
 		console.log( r );
+
+	window.b2link.ui.addStaticUIMap( key, r );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.util.importHTMLJS__And_Add_b2link_STATIC_UI():{*}----------" );
 
-  return r;
+	return r;
 };
 
 //----------------------------------------------------------------------------------------------------;
