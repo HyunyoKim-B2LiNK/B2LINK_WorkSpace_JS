@@ -5,6 +5,7 @@
 	"mouseEnable__ID",
 	"setClassName__tbody_tr_td",
 	"setClassName__tbody_tr_th",
+	"setPosition_Center_FromParent",
 	"setPosition_Center_FromWindow",
 	"setPosition_LeftBottom",
 	"setPosition_LeftTop",

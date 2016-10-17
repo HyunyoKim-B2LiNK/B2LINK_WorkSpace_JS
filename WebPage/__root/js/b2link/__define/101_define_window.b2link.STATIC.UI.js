@@ -136,6 +136,23 @@ window.b2link.STATIC.UI.__all_setPosition__TestMenu = function()
 /**
  * @function
  */
+window.b2link.STATIC.UI.__all_setPosition_Center_FromParent = function()
+{
+    window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
+    var t = window.b2link.STATIC.UI;
+	var io;
+	for( var s in t ){
+        io = t[ s ];
+        //console.log( io );
+		if( io[ 1 ] && s != "test_Menu" )
+            window.b2link.element.setPosition_Center_FromParent( io[ 0 ] );
+    }
+    window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
+};
+
+/**
+ * @function
+ */
 window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
 {
     window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
@@ -143,7 +160,7 @@ window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
 	var io;
 	for( var s in t ){
         io = t[ s ];
-        console.log( io );
+        //console.log( io );
 		if( io[ 1 ] && s != "test_Menu" )
             window.b2link.element.setPosition_Center_FromWindow( io[ 0 ] );
     }

@@ -7,6 +7,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @param {HTMLElement}
  * @param {Object} o { "nm" : "_id", "w" : 10 }
+ * @return {HTMLElement}
  */
 window.b2link.html.apply_html = function( element, o )
 {
@@ -17,6 +18,8 @@ window.b2link.html.apply_html = function( element, o )
 	element.innerHTML = r;
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.apply_html():void----------" );
+
+	return element;
 };
 
 //----------------------------------------------------------------------------------------------------;
