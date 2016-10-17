@@ -97,10 +97,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 	};
 
-	/**
+    /**
 	 * @function
 	 */
-	var _hide = function(){ $el_div.style.display = "none"; };
+	var _hide = function(){ window.b2link.element.hide( $el_div ); };
 
     /**
 	 * @function
@@ -126,7 +126,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	/**
 	 * @function
 	 */
-	var _show = function(){ $el_div.style.display = ""; };
+	var _show = function(){ window.b2link.element.show( $el_div ); };
 
 	//----------------------------------------------------------------------------------------------------;
 

@@ -1,4 +1,9 @@
 [
+	"staticUIMap_Add",
+	"staticUIMap_AllHide",
+	"staticUIMap_AllShow",
+	"staticUIMap_Remove",
+	"__getFileNM_CSS",
 	"__getFileNM_HTML",
 	"__getFileNM_JS"
 ]

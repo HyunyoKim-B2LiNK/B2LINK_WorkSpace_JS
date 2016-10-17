@@ -7,7 +7,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @param {HTMLElement} t HTMLElement
  */
-window.b2link.element.show = function( id )
+window.b2link.element.show = function( t )
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.element.show():void----------" );
 	t.style.display = "";

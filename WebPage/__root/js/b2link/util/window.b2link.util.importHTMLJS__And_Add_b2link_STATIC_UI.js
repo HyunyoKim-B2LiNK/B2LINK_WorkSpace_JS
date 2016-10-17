@@ -22,7 +22,7 @@ window.b2link.util.importHTMLJS__And_Add_b2link_STATIC_UI = function( key, htmlU
 	var r = SUtilTemplateHTML.addHTMLJS__URL_Return( htmlURL, jsURL, targetElementID );
 		console.log( r );
 
-	window.b2link.ui.addStaticUIMap( key, r );
+	window.b2link.ui.staticUIMap_Add( key, r );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.util.importHTMLJS__And_Add_b2link_STATIC_UI():{*}----------" );
 

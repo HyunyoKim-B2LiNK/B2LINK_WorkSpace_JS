@@ -1,0 +1,16 @@
+/* ---------------------------------------------------------------------------------------------------- */
+.border_solid_1px_000000 {
+  border: solid 1px #000;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.textAlign_center {
+  text-align: center;
+}
+.textAlign_left {
+  text-align: left;
+}
+.textAlign_right {
+  text-align: right;
+}

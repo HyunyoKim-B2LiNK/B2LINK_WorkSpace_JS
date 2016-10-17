@@ -174,7 +174,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
         //window.b2link.element.setPosition_LeftBottom( t, 10, 10 );
         //window.b2link.element.setPosition_LeftTop( t, 10, 10 );
         //window.b2link.element.setPosition_RightBottom( t, 10, 10 );
-        window.b2link.element.setPosition_RightTop( t, 10, 10 );
+        //window.b2link.element.setPosition_RightTop( t, 10, 10 );
         
 		_width = t.clientWidth;
 		_height = t.clientHeight;

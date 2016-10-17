@@ -1,0 +1,126 @@
+/* ---------------------------------------------------------------------------------------------------- */
+
+@left0: 5px;
+@left1: @left0 * 2px;
+
+@top0: 5px;
+@top1: @top0 * 2px;
+@top2: @top1 + @top1;
+
+@right0: 5px;
+@right1: @right0 * 2;
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+#div__test_Menu {
+	/*/
+	height: 2000px;
+
+	//*/
+	color: #000;
+	font-size: 11px;
+
+	position: fixed;
+
+	border: @border_solid_1px_000000;
+
+	left: @left0;
+	top: @top0;
+	bottom: 5px;
+	right: @right0;
+
+
+
+
+
+	#div__testMenu_Top {
+
+		border: @border_solid_1px_000000;
+
+		left: @left1;
+		top: @top1;
+		right: @right1;
+
+		display: block;
+		position: fixed;
+
+		width: 100%
+		height: 30px;
+	}
+
+	#div__test_Menu_List {
+		/*/
+		border: @border_solid_1px_000000;
+
+		position: absolute;
+		position: relative;
+		//*/
+		color: #000;
+		font-size: 11px;
+
+		display: block;
+		position: absolute;
+
+		padding: @padding5;
+
+		left: 5px;
+		top: @top2;
+		bottom: 5px;
+		width: 200px;
+
+		display: table-cell;
+
+		line-height: 20px;
+
+		overflow: auto;
+		overflow-x: hidden;
+
+		a {
+			cursor: pointer;
+			display: block;
+			role: button;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: red;
+		}
+		a:link {
+			text-decoration: none;
+			color: #333333;
+		}
+		a:visited {
+			text-decoration: underline;
+			color: #333333;
+		}
+		a:active {
+			text-decoration: none;
+			color: #333333;
+		}
+
+		hr {
+			width: 170px;
+		}
+	}
+
+	#div__test_Menu_UIContainer {
+		/*/
+		border: @border_solid_1px_000000;
+		position: absolute;
+		position: relative;
+		//*/
+		color: #000;
+		font-size: 11px;
+
+		display: block;
+		position: absolute;
+
+		padding: @padding5;
+
+		left: 220px;
+		top: @top2;
+		bottom: 5px;
+		right: 5px;
+
+		display: table-cell;
+	}
+}

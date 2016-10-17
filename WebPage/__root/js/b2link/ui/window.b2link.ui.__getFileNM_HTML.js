@@ -16,7 +16,6 @@ window.b2link.ui.__getFileNM_HTML = function( folderNM, fileNM )
 
 	//var _nmFileHTML = folderNM + _ui.CSS + "/" + fileNM;
 	var _nmFileHTML = folderNM + fileNM + _ui.CSS + ".html";
-
 		console.log( "_nmFileHTML : " + _nmFileHTML );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.__getFileNM_HTML():void----------" );

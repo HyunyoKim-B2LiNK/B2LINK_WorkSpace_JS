@@ -5,5 +5,6 @@
 	"200_define_window.b2link_ui.member_session",
 	"200_define_window.b2link_ui.product",
 	"200_define_window.b2link_ui.sms",
-	"200_define_window.b2link_ui.supplier"
+	"200_define_window.b2link_ui.supplier",
+	"200_define_window.b2link_ui.test"
 ]

@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/ui/window.b2link_ui.member_basic.getAllList__nm.js";
+var fileNm = "js/b2link_ui/window.b2link_ui.member_basic.getAllList__nm.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -12,7 +12,7 @@ window.b2link_ui.member_basic.getAllList__nm = function()
 
     var _url = window.b2link.STATIC.CONFIG.URL.UI.B2LINK_MEMBER;
     var _nm = "getAllList__nm";
-    
+
     var _nmFileHTML = window.b2link.ui.__getFileNM_HTML( _url, _nm );
 	var _nmFileJS = window.b2link.ui.__getFileNM_JS( _url, _nm );
 

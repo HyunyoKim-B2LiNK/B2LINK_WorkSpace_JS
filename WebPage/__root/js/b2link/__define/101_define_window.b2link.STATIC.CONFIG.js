@@ -23,6 +23,7 @@ window.b2link.STATIC.CONFIG.URL.UI.B2LINK_MEMBER = _ + "b2link_member/";
 window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCM = _ + "b2link_scm/";
 window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCRAP = _ + "b2link_scrap/";
 window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SESSION = _ + "b2link_session/";
+window.b2link.STATIC.CONFIG.URL.UI.test = _ + "test/";
 
 window.b2link.STATIC.CONFIG.URL.UI.CSS = "";
 //window.b2link.STATIC.CONFIG.URL.UI.CSS = ".bootstrap";

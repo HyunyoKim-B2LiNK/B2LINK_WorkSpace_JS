@@ -1,3 +1,13 @@
+@w___SPAN: 20px;
+
+@w__btn_Cancle: 70px;
+@w__btn_SignIn: 50px;
+@w__input_ID: 170px;
+@w__input_PW: 170px;
+
+
+@w: @w___SPAN + @w___SPAN + @w__btn_SignIn + @w__input_ID + @w__input_PW + 20;
+
 #div__member_session-checkSession__Sign_In {
 	color: #000;
 	font-size: 11px;
@@ -7,25 +17,36 @@
 
 	padding: @padding5;
 
-	width: 438px; height: 22px;
+	top: 5px;
+	right: 5px;
+
+	width: @w; height: 22px;
+
+
+	span {
+		display: inline-block;
+		width: @w___SPAN;
+	}
 
 
 
 	.btn_Cancle {
-		width: 70px;
+		width: @w__btn_Cancle;
 		display: none;
 	}
 	.btn_SignIn {
-		width: 50px;
+		width: @w__btn_SignIn;
 	}
 
 	.input_ID {
 		border: @border_solid_1px_000000;
 		text-align: center;
+		width: @w__input_ID;
 	}
 
 	.input_PW {
 		border: @border_solid_1px_000000;
 		text-align: center;
+		width: @w__input_PW;
 	}
 }
