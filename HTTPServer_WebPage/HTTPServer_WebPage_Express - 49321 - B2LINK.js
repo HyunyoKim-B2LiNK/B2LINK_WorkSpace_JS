@@ -2,7 +2,7 @@ console.log(1);STtwUtilBuffer.iconv=require("iconv-lite"),STtwUtilWeb_Express=Li
 global._$TATIC_CONST_SERVER_HTTP_EXPRESS__HOST = null;
 global._$TATIC_CONST_SERVER_HTTP_EXPRESS__PORT = 49321;
 //global._$TATIC_CONST_SERVER_HTTP_EXPRESS__ROOT = global.process.cwd() + "__root";
-global._$TATIC_CONST_SERVER_HTTP_EXPRESS__ROOT = "E:/WorkSpace_B2LINK/WebPage/__root";
+global._$TATIC_CONST_SERVER_HTTP_EXPRESS__ROOT = "../WebPage/__root";
 
 global._$TATIC_CONST_SERVER_HTTP_MIME_TYPES = {
 	bmp : "image/bmp"
