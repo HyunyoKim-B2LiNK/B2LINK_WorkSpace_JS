@@ -7,6 +7,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @param {HTMLElement}
  * @param {Array} a [ { "nm" : "_id", "w" : 10 }, {}, {}, ... ]
+ * @return {HTMLElement}
  */
 window.b2link.html.apply_tbody_child = function( element, a )
 {
@@ -24,6 +25,8 @@ window.b2link.html.apply_tbody_child = function( element, a )
 	element.innerHTML = r;
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.apply_tbody_child():void----------" );
+
+	return element;
 };
 
 //----------------------------------------------------------------------------------------------------;

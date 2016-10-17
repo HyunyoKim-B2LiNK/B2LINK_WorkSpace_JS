@@ -3,6 +3,9 @@ var fileNm = "./ui/test/test_Menu.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
+window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UIContainer";
+
+
 (function( url, $el_div ){
 
 	console.log( "arguments : " );
@@ -80,8 +83,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
         window.b2link.STATIC.UI.__allHide();
         //window.b2link.STATIC.UI.__all_setPosition__TestMenu();
         var o = t.onclick();
-        console.log( o );
+            //console.log( o );
         _el_div_menu_uic.appendChild( o[ 0 ] );
+        window.b2link.element.setPosition_Center_FromParent( o[ 0 ] );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick():void----------" );
 	};
@@ -155,6 +159,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		_width = t.clientWidth;
 		_height = t.clientHeight;
+        
+        window.b2link.STATIC.UI.__all_setPosition_Center_FromParent();
+        
 		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
@@ -185,6 +192,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//console.logObjectInformation( $w );
 	window.TtwLog.timeStamp( "$w.screen.width : " + $w.screen.width );
 	window.TtwLog.timeStamp( "$w.screen.height : " + $w.screen.height );
+    
+    _el_div_menu_uic.__appendChild = _el_div_menu_uic.appendChild;
+    _el_div_menu_uic.appendChild = function( t )
+    {
+        var o = _el_div_menu_uic.__appendChild( t );
+            //console.log( "var o = _el_div_menu_uic.__appendChild( t );" );
+            //console.log( o );
+        setTimeout( function(){ window.b2link.element.setPosition_Center_FromParent( t ); }, 300 );
+        return o;
+    };
 
 	//----------;
 

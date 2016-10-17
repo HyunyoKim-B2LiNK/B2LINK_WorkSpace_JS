@@ -202,7 +202,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_setPosition();
 	//----------;
 
-    window.b2link.html.apply_html( _el_thead, _o_thead_style );
+    var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
+        console.log( o );
     //_setClassName__thead_tr_th();
     
     _req_Data();
