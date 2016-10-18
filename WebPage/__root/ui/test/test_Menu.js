@@ -87,7 +87,8 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
         var el = o[ 0 ];
         window.b2link.element.removeChildFromParentElement( el );
         window.b2link.element.appendChild( _el_div_menu_uic, el );
-        window.b2link.element.setPosition_Center_FromParent( el );
+        //window.b2link.element.setPosition_Center_FromParent( el );
+        window.b2link.element.setPosition_CenterMiddle_FromParent( el );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick():void----------" );
 	};
@@ -132,7 +133,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
     var _showOrCreateElement = function()
     {
-        
+
     };
 
 	//----------------------------------------------------------------------------------------------------;
@@ -153,7 +154,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
 		var t = $el_div;
 
-		//window.b2link.element.setPosition_Center_FromWindow( t );
+		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 		//window.b2link.element.setPosition_LeftBottom( t, 10, 10 );
 		window.b2link.element.setPosition_LeftTop( t, 5, 5 );
 		//window.b2link.element.setPosition_RightBottom( t, 10, 10 );
@@ -161,9 +162,9 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
 		_width = t.clientWidth;
 		_height = t.clientHeight;
-        
+
         window.b2link.STATIC.UI.__all_setPosition_Center_FromParent();
-        
+
 		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
@@ -194,7 +195,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	//console.logObjectInformation( $w );
 	window.TtwLog.timeStamp( "$w.screen.width : " + $w.screen.width );
 	window.TtwLog.timeStamp( "$w.screen.height : " + $w.screen.height );
-    
+
     _el_div_menu_uic.__appendChild = _el_div_menu_uic.appendChild;
     _el_div_menu_uic.appendChild = function( t )
     {
@@ -202,6 +203,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
             //console.log( "var o = _el_div_menu_uic.__appendChild( t );" );
             //console.log( o );
         setTimeout( function(){ window.b2link.element.setPosition_Center_FromParent( t ); }, 300 );
+        //setTimeout( function(){ window.b2link.element.setPosition_CenterMiddle_FromParent( t ); }, 300 );
         return o;
     };
 

@@ -86,5 +86,6 @@
   top: 35px;
   bottom: 5px;
   right: 5px;
-  display: table-cell;
+  overflow: auto;
+  overflow-x: hidden;
 }
