@@ -15,6 +15,7 @@ window.b2link_ui.member_basic.getAllList = function()
         , nm : "getAllList"
         , css_url : "./css_ui/"
         , css_front_nm : "div__member_basic-"
+        , key : "member_basic$getAllList"
     };
     
     //var o = window.b2link.ui.add_HTML_JS_CSS( d );

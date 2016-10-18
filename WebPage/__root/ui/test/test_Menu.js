@@ -84,8 +84,10 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
         //window.b2link.STATIC.UI.__all_setPosition__TestMenu();
         var o = t.onclick();
             //console.log( o );
-        _el_div_menu_uic.appendChild( o[ 0 ] );
-        window.b2link.element.setPosition_Center_FromParent( o[ 0 ] );
+        var el = o[ 0 ];
+        window.b2link.element.removeChildFromParentElement( el );
+        window.b2link.element.appendChild( _el_div_menu_uic, el );
+        window.b2link.element.setPosition_Center_FromParent( el );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick():void----------" );
 	};

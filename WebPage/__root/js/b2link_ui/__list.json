@@ -1,6 +1,7 @@
 [
 	"__define",
 	"buyer",
+	"country",
 	"member_basic",
 	"member_session",
 	"product",

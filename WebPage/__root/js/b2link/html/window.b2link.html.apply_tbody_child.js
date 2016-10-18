@@ -16,9 +16,7 @@ window.b2link.html.apply_tbody_child = function( element, a )
 	console.count();
 
 	//삭제 - 20161011 - 송선우 - 테스트;
-	var a = [ a[ 0 ], a[ 0 ], a[ 0 ] ];
-
-	console.log( a );
+	//var a = [ a[ 0 ], a[ 0 ], a[ 0 ] ];console.log( a );
 
 	var r = SUtilString.applyStrFromArray( element.innerHTML, a );
 	//console.log( r );

@@ -16,6 +16,7 @@ window.b2link_ui.member_session.checkSession__Sign_In = function()
         , nm : "checkSession__Sign_In"
         , css_url : "./css_ui/"
         , css_front_nm : "div__member_session-"
+        , key : "member_session$checkSession__Sign_In"
     };
 
     //var o = window.b2link.ui.add_HTML_JS_CSS( d );

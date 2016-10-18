@@ -21,10 +21,10 @@ window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI = function( d )
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI():{Array}----------" );
 
-	if( window.b2link.STATIC.UI.__checkKey( d.nm ) )
+	if( window.b2link.STATIC.UI.__checkKey( d.key ) )
 	{
-		window.b2link.STATIC.UI.__show( d.nm );
-		return window.b2link.STATIC.UI.__getObj( d.nm );
+		window.b2link.STATIC.UI.__show( d.key );
+		return window.b2link.STATIC.UI.__getObj( d.key );
 	}
 
 	var o = window.b2link.ui.add_HTML_JS_CSS( d );

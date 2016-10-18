@@ -1,6 +1,7 @@
 [
 	"000_define_window.b2link_ui",
 	"200_define_window.b2link_ui.buyer",
+	"200_define_window.b2link_ui.country",
 	"200_define_window.b2link_ui.member_basic",
 	"200_define_window.b2link_ui.member_session",
 	"200_define_window.b2link_ui.product",

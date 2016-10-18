@@ -7,6 +7,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 window.b2link.STATIC.UI = {};
 
+window.b2link.STATIC.UI.__div = document.createElement( "div" );
+
 /**
  * @function
  * @param {String} key
@@ -24,90 +26,7 @@ window.b2link.STATIC.UI.__add = function( key, o )
 	else window.b2link.STATIC.UI[ key ] = o;
 };
 
-/**
- * @function
- */
-window.b2link.STATIC.UI.__allHide = function()
-{
-	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__allHide():void----------" );
-	var t = window.b2link.STATIC.UI;
-	var io;
-	for( var s in t )
-	{
-		io = t[ s ];
-        //console.log( io );
-		if( io[ 1 ] && s != "test_Menu" )
-		{
-			//console.log( io );
-			try
-			{
-				io[ 1 ].hide();
-			}
-			catch( er )
-			{
-				console.error( s + " window.b2link.STATIC.UI.__allHide Error : " + er );
-			}
-		}
-	}
-	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__allHide():void----------" );
-};
-
-/**
- * @function
- */
-window.b2link.STATIC.UI.__allShow = function()
-{
-	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__allShow():void----------" );
-	var t = window.b2link.STATIC.UI;
-	for( var s in t )
-	{
-		io = t[ s ];
-		if( io[ 1 ] )
-		{
-			//console.log( io );
-			try
-			{
-				io[ 1 ].show();
-			}
-			catch( er )
-			{
-				console.error( s + " window.b2link.STATIC.UI.__allShow Error : " + er );
-			}
-		}
-	}
-	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__allShow():void----------" );
-};
-
-/**
- * @function
- * @param {String} key
- * @return {Boolean}
- */
-window.b2link.STATIC.UI.__checkKey = function( key )
-{
-	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
-	if( window.b2link.STATIC.UI[ key ] ) return 1;
-    return 0;
-	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
-};
-
-/**
- * @function
- */
-window.b2link.STATIC.UI.__list = function(){ this.__status(); };
-
-/**
- * @function
- * @param {String} key
- */
-window.b2link.STATIC.UI.__show = function( key ){ window.b2link.STATIC.UI[ key ][ 1 ].show(); };
-
-/**
- * @function
- * @param {String} key
- * @return {*}
- */
-window.b2link.STATIC.UI.__getObj = function( key ){ return window.b2link.STATIC.UI[ key ]; };
+//--------------------------------------------------;
 
 /**
  * @function
@@ -166,6 +85,109 @@ window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
     }
     window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
 };
+
+/**
+ * @function
+ */
+window.b2link.STATIC.UI.__allHide = function()
+{
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__allHide():void----------" );
+	var t = window.b2link.STATIC.UI;
+	var io;
+	for( var s in t )
+	{
+		io = t[ s ];
+        //console.log( io );
+		if( io[ 1 ] && s != "test_Menu" )
+		{
+			//console.log( io );
+			try
+			{
+				io[ 1 ].hide();
+			}
+			catch( er )
+			{
+				console.error( s + " window.b2link.STATIC.UI.__allHide Error : " + er );
+			}
+		}
+	}
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__allHide():void----------" );
+};
+
+/**
+ * @function
+ */
+window.b2link.STATIC.UI.__allShow = function()
+{
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__allShow():void----------" );
+	var t = window.b2link.STATIC.UI;
+	for( var s in t )
+	{
+		io = t[ s ];
+		if( io[ 1 ] )
+		{
+			//console.log( io );
+			try
+			{
+				io[ 1 ].show();
+			}
+			catch( er )
+			{
+				console.error( s + " window.b2link.STATIC.UI.__allShow Error : " + er );
+			}
+		}
+	}
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__allShow():void----------" );
+};
+
+//--------------------------------------------------;
+
+/**
+ * @function
+ * @param {String} key
+ * @return {Boolean}
+ */
+window.b2link.STATIC.UI.__checkKey = function( key )
+{
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
+	if( window.b2link.STATIC.UI[ key ] ) return 1;
+    return 0;
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
+};
+
+//--------------------------------------------------;
+
+/**
+ * @function
+ */
+window.b2link.STATIC.UI.__list = function(){ this.__status(); };
+
+/**
+ * @function
+ * @param {String} key
+ */
+window.b2link.STATIC.UI.__show = function( key ){ window.b2link.STATIC.UI[ key ][ 1 ].show(); };
+
+//--------------------------------------------------;
+
+/**
+ * @function
+ * @param {String} key
+ * @return {*}
+ */
+window.b2link.STATIC.UI.__getObj = function( key ){ return window.b2link.STATIC.UI[ key ]; };
+
+//--------------------------------------------------;
+
+//--------------------------------------------------;
+
+//--------------------------------------------------;
+
+//--------------------------------------------------;
+
+//--------------------------------------------------;
+
+//--------------------------------------------------;
 
 //--------------------------------------------------[ E ] - window.b2link.STATIC.UI;
 
