@@ -159,7 +159,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------------------------------------------------------------------------------------------------;
 
 	//--------------------------------------------------;
-
+    
 	//--------------------------------------------------;
 
 	/**
@@ -183,13 +183,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	/**
-	 * @function
-	 * @param {Function} fn
-	 */
-	var _setEvt_Complete__SignIn = function( fn ){ _evt_Complete__SignIn = fn; };
-
 	//--------------------------------------------------;
+    
+    /**
+     * @function
+     * @return {Function}
+     */
+    var _getEvt_Complete__SignIn = function(){ return _evt_Complete__SignIn; };
+	var _setEvt_Complete__SignIn = function( fn ){ _evt_Complete__SignIn = fn; };
 
 	var _getHeight = function(){ return _height; };
 	var _setHeight = function( w ){ _height = w; };
@@ -227,6 +228,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		, getWidth : _getWidth
 		, getHeight : _getHeight
 
+        , getEvt_Complete__SignIn : _getEvt_Complete__SignIn
 		, setEvt_Complete__SignIn : _setEvt_Complete__SignIn
 	};
 });
