@@ -72,6 +72,23 @@ window.b2link.STATIC.UI.__all_setPosition_Center_FromParent = function()
 /**
  * @function
  */
+window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus = function()
+{
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus():void----------" );
+	var t = window.b2link.STATIC.UI;
+	var io;
+	for( var s in t ){
+		io = t[ s ];
+		//console.log( io );
+		if( io[ 1 ] && s != "test_Menu" )
+			window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( io[ 0 ] );
+	}
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus():void----------" );
+};
+
+/**
+ * @function
+ */
 window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
