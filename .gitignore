@@ -40,11 +40,14 @@ jspm_packages
 *.bson
 *.conf
 *.css
+*.dbjs
+*.dbs
 *.exe
 *.interim
 *.json
 *.lnk
 *.lock
 *.pdb
+*.result
 *.turtle
 *.wt
