@@ -35,3 +35,16 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+*.DS_Store
+*.bak
+*.bson
+*.conf
+*.css
+*.exe
+*.interim
+*.json
+*.lnk
+*.lock
+*.pdb
+*.turtle
+*.wt
