@@ -5,7 +5,7 @@
 
 @top0: 5px;
 @top1: @top0 * 2px;
-@top2: @top1 + @top1;
+@top2: @top1 + @top1 + 15px;
 
 @right0: 5px;
 @right1: @right0 * 2;
@@ -37,6 +37,8 @@
 
 		border: @border_solid_1px_000000;
 
+		padding: @padding5;
+
 		left: @left1;
 		top: @top1;
 		right: @right1;
@@ -58,6 +60,8 @@
 		color: #000;
 		font-size: 11px;
 
+		border: @border_solid_1px_000000;
+
 		display: block;
 		position: absolute;
 
@@ -67,8 +71,6 @@
 		top: @top2;
 		bottom: 5px;
 		width: 200px;
-
-		display: table-cell;
 
 		line-height: 20px;
 
@@ -110,6 +112,8 @@
 		//*/
 		color: #000;
 		font-size: 11px;
+
+		border: @border_solid_1px_000000;
 
 		display: block;
 		position: absolute;
