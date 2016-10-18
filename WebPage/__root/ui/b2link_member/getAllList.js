@@ -169,7 +169,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
 		// var t = $el_div;
-		// window.b2link.element.setPosition_Center_FromWindow( t );
+		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 		// _width = t.clientWidth;
 		// _height = t.clientHeight;
 		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );

@@ -33,23 +33,23 @@ window.b2link.STATIC.UI.__add = function( key, o )
  */
 window.b2link.STATIC.UI.__all_setPosition__TestMenu = function()
 {
-    window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition__TestMenu():void----------" );
-    var t = window.b2link.STATIC.UI;
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition__TestMenu():void----------" );
+	var t = window.b2link.STATIC.UI;
 	var io;
 	for( var s in t ){
-        io = t[ s ];
+		io = t[ s ];
 		if( io[ 1 ] && s != "test_Menu" )
-        {
-            console.log( io );
-            var s = io[ 0 ].style;
-            s.left = "250px";
-            s.top = "45px";
-            s.bottom = "initial";
-            s.right = "initial";
-            //s.right = "20px";
-        }
-    }
-    window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition__TestMenu():void----------" );
+		{
+			console.log( io );
+			var s = io[ 0 ].style;
+			s.left = "250px";
+			s.top = "45px";
+			s.bottom = "initial";
+			s.right = "initial";
+			//s.right = "20px";
+		}
+	}
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition__TestMenu():void----------" );
 };
 
 /**
@@ -57,16 +57,16 @@ window.b2link.STATIC.UI.__all_setPosition__TestMenu = function()
  */
 window.b2link.STATIC.UI.__all_setPosition_Center_FromParent = function()
 {
-    window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
-    var t = window.b2link.STATIC.UI;
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
+	var t = window.b2link.STATIC.UI;
 	var io;
 	for( var s in t ){
-        io = t[ s ];
-        //console.log( io );
+		io = t[ s ];
+		//console.log( io );
 		if( io[ 1 ] && s != "test_Menu" )
-            window.b2link.element.setPosition_Center_FromParent( io[ 0 ] );
-    }
-    window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
+			window.b2link.element.setPosition_Center_FromParent( io[ 0 ] );
+	}
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
 };
 
 /**
@@ -74,16 +74,16 @@ window.b2link.STATIC.UI.__all_setPosition_Center_FromParent = function()
  */
 window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
 {
-    window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
-    var t = window.b2link.STATIC.UI;
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
+	var t = window.b2link.STATIC.UI;
 	var io;
 	for( var s in t ){
-        io = t[ s ];
-        //console.log( io );
+		io = t[ s ];
+		//console.log( io );
 		if( io[ 1 ] && s != "test_Menu" )
-            window.b2link.element.setPosition_Center_FromWindow( io[ 0 ] );
-    }
-    window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
+			window.b2link.element.setPosition_Center_FromWindow( io[ 0 ] );
+	}
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
 };
 
 /**
@@ -97,7 +97,7 @@ window.b2link.STATIC.UI.__allHide = function()
 	for( var s in t )
 	{
 		io = t[ s ];
-        //console.log( io );
+		//console.log( io );
 		if( io[ 1 ] && s != "test_Menu" )
 		{
 			//console.log( io );
@@ -151,7 +151,7 @@ window.b2link.STATIC.UI.__checkKey = function( key )
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
 	if( window.b2link.STATIC.UI[ key ] ) return 1;
-    return 0;
+	return 0;
 	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
 };
 
