@@ -31,7 +31,7 @@ window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI = function( d )
 	var css = window.b2link.ui.__getFileNM_CSS( d.css_url, d.css_front_nm + d.nm );
 
 	var f = window.b2link.util.importHTMLJSCSS__And_Add_b2link_STATIC_UI;
-	var o = f( d.nm, html, js, css, window.b2link.STATIC.CONST.ROOT_DIV );
+	var o = f( d.nm, html, js, css, window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI():{Array}----------" );
 
