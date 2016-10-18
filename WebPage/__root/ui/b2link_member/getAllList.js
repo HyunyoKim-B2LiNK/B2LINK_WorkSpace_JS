@@ -22,21 +22,21 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var $w = window;
 	var $d = $w.document;
-    
-    //var _className_td = "border_solid_1px_000000";
-    //var _className_th = "border_solid_1px_000000";
-    
-    var $f0 = window.b2link.element.getElementByClassName;
 
-    var _el_tbody = $f0( $el_div, "tbody" );
-    var _el_thead = $f0( $el_div, "thead" );
-    
-    var _o_thead_style = {
+	//var _className_td = "border_solid_1px_000000";
+	//var _className_th = "border_solid_1px_000000";
+
+	var $f0 = window.b2link.element.getElementByClassName;
+
+	var _el_tbody = $f0( $el_div, "tbody" );
+	var _el_thead = $f0( $el_div, "thead" );
+
+	var _o_thead_style = {
 		"_id" : "ID"
-        , "bConn" : "접속 상태", "email" : "E-MAIL", "nSignInFail" : "로그인 실패 횟수"
-        , "nm.a" : "이름", "nm_cn.a" : "이름(중문)", "nm_kr.a" : "이름(한글)", "nm_us.a" : "이름(영문)"
-        , "rank" : "등급", "uid" : "MEMBER ID"
-    };
+		, "bConn" : "접속 상태", "email" : "E-MAIL", "nSignInFail" : "로그인 실패 횟수"
+		, "nm.a" : "이름", "nm_cn.a" : "이름(중문)", "nm_kr.a" : "이름(한글)", "nm_us.a" : "이름(영문)"
+		, "rank" : "등급", "uid" : "MEMBER ID"
+	};
 
 	var _width = $el_div.clientWidth;
 	var _height = $el_div.clientHeight;
@@ -97,31 +97,31 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 	};
 
-    /**
+	/**
 	 * @function
 	 */
 	var _hide = function(){ window.b2link.element.hide( $el_div ); };
 
-    /**
+	/**
 	 * @function
-	 */ 
-    var _req_Data = function()
-    {
-        window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-        window.b2link.service.req$member_basic$getAllList( _res_Data );
-        window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
-    };
-    
-    /**
+	 */
+	var _req_Data = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+		window.b2link.service.req$member_basic$getAllList( _res_Data );
+		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
+	};
+
+	/**
 	 * @function
-     * @param {Array}
-	 */ 
-    var _res_Data = function( result )
-    {
-        window.TtwLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
-        _setData__tbody( result );
-        window.TtwLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
-    };
+	 * @param {Array}
+	 */
+	var _res_Data = function( result )
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
+		_setData__tbody( result );
+		window.TtwLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
+	};
 
 	/**
 	 * @function
@@ -133,32 +133,32 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//	GETTER / SETTER;
 
 	//----------------------------------------------------------------------------------------------------;
-    
-    //--------------------------------------------------;
 
 	//--------------------------------------------------;
-    
-    var _setClassName__tbody_tr_td = function(){ window.b2link.element.setClassName__tbody_tr_td( _el_tbody, _className_td ); };
-    
-    var _setClassName__thead_tr_th = function(){ window.b2link.element.setClassName__tbody_tr_th( _el_thead, _className_th ); };
-    
-    //------------------------------;
-    
-    /**
+
+	//--------------------------------------------------;
+
+	var _setClassName__tbody_tr_td = function(){ window.b2link.element.setClassName__tbody_tr_td( _el_tbody, _className_td ); };
+
+	var _setClassName__thead_tr_th = function(){ window.b2link.element.setClassName__tbody_tr_th( _el_thead, _className_th ); };
+
+	//------------------------------;
+
+	/**
 	 * @function
-     * @param {Array} data
-	 */ 
-    var _setData__tbody = function( data )
-    {
-        window.TtwLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
-        
-        window.TtwLog.timeStamp( "window.b2link.service.req$member_basic$getAllList result : " );
+	 * @param {Array} data
+	 */
+	var _setData__tbody = function( data )
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
+
+		window.TtwLog.timeStamp( "window.b2link.service.req$member_basic$getAllList result : " );
 		window.TtwLog.timeStamp( data );
-        window.b2link.html.apply_tbody_child( _el_tbody, data );
-        //_setClassName__tbody_tr_td();
-        
-        window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
-    };
+		window.b2link.html.apply_tbody_child( _el_tbody, data );
+		//_setClassName__tbody_tr_td();
+
+		window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
+	};
 
 	//------------------------------;
 
@@ -202,18 +202,18 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_setPosition();
 	//----------;
 
-    var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-        console.log( o );
-    //_setClassName__thead_tr_th();
-    
-    _req_Data();
+	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
+		console.log( o );
+	//_setClassName__thead_tr_th();
+
+	_req_Data();
 
 	//----------;
 
 	return {
 		dispose : _dispose
 		, hide : _hide
-        , req_Data : _req_Data
+		, req_Data : _req_Data
 		, show : _show
 
 		, getWidth : _getWidth
