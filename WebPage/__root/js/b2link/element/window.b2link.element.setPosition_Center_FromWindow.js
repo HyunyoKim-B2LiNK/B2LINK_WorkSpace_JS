@@ -22,8 +22,11 @@ window.b2link.element.setPosition_Center_FromWindow = function( t )
 	var hPW = pw / 2;//half parent width;
 	var hPH = ph / 2;//half parent height;
 
-	t.style.left = hPW - hDW + "px";console.log( "t.style.left : " + t.style.left );
-	t.style.top = hPH - hDH + "px";console.log( "t.style.top : " + t.style.top );
+	var s = t.style;
+		s.left = hPW - hDW + "px";console.log( "s.left : " + s.left );
+		s.top = "auto";
+		s.bottom = "auto";
+		s.right = "auto";
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.element.setPosition_Center_FromWindow():void----------" );
 };
