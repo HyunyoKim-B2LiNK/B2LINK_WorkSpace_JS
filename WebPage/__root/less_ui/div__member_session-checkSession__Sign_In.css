@@ -6,11 +6,12 @@
   padding: 5px 5px 5px 5px;
   top: 5px;
   right: 5px;
-  width: 450px;
-  height: 22px;
+  width: 455px;
+  height: auto;
 }
 #div__member_session-checkSession__Sign_In span {
   display: inline-block;
+  text-align: right;
   width: 20px;
 }
 #div__member_session-checkSession__Sign_In .btn_Cancle {
