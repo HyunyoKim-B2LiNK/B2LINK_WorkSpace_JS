@@ -26,8 +26,8 @@ window.b2link.element.setPosition_Center_FromParent = function( t )
 	var s = t.style;
 	s.left = hPW - hDW + "px";console.log( "s.left : " + s.left );
 	s.top = hPH - hDH + "px";console.log( "s.top : " + s.top );
-	s.bottom = "initial";
-	s.right = "initial";
+	s.bottom = "auto";
+	s.right = "auto";
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.element.setPosition_Center_FromParent():void----------" );
 };
