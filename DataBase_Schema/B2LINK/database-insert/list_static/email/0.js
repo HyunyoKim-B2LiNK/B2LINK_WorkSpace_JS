@@ -4,12 +4,13 @@
 	, ccTLD : ""//Country Code Top Level Domain - kr, us, jp;
 	, gTLD : "com"//Generic Top Level Domain - com, net, org;
 	, SLD : "gmail"//Second Level Domain;
+	, c : "us"//Country;
 }
 //*/
 var a = [
-	  { SLD : "daum" , TLD : "net", ccTLD : "", gTLD : "net" }
-	, { SLD : "gmail", TLD : "com", ccTLD : "", gTLD : "com" }
-	, { SLD : "naver", TLD : "com", ccTLD : "", gTLD : "com" }
+	  { SLD : "daum" , TLD : "net", ccTLD : "", gTLD : "net", "c" : "kr" }
+	, { SLD : "gmail", TLD : "com", ccTLD : "", gTLD : "com", "c" : "us" }
+	, { SLD : "naver", TLD : "com", ccTLD : "", gTLD : "com", "c" : "kr" }
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "list_static" );
