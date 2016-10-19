@@ -2,6 +2,7 @@
 @L: left;
 @R: right;
 
+/* ---------------------------------------------------------------------------------------------------- */
 
 @border_solid_1px_000000: solid 1px #000;
 @border_solid_2px_000000: solid 2px #000;
@@ -13,14 +14,19 @@
 @border_solid_8px_000000: solid 8px #000;
 @border_solid_9px_000000: solid 9px #000;
 
-@padding0: 0px 0px 0px 0px;
-@padding1: 1px 1px 1px 1px;
-@padding2: 2px 2px 2px 2px;
-@padding3: 3px 3px 3px 3px;
-@padding4: 4px 4px 4px 4px;
-@padding5: 5px 5px 5px 5px;
-@padding6: 6px 6px 6px 6px;
-@padding7: 7px 7px 7px 7px;
-@padding8: 8px 8px 8px 8px;
-@padding9: 9px 9px 9px 9px;
-@padding10: 10px 10px 10px 10px;
+@border_solid_1px_adadad: solid 1px #adadad;
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@padding0: 0px 0px;
+@padding1: 1px 1px;
+@padding2: 2px 2px;
+@padding3: 3px 3px;
+@padding4: 4px 4px;
+@padding5: 5px 5px;
+@padding6: 6px 6px;
+@padding7: 7px 7px;
+@padding8: 8px 8px;
+@padding9: 9px 9px;
+@padding10: 10px 10px;
+@padding20: 20px 20px;
