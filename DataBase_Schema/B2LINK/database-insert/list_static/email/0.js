@@ -18,6 +18,5 @@ var i=0, iLen=a.length;
 for( ; i<iLen; ++i ){
 	var io = a[ i ];
 		io._id = NumberInt( i );
-		io.cd_n = NumberInt( io.cd_n );
 	db0.email.insert( io );
 };
