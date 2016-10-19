@@ -49,6 +49,7 @@ jspm_packages
 *.lock
 *.pdb
 *.result
+*.errorResult
 *.turtle
 *.wt
 metrics.*
