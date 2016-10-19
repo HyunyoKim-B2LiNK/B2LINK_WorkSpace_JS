@@ -1,0 +1,57 @@
+/* ---------------------------------------------------------------------------------------------------- */
+
+@w_input_form: 500px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+#div__member_basic-signUp {
+	color: #000;
+	font-size: 13px;
+	position: absolute;
+
+	border: @border_solid_1px_000000;
+
+	padding: @padding10;
+
+	top: 5px;
+	right: 5px;
+
+	width: @w_input_form + 5;
+	height: auto;
+
+	line-height: 40px;
+
+
+
+	.inputs {
+		input {
+			width: @w_input_form;
+			height: 25px;
+		}
+
+		.email {}
+		.name {}
+		.phone {}
+		.password {}
+		.password_confirm {}
+	}
+
+	.terms {
+		position: relative;
+
+		[type="checkbox"] {
+			height: 15px;
+			width: 15px;
+			vertical-align: text-bottom;
+		}
+
+		a {
+			position: absolute;
+			right: 10px;
+		}
+	}
+
+	.btns {
+		text-align: right;
+	}
+}

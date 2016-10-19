@@ -6,11 +6,13 @@
 @w__input_PW: 170px;
 
 
-@w: @w___SPAN + @w___SPAN + @w__btn_SignIn + @w__input_ID + @w__input_PW + 25;
-
 #div__member_session-checkSession__Sign_In {
 	color: #000;
-	font-size: 11px;
+
+	display: inline-block;
+
+	font-size: 13px;
+
 	position: absolute;
 
 	border: @border_solid_1px_000000;
@@ -20,7 +22,7 @@
 	top: 5px;
 	right: 5px;
 
-	width: @w; height: auto;
+	height: auto;
 
 
 	span {
@@ -36,18 +38,15 @@
 		display: none;
 	}
 	.btn_SignIn {
-		width: @w__btn_SignIn;
 	}
 
 	.input_ID {
-		border: @border_solid_1px_000000;
-		text-align: center;
+		text-align: @C;
 		width: @w__input_ID;
 	}
 
 	.input_PW {
-		border: @border_solid_1px_000000;
-		text-align: center;
+		text-align: @C;
 		width: @w__input_PW;
 	}
 }

@@ -42,6 +42,7 @@ jspm_packages
 *.css
 *.dbjs
 *.dbs
+*.errorResult
 *.exe
 *.interim
 *.json
@@ -49,13 +50,9 @@ jspm_packages
 *.lock
 *.pdb
 *.result
-*.errorResult
 *.turtle
 *.wt
-*.errorResult
-*.result
 metrics.*
 __list.json
 DataBase/B2LINK/0/WiredTiger
-HTTPServer_MongoDB/MemberSession/MemberSession.bat
 HTTPServer_MongoDB/MemberSession/MemberSession.bat
