@@ -105,7 +105,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
     /** 
      * @function  
      */
-    var _hide = function() { window.b2link.element.hide( $ele_div ); };
+    var _hide = function() { window.b2link.element.hide( $el_div ); };
     
     /**
      * @function 
