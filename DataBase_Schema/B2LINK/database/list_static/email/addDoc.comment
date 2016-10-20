@@ -1,0 +1,12 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ * }
+ * </code>
+ * @return {uint} 0, 1
+ *
+ * @example
+ * email$addDoc( { "SLD" : "b2link" ,"TLD" : "","ccTLD" : "co.kr" ,"gTLD" : "" ,"c" : "kr" } );
+ */
