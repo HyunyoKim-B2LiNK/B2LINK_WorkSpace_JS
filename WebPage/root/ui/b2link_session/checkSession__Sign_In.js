@@ -63,8 +63,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	  _removeEvent();
 	  $w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 
-	  _el_btn_cancle.addEventListener( "click", _evt_mClick$btn__member_session$checkSession__Cancle, false, 0, true );
-	  _el_btn_signin.addEventListener( "click", _evt_mClick$btn__member_session$checkSession__Sign_In, false, 0, true );
+	  _el_btn_cancle.addEventListener( "click", _evt_mClick__el_btn_cancle, false, 0, true );
+	  _el_btn_signin.addEventListener( "click", _evt_mClick__el_btn_signin, false, 0, true );
 	};
 
 	/**
@@ -74,22 +74,22 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
 
-		_el_btn_cancle.removeEventListener( "click", _evt_mClick$btn__member_session$checkSession__Cancle, false );
-		_el_btn_signin.removeEventListener( "click", _evt_mClick$btn__member_session$checkSession__Sign_In, false );
+		_el_btn_cancle.removeEventListener( "click", _evt_mClick__el_btn_cancle, false );
+		_el_btn_signin.removeEventListener( "click", _evt_mClick__el_btn_signin, false );
 	};
 
 	/**
 	 * @function
 	 * @param {MouseEvent} e event
 	 */
-	var _evt_mClick$btn__member_session$checkSession__Sign_In = function( e )
+	var _evt_mClick__el_btn_signin = function( e )
 	{
-		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick$btn__member_session$checkSession__Sign_In():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_signin():void----------" );
 
-		window.b2link.service.req$member_session$checkSession__Sign_In(
+		window.b2link_service_member.member_session.checkSession__Sign_In(
 			{ id : _el_input_id.value, pw : _el_input_pw.value }
 			, function( result ){
-			  window.b2link.console.nameAndObject( "_evt_mClick$btn__member_session$checkSession__Sign_In result", result );
+			  window.b2link.console.nameAndObject( "_evt_mClick__el_btn_signin result", result );
 				if( result ) _evt_Complete__SignIn( result );
 				else
 				{
@@ -106,10 +106,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @function
 	 * @param {MouseEvent} e event
 	 */
-	var _evt_mClick$btn__member_session$checkSession__Cancle = function( e )
+	var _evt_mClick__el_btn_cancle = function( e )
 	{
-		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick$btn__member_session$checkSession__Cancle():void----------" );
-		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick$btn__member_session$checkSession__Cancle():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_cancle():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_cancle():void----------" );
 	};
 
 	/**

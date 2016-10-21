@@ -108,7 +108,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-		window.b2link.service.req$member_basic$getAllList( _res_Data );
+		window.b2link_service_member.member_basic.getAllList( _res_Data );
 		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
