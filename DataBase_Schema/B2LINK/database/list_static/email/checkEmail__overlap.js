@@ -1,28 +1,29 @@
 function( d )
 {
-	print( "-- [ S ] - email$checkEmail_overlap():void----------" );
+	print( "-- [ S ] - email$checkEmail_overlap():{uint}----------" );
 	/*/
 	필수 필드
 	SLD, c
+
 	다음중 하나는 무조건 들어가야 함.
 	TLD, ccTLD, gTLD
 	//*/
-	// 소문자로 변경
-	d.sld = d.sld.toLowerCase();
-	d.tld = d.tld.toLowerCase();
-	d.cctld = d.cctld.toLowerCase();
-	d.gtld = d.gtld.toLowerCase();
+
+	//소문자로 변경;
+	d.SLD = d.SLD.toLowerCase();
+	d.TLD = d.TLD.toLowerCase();
+	d.ccTLD = d.ccTLD.toLowerCase();
+	d.gTLD = d.gTLD.toLowerCase();
 	d.c = d.c.toLowerCase();
 
+	var r = email$findOne( d );
 
-	var r = email$findOne({
-	 SLD : d.sld
-	 , TLD : d.tld
-	 , ccTLD : d.cctld
-	 , gTLD : d.gtld
-	 , c : d.c
- 	});
-	if ( null == r ) return { result : 0 };
+	if( null == r )
+	{
+		print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return { result : 1 };" );
+		return { result : 0 };
+	}
 
+	print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return { result : 1 };" );
 	return { result : 1 };
 }

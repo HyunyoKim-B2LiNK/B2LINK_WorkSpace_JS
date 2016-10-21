@@ -31,7 +31,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_btn_cancle = $f0( $el_div, "btn_Cancle" );
 	var _el_btn_add = $f0( $el_div, "btn_Add" );
-	var _el_btn_checkoverlap = $f0( $el_div, "btn_CheckOverlap" );
+	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
 
 	var _el_input_SLD = $f0( $el_div, "SLD" );
 	var _el_input_TLD = $f0( $el_div, "TLD" );
@@ -68,8 +68,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
-		_el_btn_checkoverlap.addEventListener( "click", _evt_mClick$btn__email$addEmail_checkOverlap, false, 0, true );
+		
 		_el_btn_add.addEventListener( "click", _evt_mClick$btn__email$addEmail_add, false, 0, true );
+		_el_btn_checkOverlap.addEventListener( "click", _evt_mClick$btn__email$addEmail_checkOverlap, false, 0, true );
 	};
 
 	/**
@@ -79,9 +80,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
 
-		_el_btn_checkoverlap.removeEventListener( "click", _evt_mClick$btn__email$addEmail_checkOverlap, false );
 		_el_btn_add.removeEventListener( "click", _evt_mClick$btn__email$addEmail_add, false );
-
+		_el_btn_checkOverlap.removeEventListener( "click", _evt_mClick$btn__email$addEmail_checkOverlap, false );
 	};
 
 	/**
@@ -91,13 +91,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _evt_mClick$btn__email$addEmail_add = function( e )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick$btn__email$addEmail_add():void----------" );
-		window.b2link.service.req$email$addEmail__add({
-				sld : _el_input_SLD.value
-				, tld : _el_input_TLD.value
-				, ccTLD : _el_input_ccTLD.value
-				, gTLD : _el_input_gTLD.value
-				, c : _el_input_country.value
-			}
+		
+		window.b2link.service.req$email$addEmail__add(
+			_getDataForQuery()
 			, function( result ){
 				if( !result )
 				{
@@ -120,13 +116,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _evt_mClick$btn__email$addEmail_checkOverlap = function( e )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick$btn__email$addEmail_checkOverlap():void----------" );
-		window.b2link.service.req$email$addEmail__checkOverlap({
-				sld : _el_input_SLD.value
-				, tld : _el_input_TLD.value
-				, ccTLD : _el_input_ccTLD.value
-				, gTLD : _el_input_gTLD.value
-				, c : _el_input_country.value
-			}
+		
+		window.b2link.service.req$email$addEmail__checkOverlap(
+			_getDataForQuery()
 			, function( result ){
 				if( result.result == 0 )
 				{
@@ -175,15 +167,18 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _dispose = function()
 	{
 		_removeEvent();
+		
 		$w = null;
 		$d = null;
+		
 		_el_btn_add = null;
-		_el_btn_checkoverlap = null;
 		_el_btn_cancle = null;
+		_el_btn_checkOverlap = null;
+		
+		_el_input_country = null;
 		_el_input_ccTLD = null;
 		_el_input_gTLD = null;
 		_el_input_SLD = null;
-		_el_input_country = null;
 		_el_input_TLD = null;
 	};
 
@@ -204,6 +199,21 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------------------------------------------------------------------------------------------------;
 
 	//--------------------------------------------------;
+	
+	/**
+	 * @function
+	 * @return {Object}
+	 */
+	var _getDataForQuery = function()
+	{
+		return {
+			SLD : _el_input_SLD.value
+			, TLD : _el_input_TLD.value
+			, ccTLD : _el_input_ccTLD.value
+			, gTLD : _el_input_gTLD.value
+			, c : _el_input_country.value
+		};
+	};
 
 	//--------------------------------------------------;
 

@@ -1,4 +1,4 @@
 function()
 {
-    return $getCol( "list_static", "email");
+	return $getCol( "list_static", "email");
 }

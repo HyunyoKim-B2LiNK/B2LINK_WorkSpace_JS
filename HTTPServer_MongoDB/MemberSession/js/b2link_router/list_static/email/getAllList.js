@@ -14,6 +14,7 @@ http://localhost:49320/list_static/email/getAllList
 
     //use q;
     //...Custom parameter process;
+
     global.b2link.request.get__member_session$checkSessionAndReqMongoDB( req, res, q, "list_static", "email$getAllList()");
 
     global.RayLog.log( "- [ E ] - list_static/email/getAllList():void----------");

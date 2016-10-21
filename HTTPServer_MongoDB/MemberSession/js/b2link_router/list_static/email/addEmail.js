@@ -12,7 +12,10 @@ http://localhost:49320/list_static/email/addEmail
 	var t = global.server;//HTTP Server;
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 
-    global.b2link.request.get__member_session$checkSessionAndReqMongoDB( req, res, q, "list_static" , "email$addDoc(" + JSON.stringify( q ) + ")");
+	//use q;
+    //...Custom parameter process;
 	
+    global.b2link.request.get__member_session$checkSessionAndReqMongoDB( req, res, q, "list_static" , "email$addDoc(" + JSON.stringify( q ) + ")");
+
 	global.RayLog.log( "- [ E ] - email/addEmail():void----------" );
 });

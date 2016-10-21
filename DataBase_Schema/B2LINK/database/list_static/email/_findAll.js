@@ -1,4 +1,4 @@
 function()
 {
-    return email$_getCol().find();
+	return email$_getCol().find();
 }
