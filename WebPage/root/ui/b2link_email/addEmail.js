@@ -120,7 +120,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.b2link.service.req$email$addEmail__checkOverlap(
 			_getDataForQuery()
 			, function( result ){
-				if( result.result == 0 )
+				if( !result )
 				{
 					alert( "등록 가능한 이메일입니다." );//_evt_Complete__CheckOverlap( result );
 				}
@@ -202,7 +202,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	
 	/**
 	 * @function
-	 * @return {Object}
+	 * @return {Object} { SLD : "", TLD : "", ccTLD : "", gTLD : "", c : "" }
 	 */
 	var _getDataForQuery = function()
 	{
