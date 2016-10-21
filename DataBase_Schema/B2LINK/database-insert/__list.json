@@ -1,4 +1,6 @@
 [
 	"list_static",
-	"member"
+	"member",
+	"product",
+	"_schema"
 ]

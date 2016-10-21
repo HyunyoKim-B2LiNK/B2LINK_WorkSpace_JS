@@ -26,6 +26,15 @@ global._$TATIC_CONST_DEBUG = false;
 
 //----------------------------------------------------------------------------------------------------;
 
+/*/
+global.RayLog = SUtilCommon.create_Console( "박종하" );
+global.TtwLog = SUtilCommon.create_Console( "송선우" );
+/*/
+global.RayLog = console;
+//*/
+
+//----------------------------------------------------------------------------------------------------;
+
 (function(){
 
 	//----------Initlaize Server;
