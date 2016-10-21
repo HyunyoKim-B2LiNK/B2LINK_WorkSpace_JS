@@ -10,19 +10,13 @@ function( d )
 	//*/
 
 	//소문자로 변경;
-	d.SLD = d.sld.toLowerCase();
-	d.TLD = d.tld.toLowerCase();
-	d.ccTLD = d.cctld.toLowerCase();
-	d.gTLD = d.gtld.toLowerCase();
+	d.SLD = d.SLD.toLowerCase();
+	d.TLD = d.TLD.toLowerCase();
+	d.ccTLD = d.ccTLD.toLowerCase();
+	d.gTLD = d.gTLD.toLowerCase();
 	d.c = d.c.toLowerCase();
 
-	var r = email$findOne({
-		SLD : d.SLD
-		, TLD : d.TLD
-		, ccTLD : d.ccTLD
-		, gTLD : d.gTLD
-		, c : d.c
- 	});
+	var r = email$findOne( d );
 
 	if( null == r )
 	{

@@ -1,6 +1,7 @@
 function( d )
 {
-	print( "-- [ S ] - email$validation__addDoc():void----------" );
+	print( "-- [ S ] - email$validation__addDoc():{Object}----------" );
+
 	/*/
 	필수 필드
 	SLD, c
@@ -14,6 +15,7 @@ function( d )
 	d.ccTLD = d.ccTLD.toLowerCase();
 	d.gTLD = d.gTLD.toLowerCase();
 	d.c = d.c.toLowerCase();
-	print( "-- [ E ] - email$validation__addDoc():void----------" );
+
+	print( "-- [ E ] - email$validation__addDoc():{Object}----------" );
 	return d;
 }
