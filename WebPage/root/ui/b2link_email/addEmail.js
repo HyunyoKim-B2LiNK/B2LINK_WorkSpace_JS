@@ -69,8 +69,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 		
-		_el_btn_add.addEventListener( "click", _evt_mClick$btn__email$addEmail_add, false, 0, true );
-		_el_btn_checkOverlap.addEventListener( "click", _evt_mClick$btn__email$addEmail_checkOverlap, false, 0, true );
+		_el_btn_add.addEventListener( "click", _evt_mClick__el_btn_add, false, 0, true );
+		_el_btn_checkOverlap.addEventListener( "click", _evt_mClick__el_btn_checkOverlap, false, 0, true );
 	};
 
 	/**
@@ -80,19 +80,19 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
 
-		_el_btn_add.removeEventListener( "click", _evt_mClick$btn__email$addEmail_add, false );
-		_el_btn_checkOverlap.removeEventListener( "click", _evt_mClick$btn__email$addEmail_checkOverlap, false );
+		_el_btn_add.removeEventListener( "click", _evt_mClick__el_btn_add, false );
+		_el_btn_checkOverlap.removeEventListener( "click", _evt_mClick__el_btn_checkOverlap, false );
 	};
 
 	/**
 	 * @function
 	 * @param {MouseEvent} e event
 	 */
-	var _evt_mClick$btn__email$addEmail_add = function( e )
+	var _evt_mClick__el_btn_add = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick$btn__email$addEmail_add():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_add():void----------" );
 		
-		window.b2link.service.req$email$addEmail__add(
+		window.b2link.service.req$email$add(
 			_getDataForQuery()
 			, function( result ){
 				if( !result )
@@ -106,18 +106,18 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			}
 		);
 
-		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick$btn__email$addEmail_add():void----------" );
+		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_add():void----------" );
 	};
 
 	/**
 	 * @function
 	 * @param {MouseEvent} e event
 	 */
-	var _evt_mClick$btn__email$addEmail_checkOverlap = function( e )
+	var _evt_mClick__el_btn_checkOverlap = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick$btn__email$addEmail_checkOverlap():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_checkOverlap():void----------" );
 		
-		window.b2link.service.req$email$addEmail__checkOverlap(
+		window.b2link.service.req$email$check__Overlap(
 			_getDataForQuery()
 			, function( result ){
 				console.log( "==========" );
@@ -135,7 +135,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			}
 		);
 
-		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick$btn__email$addEmail_checkOverlap():void----------" );
+		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_checkOverlap():void----------" );
 	};
 
 	/**
