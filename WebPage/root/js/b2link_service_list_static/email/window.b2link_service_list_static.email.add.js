@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/service/window.b2link.service.req$email$add.js";
+var fileNm = "js/b2link_service_list_static/email/window.b2link_service_list_static.email.add.js";
 if ( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -8,20 +8,36 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.EMAIL + "add?";
 
 /**
  * @function
+ * @param {*} result
  * @param {Function} cbFunction function( data ){};
  */
-window.b2link.service.req$email$add = function( d, cbFunction )
+var _fn_res = function( result, cbFunction )
 {
-	window.RayLog.timeStamp( "---- [ S ] - window.b2link.service.req$email$add():void----------" );
+	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.email.add.res():void----------" );
+	console.log( result );
+
+	var r = JSON.parse( result );
+	cbFunction( r );
+
+	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.email.add.res():void----------" );
+};
+
+/**
+ * @function
+ * @param {Function} cbFunction function( data ){};
+ */
+window.b2link_service_list_static.email.add = function( d, cbFunction )
+{
+	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.email.add():void----------" );
 
 	var r = window.b2link.session.getSession();
 	var _tmpUrl = _url
 		+ window.b2link_url.member.getParam__member_session$session( r )
 		+ window.b2link_url.list_static.getParam__email$email( d );
 
-	window.b2link.service.res$email$add( SUtilXMLHttpReqGet.reqSyncReturn( _tmpUrl, null ).responseText, cbFunction );
+	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _tmpUrl, null ).responseText, cbFunction );
 
-	window.RayLog.timeStamp( "---- [ E ] - window.b2link.service.req$email$add():void----------" );
+	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.email.add():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;
