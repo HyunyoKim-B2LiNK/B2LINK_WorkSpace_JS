@@ -1,0 +1,6 @@
+/**
+ * email 중복 체크
+ * @function
+ * @param {Object} d Request Object { "SLD" : "", "TLD" : "" , "ccTLD" : "", "gTLD" : "", "c" : "" }
+ * @return {int}
+ */
