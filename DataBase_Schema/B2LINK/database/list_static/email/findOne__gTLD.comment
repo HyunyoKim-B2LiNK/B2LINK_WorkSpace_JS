@@ -1,0 +1,8 @@
+/**
+ * @function
+ * @param {String} gTLD Global Top Level Domain
+ * @return {Document}
+ *
+ * @example
+ * email$findOne__gTLD( "net" )' );
+ */

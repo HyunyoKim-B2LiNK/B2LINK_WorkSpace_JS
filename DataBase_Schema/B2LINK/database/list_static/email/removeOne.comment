@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @param {Object} { key : value }
+ */
