@@ -17,9 +17,10 @@ window.b2link_ui.email.addEmail = function()
         , css_front_nm : "div__email-"
         , key : "email$addEmail"
     };
+	
     var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
-    debugger;
-     if( !o[ 1 ].getEvt_Complete__Add() )
+
+    if( !o[ 1 ].getEvt_Complete__Add() )
     {
 		o[ 1 ].setEvt_Complete__Add( function( result ){
 			window.RayLog.timeStamp( "[ S ] - o[ 1 ].setEvt_Complete__Add( function( result ){----------" );
@@ -40,10 +41,9 @@ window.b2link_ui.email.addEmail = function()
 			window.RayLog.timeStamp( "[ E ] - o[ 1 ].setEvt_Complete__Add( function( result ){----------" );
 		});
     }
-    
+
     window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui.email.addEmail():void----------");
-    
-    return o;
+	return o;
 }
 
 //----------------------------------------------------------------------------------------------------;
