@@ -30,3 +30,5 @@
 @padding9: 9px 9px;
 @padding10: 10px 10px;
 @padding20: 20px 20px;
+
+@padding0_5: 0px 5px;
