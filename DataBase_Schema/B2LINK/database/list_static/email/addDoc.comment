@@ -8,5 +8,5 @@
  * @return {uint} 0, 1
  *
  * @example
- * email$addDoc( { "SLD" : "b2link" ,"TLD" : "","ccTLD" : "co.kr" ,"gTLD" : "" ,"c" : "kr" } );
+ * email$addDoc( { "SLD" : "b2link" ,"TLD" : "co.kr","ccTLD" : "kr" ,"gTLD" : "" ,"c" : "kr" } );
  */
