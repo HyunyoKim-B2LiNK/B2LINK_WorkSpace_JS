@@ -8,9 +8,10 @@
 }
 //*/
 var a = [
-	  { SLD : "daum" , TLD : "net", ccTLD : "", gTLD : "net", "c" : "kr" }
-	, { SLD : "gmail", TLD : "com", ccTLD : "", gTLD : "com", "c" : "us" }
-	, { SLD : "naver", TLD : "com", ccTLD : "", gTLD : "com", "c" : "kr" }
+	  { SLD : "b2link", TLD : "co.kr", ccTLD : "kr", gTLD : "com", c : "kr" }
+	, { SLD : "daum" , TLD : "net", ccTLD : "", gTLD : "net", c : "kr" }
+	, { SLD : "gmail", TLD : "com", ccTLD : "", gTLD : "com", c : "us" }
+	, { SLD : "naver", TLD : "com", ccTLD : "", gTLD : "com", c : "kr" }
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "list_static" );
