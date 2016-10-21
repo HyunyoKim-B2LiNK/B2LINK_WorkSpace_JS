@@ -1,8 +1,0 @@
-/**
- * @function
- * @param {String} c Country
- * @return {Document}
- *
- * @example
- * email$findOne__c( "kr" )' );
- */

@@ -1,8 +1,0 @@
-/**
- * @function
- * @param {String} TLD Top Level Domain
- * @return {Document}
- *
- * @example
- * email$findOne__TLD( "naver" )' );
- */

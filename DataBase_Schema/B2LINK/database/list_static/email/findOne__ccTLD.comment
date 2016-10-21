@@ -1,8 +1,0 @@
-/**
- * @function
- * @param {String} ccTLD Country Code Top Level Domain
- * @return {Document}
- *
- * @example
- * email$findOne__ccTLD( "kr" )' );
- */
