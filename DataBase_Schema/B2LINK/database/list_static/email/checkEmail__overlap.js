@@ -9,21 +9,26 @@ function( d )
 	TLD, ccTLD, gTLD
 	//*/
 
-	//소문자로 변경;
-	d.SLD = d.SLD.toLowerCase();
-	d.TLD = d.TLD.toLowerCase();
-	d.ccTLD = d.ccTLD.toLowerCase();
-	d.gTLD = d.gTLD.toLowerCase();
-	d.c = d.c.toLowerCase();
+	printjson( d );
 
-	var r = email$findOne( d );
+	//소문자로 변경;
+	var o = {
+		SLD : d.SLD.toLowerCase()
+		, TLD : d.TLD.toLowerCase()
+		, ccTLD : d.ccTLD.toLowerCase()
+		, gTLD : d.gTLD.toLowerCase()
+		, c : d.c.toLowerCase()
+	};
+
+	var r = email$findOne( o );
+	printjson( r );
 
 	if( null == r )
 	{
-		print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return { result : 1 };" );
-		return { result : 0 };
+		print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return 0;" );
+		return 0;
 	}
 
-	print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return { result : 1 };" );
-	return { result : 1 };
+	print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return 1;" );
+	return 1;
 }

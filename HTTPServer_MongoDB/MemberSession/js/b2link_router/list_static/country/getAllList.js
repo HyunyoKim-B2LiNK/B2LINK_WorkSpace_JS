@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 /*/
-http://localhost:49320/list_static/country/getAllList
+http://localhost:49320/member/member_basic/getAllList
 //*/
 (function( req, res ){
 	console.log( "- [ S ] - list_static/country/getAllList():void----------" );

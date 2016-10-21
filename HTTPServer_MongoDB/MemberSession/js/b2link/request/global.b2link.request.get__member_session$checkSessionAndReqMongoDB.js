@@ -39,7 +39,6 @@ global.b2link.request.get__member_session$checkSessionAndReqMongoDB = function( 
 					global.b2link.response.send_200_False__ErrorLog( req, res, q, error );
 					return;
 				}
-				console.log( result );
 				global.b2link.response.send_200_JSON( req, res, result );
 			});
 		}

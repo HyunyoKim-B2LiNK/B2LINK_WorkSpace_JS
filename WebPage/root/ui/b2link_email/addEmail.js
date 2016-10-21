@@ -120,13 +120,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.b2link.service.req$email$addEmail__checkOverlap(
 			_getDataForQuery()
 			, function( result ){
-				if( result.result == 0 )
+				console.log( "==========" );
+				console.log( result );
+				console.log( typeof result );
+				console.log( "==========" );
+				if( result )
 				{
-					alert( "등록 가능한 이메일입니다." );//_evt_Complete__CheckOverlap( result );
+					alert( "이미 등록 되어 있습니다." )
 				}
 				else
 				{
-					alert( "이미 등록 되어 있습니다." )
+					alert( "등록 가능한 이메일입니다." );//_evt_Complete__CheckOverlap( result );
 				}
 			}
 		);
@@ -202,17 +206,23 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	
 	/**
 	 * @function
-	 * @return {Object}
+	 * @return {Object} { SLD : "", TLD : "", ccTLD : "", gTLD : "", c : "" }
 	 */
 	var _getDataForQuery = function()
 	{
-		return {
+		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
+		
+		var r = {
 			SLD : _el_input_SLD.value
 			, TLD : _el_input_TLD.value
 			, ccTLD : _el_input_ccTLD.value
 			, gTLD : _el_input_gTLD.value
 			, c : _el_input_country.value
 		};
+		console.logObjectInformation( r, "_getDataForQuery - r" );
+		return r;
+		
+		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 	};
 
 	//--------------------------------------------------;
