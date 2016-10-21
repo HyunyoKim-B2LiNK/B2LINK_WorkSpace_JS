@@ -7,6 +7,8 @@
 #div__member_basic-signUp {
 	color: #000;
 	font-size: 13px;
+
+	display: inline-table;
 	position: absolute;
 
 	border: @border_solid_1px_000000;
@@ -20,6 +22,51 @@
 	height: auto;
 
 	line-height: 40px;
+
+
+
+	form {
+		/*/
+		box-sizing: border-box;
+		//*/
+		display: block;
+		margin-top: 0em;
+
+		fieldset {
+			background: #fff;
+			border: 1px solid #e6e8e8;
+			border-radius: 5px;
+			margin: 20px 0;
+			padding: 25px;
+			position: relative;
+
+			legend {
+				color: rgb(0, 122, 255);
+				font-size: 15px;
+				position: absolute;
+				top: -20px;
+				font-weight: 400;
+
+				background: white;
+				padding: 0px 10px;
+				/*/
+				border-width: initial !important;
+				border-style: none !important;
+				border-color: initial !important;
+				border-image: initial !important;
+
+				box-shadow: none;
+				box-sizing: border-box;
+
+				display: block;
+
+				text-shadow: none;
+
+				width: auto;
+				//*/
+			}
+		}
+	}
 
 
 
