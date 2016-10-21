@@ -32,8 +32,8 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
 	var $f0 = window.b2link.element.getElementByClassName;
 
-    var _el_div_menu_list = $d.getElementById( "div__test_Menu_List" );
-    var _el_div_menu_uic = $d.getElementById( "div__test_Menu_UIContainer" );
+	var _el_div_menu_list = $d.getElementById( "div__test_Menu_List" );
+	var _el_div_menu_uic = $d.getElementById( "div__test_Menu_UIContainer" );
 
 	var _width = $el_div.clientWidth;
 	var _height = $el_div.clientHeight;
@@ -78,16 +78,16 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	var _evt_mClick = function( e )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick():void----------" );
-        var t = e.target;
-            //console.logObjectInformation( t, "t" );
-        window.b2link.STATIC.UI.__allHide();
-        //window.b2link.STATIC.UI.__all_setPosition__TestMenu();
-        var o = t.onclick();
-            //console.log( o );
-        var el = o[ 0 ];
-        window.b2link.element.removeChildFromParentElement( el );
-        window.b2link.element.appendChild( _el_div_menu_uic, el );
-        window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( el );
+		var t = e.target;
+			//console.logObjectInformation( t, "t" );
+		window.b2link.STATIC.UI.__allHide();
+		//window.b2link.STATIC.UI.__all_setPosition__TestMenu();
+		var o = t.onclick();
+			//console.log( o );
+		var el = o[ 0 ];
+		window.b2link.element.removeChildFromParentElement( el );
+		window.b2link.element.appendChild( _el_div_menu_uic, el );
+		window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( el );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick():void----------" );
 	};
@@ -130,10 +130,10 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	 */
 	var _show = function(){ window.b2link.element.show( $el_div ); };
 
-    var _showOrCreateElement = function()
-    {
+	var _showOrCreateElement = function()
+	{
 
-    };
+	};
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -162,7 +162,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 		_width = t.clientWidth;
 		_height = t.clientHeight;
 
-        window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus();
+		window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus();
 
 		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
@@ -195,15 +195,15 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	window.TtwLog.timeStamp( "$w.screen.width : " + $w.screen.width );
 	window.TtwLog.timeStamp( "$w.screen.height : " + $w.screen.height );
 
-    _el_div_menu_uic.__appendChild = _el_div_menu_uic.appendChild;
-    _el_div_menu_uic.appendChild = function( t )
-    {
-        var o = _el_div_menu_uic.__appendChild( t );
-            //console.log( "var o = _el_div_menu_uic.__appendChild( t );" );
-            //console.log( o );
-        setTimeout( function(){ window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( t ); }, 300 );
-        return o;
-    };
+	_el_div_menu_uic.__appendChild = _el_div_menu_uic.appendChild;
+	_el_div_menu_uic.appendChild = function( t )
+	{
+		var o = _el_div_menu_uic.__appendChild( t );
+			//console.log( "var o = _el_div_menu_uic.__appendChild( t );" );
+			//console.log( o );
+		setTimeout( function(){ window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( t ); }, 300 );
+		return o;
+	};
 
 	//----------;
 
