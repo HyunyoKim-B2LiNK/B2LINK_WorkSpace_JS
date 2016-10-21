@@ -15,7 +15,7 @@ window.b2link.service.req$country$getAllList = function( cbFunction )
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.service.req$country$getAllList():void----------" );
 
 	var r = window.b2link.session.getSession();
-	_url += "sid=" + r.sid + "&uid=" + r.uid;
+	_url += window.b2link.url.getSessionParam( r );
 
 	window.b2link.service.res$country$getAllList( SUtilXMLHttpReqGet.reqSyncReturn( _url, null ).responseText, cbFunction );
 
