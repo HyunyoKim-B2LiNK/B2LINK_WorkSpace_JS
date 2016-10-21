@@ -1,0 +1,6 @@
+/**
+ * email Overlap check
+ * @function
+ * @param {Object} d Request Object { "SLD" : "b2link" ,"TLD" : "co.kr","ccTLD" : "kr" ,"gTLD" : "" ,"c" : "kr" }
+ * @return {int}
+ */
