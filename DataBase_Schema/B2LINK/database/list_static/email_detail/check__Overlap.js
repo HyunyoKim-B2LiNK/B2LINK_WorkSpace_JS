@@ -1,6 +1,6 @@
 function( d )
 {
-	print( "-- [ S ] - email_detail$checkemail_detail_overlap():{uint}----------" );
+	print( "-- [ S ] - email_detail$check__Overlap():{uint}----------" );
 	/*/
 	필수 필드
 	SLD, c
@@ -25,10 +25,10 @@ function( d )
 
 	if( null == r )
 	{
-		print( "-- [ E ] - email_detail$checkemail_detail_overlap():{uint}----------return 0;" );
+		print( "-- [ E ] - email_detail$check__Overlap():{uint}----------return 0;" );
 		return 0;
 	}
 
-	print( "-- [ E ] - email_detail$checkemail_detail_overlap():{uint}----------return 1;" );
+	print( "-- [ E ] - email_detail$check__Overlap():{uint}----------return 1;" );
 	return 1;
 }

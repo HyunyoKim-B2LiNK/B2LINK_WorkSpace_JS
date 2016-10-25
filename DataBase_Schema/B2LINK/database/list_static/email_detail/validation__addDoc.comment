@@ -1,5 +1,5 @@
 /**
  * @function
- * @param {Object} d {}
+ * @param {Object} d { "SLD" : "b2link" ,"TLD" : "co.kr","ccTLD" : "kr" ,"gTLD" : "" ,"c" : "kr" }
  * @return {Object}
  */
