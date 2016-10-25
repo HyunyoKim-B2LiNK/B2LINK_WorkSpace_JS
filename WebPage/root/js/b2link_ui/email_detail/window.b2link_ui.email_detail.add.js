@@ -33,10 +33,8 @@ window.b2link_ui.email_detail.add = function()
 				//*/
 
 				window.b2link_ui.email_detail.getAllList();
-				//window.b2link_ui.member_basic.getAllList__nm();
 			}
-			else
-				alert("등록 실패 하였습니다.");
+			else alert( "등록 실패." );
 
 			window.RayLog.timeStamp( "[ E ] - o[ 1 ].setEvt_Complete__Add( function( result ){----------" );
 		});

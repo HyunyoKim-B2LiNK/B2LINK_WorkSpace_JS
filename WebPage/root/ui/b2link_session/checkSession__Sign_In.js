@@ -193,10 +193,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setEvt_Complete__SignIn = function( fn ){ _evt_Complete__SignIn = fn; };
 
 	var _getHeight = function(){ return _height; };
-	var _setHeight = function( w ){ _height = w; };
+	var _setHeight = function( n ){ _height = n; };
 
 	var _getWidth = function(){ return _width; };
-	var _setWidth = function( w ){ _width = w; };
+	var _setWidth = function( n ){ _width = n; };
 
 	//--------------------------------------------------;
 

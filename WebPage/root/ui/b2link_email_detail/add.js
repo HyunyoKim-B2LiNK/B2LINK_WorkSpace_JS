@@ -32,13 +32,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_add = $f0( $el_div, "btn_Add" );
 	var _el_btn_cancle = $f0( $el_div, "btn_Cancle" );
 	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
-
+	
+	/*/
 	var _el_input_SLD = $f0( $el_div, "SLD" );
 	var _el_input_TLD = $f0( $el_div, "TLD" );
 	var _el_input_ccTLD= $f0( $el_div, "ccTLD" );
 	var _el_input_gTLD = $f0( $el_div, "gTLD" );
-	var _el_input_country = $f0( $el_div, "country" );
-
+	var _el_input_country = $f0( $el_div, "c" );
+	/*/
+	var _el_inputParent = $f0( $el_div, "inputs" );
+	//*/
 
 	/**
 	 * @Property {Function} function( result ){}
@@ -99,7 +102,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			, function( result ){
 				if( !result )
 				{
-					alert( "등록에 실패 하였습니다. " );
+					alert( "등록 실패." );
 				}
 				else
 				{
@@ -126,13 +129,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				console.log( result );
 				console.log( typeof result );
 				console.log( "==========" );
-				if( result )
+				if( window.b2link.fn.getResultStatus( result ) )
 				{
-					alert( "이미 등록 되어 있습니다." )
+					alert( "동일 데이터 존재함." )
 				}
 				else
 				{
-					alert( "등록 가능한 이메일입니다." );//_evt_Complete__CheckOverlap( result );
+					alert( "등록 가능 데이터." );//_evt_Complete__CheckOverlap( result );
 				}
 			}
 		);
@@ -181,11 +184,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_cancle = null;
 		_el_btn_checkOverlap = null;
 
+		/*/
 		_el_input_country = null;
 		_el_input_ccTLD = null;
 		_el_input_gTLD = null;
 		_el_input_SLD = null;
 		_el_input_TLD = null;
+		/*/
+		_el_inputParent = null;
+		//*/
 	};
 
 	/**
@@ -213,7 +220,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataForQuery = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
-
+		
+		/*/
 		var r = {
 			SLD : _el_input_SLD.value
 			, TLD : _el_input_TLD.value
@@ -221,6 +229,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			, gTLD : _el_input_gTLD.value
 			, c : _el_input_country.value
 		};
+		/*/
+		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
+		//*/
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
@@ -267,10 +278,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setEvt_Complete__CheckOverlap = function( fn ){ _evt_Complete__CheckOverlap = fn; };
 
 	var _getHeight = function(){ return _height; };
-	var _setHeight = function( w ){ _height = w; };
+	var _setHeight = function( n ){ _height = n; };
 
 	var _getWidth = function(){ return _width; };
-	var _setWidth = function( w ){ _width = w; };
+	var _setWidth = function( n ){ _width = n; };
 
 	//--------------------------------------------------;
 
