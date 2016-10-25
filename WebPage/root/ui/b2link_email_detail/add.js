@@ -102,7 +102,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			, function( result ){
 				if( !result )
 				{
-					alert( "등록 실패. " );
+					alert( "등록 실패." );
 				}
 				else
 				{
