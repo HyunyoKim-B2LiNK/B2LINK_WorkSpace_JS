@@ -129,7 +129,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				console.log( result );
 				console.log( typeof result );
 				console.log( "==========" );
-				if( result )
+				if( window.b2link.fn.getResultStatus( result ) )
 				{
 					alert( "동일 데이터 존재함." )
 				}
