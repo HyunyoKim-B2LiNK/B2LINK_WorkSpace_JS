@@ -11,29 +11,18 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.COUNTRY + "add?";
  * @param {*} result
  * @param {Function} cbFunction function( data ){};
  */
-var _fn_res = function( result, cbFunction )
-{
-	window.TtwLog.timeStamp( "----- [ S ] - window.b2link_service_list_static.country.add.res():void----------" );
-
-	console.log( result );
-
-	var r = JSON.parse( result );
-	cbFunction( r );
-
-	window.TtwLog.timeStamp( "----- [ E ] - window.b2link_service_list_static.country.add.res():void----------" );
-};
+//var _fn_res = function( result, cbFunction ){};
 
 /**
  * @function
+ * @param {Object} d
  * @param {Function} cbFunction function( data ){};
  */
-window.b2link_service_list_static.country.add = function( cbFunction )
+window.b2link_service_list_static.country.add = function( d, cbFunction )
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.country.add():void----------" );
 
-	_url += window.b2link_url.member.member_session$getParam( window.b2link.session.getSession() );
-
-	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _url, null ).responseText, cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url.list_static.country$getParam( d ), cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.country.add():void----------" );
 };

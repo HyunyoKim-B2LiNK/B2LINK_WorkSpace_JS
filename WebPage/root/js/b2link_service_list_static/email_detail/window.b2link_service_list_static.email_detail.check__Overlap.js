@@ -11,16 +11,7 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.EMAIL_DETAIL + "check__Overlap?";
  * @param {*} result
  * @param {Function} cbFunction function( data ){};
  */
-var _fn_res = function( result, cbFunction )
-{
-	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.email_detail.check__Overlap.res():void----------" );
-	console.log( result );
-
-	var r = JSON.parse( result );
-	cbFunction( r );
-
-	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.email_detail.check__Overlap.res():void----------" );
-};
+//var _fn_res = function( result, cbFunction ){};
 
 /**
  * @function
@@ -30,12 +21,7 @@ window.b2link_service_list_static.email_detail.check__Overlap = function( d, cbF
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.email_detail.check__Overlap():void----------" );
 
-	var r = window.b2link.session.getSession();
-	var _tmpUrl = _url
-		+ window.b2link_url.member.member_session$getParam( r )
-		+ window.b2link_url.list_static.email_detail$getParam( d );
-
-	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _tmpUrl, null ).responseText, cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url.list_static.email_detail$getParam( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.email_detail.check__Overlap():void----------" );
 };
