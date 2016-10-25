@@ -32,13 +32,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_add = $f0( $el_div, "btn_Add" );
 	var _el_btn_cancle = $f0( $el_div, "btn_Cancle" );
 	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
+	
+	var _el_inputParent = $f0( $el_div, "inputs" );
 
+	/*/
 	var _el_input_SLD = $f0( $el_div, "SLD" );
 	var _el_input_TLD = $f0( $el_div, "TLD" );
 	var _el_input_ccTLD= $f0( $el_div, "ccTLD" );
 	var _el_input_gTLD = $f0( $el_div, "gTLD" );
-	var _el_input_country = $f0( $el_div, "country" );
-
+	var _el_input_country = $f0( $el_div, "c" );
+	//*/
 
 	/**
 	 * @Property {Function} function( result ){}
@@ -181,11 +184,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_cancle = null;
 		_el_btn_checkOverlap = null;
 
+		/*/
 		_el_input_country = null;
 		_el_input_ccTLD = null;
 		_el_input_gTLD = null;
 		_el_input_SLD = null;
 		_el_input_TLD = null;
+		//*/
 	};
 
 	/**
@@ -213,7 +218,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataForQuery = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
-
+		
+		/*/
 		var r = {
 			SLD : _el_input_SLD.value
 			, TLD : _el_input_TLD.value
@@ -221,6 +227,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			, gTLD : _el_input_gTLD.value
 			, c : _el_input_country.value
 		};
+		/*/
+		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
+		//*/
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
