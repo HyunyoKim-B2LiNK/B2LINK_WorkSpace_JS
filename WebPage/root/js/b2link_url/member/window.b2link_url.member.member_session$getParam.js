@@ -13,7 +13,7 @@ window.b2link_url.member.member_session$getParam = function( d )
 	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url.member.member_session$getParam():{String}----------" );
 	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url.member.member_session$getParam():{String}----------" );
 
-	return "sid=" + d.sid + "&uid=" + d.uid;
+	return "&sid=" + d.sid + "&uid=" + d.uid;
 };
 
 //----------------------------------------------------------------------------------------------------;

@@ -14,11 +14,12 @@ window.b2link_url.list_static.country$getParam = function( d )
 	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url.list_static.country$getParam():{String}----------" );
 	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url.list_static.country$getParam():{String}----------" );
 
-	return "&SLD=" + d.SLD
-		+ "&TLD=" + d.TLD
-		+ "&ccTLD=" + d.ccTLD
-		+ "&gTLD=" + d.gTLD
-		+ "&c=" + d.c;
+	return "&cd_n=" + d.cd_n
+		+ "&cd_us2=" + d.cd_us2
+		+ "&cd_us3=" + d.cd_us3
+		+ "&nm_cn=" + d.nm_cn
+		+ "&nm_kr=" + d.nm_kr
+		+ "&nm_us=" + d.nm_us;
 };
 
 //----------------------------------------------------------------------------------------------------;
