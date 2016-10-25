@@ -170,10 +170,10 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	//--------------------------------------------------;
 
 	var _getHeight = function(){ return _height; };
-	var _setHeight = function( w ){ _height = w; };
+	var _setHeight = function( n ){ _height = n; };
 
 	var _getWidth = function(){ return _width; };
-	var _setWidth = function( w ){ _width = w; };
+	var _setWidth = function( n ){ _width = n; };
 
 	//--------------------------------------------------;
 
