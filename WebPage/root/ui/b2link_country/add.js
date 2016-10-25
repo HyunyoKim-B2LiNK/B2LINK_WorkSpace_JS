@@ -103,7 +103,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			, function( result ){
 				if( !result )
 				{
-					alert( "등록에 실패 하였습니다. " );
+					alert( "등록 실패. " );
 				}
 				else
 				{
@@ -132,11 +132,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				console.log( "==========" );
 				if( result )
 				{
-					alert( "이미 등록 되어 있습니다." )
+					alert( "동일 데이터 존재." )
 				}
 				else
 				{
-					alert( "등록 가능한 이메일입니다." );//_evt_Complete__CheckOverlap( result );
+					alert( "등록 가능 데이터." );//_evt_Complete__CheckOverlap( result );
 				}
 			}
 		);
