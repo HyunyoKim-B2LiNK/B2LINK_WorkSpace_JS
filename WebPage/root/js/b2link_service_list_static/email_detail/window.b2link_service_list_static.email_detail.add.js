@@ -32,8 +32,8 @@ window.b2link_service_list_static.email_detail.add = function( d, cbFunction )
 
 	var r = window.b2link.session.getSession();
 	var _tmpUrl = _url
-		+ window.b2link_url.member.getParam__member_session$session( r )
-		+ window.b2link_url.list_static.getParam__email_detail$email_detail( d );
+		+ window.b2link_url.member.member_session$getParam( r )
+		+ window.window.b2link_url.list_static.email_detail$getParam( d );
 
 	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _tmpUrl, null ).responseText, cbFunction );
 

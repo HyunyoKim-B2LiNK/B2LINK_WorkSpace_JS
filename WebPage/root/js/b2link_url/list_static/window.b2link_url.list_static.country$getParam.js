@@ -1,18 +1,18 @@
 
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_url/window.b2link_url.list_static.getParam__email$email.js";
+var fileNm = "js/b2link_url/window.b2link_url.list_static.country$getParam.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 /**
  * @function
- * @param {Object} d email {}
+ * @param {Object} d country {}
  * @return {String}
  */
-window.b2link_url.list_static.getParam__email$email = function( d )
+window.b2link_url.list_static.country$getParam = function( d )
 {
-	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url.list_static.getParam__email$email():{String}----------" );
-	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url.list_static.getParam__email$email():{String}----------" );
+	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url.list_static.country$getParam():{String}----------" );
+	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url.list_static.country$getParam():{String}----------" );
 
 	return "&SLD=" + d.SLD
 		+ "&TLD=" + d.TLD

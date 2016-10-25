@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_email_detail/add.js";
+var fileNm = "./ui/b2link_country/add.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -34,11 +34,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
 	
 	/*/
-	var _el_input_SLD = $f0( $el_div, "SLD" );
-	var _el_input_TLD = $f0( $el_div, "TLD" );
-	var _el_input_ccTLD= $f0( $el_div, "ccTLD" );
-	var _el_input_gTLD = $f0( $el_div, "gTLD" );
-	var _el_input_country = $f0( $el_div, "c" );
+	var _el_input__cd_n = $f0( $el_div, "cd_n" );
+	var _el_input__cd_us2 = $f0( $el_div, "cd_us2" );
+	var _el_input__cd_us3 = $f0( $el_div, "cd_us3" );
+	var _el_input__nm_cn = $f0( $el_div, "nm_cn" );
+	var _el_input__nm_kr = $f0( $el_div, "nm_kr" );
+	var _el_input__nm_us = $f0( $el_div, "nm_us" );
 	/*/
 	var _el_inputParent = $f0( $el_div, "inputs" );
 	//*/
@@ -97,7 +98,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_add():void----------" );
 
-		window.b2link_service_list_static.email_detail.add(
+		window.b2link_service_list_static.country.add(
 			_getDataForQuery()
 			, function( result ){
 				if( !result )
@@ -122,7 +123,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_checkOverlap():void----------" );
 
-		window.b2link_service_list_static.email_detail.check__Overlap(
+		window.b2link_service_list_static.country.check__Overlap(
 			_getDataForQuery()
 			, function( result ){
 				console.log( "==========" );
@@ -185,11 +186,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_checkOverlap = null;
 
 		/*/
-		_el_input_country = null;
-		_el_input_ccTLD = null;
-		_el_input_gTLD = null;
-		_el_input_SLD = null;
-		_el_input_TLD = null;
+		_el_input__cd_n = null;
+		_el_input__cd_us2 = null;
+		_el_input__cd_us3 = null;
+		_el_input__nm_cn = null;
+		_el_input__nm_kr = null;
+		_el_input__nm_us = null;
 		/*/
 		_el_inputParent = null;
 		//*/
@@ -215,7 +217,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	/**
 	 * @function
-	 * @return {Object} { SLD : "", TLD : "", ccTLD : "", gTLD : "", c : "" }
+	 * @return {Object} { cd_n : {Number}, cd_us2 : "", cd_us3 : "", nm_cn : "", nm_kr : "", nm_us : "" }
 	 */
 	var _getDataForQuery = function()
 	{
@@ -223,11 +225,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		
 		/*/
 		var r = {
-			SLD : _el_input_SLD.value
-			, TLD : _el_input_TLD.value
-			, ccTLD : _el_input_ccTLD.value
-			, gTLD : _el_input_gTLD.value
-			, c : _el_input_country.value
+			cd_n : _el_input__cd_n.value
+			, cd_us2 : _el_input__cd_us2.value
+			, cd_us3 : _el_input__cd_us3.value
+			, nm_cn : _el_input__nm_cn.value
+			, nm_kr : _el_input__nm_kr.value
+			, nm_us : _el_input__nm_us.value
 		};
 		/*/
 		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
