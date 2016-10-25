@@ -1,6 +1,6 @@
 function( d )
 {
-	print( "-- [ S ] - email$checkEmail_overlap():{uint}----------" );
+	print( "-- [ S ] - email_detail$checkemail_detail_overlap():{uint}----------" );
 	/*/
 	필수 필드
 	SLD, c
@@ -20,15 +20,15 @@ function( d )
 		, c : d.c.toLowerCase()
 	};
 
-	var r = email$findOne( o );
+	var r = email_detail$findOne( o );
 	printjson( r );
 
 	if( null == r )
 	{
-		print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return 0;" );
+		print( "-- [ E ] - email_detail$checkemail_detail_overlap():{uint}----------return 0;" );
 		return 0;
 	}
 
-	print( "-- [ E ] - email$checkEmail_overlap():{uint}----------return 1;" );
+	print( "-- [ E ] - email_detail$checkemail_detail_overlap():{uint}----------return 1;" );
 	return 1;
 }

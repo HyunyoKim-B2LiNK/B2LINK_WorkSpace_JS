@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_service_member/member_session/window.b2link_service_member.member_session_log.getAllList.js";
+var fileNm = "js/b2link_service_member/member_session_log/window.b2link_service_member.member_session_log.getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -36,12 +36,6 @@ window.b2link_service_member.member_session_log.getAllList = function( d, cbFunc
 	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _url, null ).responseText, cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_session_log.getAllList():void----------" );
-};
-
-
-window.b2link_service_member.member_session_log.getAllList.res = function(  )
-{
-
 };
 
 //----------------------------------------------------------------------------------------------------;
