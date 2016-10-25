@@ -1,22 +1,22 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_ui/window.b2link_ui.member_session.checkSession__Sign_In.js";
+var fileNm = "js/b2link_ui/window.b2link_ui.member_session.checkSession__Sign_In__H.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 /**
  * @function
  */
-window.b2link_ui.member_session.checkSession__Sign_In = function()
+window.b2link_ui.member_session.checkSession__Sign_In__H = function()
 {
 
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui.member_session.checkSession__Sign_In():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui.member_session.checkSession__Sign_In__H():void----------" );
 
 	var d = {
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SESSION
-		, nm : "checkSession__Sign_In"
+		, nm : "checkSession__Sign_In__H"
 		, css_url : "./css_ui/"
 		, css_front_nm : "div__member_session-"
-		, key : "member_session$checkSession__Sign_In"
+		, key : "member_session$checkSession__Sign_In__H"
 	};
 
 	//var o = window.b2link.ui.add_HTML_JS_CSS( d );
@@ -43,7 +43,7 @@ window.b2link_ui.member_session.checkSession__Sign_In = function()
 		});
 	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui.member_session.checkSession__Sign_In():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui.member_session.checkSession__Sign_In__H():void----------" );
 
 	return o;
 };
