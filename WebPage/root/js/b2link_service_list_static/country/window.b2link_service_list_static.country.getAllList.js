@@ -14,6 +14,7 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.COUNTRY + "getAllList?";
 var _fn_res = function( result, cbFunction )
 {
 	window.TtwLog.timeStamp( "----- [ S ] - window.b2link_service_list_static.country.getAllList.res():void----------" );
+
 	console.log( result );
 
 	var r = JSON.parse( result );
