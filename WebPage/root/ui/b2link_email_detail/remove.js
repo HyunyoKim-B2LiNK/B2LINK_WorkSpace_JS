@@ -27,7 +27,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_btn_delete = $f0( $el_div, "btn_Delete" );
 	var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
-	
+
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
 
@@ -96,7 +96,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _evt_mClick__el_btn_delete = function( e )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
-		
+
 		var d = _getDataForQuery();
 		if( d.length > 1 )
 		{
@@ -114,7 +114,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				else _evt_Complete__Delete( result );
 			});
 		}
-		
+
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
 	}
 
@@ -132,7 +132,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
-		
+
 		$f0 = null;
 		_el_btn_delete = null;
 		_el_btn_cancel = null;
@@ -182,7 +182,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------------------------------------------------------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 	/**
 	 * @function
 	 * @return {Object} {}
@@ -191,8 +191,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 
-		var r = window.b2link.ui.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
-		
+		var r = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
+
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
