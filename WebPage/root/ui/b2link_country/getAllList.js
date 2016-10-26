@@ -17,8 +17,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
@@ -193,11 +196,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_req_Data();
 
 	//----------;
-
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, req_Data : _req_Data
-		, show : _show
-	};
+	
+	//--------------------------------------------------this;
+	var _ = _this;
+	_.dispose = _dispose;
+	_.hide = _hide;
+	_.req_Data = _req_Data;
+	_.show = _show;
+	//--------------------------------------------------this;
+	return _this;
 });

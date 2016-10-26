@@ -17,8 +17,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
@@ -37,9 +40,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		, "nm.a" : "이름", "nm_cn.a" : "이름(중문)", "nm_kr.a" : "이름(한글)", "nm_us.a" : "이름(영문)"
 		, "rank" : "등급", "uid" : "MEMBER ID"
 	};
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -179,12 +179,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	var _getHeight = function(){ return _height; };
-	var _setHeight = function( n ){ _height = n; };
-
-	var _getWidth = function(){ return _width; };
-	var _setWidth = function( n ){ _width = n; };
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -209,14 +203,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_req_Data();
 
 	//----------;
-
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, req_Data : _req_Data
-		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-	};
+	
+	//--------------------------------------------------this;
+	var _ = _this;
+	_.dispose = _dispose;
+	_.hide = _hide;
+	_.req_Data = _req_Data;
+	_.show = _show;
+	//--------------------------------------------------this;
+	return _this;
 });

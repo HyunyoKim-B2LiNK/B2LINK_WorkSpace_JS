@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 /*/
-http://localhost:49320/list_staic/email_detail/checkemail_detail_Overlap
+http://localhost:49320/list_static/email_detail/check__Overlap
 //*/
 (function( req, res ){
 	global.RayLog.log( "- [ S ] - email_detail/check__Overlap():void----------" );

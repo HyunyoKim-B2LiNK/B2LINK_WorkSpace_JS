@@ -16,7 +16,7 @@ global.b2link_validation.list_static.email_detail$check__Overlap = function( t, 
 
 	if( d.SLD    ) t.SLD = d.SLD.toLowerCase();
 	if( d.TLD    ) t.TLD = d.TLD.toLowerCase();
-	if( d.qccTLD ) t.ccTLD = d.ccTLD.toLowerCase();
+	if( d.ccTLD ) t.ccTLD = d.ccTLD.toLowerCase();
 	if( d.gTLD   ) t.gTLD = d.gTLD.toLowerCase();
 	if( d.c      ) t.c = d.c.toLowerCase();
 

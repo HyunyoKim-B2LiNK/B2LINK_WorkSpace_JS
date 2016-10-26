@@ -21,14 +21,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -123,12 +123,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	var _getHeight = function(){ return _height; };
-	var _setHeight = function( n ){ _height = n; };
-
-	var _getWidth = function(){ return _width; };
-	var _setWidth = function( n ){ _width = n; };
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -171,12 +165,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-	};
+	//--------------------------------------------------this;
+	var _ = _this;
+	_.dispose = _dispose;
+	_.hide = _hide;
+	_.show = _show;
+	//--------------------------------------------------this;
+	return _this;
 });
