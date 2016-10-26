@@ -101,7 +101,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
 
 		var d = _getDataForQuery();
-		if( d.length > 1 )
+			console.log( "d.length : " + d.length );
+		if( 1 < d.length )
 		{
 			window.b2link_service_list_static.email_detail.remove_ids( d, function( result ){
 				console.log( "result : " + result );
@@ -109,7 +110,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				else _evt_Complete__Delete( result );
 			});
 		}
-		else
 		{
 			window.b2link_service_list_static.email_detail.remove_id( d[ 0 ], function( result ){
 				console.log( "result : " + result );
@@ -193,7 +193,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataForQuery = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
-
+		
 		var r = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
 
 		console.logObjectInformation( r, "_getDataForQuery - r" );
