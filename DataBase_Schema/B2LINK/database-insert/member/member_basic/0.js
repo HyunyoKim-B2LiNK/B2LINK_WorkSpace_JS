@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------------------------------;
 var oDoc = {
-	"uid" : "thdtjsdn@gmail.com"//{String};
-	, "upw" : "123qweasd"//{String};
+	"mid" : "thdtjsdn@gmail.com"//{String};
+	, "mpw" : "123qweasd"//{String};
 
 	, "bConn" : 0//{uint} 0 or 1 - booleanConnection;
 

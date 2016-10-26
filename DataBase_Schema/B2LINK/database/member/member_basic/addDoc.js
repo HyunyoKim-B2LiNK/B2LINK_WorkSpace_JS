@@ -24,7 +24,7 @@ function( d )
 
 		, rank : r.rank
 
-		, uid : r.uid, upw : r.upw
+		, mid : r.mid, mpw : r.mpw
 	});
 	print( "-- [ E ] - member_basic$addDoc():void----------" );
 	return 1;

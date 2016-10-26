@@ -1,5 +1,5 @@
 /**
  * @function
- * @param {String} _id
+ * @param {Object} d {}
  * @return {Object}
  */

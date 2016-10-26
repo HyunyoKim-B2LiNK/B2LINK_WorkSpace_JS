@@ -3,7 +3,7 @@ var oDoc = {
 	"_id" : 0
 
 	, "sid" : ""//sessionid;
-	, "uid" : ""//userid;
+	, "mid" : ""//userid;
 
 	, "date" : new Date()
 

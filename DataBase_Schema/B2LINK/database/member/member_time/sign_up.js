@@ -1,10 +1,10 @@
 function( d )
 {
 	print( "-- [ S ] - member_time$sign_up():void----------" );
-	var doc = member_basic$findOne__uid( d.uid );
+	var doc = member_basic$findOne__mid( d.mid );
 	if( doc )
 	{
-		var doc = member_time$findOne__uid( d.uid )
+		var doc = member_time$findOne__mid( d.mid )
 		if( doc )
 		{
 			print( "-- [ E ] - member_time$sign_up():void----------if( doc )" );

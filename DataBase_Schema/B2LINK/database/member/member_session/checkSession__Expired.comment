@@ -1,7 +1,7 @@
 /**
  * Session Object의 Check
  * @function
- * @param {Object} d Request Object { "uid" : "", "sid" : "", "d_ex" : "" }
- * @param {Object} r Collection's Session Object { "_id" : NaN, "uid" : "", "sid" : "", "d_ex" : "" }
+ * @param {Object} d Request Object { "mid" : "", "sid" : "", "d_ex" : "" }
+ * @param {Object} r Collection's Session Object { "_id" : NaN, "mid" : "", "sid" : "", "d_ex" : "" }
  * @return {int}
  */
