@@ -1,26 +1,12 @@
 function( d )
 {
 	print( "-- [ S ] - email_detail$check__Overlap():{uint}----------" );
-	/*/
-	필수 필드
-	SLD, c
-
-	다음중 하나는 무조건 들어가야 함.
-	TLD, ccTLD, gTLD
-	//*/
 
 	printjson( d );
 
-	//소문자로 변경;
-	var o = {
-		SLD : d.SLD.toLowerCase()
-		, TLD : d.TLD.toLowerCase()
-		, ccTLD : d.ccTLD.toLowerCase()
-		, gTLD : d.gTLD.toLowerCase()
-		, c : d.c.toLowerCase()
-	};
+	email_detail$validation__check__Overlap( d );
 
-	var r = email_detail$findOne( o );
+	var r = email_detail$findOne( d );
 	printjson( r );
 
 	if( null == r )
