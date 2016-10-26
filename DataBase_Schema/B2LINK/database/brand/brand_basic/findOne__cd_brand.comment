@@ -1,0 +1,8 @@
+/**
+ * @function
+ * @param {String} cd_brand brand code
+ * @return {Document}
+ *
+ * @example
+ * member_basic$findOne__cd_brand( " " )' );
+ */
