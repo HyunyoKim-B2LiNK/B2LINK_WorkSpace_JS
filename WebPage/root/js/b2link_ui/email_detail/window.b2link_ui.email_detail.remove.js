@@ -32,8 +32,7 @@ window.b2link_ui.email_detail.remove = function()
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
 
-				var o2 = window.b2link_ui.email_detail.getAllList();
-					o2[ 1 ].req_Data();
+				window.b2link_ui.email_detail.getAllList();
 			}
 			else alert( "삭제 실패." );
 
