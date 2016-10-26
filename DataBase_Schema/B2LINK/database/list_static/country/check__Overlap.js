@@ -4,16 +4,9 @@ function( d )
 
 	printjson( d );
 
-	var o = {
-		cd_n : NumberInt( d.cd_n )
-		, cd_us2 : d.cd_us2.toUpperCase()
-		, cd_us3 : d.cd_us3.toUpperCase()
-		, nm_cn : d.nm_cn
-		, nm_kr : d.nm_kr
-		, nm_us : d.nm_us
-	};
+	country$validation__Document( d );
 
-	var r = country$findOne( o );
+	var r = country$findOne( d );
 	printjson( r );
 
 	if( null == r )
