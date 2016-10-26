@@ -17,7 +17,9 @@ window.b2link_ui.email_detail.remove = function()
 		, css_front_nm : "div__email_detail-"
 		, key : "email_detail$remove"
 	};
+	
 	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
+	
     if( !o[ 1 ].getEvt_Complete__Delete() )
 	{
 		o[ 1 ].setEvt_Complete__Delete( function( result ){
@@ -30,10 +32,10 @@ window.b2link_ui.email_detail.remove = function()
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
 
-				window.b2link_ui.email_detail.getAllList();
+				var o2 = window.b2link_ui.email_detail.getAllList();
+					o2[ 1 ].req_Data();
 			}
-			else
-				alert("삭제에 실패 하였습니다.");
+			else alert( "삭제 실패." );
 
 			window.RayLog.timeStamp( "[ E ] - o[ 1 ].setEvt_Complete__Delete( function( result ){----------" );
 		});

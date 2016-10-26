@@ -18,8 +18,10 @@ window.b2link.html.apply_tbody_child = function( element, a )
 	//삭제 - 20161011 - 송선우 - 테스트;
 	//var a = [ a[ 0 ], a[ 0 ], a[ 0 ] ];console.log( a );
 
-	var r = SUtilString.applyStrFromArray( element.innerHTML, a );
-	//console.log( r );
+	if( !element.__originalInnerHTML ) element.__originalInnerHTML = element.innerHTML;
+	var r = SUtilString.applyStrFromArray( element.__originalInnerHTML, a );
+		//console.log( r );
+
 	element.innerHTML = r;
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.apply_tbody_child():void----------" );

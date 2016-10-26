@@ -88,6 +88,8 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 		window.b2link.element.removeChildFromParentElement( el );
 		window.b2link.element.appendChild( _el_div_menu_uic, el );
 		window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( el );
+		
+		o[ 1 ].req_Data();
 
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick():void----------" );
 	};

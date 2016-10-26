@@ -147,6 +147,7 @@ window.b2link.STATIC.UI.__allShow = function()
 			try
 			{
 				io[ 1 ].show();
+				//io[ 1 ].req_Data();
 			}
 			catch( er )
 			{
@@ -183,7 +184,21 @@ window.b2link.STATIC.UI.__list = function(){ this.__status(); };
  * @function
  * @param {String} key
  */
-window.b2link.STATIC.UI.__show = function( key ){ window.b2link.STATIC.UI[ key ][ 1 ].show(); };
+window.b2link.STATIC.UI.__show = function( key )
+{
+	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__show():void----------" );
+	var t = window.b2link.STATIC.UI[ key ][ 1 ];
+	try
+	{
+		t.show();
+		//t.req_Data();	
+	}
+	catch( e )
+	{
+		console.error( "Error : " + e );
+	}
+	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__show():void----------" );
+};
 
 //--------------------------------------------------;
 
