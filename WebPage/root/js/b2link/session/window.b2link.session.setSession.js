@@ -5,7 +5,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
- * @param {Object} d data { "Expires" : "", "sid" : "", "uid" : uid }
+ * @param {Object} d data { "Expires" : "", "sid" : "", "mid" : mid }
  */
 window.b2link.session.setSession = function( d )
 {
@@ -15,7 +15,7 @@ window.b2link.session.setSession = function( d )
 
 	if( d.sid ) t.setItem( "sid", d.sid );
 	if( d.Expires ) t.setItem( "Expires", d.Expires );
-	if( d.uid ) t.setItem( "uid", d.uid );
+	if( d.mid ) t.setItem( "mid", d.mid );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.session.setSession():void----------" );
 };

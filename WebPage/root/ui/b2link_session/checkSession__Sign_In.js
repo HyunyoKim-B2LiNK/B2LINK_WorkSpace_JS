@@ -5,9 +5,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
-	console.log( "arguments : " );
-	console.log( arguments );
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -21,10 +18,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 
 	//--------------------------------------------------;
-	
+
 	var _this = {};
 
 	var $w = window;
@@ -213,8 +210,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.TtwLog.timeStamp( "$w.screen.height : " + $w.screen.height );
 
 	//----------;
-	
-	
+
+
 	//--------------------------------------------------this;
 	var _ = _this;
 	_.dispose = _dispose;
