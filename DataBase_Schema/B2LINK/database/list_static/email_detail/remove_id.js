@@ -4,10 +4,14 @@ function( _id )
 	print( "_id : " + _id );
 	printjson( _id );
 
-	if( !( _id > -1 ) ) return 0;
+	//if( !( _id > -1 ) ){
+	if( email_detail$validation__remove_id( _id ) ){
+		print( "-- [ E ] - email_detail$remove_id():{uint}----------return 0;" );
+		return 0;
+	}
 
 	var r = email_detail$_getCol().remove( { _id : NumberInt( _id ) }, 1 );
 	print( r );
-	print( "-- [ E ] - email_detail$remove_id():{uint}----------" );
+	print( "-- [ E ] - email_detail$remove_id():{uint}----------return 1;" );
 	return 1;
 }
