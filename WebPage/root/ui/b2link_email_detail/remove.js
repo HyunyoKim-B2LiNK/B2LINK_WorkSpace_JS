@@ -110,6 +110,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				else _evt_Complete__Delete( result );
 			});
 		}
+		else if( 1 == d.length )
 		{
 			window.b2link_service_list_static.email_detail.remove_id( d[ 0 ], function( result ){
 				console.log( "result : " + result );
@@ -193,9 +194,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataForQuery = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
-		
-		var r = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
 
+		var r = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
+		
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
