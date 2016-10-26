@@ -19,6 +19,7 @@ window.b2link.STATIC.CONFIG.URL.UI.BASE = "./ui/";
 _ = window.b2link.STATIC.CONFIG.URL.UI.BASE;
 window.b2link.STATIC.CONFIG.URL.UI.B2LINK = _ + "b2link/";
 window.b2link.STATIC.CONFIG.URL.UI.B2LINK_API = _ + "b2link_api/";
+window.b2link.STATIC.CONFIG.URL.UI.B2LINK_BRAND = _ + "b2link_brand/";
 window.b2link.STATIC.CONFIG.URL.UI.B2LINK_COUNTRY = _ + "b2link_country/";
 //window.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL = _ + "b2link_email/";
 window.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL = _ + "b2link_email_detail/";
@@ -37,12 +38,18 @@ window.b2link.STATIC.CONFIG.URL.UI.CSS = "";
 //------------------------------;
 window.b2link.STATIC.CONFIG.URL.MONGODB = {};
 
+window.b2link.STATIC.CONFIG.URL.MONGODB.BRAND = {};
+window.b2link.STATIC.CONFIG.URL.MONGODB.BRAND_COMMON = window.b2link.STATIC.CONFIG.URL.SERVER + "brand/"
+_ = window.b2link.STATIC.CONFIG.URL.MONGODB.BRAND_COMMON; 
+window.b2link.STATIC.CONFIG.URL.MONGODB.BRAND.BRAND_BASIC =  _ + "brand_basic/";
+
 window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC = {};
 window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC_COMMON = window.b2link.STATIC.CONFIG.URL.SERVER + "list_static/";
 _ = window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC_COMMON;
 window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.COUNTRY = _ + "country/";
 //window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.EMAIL = _ + "email/";
 window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.EMAIL_DETAIL = _ + "email_detail/";
+
 
 window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER = {};
 window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER_COMMON = window.b2link.STATIC.CONFIG.URL.SERVER + "member/";
