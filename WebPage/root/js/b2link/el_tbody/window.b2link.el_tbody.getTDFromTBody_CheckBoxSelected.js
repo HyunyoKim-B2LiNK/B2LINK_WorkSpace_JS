@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/ui/window.b2link.ui.getInputValueFromTBody_CheckBoxSelected.js";
+var fileNm = "js/b2link/el_tbody/window.b2link.el_tbody.getTDFromTBody_CheckBoxSelected.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -8,9 +8,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {HTMLElement} t tbody
  * @return {Array} [ {HTMLElement}, {HTMLElement}, .... ]
  */
-window.b2link.ui.getInputValueFromTBody_CheckBoxSelected = function( t )
+window.b2link.el_tbody.getTDFromTBody_CheckBoxSelected = function( t )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.getInputValueFromTBody_CheckBoxSelected():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.el_tbody.getTDFromTBody_CheckBoxSelected():{Array}----------" );
 
 	var r = [];
 	var a = t.children;
@@ -21,11 +21,11 @@ window.b2link.ui.getInputValueFromTBody_CheckBoxSelected = function( t )
 	{
 		io = a[ i ];
 		ioCheckBox = io.children[ 0 ].children[ 0 ];
-		if( ioCheckBox.checked ) r.push( ioCheckBox.value );
+		if( ioCheckBox.checked ) r.push( io.children[ 0 ] );
 	}
 
 	console.log( r );
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.getInputValueFromTBody_CheckBoxSelected():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.el_tbody.getTDFromTBody_CheckBoxSelected():{Array}----------" );
 
 	return r;
 };
