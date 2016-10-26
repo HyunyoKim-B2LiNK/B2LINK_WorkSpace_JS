@@ -1,0 +1,5 @@
+/**
+ * @function
+ * @param {Object} d { "cd_n" : 840, "cd_us2" : "US", "cd_us3" : "USA", "nm_cn" : "", "nm_kr" : "미국", "nm_us" : "America" }
+ * @return {Object}
+ */
