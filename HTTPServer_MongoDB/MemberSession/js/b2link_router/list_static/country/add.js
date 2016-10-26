@@ -11,7 +11,10 @@ http://localhost:49320/list_static/country/add
 
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 
-	global.b2link_router.list_static.req__json( req, res, q, "country$addDoc", q );
+	var d = {};
+	global.b2link_validation.list_static.country$check__Overlap( d, q );
+
+	global.b2link_router.list_static.req__json( req, res, q, "country$addDoc", d );
 
 	global.TtwLog.log( "- [ E ] - country/add():void----------" );
 });
