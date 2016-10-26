@@ -1,0 +1,5 @@
+/**
+ * @function
+ * @param {Object} d { "cd_brand" : "" , "nm_kr" : "파파레서피", "nm_cn" : "爸爸的礼物", "nm_us" : "papa recipe", "url" : "http://paparecipe.com/", "logo_url : "", "trademark_url : "", "register_date" : "" , "register_person" : ""  , "description" : "" }
+ * @return {Object}
+ */
