@@ -5,6 +5,6 @@ function()
 		, "nSignInFail"
 		, "nm", "nm_cn", "nm_kr", "nm_us"
 		, "rank"
-		, "uid", "upw"
+		, "mid", "mpw"
 	];
 }

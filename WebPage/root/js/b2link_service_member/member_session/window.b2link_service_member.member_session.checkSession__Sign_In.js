@@ -33,7 +33,7 @@ window.b2link_service_member.member_session.checkSession__Sign_In = function( d,
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_session.checkSession__Sign_In():void----------" );
 
-	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _url + "uid=" + d.id + "&upw="+ d.pw, null ).responseText, cbFunction );
+	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _url + "mid=" + d.id + "&mpw="+ d.pw, null ).responseText, cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_session.checkSession__Sign_In():void----------" );
 };

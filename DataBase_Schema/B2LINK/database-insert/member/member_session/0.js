@@ -3,7 +3,7 @@ var oDoc = {
 	"_id" : 0
 
 	, "sid" : ""//sessionid;
-	, "uid" : "thdtjsdn@gmail.com"//userid;
+	, "mid" : "thdtjsdn@gmail.com"//userid;
 
 	, "d_ex" : ""//date_expire;
 };

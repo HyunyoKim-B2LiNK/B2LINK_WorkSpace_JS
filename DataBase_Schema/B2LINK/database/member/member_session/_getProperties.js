@@ -2,7 +2,7 @@ function()
 {
 	return [
 		"sid"//sessionid;
-		, "uid"//userid;
+		, "mid"//memberid;
 
 		, "d_ex"//date_expire;
 	];

@@ -18,22 +18,21 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
+
 	//--------------------------------------------------;
+
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
-    
-    var $f0 = window.b2link.element.getElementByClassName;
 
-    var _el_input_email = $f0( $el_div, "email" );
-    var _el_input_name = $f0( $el_div, "name" );
-    var _el_input_phone = $f0( $el_div, "phone" );
-    var _el_input_password = $f0( $el_div, "password" );
-    var _el_input_password_confirm = $f0( $el_div, "password_confirm" );
+	var $f0 = window.b2link.element.getElementByClassName;
 
-    
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
+	var _el_input_email = $f0( $el_div, "email" );
+	var _el_input_name = $f0( $el_div, "name" );
+	var _el_input_phone = $f0( $el_div, "phone" );
+	var _el_input_password = $f0( $el_div, "password" );
+	var _el_input_password_confirm = $f0( $el_div, "password_confirm" );
 
 	//--------------------------------------------------;
 
@@ -128,12 +127,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	var _getHeight = function(){ return _height; };
-	var _setHeight = function( n ){ _height = n; };
-
-	var _getWidth = function(){ return _width; };
-	var _setWidth = function( n ){ _width = n; };
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -151,12 +144,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_setPosition();
 	//----------;
 
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-	};
+	//--------------------------------------------------this;
+	var _ = _this;
+	_.dispose = _dispose;
+	_.hide = _hide;
+	_.show = _show;
+	//--------------------------------------------------this;
+	return _this;
 });

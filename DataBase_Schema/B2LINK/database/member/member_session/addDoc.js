@@ -19,7 +19,7 @@ function( d )
 		return 0;
 	}
 	print(0)
-	var len = member_basic$findOne__uid( d.uid )._id;
+	var len = member_basic$findOne__mid( d.mid )._id;
 	print(1);
 		print( "len : " + len );
 	print(2);
@@ -36,7 +36,7 @@ function( d )
 		member_session$_update__Session({
 			_id : len
 			, d_ex : r.d_ex//date_expire;
-			, uid : r.uid//userid;
+			, mid : r.mid//memberid;
 			, sid : r.sid//sessionid;
 		});
 	}
@@ -45,7 +45,7 @@ function( d )
 		member_session$_getCol().insert({
 			_id : NumberInt( len )
 			, d_ex : r.d_ex//date_expire;
-			, uid : r.uid//userid;
+			, mid : r.mid//memberid;
 			, sid : r.sid//sessionid;
 		});
 	}

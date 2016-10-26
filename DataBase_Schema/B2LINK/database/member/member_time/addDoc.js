@@ -13,7 +13,7 @@ function( d )
 	col.insert({
 		_id : NumberInt( len )
 		, d_l_si : r.d_l_si, d_sec : r.d_sec, d_su : r.d_su
-		, uid : r.uid
+		, mid : r.mid
 	});
 	print( "-- [ E ] - member_time$addDoc():void----------col.insert({" );
 	return 1;

@@ -2,15 +2,17 @@ function( d )
 {
 	print( "-- [ S ] - member_session$checkSession__Sign_In():void----------" );
 
-	var r = member_basic$findOne__uid( d.uid );
-	if( 0 == member_basic$_check__PasswordAndUpdate_nSignInFail( r, d.upw ) ) return 0;//Password가 틀림;
+	printjson( d );
 
-	var r = member_session$_findOne__uid( d.uid );
+	var r = member_basic$findOne__mid( d.mid );
+	if( 0 == member_basic$_check__PasswordAndUpdate_nSignInFail( r, d.mpw ) ) return 0;//Password가 틀림;
+
+	var r = member_session$_findOne__mid( d.mid );
 	printjson( r );
 	if( r )
 	{
-		//if( 0 == member_basic$_check__Password( r, d.upw ) ) return 0;//Password가 틀림;
-		//if( 0 == member_basic$_check__Password( r, d.upw ) ) return new Error( "Password가 틀림" );//Password가 틀림;
+		//if( 0 == member_basic$_check__Password( r, d.mpw ) ) return 0;//Password가 틀림;
+		//if( 0 == member_basic$_check__Password( r, d.mpw ) ) return new Error( "Password가 틀림" );//Password가 틀림;
 		if( 0 == member_basic$sign_in( d ) ) return 0;//Password가 틀림;
 		if( r.d_ex )
 		{

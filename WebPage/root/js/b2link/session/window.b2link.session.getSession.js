@@ -5,11 +5,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function(){
 
-	var _a = [ "Expires", "sid", "uid" ];
+	var _a = [ "Expires", "sid", "mid" ];
 
 	/**
 	 * @function
-	 * @return {Object} { "sid" : "", "Expires" : "", "uid" : "" }
+	 * @return {Object} { "sid" : "", "Expires" : "", "mid" : "" }
 	 */
 	window.b2link.session.getSession = function()
 	{

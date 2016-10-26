@@ -29,7 +29,7 @@ var oDoc = {
 		, "se" : ""//{uint} date_secession_second;
 	}
 
-	, "uid" : "thdtjsdn@gmail.com"//{String};
+	, "mid" : "thdtjsdn@gmail.com"//{String};
 };
 
 oDoc = JSON.stringify( oDoc );

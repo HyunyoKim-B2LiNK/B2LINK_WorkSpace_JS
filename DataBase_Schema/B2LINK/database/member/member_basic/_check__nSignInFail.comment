@@ -1,4 +1,4 @@
 /**
  * @function
- * @param {Document} d { _"id" : NaN, "uid" : "", "upw" : "", "nSignInFail" : NaN, ... }
+ * @param {Document} d { _"id" : NaN, "mid" : "", "mpw" : "", "nSignInFail" : NaN, ... }
  */
