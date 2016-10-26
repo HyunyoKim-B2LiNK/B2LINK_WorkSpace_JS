@@ -37,9 +37,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		, "c" : "Country"
 	};
 
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -137,10 +134,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	var _setClassName__tbody_tr_td = function() { window.b2link.element.setClassName__tbody_tr_td( _el_tbody, _className_td ); };
-
-	var _setClassName__thead_tr_th = function() { window.b2link.element.setClassName__tbody_tr_th( _el_thead, _className_th ); };
-
 	//------------------------------;
 
 	/**
@@ -177,13 +170,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	var _getHeight = function() { return _height; };
-	var _setHeight = function( n ) { _height = n; };
-
-	var _getWidth = function() { return _width; };
-	var _setWidth = function( n ) { _width = n; };
-
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -211,8 +197,5 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		, hide : _hide
 		, req_Data : _req_Data
 		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
 	};
 });

@@ -5,9 +5,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
-	console.log( "arguments : " );
-	console.log( arguments );
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -25,7 +22,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	var $w = window;
-	var $d = window.document;
+	var $d = $w.document;
 
 	var $f0 = window.b2link.element.getElementByClassName;
 
@@ -48,9 +45,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_Complete__Add;
 	var _evt_Complete__CheckOverlap;
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -277,12 +271,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getEvt_Complete__CheckOverlap = function(){ return _evt_Complete__CheckOverlap; };
 	var _setEvt_Complete__CheckOverlap = function( fn ){ _evt_Complete__CheckOverlap = fn; };
 
-	var _getHeight = function(){ return _height; };
-	var _setHeight = function( n ){ _height = n; };
-
-	var _getWidth = function(){ return _width; };
-	var _setWidth = function( n ){ _width = n; };
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -309,9 +297,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		dispose : _dispose
 		, hide : _hide
 		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
 
 		, getEvt_Complete__Add : _getEvt_Complete__Add
 		, setEvt_Complete__Add : _setEvt_Complete__Add
