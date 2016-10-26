@@ -1,5 +1,6 @@
 /**
- * delete email by id
+ * delete email by _id
  * @function
  * @param {String} _id
+ * @return {uint}
  */

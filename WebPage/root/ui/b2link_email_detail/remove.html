@@ -2,7 +2,7 @@
 	<table>
 		<thead class="thead">
 			<tr>
-                <th style="width: 50px;">{{_check}}</th>
+				<th style="width: 50px;">{{_check}}</th>
 				<th style="width: 50px;">{{_id}}</th>
 				<th style="width: 100px;">{{SLD}}</th>
 				<th style="width: 100px;">{{TLD}}</th>
@@ -13,19 +13,21 @@
 		</thead>
 
 		<tbody class="tbody">
-			<tr id="tbody_tr">
-                <td style="width: 50px;"><input type="checkbox" name ="_chk" value="{{_id}}"></td>
-				<td style="width: 50px;">{{_id}}</td>
-				<td style="width: 100px;">{{SLD}}</td>
-				<td style="width: 100px;">{{TLD}}</td>
-				<td style="width: 100px;">{{ccTLD}}</td>
-				<td style="width: 100px;">{{gTLD}}</td>
-				<td style="width: 100px;">{{c}}</td>
+			<tr>
+				<td><input type="checkbox" value="{{_id}}"></td>
+				<td>{{_id}}</td>
+				<td>{{SLD}}</td>
+				<td>{{TLD}}</td>
+				<td>{{ccTLD}}</td>
+				<td>{{gTLD}}</td>
+				<td>{{c}}</td>
 			</tr>
 		</tbody>
 	</table>
-    <div id="btns">
-        <button class="btn_Delete">Delete</button>
+
+	<div id="btns">
+		<button class="btn_Delete">Delete</button>
 		<button class="btn_Cancle">Cancle</button>
-    </div>
+	</div>
+
 </div>
