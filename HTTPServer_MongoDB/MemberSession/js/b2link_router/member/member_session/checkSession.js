@@ -5,7 +5,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /*/
 http://localhost:49320/member_session/checkSession
-http://localhost:49320/member_session/checkSession?uid=thdtjsdn@gmail.com&upw=123qweasd
+http://localhost:49320/member_session/checkSession?mid=thdtjsdn@gmail.com&upw=123qweasd
 //*/
 (function( req, res ){
 	console.log( "- [ S ] - member/member_session/checkSession():void----------" );

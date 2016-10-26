@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 /*/
-http://localhost:49320/member_session/checkSession__Sign_In?uid=thdtjsdn@gmail.com&upw=123qweasd
+http://localhost:49320/member_session/checkSession__Sign_In?mid=thdtjsdn@gmail.com&upw=123qweasd
 http://localhost:49320/member_basic/getAllList__nm
 //*/
 (function( req, res ){
