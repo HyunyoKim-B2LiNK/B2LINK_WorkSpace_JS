@@ -16,6 +16,8 @@ window.b2link_service.common._fn_req = function( url, cbFunction )
 	url += window.b2link_url.member.member_session$getParam( window.b2link.session.getSession() );
 		console.log( "url : " + url );
 
+	url += "&date_cache=" + new Date();
+
 	window.b2link_service.common._fn_res( SUtilXMLHttpReqGet.reqSyncReturn( url, null ).responseText, cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service.common._fn_req():void----------" );
