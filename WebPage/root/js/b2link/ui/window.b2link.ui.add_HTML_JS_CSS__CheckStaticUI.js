@@ -24,7 +24,11 @@ window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI = function( d )
 	if( window.b2link.STATIC.UI.__checkKey( d.key ) )
 	{
 		window.b2link.STATIC.UI.__show( d.key );
-		return window.b2link.STATIC.UI.__getObj( d.key );
+		var o = window.b2link.STATIC.UI.__getObj( d.key );
+
+		if( o[ 1 ].req_Data ) o[ 1 ].req_Data();
+
+		return o;
 	}
 
 	var o = window.b2link.ui.add_HTML_JS_CSS( d );
