@@ -21,8 +21,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = window.document;
@@ -39,9 +42,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @Property {Function} function( result ){}
 	 */
 	var _evt_Complete__SignIn;
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -192,12 +192,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getEvt_Complete__SignIn = function(){ return _evt_Complete__SignIn; };
 	var _setEvt_Complete__SignIn = function( fn ){ _evt_Complete__SignIn = fn; };
 
-	var _getHeight = function(){ return _height; };
-	var _setHeight = function( n ){ _height = n; };
-
-	var _getWidth = function(){ return _width; };
-	var _setWidth = function( n ){ _width = n; };
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -220,15 +214,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-
-		, getEvt_Complete__SignIn : _getEvt_Complete__SignIn
-		, setEvt_Complete__SignIn : _setEvt_Complete__SignIn
-	};
+	//--------------------------------------------------this;
+	var _ = _this;
+	_.dispose = _dispose;
+	_.hide = _hide;
+	_.show = _show;
+	_.getEvt_Complete__SignIn = _getEvt_Complete__SignIn;
+	_.setEvt_Complete__SignIn = _setEvt_Complete__SignIn;
+	//--------------------------------------------------this;
+	return _this;
 });

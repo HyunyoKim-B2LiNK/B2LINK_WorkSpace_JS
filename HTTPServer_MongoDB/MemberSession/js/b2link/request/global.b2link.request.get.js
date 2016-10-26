@@ -11,7 +11,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 global.b2link.request.get = function( url, cbComplete, headers )
 {
-	console.log( "---- [ S ] - global.b2link.request.get():void----------" );
+	global.TtwLog.timeStamp( "---- [ S ] - global.b2link.request.get():void----------" );
 
 	var d = STtwUtilURL.getParseResult( url );
 
@@ -22,9 +22,12 @@ global.b2link.request.get = function( url, cbComplete, headers )
 			, headers : headers ? headers : null
 		}
 		, cbFunctions : { end : cbComplete } };
+
+	global.b2link_router.STATIC.REQUEST_COUNT.P1();
+
 	STtwUtilHttp.request_GET( o );
 
-	console.log( "---- [ E ] - global.b2link.request.get():void----------" );
+	global.TtwLog.timeStamp( "---- [ E ] - global.b2link.request.get():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

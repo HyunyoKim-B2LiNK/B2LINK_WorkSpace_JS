@@ -17,8 +17,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
@@ -98,7 +101,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
 
 		var d = _getDataForQuery();
-		if( d.length > 1 )
+			console.log( "d.length : " + d.length );
+		if( 1 < d.length )
 		{
 			window.b2link_service_list_static.email_detail.remove_ids( d, function( result ){
 				console.log( "result : " + result );
@@ -106,7 +110,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				else _evt_Complete__Delete( result );
 			});
 		}
-		else
+		else if( 1 == d.length )
 		{
 			window.b2link_service_list_static.email_detail.remove_id( d[ 0 ], function( result ){
 				console.log( "result : " + result );
@@ -192,7 +196,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 
 		var r = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
-
+		
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
@@ -267,13 +271,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_req_Data();
 
 	//----------;
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, req_Data : _req_Data
-		, show : _show
-
-		, getEvt_Complete__Delete : _getEvt_Complete__Delete
-		, setEvt_Complete__Delete : _setEvt_Complete__Delete
-	};
+	
+	//--------------------------------------------------this;
+	var _ = _this;
+	_.dispose = _dispose;
+	_.hide = _hide;
+	_.req_Data = _req_Data;
+	_.show = _show;
+	_.getEvt_Complete__Delete = _getEvt_Complete__Delete;
+	_.setEvt_Complete__Delete = _setEvt_Complete__Delete;
+	//--------------------------------------------------this;
+	return _this;
 });
