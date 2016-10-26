@@ -12,10 +12,10 @@ http://localhost:49320/list_staic/email_detail/checkemail_detail_Overlap
 	var t = global.server;//HTTP Server;
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 
-	//use q;
-	//...Custom parameter process;
+	var d = {};
+	global.b2link_validation.list_static.email_detail$check__Overlap( d, q );
 
-	global.b2link.request.get__member_session$checkSessionAndReqMongoDB( req, res, q, "list_static" , "email_detail$check__Overlap(" + JSON.stringify( q ) + ")");
+	global.b2link.request.get__member_session$checkSessionAndReqMongoDB( req, res, q, "list_static", "email_detail$check__Overlap(" + JSON.stringify( d ) + ")" );
 
 	global.RayLog.log( "- [ E ] - email_detail/check__Overlap():void----------" );
 });
