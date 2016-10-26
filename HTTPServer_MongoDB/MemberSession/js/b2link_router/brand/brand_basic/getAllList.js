@@ -9,13 +9,8 @@ http://localhost:49320/brand/brand_basic/getAllList
 (function( req, res ){
 	console.log( "- [ S ] - brand/brand_basic/getAllList():void----------" );
 
-	var t = global.server;//HTTP Server;
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 
-	//use q;
-	//...Custom parameter process;
-
-	//global.b2link.request.get__member_session$checkSessionAndReqMongoDB( req, res, q, "brand", "brand_basic$getAllList()" );
 	global.b2link_router.brand.req__fNm( req, res, q, "brand_basic$getAllList" );
 
 	console.log( "- [ E ] - brand/brand_basic/brand_basic():void----------" );
