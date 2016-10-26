@@ -25,28 +25,26 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var $f0 = window.b2link.element.getElementByClassName;
 
+	var _el_btn_delete = $f0( $el_div, "btn_Delete" );
+	var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
+	
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-    var _el_btn_delete = $f0( $el_div, "btn_Delete" );
-    var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
 
 	var _o_thead_style = {
-        _check : "Selected"
-		,_id : "ID"
+		_check : "Selected"
+		, _id : "ID"
 		, SLD : "Second Level Domain"
 		, TLD : "Top Level Domain"
 		, ccTLD : "Country code Top Level Domain"
 		, gTLD : "Global Top level Domain"
 		, c : "Country"
 	};
-    
-    /**
+
+	/**
 	* @Property {Function} function( result ){}
 	*/
-    var _evt_Complete__Delete;
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
+	var _evt_Complete__Delete;
 
 	//--------------------------------------------------;
 
@@ -67,8 +65,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
-        
-        _el_btn_delete.addEventListener( "click", _evt_mClick__el_btn_delete, false, 0, true );
+
+		_el_btn_delete.addEventListener( "click", _evt_mClick__el_btn_delete, false, 0, true );
 	};
 
 	/**
@@ -77,7 +75,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _removeEvent = function()
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
-        _el_btn_delete.removeEventListener( "click", _evt_mClick__el_btn_delete, false );
+		_el_btn_delete.removeEventListener( "click", _evt_mClick__el_btn_delete, false );
 	};
 
 	/**
@@ -90,30 +88,35 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_setPosition();
 		window.RayLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
 	};
-    
-    /**
+
+	/**
 	 * @function
 	 * @param {MouseEvent} e event
 	 */
-    var _evt_mClick__el_btn_delete = function( e ) 
-    {
-        window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
-        window.b2link_service_list_static.email_detail.remove(
-			_getDataForQuery()
-			, function( result ){s
-				if( !result )
-				{
-					alert( "삭제에 실패 하였습니다. " );
-				}
-				else
-				{
-					_evt_Complete__Delete( result );
-				}
-			}
-		);
-        window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
-        
-    }
+	var _evt_mClick__el_btn_delete = function( e )
+	{
+		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
+		
+		var d = _getDataForQuery();
+		if( d.length > 1 )
+		{
+			window.b2link_service_list_static.email_detail.remove_ids( d, function( result ){
+				console.log( "result : " + result );
+				if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
+				else _evt_Complete__Delete( result );
+			});
+		}
+		else
+		{
+			window.b2link_service_list_static.email_detail.remove_id( d[ 0 ], function( result ){
+				console.log( "result : " + result );
+				if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
+				else _evt_Complete__Delete( result );
+			});
+		}
+		
+		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
+	}
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -129,6 +132,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
+		
+		$f0 = null;
+		_el_btn_delete = null;
+		_el_btn_cancel = null;
+
+		_el_tbody = null;
+		_el_thead = null;
+
+		_o_thead_style = null;
+		_evt_Complete__Delete = null;
 	};
 
 	/**
@@ -152,9 +165,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _res_Data = function( result )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _res_Data:void----------");
-		_setData__tbody( result )
-		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------");
+		window.RayLog.timeStamp( "-- [ S ] - _res_Data:void----------" );
+		_setData__tbody( result );
+		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------" );
 	}
 
 	/**
@@ -169,46 +182,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------------------------------------------------------------------------------------------------;
 
 	//--------------------------------------------------;
-    
-    /**
+	
+	/**
 	 * @function
-	 * @return {Object} [id,id,...]
-	 */
-    var _selectedDeleteRow = function() 
-    {
-        var chk = $d.getElementsByName("_chk"); // check 된 가져온다. 
-        var len = chk.length;
-        for ( var i = 0 ; i < len ; ++i )
-        {
-            if ( chk[i].checked == true )
-            {
-                return chk[i];
-            }
-                
-        }
-        return r;
-    };
-    
-    /**
-	 * @function
-	 * @return {Object} { SLD : "", TLD : "", ccTLD : "", gTLD : "", c : "" }
+	 * @return {Object} {}
 	 */
 	var _getDataForQuery = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 
-        /*/
-		var r = {
-			SLD : _el_input_SLD.value
-			, TLD : _el_input_TLD.value
-			, ccTLD : _el_input_ccTLD.value
-			, gTLD : _el_input_gTLD.value
-			, c : _el_input_country.value
-		};
-        /*/
-        var d = _selectedDeleteRow();
-        var r = { _id : d };
-        //*/
+		var r = window.b2link.ui.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
+		
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
@@ -216,10 +200,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	};
 
 	//--------------------------------------------------;
-
-	var _setClassName__tbody_tr_td = function() { window.b2link.element.setClassName__tbody_tr_td( _el_tbody, _className_td ); };
-
-	var _setClassName__thead_tr_th = function() { window.b2link.element.setClassName__tbody_tr_th( _el_thead, _className_th ); };
 
 	//------------------------------;
 
@@ -245,10 +225,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setPosition = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------");
-		// var t = $el_div;
-		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-		// _width = t.clientWidht;
-		// _height = t.clientHeight;
+		//var t = $el_div;
+		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
+		//_width = t.clientWidht;
+		//_height = t.clientHeight;
 
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------");
 	};
@@ -256,20 +236,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-    
-    /**
+
+	/**
 	 * @function
 	 * @return {Function}
 	 */
 	var _getEvt_Complete__Delete = function(){ return _evt_Complete__Delete; };
 	var _setEvt_Complete__Delete = function( fn ){ _evt_Complete__Delete = fn; };
-
-	var _getHeight = function() { return _height; };
-	var _setHeight = function( w ) { _height = w; };
-
-	var _getWidth = function() { return _width; };
-	var _setWidth = function( w ) { _width = w; };
-
 
 	//--------------------------------------------------;
 
@@ -290,6 +263,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
 		console.log( o );
+
 	_req_Data();
 
 	//----------;
@@ -299,10 +273,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		, req_Data : _req_Data
 		, show : _show
 
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-        
-        , getEvt_Complete__Delete : _getEvt_Complete__Delete
+		, getEvt_Complete__Delete : _getEvt_Complete__Delete
 		, setEvt_Complete__Delete : _setEvt_Complete__Delete
 	};
 });
