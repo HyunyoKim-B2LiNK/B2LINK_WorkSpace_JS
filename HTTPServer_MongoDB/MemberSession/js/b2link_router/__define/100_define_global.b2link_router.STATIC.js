@@ -26,7 +26,7 @@ _.P4 = function(){ _P( 4 ); };
 _.P5 = function(){ _P( 5 ); };
 
 //setInterval( function(){ console.log( "global.b2link_router.STATIC.REQUEST_COUNT : " + _.__n ); }, 1000 );
-setInterval( function(){ console.log( "REQUEST_STANDBY_COUNT : " + _.__n ); }, 1000 );
+//setInterval( function(){ console.log( "REQUEST_STANDBY_COUNT : " + _.__n ); }, 1000 );
 //--------------------------------------------------[ E ] - global.b2link_router.STATIC.REQUEST_COUNT;
 
 //----------------------------------------------------------------------------------------------------[ E ] - global.b2link_router.STATIC;
