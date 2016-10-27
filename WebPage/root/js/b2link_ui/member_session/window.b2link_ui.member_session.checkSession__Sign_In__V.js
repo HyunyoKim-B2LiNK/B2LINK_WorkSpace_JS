@@ -5,11 +5,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
+ * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
 window.b2link_ui.member_session.checkSession__Sign_In__V = function()
 {
 
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui.member_session.checkSession__Sign_In__V():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui.member_session.checkSession__Sign_In__V():{Array}----------" );
 
 	var d = {
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SESSION
@@ -43,7 +44,7 @@ window.b2link_ui.member_session.checkSession__Sign_In__V = function()
 		});
 	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui.member_session.checkSession__Sign_In__V():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui.member_session.checkSession__Sign_In__V():{Array}----------" );
 
 	return o;
 };

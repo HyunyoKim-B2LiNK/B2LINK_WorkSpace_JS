@@ -5,10 +5,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
+ * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
 window.b2link_ui.email_detail.getAllList = function()
 {
-	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui.email_detail.getAllList():void----------" );
+	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui.email_detail.getAllList():{Array}----------" );
 
 	var d = {
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL
@@ -19,7 +20,7 @@ window.b2link_ui.email_detail.getAllList = function()
 	};
 	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
 
-	window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui.email_detail.getAllList():void----------");
+	window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui.email_detail.getAllList():{Array}----------");
 
 	return o;
 }
