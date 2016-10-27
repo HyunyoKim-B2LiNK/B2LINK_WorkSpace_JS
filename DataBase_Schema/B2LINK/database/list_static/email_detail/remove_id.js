@@ -5,7 +5,7 @@ function( _id )
 	printjson( _id );
 
 	//if( !( _id > -1 ) ){
-	if( email_detail$validation__remove_id( _id ) ){
+	if( !email_detail$validation__remove_id( _id ) ){
 		print( "-- [ E ] - email_detail$remove_id():{uint}----------return 0;" );
 		return 0;
 	}
