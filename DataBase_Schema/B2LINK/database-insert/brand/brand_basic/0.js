@@ -1,15 +1,41 @@
-var a = [{
-	"nm_cn" : "爸爸的礼物",
-	"description" : "",
-	"nm_kr" : "파파레서피",
-	"logo_url" : "",
-	"url" : "http://paparecipe.com/",
-	"register_date" : "",
-	"trademark_url" : "",
-	"cd_brand" : "",
-	"nm_us" : "papa recipe",
-	"register_person" : ""
-}];
+var a = [
+	{
+		"_id" : NumberInt( 0 )
+
+		, "_id$member_basic" : NumberInt( 0 )
+
+		, "nm_cn" : "爸爸的礼物"
+		, "nm_kr" : "파파레서피"
+		, "nm_us" : "papa recipe"
+
+		//, "date_register" : { "y" : 2016, "m" : 10, "d" : 27, "ho" : 12, "mi" : 20, "se" : 30 }
+		, "date_register" : [ 2016, 10, 27, 12, 20, 30 ]
+
+		, "description" : ""
+
+		, "url" : "http://paparecipe.com/"
+		, "url_logo" : ""
+		, "url_trademark" : ""
+	}
+	, {
+		"_id" : NumberInt( 1 )
+
+		, "_id$member_basic" : NumberInt( 0 )
+
+		, "nm_cn" : "爸爸的礼物0"
+		, "nm_kr" : "파파레서피0"
+		, "nm_us" : "papa recipe0"
+
+		//, "date_register" : { "y" : 2016, "m" : 10, "d" : 27, "ho" : 12, "mi" : 20, "se" : 30 }
+		, "date_register" : [ 2016, 10, 27, 12, 20, 30 ]
+
+		, "description" : ""
+
+		, "url" : "http://paparecipe0.com/"
+		, "url_logo" : ""
+		, "url_trademark" : ""
+	}
+];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "brand" );
 var io;
