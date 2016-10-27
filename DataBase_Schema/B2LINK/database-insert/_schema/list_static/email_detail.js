@@ -1,5 +1,6 @@
 var d = {
 	_id : "email_detail"
+
 	, SLD : "string"
 	, TLD : "string_2"
 	, ccTLD : "string_2"
