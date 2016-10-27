@@ -1,11 +1,10 @@
 var d = {
-	_id : "email_detail"
+	"_id" : "member_session"
 
-	, SLD : "string"
-	, TLD : "string_2"
-	, ccTLD : "string_2"
-	, gTLD : "string"
-	, c : "string_2"
+	, "sid" : "string"//session id;
+	, "mid" : "string_email"//member id;
+
+	, "d_ex" : "string"//date_expire;
 };
 
 //----------------------------------------------------------------------------------------------------;
