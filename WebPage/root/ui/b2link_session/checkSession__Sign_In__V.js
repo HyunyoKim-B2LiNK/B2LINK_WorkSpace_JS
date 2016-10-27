@@ -84,10 +84,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_signin():void----------" );
 
 		window.b2link_service_member.member_session.checkSession__Sign_In(
-			{ id : _el_input_id.value, pw : _el_input_pw.value }
+			{
+				id : _el_input_id.value
+				, pw : _el_input_pw.value
+			}
 			, function( result ){
 				window.b2link.console.nameAndObject( "_evt_mClick__el_btn_signin result", result );
-				if( result ) _evt_Complete__SignIn( result );
+				if( window.b2link.fn.getResultStatus( result ) ) _evt_Complete__SignIn( result );
 				else
 				{
 					window.b2link.log.error__Signin_failure();

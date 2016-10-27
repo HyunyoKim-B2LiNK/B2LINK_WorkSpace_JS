@@ -18,19 +18,30 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	window.b2link.fn.getResultStatus = function( result )
 	{
-		window.TtwLog.timeStamp( "---- [ S ] - window.b2link.fn.getResultStatus():void----------" );
+		window.TtwLog.timeStamp( "---- [ S ] - window.b2link.fn.getResultStatus():{*}----------" );
+		
+		console.log( "result : " );
+		console.log( result );
 
 		try
 		{
-			if( _fnStore.hasOwnProperty( result ) ) return _fnStore[ result ]();
+			if( _fnStore.hasOwnProperty( result ) )
+			{
+				var r = _fnStore[ result ]();
+					console.log( "r : " );
+					console.log( r );
+				return r;
+			}
 		}
 		catch( er )
 		{
 			console.error( "window.b2link.fn.getResultStatus Error : " + er );
 		}
 
-		window.TtwLog.timeStamp( "---- [ E ] - window.b2link.fn.getResultStatus():void----------" );
+		window.TtwLog.timeStamp( "---- [ E ] - window.b2link.fn.getResultStatus():{*}----------" );
 
+		console.log( "return result : " );
+		console.log( result );
 		return result;
 	};
 })();

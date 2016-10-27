@@ -94,7 +94,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.b2link_service_list_static.email_detail.add(
 			_getDataForQuery()
 			, function( result ){
-				if( !result )
+				if( !window.b2link.fn.getResultStatus( result ) )
 				{
 					alert( "등록 실패." );
 				}
