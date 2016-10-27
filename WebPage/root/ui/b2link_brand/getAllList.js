@@ -4,6 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -27,15 +28,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-    
-	var _o_thead_style = {
-		"_id" : "ID"
-		, "nm_kr" : "브랜드명", "nm_cn" : "브랜드명(중문)", "nm_us" : "브랜드명(영문)"
-		, "url" : "홈페이지"
-	};
 
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
+	var _o_thead_style = {
+		_id : "ID"
+		, nm_kr : "브랜드명", nm_cn : "브랜드명(중문)", nm_us : "브랜드명(영문)"
+		, url : "홈페이지"
+	};
 
 	//--------------------------------------------------;
 
@@ -54,8 +52,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _addEvent = function()
 	{
-	  _removeEvent();
-	  $w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
+		_removeEvent();
+		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 	};
 
 	/**
@@ -72,9 +70,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-	  window.RayLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
-	  _setPosition();
-	  window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
+		_setPosition();
+		window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -91,6 +89,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
+
+		$f0 = null;
+
+		$_el_tbody = null;
+		$_el_thead = null;
+
+		$_o_thead_style = null;
 	};
 
 	/**
@@ -104,7 +109,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-        window.b2link_service_brand.brand_basic.getAllList( _res_Data );
+				window.b2link_service_brand.brand_basic.getAllList( _res_Data );
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
@@ -159,10 +164,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setPosition = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
-		// var t = $el_div;
-		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-		// _width = t.clientWidth;
-		// _height = t.clientHeight;
+		//var t = $el_div;
+		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
+		//_width = t.clientWidth;
+		//_height = t.clientHeight;
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 

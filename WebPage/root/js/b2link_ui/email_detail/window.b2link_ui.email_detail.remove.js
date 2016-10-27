@@ -5,10 +5,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
+ * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
 window.b2link_ui.email_detail.remove = function()
 {
-	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui.email_detail.remove():void----------" );
+	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui.email_detail.remove():{Array}----------" );
 
 	var d = {
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL
@@ -26,13 +27,13 @@ window.b2link_ui.email_detail.remove = function()
 			window.RayLog.timeStamp( "[ S ] - o[ 1 ].setEvt_Complete__Delete( function( result ){----------" );
 			if( window.b2link.fn.getResultStatus( result ) )
 			{
-				//*/
-				o[ 1 ].hide();
 				/*/
-				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
+				//o[ 1 ].hide();
+				////window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
+				//window.b2link_ui.email_detail.getAllList();
+				/*/
+				o[ 1 ].req_Data();
 				//*/
-
-				window.b2link_ui.email_detail.getAllList();
 			}
 			else alert( "삭제 실패." );
 
@@ -40,7 +41,7 @@ window.b2link_ui.email_detail.remove = function()
 		});
 	}
 
-	window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui.email_detail.remove():void----------");
+	window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui.email_detail.remove():{Array}----------");
 
 	return o;
 }

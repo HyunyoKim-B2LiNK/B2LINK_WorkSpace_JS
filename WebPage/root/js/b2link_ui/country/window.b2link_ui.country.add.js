@@ -5,10 +5,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
+ * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
 window.b2link_ui.country.add = function()
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui.country.add():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui.country.add():{Array}----------" );
 
 	var d = {
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_COUNTRY
@@ -40,7 +41,7 @@ window.b2link_ui.country.add = function()
 		});
 	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui.country.add():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui.country.add():{Array}----------" );
 
 	return o;
 };
