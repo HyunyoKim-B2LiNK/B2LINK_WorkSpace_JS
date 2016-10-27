@@ -16,7 +16,7 @@ window.b2link_ui.brand_basic.getAllList = function()
 		, nm : "getAllList"
 		, css_url : "./css_ui/"
 		, css_front_nm : "div__brand-"
-		, key : "getAllList"
+		, key : "brand_basic@\$getAllList"
 	};
 
 	//var o = window.b2link.ui.add_HTML_JS_CSS( d );
