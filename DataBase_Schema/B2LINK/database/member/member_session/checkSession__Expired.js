@@ -1,7 +1,9 @@
 function( d, r )
 {
 	print( "-- [ S ] - member_session$checkSession__Expired():uint----------" );
-	if( r )
+	//if( r )
+	if( r && r.sid )
+	//if( r && r.sid && r.d_ex )
 	{
 		var date_now = new Date();
 		var date_expired = new Date( r.d_ex );
@@ -29,8 +31,10 @@ function( d, r )
 	}
 	else
 	{
-		print( "-- [ E ] - member_session$checkSession__Expired():uint----------else return member_session$checkSession__Sign_In( d );" );
-		return member_session$checkSession__Sign_In( d );
+		var rr = member_session$checkSession__Sign_In( d );
+			print( "result : " + rr );
+		print( "-- [ E ] - member_session$checkSession__Expired():uint----------else return rr;" );
+		return rr;
 		///return member_session$checkSession__Sign_In( r );
 	}
 }

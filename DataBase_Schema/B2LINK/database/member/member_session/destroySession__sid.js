@@ -1,8 +1,10 @@
 function( d )
 {
-	print( "-- [ S ] - member_session$destroySession__sid():void----------" );
+	print( "-- [ S ] - member_session$destroySession__sid():uint----------" );
 
-	print( "-- [ E ] - member_session$destroySession__sid():void----------" );
+	var r = member_session$_destroySession( member_session$_findOne__sid( d.sid ) );
+		print( "result : " + r );
 
-	return member_session$_destroySession( member_session$_findOne__sid( d.sid ) );
+	print( "-- [ E ] - member_session$destroySession__sid():uint----------return r;" );
+	return r;
 }
