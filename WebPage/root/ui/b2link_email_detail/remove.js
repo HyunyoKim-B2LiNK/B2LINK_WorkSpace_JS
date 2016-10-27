@@ -103,25 +103,22 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
+
 		if( 1 < d.length )
-		{
-			window.b2link_service_list_static.email_detail.remove_ids( d, function( result ){
-				console.log( "result : " + result );
-				if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
-				else _evt_Complete__Delete( result );
-			});
-		}
+			window.b2link_service_list_static.email_detail.remove_ids( d, _evt_mClick__el_btn_delete._cb_f0 );
 		else if( 1 == d.length )
-		{
-			window.b2link_service_list_static.email_detail.remove_id( d[ 0 ], function( result ){
-				console.log( "result : " + result );
-				if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
-				else _evt_Complete__Delete( result );
-			});
-		}
+			window.b2link_service_list_static.email_detail.remove_id( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
-	}
+	};
+	_evt_mClick__el_btn_delete._cb_f0 = function( result )
+	{
+		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
+		console.log( "result : " + result );
+		if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
+		else _evt_Complete__Delete( result );
+		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
+	};
 
 	//----------------------------------------------------------------------------------------------------;
 
