@@ -13,16 +13,18 @@ function( d )
 
 	col.insert({
 		_id : NumberInt( len )
-		, cd_brand : r.cd_brand
-		, nm_kr : r.nm_kr
+		, _id$member_basic : r._id$member_basic
+
 		, nm_cn : r.nm_cn
+		, nm_kr : r.nm_kr
 		, nm_us : r.nm_us
-		, url : r.url
-		, logo_url : r.logo_url
-		, trademark_url : r.trademark_url
-		, register_date : r.register_date
-		, register_person : r.register_person
+
+		, date_register : r.date_register
 		, description : r.description
+
+		, url : r.url
+		, url_logo : r.url_logo
+		, url_trademark : r.url_trademark
 	});
 
 	print( "-- [ E ] - brand_basic$addDoc():{uint}----------return 1;" );
