@@ -8,7 +8,7 @@ http://localhost:49320/member_session/checkSession
 http://localhost:49320/member_session/checkSession?mid=thdtjsdn@gmail.com&upw=123qweasd
 //*/
 (function( req, res ){
-	console.log( "- [ S ] - member/member_session/checkSession():void----------" );
+	global.TtwLog.timeStamp( "- [ S ] - member/member_session/checkSession():void----------" );
 
 	var t = global.server;//HTTP Server;
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
@@ -23,14 +23,17 @@ http://localhost:49320/member_session/checkSession?mid=thdtjsdn@gmail.com&upw=12
 		//console.logObjectInformation( qp, "qp" );
 
 	t.req_DB( req, res, q, function( error, result ){
+		global.TtwLog.timeStamp( "-- [ S ] - member/member_session/checkSession::res():void----------" );
 		if( error )
 		{
 			global.b2link.response.send_200_False__ErrorLog( req, res, q, error );
+			global.TtwLog.timeStamp( "-- [ E ] - member/member_session/checkSession::res():void----------if( error ) return;" );
 			return;
 		}
 		if( 0 == result ) global.b2link.response.send_301_DestroySession( req, res );
 		else if( 1 == result ) global.b2link.response.send_200_JSON( req, res, result );
+		global.TtwLog.timeStamp( "-- [ E ] - member/member_session/checkSession::res():void----------" );
 	});
 
-	console.log( "- [ E ] - member/member_session/checkSession():void----------" );
+	global.TtwLog.timeStamp( "- [ E ] - member/member_session/checkSession():void----------" );
 });

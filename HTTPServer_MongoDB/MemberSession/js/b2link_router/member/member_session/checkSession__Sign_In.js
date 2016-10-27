@@ -20,7 +20,7 @@ var __referenceObj = {
  */
 __referenceObj.checkSession__0 = function( req, res, q, qp )
 {
-	console.log( "- [ S ] - member/member_session/checkSession__Sign_In::__checkSession__0():void----------" );
+	global.TtwLog.timeStamp( "- [ S ] - member/member_session/checkSession__Sign_In::__checkSession__0():void----------" );
 
 	var t = __referenceObj.server;//HTTP Server;
 	q.q = "member_session$checkSession__Sign_In(" + JSON.stringify( qp ) + ")";//Query;
@@ -38,7 +38,7 @@ __referenceObj.checkSession__0 = function( req, res, q, qp )
 		else if( 1 == result ) global.b2link.response.send_200_JSON( req, res, { sid : qp.sid, Expires : qp.d_ex, mid : qp.mid } );
 	});
 
-	console.log( "- [ E ] - member/member_session/checkSession__Sign_In::__checkSession__0():void----------" );
+	global.TtwLog.timeStamp( "- [ E ] - member/member_session/checkSession__Sign_In::__checkSession__0():void----------" );
 };
 
 /**
@@ -51,24 +51,26 @@ __referenceObj.checkSession__0 = function( req, res, q, qp )
  */
 __referenceObj.checkSession__1 = function( req, res, q, qp )
 {
-	console.log( "- [ S ] - member/member_session/checkSession__Sign_In::__checkSession__1():void----------" );
+	global.TtwLog.timeStamp( "- [ S ] - member/member_session/checkSession__Sign_In::__checkSession__1():void----------" );
 
 	var t = __referenceObj.server;//HTTP Server;
 	q.q = "member_session$checkSession__Expired__mid(" + JSON.stringify( qp ) + ")";
 
 	t.req_DB( req, res, q, function( error, result ){
+		global.TtwLog.timeStamp( "-- [ S ] - member/member_session/checkSession__Sign_In::__checkSession__1::res():void----------" );
 		if( error )
 		{
 			global.b2link.response.send_200_False__ErrorLog( req, res, q, error );
+			global.TtwLog.timeStamp( "-- [ E ] - member/member_session/checkSession__Sign_In::__checkSession__1::res():void----------if( error ) return;" );
 			return;
 		}
 
 		if( 0 == result ) global.b2link.response.send_301_DestroySession( req, res );
 		else if( 1 == result ) global.b2link.response.send_200_JSON( req, res, { sid : qp.sid, Expires : qp.d_ex, mid : qp.mid } );
+		global.TtwLog.timeStamp( "-- [ E ] - member/member_session/checkSession__Sign_In::__checkSession__1::res():void----------" );
 	});
 
-
-	console.log( "- [ E ] - member/member_session/checkSession__Sign_In::__checkSession__1():void----------" );
+	global.TtwLog.timeStamp( "- [ E ] - member/member_session/checkSession__Sign_In::__checkSession__1():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;
@@ -83,11 +85,13 @@ http://localhost:49320/member_session/checkSession__Sign_In?mid=thdtjsdn@gmail.c
 http://localhost:49320/member_session/checkSession__Sign_In?mid=thdtjsdn@gmail.com&upw=123qweasd
 //*/
 (function( req, res ){
-	console.log( "- [ S ] - member/member_session/checkSession__Sign_In():void----------" );
+	global.TtwLog.timeStamp( "- [ S ] - member/member_session/checkSession__Sign_In():void----------" );
 
 	var t = __referenceObj.server = global.server;//HTTP Server;
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 	var qp = global.b2link.session.get_or_create__Session( req, res, q );//Query Parameter;
+
+	console.logObjectInformation( q, "q" );
 
 	qp.mid = q.mid;
 	qp.mpw = q.mpw;
@@ -99,5 +103,5 @@ http://localhost:49320/member_session/checkSession__Sign_In?mid=thdtjsdn@gmail.c
 	console.log( "qp.bFirstSession : " + qp.bFirstSession );
 	__referenceObj[ "checkSession__" + qp.bFirstSession ]( req, res, q, qp );
 
-	console.log( "- [ E ] - member/member_session/checkSession__Sign_In():void----------" );
+	global.TtwLog.timeStamp( "- [ E ] - member/member_session/checkSession__Sign_In():void----------" );
 });
