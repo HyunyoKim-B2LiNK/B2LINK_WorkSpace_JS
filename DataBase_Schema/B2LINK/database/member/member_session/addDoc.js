@@ -3,6 +3,10 @@ function( d )
 	print( "-- [ S ] - member_session$addDoc():uint----------" );
 	//printjson( d );
 
+	var o = member_session$_findOne__sid( d.sid );
+	if( o && o.mid != d.mid ) return 0;
+
+	//*/
 	if( 0 == member_basic$sign_in( d ) )
 	{
 		print( "----------" );
@@ -19,12 +23,10 @@ function( d )
 		print( "-- [ E ] - member_session$addDoc():uint----------if( 0 == member_basic$sign_in( d ) ) return 0;" );
 		return 0;
 	}
+	//*/
 
-	//print( 0 )
 	var len = member_basic$findOne__mid( d.mid )._id;
-	//print( 1 );
-	print( "len : " + len );
-	//print( 2 );
+		print( "len : " + len );
 
 	var r = member_session$validation__addDoc( d );
 	if( 0 == r )
@@ -38,6 +40,8 @@ function( d )
 	var o = member_session$_findOne___id( len );
 	if( o )
 	{
+		print( "!!member_session$_update__Session({" );
+		printjson( r );
 		member_session$_update__Session({
 			_id : len
 			, d_ex : r.d_ex//date_expire;
@@ -47,9 +51,12 @@ function( d )
 	}
 	else
 	{
+		print( "!!member_session$_getCol().insert({" );
+		printjson( r );
 		member_session$_getCol().insert({
 			_id : NumberInt( len )
 			, d_ex : r.d_ex//date_expire;
+			//, d_ex : new Date()//date_expire;
 			, mid : r.mid//member id;
 			, sid : r.sid//session id;
 		});

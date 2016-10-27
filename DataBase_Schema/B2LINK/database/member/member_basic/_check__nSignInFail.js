@@ -7,6 +7,6 @@ function( d )
 	else r = 1;
 	print( "d.nSignInFail : " + d.nSignInFail );
 
-	print( "-- [ E ] - member_basic$_check__nSignInFail():void----------" );
+	print( "-- [ E ] - member_basic$_check__nSignInFail():void----------return r;" );
 	return r;
 }
