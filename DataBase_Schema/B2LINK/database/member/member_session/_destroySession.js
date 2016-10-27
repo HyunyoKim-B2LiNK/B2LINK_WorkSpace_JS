@@ -1,7 +1,7 @@
 function( o )
 {
 	print( "-- [ S ] - member_session$_destroySession():void----------" );
-	//printjson( o );
+	printjson( o );
 	if( o )
 	{
 		if( o.d_ex )

@@ -4,7 +4,11 @@ function( d )
 	//printjson( d );
 
 	var o = member_session$_findOne__sid( d.sid );
-	if( o && o.mid != d.mid ) return 0;
+	if( o && o.mid != d.mid )
+	{
+		print( "-- [ E ] - member_session$addDoc():uint----------if( o && o.mid != d.mid ) return 0;" );
+		return 0;
+	}
 
 	//*/
 	if( 0 == member_basic$sign_in( d ) )
