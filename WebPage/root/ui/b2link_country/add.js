@@ -5,9 +5,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
-	console.log( "arguments : " );
-	console.log( arguments );
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
