@@ -35,7 +35,7 @@ window.b2link_ui.member_session.checkSession__Sign_In__V = function()
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
 
-				window.b2link_ui.member_basic.getAllList();
+				//window.b2link_ui.member_basic.getAllList();
 				//window.b2link_ui.member_basic.getAllList__nm();
 			}
 			else window.b2link.log.error__Signin_failure();
