@@ -18,13 +18,14 @@ function( d )
 	else if( 0 == n )//세션 문서가 없음;
 	{
 		print( "-- [ E ] - member_session$checkSession__Expired__mid():{uint}----------return 0;" );
+		member_session$_destroySession( n );//의미 없음;
 		return 0;
 	}
 	else//동일한 세션 문서가 있음;
 	{
 		if( n.mid == d.mid )
 		{
-			var nExpired = member_session$checkSession__Expired( d, n );
+			var nExpired = member_session$checkSession__Expired( d.sid, n );
 			print( "nExpired : " + nExpired );
 			print( "-- [ E ] - member_session$checkSession__Expired__mid():{uint}----------if( n.mid == d.mid ) return nExpired;" );
 			return nExpired;

@@ -2,10 +2,6 @@
  * Session Object 추가
  * @function
  * @param {Object} d
- * <code>
- * {
- * }
- * </code>
  * @return {uint} 0, 1
  *
  * @example

@@ -27,7 +27,7 @@ function( d )
 	}
 
 	//Check - member_basic.member password;
-	if( 1 == member_basic$_check__Password( r, d.mpw ) )//'mpw'가 일치한다.;
+	if( 1 == member_basic$_confirm__Password( r, d.mpw ) )//'mpw'가 일치한다.;
 	{
 		member_basic$validation__sign_in( d );
 		print( "-- [ E ] - member_basic$sign_in():{uint}----------return 1;" );

@@ -17,7 +17,7 @@ http://localhost:49320/member_session/destroySession?sid="";
 	//global.b2link.request.get__member_session$checkSessionAndReqMongoDB( req, res, q, "member", "member_session$destroySession__sid(" + JSON.stringify( qp ) + ")" );
 
 	q.db = "member";
-	q.q = "member_session$destroySession__sid(" + JSON.stringify( qp ) + ")";
+	q.q = "member_session$destroySession__sid(" + JSON.stringify( qp.sid ) + ")";
 
 	t.req_DB( req, res, q, function( error, result ){
 		global.TtwLog.timeStamp( "-- [ S ] - member/member_session/checkSession__Sign_In::__checkSession__1::res():void----------" );
