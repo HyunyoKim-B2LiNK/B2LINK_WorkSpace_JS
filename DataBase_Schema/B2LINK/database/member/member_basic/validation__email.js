@@ -1,6 +1,6 @@
 function( d )
 {
-	print( "-- [ S ] - member_basic$validation__email():void----------" );
+	print( "-- [ S ] - member_basic$validation__email():{uint}----------" );
 	if( d.email || ( d.email_id && d.email_domain ) )
 	{
 		if( d.email )
@@ -12,13 +12,15 @@ function( d )
 		else if( d.email_id && d.email_domain ) d.email = d.email_id + "@" +  d.email_domain;
 		else
 		{
-			print( "-- [ E ] - member_basic$validation__email():void----------" );
+			print( "'email', 'email_id', 'email_domain' none." );
+			print( "-- [ E ] - member_basic$validation__email():{uint}----------return 0;" );
 			return 0;
 		}
 
-		print( "-- [ E ] - member_basic$validation__email():void----------" );
+		print( "-- [ E ] - member_basic$validation__email():{uint}----------return 1;" );
 		return 1;
 	}
-	print( "-- [ E ] - member_basic$validation__email():void----------" );
+
+	print( "-- [ E ] - member_basic$validation__email():{uint}----------return 0;" );
 	return 0;
 }

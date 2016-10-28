@@ -1,57 +1,82 @@
 function( d )
 {
-	print( "-- [ S ] - member_session$addDoc():uint----------" );
-	//printjson( d );
+	print( "-- [ S ] - member_session$addDoc():{uint}----------" );
 
-	var o = member_session$_findOne__sid( d.sid );
-	if( o && o.mid != d.mid )
+	print( "Input d : " );
+	printjson( d );
+
+	//--------------------------------------------------;
+
+	//Confirm - member_basic.member id;
+	var bo = member_basic$findOne__mid( d.mid );
+	if( !bo )//bo == null;
 	{
-		print( "-- [ E ] - member_session$addDoc():uint----------if( o && o.mid != d.mid ) return 0;" );
+		print( "var r = member_basic$findOne__mid( d.mid );" );
+		print( new Error( "[ Error ] - The account does not exist. - " + d.mid ) );
+		print( new Error( "[ Error ] - 이 계정은 존재하지 않음. - " + d.mid ) );
+		print( "-- [ E ] - member_session$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
 
-	//*/
-	if( 0 == member_basic$sign_in( d ) )
-	{
-		print( "----------" );
-		print( "----------" );
-		print( "----------" );
-		print( "----------" );
-		print( "----------" );
-		print( "Error : sign in fail" );
-		print( "----------" );
-		print( "----------" );
-		print( "----------" );
-		print( "----------" );
-		print( "----------" );
-		print( "-- [ E ] - member_session$addDoc():uint----------if( 0 == member_basic$sign_in( d ) ) return 0;" );
-		return 0;
-	}
-	//*/
+	//--------------------------------------------------;
 
-	var len = member_basic$findOne__mid( d.mid )._id;
-		print( "len : " + len );
-
-	var r = member_session$validation__addDoc( d );
-	if( 0 == r )
+	//Confirm - member_session.member id;
+	var so = member_session$_findOne__mid( d.mid );
+	if( so )//o == null;
 	{
-		print( "-- [ E ] - member_session$addDoc():uint----------if( 0 == r ) return 0;" );
+		print( "var so = member_session$_findOne__mid( d.mid );" );
+		print( new Error( "[ Error ] - This account exists. - " + d.mid ) );
+		print( new Error( "[ Error ] - 이 계정 존재함. - " + d.mid ) );
+		member_session$_destroySession( so );
+		print( "-- [ E ] - member_session$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
 
-	//print( 3 );
+	//--------------------------------------------------;
 
-	var o = member_session$_findOne___id( len );
-	if( o )
+	var so = member_session$_findOne__sid( d.sid );
+	if( so && so.mid != d.mid )
 	{
-		print( "!!member_session$_update__Session({" );
-		printjson( r );
+		print( "var so = member_session$_findOne__sid( d.sid );" );
+		print( new Error( "[ Error ] - This account exists. - " + d.mid ) );
+		print( new Error( "[ Error ] - 이 계정 존재함. - " + d.mid ) );
+		member_session$_destroySession( so );
+		print( "-- [ E ] - member_session$addDoc():{uint}----------return 0;" );
+		return 0;
+	}
+	else
+	{
 		member_session$_update__Session({
 			_id : len
 			, d_ex : r.d_ex//date_expire;
 			, mid : r.mid//member id;
 			, sid : r.sid//session id;
 		});
+	}
+
+	//--------------------------------------------------;
+
+	//----------------------------------------------------------------------------------------------------;
+
+	//--------------------------------------------------;
+
+	var n = member_session$validation__addDoc( d );
+	if( 0 == n )
+	{
+		print( new Error( "[ Error ] - member_session$validation__addDoc" ) );
+		print( "-- [ E ] - member_session$addDoc():{uint}----------return 0;" );
+		return 0;
+	}
+
+	//--------------------------------------------------;
+
+
+	var o = member_session$_findOne___id( bo._id );
+	if( o )
+	{
+		print( "!!member_session$_update__Session({" );
+		printjson( r );
+
 	}
 	else
 	{
@@ -66,6 +91,6 @@ function( d )
 		});
 	}
 
-	print( "-- [ E ] - member_session$addDoc():uint----------return 1;" );
+	print( "-- [ E ] - member_session$addDoc():{uint}----------return 1;" );
 	return 1;
 }

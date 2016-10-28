@@ -12,8 +12,8 @@ function( d )
 	if( !o )//o == null;
 	{
 		print( "var r = member_basic$findOne__mid( d.mid );" );
-		print( new Error( "The account does not exist. - " + d.mid ) );
-		print( new Error( "이 계정은 존재하지 않음. - " + d.mid ) );
+		print( new Error( "[ Error ] - The account does not exist. - " + d.mid ) );
+		print( new Error( "[ Error ] - 이 계정은 존재하지 않음. - " + d.mid ) );
 		print( "-- [ E ] - member_session$checkSession__Sign_In():{uint}----------return 0;" );
 		return 0;
 	}
@@ -23,8 +23,8 @@ function( d )
 	if( !n )//n == 0;
 	{
 		print( "var n = member_basic$_confirm__Password___update__nSignInFail( r, d.mpw );" );
-		print( new Error( "It exceeded the number of failed authentication account. - " + d.mid + " - Count : " + n ) );
-		print( new Error( "이 계정의 인증 실패 횟수 초과. - " + d.mid + " - Count : " + n ) );
+		print( new Error( "[ Error ] - It exceeded the number of failed authentication account. - " + d.mid + " - Count : " + n ) );
+		print( new Error( "[ Error ] - 이 계정의 인증 실패 횟수 초과. - " + d.mid + " - Count : " + n ) );
 		print( "-- [ E ] - member_session$checkSession__Sign_In():{uint}----------return 0;" );
 		return 0;
 	}
@@ -36,8 +36,8 @@ function( d )
 	if( -1 == n )
 	{
 		print( "var n = member_session$_confirm__sessionID( d.sid );" );
-		print( new Error( "Session Error. - sid : " + d.sid ) );
-		print( new Error( "세션 오류. - sid : " + d.sid ) );
+		print( new Error( "[ Error ] - Session Error. - sid : " + d.sid ) );
+		print( new Error( "[ Error ] - 세션 오류. - sid : " + d.sid ) );
 		print( "-- [ E ] - member_session$checkSession__Sign_In():{uint}----------return 0;" );
 		return 0;
 	}
@@ -79,8 +79,8 @@ function( d )
 		else
 		{
 			member_session$_destroySession( n );
-			print( new Error( "Do the same session connection - Remove Session. - mid : " + n.mid + "\n sid : " + n.sid ) );
-			print( new Error( "동일한 세션이 접속 - 세션 제거. - mid : " + n.mid + "\n sid : " + n.sid ) );
+			print( new Error( "[ Error ] - Do the same session connection - Remove Session. - mid : " + n.mid + "\n sid : " + n.sid ) );
+			print( new Error( "[ Error ] - 동일한 세션이 접속 - 세션 제거. - mid : " + n.mid + "\n sid : " + n.sid ) );
 			print( "-- [ E ] - member_session$checkSession__Sign_In():{uint}----------return 0;" );
 			return 0;
 		}
