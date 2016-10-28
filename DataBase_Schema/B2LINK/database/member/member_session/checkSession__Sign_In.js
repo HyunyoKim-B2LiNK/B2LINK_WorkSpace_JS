@@ -71,7 +71,7 @@ function( d )
 	{
 		if( n.mid == d.mid )
 		{
-			var nExpired = member_session$checkSession__Expired( d, n );
+			var nExpired = member_session$checkSession__Expired( d.sid, n );
 			print( "nExpired : " + nExpired );
 			print( "-- [ E ] - member_session$checkSession__Sign_In():{uint}----------if( n.mid == d.mid ) return nExpired;" );
 			return nExpired;
