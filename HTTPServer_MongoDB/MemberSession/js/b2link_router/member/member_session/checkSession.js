@@ -18,7 +18,7 @@ http://localhost:49320/member_session/checkSession?mid=thdtjsdn@gmail.com&upw=12
 	q.db = "member";
 
 	//Request Database;
-	q.q = "member_session$checkSession__Expired__sid(" + JSON.stringify( qp ) + ")";
+	q.q = "member_session$checkSession__Expired__sid(" + JSON.stringify( qp.sid ) + ")";
 		//console.logObjectInformation( q, "q" );
 		//console.logObjectInformation( qp, "qp" );
 
