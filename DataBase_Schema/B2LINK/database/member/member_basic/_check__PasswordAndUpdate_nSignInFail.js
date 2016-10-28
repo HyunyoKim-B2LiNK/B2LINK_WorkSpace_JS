@@ -1,7 +1,10 @@
 function( o, mpw )
 {
 	print( "-- [ S ] - member_basic$_check__PasswordAndUpdate_nSignInFail():void----------" );
-	if( 0 == member_basic$_check__Password( o, mpw ) )
+
+	//Check - member_basic.member password;
+	var n = member_basic$_check__Password( o, mpw );
+	if( 0 == n )
 	{
 		print( "o.nSignInFail : " + o.nSignInFail );
 		member_basic$_update__nSignInFail( o._id, ++o.nSignInFail );

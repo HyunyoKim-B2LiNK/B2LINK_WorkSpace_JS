@@ -15,11 +15,27 @@ var _fn_res = function( result, cbFunction )
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_session.checkSession__Sign_In.res():void----------" );
 
-	window.b2link.console.nameAndObject( "window.b2link_service_member.member_session.checkSession__Sign_In.res result", result );
+	console.log( "typeof result : " + typeof( result ) );
+	console.log( result );
 
-	var r = JSON.parse( result );
-	window.b2link.session.setSession( r );
-	cbFunction( r );
+	var r = window.b2link.fn.getResultStatus( result );
+	if( 0 == r || "destroySession" == r )
+	{
+		window.b2link.session.removeSession();
+		window.b2link.log.error__Signin_failure();
+	}
+	else if( 1 == r )
+	{
+		window.b2link.session.removeSession();
+		window.b2link.log.error__Signin_failure();
+	}
+	else
+	{
+		var r = JSON.parse( result );
+		console.log( "typeof r : " + typeof( r ) );
+		window.b2link.session.setSession( r );
+		cbFunction( r );
+	}
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_session.checkSession__Sign_In.res():void----------" );
 };

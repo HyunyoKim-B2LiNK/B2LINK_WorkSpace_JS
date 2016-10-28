@@ -13,6 +13,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 global.b2link.request.get__member_session$checkSessionAndReqMongoDB = function( req, res, q, db, nq )
 {
+	global.TtwLog.timeStamp( "\n" );
 	global.TtwLog.timeStamp( "---- [ S ] - global.b2link.request.get__member_session$checkSessionAndReqMongoDB():void----------" );
 
 	var t = global.server;
@@ -23,8 +24,9 @@ global.b2link.request.get__member_session$checkSessionAndReqMongoDB = function( 
 		{
 			console.log( "typeof( result ) : " + typeof( result ) );
 			console.log( "result : " + result );
+			console.log( "global.b2link.fn.getResultStatus( result ) : " + global.b2link.fn.getResultStatus( result ) );
 
-			if( "false" == result )
+			if( 0 == global.b2link.fn.getResultStatus( result ) )
 			{
 				global.b2link.response.send_200_False( req, res );
 
@@ -56,6 +58,7 @@ global.b2link.request.get__member_session$checkSessionAndReqMongoDB = function( 
 	);
 
 	global.TtwLog.timeStamp( "---- [ E ] - global.b2link.request.get__member_session$checkSessionAndReqMongoDB():void----------" );
+	global.TtwLog.timeStamp( "\n" );
 };
 
 //----------------------------------------------------------------------------------------------------;

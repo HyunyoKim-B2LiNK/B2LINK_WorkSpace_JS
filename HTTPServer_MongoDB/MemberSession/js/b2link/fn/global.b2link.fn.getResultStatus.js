@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/fn/window.b2link.fn.getResultStatus.js";
+var fileNm = "js/b2link/fn/global.b2link.fn.getResultStatus.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -16,9 +16,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @function
 	 * @param {*} result
 	 */
-	window.b2link.fn.getResultStatus = function( result )
+	global.b2link.fn.getResultStatus = function( result )
 	{
-		window.TtwLog.timeStamp( "---- [ S ] - window.b2link.fn.getResultStatus():{*}----------" );
+		global.TtwLog.timeStamp( "---- [ S ] - global.b2link.fn.getResultStatus():{*}----------" );
 
 		console.log( "Input result : " );
 		console.log( result );
@@ -34,10 +34,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		}
 		catch( er )
 		{
-			console.error( "window.b2link.fn.getResultStatus Error : " + er );
+			console.error( "global.b2link.fn.getResultStatus Error : " + er );
 		}
 
-		window.TtwLog.timeStamp( "---- [ E ] - window.b2link.fn.getResultStatus():{*}----------" );
+		global.TtwLog.timeStamp( "---- [ E ] - global.b2link.fn.getResultStatus():{*}----------return 0;" );
 		console.log( "Return result : " );
 		console.log( result );
 		return result;

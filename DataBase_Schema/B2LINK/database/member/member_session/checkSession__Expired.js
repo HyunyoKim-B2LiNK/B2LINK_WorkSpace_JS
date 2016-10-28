@@ -13,7 +13,6 @@ function( d, r )
 
 		if( date_now < date_expired && d.sid == r.sid )
 		{
-
 			member_session_log$addDoc( d );
 			//Session Check Log;
 			print( "-- [ E ] - member_session$checkSession__Expired():uint----------if( date_now < date_expired && d.sid == r.sid ) return 1;" );
@@ -29,6 +28,8 @@ function( d, r )
 			return 0;
 		}
 	}
+
+	/*/
 	else
 	{
 		var rr = member_session$checkSession__Sign_In( d );
@@ -37,4 +38,5 @@ function( d, r )
 		return rr;
 		///return member_session$checkSession__Sign_In( r );
 	}
+	//*/
 }
