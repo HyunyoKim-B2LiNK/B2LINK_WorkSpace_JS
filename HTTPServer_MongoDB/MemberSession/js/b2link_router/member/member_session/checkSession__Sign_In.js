@@ -85,6 +85,7 @@ http://localhost:49320/member_session/checkSession__Sign_In?mid=thdtjsdn@gmail.c
 http://localhost:49320/member_session/checkSession__Sign_In?mid=thdtjsdn@gmail.com&upw=123qweasd
 //*/
 (function( req, res ){
+	console.log( "\n" );console.log( "\n" );console.log( "\n" );console.log( "\n" );console.log( "\n" );
 	global.TtwLog.timeStamp( "- [ S ] - member/member_session/checkSession__Sign_In():void----------" );
 
 	var t = __referenceObj.server = global.server;//HTTP Server;
@@ -104,4 +105,5 @@ http://localhost:49320/member_session/checkSession__Sign_In?mid=thdtjsdn@gmail.c
 	__referenceObj[ "checkSession__" + qp.bFirstSession ]( req, res, q, qp );
 
 	global.TtwLog.timeStamp( "- [ E ] - member/member_session/checkSession__Sign_In():void----------" );
+	console.log( "\n" );console.log( "\n" );console.log( "\n" );console.log( "\n" );console.log( "\n" );
 });

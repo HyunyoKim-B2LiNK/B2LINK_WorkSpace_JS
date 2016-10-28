@@ -10,18 +10,20 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 global.b2link.response.send_301_DestroySession = function( req, res )
 {
-	console.log( "---- [ S ] - global.b2link.response.send_301_DestroySession():void----------" );
-	console.log( "req.url : " + req.url );
+	global.TtwLog.timeStamp( "\n" );
+	global.TtwLog.timeStamp( "---- [ S ] - global.b2link.response.send_301_DestroySession():void----------" );
+	global.TtwLog.timeStamp( "req.url : " + req.url );
 	if( res )
 	{
-		console.log( "global.b2link_router.CONFIG.URL.MEMBER.MEMBER_SESSION.DESTROY_SESSION : " + global.b2link_router.CONFIG.URL.MEMBER.MEMBER_SESSION.DESTROY_SESSION );
+		global.TtwLog.timeStamp( " : " + global.b2link_router.CONFIG.URL.MEMBER.MEMBER_SESSION.DESTROY_SESSION );
 		res.writeHead( 301, {
 			Location : global.b2link_router.CONFIG.URL.MEMBER.MEMBER_SESSION.DESTROY_SESSION
 		});
 		res.end();
 	}
 
-	console.log( "---- [ E ] - global.b2link.response.send_301_DestroySession():void----------" );
+	global.TtwLog.timeStamp( "---- [ E ] - global.b2link.response.send_301_DestroySession():void----------" );
+	global.TtwLog.timeStamp( "\n" );
 };
 
 //----------------------------------------------------------------------------------------------------;
