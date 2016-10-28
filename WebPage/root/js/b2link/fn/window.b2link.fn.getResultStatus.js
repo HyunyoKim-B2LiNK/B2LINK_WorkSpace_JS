@@ -19,8 +19,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.b2link.fn.getResultStatus = function( result )
 	{
 		window.TtwLog.timeStamp( "---- [ S ] - window.b2link.fn.getResultStatus():{*}----------" );
-		
-		console.log( "result : " );
+
+		console.log( "Input result : " );
 		console.log( result );
 
 		try
@@ -28,8 +28,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			if( _fnStore.hasOwnProperty( result ) )
 			{
 				var r = _fnStore[ result ]();
-					console.log( "r : " );
-					console.log( r );
+					console.log( "Return result : " + r );
 				return r;
 			}
 		}
@@ -39,8 +38,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		}
 
 		window.TtwLog.timeStamp( "---- [ E ] - window.b2link.fn.getResultStatus():{*}----------" );
-
-		console.log( "return result : " );
+		console.log( "Return result : " );
 		console.log( result );
 		return result;
 	};

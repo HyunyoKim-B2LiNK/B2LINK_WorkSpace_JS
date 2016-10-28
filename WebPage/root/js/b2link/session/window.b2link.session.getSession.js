@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/fn/window.b2link.session.getSession.js";
+var fileNm = "js/b2link/session/window.b2link.session.getSession.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -13,7 +13,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	window.b2link.session.getSession = function()
 	{
-		window.TtwLog.timeStamp( "---- [ S ] - window.b2link.session.getSession():void----------" );
+		window.TtwLog.timeStamp( "---- [ S ] - window.b2link.session.getSession():{Object}----------" );
 		var t = window.sessionStorage;
 
 		var r = {};
@@ -24,9 +24,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			io = _a[ i ];
 			r[ io ] = t.getItem( io );
 			if( !r[ io ] ) delete r[ io ];
+			if( "" == r[ io ] ) delete r[ io ];
 		}
 
 		return r;
-		window.TtwLog.timeStamp( "---- [ E ] - window.b2link.session.getSession():void----------" );
+		window.TtwLog.timeStamp( "---- [ E ] - window.b2link.session.getSession():{Object}----------" );
 	};
 });

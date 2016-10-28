@@ -30,7 +30,7 @@ window.b2link_ui.member_session.checkSession__Sign_In__V = function()
 			if( window.b2link.fn.getResultStatus( result ) )
 			{
 				//*/
-				o[ 1 ].hide();
+				//o[ 1 ].hide();
 				/*/
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
