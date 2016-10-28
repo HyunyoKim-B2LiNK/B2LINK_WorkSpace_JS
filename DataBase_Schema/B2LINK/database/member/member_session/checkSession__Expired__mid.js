@@ -1,23 +1,41 @@
 function( d )
 {
-	print( "-- [ S ] - member_session$checkSession__Expired__mid():uint----------" );
+	print( "-- [ S ] - member_session$checkSession__Expired__mid():{uint}----------" );
 
-	print( "- d -" );
+	print( "Input d : " );
 	printjson( d );
 
-	var r = member_session$_findOne__mid( d.mid );
-	print( "- r -" );
-	printjson( r );
-	if( !r )
+	//Confirm - member_session.session id;
+	var n = member_session$_confirm__sessionID( d.sid );
+	if( -1 == n )
 	{
-		//print( "-- [ E ] - member_session$checkSession__Expired__mid():uint----------if( !r ) return 0;" );
-		//return 0;
-		print( "-- [ E ] - member_session$checkSession__Expired__mid():uint----------if( !r ) destroySession__sid( d );" );
-		member_session$destroySession__sid( d );
+		print( "var n = member_session$_confirm__sessionID( d.sid );" );
+		print( new Error( "Session Error. - sid : " + d.sid ) );
+		print( new Error( "세션 오류. - sid : " + d.sid ) );
+		print( "-- [ E ] - member_session$checkSession__Expired__mid():{uint}----------return 0;" );
+		return 0;
 	}
-
-	var rr = member_session$checkSession__Expired( d, r );
-		print( "result : " + rr );
-	print( "-- [ E ] - member_session$checkSession__Expired__mid():uint----------return rr;" );
-	return rr;
+	else if( 0 == n )//세션 문서가 없음;
+	{
+		print( "-- [ E ] - member_session$checkSession__Expired__mid():{uint}----------return 0;" );
+		return 0;
+	}
+	else//동일한 세션 문서가 있음;
+	{
+		if( n.mid == d.mid )
+		{
+			var nExpired = member_session$checkSession__Expired( d, n );
+			print( "nExpired : " + nExpired );
+			print( "-- [ E ] - member_session$checkSession__Expired__mid():{uint}----------if( n.mid == d.mid ) return nExpired;" );
+			return nExpired;
+		}
+		else
+		{
+			member_session$_destroySession( n );
+			print( new Error( "Do the same session connection - Remove Session. - mid : " + n.mid + "\n sid : " + n.sid ) );
+			print( new Error( "동일한 세션이 접속 - 세션 제거. - mid : " + n.mid + "\n sid : " + n.sid ) );
+			print( "-- [ E ] - member_session$checkSession__Expired__mid():{uint}----------return 0;" );
+			return 0;
+		}
+	}
 }
