@@ -104,10 +104,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
 
-		if( 1 < d.length )
-			window.b2link_service_list_static.email_detail.remove_ids( d, _evt_mClick__el_btn_delete._cb_f0 );
-		else if( 1 == d.length )
-			window.b2link_service_list_static.email_detail.remove_id( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
+		var t = window.b2link_service_list_static.email_detail;
+		if( 1 < d.length ) t.remove_ids( d, _evt_mClick__el_btn_delete._cb_f0 );
+		else if( 1 == d.length ) t.remove_id( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
 	};
