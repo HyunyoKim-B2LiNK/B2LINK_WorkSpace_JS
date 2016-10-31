@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_email_detail/remove.js";
+var fileNm = "./ui/b2link_member/remove.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -37,12 +37,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _o_thead_style = {
 		_check : "Selected"
-		, _id : "ID"
-		, SLD : "Second Level Domain"
-		, TLD : "Top Level Domain"
-		, ccTLD : "Country code Top Level Domain"
-		, gTLD : "Global Top level Domain"
-		, c : "Country"
+		, "_id" : "ID"
+		, "bConn" : "접속 상태", "email" : "E-MAIL", "nSignInFail" : "로그인 실패 횟수"
+		, "nm.a" : "이름", "nm_cn.a" : "이름(중문)", "nm_kr.a" : "이름(한글)", "nm_us.a" : "이름(영문)"
+		, "rank" : "등급", "mid" : "MEMBER ID"
 	};
 
 	/**
@@ -104,7 +102,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
 
-		var t = window.b2link_service_list_static.email_detail;
+		var t = window.b2link_service_list_member.member_basic;
 		if( 1 < d.length ) t.remove_ids( d, _evt_mClick__el_btn_delete._cb_f0 );
 		else if( 1 == d.length ) t.remove_id( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
 
@@ -156,7 +154,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-		window.b2link_service_list_static.email_detail.getAllList( _res_Data );
+		window.b2link_service_member.member_basic.getAllList( _res_Data );
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
