@@ -3,8 +3,8 @@ var fileNm = "./ui/b2link_email_detail/remove.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
-(function(url, $el_div){
-	
+(function( url, $el_div ){
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -18,10 +18,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 
 	//--------------------------------------------------;
-	
+
 	var _this = {};
 
 	var $w = window;
@@ -194,7 +194,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 
 		var r = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
-		
+
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
@@ -269,7 +269,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_req_Data();
 
 	//----------;
-	
+
 	//--------------------------------------------------this;
 	var _ = _this;
 	_.dispose = _dispose;
