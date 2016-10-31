@@ -23,7 +23,7 @@ global.b2link_router.brand.req__fn = function( req, res, q, fn )
 	 global.RayLog.log( "----- [ E ] - global.b2link_router.brand.req__fn():void----------" );
 };
 
- /**
+/**
  * @function
  * @param {} req
  * @param {} res
@@ -39,7 +39,7 @@ global.b2link_router.brand.req__fNm = function( req, res, q, fNm )
 	 global.RayLog.log( "----- [ E ] - global.b2link_router.brand.req__fNm():void----------" );
 };
 
- /**
+/**
  * @function
  * @param {} req
  * @param {} res
@@ -56,7 +56,24 @@ global.b2link_router.brand.req__json = function( req, res, q, fNm, d )
 	 global.RayLog.log( "----- [ E ] - global.b2link_router.brand.req__json():void----------" );
 };
 
- /**
+/**
+ * @function
+ * @param {} req
+ * @param {} res
+ * @param {Object} q
+ * @param {String} fNm
+ * @param {String} d
+ */
+global.b2link_router.list_static.req__string = function( req, res, q, fNm, d )
+{
+	global.TtwLog.log( "----- [ S ] - global.b2link_router.list_static.req__string():void----------" );
+
+	global.b2link_router.member.req__fn( req, res, q, fNm + '("' + d + '")' );
+
+	global.TtwLog.log( "----- [ E ] - global.b2link_router.list_static.req__string():void----------" );
+};
+
+/**
  * @function
  * @param {} req
  * @param {} res
