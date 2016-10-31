@@ -1,7 +1,6 @@
 var a = [
 	{
 		"_id" : NumberInt( 0 )
-
 		, "d_l_si" : {
 			"y" : 2016//{uint} date_last_signin_year;
 			, "m" : 9//{uint} date_last_signin_month;
