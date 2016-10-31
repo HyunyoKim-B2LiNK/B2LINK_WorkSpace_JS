@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_validation/list_static/global.b2link_validation.list_static.member_basic$remove_id.js";
+var fileNm = "js/b2link_validation/member/global.b2link_validation.member.member_basic$remove_ids.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,13 +7,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @param {Object} d data
  */
-global.b2link_validation.list_static.member_basic$remove_id = function( d )
+global.b2link_validation.member.member_basic$remove_ids = function( d )
 {
-	global.TtwLog.log( "---- [ S ] - global.b2link_validation.list_static.member_basic$remove_id():{Object}----------" );
+	global.TtwLog.log( "---- [ S ] - global.b2link_validation.member.member_basic$remove_ids():{Object}----------" );
 
 	try
 	{
-		d._id = parseInt( d._id );
+		var a = d.ids;
+		var i=0, iLen;
+		for( ; i<iLen; ++i ) a[ i ] = parseInt( a[ i ] );
 	}
 	catch( e )
 	{
@@ -21,7 +23,7 @@ global.b2link_validation.list_static.member_basic$remove_id = function( d )
 		throw e;
 	}
 
-	global.TtwLog.log( "---- [ E ] - global.b2link_validation.list_static.member_basic$remove_id():{Object}----------" );
+	global.TtwLog.log( "---- [ E ] - global.b2link_validation.member.member_basic$remove_ids():{Object}----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;
