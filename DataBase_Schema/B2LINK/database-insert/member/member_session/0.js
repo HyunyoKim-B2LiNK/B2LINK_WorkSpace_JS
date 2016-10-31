@@ -1,20 +1,7 @@
 var a = [
-	{
-		"sid" : ""//session id;
-		, "mid" : "thdtjsdn@gmail.com"//member id;
-		//, "mpw" : "123qweasd"//member password;
-
-		, "d_ex" : ""//date_expire;
-		//, "d_ex" : new Date()//date_expire;
-	}
-	, {
-		"sid" : ""//session id;
-		, "mid" : "raybirdy@gmail.com"//member id;
-		//, "mpw" : "123qweasd"//member password;
-
-		, "d_ex" : ""//date_expire;
-		//, "d_ex" : new Date()//date_expire;
-	}
+	  { "sid" : "", "mid" : "thdtjsdn@gmail.com", "d_ex" : "" }
+	, { "sid" : "", "mid" : "raybirdy@gmail.com", "d_ex" : "" }
+	, { "sid" : "", "mid" : "ciruin@gmail.com"  , "d_ex" : "" }
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "member" );

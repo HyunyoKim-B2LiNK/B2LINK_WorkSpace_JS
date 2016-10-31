@@ -1,34 +1,7 @@
 var a = [
-	{
-		"sid" : ""//session id;
-		, "mid" : "thdtjsdn@gmail.com"//member id;
-
-		, "date" : new Date()
-
-		, "d_ex" : {//date_expire;
-			"y" : 0
-			, "m" : 0
-			, "d" : 0
-			, "ho" : 0
-			, "se" : 0
-			, "mi" : 0
-		}
-	}
-	, {
-		"sid" : ""//session id;
-		, "mid" : "raybirdy@gmail.com"//member id;
-
-		, "date" : new Date()
-
-		, "d_ex" : {//date_expire;
-			"y" : 0
-			, "m" : 0
-			, "d" : 0
-			, "ho" : 0
-			, "se" : 0
-			, "mi" : 0
-		}
-	}
+	  { "sid" : "", "mid" : "thdtjsdn@gmail.com", "date" : new Date(), "d_ex" : { "y" : 0, "m" : 0, "d" : 0, "ho" : 0, "se" : 0, "mi" : 0 } }
+	, { "sid" : "", "mid" : "raybirdy@gmail.com", "date" : new Date(), "d_ex" : { "y" : 0, "m" : 0, "d" : 0, "ho" : 0, "se" : 0, "mi" : 0 } }
+	, { "sid" : "", "mid" : "ciruin@gmail.com"  , "date" : new Date(), "d_ex" : { "y" : 0, "m" : 0, "d" : 0, "ho" : 0, "se" : 0, "mi" : 0 } }
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "member" );
