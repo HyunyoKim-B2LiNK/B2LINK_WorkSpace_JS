@@ -5,16 +5,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
- * @param {Object} t target
  * @param {Object} d data
  */
-global.b2link_validation.list_static.member_basic$remove_id = function( t, d )
+global.b2link_validation.list_static.member_basic$remove_id = function( d )
 {
 	global.TtwLog.log( "---- [ S ] - global.b2link_validation.list_static.member_basic$remove_id():{Object}----------" );
 
 	try
 	{
-		t._id = parseInt( d._id );
+		d._id = parseInt( d._id );
 	}
 	catch( e )
 	{

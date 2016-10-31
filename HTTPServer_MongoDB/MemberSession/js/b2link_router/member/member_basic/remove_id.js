@@ -11,8 +11,7 @@ http://localhost:49320/list_static/member_basic/remove_id
 
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 
-	var d = {};
-	global.b2link_validation.list_static.member_basic$remove_id( d, q );
+	global.b2link_validation.list_static.member_basic$remove_id( q );
 
 	global.b2link_router.list_static.req__value( req, res, q, "member_basic$remove_id", q._id );
 
