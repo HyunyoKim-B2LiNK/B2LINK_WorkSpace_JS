@@ -64,13 +64,13 @@ global.b2link_router.brand.req__json = function( req, res, q, fNm, d )
  * @param {String} fNm
  * @param {String} d
  */
-global.b2link_router.list_static.req__string = function( req, res, q, fNm, d )
+global.b2link_router.brand.req__string = function( req, res, q, fNm, d )
 {
-	global.TtwLog.log( "----- [ S ] - global.b2link_router.list_static.req__string():void----------" );
+	global.TtwLog.log( "----- [ S ] - global.b2link_router.brand.req__string():void----------" );
 
-	global.b2link_router.member.req__fn( req, res, q, fNm + '("' + d + '")' );
+	global.b2link_router.brand.req__fn( req, res, q, fNm + '("' + d + '")' );
 
-	global.TtwLog.log( "----- [ E ] - global.b2link_router.list_static.req__string():void----------" );
+	global.TtwLog.log( "----- [ E ] - global.b2link_router.brand.req__string():void----------" );
 };
 
 /**
