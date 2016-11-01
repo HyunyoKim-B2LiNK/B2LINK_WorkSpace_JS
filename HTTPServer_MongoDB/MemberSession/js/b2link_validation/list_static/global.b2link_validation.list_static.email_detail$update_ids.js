@@ -11,7 +11,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 global.b2link_validation.list_static.email_detail$update_ids = function( t, d )
 {
 	global.RayLog.log( "---- [ S ] - global.b2link_validation.list_static.email_detail$update_ids():{Object}----------" );
-    debugger;
+    
 	console.logObjectInformation( d, "d" );
     var _t = [];
     console.log(d.ids);
