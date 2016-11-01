@@ -9,7 +9,7 @@ http://localhost:49320/member_session/checkSession?mid=thdtjsdn@gmail.com&upw=12
 //*/
 (function( req, res ){
 	global.TtwLog.timeStamp( "- [ S ] - member/member_session/checkSession():void----------" );
-
+	
 	var t = global.server;//HTTP Server;
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 	var qp = global.b2link.session.get_or_create__Session( req, res, q );//Query Parameter;
