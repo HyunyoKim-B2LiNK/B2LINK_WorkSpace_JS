@@ -18,7 +18,6 @@ global.b2link_validation.brand.brand_basic$remove_id = function( d )
 	catch( e )
 	{
 		global.RayLog.error( "Error : " + e );
-		throw e;
 	}
 
 	global.RayLog.log( "---- [ E ] - global.b2link_validation.brand.brand_basic$remove_id():{Object}----------" );
