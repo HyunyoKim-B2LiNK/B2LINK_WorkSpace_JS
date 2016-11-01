@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_email_detail/remove.js";
+var fileNm = "./ui/b2link_brand/remove.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -35,15 +35,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
 
-	var _o_thead_style = {
+var _o_thead_style = {
 		_check : "Selected"
 		, _id : "ID"
-		, SLD : "Second Level Domain"
-		, TLD : "Top Level Domain"
-		, ccTLD : "Country code Top Level Domain"
-		, gTLD : "Global Top level Domain"
-		, c : "Country"
+		, nm_kr : "브랜드명", nm_cn : "브랜드명(중문)", nm_us : "브랜드명(영문)"
+		, url : "홈페이지"
 	};
+
 
 	/**
 	* @Property {Function} function( result ){}
@@ -103,7 +101,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
 
-		var t = window.b2link_service_list_static.email_detail;
+		var t = window.b2link_service_brand.brand_basic;
 		if( 1 < d.length ) t.remove_ids( d, _evt_mClick__el_btn_delete._cb_f0 );
 		else if( 1 == d.length ) t.remove_id( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
 
@@ -156,7 +154,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-		window.b2link_service_list_static.email_detail.getAllList( _res_Data );
+		window.b2link_service_brand.brand_basic.getAllList( _res_Data );
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
