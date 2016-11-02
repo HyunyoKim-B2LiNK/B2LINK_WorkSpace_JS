@@ -1,5 +1,5 @@
 /**
  * @function
  * @param {Object} { key : value }
- * @return {Object}
+ * @return {Document}
  */
