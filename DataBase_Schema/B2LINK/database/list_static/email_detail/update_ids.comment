@@ -1,4 +1,5 @@
 /**
  * @function
  * @param {Array} d [ {email_detail}, {email_detail}, ... ]
+ * @return {uint} 0 or 1
  */

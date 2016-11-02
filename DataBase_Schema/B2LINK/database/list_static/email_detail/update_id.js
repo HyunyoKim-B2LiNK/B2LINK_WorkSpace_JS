@@ -1,13 +1,12 @@
 function( d )
 {
-	print( "-- [ S ] - email_detail$update_id():{Object}----------" );
-	print( "_id :" + d._id );
+	print( "-- [ S ] - email_detail$update_id():{uint}----------" );
 
-	var _id = NumberInt( d._id );
-	delete d._id;
+	print( "d._id :" + d._id );
+	printjson( d );
 
 	email_detail$_getCol().update(
-		{ _id : _id }//search Object;
+		{ _id : NumberInt( d._id ) }//search Object;
 		, {
 			$set : {
 				SLD : d.SLD
@@ -19,6 +18,6 @@ function( d )
 		}
 	);
 
-	print( "-- [ S ] - email_detail$update_id():{Object}---------- return 1" );
+	print( "-- [ S ] - email_detail$update_id():{uint}---------- return 1" );
 	return 1;
 }
