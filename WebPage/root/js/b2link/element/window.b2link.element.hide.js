@@ -9,9 +9,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 window.b2link.element.hide = function( t )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.element.hide():void----------" );
+	//////////window.TtwLog.timeStamp( "---- [ S ] - window.b2link.element.hide():void----------" );
 	t.style.display = "none";
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.element.hide():void----------" );
+	//////////window.TtwLog.timeStamp( "---- [ E ] - window.b2link.element.hide():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;
