@@ -12,7 +12,7 @@ function( d )
 		return 0;
 	}
 
-	if( !brand_basic$check__Overlap( r ) )
+	if( brand_basic$check__Overlap( r ) )
 	{
 		print( "-- [ E ] - brand_basic$addDoc():{uint}----------return 0;" );
 		return 0;
