@@ -1,8 +1,8 @@
 /**
  * @function
  * @param {String} SLD Second Level Domain
- * @return {Document}
+ * @return {Object}
  *
  * @example
- * email$findOne__SLD( "naver" )' );
+ * email$findOne__SLD( "naver" );
  */
