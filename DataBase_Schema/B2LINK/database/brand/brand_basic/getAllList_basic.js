@@ -2,7 +2,6 @@ function()
 {
 	var r = [];
 	brand_basic$_findAll().forEach( function( doc ){
-		delete doc.cd_brand;
 		delete doc.logo_url;
 		delete doc.trademark_url;
 		delete doc.register_date;
