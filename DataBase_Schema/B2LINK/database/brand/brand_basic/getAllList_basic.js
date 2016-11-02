@@ -2,11 +2,14 @@ function()
 {
 	var r = [];
 	brand_basic$_findAll().forEach( function( doc ){
-		delete doc.logo_url;
-		delete doc.trademark_url;
-		delete doc.register_date;
-		delete doc.register_person
+
 		delete doc.description;
+
+		delete doc.date_register;
+
+		delete doc.url_logo;
+		delete doc.url_trademark;
+
 		r.push( doc );
 	});
 	return r;

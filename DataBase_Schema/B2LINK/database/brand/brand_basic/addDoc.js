@@ -6,6 +6,8 @@ function( d )
 	var len = brand_basic$_findAll().count();
 	var r = brand_basic$validation__addDoc( d );
 		print( "r : " + r );
+		printjson( r );
+
 	if( 0 == r )
 	{
 		print( "-- [ E ] - brand_basic$addDoc():{uint}----------return 0;" );
@@ -19,16 +21,21 @@ function( d )
 	}
 	else
 	{
+		var i=0, iLen=r.date_register.length;
+		for( ; i<iLen; ++i )
+			r.date_register[ i ] = NumberInt( r.date_register[ i ] );
+
 		col.insert({
 			_id : NumberInt( len )
-			, _id$member_basic : r._id$member_basic
+			, _id$member_basic : NumberInt( r._id$member_basic )
+
+			, description : r.description
 
 			, nm_cn : r.nm_cn
 			, nm_kr : r.nm_kr
 			, nm_us : r.nm_us
 
 			, date_register : r.date_register
-			, description : r.description
 
 			, url : r.url
 			, url_logo : r.url_logo
