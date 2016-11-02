@@ -5,10 +5,10 @@ function( d )
 	//printjson( d );
 
 	var r = brand_basic$findOne({
-		nm_kr : r.nm_kr
-		, nm_cn : r.nm_cn
-		, nm_us : r.nm_us
-		, url : r.url
+		nm_kr : d.nm_kr
+		, nm_cn : d.nm_cn
+		, nm_us : d.nm_us
+		, url : d.url
 	});
 	//printjson( r );
 
