@@ -1,6 +1,6 @@
 function()
 {
-	print( "-- [ S ] - member_basic$_update__rank__m1To0():void----------" );
+	print( "-- [ S ] - member_basic$_update__rank__m1To0():{uint}----------" );
 	var col = member_basic$_getCol();
 	var oSearch = { _id : 0 };
 	var oModify = { $set : { rank : NumberInt( 0 ) } };
@@ -12,6 +12,6 @@ function()
 			col.update( oSearch, oModify, option_update );
 		}
 	});
-	print( "-- [ E ] - member_basic$_update__rank__m1To0():void----------" );
+	print( "-- [ E ] - member_basic$_update__rank__m1To0():{uint}----------" );
 	return 1;
 }
