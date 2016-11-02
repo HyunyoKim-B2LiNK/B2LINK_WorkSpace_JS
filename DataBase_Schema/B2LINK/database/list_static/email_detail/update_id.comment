@@ -1,4 +1,4 @@
 /**
  * @function
- * @param {Array} ids
+ * @param {Object} email_detail
  */

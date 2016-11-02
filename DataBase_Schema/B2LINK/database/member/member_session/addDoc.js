@@ -44,52 +44,35 @@ function( d )
 		print( "-- [ E ] - member_session$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
-	else
+	else if( so && so && so.mid == d.mid )
 	{
 		member_session$_update__Session({
-			_id : len
-			, d_ex : r.d_ex//date_expire;
-			, mid : r.mid//member id;
-			, sid : r.sid//session id;
+			_id : NumberInt( bo._id )
+			, d_ex : d.d_ex//date_expire;
+			, mid : d.mid//member id;
+			, sid : d.sid//session id;
 		});
-	}
-
-	//--------------------------------------------------;
-
-	//----------------------------------------------------------------------------------------------------;
-
-	//--------------------------------------------------;
-
-	var n = member_session$validation__addDoc( d );
-	if( 0 == n )
-	{
-		print( new Error( "[ Error ] - member_session$validation__addDoc" ) );
-		print( "-- [ E ] - member_session$addDoc():{uint}----------return 0;" );
-		return 0;
-	}
-
-	//--------------------------------------------------;
-
-
-	var o = member_session$_findOne___id( bo._id );
-	if( o )
-	{
-		print( "!!member_session$_update__Session({" );
-		printjson( r );
-
 	}
 	else
 	{
-		print( "!!member_session$_getCol().insert({" );
-		printjson( r );
+		var n = member_session$validation__addDoc( d );
+		if( 0 == n )
+		{
+			print( new Error( "[ Error ] - member_session$validation__addDoc" ) );
+			print( "-- [ E ] - member_session$addDoc():{uint}----------return 0;" );
+			return 0;
+		}
+
 		member_session$_getCol().insert({
-			_id : NumberInt( len )
-			, d_ex : r.d_ex//date_expire;
+			_id : NumberInt( bo._id )
+			, d_ex : d.d_ex//date_expire;
 			//, d_ex : new Date()//date_expire;
-			, mid : r.mid//member id;
-			, sid : r.sid//session id;
+			, mid : d.mid//member id;
+			, sid : d.sid//session id;
 		});
 	}
+
+	//--------------------------------------------------;
 
 	print( "-- [ E ] - member_session$addDoc():{uint}----------return 1;" );
 	return 1;

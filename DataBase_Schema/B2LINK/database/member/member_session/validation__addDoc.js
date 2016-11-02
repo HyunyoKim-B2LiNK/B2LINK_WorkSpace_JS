@@ -11,6 +11,7 @@ function( d )
 		return 0;
 	}
 
+	/*/
 	if( d.sid )
 	{
 	}
@@ -19,6 +20,7 @@ function( d )
 		print( "-- [ E ] - member_session$validation__addDoc():{uint|Object}----------return 0;" );
 		return 0;
 	}
+	//*/
 
 	print( "-- [ E ] - member_session$validation__addDoc():{uint|Object}----------return d;" );
 	return d;

@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_service_member/member_basic/window.b2link_service_member.member_basic.remove_ids.js";
+var fileNm = "js/b2link_service_member/member_basic/window.b2link_service_member.member_basic.remove_id__AllCols.js";
 if ( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 var _t = window.b2link.STATIC.CONFIG.URL;
-var _url = _t.PROXY + _t.MONGODB.MEMBER.BASIC + "remove_ids?";
+var _url = _t.PROXY + _t.MONGODB.MEMBER.BASIC + "remove_id__AllCols?";
 
 /**
  * @function
@@ -15,16 +15,16 @@ var _url = _t.PROXY + _t.MONGODB.MEMBER.BASIC + "remove_ids?";
 
 /**
  * @function
- * @param {Array} d [ _id, _id, ... ]
+ * @param {uint} d _id
  * @param {Function} cbFunction function( data ){};
  */
-window.b2link_service_member.member_basic.remove_ids = function( d, cbFunction )
+window.b2link_service_member.member_basic.remove_id__AllCols = function( d, cbFunction )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_basic.remove_ids():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_basic.remove_id__AllCols():void----------" );
 
-	window.b2link_service.common._fn_req( _url + "&ids=" + JSON.stringify( d ), cbFunction );
+	window.b2link_service.common._fn_req( _url + "&_id=" + d, cbFunction );
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_basic.remove_ids():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_basic.remove_id__AllCols():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

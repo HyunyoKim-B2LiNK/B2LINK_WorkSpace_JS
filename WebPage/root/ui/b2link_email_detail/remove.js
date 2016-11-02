@@ -69,6 +69,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
+
 		_el_btn_delete.addEventListener( "click", _evt_mClick__el_btn_delete, false, 0, true );
 	};
 
@@ -109,7 +110,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
 	};
-	
 	_evt_mClick__el_btn_delete._cb_f0 = function( result )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
