@@ -2,8 +2,13 @@ function()
 {
 	return [
 		"cd_brand"
+
+		, "description"
+
 		, "nm_kr" ,"nm_cn" ,"nm_us"
-		, "url", "logo_url", "trademark_url"
+
 		, "register_date", "register_person"
-		, "description" ];
+
+		, "url", "url_logo", "url_trademark"
+	];
 }
