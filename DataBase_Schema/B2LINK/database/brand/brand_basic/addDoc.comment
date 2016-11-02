@@ -1,19 +1,43 @@
 /**
  * @function
- * @param {Object} d {
- 		"cd_brand" : ""
-		, "nm_kr" : ""
-		, "nm_cn" : ""
-		, "nm_us" : ""
-		, "url" : ""
-		, "logo_url : ""
-		, "trademark_url : ""
-		, "register_date" : ""
-		, "register_person" : ""
-		, "description" : ""
-		}
+ * @param {Object} d
+ * <code>
+ * {
+ *	"cd_brand" : ""
+ *
+ *	, "description" : ""
+ *
+ *	, "nm_kr" : ""
+ *	, "nm_cn" : ""
+ *	, "nm_us" : ""
+ *
+ *	, "register_date" : ""
+ *	, "register_person" : ""
+ *
+ *	, "url" : ""
+ *	, "url_logo" : ""
+ *	, "url_trademark" : ""
+ * }
+ * </code>
  * @return {uint} 0, 1
  *
  * @example
- * brand$addDoc( { "cd_brand" : "" , "nm_kr" : "파파레서피", "nm_cn" : "爸爸的礼物", "nm_us" : "papa recipe", "url" : "http://paparecipe.com/", "logo_url : "", "trademark_url : "", "register_date" : "" , "register_person" : ""  , "description" : "" } );
+ * <code>
+ * brand$addDoc({
+ *	"cd_brand" : ""
+ *
+ *	, "description" : ""
+ *
+ *	, "nm_kr" : "파파레서피"
+ *	, "nm_cn" : "爸爸的礼物"
+ *	, "nm_us" : "papa recipe"
+ *
+ *	, "register_date" : ""
+ *	, "register_person" : ""
+ *
+ *	, "url" : "http://paparecipe.com/"
+ *	, "url_logo" : ""
+ *	, "url_trademark" : ""
+ * });
+ * </code>
  */

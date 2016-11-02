@@ -1,10 +1,12 @@
 function( d )
 {
 	print( "-- [ S ] - brand_basic$addDoc():{uint}----------" );
+
 	var col = brand_basic$_getCol();
 	var len = brand_basic$_findAll().count();
 	var r = brand_basic$validation__addDoc( d );
-	print( "r : " + r );
+		print( "r : " + r );
+
 	if( 0 == r )
 	{
 		print( "-- [ E ] - brand_basic$addDoc():{uint}----------return 0;" );
