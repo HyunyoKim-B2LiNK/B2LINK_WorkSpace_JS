@@ -1,6 +1,0 @@
-/**
- * email Overlap check
- * @function
- * @param {Object} d Request Object { "nm_kr" : "파파레서피", "nm_cn" : "爸爸的礼物", "nm_us" : "papa recipe", "url" : "http://paparecipe.com/"}
- * @return {int}
- */
