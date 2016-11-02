@@ -1,5 +1,5 @@
 /**
  * @function
  * @param {String} uid
- * @return {Object}
+ * @return {Document}
  */

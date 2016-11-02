@@ -2,7 +2,7 @@
  * Session Object 추가
  * @function
  * @param {Object} d
- * @return {uint} 0, 1
+ * @return {uint} 0 or 1
  *
  * @example
  * member_session$addDoc({ "mid":"thdtjsdn@gmail.com" });
