@@ -1,7 +1,7 @@
 var a = [
-	  { "sid" : "", "mid" : "thdtjsdn@gmail.com", "d_ex" : "" }
-	, { "sid" : "", "mid" : "raybirdy@gmail.com", "d_ex" : "" }
-	, { "sid" : "", "mid" : "ciruin@gmail.com"  , "d_ex" : "" }
+	  { "sid" : "0", "mid" : "thdtjsdn@gmail.com", "d_ex" : "" }
+	, { "sid" : "1", "mid" : "raybirdy@gmail.com", "d_ex" : "" }
+	, { "sid" : "2", "mid" : "ciruin@gmail.com"  , "d_ex" : "" }
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "member" );
