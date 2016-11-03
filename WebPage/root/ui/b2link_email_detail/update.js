@@ -83,7 +83,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _evt_resize$parentElement = function( e )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - evt_resize$parentElement():void----------");
+
 		_setPosition();
+
 		window.RayLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
 	};
 
@@ -146,7 +148,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+
 		window.b2link_service_list_static.email_detail.getAllList( _res_Data );
+
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
@@ -157,7 +161,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _res_Data = function( result )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _res_Data:void----------");
+
 		_setData__tbody( result )
+
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------");
 	}
 
@@ -177,23 +183,25 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var __getDataForQuery__Tr = function( _tr )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr():{Object}----------" );
-		var i = 1 , iLen = _tr.children.length;
+
 		var r = {};
+		var i=1, iLen=_tr.children.length;
 		var io;
-		for ( ; i < iLen ; ++i ) // td
+		for( ; i<iLen; ++i )//td;
 		{
-			io = _tr.children[i];
+			io = _tr.children[ i ];
 			var iolen = io.children.length;
-			if ( iolen > 0 )
+			if( iolen > 0 )
 			{
-				for ( var j = 0 ;  j < iolen ; ++j)
+				for( var j=0; j<iolen; ++j )
 				{
-					var ioc = io.children[j];
+					var ioc = io.children[ j ];
 					if( "INPUT" == ioc.tagName ) r[ ioc.className ] = ioc.value;
 				}
-			} else r[io.className] = io.innerText;
-
+			}
+			else r[ io.className ] = io.innerText;
 		}
+
 		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr():{Object}----------" );
 		return r;
 	}
@@ -208,17 +216,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Array}----------" );
 
 		var idx = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
-		var i = 0 , iLen = idx.length;
 		var r = [];
-		for ( ; i < iLen ; ++i ) r.push ( __getDataForQuery__Tr( _el_tbody.children[idx[i]] ) );
-
+		var i=0, iLen=idx.length;
+		for( ; i<iLen; ++i )
+			r.push ( __getDataForQuery__Tr( _el_tbody.children[ idx[ i ] ] ) );
 
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
 		window.RayLog.timeStamp( "-- [ E ] - _getDataForQuery():{Array}----------" );
 	};
-
 
 	//--------------------------------------------------;
 
@@ -249,8 +256,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		// var t = $el_div;
 		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-		// _width = t.clientWidht;
-		// _height = t.clientHeight;
 
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------");
 	};
