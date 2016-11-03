@@ -99,7 +99,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_mClick__el_btn_update = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
+		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_update():void----------");
 
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
@@ -107,7 +107,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		if( 1 < d.length ) t.update_ids( d, _evt_mClick__el_btn_update._cb_f0 );
 		else if( 1 == d.length ) t.update_id( d[ 0 ], _evt_mClick__el_btn_update._cb_f0 );
 
-		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
+		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_update():void----------");
 	};
 	
 	_evt_mClick__el_btn_update._cb_f0 = function( result )
@@ -166,11 +166,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	
 	/**
 	 * @function
-	 * @return [Array] []
+	 * @return {Object} Object
 	 */
 	var __getDataForQuery__Tr = function( _tr )
 	{
-		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):[Object,Object]----------" );
+		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):{Object}----------" );
 		var i = 1 , iLen = _tr.children.length;
 		var r = {};
 		var io; 
@@ -188,18 +188,18 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			} else r[io.className] = io.innerText;		
 			
 		}
-		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):[Object,Object]----------" );
+		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):{Object}----------" );
 		return r;
 	}
 	
 	
 	/**
 	 * @function
-	 * @return [Array] []
+	 * @return [Array] [Object, Object]
 	 */
 	var _getDataForQuery = function( )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():[Array, Array,...]----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():[Object,...]----------" );
 		
 		var idx = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
 		var i = 0 , iLen = idx.length;
@@ -210,7 +210,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
-		window.RayLog.timeStamp( "-- [ E ] - _getDataForQuery():[Array, Array,...]----------" );
+		window.RayLog.timeStamp( "-- [ E ] - _getDataForQuery():[Object,,...]----------" );
 	};
 
 
