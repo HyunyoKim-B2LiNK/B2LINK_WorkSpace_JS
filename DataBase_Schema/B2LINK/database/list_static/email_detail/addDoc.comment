@@ -5,7 +5,7 @@
  * {
  * }
  * </code>
- * @return {uint} 0, 1
+ * @return {uint} 0 or 1
  *
  * @example
  * email$addDoc( { "SLD" : "b2link" ,"TLD" : "co.kr","ccTLD" : "kr" ,"gTLD" : "" ,"c" : "kr" } );

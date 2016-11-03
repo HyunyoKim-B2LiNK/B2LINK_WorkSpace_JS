@@ -3,29 +3,27 @@ var fileNm = "js/b2link/__define/101_define_global.b2link.STATIC.CONFIG.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
+var $g = global;
+
 var _tmp = "";
 
-var _t0 = global.b2link;
-var _t1 = _t0.STATIC;
 //--------------------------------------------------[ S ] - global.b2link.STATIC.CONFIG;
 
-_t1.CONFIG = {};
-var _t2 = _t1.CONFIG;
+$g.b2link.STATIC.CONFIG = {};
 
 
 
 
 
-console.log( "--------------------------------------------------[ S ] - global.b2link.STATIC.CONFIG.URL" );
-_t2.URL = {};
-var _t3 = _t2.URL;
+global.TtwLog.timeStamp( "--------------------------------------------------[ S ] - global.b2link.STATIC.CONFIG.URL" );
+$g.b2link.STATIC.CONFIG.URL = {};
 //------------------------------;
-_t3.JS_B2LINK = "./js/b2link/";
-_t3.JS_B2LINK_DEV = "./js/b2linkDev/";
+$g.b2link.STATIC.CONFIG.URL.JS_B2LINK = "./js/b2link/";
+$g.b2link.STATIC.CONFIG.URL.JS_B2LINK_DEV = "./js/b2linkDev/";
 //------------------------------;
-_t3.PROXY = "./ttwP/";//global.b2link.STATIC.CONFIG.URL.PROXY;
+$g.b2link.STATIC.CONFIG.URL.PROXY = "./ttwP/";//global.b2link.STATIC.CONFIG.URL.PROXY;
 //------------------------------;
-console.log( "--------------------------------------------------[ E ] - global.b2link.STATIC.CONFIG.URL" );
+global.TtwLog.timeStamp( "--------------------------------------------------[ E ] - global.b2link.STATIC.CONFIG.URL" );
 
 //--------------------------------------------------[ E ] - global.b2link.STATIC.CONFIG;
 

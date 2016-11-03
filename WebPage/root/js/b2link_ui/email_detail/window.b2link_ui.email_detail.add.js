@@ -5,10 +5,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
+ * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
 window.b2link_ui.email_detail.add = function()
 {
-	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui.email_detail.add():void----------" );
+	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui.email_detail.add():{Array}----------" );
 
 	var d = {
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL
@@ -33,16 +34,14 @@ window.b2link_ui.email_detail.add = function()
 				//*/
 
 				window.b2link_ui.email_detail.getAllList();
-				//window.b2link_ui.member_basic.getAllList__nm();
 			}
-			else
-				alert("등록 실패 하였습니다.");
+			else alert( "등록 실패." );
 
 			window.RayLog.timeStamp( "[ E ] - o[ 1 ].setEvt_Complete__Add( function( result ){----------" );
 		});
 	}
 
-	window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui.email_detail.add():void----------");
+	window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui.email_detail.add():{Array}----------");
 	return o;
 }
 

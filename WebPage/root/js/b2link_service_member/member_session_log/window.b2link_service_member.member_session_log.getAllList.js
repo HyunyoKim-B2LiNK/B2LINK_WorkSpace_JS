@@ -11,16 +11,7 @@ var _url = _t.PROXY + _t.MONGODB.MEMBER.SESSION_LOG + "getAllList?";
  * @param {*} result
  * @param {Function} cbFunction function( data ){};
  */
-var _fn_res = function( result, cbFunction )
-{
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_session_log.getAllList.res():void----------" );
-	console.log( result );
-
-	var r = JSON.parse( result );
-	cbFunction( r );
-
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_session_log.getAllList.res():void----------" );
-};
+//var _fn_res = function( result, cbFunction ){};
 
 /**
  * @function
@@ -31,9 +22,7 @@ window.b2link_service_member.member_session_log.getAllList = function( d, cbFunc
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_session_log.getAllList():void----------" );
 
-	_url += window.b2link_url.member.getParam__member_session$session( window.b2link.session.getSession() );
-
-	_fn_res( SUtilXMLHttpReqGet.reqSyncReturn( _url, null ).responseText, cbFunction );
+	window.b2link_service.common._fn_req( _url, cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_session_log.getAllList():void----------" );
 };

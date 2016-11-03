@@ -3,7 +3,7 @@ function()
 	return [
 		"date"
 		, "sid"//sessionid;
-		, "uid"//userid;
+		, "mid"//userid;
 		, "d_ex"//date_expire;
 	];
 }

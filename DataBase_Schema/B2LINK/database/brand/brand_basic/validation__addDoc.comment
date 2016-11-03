@@ -1,0 +1,23 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	"cd_brand" : ""
+ *
+ *	, "description" : ""
+ *
+ *	, "nm_kr" : "파파레서피"
+ *	, "nm_cn" : "爸爸的礼物"
+ *	, "nm_us" : "papa recipe"
+ *
+ *	, "register_date" : ""
+ *	, "register_person" : ""
+ *
+ *	, "url" : "http://paparecipe.com/"
+ *	, "url_logo" : ""
+ *	, "url_trademark" : ""
+ * }
+ * </code>
+ * @return {Object}
+ */

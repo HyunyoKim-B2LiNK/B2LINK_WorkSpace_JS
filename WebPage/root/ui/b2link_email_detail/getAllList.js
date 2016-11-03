@@ -3,7 +3,8 @@ var fileNm = "./ui/b2link_email_detail/getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
-(function(url, $el_div){
+(function( url, $el_div ){
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -19,6 +20,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
@@ -36,9 +39,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		, "gTLD" : "Global Top level Domain"
 		, "c" : "Country"
 	};
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -99,11 +99,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	/**
 	 * @function
 	 */
-	var _hide = function() { window.b2link.element.hide( $el_div ); };
-
-	/**
-	 * @function
-	 */
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
@@ -122,11 +117,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------");
 	}
 
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -136,10 +126,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-
-	var _setClassName__tbody_tr_td = function() { window.b2link.element.setClassName__tbody_tr_td( _el_tbody, _className_td ); };
-
-	var _setClassName__thead_tr_th = function() { window.b2link.element.setClassName__tbody_tr_th( _el_thead, _className_th ); };
 
 	//------------------------------;
 
@@ -177,13 +163,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	var _getHeight = function() { return _height; };
-	var _setHeight = function( w ) { _height = w; };
-
-	var _getWidth = function() { return _width; };
-	var _setWidth = function( w ) { _width = w; };
-
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -204,15 +183,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
 		console.log( o );
 	_req_Data();
-
-	//----------;
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, req_Data : _req_Data
-		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-	};
+	
+	//--------------------------------------------------this;
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	_.dispose = _dispose;
+	_.req_Data = _req_Data;
+	//--------------------------------------------------this;
+	return _this;
 });

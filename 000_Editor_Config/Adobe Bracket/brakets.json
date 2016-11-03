@@ -1,0 +1,17 @@
+{
+	"fonts.fontSize": "12px",
+
+	"fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+
+	"linting.enabled": false,
+
+	"proxy": "http://localhost:49320/ttwP/",
+
+	"softTabs": false,
+
+	"themes.theme": "dark-theme",
+
+	"useTabChar": true,
+
+	"wordWrap": false
+}

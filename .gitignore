@@ -45,7 +45,6 @@ jspm_packages
 *.errorResult
 *.exe
 *.interim
-*.json
 *.lnk
 *.lock
 *.pdb
@@ -54,6 +53,8 @@ jspm_packages
 *.wt
 metrics.*
 __list.json
+__listDir.json
+__listPackage.json
 DataBase/B2LINK/0/WiredTiger
 HTTPServer_MongoDB/MemberSession/MemberSession.bat
 HTTPServer_WebPage/a.bat

@@ -4,9 +4,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-
-	console.log( "arguments : " );
-	console.log( arguments );
+	
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -22,7 +21,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
+
 	//--------------------------------------------------;
+
+	var _this = {};
 
 	var $w = window;
 	var $d = window.document;
@@ -39,9 +41,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @Property {Function} function( result ){}
 	 */
 	var _evt_Complete__SignIn;
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -60,11 +59,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _addEvent = function()
 	{
-	  _removeEvent();
-	  $w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
+		_removeEvent();
+		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 
-	  _el_btn_cancle.addEventListener( "click", _evt_mClick__el_btn_cancle, false, 0, true );
-	  _el_btn_signin.addEventListener( "click", _evt_mClick__el_btn_signin, false, 0, true );
+		_el_btn_cancle.addEventListener( "click", _evt_mClick__el_btn_cancle, false, 0, true );
+		_el_btn_signin.addEventListener( "click", _evt_mClick__el_btn_signin, false, 0, true );
 	};
 
 	/**
@@ -87,10 +86,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_signin():void----------" );
 
 		window.b2link_service_member.member_session.checkSession__Sign_In(
-			{ id : _el_input_id.value, pw : _el_input_pw.value }
+			{
+				id : _el_input_id.value
+				, pw : _el_input_pw.value
+			}
 			, function( result ){
-			  window.b2link.console.nameAndObject( "_evt_mClick__el_btn_signin result", result );
-				if( result ) _evt_Complete__SignIn( result );
+				window.b2link.console.nameAndObject( "_evt_mClick__el_btn_signin result", result );
+				if( window.b2link.fn.getResultStatus( result ) ) _evt_Complete__SignIn( result );
 				else
 				{
 					window.b2link.log.error__Signin_failure();
@@ -118,9 +120,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-	  window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
-	  _setPosition();
-	  window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
+		_setPosition();
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -135,23 +137,20 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _dispose = function()
 	{
 		_removeEvent();
+		
 		$w = null;
 		$d = null;
+		
+		_el_btn_cancle = null;
 		_el_btn_signin = null;
 		_el_input_id = null;
 		_el_input_pw = null;
+		
+		_evt_Complete__SignIn = null;
+		
+		_o_locale_label = null;
 	};
-
-	/**
-	 * @function
-	 */
-	var _hide = function(){ window.b2link.element.hide( $el_div ); };
-
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
-
+	
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -192,12 +191,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getEvt_Complete__SignIn = function(){ return _evt_Complete__SignIn; };
 	var _setEvt_Complete__SignIn = function( fn ){ _evt_Complete__SignIn = fn; };
 
-	var _getHeight = function(){ return _height; };
-	var _setHeight = function( w ){ _height = w; };
-
-	var _getWidth = function(){ return _width; };
-	var _setWidth = function( w ){ _width = w; };
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -220,15 +213,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, show : _show
 
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-
-		, getEvt_Complete__SignIn : _getEvt_Complete__SignIn
-		, setEvt_Complete__SignIn : _setEvt_Complete__SignIn
-	};
+	//--------------------------------------------------this;
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	_.dispose = _dispose;
+	_.getEvt_Complete__SignIn = _getEvt_Complete__SignIn;
+	_.setEvt_Complete__SignIn = _setEvt_Complete__SignIn;
+	//--------------------------------------------------this;
+	return _this;
 });

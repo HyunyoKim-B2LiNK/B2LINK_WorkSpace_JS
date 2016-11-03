@@ -5,9 +5,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
-	console.log( "arguments : " );
-	console.log( arguments );
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -21,14 +18,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -65,9 +62,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-	  console.log( "-- [ S ] - _evt_resize$parentElement():void----------" );
+	  window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
 	  _setPosition();
-	  console.log( "-- [ E ] - _evt_resize$parentElement():void----------" );
+	  window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -86,16 +83,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 	};
 
-	/**
-	 * @function
-	 */
-	var _hide = function(){ $el_div.style.display = "none"; };
-
-	/**
-	 * @function
-	 */
-	var _show = function(){ $el_div.style.display = ""; };
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -111,23 +98,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setPosition = function()
 	{
-		console.log( "-- [ S ] - _setPosition():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
 		// var t = $el_div;
 		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 		// _width = t.clientWidth;
 		// _height = t.clientHeight;
-		console.log( "-- [ E ] - _setPosition():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-
-	var _getHeight = function(){ return _height; };
-	var _setHeight = function( w ){ _height = w; };
-
-	var _getWidth = function(){ return _width; };
-	var _setWidth = function( w ){ _width = w; };
 
 	//--------------------------------------------------;
 
@@ -171,12 +152,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-	};
+	//--------------------------------------------------this;
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	_.dispose = _dispose;
+	//--------------------------------------------------this;
+	return _this;
 });

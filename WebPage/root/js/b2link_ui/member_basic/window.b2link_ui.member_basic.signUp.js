@@ -5,6 +5,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
+ * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
 window.b2link_ui.member_basic.signUp = function()
 {

@@ -3,57 +3,102 @@ var fileNm = "js/b2link/__define/101_define_window.b2link.STATIC.CONFIG.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
-//--------------------------------------------------[ S ] - window.b2link.STATIC.CONFIG;
+var $w = window;
 
 var _ = "";
-window.b2link.STATIC.CONFIG = {};
 
-console.log( "--------------------------------------------------[ S ] - window.b2link.STATIC.CONFIG.URL" );
-window.b2link.STATIC.CONFIG.URL = {};
-window.b2link.STATIC.CONFIG.URL.PROXY = "./ttwP/";
-//window.b2link.STATIC.CONFIG.URL.PROXY = "";
-window.b2link.STATIC.CONFIG.URL.SERVER = "http://localhost:49320/";
-//------------------------------;
-window.b2link.STATIC.CONFIG.URL.UI = {};
-window.b2link.STATIC.CONFIG.URL.UI.BASE = "./ui/";
-_ = window.b2link.STATIC.CONFIG.URL.UI.BASE;
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK = _ + "b2link/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_API = _ + "b2link_api/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_COUNTRY = _ + "b2link_country/";
-//window.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL = _ + "b2link_email/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL = _ + "b2link_email_detail/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_MASHUP = _ + "b2link_mashup/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_MEMBER = _ + "b2link_member/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCM = _ + "b2link_scm/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCRAP = _ + "b2link_scrap/";
-window.b2link.STATIC.CONFIG.URL.UI.B2LINK_SESSION = _ + "b2link_session/";
-window.b2link.STATIC.CONFIG.URL.UI.test = _ + "test/";
+//--------------------------------------------------[ S ] - window.b2link.STATIC.CONFIG;
 
-window.b2link.STATIC.CONFIG.URL.UI.CSS = "";
-//window.b2link.STATIC.CONFIG.URL.UI.CSS = ".bootstrap";
-//window.b2link.STATIC.CONFIG.URL.UI.CSS = ".bootstrap-jui";
-//window.b2link.STATIC.CONFIG.URL.UI.CSS = ".jui";
-//window.b2link.STATIC.CONFIG.URL.UI.CSS = ".semanticui";
-//------------------------------;
-window.b2link.STATIC.CONFIG.URL.MONGODB = {};
+//--------------------------------------------------;
 
-window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC = {};
-window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC_COMMON = window.b2link.STATIC.CONFIG.URL.SERVER + "list_static/";
-_ = window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC_COMMON;
-window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.COUNTRY = _ + "country/";
-//window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.EMAIL = _ + "email/";
-window.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.EMAIL_DETAIL = _ + "email_detail/";
+//	;
 
-window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER = {};
-window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER_COMMON = window.b2link.STATIC.CONFIG.URL.SERVER + "member/";
-_ = window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER_COMMON;
-window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.BASIC = _ + "member_basic/";
-window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.SESSION = _ + "member_session/";
-window.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.SESSION_LOG = _ + "member_session_log/";
-//------------------------------;
+//--------------------------------------------------;
 
-//------------------------------;
-console.log( "--------------------------------------------------[ E ] - window.b2link.STATIC.CONFIG.URL" );
+$w.b2link.STATIC.CONFIG = {};
+
+//--------------------------------------------------;
+
+//	;
+
+//--------------------------------------------------;
+
+window.TtwLog.timeStamp( "--------------------------------------------------[ S ] - window.b2link.STATIC.CONFIG.URL" );
+
+$w.b2link.STATIC.CONFIG.URL = {};
+$w.b2link.STATIC.CONFIG.URL.PROXY = "./ttwP/";
+//$w.b2link.STATIC.CONFIG.URL.PROXY = "";
+$w.b2link.STATIC.CONFIG.URL.SERVER = "http://localhost:49320/";
+
+//--------------------------------------------------;
+
+//	URL - UI;
+
+//--------------------------------------------------;
+
+$w.b2link.STATIC.CONFIG.URL.UI = {};
+$w.b2link.STATIC.CONFIG.URL.UI.BASE = "./ui/";
+
+//$w.b2link.STATIC.CONFIG.URL.UI.LOCALE = "cn";
+$w.b2link.STATIC.CONFIG.URL.UI.LOCALE = "kr";
+//$w.b2link.STATIC.CONFIG.URL.UI.LOCALE = "us";
+
+_ = $w.b2link.STATIC.CONFIG.URL.UI.BASE;
+
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK = _ + "b2link/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_API = _ + "b2link_api/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_BRAND = _ + "b2link_brand/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_COUNTRY = _ + "b2link_country/";
+//$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL = _ + "b2link_email/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL = _ + "b2link_email_detail/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MASHUP = _ + "b2link_mashup/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MEMBER = _ + "b2link_member/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCM = _ + "b2link_scm/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCRAP = _ + "b2link_scrap/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SESSION = _ + "b2link_session/";
+
+$w.b2link.STATIC.CONFIG.URL.UI.test = _ + "test/";
+
+//--------------------------------------------------;
+
+//	URL - UI - CSS;
+
+//--------------------------------------------------;
+
+$w.b2link.STATIC.CONFIG.URL.UI.CSS = "";
+//$w.b2link.STATIC.CONFIG.URL.UI.CSS = ".bootstrap";
+//$w.b2link.STATIC.CONFIG.URL.UI.CSS = ".bootstrap-jui";
+//$w.b2link.STATIC.CONFIG.URL.UI.CSS = ".jui";
+//$w.b2link.STATIC.CONFIG.URL.UI.CSS = ".semanticui";
+
+//--------------------------------------------------;
+
+//	URL - MONGODB;
+
+//--------------------------------------------------;
+
+$w.b2link.STATIC.CONFIG.URL.MONGODB = {};
+
+$w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND = {};
+$w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND_COMMON = $w.b2link.STATIC.CONFIG.URL.SERVER + "brand/";
+_ = $w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND_COMMON; 
+window.b2link.STATIC.CONFIG.URL.MONGODB.BRAND.BRAND_BASIC = _ + "brand_basic/";
+
+$w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC = {};
+$w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC_COMMON = $w.b2link.STATIC.CONFIG.URL.SERVER + "list_static/";
+_ = $w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC_COMMON;
+$w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.COUNTRY = _ + "country/";
+//$w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.EMAIL = _ + "email/";
+$w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC.EMAIL_DETAIL = _ + "email_detail/";
+
+$w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER = {};
+$w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER_COMMON = $w.b2link.STATIC.CONFIG.URL.SERVER + "member/";
+_ = $w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER_COMMON;
+$w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.BASIC = _ + "member_basic/";
+$w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.SESSION = _ + "member_session/";
+$w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.SESSION_LOG = _ + "member_session_log/";
+
+window.TtwLog.timeStamp( "--------------------------------------------------[ E ] - window.b2link.STATIC.CONFIG.URL" );
 
 //--------------------------------------------------[ E ] - window.b2link.STATIC.CONFIG;
 

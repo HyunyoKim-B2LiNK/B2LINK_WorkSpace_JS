@@ -1,0 +1,10 @@
+{
+	"member_id" : "ID"
+	, "email_or_id" : "이메일 또는 아이디"
+
+	, "member_pw" : "PW"
+	, "pw" : "암호"
+
+	, "btn_signin" : "로그인"
+	, "btn_cancle" : "취소"
+}

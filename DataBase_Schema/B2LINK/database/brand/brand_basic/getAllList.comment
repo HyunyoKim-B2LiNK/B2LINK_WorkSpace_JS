@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ {brand_basic}, {brand_basic}, ... ]
+ */

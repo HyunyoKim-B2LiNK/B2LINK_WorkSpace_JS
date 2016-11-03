@@ -8,27 +8,41 @@
 	height: 22px;
 	//*/
 
+	border: @border_solid_1px_000000;
+
 	color: #000;
 	font-size: 11px;
+
+	display: inline-table;
 	position: absolute;
 
-	border: @border_solid_1px_000000;
+	padding: @padding10;
 
 	top: 5px;
 	right: 5px;
 
 
+
 	input { text-align: center; border-style: none; }
 
-	.tbody { text-align: center; }
-	.thead { text-align: center; }
-
-	td {
-		border: @border_solid_1px_000000;
-	}
-	th {
-		border: @border_solid_1px_000000;
+	.tbody {
 		text-align: center;
-		font-weight: normal;
+
+		td {
+			border: @border_solid_1px_000000;
+		}
+	}
+
+	.thead {
+		text-align: center;
+
+		th {
+			border: @border_solid_1px_000000;
+
+			font-weight: normal;
+			text-align: center;
+
+			padding: @padding2;
+		}
 	}
 }

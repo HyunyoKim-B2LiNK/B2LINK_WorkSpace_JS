@@ -8,5 +8,5 @@
  * @return {uint} 0, 1
  *
  * @example
- * member_time$addDoc( {"uid":"thdtjsdn@gmail.com"} );
+ * member_time$addDoc({ "mid":"thdtjsdn@gmail.com" });
  */

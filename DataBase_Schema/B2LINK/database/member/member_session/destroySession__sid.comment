@@ -1,5 +1,5 @@
 /**
  * @function
- * @param {Object} d Request Object { "uid" : "", "sid" : "", "d_ex" : "" }
+ * @param {String} sid
  * @return {uint} 0, or 1
  */

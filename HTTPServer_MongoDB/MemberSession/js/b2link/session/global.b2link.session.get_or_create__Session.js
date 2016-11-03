@@ -13,7 +13,7 @@ global.b2link.session.get_or_create__Session = function( req, res, q )
 {
 	console.log( "---- [ S ] - global.b2link.session.get_or_create__Session():void----------" );
 
-	//if( !q.uid && !q.upw ) global.server.sendResponse_200_False( req, res );
+	//if( !q.mid && !q.mpw ) global.server.sendResponse_200_False( req, res );
 
 	var cookie = STtwUtilHttpClientRequest.getHeader_Cookie( req );
 		//console.logObjectInformation( cookie, "cookie" );
@@ -30,11 +30,13 @@ global.b2link.session.get_or_create__Session = function( req, res, q )
 		if( cookie.Expires ) expireDate = cookie.expires;
 	}
 
-	if( !sessionID )
+	if( !sessionID || null == sessionID || "" == sessionID || "null" == sessionID)
 	{
 		sessionID = STtwUtilHttpClientResponse.create_Session( req );
-		expireDate = STtwUtilHttpClientResponse.create_Date__Expired();
+		bFirstSession = 0;
 	}
+	if( !expireDate || null == expireDate || "" == expireDate || "null" == expireDate )
+		expireDate = STtwUtilHttpClientResponse.create_Date__Expired();
 
 	console.log( "---- [ E ] - global.b2link.session.get_or_create__Session():void----------" );
 

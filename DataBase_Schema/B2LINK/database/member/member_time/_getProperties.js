@@ -8,7 +8,6 @@ function()
 		"d_l_si"
 		, "d_sec"
 		, "d_su"
-
-		, "uid"
+		, "mid"
 	];
 }

@@ -11,8 +11,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 global.b2link.response.setHeader__setcookie = function( req, res, d )
 {
-	console.log( "---- [ S ] - global.b2link.response.setHeader__setcookie():void----------" );
-	console.log( "req.url : " + req.url );
+	global.TtwLog.timeStamp( "---- [ S ] - global.b2link.response.setHeader__setcookie():void----------" );
+	//console.log( "req.url : " + req.url );
 	if( res )
 		res.setHeader( "set-cookie"
 			, "connect.sid=" + d.sid
@@ -20,8 +20,7 @@ global.b2link.response.setHeader__setcookie = function( req, res, d )
 				+ "; Expires=" + d.d_ex
 				+ "; HttpOnly"
 		);
-
-	console.log( "---- [ E ] - global.b2link.response.setHeader__setcookie():void----------" );
+	global.TtwLog.timeStamp( "---- [ E ] - global.b2link.response.setHeader__setcookie():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

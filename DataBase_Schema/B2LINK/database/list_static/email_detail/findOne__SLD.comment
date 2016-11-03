@@ -4,5 +4,5 @@
  * @return {Document}
  *
  * @example
- * email$findOne__SLD( "naver" )' );
+ * email$findOne__SLD( "naver" );
  */

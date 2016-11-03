@@ -2,10 +2,10 @@
  * @function
  * @param {Object} d
  * <code>
- * { uid : "", upw : "" }
+ * { mid : "", mpw : "" }
  * </code>
  * @return {uint} 0, 1
  *
  * @example
- * member_time$sign_up( { "uid" : "thdtjsdn@gmail.com", "upw" : "123qweasd" } )' );
+ * member_time$sign_up({ "mid" : "thdtjsdn@gmail.com", "mpw" : "123qweasd" })' );
  */

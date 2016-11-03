@@ -13,7 +13,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 global.b2link.request.get__member_session$checkSessionAndReqMongoDB = function( req, res, q, db, nq )
 {
-	console.log( "---- [ S ] - global.b2link.request.get__member_session$checkSessionAndReqMongoDB():void----------" );
+	global.TtwLog.timeStamp( "\n" );
+	global.TtwLog.timeStamp( "---- [ S ] - global.b2link.request.get__member_session$checkSessionAndReqMongoDB():void----------" );
 
 	var t = global.server;
 
@@ -23,29 +24,41 @@ global.b2link.request.get__member_session$checkSessionAndReqMongoDB = function( 
 		{
 			console.log( "typeof( result ) : " + typeof( result ) );
 			console.log( "result : " + result );
+			console.log( "global.b2link.fn.getResultStatus( result ) : " + global.b2link.fn.getResultStatus( result ) );
 
-			if( "false" == result )
+			if( 0 == global.b2link.fn.getResultStatus( result ) )
 			{
 				global.b2link.response.send_200_False( req, res );
+
+				global.b2link_router.STATIC.REQUEST_COUNT.M1();
+
 				return;
 			}
 
 			q.db = db;
 			q.q = nq;
 
+			global.b2link_router.STATIC.REQUEST_COUNT.P1();
+
 			t.req_DB( req, res, q, function( error, result ){
 				if( error )
 				{
+					global.b2link_router.STATIC.REQUEST_COUNT.M1();
 					global.b2link.response.send_200_False__ErrorLog( req, res, q, error );
 					return;
 				}
+
+				global.b2link_router.STATIC.REQUEST_COUNT.M1();
 				global.b2link.response.send_200_JSON( req, res, result );
 			});
+
+			global.b2link_router.STATIC.REQUEST_COUNT.M1();
 		}
 		, req.headers
 	);
 
-	console.log( "---- [ E ] - global.b2link.request.get__member_session$checkSessionAndReqMongoDB():void----------" );
+	global.TtwLog.timeStamp( "---- [ E ] - global.b2link.request.get__member_session$checkSessionAndReqMongoDB():void----------" );
+	global.TtwLog.timeStamp( "\n" );
 };
 
 //----------------------------------------------------------------------------------------------------;
