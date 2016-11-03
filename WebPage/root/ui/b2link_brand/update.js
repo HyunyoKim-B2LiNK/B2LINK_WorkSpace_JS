@@ -19,11 +19,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
+
 	//--------------------------------------------------;
 
-
 	var _this = { __url : url };
-
 
 	var $w = window;
 	var $d = $w.document;
@@ -46,6 +45,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	};
 
 	var _evt_Complete__Update;
+
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -104,13 +104,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_update():void----------");
 	};
-
 	_evt_mClick__el_btn_update._cb_f0 = function( result )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_update._cb_f0():void----------");
+
 		console.log( "result : " + result );
+
 		if( !window.b2link.fn.getResultStatus( result ) ) alert( "수정 실패.");
 		else _evt_Complete__Update( result );
+
 		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_update._cb_f0():void----------");
 	};
 
@@ -142,11 +144,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	/**
 	 * @function
 	 */
-	var _hide = function(){ window.b2link.element.hide( $el_div ); };
-
-	/**
-	 * @function
-	 */
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
@@ -165,11 +162,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
 	};
 
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -181,7 +173,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	/**
 	 * @function
 	 * #param _tr
-	 * @return {Object} Object
+	 * @return {Object}
 	 */
 	var __getDataForQuery__Tr = function( _tr )
 	{
@@ -209,11 +201,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	/**
 	 * @function
-	 * @return [Array] [Object, Object]
+	 * @return {Array}
 	 */
 	var _getDataForQuery = function( )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():[Object,...]----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Array}----------" );
 
 		var idx = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
 		var i = 0 , iLen = idx.length;
@@ -224,7 +216,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
-		window.RayLog.timeStamp( "-- [ E ] - _getDataForQuery():[Object,,...]----------" );
+		window.RayLog.timeStamp( "-- [ E ] - _getDataForQuery():{Array}----------" );
 	};
 
 
@@ -296,7 +288,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_req_Data();
 
 	//----------;
-
 
 	//--------------------------------------------------this;
 	var _ = _this;
