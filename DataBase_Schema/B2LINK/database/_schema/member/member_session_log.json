@@ -1,0 +1,17 @@
+{
+	"_id" : 0
+
+	, "sid" : ""//sessionid;
+	, "mid" : ""//userid;
+
+	, "date" : new Date()
+
+	, "d_ex" : {//date_expire;
+		"y" : 0
+		, "m" : 0
+		, "d" : 0
+		, "ho" : 0
+		, "se" : 0
+		, "mi" : 0
+	}
+}
