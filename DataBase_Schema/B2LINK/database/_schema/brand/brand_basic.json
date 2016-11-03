@@ -1,16 +1,17 @@
 {
-	"_id$member_basic" : "uint"//{uint} - _id$member_basic;
+	"_id" : "brand_basic"
+	, "_id$member_basic" : "uint"//{uint} - _id$member_basic; 등록자
 
-	, "description" : "string"//{String} - description;
+	, "description" : "string"//{String} - description; 기타 명세
 
-	, "nm_kr" : "string"//{String} - name_kr;
-	, "nm_cn" : "string"//{String} - name_cn;
-	, "nm_us" : "string"//{String} - name_us;
+	, "nm_kr" : "string"//{String} - name_kr;	한글명
+	, "nm_cn" : "string"//{String} - name_cn;	중문명
+	, "nm_us" : "string"//{String} - name_us;	영문명
 
 	//, "date_register" : "object"//{Object} - date_register - { "y" : 2016, "m" : 10, "d" : 27, "ho" : 12, "mi" : 20, "se" : 30 };
-	, "date_register" : "array"//{Array} - date_register - [ 2016, 10, 27, 12, 20, 30 ];
+	, "date_register" : "array"//{Array} - date_register - [ 2016, 10, 27, 12, 20, 30 ];	등록일
 
-	, "url" : "string"//{String} - url - www.b2link.co.kr;
-	, "url_logo" : "string"//{String} - url_logo;
-	, "url_trademark": "string"//{String} - url_trademark;
-}
+	, "url" : "string"//{String} - url - www.b2link.co.kr;	브랜드 대표 URL
+	, "url_logo" : "string"//{String} - url_logo;	브랜드 로고 파일
+	, "url_trademark": "string"//{String} - url_trademark;	브랜드 상표 등록증
+}d
