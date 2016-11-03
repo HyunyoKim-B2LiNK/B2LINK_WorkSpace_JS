@@ -21,7 +21,7 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.EMAIL_DETAIL + "update_ids?";
 window.b2link_service_list_static.email_detail.update_ids = function( d, cbFunction )
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.email_detail.update_ids():void----------" );
-	
+
 	window.b2link_service.common._fn_req( _url + "&ids=" + JSON.stringify( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.email_detail.update_ids():void----------" );
@@ -30,4 +30,3 @@ window.b2link_service_list_static.email_detail.update_ids = function( d, cbFunct
 //----------------------------------------------------------------------------------------------------;
 if( console ) console.log( "[ E ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
-
