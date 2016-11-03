@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_service_list_static/email_detail/window.b2link_service_brand.brand_basic.update_ids.js";
+var fileNm = "js/b2link_service_brand/brand_basic/window.b2link_service_brand.brand_basic.update_ids.js";
 if ( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -21,7 +21,7 @@ var _url = _t.PROXY + _t.MONGODB.BRAND.BRAND_BASIC + "update_ids?";
 window.b2link_service_brand.brand_basic.update_ids = function( d, cbFunction )
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_brand.brand_basic.update_ids():void----------" );
-	
+
 	window.b2link_service.common._fn_req( _url + "&ids=" + JSON.stringify( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_brand.brand_basic.update_ids():void----------" );
@@ -30,4 +30,3 @@ window.b2link_service_brand.brand_basic.update_ids = function( d, cbFunction )
 //----------------------------------------------------------------------------------------------------;
 if( console ) console.log( "[ E ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
-

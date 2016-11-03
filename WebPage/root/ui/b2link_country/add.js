@@ -4,6 +4,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
+	
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -30,7 +32,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var $f0 = window.b2link.element.getElementByClassName;
 
 	var _el_btn_add = $f0( $el_div, "btn_Add" );
-	var _el_btn_cancle = $f0( $el_div, "btn_Cancle" );
+	var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
 	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
 	
 	/*/
@@ -71,7 +73,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 
 		_el_btn_add.addEventListener( "click", _evt_mClick__el_btn_add, false, 0, true );
-		_el_btn_cancle.addEventListener( "click", _evt_mClick__el_btn_cancle, false, 0, true );
+		_el_btn_cancel.addEventListener( "click", _evt_mClick__el_btn_cancel, false, 0, true );
 		_el_btn_checkOverlap.addEventListener( "click", _evt_mClick__el_btn_checkOverlap, false, 0, true );
 	};
 
@@ -83,7 +85,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
 
 		_el_btn_add.removeEventListener( "click", _evt_mClick__el_btn_add, false );
-		_el_btn_cancle.removeEventListener( "click", _evt_mClick__el_btn_cancle, false );
+		_el_btn_cancel.removeEventListener( "click", _evt_mClick__el_btn_cancel, false );
 		_el_btn_checkOverlap.removeEventListener( "click", _evt_mClick__el_btn_checkOverlap, false );
 	};
 
@@ -145,10 +147,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @function
 	 * @param {MouseEvent} e event
 	 */
-	var _evt_mClick__el_btn_cancle = function( e )
+	var _evt_mClick__el_btn_cancel = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_cancle():void----------" );
-		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_cancle():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_cancel():void----------" );
+		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_cancel():void----------" );
 	};
 
 	/**
@@ -179,7 +181,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 
 		_el_btn_add = null;
-		_el_btn_cancle = null;
+		_el_btn_cancel = null;
 		_el_btn_checkOverlap = null;
 
 		/*/
@@ -223,9 +225,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
 		//*/
 		console.logObjectInformation( r, "_getDataForQuery - r" );
-		return r;
-
+		
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
+		
+		return r;
 	};
 
 	//--------------------------------------------------;
@@ -244,8 +247,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		//window.b2link.element.setPosition_RightBottom( t, 10, 10 );
 		//window.b2link.element.setPosition_RightTop( t, 10, 10 );
 
-		_width = t.clientWidth;
-		_height = t.clientHeight;
 		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
@@ -282,11 +283,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------;
 	_addEvent();
 	_setPosition();
-	//----------;
-	//console.logObjectInformation( $w );
-	window.RayLog.timeStamp( "$w.screen.width : " + $w.screen.width );
-	window.RayLog.timeStamp( "$w.screen.height : " + $w.screen.height );
-
 	//----------;
 	
 	//--------------------------------------------------this;
