@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 	
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+	
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -31,15 +33,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-
-	var _o_thead_style = {
-		"_id" : "ID"
-		, "cd_n" : "코드", "cd_us2" : "코드_영문_2", "cd_us3" : "코드_영문_3"
-		, "nm_kr" : "이름(한글)", "nm_us" : "이름(영문)", "nm_cn" : "이름(한문)"
-	};
-
-	var _width = $el_div.clientWidth;
-	var _height = $el_div.clientHeight;
 
 	//--------------------------------------------------;
 
@@ -95,6 +88,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
+		
+		$f0 = null;
+		
+		_el_tbody = null;
+		_el_thead = null;
 	};
 
 	/**
@@ -180,9 +178,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_addEvent();
 	_setPosition();
 	//----------;
-
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
 
 	_req_Data();
 

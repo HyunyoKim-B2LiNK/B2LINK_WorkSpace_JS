@@ -1,0 +1,9 @@
+{
+	"th___id" : "ID"
+	, "th__cd_n" : "Code"
+	, "th__cd_us2" : "Code(US2)"
+	, "th__cd_us3" : "Code(US3)"
+	, "th__nm_kr" : "Name(KR)"
+	, "th__nm_us" : "Name(US)"
+	, "th__nm_cn" : "Name(CN)"
+}
