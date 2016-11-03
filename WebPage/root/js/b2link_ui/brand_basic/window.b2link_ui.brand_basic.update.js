@@ -15,7 +15,7 @@ window.b2link_ui.brand_basic.update = function()
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_BRAND
 		, nm : "update"
 		, css_url : "./css_ui/"
-		, css_front_nm : "div__brand-"
+		, css_front_nm : "div__brand_basic-"
 		, key : "brand_basic$update"
 	};
 

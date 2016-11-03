@@ -15,12 +15,12 @@ window.b2link_ui.brand_basic.remove = function()
 		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_BRAND
 		, nm : "remove"
 		, css_url : "./css_ui/"
-		, css_front_nm : "div__brand-"
+		, css_front_nm : "div__brand_basic-"
 		, key : "brand_basic$remove"
 	};
-	
+
 	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
-	
+
     if( !o[ 1 ].getEvt_Complete__Delete() )
 	{
 		o[ 1 ].setEvt_Complete__Delete( function( result ){
