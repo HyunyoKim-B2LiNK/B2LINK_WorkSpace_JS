@@ -1,5 +1,6 @@
 var d = {
 	"_id" : "product_basic"
+	, "_id$member_basic" : "uint"//{uint} - _id$member_basic, 해당 제품 등록자
 	, "_id$brand_basic" : "uint"//{uint} - _id$brand_basic , 해당 제품의 브랜드 _id
 	, "_id$product_category" : "uint"//{uint} - 제품 카테고리	제품 카탈로그 _ id
 	, "barcode" : "string"//{String} barcode number	실제 바코드 넘버	제품 바코드 번호
