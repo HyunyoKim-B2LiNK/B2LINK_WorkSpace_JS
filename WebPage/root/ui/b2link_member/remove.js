@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -34,8 +36,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-
-	var _o_locale_label = window.b2link.ui_resource.reqSync_JSON_LocaleLabel( url );
 
 	/**
 	* @Property {Function} function( result ){}
@@ -137,21 +137,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_tbody = null;
 		_el_thead = null;
 
-		_o_locale_label = null;
 		_evt_Complete__Delete = null;
-	};
-
-	/**
-	 * @function
-	 */
-	var _initialize__local_label = function()
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _initialize__local_label():void----------" );
-
-		var o = window.b2link.html.apply_html( _el_thead, _o_locale_label );
-			//console.log( o );
-
-		window.TtwLog.timeStamp( "-- [ E ] - _initialize__local_label():void----------" );
 	};
 
 	/**
@@ -258,7 +244,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 	_addEvent();
-	_initialize__local_label();
 	_setPosition;
 	//----------;
 

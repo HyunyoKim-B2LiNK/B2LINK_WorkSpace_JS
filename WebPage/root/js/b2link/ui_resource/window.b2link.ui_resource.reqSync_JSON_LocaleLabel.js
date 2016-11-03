@@ -21,7 +21,6 @@ window.b2link.ui_resource.reqSync_JSON_LocaleLabel = function( url )
 	console.log( "url1 : " + url );
 
 	var o = window.b2link.xhr.reqSync_JSON( url );
-		o;
 		console.log( o );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui_resource.reqSync_JSON_LocaleLabel():{Object}----------" );

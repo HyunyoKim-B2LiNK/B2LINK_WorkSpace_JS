@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -34,8 +36,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_input_phone = $f0( $el_div, "phone" );
 	var _el_input_password = $f0( $el_div, "password" );
 	var _el_input_password_confirm = $f0( $el_div, "password_confirm" );
-
-	var _o_locale_label = window.b2link.ui_resource.reqSync_JSON_LocaleLabel( url );
 
 	//--------------------------------------------------;
 
@@ -104,19 +104,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_this = null;
 	};
 
-	/**
-	 * @function
-	 */
-	var _initialize__local_label = function()
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _initialize__local_label():void----------" );
-
-		var o = window.b2link.html.apply_html( $el_div, _o_locale_label );
-			//console.log( o );
-
-		window.TtwLog.timeStamp( "-- [ E ] - _initialize__local_label():void----------" );
-	};
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -158,7 +145,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 	_addEvent();
-	_initialize__local_label();
 	_setPosition();
 	//----------;
 

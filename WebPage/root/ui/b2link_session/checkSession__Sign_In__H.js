@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 	
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+	
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
