@@ -1,0 +1,10 @@
+"*":
+  editor:
+    fontSize: 15
+    showIndentGuide: true
+    tabLength: 4
+    tabType: "hard"
+  "exception-reporting":
+    userId: "4caba88a-b4c9-df57-2838-ff7482df8f05"
+  welcome:
+    showOnStartup: false
