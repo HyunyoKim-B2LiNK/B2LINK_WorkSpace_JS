@@ -180,16 +180,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	};
 
-	/**
-	 * @function
-	 */
-	var _hide = function(){ window.b2link.element.hide( $el_div ); };
-
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -288,9 +278,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	
 	//--------------------------------------------------this;
 	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
 	_.dispose = _dispose;
-	_.hide = _hide;
-	_.show = _show;
 	_.getEvt_Complete__Add = _getEvt_Complete__Add;
 	_.setEvt_Complete__Add = _setEvt_Complete__Add;
 	_.getEvt_Complete__CheckOverlap = _getEvt_Complete__CheckOverlap;

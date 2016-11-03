@@ -20,6 +20,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = $w.document;
@@ -199,10 +201,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, req_Data : _req_Data
-		, show : _show
-	};
+	//--------------------------------------------------this;
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	_.dispose = _dispose;
+	_.req_Data = _req_Data;
+	//--------------------------------------------------this;
+	return _this;
 });

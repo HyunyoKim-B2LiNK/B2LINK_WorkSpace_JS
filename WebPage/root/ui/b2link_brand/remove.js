@@ -269,10 +269,10 @@ var _o_thead_style = {
 
 	//--------------------------------------------------this;
 	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
 	_.dispose = _dispose;
-	_.hide = _hide;
 	_.req_Data = _req_Data;
-	_.show = _show;
 	_.getEvt_Complete__Delete = _getEvt_Complete__Delete;
 	_.setEvt_Complete__Delete = _setEvt_Complete__Delete;
 	//--------------------------------------------------this;
