@@ -137,7 +137,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.TtwLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
 		window.TtwLog.timeStamp( "window.b2link.service.req$member_basic$getAllList result : " );
-		window.TtwLog.timeStamp( data );
+		
+		console.log( data );
+		
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
