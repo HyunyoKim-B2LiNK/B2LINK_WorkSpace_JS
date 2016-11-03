@@ -40,7 +40,6 @@ jspm_packages
 *.bson
 *.conf
 *.css
-*.cson
 *.dbjs
 *.dbs
 *.errorResult
