@@ -4,6 +4,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
+	
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -135,13 +137,20 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _dispose = function()
 	{
 		_removeEvent();
+		
 		$w = null;
 		$d = null;
+		
+		_el_btn_cancle = null;
 		_el_btn_signin = null;
 		_el_input_id = null;
 		_el_input_pw = null;
+		
+		_evt_Complete__SignIn = null;
+		
+		_o_locale_label = null;
 	};
-
+	
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
