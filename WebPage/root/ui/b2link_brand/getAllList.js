@@ -21,7 +21,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 	
-	var _this = {};
+	var _this = { __url : url };
 
 	var $w = window;
 	var $d = $w.document;
