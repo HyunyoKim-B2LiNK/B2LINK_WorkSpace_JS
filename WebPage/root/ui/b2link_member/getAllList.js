@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-	
+
 	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 
 	//----------------------------------------------------------------------------------------------------;
@@ -191,6 +191,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
 	//--------------------------------------------------this;
 	return _this;
