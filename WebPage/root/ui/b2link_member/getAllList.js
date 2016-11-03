@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-	
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -35,12 +35,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
 
-	var _o_thead_style = {
-		"_id" : "ID"
-		, "bConn" : "접속 상태", "email" : "E-MAIL", "nSignInFail" : "로그인 실패 횟수"
-		, "nm.a" : "이름", "nm_cn.a" : "이름(중문)", "nm_kr.a" : "이름(한글)", "nm_us.a" : "이름(영문)"
-		, "rank" : "등급", "mid" : "MEMBER ID"
-	};
+	var _o_locale_label = window.b2link.ui_resource.reqSync_JSON_LocaleLabel( url );
 
 	//--------------------------------------------------;
 
@@ -96,6 +91,26 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
+
+		$f0 = null;
+
+		_el_tbody = null;
+		_el_thead = null;
+
+		_o_locale_label = null;
+	};
+
+	/**
+	 * @function
+	 */
+	var _initialize__local_label = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _initialize__local_label():void----------" );
+
+		var o = window.b2link.html.apply_html( _el_thead, _o_locale_label );
+			//console.log( o );
+
+		window.TtwLog.timeStamp( "-- [ E ] - _initialize__local_label():void----------" );
 	};
 
 	/**
@@ -129,10 +144,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	var _setClassName__tbody_tr_td = function(){ window.b2link.element.setClassName__tbody_tr_td( _el_tbody, _className_td ); };
-
-	var _setClassName__thead_tr_th = function(){ window.b2link.element.setClassName__tbody_tr_th( _el_thead, _className_th ); };
-
 	//------------------------------;
 
 	/**
@@ -146,7 +157,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.TtwLog.timeStamp( "window.b2link.service.req$member_basic$getAllList result : " );
 		window.TtwLog.timeStamp( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
-		//_setClassName__tbody_tr_td();
 
 		window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
 	};
@@ -184,12 +194,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 	_addEvent();
+	_initialize__local_label();
 	_setPosition();
 	//----------;
-
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
-	//_setClassName__thead_tr_th();
 
 	_req_Data();
 

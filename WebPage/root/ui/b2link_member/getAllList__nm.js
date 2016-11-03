@@ -62,9 +62,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-	  console.log( "-- [ S ] - _evt_resize$parentElement():void----------" );
+	  window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
 	  _setPosition();
-	  console.log( "-- [ E ] - _evt_resize$parentElement():void----------" );
+	  window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -98,12 +98,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setPosition = function()
 	{
-		console.log( "-- [ S ] - _setPosition():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
 		// var t = $el_div;
 		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 		// _width = t.clientWidth;
 		// _height = t.clientHeight;
-		console.log( "-- [ E ] - _setPosition():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
 	//--------------------------------------------------;
