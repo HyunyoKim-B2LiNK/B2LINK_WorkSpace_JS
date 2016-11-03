@@ -1,0 +1,11 @@
+{
+	"second_level_domain" : "Second Level Domain "
+	, "top_level_domain" : "Top Level Domain "
+	, "country_code_top_level_domain" : "Country Code Top Level Domain "
+	, "global_top_level_domain" : "Global Top Level Domain "
+	, "country" : "Country Code "
+
+	, "btn_overlap_check" : "Check Overlap"
+	, "btn_add" : "Add"
+	, "btn_cancel" : "Cancel"
+}
