@@ -21,7 +21,7 @@ window.b2link_service_list_static.email_detail.check__Overlap = function( d, cbF
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.email_detail.check__Overlap():void----------" );
 
-	window.b2link_service.common._fn_req( _url + window.b2link_url.list_static.email_detail$getParam( d ), cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url_list_static.email_detail$getParam( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.email_detail.check__Overlap():void----------" );
 };
@@ -29,4 +29,3 @@ window.b2link_service_list_static.email_detail.check__Overlap = function( d, cbF
 //----------------------------------------------------------------------------------------------------;
 if( console ) console.log( "[ E ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
-

@@ -22,7 +22,7 @@ window.b2link_service_list_static.country.add = function( d, cbFunction )
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.country.add():void----------" );
 
-	window.b2link_service.common._fn_req( _url + window.b2link_url.list_static.country$getParam( d ), cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url_list_static.country.getParam( d ), cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.country.add():void----------" );
 };

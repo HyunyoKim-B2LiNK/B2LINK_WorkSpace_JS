@@ -66,9 +66,9 @@ window.onload = function()
 	//*///--------------------------------------------------TemplateHTML API - addHTMLJS__URL 활용;
 
 	window.b2link_ui.test.test_Menu();
-	//window.b2link_ui.member_session.checkSession__Sign_In();
-	//window.b2link_ui.member_session.checkSession__Sign_In__H();
-	window.b2link_ui.member_session.checkSession__Sign_In__V();
+	//window.b2link_ui_member.member_session.checkSession__Sign_In();
+	//window.b2link_ui_member.member_session.checkSession__Sign_In__H();
+	window.b2link_ui_member.member_session.checkSession__Sign_In__V();
 
 	//*///--------------------------------------------------TemplateHTML API - addHTMLJS__URL 활용;
 	//--------------------------------------------------[ E ] - HTML, JavaScript UI;

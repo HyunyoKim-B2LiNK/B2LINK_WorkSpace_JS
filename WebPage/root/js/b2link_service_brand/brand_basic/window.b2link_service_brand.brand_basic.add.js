@@ -6,7 +6,6 @@ if ( console ) console.log( "[ S ] - " + fileNm + "----------" );
 var _t = window.b2link.STATIC.CONFIG.URL;
 var _url = _t.PROXY + _t.MONGODB.BRAND.BRAND_BASIC + "add?";
 
-
 /**
  * @function
  * @param {*} result
@@ -22,7 +21,7 @@ window.b2link_service_brand.brand_basic.add = function( d, cbFunction )
 {
 	window.RayLog.timeStamp( "---- [ S ] -window.b2link_service_brand.brand_basic.add():void----------" );
 
-	window.b2link_service.common._fn_req( _url + window.b2link_url.brand.brand_basic$getParam( d ), cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url_brand.brand_basic.getParam( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_brand.brand_basic.add():void----------" );
 };
@@ -30,4 +29,3 @@ window.b2link_service_brand.brand_basic.add = function( d, cbFunction )
 //----------------------------------------------------------------------------------------------------;
 if( console ) console.log( "[ E ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
-

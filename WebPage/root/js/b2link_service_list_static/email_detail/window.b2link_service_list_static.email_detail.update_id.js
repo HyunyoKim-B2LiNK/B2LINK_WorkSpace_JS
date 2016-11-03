@@ -21,8 +21,8 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.EMAIL_DETAIL + "update_id?";
 window.b2link_service_list_static.email_detail.update_id = function( d, cbFunction )
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.email_detail.update_id():void----------" );
-	
-	window.b2link_service.common._fn_req( _url + window.b2link_url.list_static.email_detail$getParam_id( d ), cbFunction );
+
+	window.b2link_service.common._fn_req( _url + window.b2link_url_list_static.email_detail$getParam_id( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.email_detail.update_id():void----------" );
 };
@@ -30,4 +30,3 @@ window.b2link_service_list_static.email_detail.update_id = function( d, cbFuncti
 //----------------------------------------------------------------------------------------------------;
 if( console ) console.log( "[ E ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
-
