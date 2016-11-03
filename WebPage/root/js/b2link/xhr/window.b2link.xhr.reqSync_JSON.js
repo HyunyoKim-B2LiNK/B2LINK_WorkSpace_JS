@@ -12,8 +12,7 @@ window.b2link.xhr.reqSync_JSON = function( url )
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.xhr.reqSync_JSON():{Object}----------" );
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.xhr.reqSync_JSON():{Object}----------" );
-
-	return JSON.parse( SUtilXMLHttpReqGet.reqSyncReturn( url ).responstText );
+	return JSON.parse( SUtilXMLHttpReqGet.reqSyncReturn( url ).responseText );
 };
 
 //----------------------------------------------------------------------------------------------------;
