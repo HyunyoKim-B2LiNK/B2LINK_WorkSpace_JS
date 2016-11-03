@@ -33,7 +33,7 @@ window.b2link_ui_brand.brand_basic.add = function()
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
 
-				window.b2link_ui.brand_basic.getAllList();
+				window.b2link_ui_brand.brand_basic.getAllList();
 			}
 			else alert( "등록 실패." );
 

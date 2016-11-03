@@ -15,14 +15,14 @@ var _url = _t.PROXY + _t.MONGODB.BRAND.BRAND_BASIC + "update_id?";
 
 /**
  * @function
- * @param {Object} d
+ * @param {Object} d _id
  * @param {Function} cbFunction function( data ){};
  */
 window.b2link_service_brand.brand_basic.update_id = function( d, cbFunction )
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_brand.brand_basic.update_id():void----------" );
 
-	window.b2link_service.common._fn_req( _url + window.b2link_url.brand.brand_basic$getParam_with_brand_id( d ), cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url_brand.brand_basic.getParam_with_brand_id( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_brand.brand_basic.update_id():void----------" );
 };

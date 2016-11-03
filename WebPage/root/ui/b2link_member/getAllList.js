@@ -104,7 +104,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+
 		window.b2link_service_member.member_basic.getAllList( _res_Data );
+
 		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
@@ -115,7 +117,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _res_Data = function( result )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
+
 		_setData__tbody( result );
+
 		window.TtwLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
 	};
 

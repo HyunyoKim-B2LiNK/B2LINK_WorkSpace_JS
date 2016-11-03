@@ -31,7 +31,7 @@ window.b2link_ui_brand.brand_basic.update = function()
 				/*/
 				//o[ 1 ].hide();
 				////window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
-				//window.b2link_ui.email_detail.getAllList();
+				//window.b2link_ui_brand.brand_basic.getAllList();
 				/*/
 				o[ 1 ].req_Data();
 				//*/

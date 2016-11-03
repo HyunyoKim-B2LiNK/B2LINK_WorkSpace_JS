@@ -15,7 +15,7 @@ var _url = _t.PROXY + _t.MONGODB.BRAND.BRAND_BASIC + "update_ids?";
 
 /**
  * @function
- * @param {Object} d
+ * @param {Object} d [ _id, _id, ... ]
  * @param {Function} cbFunction function( data ){};
  */
 window.b2link_service_brand.brand_basic.update_ids = function( d, cbFunction )

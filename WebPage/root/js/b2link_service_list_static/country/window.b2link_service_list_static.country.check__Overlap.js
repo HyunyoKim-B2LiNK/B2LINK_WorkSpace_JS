@@ -21,7 +21,7 @@ window.b2link_service_list_static.country.check__Overlap = function( d, cbFuncti
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_list_static.country.check__Overlap():void----------" );
 
-	window.b2link_service.common._fn_req( _url + window.b2link_url.list_static.country$getParam( d ), cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url_list_static.country.getParam( d ), cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_list_static.country.check__Overlap():void----------" );
 };
@@ -29,4 +29,3 @@ window.b2link_service_list_static.country.check__Overlap = function( d, cbFuncti
 //----------------------------------------------------------------------------------------------------;
 if( console ) console.log( "[ E ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
-
