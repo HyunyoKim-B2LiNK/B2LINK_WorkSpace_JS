@@ -58,3 +58,4 @@ __listPackage.json
 DataBase/B2LINK/0/WiredTiger
 HTTPServer_MongoDB/MemberSession/MemberSession.bat
 HTTPServer_WebPage/a.bat
+HTTPServer_MongoDB/MemberSession/.vscode/launch.json
