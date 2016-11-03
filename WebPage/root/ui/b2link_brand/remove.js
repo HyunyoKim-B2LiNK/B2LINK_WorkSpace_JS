@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -19,7 +21,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	
+
 	//--------------------------------------------------;
 
 	var _this = { __url : url };
@@ -34,14 +36,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-
-var _o_thead_style = {
-		_check : "Selected"
-		, _id : "ID"
-		, nm_kr : "브랜드명", nm_cn : "브랜드명(중문)", nm_us : "브랜드명(영문)"
-		, url : "홈페이지"
-	};
-
 
 	/**
 	* @Property {Function} function( result ){}
@@ -86,7 +80,9 @@ var _o_thead_style = {
 	var _evt_resize$parentElement = function( e )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - evt_resize$parentElement():void----------");
+
 		_setPosition();
+
 		window.RayLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
 	};
 
@@ -107,13 +103,16 @@ var _o_thead_style = {
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
 	};
-	
+
 	_evt_mClick__el_btn_delete._cb_f0 = function( result )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
+
 		console.log( "result : " + result );
+
 		if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
 		else _evt_Complete__Delete( result );
+
 		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
 	};
 
@@ -139,7 +138,6 @@ var _o_thead_style = {
 		_el_tbody = null;
 		_el_thead = null;
 
-		_o_thead_style = null;
 		_evt_Complete__Delete = null;
 	};
 
@@ -149,7 +147,9 @@ var _o_thead_style = {
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+
 		window.b2link_service_brand.brand_basic.getAllList( _res_Data );
+
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
@@ -160,7 +160,9 @@ var _o_thead_style = {
 	var _res_Data = function( result )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _res_Data:void----------" );
+
 		_setData__tbody( result );
+
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------" );
 	}
 
@@ -200,7 +202,7 @@ var _o_thead_style = {
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setData_tbody():void----------" );
 
-		window.RayLog.timeStamp( data );
+		console.log( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
 		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------");
@@ -216,8 +218,6 @@ var _o_thead_style = {
 		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------");
 		//var t = $el_div;
 		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-		//_width = t.clientWidht;
-		//_height = t.clientHeight;
 
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------");
 	};
@@ -250,9 +250,6 @@ var _o_thead_style = {
 	_setPosition;
 	//----------;
 
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
-
 	_req_Data();
 
 	//----------;
@@ -262,7 +259,9 @@ var _o_thead_style = {
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
+
 	_.getEvt_Complete__Delete = _getEvt_Complete__Delete;
 	_.setEvt_Complete__Delete = _setEvt_Complete__Delete;
 	//--------------------------------------------------this;

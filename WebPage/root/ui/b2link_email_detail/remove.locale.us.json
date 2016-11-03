@@ -7,6 +7,6 @@
 	, "th__gTLD" : "Global Top level Domain"
 	, "th__c" : "Country Code"
 
-	, "btn__cancel" : "취소"
-	, "btn__delete" : "삭제"
+	, "btn__cancel" : "Cancel"
+	, "btn__delete" : "Delete"
 }

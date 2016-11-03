@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -20,7 +22,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 	var _this = { __url : url };
 
 	var $w = window;
@@ -30,12 +32,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-
-	var _o_thead_style = {
-		_id : "ID"
-		, nm_kr : "브랜드명", nm_cn : "브랜드명(중문)", nm_us : "브랜드명(영문)"
-		, url : "홈페이지"
-	};
 
 	//--------------------------------------------------;
 
@@ -96,8 +92,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		$_el_tbody = null;
 		$_el_thead = null;
-
-		$_o_thead_style = null;
 	};
 
 	/**
@@ -106,7 +100,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-				window.b2link_service_brand.brand_basic.getAllList( _res_Data );
+
+		window.b2link_service_brand.brand_basic.getAllList( _res_Data );
+
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
@@ -142,7 +138,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
 		window.RayLog.timeStamp( "window.b2link_service_brand.brand_basic.getAllList result : " );
-		window.RayLog.timeStamp( data );
+		console.log( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
 		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
@@ -184,18 +180,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_setPosition();
 	//----------;
 
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
-
 	_req_Data();
 
 	//----------;
-	
+
 	//--------------------------------------------------this;
 	var _ = _this;
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
 	//--------------------------------------------------this;
 	return _this;
