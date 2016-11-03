@@ -1,0 +1,5 @@
+/**
+ * @function
+ * @param {Array} ids
+ * @return {uint} 0 or 1
+ */
