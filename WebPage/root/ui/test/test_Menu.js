@@ -8,9 +8,6 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
 (function( url, $el_div ){
 
-	console.log( "arguments : " );
-	console.log( arguments );
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
