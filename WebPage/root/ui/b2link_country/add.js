@@ -290,8 +290,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+	
 	_.getEvt_Complete__Add = _getEvt_Complete__Add;
 	_.setEvt_Complete__Add = _setEvt_Complete__Add;
+	
 	_.getEvt_Complete__CheckOverlap = _getEvt_Complete__CheckOverlap;
 	_.setEvt_Complete__CheckOverlap = _setEvt_Complete__CheckOverlap;
 	//--------------------------------------------------this;

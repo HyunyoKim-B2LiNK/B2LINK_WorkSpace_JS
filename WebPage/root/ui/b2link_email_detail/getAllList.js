@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -19,9 +21,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	
+
 	//--------------------------------------------------;
-	
+
 	var _this = { __url : url };
 
 	var $w = window;
@@ -31,15 +33,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-
-	var _o_thead_style = {
-		"_id" : "ID"
-		, "SLD" : "Second Level Domain"
-		, "TLD" : "Top Level Domain"
-		, "ccTLD" : "Country code Top Level Domain"
-		, "gTLD" : "Global Top level Domain"
-		, "c" : "Country"
-	};
 
 	//--------------------------------------------------;
 
@@ -95,6 +88,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
+
+		$f0 = null;
+		_el_tbody = null;
+		_el_thead = null;
 	};
 
 	/**
@@ -181,15 +178,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_setPosition;
 	//----------;
 
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
 	_req_Data();
-	
+
 	//--------------------------------------------------this;
 	var _ = _this;
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
 	//--------------------------------------------------this;
 	return _this;

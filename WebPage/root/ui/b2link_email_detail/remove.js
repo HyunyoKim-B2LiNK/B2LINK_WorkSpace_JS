@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -79,6 +81,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _removeEvent = function()
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
+
 		_el_btn_delete.removeEventListener( "click", _evt_mClick__el_btn_delete, false );
 	};
 
@@ -113,9 +116,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_evt_mClick__el_btn_delete._cb_f0 = function( result )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
+
 		console.log( "result : " + result );
 		if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
 		else _evt_Complete__Delete( result );
+
 		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
 	};
 
@@ -135,13 +140,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 
 		$f0 = null;
+
 		_el_btn_delete = null;
 		_el_btn_cancel = null;
 
 		_el_tbody = null;
 		_el_thead = null;
 
-		_o_thead_style = null;
 		_evt_Complete__Delete = null;
 	};
 
@@ -264,7 +269,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
+
 	_.getEvt_Complete__Delete = _getEvt_Complete__Delete;
 	_.setEvt_Complete__Delete = _setEvt_Complete__Delete;
 	//--------------------------------------------------this;

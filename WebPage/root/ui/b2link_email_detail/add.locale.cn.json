@@ -1,0 +1,11 @@
+{
+	"second_level_domain" : "Second Level Domain "
+	, "top_level_domain" : "Top Level Domain "
+	, "country_code_top_level_domain" : "Country Code Top Level Domain "
+	, "global_top_level_domain" : "Global Top Level Domain "
+	, "country" : "Country "
+
+	, "btn_overlap_check" : "중복 체크"
+	, "btn_add" : "추가"
+	, "btn_cancel" : "취소"
+}

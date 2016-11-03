@@ -1,12 +1,9 @@
 {
-	"number_code" : "Number Code"
-	, "us_code_2" : "US Code 2"
-	, "us_code_3" : "US Code 3"
-	, "nm_cn" : "Chiness Name"
-	, "nm_kr" : "Korean Name"
-	, "nm_us" : "English Name"
-
-	, "btn_overlap_check" : "Overlap Check"
-	, "btn_add" : "Add"
-	, "btn_cancel" : "Cancel"
+	"th___id" : "ID"
+	, "th__cd_n" : "Number Code"
+	, "th__cd_us2" : "US Code 2"
+	, "th__cd_us3" : "US Code 3"
+	, "th__nm_kr" : "Name(KR)"
+	, "th__nm_us" : "Name(US)"
+	, "th__nm_cn" : "Name(CN)"
 }

@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -35,19 +37,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
 
-	var _o_thead_style = {
-		"_check" : "Selected"
-		, "_id" : "ID"
-		, "SLD" : "Second Level Domain"
-		, "TLD" : "Top Level Domain"
-		, "ccTLD" : "Country code Top Level Domain"
-		, "gTLD" : "Global Top level Domain"
-		, "c" : "Country"
-	};
-
 	/**
-	* @Property {Function} function( result ){}
-	*/
+	 * @Property {Function} function( result ){}
+	 */
 	var _evt_Complete__Update;
 
 	//--------------------------------------------------;
@@ -69,6 +61,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
+
 		_el_btn_update.addEventListener( "click", _evt_mClick__el_btn_update, false, 0, true );
 
 	};
@@ -79,6 +72,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _removeEvent = function()
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
+
 		_el_btn_update.removeEventListener( "click", _evt_mClick__el_btn_update, false );
 	};
 
@@ -134,6 +128,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
+
+		$f0 = null;
+
+		_el_btn_update = null;
+		_el_btn_cancel = null;
+
+		_el_tbody = null;
+		_el_thead = null;
+
+		_evt_Complete__Update = null;
 	};
 
 	/**
@@ -280,8 +284,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_setPosition;
 	//----------;
 
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
 	_req_Data();
 
 	//----------;
@@ -291,7 +293,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
+
 	_.getEvt_Complete__Update = _getEvt_Complete__Update;
 	_.setEvt_Complete__Update = _setEvt_Complete__Update;
 	//--------------------------------------------------this;
