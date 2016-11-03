@@ -146,11 +146,6 @@ var _o_thead_style = {
 	/**
 	 * @function
 	 */
-	var _hide = function() { window.b2link.element.hide( $el_div ); };
-
-	/**
-	 * @function
-	 */
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
@@ -168,11 +163,6 @@ var _o_thead_style = {
 		_setData__tbody( result );
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------" );
 	}
-
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
 
 	//----------------------------------------------------------------------------------------------------;
 
