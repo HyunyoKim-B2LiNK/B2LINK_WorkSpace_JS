@@ -10,8 +10,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 window.b2link.xhr.reqSync_JSON = function( url )
 {
-	console.log( "---- [ S ] - window.b2link.xhr.reqSync_JSON():{Object}----------" );
-	console.log( "---- [ E ] - window.b2link.xhr.reqSync_JSON():{Object}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.xhr.reqSync_JSON():{Object}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.xhr.reqSync_JSON():{Object}----------" );
 
 	return JSON.parse( SUtilXMLHttpReqGet.reqSyncReturn( url ).responstText );
 };

@@ -10,11 +10,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 window.b2link.xhr.req_String = function( url, cbFunction )
 {
-	console.log( "---- [ S ] - window.b2link.xhr.req_String():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.xhr.req_String():void----------" );
 
 	SUtilXMLHttpReqGet.req_String( url, cbFunction );
 
-	console.log( "---- [ E ] - window.b2link.xhr.req_String():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.xhr.req_String():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;
