@@ -3,14 +3,15 @@ var fileNm = "js/b2link_router/__define/100_define_global.b2link_router.STATIC.j
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
+var $g = global;
 
 //----------------------------------------------------------------------------------------------------[ S ] - global.b2link_router.STATIC;
 
-global.b2link_router.STATIC = {};
+$g.b2link_router.STATIC = {};
 
 //--------------------------------------------------[ S ] - global.b2link_router.STATIC.REQUEST_COUNT;
-global.b2link_router.STATIC.REQUEST_COUNT = {};
-var _ = global.b2link_router.STATIC.REQUEST_COUNT;
+$g.b2link_router.STATIC.REQUEST_COUNT = {};
+var _ = $g.b2link_router.STATIC.REQUEST_COUNT;
 _.__n = 0;
 var _M = function( n ){ _.__n = _.__n - n; };
 _.M1 = function(){ _M( 1 ); };
