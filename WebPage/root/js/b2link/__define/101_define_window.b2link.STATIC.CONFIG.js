@@ -38,6 +38,11 @@ $w.b2link.STATIC.CONFIG.URL.SERVER = "http://localhost:49320/";
 
 $w.b2link.STATIC.CONFIG.URL.UI = {};
 $w.b2link.STATIC.CONFIG.URL.UI.BASE = "./ui/";
+
+//$w.b2link.STATIC.CONFIG.URL.UI.LOCALE = "cn";
+$w.b2link.STATIC.CONFIG.URL.UI.LOCALE = "kr";
+//$w.b2link.STATIC.CONFIG.URL.UI.LOCALE = "us";
+
 _ = $w.b2link.STATIC.CONFIG.URL.UI.BASE;
 
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK = _ + "b2link/";
