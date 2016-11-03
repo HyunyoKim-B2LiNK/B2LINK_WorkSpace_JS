@@ -1,6 +1,6 @@
 
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_url/window.b2link_url.list_static.country$getParam.js";
+var fileNm = "js/b2link_url/list_static/window.b2link_url.list_static.country$getParam.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 

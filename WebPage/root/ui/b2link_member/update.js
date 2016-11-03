@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_email_detail/update.js";
+var fileNm = "./ui/b2link_member/update.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -82,11 +82,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - evt_resize$parentElement():void----------");
+		window.TtwLog.timeStamp( "-- [ S ] - evt_resize$parentElement():void----------");
 
 		_setPosition();
 
-		window.RayLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
 	};
 
 	/**
@@ -95,25 +95,25 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_mClick__el_btn_update = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_update():void----------");
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_update():void----------");
 
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
-		var t = window.b2link_service_list_static.email_detail;
+		var t = window.b2link_service_member.member_basic;
 		if( 1 < d.length ) t.update_ids( d, _evt_mClick__el_btn_update._cb_f0 );
 		else if( 1 == d.length ) t.update_id( d[ 0 ], _evt_mClick__el_btn_update._cb_f0 );
 
-		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_update():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_update():void----------");
 	};
 	_evt_mClick__el_btn_update._cb_f0 = function( result )
 	{
-		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_update._cb_f0():void----------");
+		window.TtwLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_update._cb_f0():void----------");
 
 		console.log( "result : " + result );
 		if( !window.b2link.fn.getResultStatus( result ) ) alert( "수정 실패.");
 		else _evt_Complete__Update( result );
 
-		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_update._cb_f0():void----------");
+		window.TtwLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_update._cb_f0():void----------");
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -147,11 +147,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _req_Data = function()
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
 
-		window.b2link_service_list_static.email_detail.getAllList( _res_Data );
+		window.b2link_service_member.member_basic.getAllList( _res_Data );
 
-		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
 	/**
@@ -160,11 +160,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _res_Data = function( result )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _res_Data:void----------");
+		window.TtwLog.timeStamp( "-- [ S ] - _res_Data:void----------");
 
 		_setData__tbody( result )
 
-		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - _res_Data:void----------");
 	}
 
 	//----------------------------------------------------------------------------------------------------;
@@ -182,12 +182,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var __getDataForQuery__Tr = function( _tr )
 	{
-		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr():{Object}----------" );
+		window.TtwLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr():{Object}----------" );
 
 		var r = {};
 		var i=1, iLen=_tr.children.length;
 		var io;
-		for( ; i<iLen; ++i )//td;
+		for( ; i<iLen; ++i )//td
 		{
 			io = _tr.children[ i ];
 			var iolen = io.children.length;
@@ -202,10 +202,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			else r[ io.className ] = io.innerText;
 		}
 
-		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr():{Object}----------" );
+		window.TtwLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr():{Object}----------" );
 		return r;
 	}
-
 
 	/**
 	 * @function
@@ -213,9 +212,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _getDataForQuery = function()
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Array}----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Array}----------" );
 
 		var idx = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
+
 		var r = [];
 		var i=0, iLen=idx.length;
 		for( ; i<iLen; ++i )
@@ -224,7 +224,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
-		window.RayLog.timeStamp( "-- [ E ] - _getDataForQuery():{Array}----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _getDataForQuery():{Array}----------" );
 	};
 
 	//--------------------------------------------------;
@@ -237,12 +237,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setData__tbody = function( data )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setData_tbody():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _setData_tbody():void----------" );
 
 		console.log( data );
 		var td = window.b2link.html.apply_tbody_child( _el_tbody, data );
 
-		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------");
 	};
 
 	//------------------------------;
@@ -252,12 +252,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setPosition = function()
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------");
+		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------");
 
-		// var t = $el_div;
-		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
+		//var t = $el_div;
+		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 
-		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------");
 	};
 
 

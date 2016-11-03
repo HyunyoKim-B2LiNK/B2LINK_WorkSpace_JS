@@ -1,5 +1,6 @@
+//수정해야함;
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_url/brand/window.b2link_url.brand.brand_basic$getParam_with_brand_id.js";
+var fileNm = "js/b2link_url/member/window.b2link_url.member.member_basic$getParam_idss.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -8,19 +9,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {Object} d
  * @return {String}
  */
-window.b2link_url.brand.brand_basic$getParam_with_brand_id = function( d )
+window.b2link_url.member.member_basic$getParam_ids = function( d )
 {
-	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url.brand.brand_basic$getParam_with_brand_id():{String}----------" );
-	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url.brand.brand_basic$getParam_with_brand_id():{String}----------" );
+	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url.member.member_basic$getParam_ids():{String}----------" );
+	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url.member.member_basic$getParam_ids():{String}----------" );
 
 	return "&_id=" + d._id
-		+ "&nm_cn=" + d.nm_cn
-		+ "&nm_kr=" + d.nm_kr
-		+ "&nm_us=" + d.nm_us
-		+ "&description=" + d.description
-		+ "&url="  + d.url
-		+ "&url_logo=" + d.url_logo
-		+ "&url_trademark=" + d.url_trademark;
+		+ "&SLD=" + d.SLD
+		+ "&TLD=" + d.TLD
+		+ "&ccTLD=" + d.ccTLD
+		+ "&gTLD=" + d.gTLD
+		+ "&c=" + d.c;
 };
 
 //----------------------------------------------------------------------------------------------------;

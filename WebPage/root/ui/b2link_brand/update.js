@@ -5,6 +5,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 (function( url, $el_div ){
 
+	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -35,15 +37,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
 
-	var _o_thead_style = {
- 		_check : "Selected"
-		,_id : "ID"
-		, nm_kr : "브랜드명", nm_cn : "브랜드명(중문)", nm_us : "브랜드명(영문)"
-		, description : "명세"
-		, url : "홈페이지" , url_logo : "logo path", url_trademark : "상표등록증"
- 		, date_register : "등록일" , _id$member_basic : "등록자"
-	};
-
 	var _evt_Complete__Update;
 
 	//--------------------------------------------------;
@@ -65,6 +58,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
+
 		_el_btn_update.addEventListener( "click", _evt_mClick__el_btn_update, false, 0, true );
 	};
 
@@ -74,6 +68,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _removeEvent = function()
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
+
 		_el_btn_update.removeEventListener( "click", _evt_mClick__el_btn_update, false );
 	};
 
@@ -98,6 +93,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
+
 		var t = window.b2link_service_brand.brand_basic;
 		if( 1 < d.length ) t.update_ids( d, _evt_mClick__el_btn_update._cb_f0 );
 		else if( 1 == d.length ) t.update_id( d[ 0 ], _evt_mClick__el_btn_update._cb_f0 );
@@ -135,10 +131,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		$f0 = null;
 
+		_el_btn_update = null;
+		_el_btn_cancel = null;
+
 		$_el_tbody = null;
 		$_el_thead = null;
 
-		$_o_thead_style = null;
+		_evt_Complete__Update = null;
 	};
 
 	/**
@@ -147,7 +146,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-				window.b2link_service_brand.brand_basic.getAllList( _res_Data );
+
+		window.b2link_service_brand.brand_basic.getAllList( _res_Data );
+
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
@@ -158,7 +159,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _res_Data = function( result )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
+
 		_setData__tbody( result );
+
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
 	};
 
@@ -181,7 +184,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var i = 1 , iLen = _tr.children.length;
 		var r = {};
 		var io;
-		for ( ; i < iLen ; ++i ) // td
+		for ( ; i < iLen ; ++i )//td;
 		{
 			io = _tr.children[i];
 			var iolen = io.children.length;
@@ -208,17 +211,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Array}----------" );
 
 		var idx = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
-		var i = 0 , iLen = idx.length;
-		var r = [];
-		for ( ; i < iLen ; ++i ) r.push ( __getDataForQuery__Tr( _el_tbody.children[idx[i]] ) );
 
+		var r = [];
+		var i=0, iLen=idx.length;
+		for( ; i<iLen; ++i )
+			r.push( __getDataForQuery__Tr( _el_tbody.children[ idx[ i ] ] ) );
 
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
 		window.RayLog.timeStamp( "-- [ E ] - _getDataForQuery():{Array}----------" );
 	};
-
 
 	//--------------------------------------------------;
 
@@ -233,7 +236,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
 		window.RayLog.timeStamp( "window.b2link_service_brand.brand_basic.getAllList result : " );
-		window.RayLog.timeStamp( data );
+		console.log( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
 		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
@@ -249,8 +252,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
 		//var t = $el_div;
 		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-		//_width = t.clientWidth;
-		//_height = t.clientHeight;
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
@@ -282,9 +283,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_setPosition();
 	//----------;
 
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
-
 	_req_Data();
 
 	//----------;
@@ -294,7 +292,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
+
+	_.getEvt_Complete__Update = _getEvt_Complete__Update;
+	_.setEvt_Complete__Update = _setEvt_Complete__Update;
 	//--------------------------------------------------this;
 	return _this;
 });

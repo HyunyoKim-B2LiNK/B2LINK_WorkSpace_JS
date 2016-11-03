@@ -1,0 +1,21 @@
+{
+	"th___check" : "Select"
+	, "th___id" : "ID"
+
+	, "th__nm_cn" : "Name(CN)"
+	, "th__nm_kr" : "Name(KR)"
+	, "th__nm_us" : "Name(US)"
+	
+	, "th__url" : "URL"
+	, "th__url_logo" : "Logo URL"
+	, "th__url_trademark" : "Tradmark URL"
+
+	, "th__date_register" : "Register Date"
+
+	, "th___id$member_basic" : "Registrant"
+
+	, "th__description" : "Description"
+
+	, "btn__cancel" : "Cancel"
+	, "btn__update" : "Update"
+}
