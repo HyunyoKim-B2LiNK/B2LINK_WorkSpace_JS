@@ -142,16 +142,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_input_pw = null;
 	};
 
-	/**
-	 * @function
-	 */
-	var _hide = function(){ window.b2link.element.hide( $el_div ); };
-
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -216,9 +206,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------this;
 	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
 	_.dispose = _dispose;
-	_.hide = _hide;
-	_.show = _show;
 	_.getEvt_Complete__SignIn = _getEvt_Complete__SignIn;
 	_.setEvt_Complete__SignIn = _setEvt_Complete__SignIn;
 	//--------------------------------------------------this;

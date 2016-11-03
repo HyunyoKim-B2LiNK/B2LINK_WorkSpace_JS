@@ -20,12 +20,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+
+
 	var _this = {};
+
+
 	var $w = window;
 	var $d = $w.document;
 
 	var $f0 = window.b2link.element.getElementByClassName;
-	
+
 	var _el_btn_update = $f0( $el_div, "btn_Update" );
 	var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
 
@@ -83,7 +87,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_setPosition();
 		window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
-	
+
 	/**
 	 * @function
 	 * @param {MouseEvent} e event
@@ -100,7 +104,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_update():void----------");
 	};
-	
+
 	_evt_mClick__el_btn_update._cb_f0 = function( result )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_update._cb_f0():void----------");
@@ -109,8 +113,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		else _evt_Complete__Update( result );
 		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_update._cb_f0():void----------");
 	};
-	
-	
+
+
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -173,7 +177,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------------------------------------------------------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 	/**
 	 * @function
 	 * #param _tr
@@ -184,7 +188,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):{Object}----------" );
 		var i = 1 , iLen = _tr.children.length;
 		var r = {};
-		var io; 
+		var io;
 		for ( ; i < iLen ; ++i ) // td
 		{
 			io = _tr.children[i];
@@ -194,15 +198,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				for ( var j = 0 ;  j < iolen ; ++j)
 				{
 					var ioc = io.children[j];
-					if( "INPUT" == ioc.tagName ) r[ ioc.className ] = ioc.value;		
+					if( "INPUT" == ioc.tagName ) r[ ioc.className ] = ioc.value;
 				}
-			} else r[io.className] = io.innerText;		
-			
+			} else r[io.className] = io.innerText;
+
 		}
 		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):{Object}----------" );
 		return r;
 	}
-	
+
 	/**
 	 * @function
 	 * @return [Array] [Object, Object]
@@ -210,13 +214,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataForQuery = function( )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():[Object,...]----------" );
-		
+
 		var idx = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
 		var i = 0 , iLen = idx.length;
 		var r = [];
 		for ( ; i < iLen ; ++i ) r.push ( __getDataForQuery__Tr( _el_tbody.children[idx[i]] ) );
-		
-		
+
+
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
 
@@ -257,7 +261,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		//_height = t.clientHeight;
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
-	
+
 	/**
 	 * @function
 	 * @return {Function}
@@ -292,15 +296,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_req_Data();
 
 	//----------;
-	
-	var _ = _this;
-	_.dispose = _dispose;
-	_.hide = _hide;
-	_.req_Data = _req_Data;
-	_.show = _show;
-	_.getEvt_Complete__Update = _getEvt_Complete__Update;
-	_.setEvt_Complete__Update = _setEvt_Complete__Update;
+
+
 	//--------------------------------------------------this;
-	
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	_.dispose = _dispose;
+	_.req_Data = _req_Data;
+	//--------------------------------------------------this;
 	return _this;
 });

@@ -9,11 +9,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 window.b2link.xhr.reqSync = function( url )
 {
-	console.log( "---- [ S ] - window.b2link.xhr.reqSync():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.xhr.reqSync():void----------" );
 
 	SUtilXMLHttpReqGet.reqSync( url );
 
-	console.log( "---- [ E ] - window.b2link.xhr.reqSync():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.xhr.reqSync():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

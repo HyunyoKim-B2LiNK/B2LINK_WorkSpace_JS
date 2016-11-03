@@ -4,7 +4,9 @@
 	"send_200_False__ErrorLog",
 	"send_200_JSON",
 	"send_200_String",
+	"send_200_String_DestroySessionComplete",
 	"send_200_True",
 	"send_301_DestroySession",
-	"setHeader__setcookie"
+	"setHeader__setcookie",
+	"setHeader__setcookie__null"
 ]

@@ -35,13 +35,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
 
-	var _o_thead_style = {
-		_check : "Selected"
-		, "_id" : "ID"
-		, "bConn" : "접속 상태", "email" : "E-MAIL", "nSignInFail" : "로그인 실패 횟수"
-		, "nm.a" : "이름", "nm_cn.a" : "이름(중문)", "nm_kr.a" : "이름(한글)", "nm_us.a" : "이름(영문)"
-		, "rank" : "등급", "mid" : "MEMBER ID"
-	};
+	var _o_locale_label = window.b2link.ui_resource.reqSync_JSON_LocaleLabel( url );
 
 	/**
 	* @Property {Function} function( result ){}
@@ -86,9 +80,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - evt_resize$parentElement():void----------");
+		window.TtwLog.timeStamp( "-- [ S ] - evt_resize$parentElement():void----------");
 		_setPosition();
-		window.RayLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
 	};
 
 	/**
@@ -97,7 +91,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_mClick__el_btn_delete = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
 
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
@@ -110,15 +104,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		if( 1 < d.length ) t.remove_ids__AllCols( d, _evt_mClick__el_btn_delete._cb_f0 );
 		else if( 1 == d.length ) t.remove_id__AllCols( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
 		//*/
-		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
 	};
 	_evt_mClick__el_btn_delete._cb_f0 = function( result )
 	{
-		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
+		window.TtwLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
 		console.log( "result : " + result );
 		if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
 		else _evt_Complete__Delete( result );
-		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
+		window.TtwLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -143,23 +137,31 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_tbody = null;
 		_el_thead = null;
 
-		_o_thead_style = null;
+		_o_locale_label = null;
 		_evt_Complete__Delete = null;
 	};
 
 	/**
 	 * @function
 	 */
-	var _hide = function() { window.b2link.element.hide( $el_div ); };
+	var _initialize__local_label = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _initialize__local_label():void----------" );
+
+		var o = window.b2link.html.apply_html( _el_thead, _o_locale_label );
+			//console.log( o );
+
+		window.TtwLog.timeStamp( "-- [ E ] - _initialize__local_label():void----------" );
+	};
 
 	/**
 	 * @function
 	 */
 	var _req_Data = function()
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
 		window.b2link_service_member.member_basic.getAllList( _res_Data );
-		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
 	/**
@@ -168,15 +170,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _res_Data = function( result )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _res_Data:void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _res_Data:void----------" );
 		_setData__tbody( result );
-		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _res_Data:void----------" );
 	}
-
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -212,12 +209,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setData__tbody = function( data )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setData_tbody():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _setData_tbody():void----------" );
 
-		window.RayLog.timeStamp( data );
+		window.TtwLog.timeStamp( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
-		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------");
 	};
 
 	//------------------------------;
@@ -227,13 +224,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setPosition = function()
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------");
+		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------");
 		//var t = $el_div;
 		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 		//_width = t.clientWidht;
 		//_height = t.clientHeight;
 
-		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------");
+		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------");
 	};
 
 	//--------------------------------------------------;
@@ -261,11 +258,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 	_addEvent();
+	_initialize__local_label();
 	_setPosition;
 	//----------;
-
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
 
 	_req_Data();
 
@@ -273,10 +268,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------this;
 	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
 	_.dispose = _dispose;
-	_.hide = _hide;
 	_.req_Data = _req_Data;
-	_.show = _show;
 	_.getEvt_Complete__Delete = _getEvt_Complete__Delete;
 	_.setEvt_Complete__Delete = _setEvt_Complete__Delete;
 	//--------------------------------------------------this;

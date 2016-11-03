@@ -24,11 +24,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 window.b2link.xhr.req = function( url, cbFunctions )
 {
-	console.log( "---- [ S ] - window.b2link.xhr.req():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.xhr.req():void----------" );
 
 	SUtilXMLHttpReqGet.req( url, cbFunctions );
 
-	console.log( "---- [ E ] - window.b2link.xhr.req():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.xhr.req():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

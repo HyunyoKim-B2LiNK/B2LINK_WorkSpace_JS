@@ -1,0 +1,8 @@
+{
+	_id : "email_detail"
+	, SLD : "string"//Second Level Domain;
+	, TLD : "string_2"//Top Level Domain;
+	, ccTLD : "string_2"//Country Code Top Level Domain - kr, us, jp;
+	, gTLD : "string"//Generic Top Level Domain - com, net, org;
+	, c : "string_2"//Country;
+}

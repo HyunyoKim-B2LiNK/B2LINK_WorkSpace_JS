@@ -8,9 +8,6 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
 (function( url, $el_div ){
 
-	console.log( "arguments : " );
-	console.log( arguments );
-
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -26,6 +23,8 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
+	
+	var _this = {};
 
 	var $w = window;
 	var $d = window.document;
@@ -34,7 +33,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
 	var _el_div_menu_list = $d.getElementById( "div__test_Menu_List" );
 	var _el_div_menu_uic = $d.getElementById( "div__test_Menu_UIContainer" );
-
+	
 	var _width = $el_div.clientWidth;
 	var _height = $el_div.clientHeight;
 
@@ -120,16 +119,6 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 		//_el_btn_signin = null;
 	};
 
-	/**
-	 * @function
-	 */
-	var _hide = function(){ window.b2link.element.hide( $el_div ); };
-
-	/**
-	 * @function
-	 */
-	var _show = function(){ window.b2link.element.show( $el_div ); };
-
 	var _showOrCreateElement = function()
 	{
 
@@ -168,7 +157,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	};
 
 	//--------------------------------------------------;
-
+	
 	var _getHeight = function(){ return _height; };
 	var _setHeight = function( n ){ _height = n; };
 
@@ -206,13 +195,14 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	};
 
 	//----------;
-
-	return {
-		dispose : _dispose
-		, hide : _hide
-		, show : _show
-
-		, getWidth : _getWidth
-		, getHeight : _getHeight
-	};
+	
+	//--------------------------------------------------this;
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	_.dispose = _dispose;
+	_.getWidth = _getWidth
+	_.getHeight = _getHeight
+	//--------------------------------------------------this;
+	return _this;
 });

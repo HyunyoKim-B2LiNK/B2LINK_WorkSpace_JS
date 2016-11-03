@@ -3,27 +3,31 @@ var fileNm = "js/b2link/__define/101_define_window.b2link.STATIC.UI.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
+var $w = window;
+
 //--------------------------------------------------[ S ] - window.b2link.STATIC.UI;
 
-window.b2link.STATIC.UI = {};
+$w.b2link.STATIC.UI = {};
 
-window.b2link.STATIC.UI.__div = document.createElement( "div" );
+$w.b2link.STATIC.UI.__div = window.document.createElement( "div" );
+
+//--------------------------------------------------;
 
 /**
  * @function
  * @param {String} key
  * @param {Object} [ {HTMLElement}, {Object}, .. ]
  */
-window.b2link.STATIC.UI.__add = function( key, o )
+$w.b2link.STATIC.UI.__add = function( key, o )
 {
-	if( window.b2link.STATIC.UI[ key ] )
+	if( $w.b2link.STATIC.UI[ key ] )
 	{
 		var s = "window.b2link.STATIC.UI." + key + " already exists";
 			console.error( s );
 			//alert( s );
 			//throw new Error( s );
 	}
-	else window.b2link.STATIC.UI[ key ] = o;
+	else $w.b2link.STATIC.UI[ key ] = o;
 };
 
 //--------------------------------------------------;
@@ -31,12 +35,13 @@ window.b2link.STATIC.UI.__add = function( key, o )
 /**
  * @function
  */
-window.b2link.STATIC.UI.__all_setPosition__TestMenu = function()
+$w.b2link.STATIC.UI.__all_setPosition__TestMenu = function()
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition__TestMenu():void----------" );
-	var t = window.b2link.STATIC.UI;
+	var t = $w.b2link.STATIC.UI;
 	var io;
-	for( var s in t ){
+	for( var s in t )
+	{
 		io = t[ s ];
 		if( io[ 1 ] && s != "test_Menu" )
 		{
@@ -55,16 +60,17 @@ window.b2link.STATIC.UI.__all_setPosition__TestMenu = function()
 /**
  * @function
  */
-window.b2link.STATIC.UI.__all_setPosition_Center_FromParent = function()
+$w.b2link.STATIC.UI.__all_setPosition_Center_FromParent = function()
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
-	var t = window.b2link.STATIC.UI;
+	var t = $w.b2link.STATIC.UI;
 	var io;
-	for( var s in t ){
+	for( var s in t )
+	{
 		io = t[ s ];
 		//console.log( io );
 		if( io[ 1 ] && s != "test_Menu" )
-			window.b2link.element.setPosition_Center_FromParent( io[ 0 ] );
+			$w.b2link.element.setPosition_Center_FromParent( io[ 0 ] );
 	}
 	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromParent():void----------" );
 };
@@ -72,16 +78,16 @@ window.b2link.STATIC.UI.__all_setPosition_Center_FromParent = function()
 /**
  * @function
  */
-window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus = function()
+$w.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus = function()
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus():void----------" );
-	var t = window.b2link.STATIC.UI;
+	var t = $w.b2link.STATIC.UI;
 	var io;
 	for( var s in t ){
 		io = t[ s ];
 		//console.log( io );
 		if( io[ 1 ] && s != "test_Menu" )
-			window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( io[ 0 ] );
+			$w.b2link.element.setPosition_CenterMiddle_FromParent__NMinus( io[ 0 ] );
 	}
 	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus():void----------" );
 };
@@ -89,16 +95,17 @@ window.b2link.STATIC.UI.__all_setPosition_CenterMiddle_FromParent__NMinus = func
 /**
  * @function
  */
-window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
+$w.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
-	var t = window.b2link.STATIC.UI;
+	var t = $w.b2link.STATIC.UI;
 	var io;
-	for( var s in t ){
+	for( var s in t )
+	{
 		io = t[ s ];
 		//console.log( io );
 		if( io[ 1 ] && s != "test_Menu" )
-			window.b2link.element.setPosition_Center_FromWindow( io[ 0 ] );
+			$w.b2link.element.setPosition_Center_FromWindow( io[ 0 ] );
 	}
 	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow():void----------" );
 };
@@ -106,10 +113,10 @@ window.b2link.STATIC.UI.__all_setPosition_Center_FromWindow = function()
 /**
  * @function
  */
-window.b2link.STATIC.UI.__allHide = function()
+$w.b2link.STATIC.UI.__allHide = function()
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__allHide():void----------" );
-	var t = window.b2link.STATIC.UI;
+	var t = $w.b2link.STATIC.UI;
 	var io;
 	for( var s in t )
 	{
@@ -134,10 +141,10 @@ window.b2link.STATIC.UI.__allHide = function()
 /**
  * @function
  */
-window.b2link.STATIC.UI.__allShow = function()
+$w.b2link.STATIC.UI.__allShow = function()
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__allShow():void----------" );
-	var t = window.b2link.STATIC.UI;
+	var t = $w.b2link.STATIC.UI;
 	for( var s in t )
 	{
 		io = t[ s ];
@@ -165,10 +172,10 @@ window.b2link.STATIC.UI.__allShow = function()
  * @param {String} key
  * @return {Boolean}
  */
-window.b2link.STATIC.UI.__checkKey = function( key )
+$w.b2link.STATIC.UI.__checkKey = function( key )
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
-	if( window.b2link.STATIC.UI[ key ] ) return 1;
+	if( $w.b2link.STATIC.UI[ key ] ) return 1;
 	return 0;
 	window.TtwLog.log( "----- [ E ] - window.b2link.STATIC.UI.__checkKey():{Boolean}----------" );
 };
@@ -178,16 +185,16 @@ window.b2link.STATIC.UI.__checkKey = function( key )
 /**
  * @function
  */
-window.b2link.STATIC.UI.__list = function(){ this.__status(); };
+$w.b2link.STATIC.UI.__list = function(){ this.__status(); };
 
 /**
  * @function
  * @param {String} key
  */
-window.b2link.STATIC.UI.__show = function( key )
+$w.b2link.STATIC.UI.__show = function( key )
 {
 	window.TtwLog.log( "----- [ S ] - window.b2link.STATIC.UI.__show():void----------" );
-	var t = window.b2link.STATIC.UI[ key ][ 1 ];
+	var t = $w.b2link.STATIC.UI[ key ][ 1 ];
 	try
 	{
 		t.show();
@@ -207,7 +214,7 @@ window.b2link.STATIC.UI.__show = function( key )
  * @param {String} key
  * @return {*}
  */
-window.b2link.STATIC.UI.__getObj = function( key ){ return window.b2link.STATIC.UI[ key ]; };
+$w.b2link.STATIC.UI.__getObj = function( key ){ return $w.b2link.STATIC.UI[ key ]; };
 
 //--------------------------------------------------;
 

@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-	
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -34,6 +34,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_input_phone = $f0( $el_div, "phone" );
 	var _el_input_password = $f0( $el_div, "password" );
 	var _el_input_password_confirm = $f0( $el_div, "password_confirm" );
+
+	var _o_locale_label = window.b2link.ui_resource.reqSync_JSON_LocaleLabel( url );
 
 	//--------------------------------------------------;
 
@@ -70,9 +72,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-		console.log( "-- [ S ] - _evt_resize$parentElement():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
 		_setPosition();
-		console.log( "-- [ E ] - _evt_resize$parentElement():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -87,19 +89,33 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _dispose = function()
 	{
 		_removeEvent();
+
 		$w = null;
 		$d = null;
+
+		$f0 = null;
+
+		_el_input_email = null;
+		_el_input_name = null;
+		_el_input_phone = null;
+		_el_input_password = null;
+		_el_input_password_confirm = null;
+
+		_this = null;
 	};
 
 	/**
 	 * @function
 	 */
-	var _hide = function(){ $el_div.style.display = "none"; };
+	var _initialize__local_label = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _initialize__local_label():void----------" );
 
-	/**
-	 * @function
-	 */
-	var _show = function(){ $el_div.style.display = ""; };
+		var o = window.b2link.html.apply_html( $el_div, _o_locale_label );
+			//console.log( o );
+
+		window.TtwLog.timeStamp( "-- [ E ] - _initialize__local_label():void----------" );
+	};
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -116,12 +132,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setPosition = function()
 	{
-		console.log( "-- [ S ] - _setPosition():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
 		// var t = $el_div;
 		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 		// _width = t.clientWidth;
 		// _height = t.clientHeight;
-		console.log( "-- [ E ] - _setPosition():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
 	//--------------------------------------------------;
@@ -142,14 +158,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 	_addEvent();
+	_initialize__local_label();
 	_setPosition();
 	//----------;
 
 	//--------------------------------------------------this;
 	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
 	_.dispose = _dispose;
-	_.hide = _hide;
-	_.show = _show;
 	//--------------------------------------------------this;
 	return _this;
 });
