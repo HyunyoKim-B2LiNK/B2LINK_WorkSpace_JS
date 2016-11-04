@@ -47,7 +47,7 @@ _ = $w.b2link.STATIC.CONFIG.URL.UI.BASE;
 
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK = _ + "b2link/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_API = _ + "b2link_api/";
-$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_BRAND = _ + "b2link_brand/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_BRAND = _ + "b2link_brand_basic/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_COUNTRY = _ + "b2link_country/";
 //$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL = _ + "b2link_email/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL = _ + "b2link_email_detail/";
