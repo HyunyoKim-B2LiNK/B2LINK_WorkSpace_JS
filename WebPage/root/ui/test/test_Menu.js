@@ -5,7 +5,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UIContainer";
 
-
 (function( url, $el_div ){
 
 	//----------------------------------------------------------------------------------------------------;
@@ -22,8 +21,9 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
 	//--------------------------------------------------;
 
+
 	//--------------------------------------------------;
-	
+
 	var _this = {};
 
 	var $w = window;
@@ -33,7 +33,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 
 	var _el_div_menu_list = $d.getElementById( "div__test_Menu_List" );
 	var _el_div_menu_uic = $d.getElementById( "div__test_Menu_UIContainer" );
-	
+
 	var _width = $el_div.clientWidth;
 	var _height = $el_div.clientHeight;
 
@@ -157,7 +157,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	};
 
 	//--------------------------------------------------;
-	
+
 	var _getHeight = function(){ return _height; };
 	var _setHeight = function( n ){ _height = n; };
 
@@ -195,7 +195,7 @@ window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED = "div__test_Menu_UICo
 	};
 
 	//----------;
-	
+
 	//--------------------------------------------------this;
 	var _ = _this;
 	window.b2linkExtends.extends.div_Panel( _this );
