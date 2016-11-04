@@ -1,12 +1,12 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_session/member_session/checkSession__Sign_In.js";
+var fileNm = "./ui/b2link_session/member_session/checkSession__Sign_In__V.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-	
+
 	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
-	
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -20,18 +20,18 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 
 	//--------------------------------------------------;
-	
+
 	var _this = { __url : url };
 
 	var $w = window;
-	var $d = window.document;
+	var $d = $w.document;
 
 	var $f0 = window.b2link.element.getElementByClassName;
 
-	var _el_btn_cancle = $f0( $el_div, "btn_Cancle" );
+	var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
 	var _el_btn_signin = $f0( $el_div, "btn_SignIn" );
 
 	var _el_input_id = $f0( $el_div, "input_ID" );
@@ -41,7 +41,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @Property {Function} function( result ){}
 	 */
 	var _evt_Complete__SignIn;
-	
+
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -62,7 +62,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 
-		_el_btn_cancle.addEventListener( "click", _evt_mClick__el_btn_cancle, false, 0, true );
+		_el_btn_cancel.addEventListener( "click", _evt_mClick__el_btn_cancel, false, 0, true );
 		_el_btn_signin.addEventListener( "click", _evt_mClick__el_btn_signin, false, 0, true );
 	};
 
@@ -73,7 +73,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
 
-		_el_btn_cancle.removeEventListener( "click", _evt_mClick__el_btn_cancle, false );
+		_el_btn_cancel.removeEventListener( "click", _evt_mClick__el_btn_cancel, false );
 		_el_btn_signin.removeEventListener( "click", _evt_mClick__el_btn_signin, false );
 	};
 
@@ -108,10 +108,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @function
 	 * @param {MouseEvent} e event
 	 */
-	var _evt_mClick__el_btn_cancle = function( e )
+	var _evt_mClick__el_btn_cancel = function( e )
 	{
-		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_cancle():void----------" );
-		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_cancle():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_cancel():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_cancel():void----------" );
 	};
 
 	/**
@@ -121,7 +121,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _evt_resize$parentElement = function( e )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
+
 		_setPosition();
+
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
@@ -137,19 +139,21 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _dispose = function()
 	{
 		_removeEvent();
+
 		$w = null;
 		$d = null;
-		
-		_el_btn_cancle = null;
+
+		$f0 = null;
+
+		_el_btn_cancel = null;
 		_el_btn_signin = null;
+
 		_el_input_id = null;
 		_el_input_pw = null;
-		
+
 		_evt_Complete__SignIn = null;
-		
-		_o_locale_label = null;
 	};
-	
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	GETTER / SETTER;
@@ -166,6 +170,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setPosition = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
+
 		var t = $el_div;
 
 		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
@@ -174,8 +179,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		//window.b2link.element.setPosition_RightBottom( t, 10, 10 );
 		//window.b2link.element.setPosition_RightTop( t, 10, 10 );
 
-		_width = t.clientWidth;
-		_height = t.clientHeight;
 		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
@@ -206,17 +209,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_addEvent();
 	_setPosition();
 	//----------;
-	//console.logObjectInformation( $w );
-	window.TtwLog.timeStamp( "$w.screen.width : " + $w.screen.width );
-	window.TtwLog.timeStamp( "$w.screen.height : " + $w.screen.height );
-
-	//----------;
 
 	//--------------------------------------------------this;
 	var _ = _this;
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.getEvt_Complete__SignIn = _getEvt_Complete__SignIn;
 	_.setEvt_Complete__SignIn = _setEvt_Complete__SignIn;
 	//--------------------------------------------------this;

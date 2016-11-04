@@ -5,7 +5,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 /**
  * @function
- * @param {HTMLElement}
+ * @param {HTMLElement} element
  * @param {Object} o { "nm" : "_id", "w" : 10 }
  * @return {HTMLElement}
  */

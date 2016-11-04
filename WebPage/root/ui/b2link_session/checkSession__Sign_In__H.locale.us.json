@@ -5,6 +5,6 @@
 	, "member_pw" : "PW"
 	, "pw" : "Password"
 
-	, "btn_signin" : "SignIn"
-	, "btn_cancle" : "Cancle"
+	, "btn__signin" : "SignIn"
+	, "btn__cancel" : "Cancel"
 }

@@ -7,10 +7,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @param {Array} keys [ "_id", "email", "nm", ... ]
  * @param {Array} a [ { "_id" : 0, "email" : "thdtjsdn@gmail.com", ... }, {}, {}, ... ]
+ * @return {String}
  */
 window.b2link.html.create_tbody_child_input = function( keys, d )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.create_tbody_child_input():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.create_tbody_child_input():{String}----------" );
 
 	var f0 = window.b2link.obj.getValueFromKey_dotKeyRef;
 
@@ -42,7 +43,7 @@ window.b2link.html.create_tbody_child_input = function( keys, d )
 		r += "</tr>";
 	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.create_tbody_child_input():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.create_tbody_child_input():{String}----------" );
 
 	return r;
 };

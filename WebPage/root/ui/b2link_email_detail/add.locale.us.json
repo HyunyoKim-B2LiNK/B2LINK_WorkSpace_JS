@@ -5,7 +5,7 @@
 	, "global_top_level_domain" : "Global Top Level Domain "
 	, "country" : "Country Code "
 
-	, "btn_overlap_check" : "Check Overlap"
-	, "btn_add" : "Add"
-	, "btn_cancel" : "Cancel"
+	, "btn__overlap_check" : "Check Overlap"
+	, "btn__add" : "Add"
+	, "btn__cancel" : "Cancel"
 }

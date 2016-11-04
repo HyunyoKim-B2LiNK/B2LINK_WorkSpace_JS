@@ -8,7 +8,7 @@
 	, "url_trademark" : "Tradmark URL"
 	, "description" : "Description"
 	
-	, "btn_overlap_check" : "Overlap Check"
-	, "btn_add" : "Add"
-	, "btn_cancel" : "Cancel"
+	, "btn__overlap_check" : "Overlap Check"
+	, "btn__add" : "Add"
+	, "btn__cancel" : "Cancel"
 }

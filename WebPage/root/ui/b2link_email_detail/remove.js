@@ -37,16 +37,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
 
-	var _o_thead_style = {
-		_check : "Selected"
-		, _id : "ID"
-		, SLD : "Second Level Domain"
-		, TLD : "Top Level Domain"
-		, ccTLD : "Country code Top Level Domain"
-		, gTLD : "Global Top level Domain"
-		, c : "Country"
-	};
-
 	/**
 	* @Property {Function} function( result ){}
 	*/
@@ -207,7 +197,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setData_tbody():void----------" );
 
-		window.RayLog.timeStamp( data );
+		console.log( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
 		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------");
@@ -256,9 +246,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_addEvent();
 	_setPosition;
 	//----------;
-
-	var o = window.b2link.html.apply_html( _el_thead, _o_thead_style );
-		console.log( o );
 
 	_req_Data();
 
