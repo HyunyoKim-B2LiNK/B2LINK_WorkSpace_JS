@@ -66,11 +66,11 @@ global.b2link_router.product.req__json = function( req, res, q, fNm, d )
  */
 global.b2link_router.product.req__string = function( req, res, q, fNm, d )
 {
-	global.TtwLog.log( "----- [ S ] - global.b2link_router.product.req__string():void----------" );
+	global.RayLog.log( "----- [ S ] - global.b2link_router.product.req__string():void----------" );
 
 	global.b2link_router.product.req__fn( req, res, q, fNm + '("' + d + '")' );
 
-	global.TtwLog.log( "----- [ E ] - global.b2link_router.product.req__string():void----------" );
+	global.RayLog.log( "----- [ E ] - global.b2link_router.product.req__string():void----------" );
 };
 
 /**
