@@ -9,7 +9,7 @@
 	, "url_logo" : "로고 파일"
 	, "url_trademark" : "상품등록증 파일"
 		
-	, "btn_overlap_check" : "중복 체크"
-	, "btn_add" : "추가"
-	, "btn_cancel" : "취소"
+	, "btn__overlap_check" : "중복 체크"
+	, "btn__add" : "추가"
+	, "btn__cancel" : "취소"
 }

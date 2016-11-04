@@ -3,13 +3,9 @@
 	<table>
 		<thead class="thead">
 			<tr>
-				<th style="width: 50px;">{{th___check}}</th>
-				<th style="width: 40px;">{{th___id}}</th>
-				<th style="width: 50;">{{th__nm_kr}}</th>
-				<th style="width: 50x;">{{th__nm_cn}}</th>
-				<th style="width: 50x;">{{th__nm_us}}</th>
+<include-html>./ui_include/th/check.html</include-html>
+<include-html>./ui_include/b2link_brand_basic/ths__getAllList.html</include-html>
 				<th style="width: 100px;">{{th__description}}</th>
-				<th style="width: 100px;">{{th__url}}</th>
 				<th style="width: 100px;">{{th__url_logo}}</th>
 				<th style="width: 100px;">{{th__url_trademark}}</th>
 				<th style="width: 100px;">{{th__date_register}}</th>
@@ -20,8 +16,8 @@
 
 		<tbody class="tbody">
 			<tr>
-				<td><input type="checkbox" value="{{_id}}"></td>
-				<td class ="_id">{{_id}}</td>
+<include-html>./ui_include/td/input_check___id.html</include-html>
+<include-html>./ui_include/td/_id.html</include-html>
 				<td><input type="text" class="nm_kr" value="{{nm_kr}}"></input></td>
 				<td><input type="text" class="nm_cn" value="{{nm_cn}}"></input></td>
 				<td><input type="text" class="nm_us" value="{{nm_us}}"></input></td>
@@ -35,9 +31,8 @@
 			</tr>
 		</tbody>
 	</table>
+
 	<br/>
-	<div class="btns">
-		<button class="btn_Update">{{btn__update}}</button>
-		<button class="btn_Cancel">{{btn__cancel}}</button>
-	</div>
+
+<include-html>./ui_include/div/btns__update_cancel.html</include-html>
 </div>

@@ -29,9 +29,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var $w = window;
 	var $d = $w.document;
 
-	//var _className_td = "border_solid_1px_000000";
-	//var _className_th = "border_solid_1px_000000";
-
 	var $f0 = window.b2link.element.getElementByClassName;
 
 	var _el_tbody = $f0( $el_div, "tbody" );

@@ -5,6 +5,6 @@
 	, "member_pw" : "PW"
 	, "pw" : "암호"
 
-	, "btn_signin" : "로그인"
-	, "btn_cancle" : "취소"
+	, "btn__signin" : "로그인"
+	, "btn__cancel" : "취소"
 }

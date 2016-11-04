@@ -6,10 +6,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 /**
  * @function
  * @param {Array} a [ { "nm" : "_id", "w" : 10 }, {}, {}, ... ]
+ * @return {String}
  */
 window.b2link.html.create_thead_child = function( a )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.create_thead_child():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.create_thead_child():{String}----------" );
 	var r = "<tr>";
 	var th = '<th style="width: $w">$nm</th>';
 	var io;
@@ -20,7 +21,7 @@ window.b2link.html.create_thead_child = function( a )
 		r += th.replace( "$w", io.w + "px;" ).replace( "$nm", io.nm );
 	}
 	r += "</tr>";
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.create_thead_child():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.create_thead_child():{String}----------" );
 
 	return r;
 };
