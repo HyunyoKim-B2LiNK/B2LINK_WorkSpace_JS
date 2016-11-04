@@ -4,7 +4,7 @@ if ( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 var _t = window.b2link.STATIC.CONFIG.URL;
-var _url = _t.PROXY + _t.MONGODB.BRAND.BRAND_BASIC + "getAllList?";
+var _url = _t.PROXY + _t.MONGODB.BRAND.BASIC + "getAllList?";
 
 /**
  * @function
