@@ -53,8 +53,7 @@ $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_COUNTRY = _ + "b2link_country/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL = _ + "b2link_email_detail/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MASHUP = _ + "b2link_mashup/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MEMBER = _ + "b2link_member/";
-$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODDUCT = _ + "b2link_product/";
-$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODDUCT_BASIC = $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODDUCT + "product_basic/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODUCT_BASIC = _ + "b2link_product_basic/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCM = _ + "b2link_scm/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCRAP = _ + "b2link_scrap/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SESSION = _ + "b2link_session/";
@@ -84,7 +83,7 @@ $w.b2link.STATIC.CONFIG.URL.MONGODB = {};
 $w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND = {};
 $w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND_COMMON = $w.b2link.STATIC.CONFIG.URL.SERVER + "brand/";
 _ = $w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND_COMMON;
-$w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND.BRAND_BASIC = _ + "brand_basic/";
+$w.b2link.STATIC.CONFIG.URL.MONGODB.BRAND.BASIC = _ + "brand_basic/";
 
 $w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC = {};
 $w.b2link.STATIC.CONFIG.URL.MONGODB.LIST_STATIC_COMMON = $w.b2link.STATIC.CONFIG.URL.SERVER + "list_static/";
@@ -101,10 +100,9 @@ $w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.SESSION = _ + "member_session/";
 $w.b2link.STATIC.CONFIG.URL.MONGODB.MEMBER.SESSION_LOG = _ + "member_session_log/";
 
 $w.b2link.STATIC.CONFIG.URL.MONGODB.PRODUCT = {};
-$w.b2link.STATIC.CONFIG.URL.MONGODB.PRODUCT_COMMON =  $w.b2link.STATIC.CONFIG.URL.SERVER + "product/"
+$w.b2link.STATIC.CONFIG.URL.MONGODB.PRODUCT_COMMON = $w.b2link.STATIC.CONFIG.URL.SERVER + "product/";
 _ = $w.b2link.STATIC.CONFIG.URL.MONGODB.PRODUCT_COMMON;
-$w.b2link.STATIC.CONFIG.URL.MONGODB.PRODUCT.PRODUCT_BASIC = _ + "product_basic/";
-
+$w.b2link.STATIC.CONFIG.URL.MONGODB.PRODUCT.BASIC = _ + "product_basic/";
 
 window.TtwLog.timeStamp( "--------------------------------------------------[ E ] - window.b2link.STATIC.CONFIG.URL" );
 
