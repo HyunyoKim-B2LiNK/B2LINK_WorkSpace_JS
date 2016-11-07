@@ -10,17 +10,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 window.b2link_ui_product.product_basic.add = function()
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui_product.product_basic.add():{Array}----------" );
-    var d = {
-        url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODUCT_BASIC
-        , nm : "add"
-        , css_url : "./css_ui/"
-        , css_front_nm : "div__product_basic-"
-        , key : "product_basic$add"
-    };
-    
-    //var o = window.b2link.ui.add_HTML_JS_CSS( d );
-    var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
-	
+	var d = {
+		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODUCT_BASIC
+		, nm : "add"
+		, css_url : "./css_ui/"
+		, css_front_nm : "div__product_basic-"
+		, key : "product_basic$add"
+	};
+
+	//var o = window.b2link.ui.add_HTML_JS_CSS( d );
+	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
+
 	if( !o[ 1 ].getEvt_Complete__Add() )
 	{
 		o[ 1 ].setEvt_Complete__Add( function( result ){
@@ -42,8 +42,8 @@ window.b2link_ui_product.product_basic.add = function()
 	}
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_ui_product.product_basic.add():{Array}----------" );
-    
-    return o;
+
+	return o;
 };
 
 //----------------------------------------------------------------------------------------------------;
