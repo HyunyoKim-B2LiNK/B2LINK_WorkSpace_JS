@@ -10,12 +10,14 @@ function( d )
 
 	if( 0 == r )
 	{
+		print( "if( 0 == r )" );
 		print( "-- [ E ] - brand_basic$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
 
 	if( brand_basic$check__Overlap( r ) )
 	{
+		print( "if( brand_basic$check__Overlap( r ) )" );
 		print( "-- [ E ] - brand_basic$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
