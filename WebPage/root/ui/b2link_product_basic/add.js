@@ -135,6 +135,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_inputParent = null;
 
 		_evt_Complete__Add = null;
+		
+		_el_inputDate_register = null;
+		
+		_el_inputRegister = null;
+		
 	};
 
 	//----------------------------------------------------------------------------------------------------;
