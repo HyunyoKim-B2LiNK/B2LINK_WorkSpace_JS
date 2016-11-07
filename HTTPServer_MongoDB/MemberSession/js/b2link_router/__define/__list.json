@@ -5,5 +5,6 @@
 	"101_define_global.b2link_router.STATIC.CONST",
 	"200_define_global.b2link_router.brand",
 	"200_define_global.b2link_router.list_static",
-	"200_define_global.b2link_router.member"
+	"200_define_global.b2link_router.member",
+	"200_define_global.b2link_router.product"
 ]

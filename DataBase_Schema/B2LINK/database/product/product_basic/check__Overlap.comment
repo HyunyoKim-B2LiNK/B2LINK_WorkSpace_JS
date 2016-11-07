@@ -1,0 +1,14 @@
+/**
+ * product_basic Overlap check
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ 	"nm_kr" : "시어버터 핸드크림_로즈"
+	,"nm_cn" : "护手霜_玫瑰"
+	,"nm_us" : "SHEA BUTTER HANDCREAM_ROSE"
+	,"url" : "http://kr.loccitane.com/%EC%8B%9C%EC%96%B4-%EB%B2%84%ED%84%B0-%ED%95%B8%EB%93%9C-%ED%81%AC%EB%A6%BC,22,2,1133,198941.htm",
+ * }
+ * </code>
+ * @return {int} 0 or 1
+ */
