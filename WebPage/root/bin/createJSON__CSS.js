@@ -1,1 +1,21 @@
-var fileNm="createJSON__CSS.js";console,require("./_$TATIC_CONST_TtwApplicationCommon.js");var g=global;g.create_dirList_cssList=function(t){global.TtwLog.timeStamp("---------- [ S ] - "+t+" ----------");try{var i=STtwUtilFsReadStream.getList_Directory(t);STtwUtilFsWriteStream.writeFile(t+"__listDir.json",JSON.stringify(i,null,"	"))}catch(r){}try{var s=STtwUtilFsReadStream.getList_File_Extension(t,".css");STtwUtilFsWriteStream.writeFile(t+"__list.json",JSON.stringify(s,null,"	"))}catch(r){}if(global.TtwLog.timeStamp("---------- [ E ] - "+t+" ----------"),i)for(var e in i)i[e]=t+i[e]+"/";return i},g.loop_dirList=function(t){var i=g.create_dirList_cssList(t);if(i)for(var r in i)g.loop_dirList(i[r])},global.TtwLog.timeStamp("---------- [ S ] - CREATE FILE - ..css/??/??/__list.json. ----------");var path0="../css/";g.loop_dirList(path0),global.process.exit(),console;
+//----------------------------------------------------------------------------------------------------;
+var fileNm = "createJSON__CSS.js";
+if( console ) console.log( "[ S ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
+
+require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
+
+//----------------------------------------------------------------------------------------------------;
+
+//----------------------------------------------------------------------------------------------------;
+
+try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__CSS( "../css/" ); }
+catch( er ){ console.error( "Error : " + er ); }
+
+//----------------------------------------------------------------------------------------------------;
+
+global.process.exit();
+
+//----------------------------------------------------------------------------------------------------;
+if( console ) console.log( "[ E ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
