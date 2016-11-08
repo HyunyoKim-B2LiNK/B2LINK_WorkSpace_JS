@@ -10,7 +10,7 @@ function( ids )
 	for( ; i<iLen; ++i )
 	{
 		p._id = NumberInt( ids[ i ] );
-		if ( !product_basic$validation__remove_id( p._id ) )
+		if( !product_basic$validation__remove_id( p._id ) )
 		{
 			print( "-- [ E ] - product_basic$remove_id():{uint}---------- fail;" );
 			continue;
