@@ -103,7 +103,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
 	};
-
 	_evt_mClick__el_btn_delete._cb_f0 = function( result )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
@@ -216,6 +215,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setPosition = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------");
+
 		//var t = $el_div;
 		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
 
