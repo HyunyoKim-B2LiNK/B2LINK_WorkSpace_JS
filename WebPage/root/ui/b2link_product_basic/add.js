@@ -168,7 +168,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			, nm_us : _el_input__nm_us.value
 		};
 		/*/
-		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
+		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type( _el_inputParent );
 		//*/
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;

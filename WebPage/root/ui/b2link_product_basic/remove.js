@@ -97,7 +97,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var d = _getDataForQuery();
 			console.log( "d.length : " + d.length );
 
-		var t = window.b2link_service_brand.brand_basic;
+		var t = window.b2link_service_product.product_basic;
 		if( 1 < d.length ) t.remove_ids( d, _evt_mClick__el_btn_delete._cb_f0 );
 		else if( 1 == d.length ) t.remove_id( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
 
