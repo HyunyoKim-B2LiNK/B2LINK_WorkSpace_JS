@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/el_tbody/window.b2link.ui.getInputFromTBody_CheckBoxSelected.js";
+var fileNm = "js/b2link/el_tbody/window.b2link.el_tbody.getInputFromTBody_CheckBoxSelected.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
