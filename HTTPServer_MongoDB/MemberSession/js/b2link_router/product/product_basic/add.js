@@ -7,13 +7,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 http://localhost:49320/product/product_basic/add
 //*/
 (function( req, res ){
-    global.RayLog.log( "- [ S ] - product/product_basic/add():void----------" );
+	global.RayLog.log( "- [ S ] - product/product_basic/add():void----------" );
 
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
-    // validation
+
+	//validation;
 	global.b2link_validation.product.product_basic$addDoc( q );
-	// member id from session 
-	// brand id
+
+	//member id from session;
+	//brand id;
 	global.b2link_router.product.req__json( req, res, q, "product_basic$addDoc", q );
 
 	global.RayLog.log( "- [ E ] - product/product_basic/add():void----------" );
