@@ -59,3 +59,5 @@ DataBase/B2LINK/0/WiredTiger
 HTTPServer_MongoDB/MemberSession/MemberSession.bat
 HTTPServer_WebPage/a.bat
 HTTPServer_MongoDB/MemberSession/.vscode/launch.json
+DataBase_Schema/B2LINK/database-insert/__list.json
+HTTPServer_MongoDB/MemberSession/js/b2link_router/__define/__list.json
