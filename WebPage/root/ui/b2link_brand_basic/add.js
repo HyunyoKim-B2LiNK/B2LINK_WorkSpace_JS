@@ -90,15 +90,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.b2link_service_brand.brand_basic.add(
 			_getDataForQuery()
-			, function( result ){
-				if( !result )
-				{
-					alert( "등록 실패." );
-				}
-				else
-				{
-					_evt_Complete__Add( result );
-				}
+			, function( result )
+			{
+				if( !result ) alert( "등록 실패." );
+				else _evt_Complete__Add( result );
 			}
 		);
 
@@ -115,15 +110,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.b2link_service_brand.brand_basic.add(
 			_getDataForQuery()
-			, function( result ){
+			, function( result )
+			{
 				console.log( "==========" );
 				console.log( result );
 				console.log( typeof result );
 				console.log( "==========" );
-				if( window.b2link.fn.getResultStatus( result ) )
-				{
-					alert( "동일 데이터 존재." )
-				}
+				if( window.b2link.fn.getResultStatus( result ) ) alert( "동일 데이터 존재." )
 				else
 				{
 					alert( "등록 가능 데이터." );//_evt_Complete__CheckOverlap( result );
@@ -151,7 +144,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _evt_resize$parentElement = function( e )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
+
 		_setPosition();
+
 		window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
@@ -193,25 +188,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	/**
 	 * @function
+	 * //수정하기 - 박종하 - 20161108
 	 * @return {Object} { cd_n : {Number}, cd_us2 : "", cd_us3 : "", nm_cn : "", nm_kr : "", nm_us : "" }
 	 */
 	var _getDataForQuery = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 
-		/*/
-		var r = {
-			cd_n : _el_input__cd_n.value
-			, cd_us2 : _el_input__cd_us2.value
-			, cd_us3 : _el_input__cd_us3.value
-			, nm_cn : _el_input__nm_cn.value
-			, nm_kr : _el_input__nm_kr.value
-			, nm_us : _el_input__nm_us.value
-		};
-		/*/
 		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
-		//*/
 		console.logObjectInformation( r, "_getDataForQuery - r" );
+
 		return r;
 
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
@@ -225,6 +211,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setPosition = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
+
 		var t = $el_div;
 
 		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
@@ -233,8 +220,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		//window.b2link.element.setPosition_RightBottom( t, 10, 10 );
 		//window.b2link.element.setPosition_RightTop( t, 10, 10 );
 
-		_width = t.clientWidth;
-		_height = t.clientHeight;
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 

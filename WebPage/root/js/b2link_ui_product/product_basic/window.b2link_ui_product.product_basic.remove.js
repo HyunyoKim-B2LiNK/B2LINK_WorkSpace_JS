@@ -20,7 +20,7 @@ window.b2link_ui_product.product_basic.remove = function()
 
 	//var o = window.b2link.ui.add_HTML_JS_CSS( d );
 	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
-	
+
 	if( !o[ 1 ].getEvt_Complete__Delete() )
 	{
 		o[ 1 ].setEvt_Complete__Delete( function( result ){
