@@ -210,7 +210,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		};
 		/*/
 		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
-		debugger;
 		//*/
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;

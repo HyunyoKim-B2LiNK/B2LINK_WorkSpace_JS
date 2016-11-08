@@ -135,6 +135,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_inputParent = null;
 
 		_evt_Complete__Add = null;
+		
+		_el_inputDate_register = null;
+		
+		_el_inputRegister = null;
+		
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -163,7 +168,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			, nm_us : _el_input__nm_us.value
 		};
 		/*/
-		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input( _el_inputParent );
+		var r = window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type( _el_inputParent );
 		//*/
 		console.logObjectInformation( r, "_getDataForQuery - r" );
 		return r;
