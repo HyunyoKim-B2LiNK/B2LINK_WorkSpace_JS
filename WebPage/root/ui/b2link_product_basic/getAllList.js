@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-	
+
 	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 
 	//----------------------------------------------------------------------------------------------------;
@@ -51,8 +51,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _addEvent = function()
 	{
-	  _removeEvent();
-	  $w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
+		_removeEvent();
+		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 	};
 
 	/**
@@ -69,9 +69,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-	  window.RayLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
-	  _setPosition();
-	  window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
+
+		_setPosition();
+
+		window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -79,6 +81,37 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//	FUNCTION;
 
 	//----------------------------------------------------------------------------------------------------;
+
+	//--------------------------------------------------;
+
+	/**
+	 * @function
+	 * @param {array} a
+	 */
+	/*/
+	var _create__dateString = function( o )
+	{
+		var io=0, ioLen=o.length;
+		for ( ; io<ioLen; ++io)
+		{
+			var _a = o[ io ].date_register;
+			var _t = "";
+			var i=0, iLen=_a.length-1;
+			for( ; i<iLen; ++i ) _t += _a[ i ] + "-";
+			_t += _a[ iLen ];
+			o[io].date_register = _t;
+		}
+	};
+	/*///수정 - 송선우 - 20161108
+	var _create__dateString = function( a )
+	{
+		var f = window.b2link.date.getDateStringFromArrayDate_Dash;
+		var i=0, iLen=a.length;
+		for( ; i<iLen; ++i ) a[ i ].date_register = f( a[ i ].date_register );
+	};
+	//*/
+
+	//--------------------------------------------------;
 
 	/**
 	 * @function
@@ -95,13 +128,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_thead = null;
 	};
 
+	//--------------------------------------------------;
+
 	/**
 	 * @function
 	 */
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+
 		window.b2link_service_product.product_basic.getAllList( _res_Data );
+
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
@@ -112,27 +149,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _res_Data = function( result )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
+
 		_create__dateString( result );
 		_setData__tbody( result );
+
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
 	};
-	
-	var _create__dateString = function ( o )
-	{
-		var io = 0 , ioLen = o.length;
-		for ( ; io < ioLen ; ++io)
-		{
-			var _a = o[io].date_register;
-			var i = 0, iLen = _a.length - 1;
-			var _t = "";
-			for ( ; i < iLen ; ++i ) _t += _a[i] + "-";
-			_t += _a[iLen];	
-			o[io].date_register = _t;
-		}
-		
-		
-		
-	}
+
+	//--------------------------------------------------;
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -155,7 +179,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
 		window.RayLog.timeStamp( "window.b2link.service.req$member_basic$getAllList result : " );
-		window.RayLog.timeStamp( data );
+		console.log( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
 		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
@@ -169,10 +193,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setPosition = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
+
 		// var t = $el_div;
 		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-		// _width = t.clientWidth;
-		// _height = t.clientHeight;
+
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
@@ -206,6 +230,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
+
 	_.req_Data = _req_Data;
 	//--------------------------------------------------this;
 	return _this;
