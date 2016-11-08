@@ -1,1 +1,33 @@
-function lessToCSS(t,e){for(var a,s,r,S=f0(t,".less"),l=0,i=S.length;i>l;++l){r=S[l],a=r.replace(".less",""),s=a+".css",path1=t+r,path2=t+s,path3=t+"tmp__"+r;var o=f2(path1);f1(path3,sLESSImport+"\n\n"+o);try{var p="lessc "+path3+" > "+path2;STtwUtilCP.sExec(p),fs.unlinkSync(path3);var h=f2(path2).toString("utf8");f1(e+s,h)}catch(n){rError.push(n)}}}function getDIRAndRun(t){global.TtwLog.timeStamp("- [ S ] - "+t),lessToCSS(t,t),global.TtwLog.timeStamp("- [ E ] - "+t);for(var e=f3(t),a=0,s=e.length;s>a;++a)getDIRAndRun(t+e[a]+"/")}var fileNm="CSS__LESS_To_CSS.js";console,require("./_$TATIC_CONST_TtwApplicationCommon.js");var g=global,fs=require("fs"),path1,path2,path3,rError=[],f0=STtwUtilFsReadStream.getList_File_Extension,f1=STtwUtilFsWriteStream.writeFile,f2=STtwUtilFsReadStream.getFile,f3=STtwUtilFsReadStream.getList_Directory,path0="../less/",path4="../css/",sLESSImport=f2(path0+"_const_variable.less.import.txt").toString("utf8");lessToCSS(path0,path4);var path0="../less_ui/",path4="../css_ui/";lessToCSS(path0,path4),getDIRAndRun("../ui/");try{STtwUtilCP.sExec("createJSON__CSS.bat")}catch(er){}global.process.exit(),console;
+//----------------------------------------------------------------------------------------------------;
+var fileNm = "CSS__LESS_To_CSS.js";
+if( console ) console.log( "[ S ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
+
+require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
+
+//----------------------------------------------------------------------------------------------------;
+
+var sConstantValue = STtwUtilFsReadStream.getFile( "../less/_const_variable.less.import.txt" ).toString( "utf8" );
+
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less/", "../css/", sConstantValue, true ); }catch( er ){ console.error( "Error0 : " + er ); }
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less_ui/", "../css_ui/", sConstantValue, true ); }catch( er ){ console.error( "Error1 : " + er ); }
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS_SubDirectories( "../ui/", sConstantValue, true ); }catch( er ){ console.error( "Error2 : " + er ); }
+
+//----------------------------------------------------------------------------------------------------;
+
+try
+{
+	STtwUtilCP.sExec( "createJSON__CSS.bat" );
+}
+catch( er )
+{
+	console.error( "Error : " + er );
+}
+
+//----------------------------------------------------------------------------------------------------;
+
+global.process.exit();
+
+//----------------------------------------------------------------------------------------------------;
+if( console ) console.log( "[ E ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
