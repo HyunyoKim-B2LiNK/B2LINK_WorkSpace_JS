@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/ui/window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI.js";
+var fileNm = "js/b2link/ui/window.b2link.ui.add_THTML_JS_CSS.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -17,16 +17,19 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * </code>
  * @return {Array} [ {HTMLElement}, {Object} ]
  */
-window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI = function( d )
+window.b2link.ui.add_THTML_JS_CSS = function( d )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.add_THTML_JS_CSS():{Array}----------" );
 
-	var o = window.b2link.ui.staticUIMap_checkObject( d.key );
-	if( o ) return o;
+	var thtml = window.b2link.ui.__getFileNM_THTML( d.url, d.nm );
+	var js = window.b2link.ui.__getFileNM_JS( d.url, d.nm );
+	var css = window.b2link.ui.__getFileNM_CSS( d.css_url, d.css_front_nm + d.nm );
+	var key = d.key ? d.key : d.nm;
 
-	o = window.b2link.ui.add_HTML_JS_CSS( d );
+	var f = window.b2link.util.importHTMLJSCSS__And_Add_b2link_STATIC_UI;
+	var o = f( key, thtml, js, css, window.b2link.STATIC.CONST.ROOT_DIV.ID_UI_COMPONENT_FIXED );
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.add_THTML_JS_CSS():{Array}----------" );
 
 	return o;
 };

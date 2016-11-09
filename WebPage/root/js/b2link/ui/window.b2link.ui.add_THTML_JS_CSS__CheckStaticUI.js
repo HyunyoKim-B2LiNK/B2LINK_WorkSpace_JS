@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/ui/window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI.js";
+var fileNm = "js/b2link/ui/window.b2link.ui.add_THTML_JS_CSS__CheckStaticUI.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -17,16 +17,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * </code>
  * @return {Array} [ {HTMLElement}, {Object} ]
  */
-window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI = function( d )
+window.b2link.ui.add_THTML_JS_CSS__CheckStaticUI = function( d )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.add_THTML_JS_CSS__CheckStaticUI():{Array}----------" );
 
 	var o = window.b2link.ui.staticUIMap_checkObject( d.key );
 	if( o ) return o;
 
-	o = window.b2link.ui.add_HTML_JS_CSS( d );
+	o = window.b2link.ui.add_THTML_JS_CSS( d );
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.add_THTML_JS_CSS__CheckStaticUI():{Array}----------" );
 
 	return o;
 };
