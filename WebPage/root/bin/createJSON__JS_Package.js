@@ -10,7 +10,7 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 //----------------------------------------------------------------------------------------------------;
 
 try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__JS( "../js/" ); }catch( er ){ console.error( "Error0 : " + er ); }
-try{ SUtilFsWriteStream_Extension_Dev.create_Package_Define__JS( "../js/", "createJS__js.namespace.__define.200_define__files.template" ); }catch( er ){ console.error( "Error1 : " + er ); }
+try{ SUtilFsWriteStream_Extension_Dev.create_Package_Define__JS( "../js/", "createJS__js.namespace.__define.200_define__files.template", "window." ); }catch( er ){ console.error( "Error1 : " + er ); }
 
 //----------------------------------------------------------------------------------------------------;
 
