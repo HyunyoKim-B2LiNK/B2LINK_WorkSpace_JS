@@ -1,12 +1,12 @@
 [
-	"send_200",
-	"send_200_False",
-	"send_200_False__ErrorLog",
-	"send_200_JSON",
-	"send_200_String",
-	"send_200_String_DestroySessionComplete",
-	"send_200_True",
-	"send_301_DestroySession",
-	"setHeader__setcookie",
-	"setHeader__setcookie__null"
+	"global.b2link.response.send_200",
+	"global.b2link.response.send_200_False",
+	"global.b2link.response.send_200_False__ErrorLog",
+	"global.b2link.response.send_200_JSON",
+	"global.b2link.response.send_200_String",
+	"global.b2link.response.send_200_String_DestroySessionComplete",
+	"global.b2link.response.send_200_True",
+	"global.b2link.response.send_301_DestroySession",
+	"global.b2link.response.setHeader__setcookie",
+	"global.b2link.response.setHeader__setcookie__null"
 ]
