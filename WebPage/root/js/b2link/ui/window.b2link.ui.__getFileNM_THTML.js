@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/ui/window.b2link.ui.__getFileNM_CSS.js";
+var fileNm = "js/b2link/ui/window.b2link.ui.__getFileNM_THTML.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -8,16 +8,19 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {String} folderName
  * @param {String} fileName
  */
-window.b2link.ui.__getFileNM_CSS = function( folderNM, fileNM )
+window.b2link.ui.__getFileNM_THTML = function( folderNM, fileNM )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.__getFileNM_CSS():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.__getFileNM_THTML():void----------" );
 
-	var _nmFileCSS = folderNM + fileNM + ".css";
-		console.log( "_nmFileCSS : " + _nmFileCSS );
+	const _ui = window.b2link.STATIC.CONFIG.URL.UI;
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.__getFileNM_CSS():void----------" );
+	//var _nmFileTHTML = folderNM + _ui.CSS + "/" + fileNM;
+	var _nmFileTHTML = folderNM + fileNM + _ui.CSS + ".thtml";
+		console.log( "_nmFileTHTML : " + _nmFileTHTML );
 
-	return _nmFileCSS;
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.__getFileNM_THTML():void----------" );
+
+	return _nmFileTHTML;
 };
 
 //----------------------------------------------------------------------------------------------------;
