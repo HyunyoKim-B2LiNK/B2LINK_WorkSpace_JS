@@ -134,8 +134,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_update = null;
 		_el_btn_cancel = null;
 
-		$_el_tbody = null;
-		$_el_thead = null;
+		_el_tbody = null;
+		_el_thead = null;
 
 		_evt_Complete__Update = null;
 	};
@@ -175,7 +175,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	/**
 	 * @function
-	 * #param _tr
+	 * @param {HTMLElement} _tr
 	 * @return {Object}
 	 */
 	var __getDataForQuery__Tr = function( _tr )
@@ -188,14 +188,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		{
 			io = _tr.children[i];
 			var iolen = io.children.length;
-			if ( iolen > 0 )
+			if( iolen > 0 )
 			{
-				for ( var j = 0 ;  j < iolen ; ++j)
+				for( var j=0; j<iolen; ++j )
 				{
-					var ioc = io.children[j];
+					var ioc = io.children[ j ];
 					if( "INPUT" == ioc.tagName ) r[ ioc.className ] = ioc.value;
 				}
-			} else r[io.className] = io.innerText;
+			}
+			else r[ io.className ] = io.innerText;
 
 		}
 		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):{Object}----------" );
