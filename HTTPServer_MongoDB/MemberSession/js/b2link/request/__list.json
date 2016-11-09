@@ -1,5 +1,5 @@
 [
-	"get",
-	"get__member_session$checkSession",
-	"get__member_session$checkSessionAndReqMongoDB"
+	"global.b2link.request.get",
+	"global.b2link.request.get__member_session$checkSession",
+	"global.b2link.request.get__member_session$checkSessionAndReqMongoDB"
 ]

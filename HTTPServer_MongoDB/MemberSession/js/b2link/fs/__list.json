@@ -1,10 +1,10 @@
 [
-	"getDirectoryList",
-	"getFile",
-	"getFileList",
-	"getFileList_Extension",
-	"getFile_UTF8",
-	"writeFile",
-	"writeFile_Binary",
-	"writeFile_UTF8"
+	"global.b2link.fs.getDirectoryList",
+	"global.b2link.fs.getFile",
+	"global.b2link.fs.getFileList",
+	"global.b2link.fs.getFileList_Extension",
+	"global.b2link.fs.getFile_UTF8",
+	"global.b2link.fs.writeFile",
+	"global.b2link.fs.writeFile_Binary",
+	"global.b2link.fs.writeFile_UTF8"
 ]
