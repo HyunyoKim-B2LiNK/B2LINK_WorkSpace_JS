@@ -9,9 +9,9 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 
 var sConstantValue = STtwUtilFsReadStream.getFile( "../less/_const_variable.less.import.txt" ).toString( "utf8" );
 
-try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less/", "../css/", sConstantValue, true ); }catch( er ){ console.error( "Error0 : " + er ); }
-try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less_ui/", "../css_ui/", sConstantValue, true ); }catch( er ){ console.error( "Error1 : " + er ); }
-try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS_SubDirectories( "../ui/", sConstantValue, true ); }catch( er ){ console.error( "Error2 : " + er ); }
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less/", "../css/", sConstantValue, true ); }catch( er ){ console.error( "try catch Error0 : " + er ); }
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less_ui/", "../css_ui/", sConstantValue, true ); }catch( er ){ console.error( "try catch Error1 : " + er ); }
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS_SubDirectories( "../ui/", sConstantValue, true ); }catch( er ){ console.error( "try catch Error2 : " + er ); }
 
 //----------------------------------------------------------------------------------------------------;
 

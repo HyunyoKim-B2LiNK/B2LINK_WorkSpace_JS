@@ -10,7 +10,7 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 //----------------------------------------------------------------------------------------------------;
 
 try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__CSS( "../css/" ); }
-catch( er ){ console.error( "Error : " + er ); }
+catch( er ){ console.error( "try catch Error : " + er ); }
 
 //----------------------------------------------------------------------------------------------------;
 
