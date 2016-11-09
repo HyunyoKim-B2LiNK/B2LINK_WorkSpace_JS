@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_ui_brand/window.b2link_ui_product.product_basic.update.js";
+var fileNm = "js/b2link_ui_product/window.b2link_ui_product.product_basic.update.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 

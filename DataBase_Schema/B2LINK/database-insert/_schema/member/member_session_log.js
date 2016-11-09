@@ -1,5 +1,5 @@
 var d = {
-	"_id" : 0
+	"_id" : "member_session_log"
 
 	, "sid" : "string"//session id;
 	, "mid" : "string_email"//member id;
@@ -18,4 +18,4 @@ var d = {
 
 //----------------------------------------------------------------------------------------------------;
 
-db.getSiblingDB( "_schema" ).list_static.insert( d );
+db.getSiblingDB( "_schema" ).member.insert( d );

@@ -36,4 +36,4 @@ var d = {
 
 //----------------------------------------------------------------------------------------------------;
 
-db.getSiblingDB( "_schema" ).list_static.insert( d );
+db.getSiblingDB( "_schema" ).member.insert( d );
