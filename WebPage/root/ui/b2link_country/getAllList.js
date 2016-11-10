@@ -4,9 +4,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-	
-	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
-	
+
+	//window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+	window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_div );
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -20,10 +21,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 
 	//--------------------------------------------------;
-	
+
 	var _this = { __url : url };
 
 	var $w = window;
@@ -88,9 +89,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w = null;
 		$d = null;
-		
+
 		$f0 = null;
-		
+
 		_el_tbody = null;
 		_el_thead = null;
 	};
@@ -137,9 +138,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.TtwLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
 		window.TtwLog.timeStamp( "window.b2link.service.req$member_basic$getAllList result : " );
-		
+
 		console.log( data );
-		
+
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
@@ -184,7 +185,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_req_Data();
 
 	//----------;
-	
+
 	//--------------------------------------------------this;
 	var _ = _this;
 	window.b2linkExtends.extends.div_Panel( _this );

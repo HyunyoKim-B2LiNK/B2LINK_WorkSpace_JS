@@ -4,8 +4,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 (function( url, $el_div ){
-	
-	window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+
+	//window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
+	window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_div );
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -20,10 +21,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-	
+
 
 	//--------------------------------------------------;
-	
+
 	var _this = { __url : url };
 
 	var $w = window;
@@ -34,7 +35,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_add = $f0( $el_div, "btn_Add" );
 	var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
 	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
-	
+
 	/*/
 	var _el_input_SLD = $f0( $el_div, "SLD" );
 	var _el_input_TLD = $f0( $el_div, "TLD" );
@@ -209,7 +210,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataForQuery = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
-		
+
 		/*/
 		var r = {
 			SLD : _el_input_SLD.value
@@ -287,16 +288,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	window.RayLog.timeStamp( "$w.screen.height : " + $w.screen.height );
 
 	//----------;
-	
+
 	//--------------------------------------------------this;
 	var _ = _this;
 	window.b2linkExtends.extends.div_Panel( _this );
 	_.__el = $el_div;
 	_.dispose = _dispose;
-	
+
 	_.getEvt_Complete__Add = _getEvt_Complete__Add;
 	_.setEvt_Complete__Add = _setEvt_Complete__Add;
-	
+
 	_.getEvt_Complete__CheckOverlap = _getEvt_Complete__CheckOverlap;
 	_.setEvt_Complete__CheckOverlap = _setEvt_Complete__CheckOverlap;
 	//--------------------------------------------------this;
