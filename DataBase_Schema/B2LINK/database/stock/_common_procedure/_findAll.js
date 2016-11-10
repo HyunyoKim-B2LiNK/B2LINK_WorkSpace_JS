@@ -1,4 +1,4 @@
 function( nmCol )
 {
-	return _getDB.getCollection( nmCol ).find();
+	return _getDB().getCollection( nmCol ).find();
 }

@@ -1,4 +1,4 @@
 function()
 {
-	return db.$getDB( "product" );
+	return db.$getDB( "brand" );
 }

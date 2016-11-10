@@ -1,4 +1,4 @@
 function( nmCol, oSearch )
 {
-	return _getDB.getCollection( nmCol ).findOne( oSearch );
+	return _getDB().getCollection( nmCol ).findOne( oSearch );
 }
