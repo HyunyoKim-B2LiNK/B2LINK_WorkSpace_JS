@@ -10,7 +10,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 global.b2link_validation.product.product_basic$update_ids = function( t, d )
 {
 	global.RayLog.log( "---- [ S ] - global.b2link_validation.product.product_basic$update_ids():{Object}----------" );
-debugger;
+
 	console.logObjectInformation( d, "d" );
     var _t = [];
     console.log(d.ids);
