@@ -22,6 +22,7 @@ window.b2link_service_product.product_basic.add = function( d, cbFunction )
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_product.product_basic.add():void----------" );
 
 	window.RayLog.logObjectInformation( d );
+
 	window.b2link_service.common._fn_req( _url + window.b2link_url_product.product_basic.getParam( d ) , cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_product.product_basic.add():void----------" );
