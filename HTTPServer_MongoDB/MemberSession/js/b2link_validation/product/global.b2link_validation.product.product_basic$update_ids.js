@@ -40,16 +40,14 @@ global.b2link_validation.product.product_basic$update_ids = function( t, d )
         to.description = io.description;
         to.msds = io.msds;				
         to.nm_cn = io.nm_cn;	
-		to.nm_kr = io.nm_kr;	
-		to.nm_us = io.nm_us;
-        
-        
+        to.nm_kr = io.nm_kr;	
+        to.nm_us = io.nm_us;
         to.url = io.url;
         to.url_file_product = io.url_file_product;	
-    	to.url_file_barcode = io.url_file_barcode;
+        to.url_file_barcode = io.url_file_barcode;
         to.url_file_msds = io.url_file_msds;
         to.weight = io.weight;
-    	to.unit_weight = io.unit_weight;	  
+        to.unit_weight = io.unit_weight;	  
         _t.push(to);  
     }
     t.ids = _t;
