@@ -29,6 +29,6 @@ function( d )
 		);
 	}
 
-	print( "-- [ S ] - brand_basic$update_ids():{uint}---------- return 1" );
+	print( "-- [ S ] - brand_basic$update_ids():{uint}---------- return 1;" );
 	return 1;
 }
