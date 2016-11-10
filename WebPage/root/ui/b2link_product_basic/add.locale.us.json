@@ -1,9 +1,10 @@
 {
 	"legend" : "  Add Product  "
 
-	, "nm_kr" : "  Name (kr)"
-	, "nm_us" : "  Name (eng)"
-	, "nm_cn" : "  Name (cn)"
+	, "nm_kr" : "  Name(kr)"
+	, "nm_us" : "  Name(eng)"
+	, "nm_cn" : "  Name(cn)"
+
 	, "weight" : "  weight"
 	, "unit_weight" : "  unit of weight"
 	

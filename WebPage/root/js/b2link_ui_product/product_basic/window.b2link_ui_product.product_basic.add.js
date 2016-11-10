@@ -23,7 +23,8 @@ window.b2link_ui_product.product_basic.add = function()
 
 	if( !o[ 1 ].getEvt_Complete__Add() )
 	{
-		o[ 1 ].setEvt_Complete__Add( function( result ){
+		o[ 1 ].setEvt_Complete__Add( function( result )
+		{
 			window.TtwLog.timeStamp( "[ S ] - o[ 1 ].setEvt_Complete__Add( function( result ){----------" );
 			if( window.b2link.fn.getResultStatus( result ) )
 			{
