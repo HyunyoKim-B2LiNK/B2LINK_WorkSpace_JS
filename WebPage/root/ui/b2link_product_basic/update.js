@@ -218,7 +218,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Array}----------" );
 		
 		var idx = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
-		debugger;
 		var r = [];
 		var i=0, iLen=idx.length;
 		for( ; i<iLen; ++i )

@@ -21,7 +21,7 @@ var _url = _t.PROXY + _t.MONGODB.PRODUCT.BASIC + "update_ids?";
 window.b2link_service_product.product_basic.update_ids = function( d, cbFunction )
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_service_product.product_basic.update_ids():void----------" );
-debugger;
+
 	window.b2link_service.common._fn_req( _url + "&ids=" + JSON.stringify( d ) , cbFunction );
 
 	window.RayLog.timeStamp( "---- [ E ] - window.b2link_service_product.product_basic.update_ids():void----------" );
