@@ -16,5 +16,5 @@ http://localhost:49320/brand/brand_basic/update_ids
 
 	global.b2link_router.brand.req__json( req, res, q, "brand_basic$update_ids", d.ids );
 
-	global.RayLog.log( "- [ E ] - email_detail/update_ids():void----------" );
+	global.RayLog.log( "- [ E ] - brand/brand_basic/update_ids():void----------" );
 });

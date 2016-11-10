@@ -15,7 +15,7 @@ var a = [
 	}
 	, {
 		"_id$member_basic" : NumberInt( 0 )
-		,"_id$brand_basic" : NumberInt( 0 )
+		, "_id$brand_basic" : NumberInt( 0 )
 		, "_id$product_category" : NumberInt( 0 )
 
 		, "barcode" : "82345679"

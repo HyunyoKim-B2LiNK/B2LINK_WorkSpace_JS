@@ -1,0 +1,5 @@
+/**
+ * @function
+ * @param {Array} product_basic
+ * @return {uint} 0 or 1
+ */
