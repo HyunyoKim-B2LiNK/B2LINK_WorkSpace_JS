@@ -33,14 +33,14 @@ global.b2link_validation.brand.brand_basic$update_ids = function( t, d )
             
         }
         
-        if( io.nm_cn  ) to.nm_cn = io.nm_cn;	else to.nm_cn = "";
-		if( io.nm_kr  ) to.nm_kr = io.nm_kr;	else to.nm_kr = "";
-		if( io.nm_us  ) to.nm_us = io.nm_us;	else to.nm_us = "";
-    	if( io.url ) to.url = io.url;	else to.url = "";
-    	if( io.url_log ) to.url_logo = io.url_logo;	else to.url_logo = "";
-    	if( io.url_trademark ) to.url_trademark = io.url_trademark;	else to.url_trademark = "";
+        to.nm_cn = io.nm_cn;
+		to.nm_kr = io.nm_kr;
+		to.nm_us = io.nm_us;
+    	to.url = io.url;
+    	to.url_logo = io.url_logo;
+    	to.url_trademark = io.url_trademark;
     	//if( d.register_person ) t.register_person = d.register_person;
-    	if( io.description ) to.description = io.description;	else	to.description = "";  
+    	to.description = io.description;  
         _t.push(to);  
     }
     t.ids = _t;
