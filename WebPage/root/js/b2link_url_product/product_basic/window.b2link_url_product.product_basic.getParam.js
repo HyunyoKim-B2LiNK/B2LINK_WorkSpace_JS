@@ -20,12 +20,12 @@ window.b2link_url_product.product_basic.getParam = function( d )
 		+ "&description=" + d.description
 
 		+ "&url="  + d.url
-		+ "&url_file_product="  + d.url_file_product
-		+ "&url_file_barcode="  + d.url_file_barcode
-		+ "&url_file_msds="  + d.url_file_msds
+		+ "&url_file_product=" + d.url_file_product
+		+ "&url_file_barcode=" + d.url_file_barcode
+		+ "&url_file_msds=" + d.url_file_msds
 
-		+ "&weight="  + d.weight
-		+ "&unit_weight="  + d.unit_weight
+		+ "&weight=" + d.weight
+		+ "&unit_weight=" + d.unit_weight
 
 
 		+ "&product_category=" + d.product_category
