@@ -70,9 +70,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-	  window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
-	  _setPosition();
-	  window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
+
+		_setPosition();
+
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -156,10 +158,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _setPosition = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
-		// var t = $el_div;
-		// window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-		// _width = t.clientWidth;
-		// _height = t.clientHeight;
+
+		//var t = $el_div;
+		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
+
 		window.TtwLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
@@ -196,5 +198,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	_.req_Data = _req_Data;
 	//--------------------------------------------------this;
+
 	return _this;
 });
