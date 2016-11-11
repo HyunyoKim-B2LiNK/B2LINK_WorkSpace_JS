@@ -1,0 +1,14 @@
+{
+	"th___check" : "Select"
+	, "th___id" : "No"
+	, "th__brand" : "Brand"
+	, "th__product_category" : "Category"
+	, "th__nm_kr" : "Name(kr)"
+	, "th__nm_cn" : "Name(cn)"
+	, "th__nm_us" : "Name(us)"
+	, "th__mid" : "register"
+	, "th__date_register" : "register_date"
+	
+	, "btn__cancel" : "Cancel"
+	, "btn__delete" : "Delete"
+}
