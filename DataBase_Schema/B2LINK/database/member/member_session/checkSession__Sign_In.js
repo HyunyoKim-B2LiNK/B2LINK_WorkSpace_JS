@@ -8,7 +8,7 @@ function( d )
 	//--------------------------------------------------;
 
 	//Confirm - member_basic.member id;
-	var o = member_basic$findOne__mid( d.mid );
+	var o = member_basic$_findOne__mid( d.mid );
 	if( !o )//o == null;
 	{
 		print( "var r = member_basic$findOne__mid( d.mid );" );
