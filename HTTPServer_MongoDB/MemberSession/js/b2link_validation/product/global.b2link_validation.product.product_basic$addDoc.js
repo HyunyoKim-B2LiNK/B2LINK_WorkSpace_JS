@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_validation/list_static/global.b2link_validation.product.product_basic$addDoc.js";
+var fileNm = "js/b2link_validation/product/global.b2link_validation.product.product_basic$addDoc.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 

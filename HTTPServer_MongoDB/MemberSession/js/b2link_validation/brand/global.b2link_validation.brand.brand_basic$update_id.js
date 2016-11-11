@@ -20,14 +20,6 @@ global.b2link_validation.brand.brand_basic$update_id = function( d )
 		global.RayLog.error( "Error : " + e );
 	}
 
-	d.nm_cn = d.nm_cn ? d.nm_cn : "";
-	d.nm_kr = d.nm_kr ? d.nm_kr : "";
-	d.nm_us = d.nm_us ? d.nm_us : "";
-
-	d.url = d.url ? d.url : "";
-	d.url_log = d.url_log ? d.url_log : "";
-	d.url_trademark = d.url_trademark ? d.url_trademark : "";
-
 	global.RayLog.log( "---- [ E ] - global.b2link_validation.brand.brand_basic$update_id():void----------" );
 };
 
