@@ -7,11 +7,24 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 
 //----------------------------------------------------------------------------------------------------;
 
-var sConstantValue = STtwUtilFsReadStream.getFile( "../less/_const_variable.less.import.txt" ).toString( "utf8" );
+var filePath_Const = "../less/_const_variable.less.import.txt";
+var lessPath = "../less/";
+var cssPath = "../css/";
+var less_uiPath = "../less_ui/";
+var css_uiPath = "../css_ui/";
 
-try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less/", "../css/", sConstantValue, true ); }catch( er ){ console.error( "try catch Error0 : " + er ); }
-try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( "../less_ui/", "../css_ui/", sConstantValue, true ); }catch( er ){ console.error( "try catch Error1 : " + er ); }
-try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS_SubDirectories( "../ui/", sConstantValue, true ); }catch( er ){ console.error( "try catch Error2 : " + er ); }
+var uiPath = "../ui/";
+
+var sConstantValue = STtwUtilFsReadStream.getFile( filePath_Const ).toString( "utf8" );
+
+//LESS Path에서 CSS를 만든 후 CSS 폴더로 복사 한다.;
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( lessPath, cssPath, sConstantValue, true ); }catch( er ){ console.error( "try catch Error0 : " + er ); }
+
+//LESS_UIComponent Path에서 CSS를 만든 후 CSS_UIComponent 폴더로 복사 한다.;
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( less_uiPath, css_uiPath, sConstantValue, true ); }catch( er ){ console.error( "try catch Error1 : " + er ); }
+
+//UI폴더의 전체 하위디렉토리까지 포함해서 LESS 파일을 CSS 파일로 생성한다.;
+try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS_SubDirectories( uiPath, sConstantValue, true ); }catch( er ){ console.error( "try catch Error2 : " + er ); }
 
 //----------------------------------------------------------------------------------------------------;
 

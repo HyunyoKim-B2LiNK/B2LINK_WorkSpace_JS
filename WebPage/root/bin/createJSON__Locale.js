@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "createJSON__CSS.js";
+var fileNm = "createJSON__Locale.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,13 +7,16 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 
 //----------------------------------------------------------------------------------------------------;
 
-//----------------------------------------------------------------------------------------------------;
+//var rootPath = "E:/WorkSpace_B2LINK/WebPage/root/ui/";
+var rootPath = "E:/WorkSpace_B2LINK/WebPage/root/ui__Test_LocalJSON/";
+var extension = ".html";
+var bOverWrite = false;
 
-var rootPath = "../css/";
+//지정 폴더;
+SUtilFsWriteStream_Extension_Dev.create_TemplateJSON_FromHTMLDirectory( rootPath, extension, bOverWrite );
 
-//css 폴더에 __list.json, __listDir.json 파일을 생성한다.;
-try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__CSS( rootPath ); }
-catch( er ){ console.error( "try catch Error : " + er ); }
+//하위폴더 모두 포함;
+SUtilFsWriteStream_Extension_Dev.create_TemplateJSON_FromHTMLDirectory__SubDirectories( rootPath, extension, bOverWrite );
 
 //----------------------------------------------------------------------------------------------------;
 
