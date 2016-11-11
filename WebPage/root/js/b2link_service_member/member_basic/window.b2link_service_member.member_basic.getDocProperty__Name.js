@@ -15,14 +15,13 @@ var _url = _t.PROXY + _t.MONGODB.MEMBER.BASIC + "getDocProperty__Name?";
 
 /**
  * @function
- * @param {String} sid
  * @param {Function} cbFunction function( data ){};
  */
-window.b2link_service_member.member_basic.getDocProperty__Name = function( sid, cbFunction )
+window.b2link_service_member.member_basic.getDocProperty__Name = function( cbFunction )
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_basic.getDocProperty__Name():void----------" );
 
-	window.b2link_service.common._fn_req( _url + "&sid=" + sid, cbFunction );
+	window.b2link_service.common._fn_req( _url + "&sid=" + window.b2link.session.getSession__sid(), cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_basic.getDocProperty__Name():void----------" );
 };
