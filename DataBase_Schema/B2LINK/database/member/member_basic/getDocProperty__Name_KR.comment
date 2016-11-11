@@ -1,0 +1,6 @@
+/**
+ * sid(session id)로 member_basic의 nm_kr.a(name kr all)을 가져온다.
+ * @function
+ * @param {String} sid session id
+ * @return {String}
+ */
