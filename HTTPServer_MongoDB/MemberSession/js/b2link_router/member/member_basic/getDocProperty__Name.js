@@ -11,7 +11,8 @@ http://localhost:49320/member/member_basic/getDocProperty__Name
 
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 
-	global.b2link_router.member.req__value( req, res, q, "member_basic$getDocProperty__Name", q._id );
+	console.log( "q.sid : " + q.sid );
+	global.b2link_router.member.req__string( req, res, q, "member_basic$getDocProperty__Name", q.sid );
 
 	global.TtwLog.log( "- [ E ] - member/member_basic/getDocProperty__Name():void----------" );
 });
