@@ -9,7 +9,10 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 
 //----------------------------------------------------------------------------------------------------;
 
-try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__CSS( "../css/" ); }
+var rootPath = "../css/";
+
+//css 폴더에 __list.json, __listDir.json 파일을 생성한다.;
+try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__CSS( rootPath ); }
 catch( er ){ console.error( "try catch Error : " + er ); }
 
 //----------------------------------------------------------------------------------------------------;
