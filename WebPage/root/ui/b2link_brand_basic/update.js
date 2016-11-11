@@ -182,6 +182,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var __getDataForQuery__Tr = function( _tr )
 	{
 		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):{Object}----------" );
+		var of = __getDataForQuery__Tr;
 		var i = 1 , iLen = _tr.children.length;
 		var r = {};
 		var io;
@@ -189,19 +190,24 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		{
 			io = _tr.children[i];
 			var iolen = io.children.length;
-			if ( iolen > 0 )
+			if( iolen > 0 )
 			{
-				for ( var j = 0 ;  j < iolen ; ++j)
+				for( var j=0; j<iolen; ++j )
 				{
-					var ioc = io.children[j];
-					if( "INPUT" == ioc.tagName ) r[ ioc.className ] = ioc.value;
+					var ioc = io.children[ j ];
+					if( "INPUT" == ioc.tagName ) of[ "_fn_" + ioc.type ]( r, ioc )
+					
 				}
-			} else r[io.className] = io.innerText;
+			}
+			else r[ io.className ] = io.innerText;
 
 		}
 		window.RayLog.timeStamp( "--- [ S ] - __getDataForQuery__Tr( tr ):{Object}----------" );
 		return r;
-	}
+	};
+	__getDataForQuery__Tr._fn_checkbox = function( t, o ){ t[ o.className ] = o.checked; };
+	__getDataForQuery__Tr._fn_email = function( t, o ){ t[ o.className ] = o.value; };
+	__getDataForQuery__Tr._fn_text = function( t, o ){ t[ o.className ] = o.value; };	
 
 	/**
 	 * @function

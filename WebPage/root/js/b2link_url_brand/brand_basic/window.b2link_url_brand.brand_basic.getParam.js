@@ -19,8 +19,9 @@ window.b2link_url_brand.brand_basic.getParam = function( d )
 		+ "&nm_us=" + d.nm_us
 		+ "&description=" + d.description
 		+ "&url="  + d.url
-		+ "&url_logo" + d.url_logo
-		+ "&url_trademark" + d.url_trademark;
+		+ "&url_logo=" + d.url_logo
+		+ "&url_trademark=" + d.url_trademark
+		+ "&register=" + d.register;
 };
 
 //----------------------------------------------------------------------------------------------------;

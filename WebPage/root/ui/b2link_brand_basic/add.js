@@ -37,12 +37,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
 
 	var _el_inputParent = $f0( $el_div, "inputs" );
+	var _el_inputRegister = $f0( $el_div, "register" );
 
 	/**
 	 * @Property {Function} function( result ){}
 	 */
 	var _evt_Complete__Add;
 	var _evt_Complete__CheckOverlap;
+	
+	var _toDay = [];
 
 	//--------------------------------------------------;
 
@@ -109,7 +112,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_checkOverlap():void----------" );
 
-		window.b2link_service_brand.brand_basic.add(
+		window.b2link_service_brand.brand_basic.check_overlap(
 			_getDataForQuery()
 			, function( result )
 			{
@@ -150,12 +153,27 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
+	
 
 	//----------------------------------------------------------------------------------------------------;
 
 	//	FUNCTION;
 
 	//----------------------------------------------------------------------------------------------------;
+	
+	/**
+	* @function 회원 명을 가져 온다. 
+	*/
+	var _getDataFromServer__MemberName = function()
+	{
+		window.RayLog.timeStamp( "-- [ S ] - _getDataFromServer__MemberName():void----------" );
+		
+		window.b2link_service_member.member_basic.getDocProperty__Name( function( result ) {
+			if ( result === false ) alert( "인가 되지 않은 사용자." );
+			else _setData_Register( result );
+		});
+		window.RayLog.timeStamp( "-- [ E ] - _getDataFromServer__MemberName():void----------" );
+	}
 
 	/**
 	 * @function
@@ -174,6 +192,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_checkOverlap = null;
 
 		_el_inputParent = null;
+		_el_inputRegister = null;
 
 		_evt_Complete__Add = null;
 		_evt_Complete__CheckOverlap = null;
@@ -189,8 +208,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	/**
 	 * @function
-	 * //수정하기 - 박종하 - 20161108
-	 * @return {Object} { cd_n : {Number}, cd_us2 : "", cd_us3 : "", nm_cn : "", nm_kr : "", nm_us : "" }
+	 * @return {Object} { nm_kr : "", nm_us : "", nm_cn : "", url : "", url_logo : "", url_trademark : "", description : "", register : "" }
 	 */
 	var _getDataForQuery = function()
 	{
@@ -205,6 +223,26 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	};
 
 	//--------------------------------------------------;
+	
+	/**
+	 * @function
+	 * @param {String}  "박종하" 
+	 */
+	var _setData_Register = function( d )
+	{
+		window.RayLog.timeStamp( "-- [ S ] - _setData_Register():void----------" );
+		_el_inputRegister.value = d;
+		window.RayLog.timeStamp( "-- [ E ] - _setData_Register():void----------" );
+	}
+	
+	/**
+	 * @function
+	 */
+	var _setData_InputValue = function()
+	{
+		// get user name from server 
+		_getDataFromServer__MemberName();
+	};
 
 	/**
 	 * @function
@@ -256,6 +294,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 	_addEvent();
+	_setData_InputValue();
 	_setPosition();
 	//----------;
 
