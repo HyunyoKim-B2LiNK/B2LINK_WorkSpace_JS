@@ -21,7 +21,7 @@ window.b2link_service_member.member_basic.getDocProperty__Name = function( cbFun
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_basic.getDocProperty__Name():void----------" );
 
-	window.b2link_service.common._fn_req( _url + "&sid=" + window.b2link.session.getSession__sid(), cbFunction );
+	window.b2link_service.common._fn_req( _url, cbFunction );
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_basic.getDocProperty__Name():void----------" );
 };
