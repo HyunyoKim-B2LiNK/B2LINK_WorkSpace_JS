@@ -51,6 +51,8 @@ jspm_packages
 *.result
 *.turtle
 *.wt
+*list.json
+*list*.json
 metrics.*
 __list.json
 __listDir.json
