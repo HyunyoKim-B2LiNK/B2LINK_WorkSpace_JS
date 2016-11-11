@@ -7,7 +7,7 @@
 		</thead>
 
 		<tbody class="tbody">
-			<tr id="tbody_tr">
+			<tr>
 <include-html>./ui_include/b2link_country/tds__getAllList.html</include-html>
 			</tr>
 		</tbody>
