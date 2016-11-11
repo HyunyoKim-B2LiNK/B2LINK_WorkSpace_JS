@@ -10,9 +10,9 @@ http://localhost:49320/member/member_basic/getDocProperty__Name
 	global.TtwLog.log( "- [ S ] - member/member_basic/getDocProperty__Name():void----------" );
 
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
-		console.log( "q.sid : " + q.sid );
-	
-	global.b2link_router.member.req__fNm( req, res, q, "member_basic$getDocProperty__Name" );
+		//console.log( "q.sid : " + q.sid );
+
+	global.b2link_router.member.req__string( req, res, q, "member_basic$getDocProperty__Name", q.sid );
 
 	global.TtwLog.log( "- [ E ] - member/member_basic/getDocProperty__Name():void----------" );
 });
