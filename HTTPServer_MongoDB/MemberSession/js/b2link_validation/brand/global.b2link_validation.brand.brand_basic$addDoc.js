@@ -16,8 +16,8 @@ global.b2link_validation.brand.brand_basic$addDoc = function( t, d )
 
 	try
 	{
-		//수정하기 - 20161111 - 박종하 - member_basic 에서 _id 가져 오기.;
-		d.register ? t._id$member_basic = parseInt( 0 ) : 0;
+		//수정하기 - 20161111 - 박종하 - q.sid(session id) 기반으로 member_basic에서 _id 가져와서 반영하기;
+		t._id$member_basic = 0;
 	}
 	catch( e )
 	{
