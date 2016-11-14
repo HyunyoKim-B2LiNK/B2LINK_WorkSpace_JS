@@ -112,7 +112,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_checkOverlap():void----------" );
 
-		window.b2link_service_brand.brand_basic.check_overlap(
+		window.b2link_service_brand.brand_basic.check__Overlap(
 			_getDataForQuery()
 			, function( result )
 			{
