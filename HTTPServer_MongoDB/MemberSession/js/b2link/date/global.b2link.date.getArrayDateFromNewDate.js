@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/request/global.b2link.date.getDateArrayFromDate.js";
+var fileNm = "js/b2link/request/global.b2link.date.getArrayDateFromNewDate.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,9 +7,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @return {Array} [ year, month, day, hour, minute, seconds ]
  */
-global.b2link.date.getDateArrayFromDate = function( )
+global.b2link.date.getArrayDateFromNewDate = function( )
 {
-	////////global.RayLog.timeStamp( "---- [ S ] - global.b2link.date.getDateArrayFromDate():void----------" );
+	////////global.RayLog.timeStamp( "---- [ S ] - global.b2link.date.getArrayDateFromNewDate():void----------" );
 
 	var d = new Date();
 
@@ -24,7 +24,7 @@ global.b2link.date.getDateArrayFromDate = function( )
 
 	d = null;
 
-	////////global.RayLog.timeStamp( "---- [ E ] - global.b2link.date.getDateArrayFromDate():void----------" );
+	////////global.RayLog.timeStamp( "---- [ E ] - global.b2link.date.getArrayDateFromNewDate():void----------" );
 	return r;
 };
 
