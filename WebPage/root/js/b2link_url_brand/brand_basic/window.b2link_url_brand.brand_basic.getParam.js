@@ -14,8 +14,7 @@ window.b2link_url_brand.brand_basic.getParam = function( d )
 	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url_brand.brand_basic.getParam():{String}----------" );
 	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url_brand.brand_basic.getParam():{String}----------" );
 
-	return
-		"&description=" + d.description
+	return "&description=" + d.description
 
 		+ "&nm_cn=" + d.nm_cn
 		+ "&nm_kr=" + d.nm_kr
@@ -23,7 +22,7 @@ window.b2link_url_brand.brand_basic.getParam = function( d )
 
 		+ "&url="  + d.url
 		+ "&url_logo=" + d.url_logo
-		+ "&url_trademark=" + d.url_trademark
+		+ "&url_trademark=" + d.url_trademark;
 };
 
 //----------------------------------------------------------------------------------------------------;
