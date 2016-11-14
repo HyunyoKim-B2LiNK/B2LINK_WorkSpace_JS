@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui_import/b2link_country/Table__Roll_getAllList.js";
+var fileNm = "./ui_import/b2link_country/Table__NextPrev_getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
