@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui_import/b2link_country/Table__Roll_getAllList.js";
+var fileNm = "./ui_import/b2link_country/Table__NextPrev_getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -91,6 +91,56 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------------------------------------------------------------------------------------------------;
 
 	//--------------------------------------------------;
+	
+	/**
+	 * @function
+	 */
+	var _calc_DataNext = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _calc_DataNext():void----------" );
+		
+		var o = _o_tbody_status;
+			o.idS += o.limit;
+			o.idE += o.limit;
+		
+		console.log( "o.maxCount : " + o.maxCount );
+		console.log( "o.idS : " + o.idS );
+		console.log( "o.idE : " + o.idE );
+		
+		if( o.idS > o.maxCount )
+		{
+			o.idE = o.maxCount;
+			o.idS = o.maxCount - o.limit;
+		}
+		
+		window.TtwLog.timeStamp( "-- [ E ] - _calc_DataNext():void----------" );
+	};
+	
+	/**
+	 * @function
+	 */
+	var _calc_DataPrev = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _cale_DataPrev():void----------" );
+		
+		var o = _o_tbody_status;
+			o.idS -= o.limit;
+			o.idE -= o.limit;
+		
+		console.log( "o.maxCount : " + o.maxCount );
+		console.log( "o.idS : " + o.idS );
+		console.log( "o.idE : " + o.idE );
+		
+		if( -1 > o.idS )
+		{
+			o.idS = -1;
+			o.idE = o.idS + o.limit;
+		}
+		
+		window.TtwLog.timeStamp( "-- [ E ] - _cale_DataPrev():void----------" );
+	};
+	
+	//--------------------------------------------------;
 
 	/**
 	 * @function
@@ -135,19 +185,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_Next():void----------" );
 
+		_calc_DataNext();
+		
 		var o = _o_tbody_status;
-			o.idS += o.limit;
-			o.idE += o.limit;
-		
-		console.log( "o.maxCount : " + o.maxCount );
-		console.log( "o.idS : " + o.idS );
-		console.log( "o.idE : " + o.idE );
-		
-		if( o.idS > o.maxCount )
-		{
-			o.idE = o.maxCount;
-			o.idS = o.maxCount - o.limit;
-		}
 		
 		if( o.idS < o.maxCount ) _fn_req_getList_Range__id( o.idS, o.idE, _res_Data );
 
@@ -157,28 +197,54 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	/**
 	 * @function
 	 */
+	var _req_Data_NextEnd = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_NextEnd():void----------" );
+
+		_calc_DataNext();
+		_calc_DataNext();
+		
+		var o = _o_tbody_status;
+		
+		if( o.idS < o.maxCount ) _fn_req_getList_Range__id( o.idS, o.idE, _res_Data );
+
+		window.TtwLog.timeStamp( "-- [ E ] - _req_Data_NextEnd():void----------" );
+	};
+	
+	/**
+	 * @function
+	 */
 	var _req_Data_Prev = function()
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_Prev():void----------" );
 
+		_calc_DataPrev();
+		
 		var o = _o_tbody_status;
-			o.idS -= o.limit;
-			o.idE -= o.limit;
-		
-		console.log( "o.maxCount : " + o.maxCount );
-		console.log( "o.idS : " + o.idS );
-		console.log( "o.idE : " + o.idE );
-		
-		if( -1 > o.idS )
-		{
-			o.idS = -1;
-			o.idE = o.idS + o.limit;
-		}
 		
 		if( 1 < o.idE ) _fn_req_getList_Range__id( o.idS, o.idE, _res_Data );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _req_Data_Prev():void----------" );
 	};
+	
+	/**
+	 * @function
+	 */
+	var _req_Data_PrevEnd = function()
+	{
+		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_PrevEnd():void----------" );
+
+		_calc_DataPrev();
+		_calc_DataPrev();
+		
+		var o = _o_tbody_status;
+		
+		if( 1 < o.idE ) _fn_req_getList_Range__id( o.idS, o.idE, _res_Data );
+
+		window.TtwLog.timeStamp( "-- [ E ] - _req_Data_PrevEnd():void----------" );
+	};
+	
+	//--------------------------------------------------;
 
 	/**
 	 * @function
@@ -343,7 +409,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	
 	_.req_Data = _req_Data;
 	_.req_Data_Next = _req_Data_Next;
+	_.req_Data_NextEnd = _req_Data_NextEnd;
 	_.req_Data_Prev = _req_Data_Prev;
+	_.req_Data_PrevEnd = _req_Data_PrevEnd;
 	
 	_.setData = _setData;
 	//--------------------------------------------------this;
