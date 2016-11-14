@@ -33,8 +33,6 @@ window.b2link_url_product.product_basic.getParam = function( d )
 
 		+ "&unit_weight=" + d.unit_weight
 		+ "&weight=" + d.weight
-
-		+ "&register=" + d.register;
 };
 
 //----------------------------------------------------------------------------------------------------;

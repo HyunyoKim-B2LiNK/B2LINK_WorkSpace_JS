@@ -35,8 +35,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_add = $f0( $el_div, "btn_Add" );
 
 	var _el_inputParent = $f0( $el_div, "inputs" );
-	var _el_inputDate_register = $f0( $el_div, "date_register" );
-	var _el_inputRegister = $f0( $el_div, "register" );
+	var _el_input_Date_register = $f0( $el_div, "date_register" );
+	var _el_input_Register = $f0( $el_div, "register" );
 
 	/**
 	 * @Property {Function} function( result ){}
@@ -132,8 +132,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_add = null;
 
 		_el_inputParent = null;
-		_el_inputDate_register = null;
-		_el_inputRegister = null;
+		_el_input_Date_register = null
+		_el_input_Register = null;
 
 		_evt_Complete__Add = null;
 
@@ -205,7 +205,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		o[ 4 ] = _min;
 		o[ 5 ] = _sec;
 
-		_el_inputDate_register.value = o.toString();
+		_el_input_Date_register.value = o.toString();
 		window.RayLog.timeStamp( "-- [ E ] - _setData_Today():void----------" );
 	};
 
@@ -213,13 +213,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @function
 	 * @param {Object}  { register : "박종하" }
 	 */
-	var _setData_Register = function( o )
+	var _setData__el_input_Register = function( o )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setData_Register():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _setData__el_input_Register():void----------" );
 
-		_el_inputRegister.value = o.register;
+		_el_input_Register.value = o.register;
 
-		window.RayLog.timeStamp( "-- [ E ] - _setData_Register():void----------" );
+		window.RayLog.timeStamp( "-- [ E ] - _setData__el_input_Register():void----------" );
 	}
 
 	/**
@@ -229,7 +229,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_setData_Today( _toDay );
 		//개발하기 - 박종하 - 20161108;
-		_setData_Register({ "register" : "박종하" });
+		_setData__el_input_Register({ "register" : "박종하" });
 	};
 
 	//--------------------------------------------------;
