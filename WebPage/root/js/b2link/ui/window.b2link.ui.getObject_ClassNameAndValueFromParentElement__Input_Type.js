@@ -29,7 +29,9 @@ window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type = func
 };
 window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type._fn_checkbox = function( t, o ){ t[ o.className ] = o.checked; };
 window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type._fn_email = function( t, o ){ t[ o.className ] = o.value; };
+window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type._fn_number = function( t, o ){ t[ o.className ] = o.value; };
 window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type._fn_text = function( t, o ){ t[ o.className ] = o.value; };
+window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type._fn_url = function( t, o ){ t[ o.className ] = o.value; };
 
 //----------------------------------------------------------------------------------------------------;
 if( console ) console.log( "[ E ] - " + fileNm + "----------" );
