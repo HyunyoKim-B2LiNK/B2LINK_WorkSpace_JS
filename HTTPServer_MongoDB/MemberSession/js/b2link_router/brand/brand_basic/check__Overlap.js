@@ -10,8 +10,11 @@ http://localhost:49320/brand/brand_basic/check__Overlap
 	global.RayLog.log( "- [ S ] - brand/brand_basic/check__Overlap():void----------" );
 
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
+
 	var qp = {};
+
 	global.b2link_validation.brand.brand_basic$check__Overlap( qp, q );
+
 	global.b2link_router.brand.req__json( req, res, q, "brand_basic$check__Overlap", qp );
 
 	global.RayLog.log( "- [ E ] - brand/brand_basic/check__Overlap():void----------" );

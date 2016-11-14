@@ -12,8 +12,10 @@ http://localhost:49320/brand/brand_basic/add
 	var q = global.b2link.url.getQueryFromURL( req.url );//Query;
 
 	var d = {};
-	// validation;
+
+	//validation;
 	global.b2link_validation.brand.brand_basic$addDoc( d, q );
+
 	global.b2link_router.brand.req__json( req, res, q, "brand_basic$addDoc", d );
 
 	global.RayLog.log( "- [ E ] - brand/brand_basic/add():void----------" );

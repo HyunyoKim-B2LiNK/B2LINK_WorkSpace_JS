@@ -12,8 +12,8 @@ window.b2link_url_product.product_basic.getParam_with_product_id = function( d )
 {
 	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url_product.product_basic.getParam():{String}----------" );
 	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url_product.product_basic.getParam():{String}----------" );
-	
-	return "&id=" + d._id 
+
+	return "&id=" + d._id
 		+ "&nm_cn=" + d.nm_cn
 		+ "&nm_kr=" + d.nm_kr
 		+ "&nm_us=" + d.nm_us
@@ -30,7 +30,6 @@ window.b2link_url_product.product_basic.getParam_with_product_id = function( d )
 
 
 		+ "&product_category=" + d.product_category
-		+ "&register=" + d.register
 
 		+ "&date_register=" + d.date_register
 		+ "&msds=" + d.msds

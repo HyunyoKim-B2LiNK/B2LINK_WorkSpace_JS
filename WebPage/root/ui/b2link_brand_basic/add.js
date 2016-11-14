@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_brand/add.js";
+var fileNm = "./ui/b2link_brand_basic/add.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -37,15 +37,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_checkOverlap = $f0( $el_div, "btn_CheckOverlap" );
 
 	var _el_inputParent = $f0( $el_div, "inputs" );
-	var _el_inputRegister = $f0( $el_div, "register" );
+
+	var _el_input_Register = $f0( $el_div, "register" );
 
 	/**
 	 * @Property {Function} function( result ){}
 	 */
 	var _evt_Complete__Add;
 	var _evt_Complete__CheckOverlap;
-	
-	var _toDay = [];
 
 	//--------------------------------------------------;
 
@@ -138,6 +137,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _evt_mClick__el_btn_cancel = function( e )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_cancel():void----------" );
+
 		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_cancel():void----------" );
 	};
 
@@ -153,25 +153,27 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
-	
+
 
 	//----------------------------------------------------------------------------------------------------;
 
 	//	FUNCTION;
 
 	//----------------------------------------------------------------------------------------------------;
-	
+
 	/**
-	* @function 회원 명을 가져 온다. 
-	*/
+	 * 회원 명을 가져 온다.
+	 * @function
+	 */
 	var _getDataFromServer__MemberName = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _getDataFromServer__MemberName():void----------" );
-		
-		window.b2link_service_member.member_basic.getDocProperty__Name( function( result ) {
-			if ( result === false ) alert( "인가 되지 않은 사용자." );
-			else _setData_Register( result );
+
+		window.b2link_service_member.member_basic.getDocProperty__Name( function( result ){
+			if( result === false ) alert( "인가 되지 않은 사용자." );
+			else _setData__el_input_Register( result );
 		});
+
 		window.RayLog.timeStamp( "-- [ E ] - _getDataFromServer__MemberName():void----------" );
 	}
 
@@ -192,7 +194,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_checkOverlap = null;
 
 		_el_inputParent = null;
-		_el_inputRegister = null;
+
+		_el_input_Register = null;
 
 		_evt_Complete__Add = null;
 		_evt_Complete__CheckOverlap = null;
@@ -208,7 +211,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	/**
 	 * @function
-	 * @return {Object} { nm_kr : "", nm_us : "", nm_cn : "", url : "", url_logo : "", url_trademark : "", description : "", register : "" }
+	 * @return {Object} { nm_kr : "", nm_us : "", nm_cn : "", url : "", url_logo : "", url_trademark : "", description : "" }
 	 */
 	var _getDataForQuery = function()
 	{
@@ -223,25 +226,31 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	};
 
 	//--------------------------------------------------;
-	
+
 	/**
 	 * @function
-	 * @param {String}  "박종하" 
+	 * @param {String}  "박종하"
 	 */
-	var _setData_Register = function( d )
+	var _setData__el_input_Register = function( d )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setData_Register():void----------" );
-		_el_inputRegister.value = d;
-		window.RayLog.timeStamp( "-- [ E ] - _setData_Register():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _setData__el_input_Register():void----------" );
+
+		_el_input_Register.value = d;
+
+		window.RayLog.timeStamp( "-- [ E ] - _setData__el_input_Register():void----------" );
 	}
-	
+
 	/**
 	 * @function
 	 */
 	var _setData_InputValue = function()
 	{
-		// get user name from server 
+		window.RayLog.timeStamp( "-- [ S ] - _setData_InputValue():void----------" );
+
+		//get user name from server;
 		_getDataFromServer__MemberName();
+
+		window.RayLog.timeStamp( "-- [ E ] - _setData_InputValue():void----------" );
 	};
 
 	/**
