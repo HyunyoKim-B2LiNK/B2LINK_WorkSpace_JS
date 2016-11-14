@@ -43,8 +43,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_Complete__Add;
 
-	var _toDay = [];
-
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
@@ -132,7 +130,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_add = null;
 
 		_el_inputParent = null;
-		_el_inputDate_register = null;
 		_el_inputRegister = null;
 
 		_evt_Complete__Add = null;
@@ -150,7 +147,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	/**
 	 * @function
 	 * //수정하기 - 박종하 - 20161108
-	 * @return {Object} { cd_n : {Number}, cd_us2 : "", cd_us3 : "", nm_cn : "", nm_kr : "", nm_us : "" }
+	 * @return {Object} { brand : {String}, nm_kr : {String}, nm_cn : {String}, nm_us : {String}
+	 *					, product_category : {String}, weight : {Number}, unit_weight : {String}
+	 *					, url : {String}, url_file_product : {String}, barcode : {String}, url_file_barcode : {String}, msds:{Boolean}, url_file_msds : {String}
+	 *					, description : {String}, register : {String}  }
 	 */
 	var _getDataForQuery = function()
 	{
@@ -163,6 +163,21 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 	};
+	
+	
+	/**
+	* @function 회원 명을 가져 온다. 
+	*/
+	var _getDataFromServer__MemberName = function()
+	{
+		window.RayLog.timeStamp( "-- [ S ] - _getDataFromServer__MemberName():void----------" );
+		
+		window.b2link_service_member.member_basic.getDocProperty__Name( function( result ) {
+			if ( result === false ) alert( "인가 되지 않은 사용자." );
+			else _setData_Register( result );
+		});
+		window.RayLog.timeStamp( "-- [ E ] - _getDataFromServer__MemberName():void----------" );
+	}
 
 	//--------------------------------------------------;
 
@@ -182,54 +197,26 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
-
+	
+	
 	/**
 	 * @function
-	 * @param {Array}
+	 * @param {String}  "박종하" 
 	 */
-	var _setData_Today = function( o )
-	{
-		//개발하기 - 박종하 - 20161108 - 서버에서 받아 와야 한다.;
-		window.RayLog.timeStamp( "-- [ S ] - _setData_Today():void----------" );
-		var _date = new Date();
-		var _year = _date.getFullYear();
-		var _month = _date.getMonth();
-		var _day = _date.getDay();
-		var _hour = _date.getHours();
-		var _min = _date.getMinutes();
-		var _sec = _date.getSeconds();
-		o[ 0 ] = _year;
-		o[ 1 ] = _month;
-		o[ 2 ] = _day;
-		o[ 3 ] = _hour;
-		o[ 4 ] = _min;
-		o[ 5 ] = _sec;
-
-		_el_inputDate_register.value = o.toString();
-		window.RayLog.timeStamp( "-- [ E ] - _setData_Today():void----------" );
-	};
-
-	/**
-	 * @function
-	 * @param {Object}  { register : "박종하" }
-	 */
-	var _setData_Register = function( o )
+	var _setData_Register = function( d )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setData_Register():void----------" );
-
-		_el_inputRegister.value = o.register;
-
+		_el_inputRegister.value = d;
 		window.RayLog.timeStamp( "-- [ E ] - _setData_Register():void----------" );
 	}
+
 
 	/**
 	 * @function
 	 */
 	var _setData_InputValue = function()
 	{
-		_setData_Today( _toDay );
-		//개발하기 - 박종하 - 20161108;
-		_setData_Register({ "register" : "박종하" });
+		_getDataFromServer__MemberName();
 	};
 
 	//--------------------------------------------------;
