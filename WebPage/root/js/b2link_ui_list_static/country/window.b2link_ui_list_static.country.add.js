@@ -33,7 +33,7 @@ window.b2link_ui_list_static.country.add = function()
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
 
-				window.b2link_ui.country.getAllList();
+				window.b2link_ui_list_static.country.getAllList();
 			}
 			else alert( "등록 실패." );
 
