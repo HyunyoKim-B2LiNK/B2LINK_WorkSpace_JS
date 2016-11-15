@@ -4,7 +4,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 /*/
-http://localhost:49320/member/member_basic/getList_Range__id
+http://localhost:49320/list_static/country/getList_Range__id
 //*/
 (function( req, res ){
 	global.TtwLog.log( "- [ S ] - list_static/country/getList_Range__id():void----------" );
