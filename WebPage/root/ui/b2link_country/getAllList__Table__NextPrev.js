@@ -131,27 +131,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 
 		$f0 = null;
-	};
 
-	/**
-	 * @function
-	 */
-	var _req_Data = function()
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+		_el_div__btns_bottom = null;
+		_el_div__btns_top = null;
 
-		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
-	};
-
-	/**
-	 * @function
-	 * @param {Array}
-	 */
-	var _res_Data = function( result )
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
-
-		window.TtwLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
+		_el_table = null;
 	};
 
 	//----------------------------------------------------------------------------------------------------;
