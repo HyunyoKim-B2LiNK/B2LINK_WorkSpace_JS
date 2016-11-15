@@ -7,6 +7,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 	//window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_div );
+	window.b2link.ui_resource.applyParentheses_LocaleLabel_Children( url, $el_div );
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -32,9 +33,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var $f0 = window.b2link.element.getElementByClassName;
 
-	//debugger;
+	var _el_div__btns_bottom = $f0( $el_div, "btns_bottom" );
+	var _el_div__btns_top = $f0( $el_div, "btns_top" );
+
 	var _el_table = $f0( $el_div, "table" );
-	//debugger;
 		_el_table.js.setData({ idStart : -1, idEnd : 20, limit : 20, maxCount : null
 	 		, fn : {
 				req_getCount : window.b2link_service_list_static.country.getCount
@@ -42,11 +44,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			}
 		});
 		_el_table.js.req_Data();
-
-	var _el_btn_gt = $f0( $el_div, "<" );
-	var _el_btn_gtgt = $f0( $el_div, "<<" );
-	var _el_btn_lt = $f0( $el_div, ">" );
-	var _el_btn_ltlt = $f0( $el_div, ">>" );
 
 	//--------------------------------------------------;
 
@@ -68,10 +65,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
 
-		_el_btn_gt.addEventListener( "click", _evt_mClick__el_btn_gt, false, 0, true );
-		_el_btn_gtgt.addEventListener( "click", _evt_mClick__el_btn_gtgt, false, 0, true );
-		_el_btn_lt.addEventListener( "click", _evt_mClick__el_btn_lt, false, 0, true );
-		_el_btn_ltlt.addEventListener( "click", _evt_mClick__el_btn_ltlt, false, 0, true );
+		_el_div__btns_bottom.addEventListener( "click", _evt_mClick__el_div__btns_, false, 0, true );
+		_el_div__btns_top.addEventListener( "click", _evt_mClick__el_div__btns_, false, 0, true );
 	};
 
 	/**
@@ -81,73 +76,31 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
 
-		_el_btn_gt.removeEventListener( "click", _evt_mClick__el_btn_gt, false );
-		_el_btn_gtgt.removeEventListener( "click", _evt_mClick__el_btn_gtgt, false );
-		_el_btn_lt.removeEventListener( "click", _evt_mClick__el_btn_lt, false );
-		_el_btn_ltlt.removeEventListener( "click", _evt_mClick__el_btn_ltlt, false );
+		_el_div__btns_bottom.removeEventListener( "click", _evt_mClick__el_div__btns_, false );
+		_el_div__btns_top.removeEventListener( "click", _evt_mClick__el_div__btns_, false );
 	};
 
 	/**
 	 * @function
 	 * @param {ResizeEvent} e event
 	 */
-	var _evt_mClick__el_btn_gt = function( e )
+	var _evt_mClick__el_div__btns_ = function( e )
 	{
-		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_gt():void----------" );
+		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_div__btns_():void----------" );
 
 		_removeEvent();
-		_el_table.js.req_Data_Prev();
+
+		console.log( "e.target.className : " + e.target.className );
+		_evt_mClick__el_div__btns_[ "_fn_" + e.target.className ]();
+
 		_addEvent();
 
-		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_gt():void----------" );
+		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_div__btns_():void----------" );
 	};
-
-	/**
-	 * @function
-	 * @param {ResizeEvent} e event
-	 */
-	var _evt_mClick__el_btn_gtgt = function( e )
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_gtgt():void----------" );
-
-		_removeEvent();
-		//_el_table.js.req_Data_Prev();
-		_el_table.js.req_Data_PrevEnd();
-		_addEvent();
-
-		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_gtgt():void----------" );
-	};
-
-	/**
-	 * @function
-	 * @param {ResizeEvent} e event
-	 */
-	var _evt_mClick__el_btn_lt = function( e )
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_lt():void----------" );
-
-		_removeEvent();
-		_el_table.js.req_Data_Next();
-		_addEvent();
-
-		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_lt():void----------" );
-	};
-
-	/**
-	 * @function
-	 * @param {ResizeEvent} e event
-	 */
-	var _evt_mClick__el_btn_ltlt = function( e )
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_ltlt():void----------" );
-
-		_removeEvent();
-		//_el_table.js.req_Data_Next();
-		_el_table.js.req_Data_NextEnd();
-		_addEvent();
-
-		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_ltlt():void----------" );
-	};
+	_evt_mClick__el_div__btns_._fn_btn_gt = function(){ _el_table.js.req_Data_Next(); };
+	_evt_mClick__el_div__btns_._fn_btn_gtgt = function(){ _el_table.js.req_Data_NextEnd(); };
+	_evt_mClick__el_div__btns_._fn_btn_lt = function(){ _el_table.js.req_Data_Prev(); };
+	_evt_mClick__el_div__btns_._fn_btn_ltlt = function(){ _el_table.js.req_Data_PrevEnd(); };
 
 	/**
 	 * @function

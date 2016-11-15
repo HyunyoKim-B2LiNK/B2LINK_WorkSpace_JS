@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./js/b2linkUIClass/Table/window.b2linkUIClass.Table.NextPrev_getAllList.js";
+var fileNm = "./js/b2linkUIClass/Table/window.b2linkUIClass.Table.NextPrev__getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -8,7 +8,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {String} url
  * @param {HTMLElement} $el_table
  */
-window.b2linkUIClass.Table.NextPrev_getAllList = function( url, $el_table )
+window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 {
 	//window.b2link.ui_resource.apply_LocaleLabel( url, $el_table );
 	//window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_table );

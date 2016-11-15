@@ -11,13 +11,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 window.b2link.html.apply_html = function( element, o )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.apply_html():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.apply_html():{HTMLElement}----------" );
 
 	var r = SUtilString.applyStrFromObj__NV_NA( element.innerHTML, o );
 	//console.log( r );
 	element.innerHTML = r;
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.apply_html():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.apply_html():{HTMLElement}----------" );
 
 	return element;
 };

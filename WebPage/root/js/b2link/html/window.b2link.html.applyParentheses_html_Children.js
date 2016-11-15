@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/html/window.b2link.html.applyParentheses_html.js";
+var fileNm = "js/b2link/html/window.b2link.html.applyParentheses_html_Children.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -9,15 +9,22 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {Object} o { "nm" : "_id", "w" : 10 }
  * @return {HTMLElement}
  */
-window.b2link.html.applyParentheses_html = function( element, o )
+window.b2link.html.applyParentheses_html_Children = function( element, o )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.applyParentheses_html():{HTMLElement}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.html.applyParentheses_html_Children():{HTMLElement}----------" );
 
-	var r = SUtilString.applyParenthesesStrFromObj__NV_NA( element.innerHTML, o );
-	//console.log( r );
-	element.innerHTML = r;
+	var a = element.children;
+	var io;
+	var i=0, iLen=a.length;
+	for( ; i<iLen; ++i )
+	{
+		io = a[ i ];
+		var r = SUtilString.applyParenthesesStrFromObj__NV_NA( io.innerHTML, o );
+			//console.log( r );
+		if( r ) io.innerHTML = r;
+	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.applyParentheses_html():{HTMLElement}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.html.applyParentheses_html_Children():{HTMLElement}----------" );
 
 	return element;
 };
