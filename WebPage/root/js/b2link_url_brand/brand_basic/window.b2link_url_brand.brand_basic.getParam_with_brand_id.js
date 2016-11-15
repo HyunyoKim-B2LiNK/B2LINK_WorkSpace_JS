@@ -13,8 +13,7 @@ window.b2link_url_brand.brand_basic.getParam_with_brand_id = function( d )
 	//window.TtwLog.timeStamp( "---- [ S ] - window.b2link_url_brand.brand_basic.getParam_with_brand_id():{String}----------" );
 	//window.TtwLog.timeStamp( "---- [ E ] - window.b2link_url_brand.brand_basic.getParam_with_brand_id():{String}----------" );
 
-	return
-		"&_id=" + d._id
+	return "&_id=" + d._id
 
 		+ "&description=" + d.description
 
