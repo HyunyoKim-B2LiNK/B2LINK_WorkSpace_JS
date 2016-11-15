@@ -409,7 +409,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 
 	//--------------------------------------------------this;
 	var _ = _this;
-	window.b2linkExtends.extends.div_Panel( _this );
+	//window.b2linkExtends.extends.div_Panel( _this );
 
 	_.__el = $el_table;
 	_.dispose = _dispose;

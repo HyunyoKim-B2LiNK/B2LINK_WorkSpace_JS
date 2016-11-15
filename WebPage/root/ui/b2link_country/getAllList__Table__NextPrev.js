@@ -90,8 +90,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		_removeEvent();
 
-		console.log( "e.target.className : " + e.target.className );
-		_evt_mClick__el_div__btns_[ "_fn_" + e.target.className ]();
+		try
+		{
+			console.log( "e.target.className : " + e.target.className );
+			_evt_mClick__el_div__btns_[ "_fn_" + e.target.className ]();
+		}
+		catch( er )
+		{
+			console.error( "_evt_mClick__el_div__btns_ Error : " + er );
+		}
 
 		_addEvent();
 
