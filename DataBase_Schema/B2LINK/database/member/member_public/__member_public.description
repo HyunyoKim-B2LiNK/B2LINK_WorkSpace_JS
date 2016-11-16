@@ -1,2 +1,2 @@
 각 Collection 들에서 member 정보를 참조 하고자 할시에만 사용한다.
-이 Collection에는 inert, add, delete, update 등의 관련 Procedure는 만들지 않는 다.
+이 Collection에는 inert, add, delete, update 등의 관련 Procedure는 만들지 않는다.
