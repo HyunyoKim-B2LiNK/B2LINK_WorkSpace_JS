@@ -23,7 +23,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			console.error( "window.b2link.el_input.getInputValueFromInputType Error : " + er );
 		}
 		/*/
-		var r = window.b2link.el_input.getInputValueFromInputType[ "_fn_" + io.type ]( t );
+		var r = window.b2link.el_input.getInputValueFromInputType[ "_fn_" + t.type ]( t );
 		//*/
 
 
@@ -50,7 +50,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_._fn_search = function( t ){ t.value; };
 		_._fn_submit = function( t ){ t.value; };
 		_._fn_tel = function( t ){ t.value; };
-		_._fn_text = function( t ){ t.value; };
+		_._fn_text = function( t ){ return t.value; };
 		_._fn_time = function( t ){ t.value; };
 		_._fn_url = function( t ){ t.value; };
 		_._fn_week = function( t ){ t.value; };

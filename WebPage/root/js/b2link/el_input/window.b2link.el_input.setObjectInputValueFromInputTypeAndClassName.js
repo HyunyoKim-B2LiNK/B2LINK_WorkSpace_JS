@@ -23,10 +23,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			console.error( "window.b2link.el_input.setObjectInputValueFromInputTypeAndClassName Error : " + er );
 		}
 		/*/
-		var r = window.b2link.el_input.setObjectInputValueFromInputTypeAndClassName[ "_fn_" + io.type ]( t );
+		
+		var r = window.b2link.el_input.setObjectInputValueFromInputTypeAndClassName[ "_fn_" + el.type ]( t );
 		//*/
 
-		t[ r.className ] = r;
+		t[ el.className ] = r;
 
 		//window.TtwLog.timeStamp( "---- [ E ] - window.b2link.el_input.setObjectInputValueFromInputTypeAndClassName():void----------" );
 	};
@@ -49,7 +50,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_._fn_search = function( t ){ t.value; };
 		_._fn_submit = function( t ){ t.value; };
 		_._fn_tel = function( t ){ t.value; };
-		_._fn_text = function( t ){ t.value; };
+		_._fn_text = function( t ){ return t.value; };
 		_._fn_time = function( t ){ t.value; };
 		_._fn_url = function( t ){ t.value; };
 		_._fn_week = function( t ){ t.value; };
