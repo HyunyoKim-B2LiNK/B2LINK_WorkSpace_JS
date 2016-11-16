@@ -43,7 +43,6 @@ jspm_packages
 *.dbjs
 *.dbs
 *.errorResult
-*.exe
 *.interim
 *.lnk
 *.lock
@@ -51,8 +50,6 @@ jspm_packages
 *.result
 *.turtle
 *.wt
-*list.json
-*list*.json
 metrics.*
 __list.json
 __listDir.json
