@@ -1,10 +1,13 @@
 @C: center;
 @L: left;
+@N : normal;
 @R: right;
 
 /* ---------------------------------------------------------------------------------------------------- */
 
+@border_solid_05px_000000: solid 0.5px #000;
 @border_solid_1px_000000: solid 1px #000;
+@border_solid_1px_ffffff: solid 1px #fff;
 @border_solid_2px_000000: solid 2px #000;
 @border_solid_3px_000000: solid 3px #000;
 @border_solid_4px_000000: solid 4px #000;
@@ -16,10 +19,8 @@
 
 @border_solid_1px_adadad: solid 1px #adadad;
 
-/* ---------------------------------------------------------------------------------------------------- */
-
-@btn__width__ltgt: 45px;
-@btn__right__gtgt: 10px;
+@border_solid_1px_dfdce3: solid 1px #dfdce3;
+@border_solid_1px_ebe9ee: solid 1px #ebe9ee;
 
 /* ---------------------------------------------------------------------------------------------------- */
 
@@ -37,3 +38,33 @@
 @padding20: 20px 20px;
 
 @padding0_5: 0px 5px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* ELEMENT - BUTTON */
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@btn__width__ltgt: 45px;
+@btn__right__gtgt: 10px;
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* ELEMENT - TABLE */
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@td__height: 30px;
+@th__height: @td__height;
+
+@td__borderBottom: @border_solid_1px_ebe9ee;
+@td__borderLeft: @border_solid_1px_dfdce3;
+@td__borderRight: @border_solid_1px_dfdce3;
+@td__borderTop: @border_solid_1px_ffffff;
+
+@th__borderBottom: @border_solid_1px_ebe9ee;
+@th__borderLeft: @border_solid_1px_dfdce3;
+@th__borderRight: @border_solid_1px_dfdce3;
+@th__borderTop: @border_solid_1px_ebe9ee;
+
+/* ---------------------------------------------------------------------------------------------------- */
