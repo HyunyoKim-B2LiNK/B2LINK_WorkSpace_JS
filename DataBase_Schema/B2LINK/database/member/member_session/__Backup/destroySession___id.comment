@@ -1,5 +1,0 @@
-/**
- * @function
- * @param {Object} d Request Object { "mid" : "", "sid" : "", "d_ex" : "" }
- * @return {uint} 0 or 1
- */

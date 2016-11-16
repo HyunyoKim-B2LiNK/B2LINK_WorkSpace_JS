@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_service_member/member_basic/window.b2link_service_member.member_basic.getList_Range__id.js";
+var fileNm = "js/b2link_service_member/member_public/window.b2link_service_member.member_public.getList_Range__id.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 var _t = window.b2link.STATIC.CONFIG.URL;
-var _url = _t.PROXY + _t.MONGODB.MEMBER.BASIC + "getList_Range__id?";
+var _url = _t.PROXY + _t.MONGODB.MEMBER.PUBLIC + "getList_Range__id?";
 
 /**
  * @function
@@ -19,15 +19,15 @@ var _url = _t.PROXY + _t.MONGODB.MEMBER.BASIC + "getList_Range__id?";
  * @param {uint} _id_lt
  * @param {Function} cbFunction function( data ){};
  */
-window.b2link_service_member.member_basic.getList_Range__id = function( _id_gt, _id_lt, cbFunction )
+window.b2link_service_member.member_public.getList_Range__id = function( _id_gt, _id_lt, cbFunction )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_basic.getList_Range__id():void----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_service_member.member_public.getList_Range__id():void----------" );
 
 	window.b2link_service.common._fn_req( _url
 		+ "&_id_gt=" + _id_gt + "&_id_lt=" + _id_lt
 		, cbFunction );
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_basic.getList_Range__id():void----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_service_member.member_public.getList_Range__id():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;
