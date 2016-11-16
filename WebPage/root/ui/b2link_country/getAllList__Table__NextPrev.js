@@ -90,8 +90,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		_removeEvent();
 
-		console.log( "e.target.className : " + e.target.className );
-		_evt_mClick__el_div__btns_[ "_fn_" + e.target.className ]();
+		try
+		{
+			console.log( "e.target.className : " + e.target.className );
+			_evt_mClick__el_div__btns_[ "_fn_" + e.target.className ]();
+		}
+		catch( er )
+		{
+			console.error( "_evt_mClick__el_div__btns_ Error : " + er );
+		}
 
 		_addEvent();
 
@@ -131,27 +138,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 
 		$f0 = null;
-	};
 
-	/**
-	 * @function
-	 */
-	var _req_Data = function()
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
+		_el_div__btns_bottom = null;
+		_el_div__btns_top = null;
 
-		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
-	};
-
-	/**
-	 * @function
-	 * @param {Array}
-	 */
-	var _res_Data = function( result )
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
-
-		window.TtwLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
+		_el_table = null;
 	};
 
 	//----------------------------------------------------------------------------------------------------;

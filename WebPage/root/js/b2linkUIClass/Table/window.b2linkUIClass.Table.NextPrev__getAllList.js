@@ -206,6 +206,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_NextEnd():void----------" );
 
+		//수정하기 - 20161115 - 송선우 - 맨 마지막으로 가게;
 		_calc_DataNext();
 		_calc_DataNext();
 
@@ -239,6 +240,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_PrevEnd():void----------" );
 
+		//수정하기 - 20161115 - 송선우 - 맨 처음으로 가게;
 		_calc_DataPrev();
 		_calc_DataPrev();
 
@@ -314,7 +316,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
-		console.log( data );
+		//console.log( data );
 
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
@@ -407,7 +409,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 
 	//--------------------------------------------------this;
 	var _ = _this;
-	window.b2linkExtends.extends.div_Panel( _this );
+	//window.b2linkExtends.extends.div_Panel( _this );
 
 	_.__el = $el_table;
 	_.dispose = _dispose;

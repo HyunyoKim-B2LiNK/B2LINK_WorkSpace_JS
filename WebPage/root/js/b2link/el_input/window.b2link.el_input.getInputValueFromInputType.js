@@ -29,7 +29,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		//window.TtwLog.timeStamp( "---- [ E ] - window.b2link.el_input.getInputValueFromInputType():{Object}----------" );
 
-		return r
+		return r;
 	};
 	var _ = window.b2link.el_input.getInputValueFromInputType;
 		_._fn_button = function( t ){ t.value; };
