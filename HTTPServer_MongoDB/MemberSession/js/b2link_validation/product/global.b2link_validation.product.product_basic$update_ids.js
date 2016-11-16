@@ -36,7 +36,7 @@ global.b2link_validation.product.product_basic$update_ids = function( t, d )
 			global.RayLog.error( "Error : " + e );
 		}
 
-		if( io.mid ) to._id$member_basic = io.mid;
+		if( io.mid ) to._id$member_public = io.mid;
 		if( io.brand ) to._id$brand_basic = io.brand;
 		if( io.product_category ) to._id$product_category = io.product_category;
 
