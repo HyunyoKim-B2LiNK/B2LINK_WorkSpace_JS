@@ -1,6 +1,6 @@
 var a = [
 	{
-		"_id$member_basic" : 0
+		"_id$member_public" : 0
 
 		, "description" : ""
 
@@ -16,7 +16,7 @@ var a = [
 		, "url_trademark" : ""
 	}
 	, {
-		"_id$member_basic" : 0
+		"_id$member_public" : 0
 
 		, "description" : ""
 

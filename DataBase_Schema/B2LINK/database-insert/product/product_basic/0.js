@@ -1,6 +1,6 @@
 var a = [
 	{
-		"_id$member_basic" : NumberInt( 0 )
+		"_id$member_public" : NumberInt( 0 )
 		, "_id$brand_basic" : NumberInt( 0 )
 		, "_id$product_category" : NumberInt( 0 )
 
@@ -14,7 +14,7 @@ var a = [
 		, "url_file_product" : "", "url_file_barcode": "", "url_file_msds" : "", "weight" : 0.0, "unit_weight" : "mg"
 	}
 	, {
-		"_id$member_basic" : NumberInt( 0 )
+		"_id$member_public" : NumberInt( 0 )
 		, "_id$brand_basic" : NumberInt( 0 )
 		, "_id$product_category" : NumberInt( 0 )
 

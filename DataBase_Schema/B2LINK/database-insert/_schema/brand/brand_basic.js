@@ -1,7 +1,7 @@
 var d = {
 	"_id" : "brand_basic"
 
-	, "_id$member_basic" : "uint"//{uint} - _id$member_basic;
+	, "_id$member_public" : "uint"//{uint} - ;
 
 	, "description" : "string"//{String} - description;
 
