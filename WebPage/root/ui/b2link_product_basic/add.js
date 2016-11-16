@@ -173,11 +173,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataFromServer__MemberName = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _getDataFromServer__MemberName():void----------" );
-		
+		/* 20161116  박종하 수정하기 
 		window.b2link_service_member.member_basic.getDocProperty__Name( function( result ) {
 			if ( result === false ) alert( "인가 되지 않은 사용자." );
 			else _setData__el_input_Register( result );
 		});
+		*/
 		window.RayLog.timeStamp( "-- [ E ] - _getDataFromServer__MemberName():void----------" );
 	}
 
