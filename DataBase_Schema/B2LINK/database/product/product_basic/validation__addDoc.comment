@@ -3,7 +3,7 @@
  * @param {Object} d
  * <code>
  * {
- * "_id$member_basic" : NumberInt( 0 )
+ * "_id$member_public" : NumberInt( 0 )
  * , "_id$brand_basic" : NumberInt( 0 )
  * , "_id$product_category" : NumberInt( 0 )
  *

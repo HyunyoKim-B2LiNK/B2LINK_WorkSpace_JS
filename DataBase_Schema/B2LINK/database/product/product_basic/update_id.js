@@ -9,7 +9,7 @@ function( d )
 		{ _id : NumberInt( d._id ) }//search Object;
 		, {
 			$set : {
-				_id$member_basic : NumberInt( d._id$member_basic )
+				_id$member_public : NumberInt( d._id$member_public )
 				, _id$brand_basic : NumberInt( d._id$brand_basic )
 				, _id$product_category : NumberInt ( d._id$product_category )
 

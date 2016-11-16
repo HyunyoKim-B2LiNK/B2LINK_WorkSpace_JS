@@ -1,6 +1,6 @@
 {
 	"_id" : "brand_basic"
-	, "_id$member_basic" : "uint"//{uint} - _id$member_basic; 등록자
+	, "_id$member_public" : "uint"//{uint} - ; 등록자
 
 	, "description" : "string"//{String} - description; 기타 명세
 

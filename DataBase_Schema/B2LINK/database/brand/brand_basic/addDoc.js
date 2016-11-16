@@ -29,7 +29,7 @@ function( d )
 
 		col.insert({
 			_id : NumberInt( len )
-			, _id$member_basic : NumberInt( r._id$member_basic )
+			, _id$member_public : NumberInt( r._id$member_public )
 
 			, description : r.description
 

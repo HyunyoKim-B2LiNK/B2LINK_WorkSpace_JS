@@ -15,7 +15,7 @@ function( d )
 			{ _id : NumberInt( io._id ) }//search Object;
 			, {
 				$set : {
-					_id$member_basic : NumberInt( io._id$member_basic )
+					_id$member_public : NumberInt( io. )
 					, _id$brand_basic : NumberInt( io._id$brand_basic )
 					, _id$product_category : NumberInt ( io._id$product_category )
 					, barcode : io.barcode
