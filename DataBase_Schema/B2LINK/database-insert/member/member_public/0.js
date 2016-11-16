@@ -8,7 +8,7 @@ var a = [
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "member" );
-	db0.member_public.remove();
+	db0.member_public.remove({});
 
 var io;
 var i=0, iLen=a.length;
