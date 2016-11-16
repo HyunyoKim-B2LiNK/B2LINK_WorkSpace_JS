@@ -176,7 +176,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		
 		window.b2link_service_member.member_basic.getDocProperty__Name( function( result ) {
 			if ( result === false ) alert( "인가 되지 않은 사용자." );
-			else _setData_Register( result );
+			else _setData__el_input_Register( result );
 		});
 		window.RayLog.timeStamp( "-- [ E ] - _getDataFromServer__MemberName():void----------" );
 	}
@@ -199,36 +199,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
-<<<<<<< HEAD
-	
-	
-=======
-
-	/**
-	 * @function
-	 * @param {Array}
-	 */
-	var _setData_Today = function( o )
-	{
-		//개발하기 - 박종하 - 20161108 - 서버에서 받아 와야 한다.;
-		window.RayLog.timeStamp( "-- [ S ] - _setData_Today():void----------" );
-		var _date = new Date();
-		var _year = _date.getFullYear();
-		var _month = _date.getMonth();
-		var _day = _date.getDay();
-		var _hour = _date.getHours();
-		var _min = _date.getMinutes();
-		var _sec = _date.getSeconds();
-		o[ 0 ] = _year;
-		o[ 1 ] = _month;
-		o[ 2 ] = _day;
-		o[ 3 ] = _hour;
-		o[ 4 ] = _min;
-		o[ 5 ] = _sec;
-
-		_el_input_Date_register.value = o.toString();
-		window.RayLog.timeStamp( "-- [ E ] - _setData_Today():void----------" );
-	};
 
 	/**
 	 * @function
@@ -243,15 +213,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		window.RayLog.timeStamp( "-- [ E ] - _setData__el_input_Register():void----------" );
 	}
 
-
 	/**
 	 * @function
 	 */
 	var _setData_InputValue = function()
 	{
-
 		_getDataFromServer__MemberName();
-		_setData__el_input_Register({ "박종하");
 	};
 
 	//--------------------------------------------------;
