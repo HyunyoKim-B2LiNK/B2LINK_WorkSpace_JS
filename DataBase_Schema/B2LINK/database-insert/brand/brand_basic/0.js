@@ -34,6 +34,7 @@ var a = [
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "brand" );
+	db0.brand_basic.remove({});
 var io;
 var i=0, iLen=a.length;
 for( ; i<iLen; ++i )
