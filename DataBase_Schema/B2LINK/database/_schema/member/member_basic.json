@@ -1,33 +1,154 @@
 {
-	"mid" : "string"//{String} - thdtjsdn@gmail.com;
-	, "mpw" : "string"//{String} - 123qweasd;
+	//이 Collection을 참조하는 Collections;
+	"dereference" : [
+		"member_session"
+		, "member_session_log"
+		, "member_time"
+	]
 
-	, "bConn" : 0//{uint} 0 or 1 - booleanConnection;
+	//이 Collection이 참조하는 Collections;
+	, "reference" : [
+		"member_session"
+		, "member_session_log"
+		, "member_time"
+	]
 
-	, "email" : "thdtjsdn@gmail.com"//{String|Array};
-	//, "email_id" : "thdtjsdn"//{String};
-	//, "email_domain" : "gmail.com"//{String};
+	//--------------------------------------------------;
 
-	, "nm" : {
-		"a" : "송선우"//{String} Full Name;
-		, "f" : "선우"//{String} First Name;
-		, "l" : "송"//{String} Last Name;
-	}
-	, "nm_cn" : {
-		"a" : ""//{String} Full Name - CH;
-		, "f" : ""//{String} First Name - CH;
-		, "l" : ""//{String} Last Name - CH;
-	}
-	, "nm_kr" : {
-		"a" : "송선우"//{String} Full Name - KR;
-		, "f" : "선우"//{String} First Name - KR;
-		, "l" : "송"//{String} Last Name - KR;
-	}
-	, "nm_us" : {
-		"a" : "SunWoo Song"//{String} Full Name - US;
-		, "f" : "SunWoo"//{String} First Name - US;
-		, "l" : "Song"//{String} Last Name - US;
-	}
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : 0
+			, "type" : "uint", "length" : 0
+			, "minValue" : 0
+			, "maxValue" : 999999999
+		}
 
-	, "nSignInFail" : 0//{uint};
+		//Member ID;
+		, "mid" : { "description" : "Member ID", "exampleValue" : "thdtjsdn@gmail.com"
+			, "type" : "string", "length" : 0
+		}
+
+		//Member Password;
+		, "mpw" : { "description" : "Member Password", "exampleValue" : "123qweasd"
+			, "type" : "string", "length" : 0
+		}
+
+		//Boolean Member Connection;
+		, "bConn" : { "description" : "Boolean Member Connection", "exampleValue" : 0
+			, "type" : "uint", "length" : 1, "default" : 0
+			, "minValue" : 0
+			, "maxValue" : 1
+			, "values" : [ 0, 1 ]
+			, "valuesMap" : { "0" : 1, "1" : 1 }
+		}
+
+		//Email;
+		, "email" : { "description" : "Email", "exampleValue" : "thdtjsdn@gmail.com"
+			, "type" : "string", "length" : 0
+		}
+
+		//Email's ID;
+		//, "email_id" : { "description" : "Email's ID", "exampleValue" : "thdtjsdn"
+		//	, "type" : "string", "length" : 0
+		//}
+
+		//Email's Domain;
+		//, "email_domain" : { "description" : "Email's Domain", "exampleValue" : "gmail.com"
+		//	, "type" : "string", "length" : 0
+		//}
+
+		//Name(Default);
+		, "nm" : { "description" : "Name(Default)"
+			, "type" : "object"
+			, "properties" : {
+				//All Name(Default);
+				"a" : { "description" : "All Name(Default)", "exampleValue" : "송선우"
+					, "type" : "string", "length" : 0
+				}
+
+				//First Name(Default);
+				, "f" : { "description" : "First Name(Default)", "exampleValue" : "선우"
+					, "type" : "string", "length" : 0
+				}
+
+				//Last Name(Default);
+				, "l" : { "description" : "Last Name(Default)", "exampleValue" : "송"
+					, "type" : "string", "length" : 0
+				}
+			}
+		}
+
+		//Name(CN);
+		, "nm_cn" : { "description" : "Name(CN)"
+			, "type" : "object"
+			, "properties" : {
+				//All Name(CN);
+				"a" : { "description" : "All Name(CN)", "exampleValue" : "宋善雨"
+					, "type" : "string", "length" : 0
+				}
+
+				//First Name(CN);
+				, "f" : { "description" : "First Name(CN)", "exampleValue" : "善雨"
+					, "type" : "string", "length" : 0
+				}
+
+				//Last Name(CN);
+				, "l" : { "description" : "Last Name(CN)", "exampleValue" : "宋"
+					, "type" : "string", "length" : 0
+				}
+			}
+		}
+
+		//Name(KR);
+		, "nm_kr" : { "description" : "Name(KR)"
+			, "type" : "object"
+			, "properties" : {
+				//All Name(KR);
+				"a" : { "description" : "All Name(KR)", "exampleValue" : "송선우"
+					, "type" : "string", "length" : 0
+				}
+
+				//First Name(KR);
+				, "f" : { "description" : "First Name(KR)", "exampleValue" : "선우"
+					, "type" : "string", "length" : 0
+				}
+
+				//Last Name(KR);
+				, "l" : { "description" : "Last Name(KR)", "exampleValue" : "송"
+					, "type" : "string", "length" : 0
+				}
+			}
+		}
+
+		//Name(US);
+		, "nm_us" : { "description" : "Name(US)"
+			, "type" : "object"
+			, "properties" : {
+				//All Name(US);
+				"a" : { "description" : "All Name(US)", "exampleValue" : "SunWoo Sonw"
+					, "type" : "string", "length" : 0
+				}
+
+				//First Name(US);
+				, "f" : { "description" : "First Name(US)", "exampleValue" : "SunWoo"
+					, "type" : "string", "length" : 0
+				}
+
+				//Last Name(US);
+				, "l" : { "description" : "Last Name(US)", "exampleValue" : "Song"
+					, "type" : "string", "length" : 0
+				}
+			}
+		}
+
+		//Signin(Login) 실패 횟수;
+		, "nSignInFail" : { "description" : "Signin(Login) 실패 횟수", "exampleValue" : 1
+			, "type" : "uint", "length" : 1, "default" : 0
+			, "minValue" : 0
+			, "maxValue" : 1
+			, "values" : [ 0, 1 ]
+			, "valuesMap" : { "0" : 1, "1" : 1 }
+		}
+	}
 }
