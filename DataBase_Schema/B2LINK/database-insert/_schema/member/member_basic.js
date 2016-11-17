@@ -11,18 +11,42 @@ function getIntArray( a ){
 var d = {
 	"_id" : "member_basic"
 
-	//이 Collection을 참조하는 Collections;
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
 	, "dereference" : [
+		"member.member_session"
+		, "member.member_session_log"
+		, "member.member_time"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
 		"member_session"
 		, "member_session_log"
 		, "member_time"
 	]
 
-	//이 Collection이 참조하는 Collections;
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"member"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
 	, "reference" : [
+		"member.member_session"
+		, "member.member_session_log"
+		, "member.member_time"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
 		"member_session"
 		, "member_session_log"
 		, "member_time"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"member"
 	]
 
 	//--------------------------------------------------;
@@ -149,6 +173,11 @@ var d = {
 
 				//Last Name(US);
 				, "l" : { "description" : "Last Name(US)", "exampleValue" : "Song"
+					, "type" : "string", "length" : NumberInt( 0 )
+				}
+
+				//Middle Name(US);
+				, "m" : { "description" : "Middle Name(US)" , "exampleValue" : ""
 					, "type" : "string", "length" : NumberInt( 0 )
 				}
 			}

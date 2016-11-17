@@ -11,15 +11,35 @@ function getIntArray( a ){
 var d = {
 	"_id" : "member_session_log"
 
-	//이 Collection을 참조하는 Collections;
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
 	, "dereference" : [
+		"member.member_basic"
+		, "member.member_session"
+		, "member.member_time"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
 		"member_basic"
 		, "member_session"
 		, "member_time"
 	]
 
-	//이 Collection이 참조하는 Collections;
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"member"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
 	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
 	]
 
 	//--------------------------------------------------;
