@@ -20,7 +20,7 @@ window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type = func
 	for( ; i<iLen; ++i )
 	{
 		io = a[ i ];
-		if( "INPUT" == io.tagName ) of( r, io );
+		if( "INPUT" == io.tagName ) r[ io.className ] = window.b2link.el_input.getInputValueFromInputType( io );
 	}
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input_Type():{Object}----------" );

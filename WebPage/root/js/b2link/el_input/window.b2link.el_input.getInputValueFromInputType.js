@@ -33,7 +33,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	};
 	var _ = window.b2link.el_input.getInputValueFromInputType;
 		_._fn_button = function( t ){ t.value; };
-		_._fn_checkbox = function( t ){ t.checked; };
+		_._fn_checkbox = function( t ){ return t.checked; };
 		_._fn_color = function( t ){ t.value; };
 		_._fn_date = function( t ){ t.value; };
 		_[ "datetime-local" ] = function( t ){ t.value; };
