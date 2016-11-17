@@ -1,9 +1,73 @@
 {
-	_id : "country"
-	, cd_n : "number"//code_number;
-	, cd_us2 : "string_2"//code_us2;
-	, cd_us3 : "string_3"//code_us3;
-	, nm_cn : "string"//name_cn;
-	, nm_kr : "string"//name_kr;
-	, nm_us : "string"//name_us;
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"barnd.brand_basic"
+		, "product.product_basic"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"brand_basic"
+		, "product_basic"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"brand"
+		, "product"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : 0
+			, "type" : "uint", "length" : 0
+			, "minValue" : 0
+			, "maxValue" : 999999999
+		}
+
+		//Code - Number;
+		, "cd_n" : { "description" : "Code - Number", "exampleValue" : "410"
+			, "type" : "int", "length" : 3
+		}
+
+		//Code - String - 2;
+		, "cd_us2" : { "description" : "Code - String - 2", "exampleValue" : "KR"
+			, "type" : "string", "length" : 2
+		}
+
+		//Code - String - 3;
+		, "cd_us3" : { "description" : "Code - String - 3", "exampleValue" : "KOR"
+			, "type" : "string", "length" : 3
+		}
+
+		//Name(CN);
+		, "nm_cn" : { "description" : "Name(CN)", "exampleValue" : "韓國"
+			, "type" : "string", "length" : 0
+		}
+
+		//Name(KR);
+		, "nm_kr" : { "description" : "Name(KR)", "exampleValue" : "대한민국"
+			, "type" : "string", "length" : 0
+		}
+
+		//Name(US);
+		, "nm_us" : { "description" : "Name(US)", "exampleValue" : "Republic of Korea"
+			, "type" : "string", "length" : 0
+		}
+	}
 }

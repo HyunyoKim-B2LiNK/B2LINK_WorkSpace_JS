@@ -11,15 +11,37 @@ function getIntArray( a ){
 var d = {
 	"_id" : "member_public"
 
-	//이 Collection을 참조하는 Collections;
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
 	, "dereference" : [
+		"brand.brand_basic"
+		, "product.public_basic"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
 		"brand_basic"
 		, "public_basic"
 	]
 
-	//이 Collection이 참조하는 Collections;
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"brand"
+		, "public"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
 	, "reference" : [
+		"member.member_session"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
 		"member_session"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"member"
 	]
 
 	//--------------------------------------------------;
@@ -127,6 +149,11 @@ var d = {
 
 				//Last Name(US);
 				, "l" : { "description" : "Last Name(US)", "exampleValue" : "Song"
+					, "type" : "string", "length" : NumberInt( 0 )
+				}
+
+				//Middle Name(US);
+				, "m" : { "description" : "Middle Name(US)" , "exampleValue" : ""
 					, "type" : "string", "length" : NumberInt( 0 )
 				}
 			}
