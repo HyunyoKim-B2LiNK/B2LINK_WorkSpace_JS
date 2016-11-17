@@ -12,7 +12,7 @@ var d = {
 	"_id" : "country"
 
 	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
-	"dereference" : [
+	, "dereference" : [
 		"barnd.brand_basic"
 		, "member.member_basic"
 		, "member.member_public"
