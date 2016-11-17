@@ -14,18 +14,23 @@ var d = {
 	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
 	, "dereference" : [
 		"barnd.brand_basic"
+		, "member.member_basic"
+		, "member.member_public"
 		, "product.product_basic"
 	]
 
 	//이 Collection을 참조하는 Collections - Collection Name;
 	, "dereference_collection" : [
 		"brand_basic"
+		, "member_basic"
+		, "member_public"
 		, "product_basic"
 	]
 
 	//이 Collection을 참조하는 Database;
 	, "dereference_database" : [
 		"brand"
+		, "member"
 		, "product"
 	]
 
