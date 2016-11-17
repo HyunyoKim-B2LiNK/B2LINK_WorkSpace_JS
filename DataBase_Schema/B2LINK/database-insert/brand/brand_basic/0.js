@@ -3,6 +3,12 @@ var a = [
 		"_id$member_public" : 0
 
 		, "description" : ""
+		, "description_cn" : ""
+		, "description_kr" : ""
+		, "description_us" : ""
+
+
+		, "nm" : "파파레서피"
 
 		, "nm_cn" : "爸爸的礼物"
 		, "nm_kr" : "파파레서피"
@@ -19,7 +25,11 @@ var a = [
 		"_id$member_public" : 0
 
 		, "description" : ""
+		, "description_cn" : ""
+		, "description_kr" : ""
+		, "description_us" : ""
 
+		, "nm" : "파파레서피"
 		, "nm_cn" : "爸爸的礼物0"
 		, "nm_kr" : "파파레서피0"
 		, "nm_us" : "papa recipe0"
