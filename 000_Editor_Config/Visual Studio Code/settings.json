@@ -9,6 +9,15 @@
 
 	"files.encoding": "utf8",
 
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/*.description" : true,
+		"*.bat" : true
+	},
+
 	"less.validate": true,
 
 	"typescript.check.tscVersion": false
