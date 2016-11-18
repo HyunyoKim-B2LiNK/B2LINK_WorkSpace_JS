@@ -43,7 +43,6 @@ global.b2link_validation.brand.brand_basic$update_ids = function( t, d )
 		to.url = io.url;
 		to.url_logo = io.url_logo;
 		to.url_trademark = io.url_trademark;
-		//if( d.register_person ) t.register_person = d.register_person;
 
 		_t.push( to );
 	}

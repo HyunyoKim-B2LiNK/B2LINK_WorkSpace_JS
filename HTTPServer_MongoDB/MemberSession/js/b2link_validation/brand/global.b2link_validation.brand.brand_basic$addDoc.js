@@ -25,8 +25,8 @@ global.b2link_validation.brand.brand_basic$addDoc = function( t, d )
 		return;
 	}
 
-	t.date_register = global.b2link.date.getArrayDateFromNewDate();
-	
+	t.date_regist = global.b2link.date.getArrayDateFromNewDate();
+
 	t.description = d.description ? d.description : "";
 
 	t.nm_cn = d.nm_cn ? d.nm_cn : "";
