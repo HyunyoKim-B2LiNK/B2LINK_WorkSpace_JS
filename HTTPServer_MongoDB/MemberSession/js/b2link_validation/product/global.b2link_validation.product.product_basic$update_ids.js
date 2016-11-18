@@ -35,9 +35,10 @@ global.b2link_validation.product.product_basic$update_ids = function( t, d )
 		{
 			global.RayLog.error( "Error : " + e );
 		}
-		// 20161118 박종하 수정하기
-		if( io.nm_register ) to._id$member_public = io.nm_register;
+
+		//20161118 - 박종하 - 수정하기;
 		if( io.brand ) to._id$brand_basic = io.brand;
+		if( io.nm_register ) to._id$member_public = io.nm_register;
 		if( io.product_category ) to._id$product_category = io.product_category;
 
 		to.barcode = io.barcode;
