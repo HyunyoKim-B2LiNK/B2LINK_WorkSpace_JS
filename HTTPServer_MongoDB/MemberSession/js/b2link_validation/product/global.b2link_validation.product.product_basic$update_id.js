@@ -14,14 +14,15 @@ global.b2link_validation.product.product_basic$update_id = function( d )
 	try
 	{
 		d._id = parseInt( d._id );
-		d.date_register = d.date_register.split( "," );
+		d.date_regist = d.date_regist.split( "," );
 	}
 	catch( e )
 	{
 		global.RayLog.error( "Error : " + e );
 	}
 
-	if( d.mid ) d._id$member_public = d.mid;
+	// 20161118 박종하 수정하기
+	if( d.nm_register ) d._id$member_public = d.nm_register ;
 
 	if( d.barcode ) d.barcode = d.barcode;
 	if( d.brand ) d._id$brand_basic = d.brand;

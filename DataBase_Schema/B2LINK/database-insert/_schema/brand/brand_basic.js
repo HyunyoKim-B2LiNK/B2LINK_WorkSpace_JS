@@ -57,8 +57,8 @@ var d = {
 			, "type" : "uint", "length" : NumberInt(0)
 		}
 
-		//Register Date
-		, "date_register" : { "description" : "Register Date", "exampleValue" : [ NumberInt(2016), NumberInt(10), NumberInt(27), NumberInt(12), NumberInt(20), NumberInt(30) ]
+		//Regist Date
+		, "date_regist" : { "description" : "Regist Date", "exampleValue" : [ NumberInt(2016), NumberInt(10), NumberInt(27), NumberInt(12), NumberInt(20), NumberInt(30) ]
 			, "type" : "array", "length" : NumberInt(0)
 		}
 

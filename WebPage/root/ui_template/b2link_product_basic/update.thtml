@@ -26,8 +26,8 @@
 				<td><input type="text" class="nm_kr" value="{{nm_kr}}"></input></td>
 				<td><input type="text" class="nm_cn" value="{{nm_cn}}"></input></td>
 				<td><input type="text" class="nm_us" value="{{nm_us}}"></input></td>
-				<td class="mid">{{mid}}</td>
-				<td class="date_register">{{date_register}}</td>
+				<td class="nm_register">{{nm_register}}</td>
+				<td class="date_regist">{{date_regist}}</td>
 				<td><input type="text" class="url_file_product" value="{{url_file_product}}"></input></td>
 				<td><input type="text" class="description" value="{{description}}"></input></td>
 				<td><input type="text" class="url" value="{{url}}"></input></td>

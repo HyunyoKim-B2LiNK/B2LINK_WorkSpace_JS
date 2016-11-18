@@ -8,7 +8,7 @@
  * , "_id$product_category" : NumberInt( 0 )
  *
  * , "barcode" : "12345678"
- * , "date_register" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
+ * , "date_regist" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
  * , "description" : "핸드크림", "msds" :  false
  * , "nm_kr" : "시어버터 핸드크림_로즈", "nm_cn" : "护手霜_玫瑰", "nm_us" : "SHEA BUTTER HANDCREAM_ROSE"
  *

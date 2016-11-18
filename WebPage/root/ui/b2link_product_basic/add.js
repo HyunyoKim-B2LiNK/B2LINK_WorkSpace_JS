@@ -35,8 +35,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_btn_add = $f0( $el_div, "btn_Add" );
 
 	var _el_inputParent = $f0( $el_div, "inputs" );
-	var _el_input_Date_register = $f0( $el_div, "date_register" );
-	var _el_input_Register = $f0( $el_div, "register" );
+	var _el_input_Date_regist = $f0( $el_div, "date_regist" );
+	var _el_input_nm_register = $f0( $el_div, "nm_register" );
 
 	/**
 	 * @Property {Function} function( result ){}
@@ -130,8 +130,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_btn_add = null;
 
 		_el_inputParent = null;
-		_el_input_Date_register = null
-		_el_input_Register = null;
+		_el_input_Date_regist = null
+		_el_input_nm_register = null;
 
 
 		_evt_Complete__Add = null;
@@ -152,7 +152,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @return {Object} { brand : {String}, nm_kr : {String}, nm_cn : {String}, nm_us : {String}
 	 *					, product_category : {String}, weight : {Number}, unit_weight : {String}
 	 *					, url : {String}, url_file_product : {String}, barcode : {String}, url_file_barcode : {String}, msds:{Boolean}, url_file_msds : {String}
-	 *					, description : {String}, register : {String}  }
+	 *					, description : {String}, nm_register : {String}  }
 	 */
 	var _getDataForQuery = function()
 	{
@@ -165,20 +165,20 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		window.RayLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
 	};
-	
-	
+
+
 	/**
-	* @function 회원 명을 가져 온다. 
+	* @function 회원 명을 가져 온다.
 	*/
 	var _getDataFromServer__MemberName = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _getDataFromServer__MemberName():void----------" );
-		
+
 		window.b2link_service_member.member_public.getProp_NameFromsid( function( result ) {
 			if ( result === false ) alert( "인가 되지 않은 사용자." );
-			else _setData__el_input_Register( result );
+			else _setData__el_input_nm_register( result );
 		});
-		
+
 		window.RayLog.timeStamp( "-- [ E ] - _getDataFromServer__MemberName():void----------" );
 	}
 
@@ -203,15 +203,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	/**
 	 * @function
-	 * @param {String}  "박종하" 
+	 * @param {String}  "박종하"
 	 */
-	var _setData__el_input_Register = function( d )
+	var _setData__el_input_nm_register = function( d )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setData__el_input_Register():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _setData__el_input_nm_register():void----------" );
 
-		_el_input_Register.value = d;
+		_el_input_nm_register.value = d;
 
-		window.RayLog.timeStamp( "-- [ E ] - _setData__el_input_Register():void----------" );
+		window.RayLog.timeStamp( "-- [ E ] - _setData__el_input_nm_register():void----------" );
 	}
 
 	/**

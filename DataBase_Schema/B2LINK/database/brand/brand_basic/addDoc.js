@@ -23,9 +23,9 @@ function( d )
 	}
 	else
 	{
-		var i=0, iLen=r.date_register.length;
+		var i=0, iLen=r.date_regist.length;
 		for( ; i<iLen; ++i )
-			r.date_register[ i ] = NumberInt( r.date_register[ i ] );
+			r.date_regist[ i ] = NumberInt( r.date_regist[ i ] );
 
 		col.insert({
 			_id : NumberInt( len )
@@ -41,7 +41,7 @@ function( d )
 			, nm_kr : r.nm_kr
 			, nm_us : r.nm_us
 
-			, date_register : r.date_register
+			, date_regist : r.date_regist
 
 			, url : r.url
 			, url_logo : r.url_logo

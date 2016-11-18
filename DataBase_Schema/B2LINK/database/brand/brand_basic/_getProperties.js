@@ -7,7 +7,7 @@ function()
 
 		, "nm_kr" ,"nm_cn" ,"nm_us"
 
-		, "register_date", "register_person"
+		, "date_regist", "nm_register"
 
 		, "url", "url_logo", "url_trademark"
 	];

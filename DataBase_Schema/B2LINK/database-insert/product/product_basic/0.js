@@ -6,7 +6,7 @@ var a = [
 
 		, "barcode" : "12345678"
 		//, "barcode" : Number( 12345678 )
-		, "date_register" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
+		, "date_regist" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
 		, "description" : "핸드크림", "description_cn" : "핸드크림", "description_kr" : "핸드크림", "description_us" : "핸드크림"
 		, "msds" :  false
 		, "nm" : "시어버터 핸드크림_로즈", "nm_kr" : "시어버터 핸드크림_로즈", "nm_cn" : "护手霜_玫瑰", "nm_us" : "SHEA BUTTER HANDCREAM_ROSE"
@@ -21,7 +21,7 @@ var a = [
 
 		, "barcode" : "82345679"
 		//, "barcode" : Number( 82345679 )
-		, "date_register" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
+		, "date_regist" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
 		, "description" : "매직타올" , "description_cn" : "매직타올", "description_kr" : "매직타올" , "description_us" : "매직타올"
 		, "msds" :  false
 

@@ -29,14 +29,14 @@ global.b2link_validation.product.product_basic$update_ids = function( t, d )
 		try
 		{
 			to._id = parseInt( io._id );
-			if( io.date_register  ) to.date_register = io.date_register.split( "," );
+			if( io.date_regist  ) to.date_regist = io.date_regist.split( "," );
 		}
 		catch( e )
 		{
 			global.RayLog.error( "Error : " + e );
 		}
-
-		if( io.mid ) to._id$member_public = io.mid;
+		// 20161118 박종하 수정하기
+		if( io.nm_register ) to._id$member_public = io.nm_register;
 		if( io.brand ) to._id$brand_basic = io.brand;
 		if( io.product_category ) to._id$product_category = io.product_category;
 

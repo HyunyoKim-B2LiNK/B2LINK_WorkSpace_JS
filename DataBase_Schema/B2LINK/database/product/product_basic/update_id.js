@@ -15,7 +15,7 @@ function( d )
 
 				, barcode : d.barcode
 
-				, date_register : d.date_register
+				, date_regist : d.date_regist
 				, description : d.description
 
 				, msds : d.msds

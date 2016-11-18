@@ -7,7 +7,7 @@
 
 	, "weight" : "  weight"
 	, "unit_weight" : "  unit of weight"
-	
+
 
 	, "url" : "   product url"
 	, "url_file_product" : "   product image"
@@ -16,7 +16,7 @@
 	, "msds" : "   msds"
 	, "url_file_msds" : "   msds file"
 	, "product_category" : "   category"
-	, "date_register" : "   date"
+	, "date_regist" : "   date"
 	, "description" : "  description"
-	, "register" : "   register"
+	, "nm_register" : "   register"
 }
