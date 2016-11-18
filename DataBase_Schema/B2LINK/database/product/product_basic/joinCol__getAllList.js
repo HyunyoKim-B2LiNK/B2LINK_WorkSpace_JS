@@ -1,6 +1,6 @@
 function()
 {
-	print( "---------- [ S ] - getAllList__View():{Array} ---------- ");
+	print( "---------- [ S ] - joinCol__getAllList():{Array} ---------- ");
 	var r = [];
 	print("---------- db.getSiblingDB( brand ) ---------- ");
 	var db_brand = db.getSiblingDB( "brand" );
@@ -18,6 +18,6 @@ function()
 		doc.register_name = nm_member.nm.a; delete doc._id$member_public;
 		r.push( doc );
 	});
-	print( "---------- [ E ] - getAllList__View():{Array} ---------- ");
+	print( "---------- [ E ] - joinCol__getAllList():{Array} ---------- ");
 	return r;
 }
