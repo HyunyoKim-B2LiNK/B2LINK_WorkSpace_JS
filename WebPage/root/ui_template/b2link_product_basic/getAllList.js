@@ -95,12 +95,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var io=0, ioLen=o.length;
 		for ( ; io<ioLen; ++io)
 		{
-			var _a = o[ io ].date_register;
+			var _a = o[ io ].date_regist;
 			var _t = "";
 			var i=0, iLen=_a.length-1;
 			for( ; i<iLen; ++i ) _t += _a[ i ] + "-";
 			_t += _a[ iLen ];
-			o[io].date_register = _t;
+			o[io].date_regist = _t;
 		}
 	};
 	/*///수정 - 송선우 - 20161108
@@ -108,7 +108,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		var f = window.b2link.date.getDateStringFromArrayDate_Dash;
 		var i=0, iLen=a.length;
-		for( ; i<iLen; ++i ) a[ i ].date_register = f( a[ i ].date_register );
+		for( ; i<iLen; ++i ) a[ i ].date_regist = f( a[ i ].date_regist );
 	};
 	//*/
 

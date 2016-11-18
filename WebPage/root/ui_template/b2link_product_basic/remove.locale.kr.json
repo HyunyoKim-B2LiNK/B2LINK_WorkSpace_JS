@@ -6,9 +6,9 @@
 	, "th__nm_kr" : "이름(국문)"
 	, "th__nm_cn" : "이름(중문)"
 	, "th__nm_us" : "이름(영문)"
-	, "th__mid" : "등록자"
-	, "th__date_register" : "등록일"
-	
+	, "th__nm_register" : "등록자"
+	, "th__date_regist" : "등록일"
+
 	, "btn__cancel" : "취소"
 	, "btn__delete" : "삭제"
 }

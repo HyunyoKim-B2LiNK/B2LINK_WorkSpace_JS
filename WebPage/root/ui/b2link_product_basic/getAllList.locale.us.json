@@ -5,6 +5,6 @@
 	, "th__nm_kr" : "Name (kr)"
 	, "th__nm_cn" : "Name (cn)"
 	, "th__nm_us" : "Name (us)"
-	, "th__mid" : "register"
-	, "th__date_register" : "register_date"
+	, "th__nm_register" : "register"
+	, "th__date_regist" : "regist_date"
 }

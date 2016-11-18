@@ -5,12 +5,12 @@
 	, "th__nm_cn" : "Name(CN)"
 	, "th__nm_kr" : "Name(KR)"
 	, "th__nm_us" : "Name(US)"
-	
+
 	, "th__url" : "URL"
 	, "th__url_logo" : "Logo URL"
 	, "th__url_trademark" : "Tradmark URL"
 
-	, "th__date_register" : "Register Date"
+	, "th__date_regist" : "Regist Date"
 
 	, "th___id$member_public" : "Register"
 

@@ -7,7 +7,7 @@
 
 	, "weight" : "  상품 중량"
 	, "unit_weight" : "  중량 단위"
-	
+
 
 	, "url" : "   상품 url"
 	, "url_file_product" : "   상품 이미지"
@@ -16,8 +16,8 @@
 	, "msds" : "   msds"
 	, "url_file_msds" : "   msds 파일"
 	, "product_category" : "   상품 카테고리"
-	, "date_register" : "   상품등록일"
+	, "date_regist" : "   상품등록일"
 	, "description" : "  상품명세"
-	, "register" : "   등록자"
+	, "nm_register" : "   등록자"
 	, "add" : "등록"
 }
