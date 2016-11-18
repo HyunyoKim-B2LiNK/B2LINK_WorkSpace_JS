@@ -1,1 +1,4 @@
-[]
+[
+	"global.b2link.date.getArrayDateFromNewDate",
+	"global.b2link.date.getDateStringFromArrayDate_Dash"
+]
