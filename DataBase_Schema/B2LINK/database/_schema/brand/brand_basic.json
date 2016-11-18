@@ -47,7 +47,7 @@
 		}
 
 		//Register Date
-		, "date_register" : { "description" : "Register Date", "exampleValue" : [ 2016, 10, 27, 12, 20, 30 ]
+		, "date_regist" : { "description" : "Register Date", "exampleValue" : [ 2016, 10, 27, 12, 20, 30 ]
 			, "type" : "array", "length" : 0
 		}
 

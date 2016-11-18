@@ -65,8 +65,8 @@ var d = {
   			, "type" : "string", "length" : NumberInt(0)
   		}
 
-  		//Register Date
-  		, "date_register" : { "description" : "Register Date", "exampleValue" : [ 2016, 10, 27, 12, 20, 30 ]
+  		//Regist Date
+  		, "date_regist" : { "description" : "Regist Date", "exampleValue" : [ 2016, 10, 27, 12, 20, 30 ]
   			, "type" : "array", "length" : NumberInt(0)
   		}
 

@@ -3,7 +3,6 @@
  * @param {Object} d
  * <code>
  * {
- *	"cd_brand" : ""
  *
  *	, "description" : ""
  *
@@ -11,8 +10,7 @@
  *	, "nm_cn" : "爸爸的礼物"
  *	, "nm_us" : "papa recipe"
  *
- *	, "register_date" : ""
- *	, "register_person" : ""
+ *	, "regist_date" : ""
  *
  *	, "url" : "http://paparecipe.com/"
  *	, "url_logo" : ""
@@ -24,7 +22,6 @@
  * @example
  * <code>
  * brand$addDoc({
- *	"cd_brand" : ""
  *
  *	, "description" : ""
  *
@@ -32,8 +29,7 @@
  *	, "nm_cn" : "爸爸的礼物"
  *	, "nm_us" : "papa recipe"
  *
- *	, "register_date" : ""
- *	, "register_person" : ""
+ *	, "date_regist" : ""
  *
  *	, "url" : "http://paparecipe.com/"
  *	, "url_logo" : ""

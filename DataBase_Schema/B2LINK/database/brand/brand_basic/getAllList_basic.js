@@ -5,7 +5,7 @@ function()
 
 		delete doc.description;
 
-		delete doc.date_register;
+		delete doc.date_regist;
 
 		delete doc.url_logo;
 		delete doc.url_trademark;

@@ -11,8 +11,8 @@
  *	, "nm_cn" : "爸爸的礼物"
  *	, "nm_us" : "papa recipe"
  *
- *	, "register_date" : ""
- *	, "register_person" : ""
+ *	, "date_regist" : ""
+ *	, "nm_register" : ""
  *
  *	, "url" : "http://paparecipe.com/"
  *	, "url_logo" : ""

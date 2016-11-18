@@ -20,7 +20,7 @@ function( d )
 					, _id$product_category : NumberInt ( io._id$product_category )
 					, barcode : io.barcode
 
-					, date_register : io.date_register
+					, date_regist : io.date_regist
 					, description : io.description
 
 					, msds : io.msds

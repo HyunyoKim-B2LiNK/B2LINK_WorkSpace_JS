@@ -14,8 +14,8 @@ var a = [
 		, "nm_kr" : "파파레서피"
 		, "nm_us" : "papa recipe"
 
-		//, "date_register" : { "y" : 2016, "m" : 10, "d" : 27, "ho" : 12, "mi" : 20, "se" : 30 }
-		, "date_register" : [ 2016, 10, 27, 12, 20, 30 ]
+		//, "date_regist" : { "y" : 2016, "m" : 10, "d" : 27, "ho" : 12, "mi" : 20, "se" : 30 }
+		, "date_regist" : [ 2016, 10, 27, 12, 20, 30 ]
 
 		, "url" : "http://paparecipe.com/"
 		, "url_logo" : ""
@@ -34,8 +34,8 @@ var a = [
 		, "nm_kr" : "파파레서피0"
 		, "nm_us" : "papa recipe0"
 
-		//, "date_register" : { "y" : 2016, "m" : 10, "d" : 27, "ho" : 12, "mi" : 20, "se" : 30 }
-		, "date_register" : [ 2016, 10, 27, 12, 20, 30 ]
+		//, "date_regist" : { "y" : 2016, "m" : 10, "d" : 27, "ho" : 12, "mi" : 20, "se" : 30 }
+		, "date_regist" : [ 2016, 10, 27, 12, 20, 30 ]
 
 		, "url" : "http://paparecipe0.com/"
 		, "url_logo" : ""
