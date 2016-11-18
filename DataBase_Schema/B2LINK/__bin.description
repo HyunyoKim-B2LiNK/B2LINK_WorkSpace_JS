@@ -1,0 +1,77 @@
+//----------------------------------------------------------------------------------------------------;
+
+Build Script, Executor 들이 모여있다.;
+
+//----------------------------------------------------------------------------------------------------;
+
+//----------------------------------------------------------------------------------------------------;
+
+//	__insert;
+
+//----------------------------------------------------------------------------------------------------;
+
+@ __insert.bat
+
+@ __insert.sh.command
+
+@ __insert.js
+
+//----------------------------------------------------------------------------------------------------;
+
+//	__setup;
+
+//----------------------------------------------------------------------------------------------------;
+
+@ __setup.bat
+ - MS Windows 용 실행 파일
+ - Procedure들을 Database에 등록 한다.
+ - Node로 구동 시키는 커맨드가 포함되어있다.
+
+@ __setup.sh.command
+ - Mac OSX 용 실행 파일
+ - Procedure들을 Database에 등록 한다.
+
+@ __setup.js
+ - Mac OSX 용 실행 파일
+ - Procedure들을 Database에 등록 한다.
+
+//----------------------------------------------------------------------------------------------------;
+
+//	del__***;
+
+//----------------------------------------------------------------------------------------------------;
+
+@ del__all.bat
+@ del__all.sh.command
+
+@ del__database__dbjs.bat
+@ del__database__dbjs.sh.command
+
+@ del__database__dbs_errorResult.bat
+@ del__database__dbs_errorResult.sh.command
+
+@ del__database__dbs_result.bat
+@ del__database__dbs_result.sh.command
+
+@ del__database-insert__dbjs.bat
+@ del__database-insert__dbjs.sh.command
+
+@ del__database-insert__dbs_errorResult.bat
+@ del__database-insert__dbs_errorResult.sh.command
+
+@ del__database-insert__dbs_result.bat
+@ del__database-insert__dbs_result.sh.command
+
+//----------------------------------------------------------------------------------------------------;
+
+//	execute_***;
+
+//----------------------------------------------------------------------------------------------------;
+
+@ execute_mongoclient_js__admin.bat
+
+@ execute_mongoclient_js__admin.sh.command
+
+@ execute_mongoclient_js__database.bat
+
+@ execute_mongoclient_js__database.sh.command
