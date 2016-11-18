@@ -1,5 +1,4 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_product/getAllList__View.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -112,7 +111,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
 		
-		window.b2link_service_product.product_basic.getAllList__View( _res_Data );
+		window.b2link_service_product.product_basic.joinCol__getAllList( _res_Data );
 
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
@@ -150,7 +149,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
-		window.RayLog.timeStamp( "window.b2link.service.req$product_basic$getAllList__View result : " );
+		window.RayLog.timeStamp( "window.b2link_service_product.product_basic.joinCol__getAllList result : " );
 		console.log( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
