@@ -16,10 +16,15 @@ function( d )
 				, barcode : d.barcode
 
 				, date_regist : d.date_regist
+
 				, description : d.description
+				, description_cn : d.description_cn
+				, description_kr : d.description_kr
+				, description_us : d.description_us
 
 				, msds : d.msds
 
+				, nm : d.nm
 				, nm_cn : d.nm_cn
 				, nm_kr : d.nm_kr
 				, nm_us : d.nm_us

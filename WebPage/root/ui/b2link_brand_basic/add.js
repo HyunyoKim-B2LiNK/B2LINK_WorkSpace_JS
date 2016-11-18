@@ -38,7 +38,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var _el_inputParent = $f0( $el_div, "inputs" );
 
-	var _el_input_nm_Register = $f0( $el_div, "nm_register" );
+	var _el_input_nm_register = $f0( $el_div, "nm_register" );
 
 	/**
 	 * @Property {Function} function( result ){}
@@ -168,10 +168,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _getDataFromServer__MemberName = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _getDataFromServer__MemberName():void----------" );
+
 		window.b2link_service_member.member_public.getProp_NameFromsid( function( result ){
 			if( result === false ) alert( "인가 되지 않은 사용자." );
 			else _setData__el_input_nm_register( result );
 		});
+
 		window.RayLog.timeStamp( "-- [ E ] - _getDataFromServer__MemberName():void----------" );
 	}
 

@@ -1,23 +1,28 @@
 {
 	"legend" : "  제품등록  "
 
+	, "add" : "등록"
+
+	, "barcode" : "  상품 바코드"
 	, "brand" : "  브랜드"
+
+	, "description" : "  상품명세"
+
 	, "nm_kr" : "  상품명(국문)"
 	, "nm_us" : "  상품명(영문)"
 	, "nm_cn" : "  상품명(중문)"
 
+	, "nm_register" : "  등록자"
+
 	, "weight" : "  상품 중량"
 	, "unit_weight" : "  중량 단위"
 
-
 	, "url" : "  상품 url"
-	, "url_file_product" : "  상품 이미지"
-	, "barcode" : "  상품 바코드"
-	, "url_file_barcode" : "  바코드 이미지"
-	, "msds" : "  msds"
 	, "url_file_msds" : "  msds 파일"
+	, "url_file_product" : "  상품 이미지"
+	, "url_file_barcode" : "  바코드 이미지"
+	
+	, "msds" : "  msds"
+	
 	, "product_category" : "  상품 카테고리"
-	, "description" : "  상품명세"
-	, "nm_register" : "  등록자"
-	, "add" : "등록"
 }
