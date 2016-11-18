@@ -26,7 +26,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		var r = window.b2link.el_input.getInputValueFromInputType[ "_fn_" + t.type ]( t );
 		//*/
 
-
 		//window.TtwLog.timeStamp( "---- [ E ] - window.b2link.el_input.getInputValueFromInputType():{Object}----------" );
 
 		return r;
