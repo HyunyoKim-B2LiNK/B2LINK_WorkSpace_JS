@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_country/getAllList__Table__Rolling.js";
+var fileNm = "./ui/b2link_country/getAllList__Table__NextPrevAdd.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -37,7 +37,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _el_div__btns_top = $f0( $el_div, "btns_top" );
 
 	var _el_table = $f0( $el_div, "table" );
-		_el_table.js.setData({ idStart : -1, idEnd : 40, limit : 40, limitTerm : 2, maxCount : null
+		_el_table.js.setData({ idStart : -1, idEnd : 20, limit : 20, maxCount : null
 	 		, fn : {
 				req_getCount : window.b2link_service_list_static.country.getCount
 				, req_getList_Range__id : window.b2link_service_list_static.country.getList_Range__id
@@ -144,9 +144,11 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		_el_table_tbody.removeEventListener( "mousewheel", _evt_mWheel__el_table_tbody, false );
 	};
 
+	//--------------------------------------------------;
+
 	/**
 	 * @function
-	 * @param {MouseEvent} e event
+	 * @param {ResizeEvent} e event
 	 */
 	var _evt_mClick__el_div__btns_ = function( e )
 	{
@@ -154,7 +156,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		e.stopImmediatePropagation();
 		e.stopPropagation();
-
+		
 		_removeEvent_mClick__el_div__btns_();
 
 		try
@@ -168,8 +170,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		}
 
 		_addEvent_mClick__el_div__btns_();
-
-		//_el_table.tBodies[ 0 ].insertAdjacentElement( "afterbegin", _el_tmp_tr );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_div__btns_():void----------" );
 	};
@@ -204,7 +204,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 		if( t.scrollHeight == ( t.clientHeight + t.scrollTop ) )
 		{
-			console.log( "scroll is Bottom." );
+			//console.log( "scroll is Bottom." );
 
 			_bScrollBottomEnd = true;
 			_bScrollTopEnd = false;
@@ -262,7 +262,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			//_el_table_tbody.removeEventListener( "mousewheel", _evt_mWheel__el_table_tbody, false );
 			//_removeEvent_mWheel__el_table_tbody();
 
-			_el_table_tbody.scrollTop = _el_table_tbody.scrollTop / 2;
+			//_el_table_tbody.scrollTop = _el_table_tbody.scrollTop / 2;
 			_el_table.js.req_Data_Next();
 		}
 		else if( _bScrollTopEnd && ( 0 < e.wheelDelta ) )
@@ -272,7 +272,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			//_el_table_tbody.removeEventListener( "mousewheel", _evt_mWheel__el_table_tbody, false );
 			//_removeEvent_mWheel__el_table_tbody();
 
-			_el_table_tbody.scrollTop = _el_table_tbody.scrollHeight / 2;
+			//_el_table_tbody.scrollTop = _el_table_tbody.scrollHeight / 2;
 			_el_table.js.req_Data_Prev();
 		}
 
