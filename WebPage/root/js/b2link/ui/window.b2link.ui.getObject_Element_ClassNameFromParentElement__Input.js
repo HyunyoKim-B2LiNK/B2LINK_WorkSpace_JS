@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link/ui/window.b2link.ui.getArray_Element_ClassNameFromParentElement__Input.js";
+var fileNm = "js/b2link/ui/window.b2link.ui.getObject_Element_ClassNameFromParentElement__Input.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -8,9 +8,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {HTMLElement} t
  * @return {Object} [ {HTMLElement}, {HTMLElement}, .... ]
  */
-window.b2link.ui.getArray_Element_ClassNameFromParentElement__Input = function( t )
+window.b2link.ui.getObject_Element_ClassNameFromParentElement__Input = function( t )
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.getArray_Element_ClassNameFromParentElement__Input():{Object}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link.ui.getObject_Element_ClassNameFromParentElement__Input():{Object}----------" );
 
 	var r = {};
 	var a = t.children;
@@ -22,7 +22,7 @@ window.b2link.ui.getArray_Element_ClassNameFromParentElement__Input = function( 
 		if( "INPUT" == io.tagName ) r[ io.className ] = io;
 	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.getArray_Element_ClassNameFromParentElement__Input():{Object}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.getObject_Element_ClassNameFromParentElement__Input():{Object}----------" );
 
 	return r;
 };

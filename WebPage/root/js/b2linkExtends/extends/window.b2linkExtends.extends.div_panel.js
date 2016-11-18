@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2linkExtends/extends/window.b2linkExtends.extends.div_panel.js";
+var fileNm = "js/b2linkExtends/extends/window.b2linkExtends.extends.div_Panel.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -9,10 +9,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  */
 window.b2linkExtends.extends.div_Panel = function( t )
 {
-	//////////window.TtwLog.timeStamp( "---- [ S ] - window.b2linkExtends.extends.div_panel():void----------" );
+	//////////window.TtwLog.timeStamp( "---- [ S ] - window.b2linkExtends.extends.div_Panel():void----------" );
+
 	t.hide = window.b2linkExtends.element.hide;
 	t.show = window.b2linkExtends.element.show;
-	//////////window.TtwLog.timeStamp( "---- [ E ] - window.b2linkExtends.extends.div_panel():void----------" );
+
+	//////////window.TtwLog.timeStamp( "---- [ E ] - window.b2linkExtends.extends.div_Panel():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

@@ -244,7 +244,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_NextEnd():void----------" );
 
-		//¼öÁ¤ÇÏ±â - 20161115 - ¼Û¼±¿ì - ¸Ç ¾ÕÀÌ µÇ°Ô ¼öÁ¤ÇÏ±â;
+		//ìˆ˜ì •í•˜ê¸° - 20161115 - ì†¡ì„ ìš° - ë§¨ ì•ì´ ë˜ê²Œ ìˆ˜ì •í•˜ê¸°;
 		_calc_DataNext();
 		_calc_DataNext();
 
@@ -300,7 +300,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_PrevEnd():void----------" );
 
-		//¼öÁ¤ÇÏ±â - 20161115 - ¼Û¼±¿ì - End°¡ µÇ°Ô ¼öÁ¤ÇÏ±â;
+		//ìˆ˜ì •í•˜ê¸° - 20161115 - ì†¡ì„ ìš° - Endê°€ ë˜ê²Œ ìˆ˜ì •í•˜ê¸°;
 		_calc_DataPrev();
 		_calc_DataPrev();
 

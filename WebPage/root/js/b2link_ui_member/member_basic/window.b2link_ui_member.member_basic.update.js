@@ -8,7 +8,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {Object}  email_detail
  * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
-window.b2link_ui_member.member_basic.update = function( )
+window.b2link_ui_member.member_basic.update = function()
 {
 	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui_member.member_basic.update():{Array}----------" );
 

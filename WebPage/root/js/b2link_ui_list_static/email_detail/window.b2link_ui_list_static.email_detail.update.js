@@ -8,7 +8,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {Object}  email_detail
  * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
-window.b2link_ui_list_static.email_detail.update = function( )
+window.b2link_ui_list_static.email_detail.update = function()
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui_list_static.email_detail.update():{Array}----------" );
 
