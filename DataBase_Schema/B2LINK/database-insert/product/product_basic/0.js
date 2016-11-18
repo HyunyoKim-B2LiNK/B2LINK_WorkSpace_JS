@@ -30,7 +30,9 @@ var a = [
 		, "url" : "", "url_file_product" : "", "url_file_barcode": "", "url_file_msds" : "", "weight" : 0.0, "unit_weight" : "mg"
 	}
 ];
+
 //----------------------------------------------------------------------------------------------------;
+
 var db0 = db.getSiblingDB( "product" );
 	db0.product_basic.remove({});
 var io;
