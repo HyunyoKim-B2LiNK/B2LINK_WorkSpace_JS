@@ -1,9 +1,0 @@
-<div id="div__member_session-checkSession__Sign_In">
-
-<include-html>./ui_include/b2link_session/form__id_pw.html</include-html>
-
-	<br/>
-
-<include-html>./ui_include/b2link_session/div__btns_signin_cancel.html</include-html>
-
-</div>
