@@ -1,0 +1,6 @@
+/**
+ * id (_id) 로 브랜드의 이름을 가져 온다.
+ * @function
+ * @param {uint} id brand id
+ * @return {String}
+ */

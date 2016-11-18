@@ -27,7 +27,7 @@ function( d )
 
 		col.insert({
 			_id : NumberInt( len )
-			, _id$member_basic : NumberInt( r._id$member_basic )
+			, _id$member_public : NumberInt( r._id$member_public )
 			, _id$brand_basic : NumberInt( r._id$brand_basic )
 			, _i$product_category : NumberInt ( r._id$product_category )
 			, barcode : r.barcode

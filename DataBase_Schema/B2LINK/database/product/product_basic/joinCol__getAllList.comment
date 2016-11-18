@@ -1,0 +1,4 @@
+/**
+ * @function product_basic 상의 연관 collection 값을 의미있는 값으로 치환하여 전송 한다. (Join)
+ * @return {Array} [ {}, {}, ... ]
+ */

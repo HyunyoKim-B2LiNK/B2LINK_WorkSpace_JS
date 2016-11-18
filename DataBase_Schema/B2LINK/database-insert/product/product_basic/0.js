@@ -1,29 +1,31 @@
 var a = [
 	{
-		"_id$member_basic" : NumberInt( 0 )
+		"_id$member_public" : NumberInt( 0 )
 		, "_id$brand_basic" : NumberInt( 0 )
 		, "_id$product_category" : NumberInt( 0 )
 
 		, "barcode" : "12345678"
 		//, "barcode" : Number( 12345678 )
 		, "date_register" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
-		, "description" : "핸드크림", "msds" :  false
-		, "nm_kr" : "시어버터 핸드크림_로즈", "nm_cn" : "护手霜_玫瑰", "nm_us" : "SHEA BUTTER HANDCREAM_ROSE"
+		, "description" : "핸드크림", "description_cn" : "핸드크림", "description_kr" : "핸드크림", "description_us" : "핸드크림"
+		, "msds" :  false
+		, "nm" : "시어버터 핸드크림_로즈", "nm_kr" : "시어버터 핸드크림_로즈", "nm_cn" : "护手霜_玫瑰", "nm_us" : "SHEA BUTTER HANDCREAM_ROSE"
 
 		, "url" : "http://kr.loccitane.com/%EC%8B%9C%EC%96%B4-%EB%B2%84%ED%84%B0-%ED%95%B8%EB%93%9C-%ED%81%AC%EB%A6%BC,22,2,1133,198941.htm"
 		, "url_file_product" : "", "url_file_barcode": "", "url_file_msds" : "", "weight" : 0.0, "unit_weight" : "mg"
 	}
 	, {
-		"_id$member_basic" : NumberInt( 0 )
+		"_id$member_public" : NumberInt( 0 )
 		, "_id$brand_basic" : NumberInt( 0 )
 		, "_id$product_category" : NumberInt( 0 )
 
 		, "barcode" : "82345679"
 		//, "barcode" : Number( 82345679 )
 		, "date_register" : [ NumberInt( 2015 ), NumberInt( 7 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
-		, "description" : "매직타올", "msds" :  false
+		, "description" : "매직타올" , "description_cn" : "매직타올", "description_kr" : "매직타올" , "description_us" : "매직타올"
+		, "msds" :  false
 
-		, "nm_kr" : "new 페이셜 매직타올", "nm_cn" : "温和洁面巾", "nm_us" : "NEW FACIAL MAGIC TOWEL"
+		, "nm" : "new 페이셜 매직타올", "nm_kr" : "new 페이셜 매직타올", "nm_cn" : "温和洁面巾", "nm_us" : "NEW FACIAL MAGIC TOWEL"
 
 		, "url" : "", "url_file_product" : "", "url_file_barcode": "", "url_file_msds" : "", "weight" : 0.0, "unit_weight" : "mg"
 	}

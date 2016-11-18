@@ -12,7 +12,7 @@
 
 	, "th__date_register" : "등록일"
 
-	, "th___id$member_basic" : "등록자"
+	, "th___id$member_public" : "등록자"
 
 	, "th__description" : "상세 설명"
 

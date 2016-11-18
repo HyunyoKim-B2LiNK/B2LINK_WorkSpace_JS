@@ -16,8 +16,8 @@ global.b2link_validation.brand.brand_basic$addDoc = function( t, d )
 
 	try
 	{
-		//수정하기 - 20161111 - 박종하 - q.sid(session id) 기반으로 member_basic에서 _id 가져와서 반영하기;
-		t._id$member_basic = 0;
+		//수정하기 - 20161111 - 박종하 - q.sid(session id) 기반으로 member_public에서 _id 가져와서 반영하기;
+		t._id$member_public = 0;
 	}
 	catch( e )
 	{
@@ -26,7 +26,7 @@ global.b2link_validation.brand.brand_basic$addDoc = function( t, d )
 	}
 
 	t.date_register = global.b2link.date.getArrayDateFromNewDate();
-
+	
 	t.description = d.description ? d.description : "";
 
 	t.nm_cn = d.nm_cn ? d.nm_cn : "";

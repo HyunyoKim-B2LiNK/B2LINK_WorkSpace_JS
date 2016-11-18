@@ -85,32 +85,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//--------------------------------------------------;
 
-	/**
-	 * @function
-	 * @param {array} a
-	 */
-	/*/
-	var _create__dateString = function( o )
-	{
-		var io=0, ioLen=o.length;
-		for ( ; io<ioLen; ++io)
-		{
-			var _a = o[ io ].date_register;
-			var _t = "";
-			var i=0, iLen=_a.length-1;
-			for( ; i<iLen; ++i ) _t += _a[ i ] + "-";
-			_t += _a[ iLen ];
-			o[io].date_register = _t;
-		}
-	};
-	/*///수정 - 송선우 - 20161108
-	var _create__dateString = function( a )
-	{
-		var f = window.b2link.date.getDateStringFromArrayDate_Dash;
-		var i=0, iLen=a.length;
-		for( ; i<iLen; ++i ) a[ i ].date_register = f( a[ i ].date_register );
-	};
-	//*/
 
 	//--------------------------------------------------;
 
@@ -137,7 +111,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _req_Data = function()
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
-
+	
 		window.b2link_service_product.product_basic.getAllList( _res_Data );
 
 		window.RayLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
@@ -150,10 +124,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _res_Data = function( result )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
-
-		_create__dateString( result );
 		_setData__tbody( result );
-
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
 	};
 

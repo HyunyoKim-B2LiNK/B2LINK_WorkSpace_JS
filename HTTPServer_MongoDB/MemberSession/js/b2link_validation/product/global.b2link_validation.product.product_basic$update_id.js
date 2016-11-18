@@ -21,7 +21,7 @@ global.b2link_validation.product.product_basic$update_id = function( d )
 		global.RayLog.error( "Error : " + e );
 	}
 
-	if( d.mid ) d._id$member_basic = d.mid;
+	if( d.mid ) d._id$member_public = d.mid;
 
 	if( d.barcode ) d.barcode = d.barcode;
 	if( d.brand ) d._id$brand_basic = d.brand;

@@ -2,7 +2,7 @@ function( d )
 {
 	print( "-- [ S ] - brand_basic$validation__addDoc():{Object}----------" );
 
-	if( !d.hasOwnProperty( "_id$member_basic" ) )
+	if( !d.hasOwnProperty( "_id$member_public" ) )
 	{
 		print( "-- [ E ] - brand_basic$validation__addDoc():{Object}----------return 0;" );
 		return 0;
