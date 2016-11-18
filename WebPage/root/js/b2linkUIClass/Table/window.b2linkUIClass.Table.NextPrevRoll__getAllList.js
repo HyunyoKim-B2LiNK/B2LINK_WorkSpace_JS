@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./js/b2linkUIClass/Table/window.b2linkUIClass.Table.NextPrev__getAllList.js";
+var fileNm = "./js/b2linkUIClass/Table/window.b2linkUIClass.Table.NextPrevRoll__getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -8,7 +8,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @param {String} url
  * @param {HTMLElement} $el_table
  */
-window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
+window.b2linkUIClass.Table.NextPrevRoll__getAllList = function( url, $el_table )
 {
 	//window.b2link.ui_resource.apply_LocaleLabel( url, $el_table );
 	//window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_table );
@@ -44,7 +44,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	var _fn_req_getCount;
 	var _fn_req_getList_Range__id;
 
-	var _o_tbody_status = { idS : -1, idE : 10, limit : 10, maxCount : 0 };
+	var _o_tbody_status = { idS : -1, idE : 10, limit : 10, limitTerm : 2, maxCount : 0 };
 
 	/**
 	 * @Property {String} 0 or 1 - 0(Prev), 1(Next)
@@ -119,8 +119,8 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 			return 1;
 		}
 
-		o.idS += o.limit;
-		o.idE += o.limit;
+		o.idS += o.limit / o.limitTerm;
+		o.idE += o.limit / o.limitTerm;
 
 		console.log( "o.maxCount : " + o.maxCount );
 		console.log( "o.idS : " + o.idS );
@@ -151,8 +151,8 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 			return 1;
 		}
 
-		o.idS -= o.limit;
-		o.idE -= o.limit;
+		o.idS -= o.limit / o.limitTerm;
+		o.idE -= o.limit / o.limitTerm;
 
 		console.log( "o.maxCount : " + o.maxCount );
 		console.log( "o.idS : " + o.idS );
@@ -187,8 +187,6 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 		_fn_req_getList_Range__id = null;
 
 		_o_tbody_status = null;
-
-		_status_req = null;
 	};
 
 	//--------------------------------------------------;
@@ -201,6 +199,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data():void----------" );
 
 		var o = _o_tbody_status;
+
 		_fn_req_getList_Range__id( o.idS, o.idE, _res_Data );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _req_Data():void----------" );
@@ -220,13 +219,12 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 		}
 
 		var o = _o_tbody_status;
-		/*/
-		if( o.idE >= o.maxCount )
+		//if( o.idE >= o.maxCount )
+		if( o.idE >= o.maxCount && o.idS == o.maxCount )
 		{
 			window.TtwLog.timeStamp( "-- [ E ] - _req_Data_Next():void----------return;" );
 			return;
 		}
-		//*/
 
 		if( o.idS < o.maxCount )
 		{
@@ -244,12 +242,13 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_NextEnd():void----------" );
 
-		//¼öÁ¤ÇÏ±â - 20161115 - ¼Û¼±¿ì - ¸Ç ¾ÕÀÌ µÇ°Ô ¼öÁ¤ÇÏ±â;
+		//ìˆ˜ì •í•˜ê¸° - 20161115 - ì†¡ì„ ìš° - ë§¨ ë§ˆì§€ë§‰ìœ¼ë¡œ ê°€ê²Œ;
 		_calc_DataNext();
 		_calc_DataNext();
 
 		var o = _o_tbody_status;
-		if( o.idE >= o.maxCount )
+		//if( o.idE >= o.maxCount )
+		if( o.idE >= o.maxCount && o.idS == o.maxCount )
 		{
 			window.TtwLog.timeStamp( "-- [ E ] - _req_Data_NextEnd():void----------return;" );
 			return;
@@ -300,7 +299,7 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _req_Data_PrevEnd():void----------" );
 
-		//¼öÁ¤ÇÏ±â - 20161115 - ¼Û¼±¿ì - End°¡ µÇ°Ô ¼öÁ¤ÇÏ±â;
+		//ìˆ˜ì •í•˜ê¸° - 20161115 - ì†¡ì„ ìš° - ë§¨ ì²˜ìŒìœ¼ë¡œ ê°€ê²Œ;
 		_calc_DataPrev();
 		_calc_DataPrev();
 
@@ -387,7 +386,8 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 
 		//console.log( data );
 
-		window.b2link.html.apply_tbody_child( _el_tbody, data );
+		if( 1 == _el_tbody.children.length ) window.b2link.html.apply_tbody_child__RecycleTD( _el_tbody, data );
+		else window.b2link.el_tbody.change_tbody_child( _el_tbody, data );
 
 		window.TtwLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
 	};
@@ -435,15 +435,17 @@ window.b2linkUIClass.Table.NextPrev__getAllList = function( url, $el_table )
 	 * @param {uint} idStart
 	 * @param {uint} idEnd
 	 * @param {uint} limit
+	 * @param {uint} limitTerm
 	 * @param {uint} maxCount
 	 */
-	var _set__o_tbody_status = function( idStart, idEnd, limit, maxCount )
+	var _set__o_tbody_status = function( idStart, idEnd, limit, limitTerm, maxCount )
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _set__o_tbody_status():void----------" );
 
 		_o_tbody_status.idS = idStart ? idStart : -1;
 		_o_tbody_status.idE = idEnd ? idEnd : 20;
 		_o_tbody_status.limit = limit ? limit : 20;
+		_o_tbody_status.limitTerm = limitTerm ? limitTerm : 2;
 
 		if( maxCount ) _o_tbody_status.maxCount = maxCount;
 		else _set_Req__o_tbody_status_maxCount();
