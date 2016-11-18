@@ -64,9 +64,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
-
-		_el_div__btns_bottom.addEventListener( "click", _evt_mClick__el_div__btns_, false, 0, true );
-		_el_div__btns_top.addEventListener( "click", _evt_mClick__el_div__btns_, false, 0, true );
+		_addEvent_mClick__el_div__btns_();
 	};
 
 	/**
@@ -75,7 +73,24 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _removeEvent = function()
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
+		_removeEvent_mClick__el_div__btns_();
+	};
 
+	/**
+	 * @function
+	 */
+	var _addEvent_mClick__el_div__btns_ = function()
+	{
+		_removeEvent_mClick__el_div__btns_();
+		_el_div__btns_bottom.addEventListener( "click", _evt_mClick__el_div__btns_, false, 0, true );
+		_el_div__btns_top.addEventListener( "click", _evt_mClick__el_div__btns_, false, 0, true );
+	};
+
+	/**
+	 * @function
+	 */
+	var _removeEvent_mClick__el_div__btns_ = function()
+	{
 		_el_div__btns_bottom.removeEventListener( "click", _evt_mClick__el_div__btns_, false );
 		_el_div__btns_top.removeEventListener( "click", _evt_mClick__el_div__btns_, false );
 	};
@@ -88,7 +103,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		window.TtwLog.timeStamp( "-- [ S ] - _evt_mClick__el_div__btns_():void----------" );
 
-		_removeEvent();
+		e.stopImmediatePropagation();
+		e.stopPropagation();
+
+		_removeEvent_mClick__el_div__btns_();
 
 		try
 		{
@@ -100,7 +118,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 			console.error( "_evt_mClick__el_div__btns_ Error : " + er );
 		}
 
-		_addEvent();
+		_addEvent_mClick__el_div__btns_();
 
 		window.TtwLog.timeStamp( "-- [ E ] - _evt_mClick__el_div__btns_():void----------" );
 	};

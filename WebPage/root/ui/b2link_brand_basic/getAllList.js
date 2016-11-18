@@ -115,7 +115,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _res_Data = function( result )
 	{
 		window.RayLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
+
 		_setData__tbody( result );
+
 		window.RayLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
 	};
 
