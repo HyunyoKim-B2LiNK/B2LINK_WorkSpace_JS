@@ -1,0 +1,15 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	"cd_category" : "012345678901"
+ * 	, "description" : "화장품"
+ *  , "description_cn" : "화장품"
+ *  , "description_kr" : "화장품"
+ *  , "description_us" : "cosmetic"
+ *  , "nm" : "화장품", "nm_kr" : "화장품", "nm_cn" : "화장품", "nm_us" : "cosmetic"
+ * }
+ * </code>
+ * return {Object} 
+ */
