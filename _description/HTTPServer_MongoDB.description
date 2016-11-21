@@ -6,4 +6,21 @@
 
 - NodeJS Server들이 모여있는 곳
 
-- HTTP 통신만을 활용하고 MongoDB와 통신을 하여 Client에 정보를 주기위한 Application 폴더이다.
+- HTTP 통신만을 활용하고 MongoDB와 통신을 하여 Client에 정보를 주기위한 Applications 폴더이다.
+
+- HTTPS, 또는 TCP/IP가 필요할시엔 별도 상위폴더 생성을 권장함.
+ . 사용하게될 서버 Class(또는 Module 또는 node_modules)이 다름.
+
+- 현재는 ./HTTPServer_MongoDB/MemberSession/ 1개의 서버로 구동 중이다.
+ . 추후 Member 정보와 Session 관리를 위한 서버는 단독으로 운영될 예정
+ . MSA를 어느 수준까지 적용 시키느냐에 따라 Brand, Product등의 단독 서버가 분리되고 Session 서버를 통한 인증 후 송수신이 진행 될 수도 있음.
+
+- ./bin 폴더는 도움 또는 기능상 필요한 실행용 script들이 들어있다.
+ . 추후 release script도 들어갈 예정
+
+- ./js/b2link 폴더는 global.b2link.***.****.*** 등으로 사용하게 될 공통 모듈이다.
+
+- ./log 폴더는 log 파일이 생성될 공간이다.
+ . 20161108_0400과 같은 파일명으로 생성 할 예정
+
+- ./node_modules/exes/exes100.exe 파일이 node.exe 파일이다.

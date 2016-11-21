@@ -7,3 +7,14 @@
 - MongoDB를 위한 js, json, schema 등이 존재 하는 파일 폴더
 
 - Database 의 실제 WorkSpace
+
+- ./B2LINK/bin
+ . 도움 또는 기능상 필요한 실행용 script들이 들어있다.
+ . 현재 구동되고있는 MongoDB Instance에 procedure를 등록하는 기능
+ . 현재 구동되고있는 MongoDB Instance에 기초 데이터를 삽입하는 기능
+
+- ./B2LINK/database 
+
+- ./B2LINK/database-insert
+
+- ./B2LINK/node_modules
