@@ -1,0 +1,11 @@
+/**
+ * product_category Overlap check
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ 	"cd_category" : "112233445566"
+ * }
+ * </code>
+ * @return {int} 0 or 1
+ */

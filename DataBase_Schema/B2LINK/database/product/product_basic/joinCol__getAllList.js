@@ -6,7 +6,6 @@ function()
 
 	var db_brand = db.getSiblingDB( "brand" );
 	var db_member = db.getSiblingDB( "member" );
-
 	var nm_brand , nm_member;
 
 	product_basic$_findAll().forEach( function( doc ){
@@ -14,8 +13,11 @@ function()
 		//20161106 - 박종하 - 개발하기;
 		//printjson( doc );
 
+		doc.product_category = db.product_category.findOne( { _id : doc._id$product_category}).nm;
+		delete doc._id$product_category;
+
 		nm_brand = db_brand.brand_basic.findOne( { _id : doc._id$brand_basic});
-		doc.brand_name = nm_brand.nm_kr;
+		doc.brand_name = nm_brand.nm;
 		delete doc._id$brand_basic;
 
 		nm_member = db_member.member_public.findOne({ _id : doc._id$member_public });
