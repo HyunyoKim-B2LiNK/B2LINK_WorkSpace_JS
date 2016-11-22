@@ -4,5 +4,5 @@
  * @return {Document}
  *
  * @example
- * member_time$findOne__uid( "thdtjsdn@gmail.com" )' );
+ * member_date$findOne__uid( "thdtjsdn@gmail.com" )' );
  */

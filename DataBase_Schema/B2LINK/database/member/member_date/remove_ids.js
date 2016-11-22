@@ -1,6 +1,6 @@
 function( ids )
 {
-	print( "-- [ S ] - member_time$remove_ids():{uint}----------" );
+	print( "-- [ S ] - member_date$remove_ids():{uint}----------" );
 	print( "ids : " + ids );
 	var r = [];
 	var p = { _id : null };
@@ -8,10 +8,10 @@ function( ids )
 	for( ; i<iLen; ++i )
 	{
 		p._id = NumberInt( ids[ i ] );
-		r.push( member_time$_getCol().remove( p, 1 ) );
+		r.push( member_date$_getCol().remove( p, 1 ) );
 	}
 	print( "result : " );
 	printjson( r );
-	print( "-- [ E ] - member_time$remove_ids():{uint}----------" );
+	print( "-- [ E ] - member_date$remove_ids():{uint}----------" );
 	return 1;
 }

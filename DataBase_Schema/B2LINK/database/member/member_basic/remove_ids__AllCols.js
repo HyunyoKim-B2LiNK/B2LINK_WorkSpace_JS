@@ -11,8 +11,8 @@ function( ids )
 		print( "member_session result : " );
 		printjson( r );
 
-	var r = member_time$remove_ids( ids );
-		print( "member_time result : " );
+	var r = member_date$remove_ids( ids );
+		print( "member_date result : " );
 		printjson( r );
 
 	print( "-- [ E ] - member_basic$remove_ids__AllCols():{uint}----------" );
