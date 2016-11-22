@@ -1,6 +1,6 @@
 function( _id_gt, _id_lt )
 {
-	print( "-- [ S ] - partner_buyers$_findRange():{Array}----------" );
+	print( "-- [ S ] - partner_buyer$_findRange():{Array}----------" );
 
 	/*/
 	var r = [];
@@ -24,7 +24,7 @@ function( _id_gt, _id_lt )
 
 	print( "-- [ E ] - partner_buyer$_findRange():{Array}----------" );
 
-	return partner_buyers$_getCol()
+	return partner_buyer$_getCol()
 		.find({
 			_id : {
 				$gt : NumberInt( _id_gt )

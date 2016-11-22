@@ -4,6 +4,5 @@
  * @function
  * @param {uint} _id_gt start index
  * @param {uint} _id_lt end index
- * @param {uint} nLimit
- * @return {Array} [ { partner_buyers }, { partner_buyers }, ... ]
+ * @return {Array} [ { partner_buyer }, { partner_buyer }, ... ]
  */

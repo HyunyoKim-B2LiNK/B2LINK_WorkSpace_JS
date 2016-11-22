@@ -1,23 +1,23 @@
 function( d )
 {
-	print( "-- [ S ] - partner_buyers$addDoc():{uint}----------" );
+	print( "-- [ S ] - partner_buyer$addDoc():{uint}----------" );
 
-	var col = partner_buyers$_getCol();
-	var len = partner_buyers$_findAll().count();
-	var r = partner_buyers$validation__addDoc( d );
+	var col = partner_buyer$_getCol();
+	var len = partner_buyer$_findAll().count();
+	var r = partner_buyer$validation__addDoc( d );
 
 	print( "r : " + r );
 	printjson( r );
 
 	if( 0 == r )
 	{
-		print( "-- [ E ] - partner_buyers$addDoc():{uint}----------return 0;" );
+		print( "-- [ E ] - partner_buyer$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
 
-	if( partner_buyers$check__Overlap( r ) )
+	if( partner_buyer$check__Overlap( r ) )
 	{
-		print( "-- [ E ] - partner_buyers$addDoc():{uint}----------return 0;" );
+		print( "-- [ E ] - partner_buyer$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
 	else
@@ -25,14 +25,14 @@ function( d )
 		col.insert({
 			_id : NumberInt( len )
 			, _id$country : NumberInt(r._id$country)
-			, _id$member_public : NumberInt(r._id$member_public)
-			, _id$country : NumberInt(r._id$country)
+			, _id$member_public__register : NumberInt(r._id$member_public__register)
+			, _id$member_public__manager : NumberInt(r._id$member_public__manager)
 			, _id$partner_person : NumberInt(r._id$partner_person)
 			, address : r.address
 			, address_kr : r.address_kr
 			, address_cn : r.address_cn
 			, address_us : r.address_us
-			, code_registration : r.code_registration
+			, company_registration_number : r.company_registration_number
 			, date_regist : r.date_regist
 			, description : r.description
 			, description_kr : r.description_kr
@@ -47,12 +47,12 @@ function( d )
 			, nm_ceo_cn : r.nm_ceo_cn
 			, nm_ceo_kr : r.nm_ceo_kr
 			, nm_ceo_us : r.nm_ceo_us
-			, num_fax : r.num_fax
-			, num_telephone : r.num_telephone
+			, phone_fax : r.phone_fax
+			, phone_tel : r.phone_tel
 			, url : r.url
 		});
 
-		print( "-- [ E ] - partner_buyers$addDoc():{uint}----------return 1;" );
+		print( "-- [ E ] - partner_buyer$addDoc():{uint}----------return 1;" );
 		return 1;
 	}
 }

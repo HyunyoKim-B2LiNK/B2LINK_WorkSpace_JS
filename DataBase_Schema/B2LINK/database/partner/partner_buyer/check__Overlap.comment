@@ -1,10 +1,10 @@
 /**
- * partner_buyers Overlap check
+ * partner_buyer Overlap check
  * @function
  * @param {Object} d
  * <code>
  * {
- 	"code_registration" : d.code_registration
+ 	"company_registration_number" : d.company_registration_number
  * }
  * </code>
  * @return {int} 0 or 1

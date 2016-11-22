@@ -1,6 +1,6 @@
 function( _id_gt, _id_lt, nLimit )
 {
-	print( "-- [ S ] - partner_buyers$_findRange():{Array}----------" );
+	print( "-- [ S ] - partner_buyer$_findRange():{Array}----------" );
 
 	/*/
 	var r = [];
@@ -18,7 +18,7 @@ function( _id_gt, _id_lt, nLimit )
 	return r;
 	/*/
 
-	print( "-- [ E ] - partner_buyers$_findRange():{Array}----------" );
+	print( "-- [ E ] - partner_buyer$_findRange():{Array}----------" );
 
 	return partner_buyer$_getCol()
 		.find({ _id : { $gt : _id_gt, $lt : _id_lt } })
