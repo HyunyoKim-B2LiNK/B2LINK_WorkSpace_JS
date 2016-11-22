@@ -48,6 +48,7 @@ window.onload = function()
 	//--------------------------------------------------Create Console;
 
 	window.RayLog = SUtilCommon.create_Console( "박종하" );
+	window.Rh2Log = SUtilCommon.create_Console( "유선아" );
 	window.TtwLog = SUtilCommon.create_Console( "송선우" );
 
 	//--------------------------------------------------[ S ] - ;
