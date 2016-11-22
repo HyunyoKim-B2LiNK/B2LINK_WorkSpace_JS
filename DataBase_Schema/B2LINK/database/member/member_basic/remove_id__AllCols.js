@@ -12,8 +12,8 @@ function( _id )
 		print( "member_session$remove_id( _id );" );
 		print( r );
 
-	var r = member_time$remove_id( _id );
-		print( "member_time$remove_id( _id );" );
+	var r = member_date$remove_id( _id );
+		print( "member_date$remove_id( _id );" );
 		print( r );
 
 	print( "-- [ E ] - member_basic$remove_id__AllCols():{uint}----------return 1;" );
