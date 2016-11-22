@@ -51,7 +51,7 @@ window.b2link.scm.QueryBD = function( d )
 	 */
 	var _nmPackage = "window.b2link.scm.QueryBD";
 
-	window.console.timeStamp( "-------[ S ] - " + _nmPackage + "():" + _nmPackage );
+	window.console.timeStamp( "----[ S ] - " + _nmPackage + "():" + _nmPackage );
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -113,7 +113,7 @@ window.b2link.scm.QueryBD = function( d )
 
 	//--------------------------------------------------GETTER && SETTTER Method;
 
-	window.console.timeStamp( "-------[ E ] - " + _nmPackage + "():" + _nmPackage );
+	window.console.timeStamp( "----[ E ] - " + _nmPackage + "():" + _nmPackage );
 
 	return this;
 };
