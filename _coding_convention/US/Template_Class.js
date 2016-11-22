@@ -20,6 +20,8 @@ window.b2link.scm = window.b2link.scm || {};
 
 /**
  * @class QueryBD
+ * 설명 작성
+ *
  * @param {Object} d data
  * <code>
  * {
@@ -41,12 +43,14 @@ window.b2link.scm.QueryBD = function( d )
 {
 	/**
 	 * @private
+	 * 설명 작성
 	 * @Property {String}
 	 */
 	var _nmInstance = "";
 
 	/**
 	 * @private
+	 * 설명 작성
 	 * @Property {String}
 	 */
 	var _nmPackage = "window.b2link.scm.QueryBD";

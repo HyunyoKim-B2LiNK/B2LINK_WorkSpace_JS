@@ -6,6 +6,7 @@
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {Object} d data
  * <code>
@@ -27,6 +28,7 @@ var _asd = function( d ){ return d; };
 
 /**
  * @public
+ * 설명 작성
  * @function
  * @param {Object} d data
  * <code>
@@ -54,6 +56,7 @@ var asd = function( d ){ return d; };
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {Array} a//담겨있는 객체의 설명;
  * @param {Boolean} b
@@ -72,6 +75,7 @@ var _asd = function( a, b, f, n, o, s ){};
 
 /**
  * @public
+ * 설명 작성
  * @function
  * @param {Array} a//담겨있는 객체의 설명;
  * @param {Boolean} b

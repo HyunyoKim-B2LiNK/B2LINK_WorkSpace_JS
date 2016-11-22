@@ -12,6 +12,7 @@ EventListener가 public일 경우는 거의 존재 하지 않음.
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {Keyboard} e event
  */
@@ -19,6 +20,7 @@ var evt_kDown__ElementID( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {Keyboard} e event
  */
@@ -33,6 +35,7 @@ var evt_kDown__ElementReferenceName( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {Keyboard} e event
  */
@@ -46,6 +49,7 @@ var evt_kUp__ElementReferenceName( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {MouseEvent} e event
  */
@@ -53,6 +57,7 @@ var evt_mClick__ElementID( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {MouseEvent} e event
  */
@@ -60,6 +65,7 @@ var evt_mDown__ElementID( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {MouseEvent} e event
  */
@@ -67,6 +73,7 @@ var evt_mMove__ElementID( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {MouseEvent} e event
  */
@@ -74,6 +81,7 @@ var evt_mOver__ElementID( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {MouseEvent} e event
  */
@@ -81,6 +89,7 @@ var evt_mOut__ElementID( e ){};
 
 /**
  * @private
+ * 설명 작성
  * @function
  * @param {MouseEvent} e event
  */
