@@ -15,7 +15,8 @@
  . 추후 Member 정보와 Session 관리를 위한 서버는 단독으로 운영될 예정
  . MSA를 어느 수준까지 적용 시키느냐에 따라 Brand, Product등의 단독 서버가 분리되고 Session 서버를 통한 인증 후 송수신이 진행 될 수도 있음.
 
-- ./bin 폴더는 도움 또는 기능상 필요한 실행용 script들이 들어있다.
+- ./bin
+ . 도움 또는 기능상 필요한 실행용 script들이 들어있다.
  . 추후 release script도 들어갈 예정
 
 - ./js/b2link 폴더는 global.b2link.***.****.*** 등으로 사용하게 될 공통 모듈이다.
