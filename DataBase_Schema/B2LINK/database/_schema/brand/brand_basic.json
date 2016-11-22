@@ -51,22 +51,22 @@
 			, "type" : "array", "length" : 0
 		}
 
-		//Brand Descroption
+		//Brand Description
 		, "description" : { "description" : "Brand Description", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
 			, "type" : "string", "length" : 0
 		}
 
-		//Brand Descroption(CN)
+		//Brand Description(CN)
 		, "description_cn" : { "description" : "Brand Description(CN)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
 			, "type" : "string", "length" : 0
 		}
 
-		//Brand Descroption(KR)
+		//Brand Description(KR)
 		, "description_kr" : { "description" : "Brand Description(KR)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
 			, "type" : "string", "length" : 0
 		}
 
-		//Brand Descroption(US)
+		//Brand Description(US)
 		, "description_us" : { "description" : "Brand Description(US)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
 			, "type" : "string", "length" : 0
 		}

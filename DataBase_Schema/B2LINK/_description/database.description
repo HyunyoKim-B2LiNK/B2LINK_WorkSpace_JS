@@ -1,0 +1,31 @@
+//----------------------------------------------------------------------------------------------------;
+
+//	Database별로 Procedure들이 정의 되어있다.;
+
+//----------------------------------------------------------------------------------------------------;
+
+@ Database List
+
+- _schema
+ . Collections 별 Schema JSON이 들어있다.
+
+- brand
+ . brand_basic
+ . brand_category
+
+- list_static
+ . country
+ . email_detail
+
+- member
+ . member_basic
+ . member_session
+ . member_session_log
+ . member_public
+
+- partner
+
+- product
+ . product_basic
+
+- stock

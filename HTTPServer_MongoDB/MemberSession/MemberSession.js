@@ -26,13 +26,9 @@ global._$TATIC_CONST_DEBUG = false;
 
 //----------------------------------------------------------------------------------------------------;
 
-//*/
 global.RayLog = SUtilCommon.create_Console( "박종하" );
-global.TtwLog = SUtilCommon.create_Console( "송선우" );
 global.Rh2Log = SUtilCommon.create_Console( "유선아" );
-/*/
-global.RayLog = console;
-//*/
+global.TtwLog = SUtilCommon.create_Console( "송선우" );
 
 //----------------------------------------------------------------------------------------------------;
 
@@ -74,10 +70,6 @@ global.RayLog = console;
 	});
 
 	//--------------------------------------------------;
-
-	//var mongodb = require( "mongodb" );
-	//console.logObjectInformation( mongodb, "mongodb" );
-	//console.log( global.process.cwd() );
 })();
 
 //----------------------------------------------------------------------------------------------------;
