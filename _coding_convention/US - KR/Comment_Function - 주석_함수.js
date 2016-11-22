@@ -5,6 +5,28 @@
 //----------------------------------------------------------------------------------------------------;
 
 /**
+ * @private
+ * @function
+ * @param {Object} d data
+ * <code>
+ * {
+ *	"a" : 1//숫자 1이다;
+ *	, "b" : 2//숫자 2이다;
+ * }
+ * </code>
+ *
+ * @return
+ * <code>
+ * {
+ *	"a" : 1//숫자 1이다;
+ *	, "b" : 2//숫자 2이다;
+ * }
+ * </code>
+ */
+var _asd = function( d ){ return d; };
+
+/**
+ * @public
  * @function
  * @param {Object} d data
  * <code>
@@ -31,6 +53,25 @@ var asd = function( d ){ return d; };
 //----------------------------------------------------------------------------------------------------;
 
 /**
+ * @private
+ * @function
+ * @param {Array} a//담겨있는 객체의 설명;
+ * @param {Boolean} b
+ * @param {Function} f
+ * @param {Number} n
+ * @param {Object} o
+ * <code>
+ * {
+ *	"a" : 1//숫자 1이다;
+ *	, "b" : 2//숫자 2이다;
+ * }
+ * </code>
+ * @param {String} s
+ */
+var _asd = function( a, b, f, n, o, s ){};
+
+/**
+ * @public
  * @function
  * @param {Array} a//담겨있는 객체의 설명;
  * @param {Boolean} b
