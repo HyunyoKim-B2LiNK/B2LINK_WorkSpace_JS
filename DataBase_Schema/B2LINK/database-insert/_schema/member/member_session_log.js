@@ -15,14 +15,14 @@ var d = {
 	, "dereference" : [
 		"member.member_basic"
 		, "member.member_session"
-		, "member.member_time"
+		, "member.member_date"
 	]
 
 	//이 Collection을 참조하는 Collections - Collection Name;
 	, "dereference_collection" : [
 		"member_basic"
 		, "member_session"
-		, "member_time"
+		, "member_date"
 	]
 
 	//이 Collection을 참조하는 Database;

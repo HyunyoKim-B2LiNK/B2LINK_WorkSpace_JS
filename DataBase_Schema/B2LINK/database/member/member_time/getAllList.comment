@@ -1,4 +1,0 @@
-/**
- * @function
- * @return {Array} [ { member_time }, { member_time }, ... ]
- */

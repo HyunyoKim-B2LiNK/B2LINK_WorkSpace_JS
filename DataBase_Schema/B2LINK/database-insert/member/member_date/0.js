@@ -20,5 +20,5 @@ for( ; i<iLen; ++i )
 {
 	var io = a[ i ];
 		io._id = NumberInt( i );
-	db0.exec( "member_time$sign_up( " + JSON.stringify( io ) + " );" );
+	db0.exec( "member_date$sign_up( " + JSON.stringify( io ) + " );" );
 };
