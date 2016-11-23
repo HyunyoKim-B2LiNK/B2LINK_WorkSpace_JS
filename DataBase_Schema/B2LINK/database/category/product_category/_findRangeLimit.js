@@ -1,10 +1,10 @@
 function( _id_gt, _id_lt, nLimit )
 {
-	print( "-- [ S ] - partner_buyer$_findRange():{Array}----------" );
+	print( "-- [ S ] - product_category$_findRange():{Array}----------" );
 
 	/*/
 	var r = [];
-	partner_buyer$_findRange()
+	product_category$_getCol()
 		.find({ _id : { $gt : _id_gt, $lt : _id_lt } })
 		.limit( nLimit )
 		.forEach( function( doc ){
@@ -13,14 +13,14 @@ function( _id_gt, _id_lt, nLimit )
 		}
 	);
 
-	print( "-- [ E ] -partner_buyer$_findRangeproduct_category$_findRange():{Array}----------" );
+	print( "-- [ E ] - product_category$_findRange():{Array}----------" );
 
 	return r;
 	/*/
 
-	print( "-- [ E ] - partner_buyer$_findRange():{Array}----------" );
+	print( "-- [ E ] - product_category$_findRange():{Array}----------" );
 
-	return partner_buyer$_getCol()
+	return product_category$_getCol()
 		.find({ _id : { $gt : _id_gt, $lt : _id_lt } })
 		.limit( nLimit );
 	//*/

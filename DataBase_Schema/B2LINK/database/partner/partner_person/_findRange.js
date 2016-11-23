@@ -1,10 +1,10 @@
 function( _id_gt, _id_lt )
 {
-	print( "-- [ S ] - partner_buyer$_findRange():{Array}----------" );
+	print( "-- [ S ] - partner_person$_findRange():{Array}----------" );
 
 	/*/
 	var r = [];
-	partner_buyer$_findRange()
+	partner_person$_getCol()
 		.find({
 			_id : {
 				$gt : NumberInt( _id_gt )
@@ -12,19 +12,19 @@ function( _id_gt, _id_lt )
 			}
 		})
 		.forEach( function( doc ){
-			partner_buyer$_findRange( doc );
+			partner_person$_delete__getAllList( doc );
 			r.push( doc );
 		}
 	);
 
-	print( "-- [ E ] - partner_buyer$_findRange():{Array}----------" );
+	print( "-- [ E ] - partner_person$_findRange():{Array}----------" );
 
 	return r;
 	/*/
 
-	print( "-- [ E ] - partner_buyer$_findRange():{Array}----------" );
+	print( "-- [ E ] - partner_person$_findRange():{Array}----------" );
 
-	return partner_buyer$_getCol()
+	return partner_person$_getCol()
 		.find({
 			_id : {
 				$gt : NumberInt( _id_gt )

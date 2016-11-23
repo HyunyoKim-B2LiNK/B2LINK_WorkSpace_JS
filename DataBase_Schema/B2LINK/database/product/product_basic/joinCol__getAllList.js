@@ -6,6 +6,7 @@ function()
 
 	var db_brand = db.getSiblingDB( "brand" );
 	var db_member = db.getSiblingDB( "member" );
+	var db_category = db.getSiblingDB( "category" );
 
 	var nm_brand , nm_member;
 
@@ -14,7 +15,7 @@ function()
 		//20161106 - 박종하 - 개발하기;
 		//printjson( doc );
 
-		doc.product_category = db.product_category.findOne( { _id : doc._id$product_category}).nm;
+		doc.product_category = db_category.product_category.findOne( { _id : doc._id$product_category}).nm;
 		delete doc._id$product_category;
 
 		nm_brand = db_brand.brand_basic.findOne( { _id : doc._id$brand_basic});
