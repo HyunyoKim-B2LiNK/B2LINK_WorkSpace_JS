@@ -27,7 +27,7 @@
  *	, nm_ceo_us : { "a" : "leesohyung", "f" : "sohyung", "l" : "lee" , "m" : ""}
  *	, num_fax : { "a" : "820215883366", "area_code", "c" : "82" : "02", "f" : "1588", "l" : "3366"}
  *	, num_telephone : { "a" : "820215883366", "area_code", "c" : "82" : "02", "f" : "1588", "l" : "3366"}
- *	, url : "http://www.b2link.co.kr"
+ *	, url : "www.b2link.co.kr"
  * }
  * </code>
  * return {Object}
