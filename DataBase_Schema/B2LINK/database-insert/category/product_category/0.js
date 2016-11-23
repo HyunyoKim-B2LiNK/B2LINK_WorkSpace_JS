@@ -11,7 +11,7 @@ var a = [
 		, "nm_us" : "household items"//{String} - name_us;	카테고리명 영문
 	}
 	, {
-		 "cd_cateogry" : "223456789012"//{uint} - 제품 상위 카테고리	제품 카테고리 _ id
+		 "cd_category" : "223456789012"//{uint} - 제품 상위 카테고리	제품 카테고리 _ id
 		, "description" : "화장품"//{String} - description;	 카테고리 명세
 		, "description_kr" : "화장품"//{String} - description;	 카테고리 명세
 		, "description_cn" : "화장품"//{String} - description;	 카테고리 명세
@@ -25,7 +25,7 @@ var a = [
 
 //----------------------------------------------------------------------------------------------------;
 
-var db0 = db.getSiblingDB( "product" );
+var db0 = db.getSiblingDB( "category" );
 	db0.product_category.remove({});
 var io;
 var i=0, iLen=a.length;
@@ -33,6 +33,6 @@ for( ; i<iLen; ++i )
 {
 	var io = a[ i ];
 		io._id = NumberInt( i );
-	db0.product_category.insert( io );
-	//db0.exec( "product_basic$addDoc( " + JSON.stringify( io ) + " );" );
+	//db0.product_category.insert( io );
+	db0.exec( "product_category$addDoc( " + JSON.stringify( io ) + " );" );
 };

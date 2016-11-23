@@ -4,7 +4,7 @@ function( _id_gt, _id_lt, nLimit )
 
 	/*/
 	var r = [];
-	product_cateogry$_getCol()
+	partner_buyer$_findRange()
 		.find({ _id : { $gt : _id_gt, $lt : _id_lt } })
 		.limit( nLimit )
 		.forEach( function( doc ){
@@ -13,7 +13,7 @@ function( _id_gt, _id_lt, nLimit )
 		}
 	);
 
-	print( "-- [ E ] - product_cateogry$_findRange():{Array}----------" );
+	print( "-- [ E ] -partner_buyer$_findRangeproduct_category$_findRange():{Array}----------" );
 
 	return r;
 	/*/

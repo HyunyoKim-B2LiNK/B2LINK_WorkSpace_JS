@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ {product_category}, {product_category}, ... ]
+ */

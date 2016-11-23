@@ -4,5 +4,5 @@
  * @function
  * @param {uint} _id_gt start index
  * @param {uint} _id_lt end index
- * @return {Array} [ { product_cateogry }, { product_cateogry }, ... ]
+ * @return {Array} [ { product_category }, { product_category }, ... ]
  */

@@ -4,7 +4,7 @@ function( _id_gt, _id_lt )
 
 	/*/
 	var r = [];
-	product_cateogry$_getCol()
+	partner_buyer$_findRange()
 		.find({
 			_id : {
 				$gt : NumberInt( _id_gt )
@@ -12,12 +12,12 @@ function( _id_gt, _id_lt )
 			}
 		})
 		.forEach( function( doc ){
-			product_cateogry$_delete__getAllList( doc );
+			partner_buyer$_findRange( doc );
 			r.push( doc );
 		}
 	);
 
-	print( "-- [ E ] - product_cateogry$_findRange():{Array}----------" );
+	print( "-- [ E ] - partner_buyer$_findRange():{Array}----------" );
 
 	return r;
 	/*/

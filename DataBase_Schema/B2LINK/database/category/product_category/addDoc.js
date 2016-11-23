@@ -4,7 +4,7 @@ function( d )
 
 	var col = product_category$_getCol();
 	var len = product_category$_findAll().count();
-	var r = product_category$validation__addDoc( d ) )
+	var r = product_category$validation__addDoc( d );
 
 	print( "r : " + r );
 	printjson( r );

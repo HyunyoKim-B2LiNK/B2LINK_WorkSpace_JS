@@ -1,10 +1,10 @@
 function( d )
 {
-	print( "-- [ S ] - product_cateogry$check__Overlap():{uint}----------" );
+	print( "-- [ S ] - product_category$check__Overlap():{uint}----------" );
 
 	//printjson( d );
 
-	var r = product_cateogry$findOne({
+	var r = product_category$findOne({
 		cd_category : d.cd_category
 	});
 	//printjson( r );

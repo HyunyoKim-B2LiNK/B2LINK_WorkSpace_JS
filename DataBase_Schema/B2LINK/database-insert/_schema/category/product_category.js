@@ -88,4 +88,4 @@ var d = {
 
 //----------------------------------------------------------------------------------------------------;
 
-db.getSiblingDB( "_schema" ).product.insert( d );
+db.getSiblingDB( "_schema" ).category.insert( d );

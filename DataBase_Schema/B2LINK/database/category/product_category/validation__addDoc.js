@@ -7,7 +7,6 @@ function( d )
 		{
 			return d;
 		}
-
 	}
 
 	print( "-- [ E ] - product_category$validation__addDoc():{Object}----------" );
