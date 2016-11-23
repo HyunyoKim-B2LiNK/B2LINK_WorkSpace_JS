@@ -24,10 +24,9 @@ function( d )
 	{
 		col.insert({
 			_id : NumberInt( len )
-			, _id$country : NumberInt(r._id$country)
-			, _id$member_public__register : NumberInt(r._id$member_public__register)
-			, _id$member_public__manager : NumberInt(r._id$member_public__manager)
-			, _id$partner_person : NumberInt(r._id$partner_person)
+			, _id$country : NumberInt( r._id$country )
+			, _id$member : { manager : NumberInt( r._ids$member.manager ), register : NumberInt( r._ids$member.register ) }
+			, _id$partner_person : NumberInt( r._id$partner_person )
 			, address : r.address
 			, address_kr : r.address_kr
 			, address_cn : r.address_cn

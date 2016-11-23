@@ -4,8 +4,7 @@
  * <code>
  * {
  * 	_id$country : 0
- * 	, _id$member_public__register : NumberInt( 0 )
- *	, _id$member_public__manager : NumberInt( 0 )
+ *	, _ids$member : { manager : 0 , register : 0 }
  *	, _id$partner_person : 0
  *	, address : "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
  *	, address_kr : "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"

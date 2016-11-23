@@ -1,6 +1,7 @@
 var a = [
 	{
 		"_id$country" : NumberInt( 0 )
+		, "_ids$member" : { "manager" : NumberInt( 0 ) , "register" : NumberInt( 0 )}
 	    , "_id$member_public__register" : NumberInt( 0 )
 		, "_id$member_public__manager" : NumberInt( 0 )
 
@@ -35,8 +36,7 @@ var a = [
 	}
 	, {
 		"_id$country" : NumberInt( 0 )
-	    , "_id$member_public__register" : NumberInt( 0 )
-		, "_id$member_public__manager" : NumberInt( 0 )
+	    , "_ids$member" : { "manager" : NumberInt( 0 ) , "register" : NumberInt( 0 )}
 	    , "_id$partner_person": NumberInt( 0 )
 
 	    , "address" : "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
