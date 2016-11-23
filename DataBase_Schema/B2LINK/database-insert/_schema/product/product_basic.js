@@ -145,7 +145,7 @@ var d = {
   		}
 
   		//Product Weight
-  		, "url_file_product" : { "description" : "Product Weight", "exampleValue" : "0.5"
+  		, "weight" : { "description" : "Product Weight", "exampleValue" : "0.5"
   			, "type" : "number", "length" : NumberInt(0)
   		}
   	}
