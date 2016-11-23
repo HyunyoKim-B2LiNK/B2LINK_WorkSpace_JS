@@ -1,0 +1,8 @@
+{
+	"description": "Gender"
+	, "exampleValue": 0
+	, "type": "uint"
+	, "length": 1
+	, "values" : [ 0, 1 ]
+	, "valuesMap" : { "0" : 1, "1" : 1 }
+}

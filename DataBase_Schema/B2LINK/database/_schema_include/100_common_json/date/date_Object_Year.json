@@ -1,6 +1,8 @@
 {
-	"description" : "Date - Year", "exampleValue" : "2016"
-	, "type" : "string", "length" : 4
-	, "minValue" : 1900
-	, "maxValue" : 3000
+	"description": "Date - Year",
+	"exampleValue": "2016",
+	"type": "string",
+	"length": 4,
+	"minValue": 1900,
+	"maxValue": 3000
 }

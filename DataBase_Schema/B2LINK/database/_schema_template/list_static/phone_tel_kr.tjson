@@ -33,15 +33,15 @@
 		//Area Name;
 		, "nm" : { "description" : "Area Name", "exampleValue" : "서울특별시"
 			<include>000_common_txt/string_default.txt</include>
-			, "values" : <include>100_common_json/Array__KR_Area_Name_SiDo.json</include>
-			, "valuesMap" : <include>100_common_json/Array__KR_Area_Name_SiDo__valuesMap.json</include>
+			, "values" : <include>100_common_json/array/array__KR_Area_Name_SiDo.json</include>
+			, "valuesMap" : <include>100_common_json/array/array__KR_Area_Name_SiDo__valuesMap.json</include>
 		}
 
 		//Area Name(KR);
 		, "nm_kr" : { "description" : "Area Name(KR)", "exampleValue" : "서울특별시"
 			<include>000_common_txt/string_default.txt</include>
-			, "values" : <include>100_common_json/Array__KR_Area_Name_SiDo.json</include>
-			, "valuesMap" : <include>100_common_json/Array__KR_Area_Name_SiDo__valuesMap.json</include>
+			, "values" : <include>100_common_json/array/array__KR_Area_Name_SiDo.json</include>
+			, "valuesMap" : <include>100_common_json/array/array__KR_Area_Name_SiDo__valuesMap.json</include>
 		}
 
 		//Area Name(US);
@@ -56,8 +56,8 @@
 			<include>000_common_txt/string_default.txt</include>
 			, "minLength" : 2
 			, "maxLength" : 3
-			, "values" : <include>100_common_json/Array__KR_Area_PhoneNumber_SiDo.json</include>
-			, "valuesMap" : <include>100_common_json/Array__KR_Area_PhoneNumber_SiDo__valuesMap.json</include>
+			, "values" : <include>100_common_json/array/array__KR_Area_PhoneNumber_SiDo.json</include>
+			, "valuesMap" : <include>100_common_json/array/array__KR_Area_PhoneNumber_SiDo__valuesMap.json</include>
 		}
 	}
 }

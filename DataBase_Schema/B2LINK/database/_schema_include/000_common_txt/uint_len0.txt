@@ -1,1 +1,1 @@
-, "type" : "uint", "length" : 2
+, "type" : "uint", "length" : 0
