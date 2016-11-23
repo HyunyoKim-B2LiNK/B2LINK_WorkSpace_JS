@@ -1,5 +1,5 @@
 {
 	"description" : "Member Password"
 	, "exampleValue" : "123qweasd"
-	<include>_common_txt/string_default.txt</include>
+	<include>000_common_txt/string_default.txt</include>
 }

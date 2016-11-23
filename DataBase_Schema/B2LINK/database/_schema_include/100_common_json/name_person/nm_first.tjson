@@ -1,0 +1,5 @@
+{
+	"description" : "First Name"
+	, "exampleValue" : "SunWoo"
+	<include>000_common_txt/string_default.txt</include>
+}

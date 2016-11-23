@@ -1,6 +1,0 @@
-{
-	"description" : "member_public ID(FK)"
-	, "exampleValue" : 0
-	, "type" : "uint"
-	, "length" : 0
-}

@@ -1,20 +1,5 @@
 {
 	"description" : "Name(KR)"
 	, "type" : "object"
-	, "properties" : {
-		//All Name(KR);
-		"a" : { "description" : "All Name(KR)", "exampleValue" : "송선우"
-			<include>_common_txt/string_default.txt</include>
-		}
-
-		//First Name(KR);
-		, "f" : { "description" : "First Name(KR)", "exampleValue" : "선우"
-			<include>_common_txt/string_default.txt</include>
-		}
-
-		//Last Name(KR);
-		, "l" : { "description" : "Last Name(KR)", "exampleValue" : "송"
-			<include>_common_txt/string_default.txt</include>
-		}
-	}
+	, "properties" : <include>100_common_json/name_person/nm__kr.json</include>
 }

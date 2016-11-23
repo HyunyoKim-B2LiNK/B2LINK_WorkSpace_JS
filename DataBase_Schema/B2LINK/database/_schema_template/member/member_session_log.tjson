@@ -35,7 +35,7 @@
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : <include>_common_json/_id.json</include>
+		"_id" : <include>100_common_json/_id.json</include>
 
 		//Member ID;
 		, "mid" : <include>member/mid.json</include>
@@ -44,9 +44,7 @@
 		, "sid" : <include>member/sid.json</include>
 
 		//Create Date;
-		, "date" : { "description" : "Create Date", "exampleValue" : ""//'ISODate("2016-10-31T10:20:55.669Z")';
-			, "type" : "date", "length" : 0
-		}
+		, "date" : <include>100_common_json/date/date_String_ISODate.json</include>
 
 		//Date - Session Expired;
 		, "d_ex" : { "description" : "Date - Session Expired"

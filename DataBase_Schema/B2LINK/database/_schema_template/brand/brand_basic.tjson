@@ -34,34 +34,34 @@
 
 	//이 Collection의 Properties;
 	, "properties" : {
-		"_id" : <include>_common_json/_id.json</include>
+		"_id" : <include>100_common_json/_id.json</include>
 
 		//Register Member ID
-		, "_id$member" : <include>_common_json/_id$member.json</include>
+		, "_id$member" : <include>100_common_json/_id$member.json</include>
 
 		//Register Date
 		, "date_regist" : { "description" : "Register Date"
-			<include>_common_txt/dateType_Array.txt</include>
+			<include>000_common_txt/date/date__Array__YMD_HoMiSe.txt</include>
 		}
 
 		//Brand Description
 		, "description" : { "description" : "Brand Description", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//Brand Description(CN)
 		, "description_cn" : { "description" : "Brand Description(CN)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//Brand Description(KR)
 		, "description_kr" : { "description" : "Brand Description(KR)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//Brand Description(US)
 		, "description_us" : { "description" : "Brand Description(US)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//Brand Name(Default)
@@ -78,17 +78,17 @@
 
 		//BRAND Homepage URL
 		, "url" : { "description" : "Brand Hompage URL", "exampleValue" : "www.b2link.co.kr"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//BRAND Logo Image URL
 		, "url_logo" : { "description" : "Brand Logo Image URL", "exampleValue" : "www.b2link.co.kr/logo.png"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//BRAND TradeMark Image URL
 		, "url_trademark" : { "description" : "Brand TradeMark Image URL", "exampleValue" : "www.b2link.co.kr/img0.png"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 	}
 }

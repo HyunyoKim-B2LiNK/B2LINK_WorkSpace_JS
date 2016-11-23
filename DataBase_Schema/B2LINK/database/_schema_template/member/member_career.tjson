@@ -36,13 +36,13 @@
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : <include>_common_json/_id.json</include>
+		"_id" : <include>100_common_json/_id.json</include>
 
 		//--------------------------------------------------;
 
 		//Member Career count;
 		, "count" : { "description" : "Member Career count", "exampleValue" : "1"
-			, "type" : "uint", "length" : 0
+			<include>000_common_txt/uint_len0.txt</include>
 		}
 
 		//Member Career count;
@@ -52,7 +52,7 @@
 
 				//Company Name;
 				"nm_company" : { "description" : "Company Name", "exampleValue" : "B2LINK"
-					, "type" : "string", "length" : 0
+					<include>000_common_txt/string_default.txt</include>
 				}
 
 				//Date - Entering;

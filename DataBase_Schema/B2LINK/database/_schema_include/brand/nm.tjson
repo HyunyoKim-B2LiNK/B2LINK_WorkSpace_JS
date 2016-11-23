@@ -1,5 +1,5 @@
 {
 	"description" : "Brand Name(Default)"
 	, "exampleValue" : "비투링크"
-	<include>_common_txt/string_default.txt</include>
+	<include>000_common_txt/string_default.txt</include>
 }
