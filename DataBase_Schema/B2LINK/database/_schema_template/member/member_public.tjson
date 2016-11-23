@@ -1,0 +1,67 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"brand.brand_basic"
+		, "product.public_basic"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"brand_basic"
+		, "public_basic"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"brand"
+		, "public"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"member.member_session"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"member_session"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"member"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>_common_json/_id.json</include>
+
+		//Email;
+		, "email" : <include>_common_json/email.json</include>
+
+		//Email's ID;
+		//, "email_id" : { "description" : "Email's ID", "exampleValue" : "thdtjsdn"
+		//	, "type" : "string", "length" : 0
+		//}
+
+		//Email's Domain;
+		//, "email_domain" : { "description" : "Email's Domain", "exampleValue" : "gmail.com"
+		//	, "type" : "string", "length" : 0
+		//}
+
+		//Name(Default);
+		, "nm" : <include>member/nm.json</include>
+
+		//Name(CN);
+		, "nm_cn" : <include>member/nm_cn.json</include>
+
+		//Name(KR);
+		, "nm_kr" : <include>member/nm_kr.json</include>
+
+		//Name(US);
+		, "nm_us" : <include>member/nm_us.json</include>
+	}
+}

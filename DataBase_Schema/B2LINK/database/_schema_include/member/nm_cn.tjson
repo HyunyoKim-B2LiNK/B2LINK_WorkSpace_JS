@@ -1,0 +1,20 @@
+{
+	"description" : "Name(CN)"
+	, "type" : "object"
+	, "properties" : {
+		//All Name(CN);
+		"a" : { "description" : "All Name(CN)", "exampleValue" : "宋善雨"
+			<include>_common_txt/string_default.txt</include>
+		}
+
+		//First Name(CN);
+		, "f" : { "description" : "First Name(CN)", "exampleValue" : "善雨"
+			<include>_common_txt/string_default.txt</include>
+		}
+
+		//Last Name(CN);
+		, "l" : { "description" : "Last Name(CN)", "exampleValue" : "宋"
+			<include>_common_txt/string_default.txt</include>
+		}
+	}
+}
