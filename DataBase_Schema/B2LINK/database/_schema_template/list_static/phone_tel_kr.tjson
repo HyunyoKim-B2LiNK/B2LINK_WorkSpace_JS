@@ -1,0 +1,63 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Area Name;
+		, "nm" : { "description" : "Area Name", "exampleValue" : "서울특별시"
+			<include>000_common_txt/string_default.txt</include>
+			, "values" : <include>100_common_json/array/array__KR_Area_Name_SiDo.json</include>
+			, "valuesMap" : <include>100_common_json/array/array__KR_Area_Name_SiDo__valuesMap.json</include>
+		}
+
+		//Area Name(KR);
+		, "nm_kr" : { "description" : "Area Name(KR)", "exampleValue" : "서울특별시"
+			<include>000_common_txt/string_default.txt</include>
+			, "values" : <include>100_common_json/array/array__KR_Area_Name_SiDo.json</include>
+			, "valuesMap" : <include>100_common_json/array/array__KR_Area_Name_SiDo__valuesMap.json</include>
+		}
+
+		//Area Name(US);
+		, "nm_us" : { "description" : "Area Name(US)", "exampleValue" : "Seoul"
+			<include>000_common_txt/string_default.txt</include>
+			, "values" : [ "Seoul", "경기도", "Incheon", "강원도", "충청남도", "Daejeon", "충청북도", "Sejong", "개성공업지구", "Busan", "Ulsan", "Daegu", "경상북도", "경상남도", "Jeollanam-do", "Gwangju", "전라북도", "Jeju-do" ]
+			, "valuesMap" : { "Seoul" : 1, "경기도" : 1, "Incheon" : 1, "강원도" : 1, "충청남도" : 1, "Daejeon" : 1, "충청북도" : 1, "Sejong" : 1, "개성공업지구" : 1, "Busan" : 1, "Ulsan" : 1, "Daegu" : 1, "경상북도" : 1, "경상남도" : 1, "Jeollanam-do" : 1, "Gwangju" : 1, "Jeollabuk-do" : 1, "Jeju-do" : 1 }
+		}
+
+		//Number;
+		, "num" : { "description" : "Number", "exampleValue" : "02"
+			<include>000_common_txt/string_default.txt</include>
+			, "minLength" : 2
+			, "maxLength" : 3
+			, "values" : <include>100_common_json/array/array__KR_Area_PhoneNumber_SiDo.json</include>
+			, "valuesMap" : <include>100_common_json/array/array__KR_Area_PhoneNumber_SiDo__valuesMap.json</include>
+		}
+	}
+}

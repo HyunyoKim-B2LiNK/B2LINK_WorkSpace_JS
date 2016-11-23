@@ -1,0 +1,94 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"product.product_basic"
+		, "partner.manufacture_basic"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"product_basic"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"product"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"member.member_public"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"member_public"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"member"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Register Member ID
+		, "_id$member" : <include>100_common_json/_id$member.json</include>
+
+		//Register Date
+		, "date_regist" : { "description" : "Register Date"
+			<include>000_common_txt/date/date__Array__YMD_HoMiSe.txt</include>
+		}
+
+		//Brand Description
+		, "description" : { "description" : "Brand Description", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Brand Description(CN)
+		, "description_cn" : { "description" : "Brand Description(CN)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Brand Description(KR)
+		, "description_kr" : { "description" : "Brand Description(KR)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Brand Description(US)
+		, "description_us" : { "description" : "Brand Description(US)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Brand Name(Default)
+		, "nm" : <include>brand/nm.json</include>
+
+		//Brand Name(CN)
+		, "nm_cn" : <include>brand/nm_cn.json</include>
+
+		//Brand Name(KR)
+		, "nm_kr" : <include>brand/nm_kr.json</include>
+
+		//Brand Name(US)
+		, "nm_us" : <include>brand/nm_us.json</include>
+
+		//BRAND Homepage URL
+		, "url" : { "description" : "Brand Hompage URL", "exampleValue" : "www.b2link.co.kr"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//BRAND Logo Image URL
+		, "url_logo" : { "description" : "Brand Logo Image URL", "exampleValue" : "www.b2link.co.kr/logo.png"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//BRAND TradeMark Image URL
+		, "url_trademark" : { "description" : "Brand TradeMark Image URL", "exampleValue" : "www.b2link.co.kr/img0.png"
+			<include>000_common_txt/string_default.txt</include>
+		}
+	}
+}

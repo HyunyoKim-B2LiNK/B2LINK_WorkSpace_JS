@@ -1,0 +1,5 @@
+{
+	"description" : "Brand Name(CN)"
+	, "exampleValue" : ""
+	<include>000_common_txt/string_default.txt</include>
+}

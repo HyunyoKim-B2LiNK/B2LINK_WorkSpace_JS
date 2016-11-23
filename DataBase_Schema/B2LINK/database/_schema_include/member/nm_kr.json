@@ -1,0 +1,24 @@
+{
+	"description": "Name(KR)",
+	"type": "object",
+	"properties": {
+		"a": {
+			"description": "All Name(KR)",
+			"exampleValue": "송선우",
+			"type": "string",
+			"length": 0
+		},
+		"f": {
+			"description": "First Name(KR)",
+			"exampleValue": "선우",
+			"type": "string",
+			"length": 0
+		},
+		"l": {
+			"description": "Last Name(KR)",
+			"exampleValue": "송",
+			"type": "string",
+			"length": 0
+		}
+	}
+}

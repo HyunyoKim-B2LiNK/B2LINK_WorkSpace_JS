@@ -1,0 +1,146 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"brand.brand_basic"
+		, "member.member_public"
+		, "product.product_category"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"brand_basic"
+		, "member_public"
+		, "product_category"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"brand"
+		, "member"
+		, "product"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Brand ID;
+		, "_id$brand_basic" : { "description" : "Brand ID(FK)", "exampleValue" : 0
+			, "type" : "uint", "length" : 0
+		}
+
+		//Member ID;
+		, "_id$member_public" : { "description" : "Member ID(FK)", "exampleValue" : 0
+			, "type" : "uint", "length" : 0
+		}
+
+		//Product Category ID
+		, "_id$product_category" : { "description" : "Product Category ID(FK)", "exampleValue" : 0
+			, "type" : "uint", "length" : 0
+		}
+
+		//Barcode Number
+		, "barcode" : { "description" : "Barcode Number", "exampleValue" : "123411231231"
+			, "type" : "string", "length" : 0
+		}
+
+		//Regist Date
+		, "date_regist" : { "description" : "Regist Date", "exampleValue" : [ 2016, 10, 27, 12, 20, 30 ]
+			, "type" : "array", "length" : 0
+		}
+
+		//Product Description
+		, "description" : { "description" : "Product Description", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Description(CN)
+		, "description_cn" : { "description" : "Product Description(CN)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Description(KR)
+		, "description_kr" : { "description" : "Product Description(KR)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Description(US)
+		, "description_us" : { "description" : "Product Description(US)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
+			, "type" : "string", "length" : 0
+		}
+
+		//Boolean Has MSDS
+		, "msds" : { "description" : "Boolean Has MSDS", "exampleValue" : 0
+			, "type" : "uint", "length" : 1, "default" : 0
+			, "minValue" : 0
+			, "maxValue" : 1
+			, "values" : [ 0, 1 ]
+			, "valuesMap" : { "0" : 0, "1" : 1 }
+		}
+
+		//Product Name(Default)
+		, "nm" : { "description" : "Product Name(Default)", "exampleValue" : "비투링크"
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Name(CN)
+		, "nm_cn" : { "description" : "Product Name(CN)", "exampleValue" : ""
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Name(KR)
+		, "nm_kr" : { "description" : "Product Name(KR)", "exampleValue" : ""
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Name(US)
+		, "nm_us" : { "description" : "Product Name(US)", "exampleValue" : "B2Link Inc,"
+			, "type" : "string", "length" : 0
+		}
+
+		//Unit of Weight
+		, "unit_weight" : { "description" : "Unit of Weight", "exampleValue" : "mg"
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Homepage URL
+		, "url" : { "description" : "Product Hompage URL", "exampleValue" : "www.b2link.co.kr"
+			, "type" : "string", "length" : 0
+		}
+
+		//Barcode Image URL
+		, "url_file_barcode" : { "description" : "Barcode Image URL", "exampleValue" : "www.b2link.co.kr/barcode.img"
+			, "type" : "string", "length" : 0
+		}
+
+		//MSDS File URL
+		, "url_file_msds" : { "description" : "MSDS File URL", "exampleValue" : "www.b2link.co.kr/msds.file"
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Image URL
+		, "url_file_product" : { "description" : "Product Image URL", "exampleValue" : "www.b2link.co.kr/product.img"
+			, "type" : "string", "length" : 0
+		}
+
+		//Product Weight
+		, "url_file_product" : { "description" : "Product Weight", "exampleValue" : "0.5"
+			, "type" : "number", "length" : 0
+		}
+	}
+}

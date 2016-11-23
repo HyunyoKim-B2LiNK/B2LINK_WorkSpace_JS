@@ -1,0 +1,7 @@
+{
+	"description" : "Date - Month", "exampleValue" : "11"
+	<include>000_common_txt/string_len2.txt</include>
+	, "minValue" : 1
+	, "maxValue" : 12
+	, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+}
