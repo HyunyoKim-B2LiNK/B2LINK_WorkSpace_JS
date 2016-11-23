@@ -32,7 +32,7 @@
 			"description": "Member Career count",
 			"exampleValue": "1",
 			"type": "uint",
-			"length": 0
+			"length": 2
 		},
 		"career0": {
 			"description": "Member Career 0",

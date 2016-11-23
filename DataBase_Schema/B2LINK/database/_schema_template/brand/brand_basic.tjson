@@ -41,7 +41,7 @@
 
 		//Register Date
 		, "date_regist" : { "description" : "Register Date"
-			<include>_common_txt/dateType_Array.txt</include>
+			<include>_common_txt/date__Array.txt</include>
 		}
 
 		//Brand Description

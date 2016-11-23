@@ -38,7 +38,7 @@
 		},
 		"date": {
 			"description": "Create Date",
-			"exampleValue": "",
+			"exampleValue": "ISODate('2016-10-31T10:20:55.669Z')",
 			"type": "date",
 			"length": 0
 		},

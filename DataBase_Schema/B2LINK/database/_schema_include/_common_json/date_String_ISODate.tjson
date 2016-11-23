@@ -1,0 +1,5 @@
+{
+	"description" : "Create Date"
+	, "exampleValue" : "ISODate('2016-10-31T10:20:55.669Z')"
+	<include>_common_txt/date_len0.txt</include>
+}

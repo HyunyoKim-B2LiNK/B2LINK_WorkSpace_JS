@@ -42,7 +42,7 @@
 
 		//Member Career count;
 		, "count" : { "description" : "Member Career count", "exampleValue" : "1"
-			, "type" : "uint", "length" : 0
+			<include>_common_txt/uint_len0.txt</include>
 		}
 
 		//Member Career count;
@@ -52,7 +52,7 @@
 
 				//Company Name;
 				"nm_company" : { "description" : "Company Name", "exampleValue" : "B2LINK"
-					, "type" : "string", "length" : 0
+					<include>_common_txt/string_default.txt</include>
 				}
 
 				//Date - Entering;
