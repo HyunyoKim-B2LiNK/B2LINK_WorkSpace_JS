@@ -42,7 +42,7 @@
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : <include>_common_json/_id.json</include>
+		"_id" : <include>100_common_json/_id.json</include>
 
 		//Member ID;
 		, "mid" : <include>member/mid.json</include>

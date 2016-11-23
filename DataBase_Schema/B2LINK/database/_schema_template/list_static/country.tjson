@@ -39,36 +39,36 @@
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : <include>_common_json/_id.json</include>
+		"_id" : <include>100_common_json/_id.json</include>
 
 		//Code - Number;
 		, "cd_n" : { "description" : "Code - Number", "exampleValue" : "410"
-			<include>_common_txt/uint_len2.txt</include>
+			<include>000_common_txt/uint_len2.txt</include>
 		}
 
 		//Code - String - 2;
 		, "cd_us2" : { "description" : "Code - String - 2", "exampleValue" : "KR"
-			<include>_common_txt/string_len2.txt</include>
+			<include>000_common_txt/string_len2.txt</include>
 		}
 
 		//Code - String - 3;
 		, "cd_us3" : { "description" : "Code - String - 3", "exampleValue" : "KOR"
-			<include>_common_txt/string_len3.txt</include>
+			<include>000_common_txt/string_len3.txt</include>
 		}
 
 		//Name(CN);
 		, "nm_cn" : { "description" : "Name(CN)", "exampleValue" : "韓國"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//Name(KR);
 		, "nm_kr" : { "description" : "Name(KR)", "exampleValue" : "대한민국"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//Name(US);
 		, "nm_us" : { "description" : "Name(US)", "exampleValue" : "Republic of Korea"
-			<include>_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 	}
 }

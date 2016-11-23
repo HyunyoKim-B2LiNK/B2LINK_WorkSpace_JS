@@ -113,7 +113,7 @@
 			"properties": {
 				"a": {
 					"description": "All Name(US)",
-					"exampleValue": "SunWoo Sonw",
+					"exampleValue": "SunWoo Song",
 					"type": "string",
 					"length": 0
 				},

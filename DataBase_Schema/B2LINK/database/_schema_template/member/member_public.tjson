@@ -37,10 +37,10 @@
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : <include>_common_json/_id.json</include>
+		"_id" : <include>100_common_json/_id.json</include>
 
 		//Email;
-		, "email" : <include>_common_json/email.json</include>
+		, "email" : <include>100_common_json/email.json</include>
 
 		//Email's ID;
 		//, "email_id" : { "description" : "Email's ID", "exampleValue" : "thdtjsdn"

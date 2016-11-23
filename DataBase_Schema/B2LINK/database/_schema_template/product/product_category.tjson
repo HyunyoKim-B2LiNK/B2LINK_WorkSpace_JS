@@ -31,7 +31,7 @@
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : <include>_common_json/_id.json</include>
+		"_id" : <include>100_common_json/_id.json</include>
 
 		//Code of Category // Array로 수정 ?
 		, "cd_category" : { "description" : "Code of Category(unique value) ", "exampleValue" : "100000000000"
