@@ -1,81 +1,106 @@
 {
-	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
-	"dereference" : [
-	]
-
-	//이 Collection을 참조하는 Collections - Collection Name;
-	, "dereference_collection" : [
-	]
-
-	//이 Collection을 참조하는 Database;
-	, "dereference_database" : [
-	]
-
-	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
-	, "reference" : [
+	"dereference": [],
+	"dereference_collection": [],
+	"dereference_database": [],
+	"reference": [
 		"list_static.country"
-	]
-
-	//이 Collection이 참조하는 Collections - Collection Name;
-	, "reference_collection" : [
+	],
+	"reference_collection": [
 		"country"
-	]
-
-	//이 Collection이 참조하는 Database;
-	, "reference_database" : [
+	],
+	"reference_database": [
 		"list_static"
-	]
-
-	//--------------------------------------------------;
-
-	//이 Collection의 Properties;
-	, "properties" : {
-		//Unique Key, Primary Key(PK);
-		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : 0
-			, "type" : "uint", "length" : 0
-			, "minValue" : 0
-			, "maxValue" : 999999999
-		}
-
-		//Second Level Domain;
-		, "SLD" : { "description" : "Second Level Domain", "exampleValue" : "google"
-			, "type" : "string", "length" : 0
-			, "values" : [ "b2link", "daum", "google", "naver", "yahoo" ]
-			, "valuesMap" : { "b2link" : 1, "daum" : 1, "google" : 1, "naver" : 1, "yahoo" : 1 }
-		}
-
-		//Top Level Domain;
-		, "TLD" : { "description" : "Top Level Domain", "exampleValue" : "co.kr"
-			, "type" : "string", "length" : 0
-			, "values" : [ "co.cn", "co.jp", "co.kr", "go.cn", "go.jp", "go.kr" ]
-			, "valuesMap" : { "co.cn" : 1, "co.jp" : 1, "co.kr" : 1, "go.cn" : 1, "go.jp" : 1, "go.kr" : 1 }
-		}
-
-		//Country Code Top Level Domain;
-		, "ccTLD" : { "description" : "Country Code Top Level Domain", "exampleValue" : "123qweasd"
-			, "type" : "string", "length" : 0
-		}
-
-		//Generic Top Level Domain;
-		, "gTLD" : { "description" : "Generic Top Level Domain", "exampleValue" : "com"
-			, "type" : "string", "length" : 0
-			, "values" : [ "com", "net", "org" ]
-			, "valuesMap" : { "com" : 1, "net" : 1, "org" : 1 }
-		}
-
-		//Country Code(Number);
-		, "c_cd_n" : { "description" : "Country Code(Number)", "exampleValue" : "410"
-			, "type" : "uint", "length" : 3
-		}
-
-		//Country Code(US 2);
-		, "c_cd_us2" : { "description" : "Country Code(US 2)", "exampleValue" : "KR"
-			, "type" : "uint", "length" : 2
-		}
-
-		//Country Code(US 3);
-		, "c_cd_us3" : { "description" : "Country Code(US 3)", "exampleValue" : "KOR"
-			, "type" : "uint", "length" : 3
+	],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"SLD": {
+			"description": "Second Level Domain",
+			"exampleValue": "google",
+			"type": "string",
+			"length": 0,
+			"values": [
+				"b2link",
+				"daum",
+				"google",
+				"naver",
+				"yahoo"
+			],
+			"valuesMap": {
+				"b2link": 1,
+				"daum": 1,
+				"google": 1,
+				"naver": 1,
+				"yahoo": 1
+			}
+		},
+		"TLD": {
+			"description": "Top Level Domain",
+			"exampleValue": "co.kr",
+			"type": "string",
+			"length": 0,
+			"values": [
+				"co.cn",
+				"co.jp",
+				"co.kr",
+				"go.cn",
+				"go.jp",
+				"go.kr"
+			],
+			"valuesMap": {
+				"co.cn": 1,
+				"co.jp": 1,
+				"co.kr": 1,
+				"go.cn": 1,
+				"go.jp": 1,
+				"go.kr": 1
+			}
+		},
+		"ccTLD": {
+			"description": "Country Code Top Level Domain",
+			"exampleValue": "123qweasd",
+			"type": "string",
+			"length": 0
+		},
+		"gTLD": {
+			"description": "Generic Top Level Domain",
+			"exampleValue": "com",
+			"type": "string",
+			"length": 0,
+			"values": [
+				"com",
+				"net",
+				"org"
+			],
+			"valuesMap": {
+				"com": 1,
+				"net": 1,
+				"org": 1
+			}
+		},
+		"c_cd_n": {
+			"description": "Country Code(Number)",
+			"exampleValue": "410",
+			"type": "uint",
+			"length": 3
+		},
+		"c_cd_us2": {
+			"description": "Country Code(US 2)",
+			"exampleValue": "KR",
+			"type": "uint",
+			"length": 2
+		},
+		"c_cd_us3": {
+			"description": "Country Code(US 3)",
+			"exampleValue": "KOR",
+			"type": "uint",
+			"length": 3
 		}
 	}
 }

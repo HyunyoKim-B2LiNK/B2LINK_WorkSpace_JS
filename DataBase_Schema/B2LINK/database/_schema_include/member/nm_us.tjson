@@ -1,0 +1,25 @@
+{
+	"description" : "Name(US)"
+	, "type" : "object"
+	, "properties" : {
+		//All Name(US);
+		"a" : { "description" : "All Name(US)", "exampleValue" : "SunWoo Sonw"
+			<include>_common_txt/string_default.txt</include>
+		}
+
+		//First Name(US);
+		, "f" : { "description" : "First Name(US)", "exampleValue" : "SunWoo"
+			<include>_common_txt/string_default.txt</include>
+		}
+
+		//Last Name(US);
+		, "l" : { "description" : "Last Name(US)", "exampleValue" : "Song"
+			<include>_common_txt/string_default.txt</include>
+		}
+
+		//Middle Name(US);
+		, "m" : { "description" : "Middle Name(US)" , "exampleValue" : ""
+			<include>_common_txt/string_default.txt</include>
+		}
+	}
+}

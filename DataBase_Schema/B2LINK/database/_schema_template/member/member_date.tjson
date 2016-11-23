@@ -1,0 +1,204 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"member.member_basic"
+		, "member.member_session"
+		, "member.member_date"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"member_basic"
+		, "member_session"
+		, "member_date"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"member"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>_common_json/_id.json</include>
+
+		//Member ID;
+		, "mid" : { "description" : "Member ID", "exampleValue" : "thdtjsdn@gmail.com"
+			, "type" : "string", "length" : 0
+		}
+
+		//Date - Last SignIn;
+		, "d_l_si" : { "description" : "Date - Last SignIn"
+			, "type" : "object"
+			, "properties" : {
+				//Date - Year;
+				"y" : { "description" : "Date - Year", "exampleValue" : "2016"
+					, "type" : "string", "length" : 4
+					, "minValue" : 1900
+					, "maxValue" : 3000
+				}
+
+				//Date - Month;
+				, "m" : { "description" : "Date - Month", "exampleValue" : "11"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 12
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+				}
+
+				//Date - Day;
+				, "d" : { "description" : "Date - Day", "exampleValue" : "12"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 31
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 ]
+				}
+
+				//Date - Hour;
+				, "ho" : { "description" : "Date - Hour", "exampleValue" : "12"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 24
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ]
+				}
+
+				//Date - Minute;
+				, "mi" : { "description" : "Date - Minute", "exampleValue" : "59"
+					, "type" : "string", "length" : 2
+					, "minValue" : 0
+					, "maxValue" : 59
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ]
+				}
+
+				//Date - Seconds;
+				, "se" : { "description" : "Date - Seconds", "exampleValue" : "53"
+					, "type" : "string", "length" : 2
+					, "minValue" : 0
+					, "maxValue" : 59
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ]
+				}
+			}
+		}
+
+		//Date - SignUp;
+		, "d_su" : { "description" : "Date - SignUp"
+			, "type" : "object"
+			, "properties" : {
+				//Date - Year;
+				"y" : { "description" : "Date - Year", "exampleValue" : "2016"
+					, "type" : "string", "length" : 4
+					, "minValue" : 1900
+					, "maxValue" : 3000
+				}
+
+				//Date - Month;
+				, "m" : { "description" : "Date - Month", "exampleValue" : "11"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 12
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+				}
+
+				//Date - Day;
+				, "d" : { "description" : "Date - Day", "exampleValue" : "12"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 31
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 ]
+				}
+
+				//Date - Hour;
+				, "ho" : { "description" : "Date - Hour", "exampleValue" : "12"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 24
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ]
+				}
+
+				//Date - Minute;
+				, "mi" : { "description" : "Date - Minute", "exampleValue" : "59"
+					, "type" : "string", "length" : 2
+					, "minValue" : 0
+					, "maxValue" : 59
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ]
+				}
+
+				//Date - Seconds;
+				, "se" : { "description" : "Date - Seconds", "exampleValue" : "53"
+					, "type" : "string", "length" : 2
+					, "minValue" : 0
+					, "maxValue" : 59
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ]
+				}
+			}
+		}
+
+		//Date - Secession;
+		, "d_sec" : { "description" : "Date - Secession"
+			, "type" : "object"
+			, "properties" : {
+				//Date - Year;
+				"y" : { "description" : "Date - Year", "exampleValue" : "2016"
+					, "type" : "string", "length" : 4
+					, "minValue" : 1900
+					, "maxValue" : 3000
+				}
+
+				//Date - Month;
+				, "m" : { "description" : "Date - Month", "exampleValue" : "11"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 12
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+				}
+
+				//Date - Day;
+				, "d" : { "description" : "Date - Day", "exampleValue" : "12"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 31
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 ]
+				}
+
+				//Date - Hour;
+				, "ho" : { "description" : "Date - Hour", "exampleValue" : "12"
+					, "type" : "string", "length" : 2
+					, "minValue" : 1
+					, "maxValue" : 24
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ]
+				}
+
+				//Date - Minute;
+				, "mi" : { "description" : "Date - Minute", "exampleValue" : "59"
+					, "type" : "string", "length" : 2
+					, "minValue" : 0
+					, "maxValue" : 59
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ]
+				}
+
+				//Date - Seconds;
+				, "se" : { "description" : "Date - Seconds", "exampleValue" : "53"
+					, "type" : "string", "length" : 2
+					, "minValue" : 0
+					, "maxValue" : 59
+					, "values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60 ]
+				}
+			}
+		}
+	}
+}

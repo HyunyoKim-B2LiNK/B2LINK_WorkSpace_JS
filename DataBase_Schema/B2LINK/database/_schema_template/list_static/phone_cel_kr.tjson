@@ -1,0 +1,49 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>_common_json/_id.json</include>
+
+		//Agency;
+		, "agency" : { "description" : "Agency", "exampleValue" : "SKT"
+			, "type" : "string", "length" : 0
+			, "minLength" : 2
+			, "maxLength" : 3
+			, "values" : [ "CellPhone", "KT", "LGT", "SKT", "IOT", "TRS", "PC_Communication" ]
+			, "valuesMap" : { "CellPhone" : 1, "KT" : 1, "LGT" : 1, "SKT" : 1, "IOT" : 1, "TRS" : 1, "PC_Communication" : 1 }
+		}
+
+		//Number;
+		, "num" : { "description" : "Number", "exampleValue" : "010"
+			, "type" : "string", "length" : 3
+			, "values" : [ "010", "011", "012", "013", "015", "016", "017", "018", "019" ]
+			, "valuesMap" : { "010" : 1, "011" : 1, "012" : 1, "013" : 1, "015" : 1, "016" : 1, "017" : 1, "018" : 1, "019" : 1 }
+		}
+	}
+}

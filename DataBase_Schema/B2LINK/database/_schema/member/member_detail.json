@@ -1,0 +1,192 @@
+{
+	"dereference": [
+		"member.member_public"
+	],
+	"dereference_collection": [
+		"member_public"
+	],
+	"dereference_database": [
+		"member"
+	],
+	"reference": [
+		"member.member_basic",
+		"member.member_session"
+	],
+	"reference_collection": [
+		"member_basic",
+		"member_session"
+	],
+	"reference_database": [
+		"member"
+	],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"addr": {
+			"description": "Member Address",
+			"exampleValue": "",
+			"type": "object",
+			"proerties": {}
+		},
+		"addr_us": {
+			"description": "Member Address(US)",
+			"exampleValue": "",
+			"type": "object",
+			"proerties": {}
+		},
+		"bloodType": {
+			"description": "Member BloodType",
+			"exampleValue": "O",
+			"type": "string",
+			"length": 0,
+			"default": "O",
+			"minLength": 1,
+			"maxLength": 3,
+			"values": [
+				"A",
+				"AB",
+				"B",
+				"O",
+				"Rh+",
+				"Rh-"
+			],
+			"valuesMap": {
+				"A": 1,
+				"AB": 1,
+				"B": 1,
+				"O": 1,
+				"Rh+": 1,
+				"Rh-": 1
+			}
+		},
+		"gender": {
+			"description": "Member Gender",
+			"exampleValue": "M",
+			"type": "string",
+			"length": 1,
+			"values": [
+				"M",
+				"W"
+			],
+			"valuesMap": {
+				"M": 1,
+				"W": 1
+			}
+		},
+		"phone_tel": {
+			"description": "Member Telephone",
+			"type": "object",
+			"proerties": {
+				"company": {
+					"description": "Member Telephone - Company",
+					"exampleValue": "",
+					"type": "object",
+					"properties": {
+						"0": {
+							"type": "string",
+							"length": 0,
+							"minLength": 2,
+							"maxLength": 4
+						},
+						"1": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						},
+						"2": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						}
+					}
+				},
+				"home": {
+					"description": "Member Telephone - Home",
+					"type": "object",
+					"properties": {
+						"0": {
+							"type": "string",
+							"length": 0,
+							"minLength": 2,
+							"maxLength": 4
+						},
+						"1": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						},
+						"2": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						}
+					}
+				}
+			}
+		},
+		"phone_cel": {
+			"description": "Member Cellphone",
+			"type": "object",
+			"proerties": {
+				"company": {
+					"description": "Member Cellphone - Company",
+					"type": "object",
+					"properties": {
+						"0": {
+							"type": "string",
+							"length": 0,
+							"minLength": 2,
+							"maxLength": 4
+						},
+						"1": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						},
+						"2": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						}
+					}
+				},
+				"home": {
+					"description": "Member Cellphone - Home",
+					"type": "object",
+					"properties": {
+						"0": {
+							"type": "string",
+							"length": 0,
+							"minLength": 2,
+							"maxLength": 4
+						},
+						"1": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						},
+						"2": {
+							"type": "string",
+							"length": 0,
+							"minLength": 3,
+							"maxLength": 4
+						}
+					}
+				}
+			}
+		}
+	}
+}
