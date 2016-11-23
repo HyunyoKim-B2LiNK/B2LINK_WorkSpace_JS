@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ {partner_person}, {partner_person}, ... ]
+ */

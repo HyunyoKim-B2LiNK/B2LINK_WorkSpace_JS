@@ -1,0 +1,26 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	_id$member : 0
+ *	, _id$title : 0
+ *	, date_regist : [ 2016, 10, 27, 12, 20, 30 ]
+ *	, description : "대표"
+ *	, description_kr : "대표"
+ *	, description_cn : "대표"
+ *	, description_us : "대표"
+ *	, divison : "구매부"
+ *	, email : "b2link@b2link.co.kr"
+ *	, messenger : { _id$messenger_type : 0 , id : "b2link@b2link.co.kr" }
+ *	, nm : { "a" : "이소형", "f" : "소형", "l" : "이"}
+ *	, nm_cn : { "a" : "이소형", "f" : "소형", "l" : "이"}
+ *	, nm_kr : { "a" : "이소형", "f" : "소형", "l" : "이"}
+ *	, nm_us : { "a" : "leesohyung", "f" : "sohyung", "l" : "lee" , "m" : ""}
+ *	, phone_cell : "111111111"
+ *	, phone_fax : "111111111"
+ *	, phone_tel : "111111111"
+ * }
+ * </code>
+ * return {Object}
+ */
