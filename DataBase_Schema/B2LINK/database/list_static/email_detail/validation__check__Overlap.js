@@ -6,7 +6,7 @@ function( d )
 	if( d.TLD	) d.TLD = d.TLD.toLowerCase();
 	if( d.ccTLD	) d.ccTLD = d.ccTLD.toLowerCase();
 	if( d.gTLD	) d.gTLD = d.gTLD.toLowerCase();
-	if( d.c	) d.c = d.c.toLowerCase();
+	if( d.c		) d.c = d.c.toLowerCase();
 
 	print( "-- [ E ] - email_detail$validation__check__Overlap():{Object}----------return d;" );
 
