@@ -1,9 +1,13 @@
 {
+	"editor.detectIndentation": false,
+
 	"editor.folding": true,
 
 	"editor.insertSpaces": false,
 
 	"editor.mouseWheelZoom": true,
+
+	"editor.tabCompletion": false,
 
 	"editor.tabSize": 4,
 
