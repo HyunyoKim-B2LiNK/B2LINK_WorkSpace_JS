@@ -14,11 +14,11 @@ global.b2link_validation.list_static.email_detail$check__Overlap = function( t, 
 
 	console.logObjectInformation( d, "d" );
 
-	if( d.SLD    ) t.SLD = d.SLD.toLowerCase();
-	if( d.TLD    ) t.TLD = d.TLD.toLowerCase();
-	if( d.ccTLD ) t.ccTLD = d.ccTLD.toLowerCase();
-	if( d.gTLD   ) t.gTLD = d.gTLD.toLowerCase();
-	if( d.c      ) t.c = d.c.toLowerCase();
+	if( d.SLD	) t.SLD = d.SLD.toLowerCase();
+	if( d.TLD	) t.TLD = d.TLD.toLowerCase();
+	if( d.ccTLD	) t.ccTLD = d.ccTLD.toLowerCase();
+	if( d.gTLD	) t.gTLD = d.gTLD.toLowerCase();
+	if( d.c		) t.c = d.c.toLowerCase();
 
 	global.TtwLog.log( "---- [ E ] - global.b2link_validation.list_static.email_detail$check__Overlap():{Object}----------" );
 };
