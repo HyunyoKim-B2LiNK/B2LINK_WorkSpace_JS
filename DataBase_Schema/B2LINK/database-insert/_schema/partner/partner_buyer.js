@@ -162,7 +162,6 @@ var d = {
 		}
 
 		//Partner_buyer CEO Name(Default)
-		//Partner_buyer CEO Name(Default)
 		, "nm_ceo" : { "description" : "CEO Name(Default)"
 			, "type" : "object"
 			, "properties" : {
