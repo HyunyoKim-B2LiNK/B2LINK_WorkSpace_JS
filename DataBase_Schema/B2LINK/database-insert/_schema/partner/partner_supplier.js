@@ -315,7 +315,6 @@ var d = {
 				}
 			}
 		}
-
 		//Partner_Supplier  CEO Name(US)
 		, "nm_ceo_us": {
 			"description": "CEO Name(US)"
