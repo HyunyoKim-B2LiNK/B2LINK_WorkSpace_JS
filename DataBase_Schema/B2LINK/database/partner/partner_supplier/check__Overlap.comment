@@ -4,7 +4,7 @@
  * @param {Object} d
  * <code>
  * {
- 	"company_registration_number" : d.company_registration_number
+ * "company_registration_number" : d.company_registration_number
  * }
  * </code>
  * @return {int} 0 or 1
