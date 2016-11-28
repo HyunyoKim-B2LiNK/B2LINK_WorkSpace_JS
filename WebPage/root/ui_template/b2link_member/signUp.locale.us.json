@@ -1,0 +1,16 @@
+{
+	"legend" : "  Sign Up  "
+
+	, "email" : "  Email"
+	, "name" : "  Name"
+	, "phone" : "  Phone"
+	, "password" : "  Password"
+	, "password_confirm" : "  Password Confirm"
+
+	, "terms_agree" : "Terms of agreement"
+	, "terms_of_use" : "Terms of Use"
+
+	, "account_already_exists" : "Account already exists."
+	, "sign_in" : "Sign In"
+	, "sign_up" : "Sign Up"
+}

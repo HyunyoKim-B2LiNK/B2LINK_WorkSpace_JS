@@ -1,0 +1,24 @@
+{
+	"legend" : "  Add Product  "
+
+	, "barcode" : "  product barcode number"
+	, "brand" : "  Brand"
+	, "description" : "  description"
+
+	, "nm_kr" : "  Name(kr)"
+	, "nm_us" : "  Name(eng)"
+	, "nm_cn" : "  Name(cn)"
+	, "nm_register" : "  register"
+
+	, "weight" : "  weight"
+	, "unit_weight" : "  unit of weight"
+
+	, "msds" : "  msds"
+	
+	, "product_category" : "  category"	
+
+	, "url" : "  product url"
+	, "url_file_barcode" : "  product barcode image"
+	, "url_file_msds" : "  msds file"
+	, "url_file_product" : "  product image"
+}

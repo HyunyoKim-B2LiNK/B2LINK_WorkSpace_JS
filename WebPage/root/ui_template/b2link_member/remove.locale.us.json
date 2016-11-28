@@ -1,0 +1,19 @@
+{
+	"th___check" : "Selected"
+	, "th___id" : "ID"
+
+	, "th__bConn" : "B_Connection"
+	, "th__email" : "E-MAIL"
+	, "th__nSignInFail" : "N_SignInFail"
+
+	, "th__nm" : "Name"
+	, "th__nm_cn" : "Name(CN)"
+	, "th__nm_kr" : "Name(KR)"
+	, "th__nm_us" : "Name(US)"
+	
+	, "th__rank" : "Rank"
+	, "th__mid" : "MEMBER ID"
+
+	, "btn__cancel" : "Cancel"
+	, "btn__delete" : "Delete"
+}

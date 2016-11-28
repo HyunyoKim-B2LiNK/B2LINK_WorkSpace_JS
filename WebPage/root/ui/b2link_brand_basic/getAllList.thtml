@@ -1,0 +1,15 @@
+<div id="div__brand_basic-getAllList">
+	<table>
+		<thead class="thead">
+			<tr>
+<include-html>./ui_include/b2link_brand_basic/ths__getAllList.html</include-html>
+			</tr>
+		</thead>
+
+		<tbody class="tbody">
+			<tr id="tbody_tr">
+<include-html>./ui_include/b2link_brand_basic/tds__getAllList.html</include-html>
+			</tr>
+		</tbody>
+	</table>
+</div>
