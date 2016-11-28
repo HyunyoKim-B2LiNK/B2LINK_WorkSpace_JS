@@ -42,33 +42,21 @@
 		"_id" : <include>100_common_json/_id.json</include>
 
 		//Code - Number;
-		, "cd_n" : { "description" : "Code - Number", "exampleValue" : "410"
-			<include>000_common_txt/uint_len2.txt</include>
-		}
+		, "cd_n" : { "description" : "Code - Number", "exampleValue" : "410"<include>000_common_txt/string_len3.txt</include> }
 
 		//Code - String - 2;
-		, "cd_us2" : { "description" : "Code - String - 2", "exampleValue" : "KR"
-			<include>000_common_txt/string_len2.txt</include>
-		}
+		, "cd_us2" : { "description" : "Code - String - 2", "exampleValue" : "KR"<include>000_common_txt/string_len2.txt</include> }
 
 		//Code - String - 3;
-		, "cd_us3" : { "description" : "Code - String - 3", "exampleValue" : "KOR"
-			<include>000_common_txt/string_len3.txt</include>
-		}
+		, "cd_us3" : { "description" : "Code - String - 3", "exampleValue" : "KOR"<include>000_common_txt/string_len3.txt</include> }
 
 		//Name(CN);
-		, "nm_cn" : { "description" : "Name(CN)", "exampleValue" : "韓國"
-			<include>000_common_txt/string_default.txt</include>
-		}
+		, "nm_cn" : { "description" : "Name(CN)", "exampleValue" : "韓國"<include>000_common_txt/string_default.txt</include> }
 
 		//Name(KR);
-		, "nm_kr" : { "description" : "Name(KR)", "exampleValue" : "대한민국"
-			<include>000_common_txt/string_default.txt</include>
-		}
+		, "nm_kr" : { "description" : "Name(KR)", "exampleValue" : "대한민국"<include>000_common_txt/string_default.txt</include> }
 
 		//Name(US);
-		, "nm_us" : { "description" : "Name(US)", "exampleValue" : "Republic of Korea"
-			<include>000_common_txt/string_default.txt</include>
-		}
+		, "nm_us" : { "description" : "Name(US)", "exampleValue" : "Republic of Korea"<include>000_common_txt/string_default.txt</include> }
 	}
 }

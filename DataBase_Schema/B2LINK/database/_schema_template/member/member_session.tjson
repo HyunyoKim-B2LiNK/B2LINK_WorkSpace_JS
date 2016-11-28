@@ -51,8 +51,6 @@
 		, "sid" : <include>member/sid.json</include>
 
 		//Date - Session Expired;
-		, "d_ex" : { "description" : "Date - Session Expired", "exampleValue" : "Wed, 16 Nov 2016 10:07:04 GMT"
-			, "type" : "string", "length" : 0
-		}
+		, "d_ex" : { "description" : "Date - Session Expired", "exampleValue" : "Wed, 16 Nov 2016 10:07:04 GMT"<include>000_common_txt/string_default.txt</include> }
 	}
 }
