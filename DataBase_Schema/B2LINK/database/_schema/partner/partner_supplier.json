@@ -33,7 +33,7 @@
 			"maxValue": 999999999
 		},
 		"_id$country": {
-			"description": "회사 국적",
+			"description": "국적",
 			"exampleValue": 0,
 			"type": "uint",
 			"length": 0
