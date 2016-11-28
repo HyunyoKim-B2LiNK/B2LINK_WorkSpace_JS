@@ -128,10 +128,24 @@
 			"type": "string",
 			"length": 0
 		},
-		"unit_weight": {
-			"description": "Unit of Weight",
+		"unit": {
+			"description": "Unit of type",
 			"exampleValue": "mg",
 			"type": "string",
+			"length": 0,
+			"values": [
+				"mg",
+				"ml"
+			],
+			"valuesMap": {
+				"mg": 1,
+				"ml": 1
+			}
+		},
+		"unit_value": {
+			"description": "Unit of value",
+			"exampleValue": "10",
+			"type": "number",
 			"length": 0
 		},
 		"url": {
@@ -153,9 +167,9 @@
 			"length": 0
 		},
 		"url_file_product": {
-			"description": "Product Weight",
-			"exampleValue": "0.5",
-			"type": "number",
+			"description": "Product Image URL",
+			"exampleValue": "www.b2link.co.kr/product.img",
+			"type": "string",
 			"length": 0
 		}
 	}

@@ -1,6 +1,7 @@
 {
 	"dereference": [
 		"product.product_basic",
+		"partner.manufacture_basic"
 	],
 	"dereference_collection": [
 		"product_basic"
