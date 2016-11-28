@@ -1,0 +1,86 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : 0
+			, "type" : "uint", "length" : 0
+			, "minValue" : 0
+			, "maxValue" : 999999999
+		}
+
+		//Register Date
+		, "date_regist" : { "description" : "Register Date", "exampleValue" : [ 2016, 10, 27, 12, 20, 30 ]
+			, "type" : "array", "length" : 6
+		}
+
+		//Register Date
+		, "date_regist_obj" : { "description" : "Register Date", "exampleValue" : ""
+			, "type" : "object"
+			, "properties" : {
+				"y" : 2016
+				, "m" : 10
+				, "d" : 27
+				, "ho" : 12
+				, "mi" : 20
+				, "se" : 30
+			}
+		}
+
+		//Register Date
+		, "date_regist_gmt" : { "description" : "Register Date", "exampleValue" : new Date().toGMTString()
+			, "type" : "date"
+		}
+
+		//CODE0
+		, "code0" : { "description" : "CODE0", "exampleValue" : "001"
+			, "type" : "string", "length" : 3
+		}
+
+		//CODE1
+		, "code1" : { "description" : "CODE1", "exampleValue" : "001"
+			, "type" : "string", "length" : 3
+		}
+
+		//CODE2
+		, "code2" : { "description" : "CODE2", "exampleValue" : "001"
+			, "type" : "string", "length" : 3
+		}
+
+		//CODE
+		, "code" : { "description" : "ADDR", "exampleValue" : "001001001"
+			, "type" : "string", "length" : 9
+		}
+
+		//사용여부
+		, "use_yn" : { "description" : "사용여부", "exampleValue" : "Y"
+			, "type" : "string", "length" : 1
+		}
+
+	}
+}

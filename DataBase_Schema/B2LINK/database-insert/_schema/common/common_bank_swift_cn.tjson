@@ -1,0 +1,96 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : 0
+			, "type" : "uint", "length" : 0
+			, "minValue" : 0
+			, "maxValue" : 999999999
+		}
+
+		//Register Date
+		, "date_regist" : { "description" : "Register Date", "exampleValue" : [ 2016, 10, 27, 12, 20, 30 ]
+			, "type" : "array", "length" : 6
+		}
+
+		//Register Date
+		, "date_regist_obj" : { "description" : "Register Date", "exampleValue" : ""
+			, "type" : "object"
+			, "properties" : {
+				"y" : 2016
+				, "m" : 10
+				, "d" : 27
+				, "ho" : 12
+				, "mi" : 20
+				, "se" : 30
+			}
+		}
+
+		//Register Date
+		, "date_regist_gmt" : { "description" : "Register Date", "exampleValue" : new Date().toGMTString()
+			, "type" : "date"
+		}
+
+		//은행 이름 (Local)
+		, "nm" : { "description" : "은행 이름(Local)", "exampleValue" : "中国銀行"
+			, "type" : "string", "length" : 30
+		}
+
+		//은행이름 (한국)
+		, "nm_kr" : { "description" : "은행 이름(한국)", "exampleValue" : "중국은행"
+			, "type" : "string", "length" : 30
+		}
+
+		//은행이름 (중문)
+		, "nm_cn" : { "description" : "은행 이름(중문)", "exampleValue" : "中国銀行"
+			, "type" : "string", "length" : 30
+		}
+
+		//은행이름 (영문)
+		, "nm_en" : { "description" : "은행 이름(영문)", "exampleValue" : "BANK OF CHINA"
+			, "type" : "string", "length" : 30
+		}
+
+		//city
+		, "city" : { "description" : "city", "exampleValue" : "BEIJING"
+			, "type" : "string", "length" : 20
+		}
+
+		//branch
+		, "branch" : { "description" : "branch", "exampleValue" : "(BANK OF CHINA HEAD OFFICE BATCH PAYMENT SERVICE)"
+			, "type" : "string", "length" : 50
+		}
+
+		//SWIFT CODE
+		, "swift_code" : { "description" : "SWIFT CODE", "exampleValue" : "BKCHCNBJBPS"
+			, "type" : "string", "length" : 20
+		}
+
+	}
+}
