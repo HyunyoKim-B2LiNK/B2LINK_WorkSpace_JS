@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "Schema__createJSON__FromTemplate.js";
+var fileNm = "database--_schema--CreateJSON__IncludeTemplateToInclude.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -12,9 +12,15 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 var path_root = "../database/"
 
 var d = {
+	/*/
 	path_schema : path_root + "_schema/"
 	, path_schema_include : path_root + "_schema_include/"
 	, path_schema_template : path_root + "_schema_template/"
+	/*/
+	path_schema : path_root + "_schema_include/"
+	, path_schema_include : path_root + "_schema_include/"
+	, path_schema_template : path_root + "_schema_include/"
+	//*/
 };
 
 //--------------------------------------------------;
