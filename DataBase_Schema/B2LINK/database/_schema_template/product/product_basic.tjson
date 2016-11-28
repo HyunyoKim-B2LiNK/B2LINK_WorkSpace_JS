@@ -139,7 +139,7 @@
 		}
 
 		//Product Weight
-		, "weigth" : { "description" : "Product Weight", "exampleValue" : "0.5"
+		, "weight" : { "description" : "Product Weight", "exampleValue" : "0.5"
 			<include>000_common_txt/number_len0.txt</include>
 		}
 	}
