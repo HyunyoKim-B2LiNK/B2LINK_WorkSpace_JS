@@ -1,7 +1,9 @@
 [
 	"brand",
+	"category",
 	"list_static",
 	"member",
+	"partner",
 	"product",
 	"_schema"
 ]
