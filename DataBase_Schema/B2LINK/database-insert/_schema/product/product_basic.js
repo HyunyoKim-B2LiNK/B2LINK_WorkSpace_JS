@@ -17,7 +17,7 @@ var d = {
   	, "reference" : [
   		"brand.brand_basic"
   		, "member.member_public"
-  		, "product.product_category"
+  		, "category.product_category"
   	]
 
   	//이 Collection이 참조하는 Collections - Collection Name;
@@ -31,7 +31,7 @@ var d = {
   	, "reference_database" : [
   		"brand"
   		, "member"
-  		, "product"
+  		, "category"
   	]
 
   	//--------------------------------------------------;
@@ -145,7 +145,7 @@ var d = {
   		}
 
   		//Product Weight
-  		, "url_file_product" : { "description" : "Product Weight", "exampleValue" : "0.5"
+  		, "weight" : { "description" : "Product Weight", "exampleValue" : "0.5"
   			, "type" : "number", "length" : NumberInt(0)
   		}
   	}

@@ -5,7 +5,7 @@
 	"reference": [
 		"brand.brand_basic",
 		"member.member_public",
-		"product.product_category"
+		"category.product_category"
 	],
 	"reference_collection": [
 		"brand_basic",
@@ -15,7 +15,7 @@
 	"reference_database": [
 		"brand",
 		"member",
-		"product"
+		"category"
 	],
 	"properties": {
 		"_id": {

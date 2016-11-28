@@ -1,0 +1,4 @@
+{
+	"description" : "Hompage URL", "exampleValue" : "www.b2link.co.kr"
+	, "type" : "string", "length" : 0
+}
