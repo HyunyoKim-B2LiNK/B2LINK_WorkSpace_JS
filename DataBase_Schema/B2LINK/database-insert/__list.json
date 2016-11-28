@@ -1,7 +1,11 @@
 [
 	"brand",
+	"category",
 	"list_static",
 	"member",
+	"partner",
 	"product",
-	"_schema"
+	"_schema",
+	"_schema_include",
+	"_schema_template"
 ]

@@ -1,4 +1,4 @@
 {
 	"description" : "Hompage URL", "exampleValue" : "www.b2link.co.kr"
-	, "type" : "string", "length" : 0
+	<include>000_common_txt/string_default.txt</include>
 }
