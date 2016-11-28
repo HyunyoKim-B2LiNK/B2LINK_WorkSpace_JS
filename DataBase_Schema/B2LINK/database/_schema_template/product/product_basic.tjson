@@ -113,9 +113,15 @@
 			<include>000_common_txt/string_default.txt</include>
 		}
 
-		//Unit of Weight
-		, "unit_weight" : { "description" : "Unit of Weight", "exampleValue" : "mg"
-			<include>000_common_txt/string_default.txt</include>
+		//Unit of type
+ 		, "unit" : { "description" : "Unit of type", "exampleValue" : "mg"
+    		<include>000_common_txt/string_default.txt</include>
+    		, "values" : [ "mg", "ml" ]
+    		, "valuesMap" : { "mg" : 1, "ml" : 1 }
+ 		}
+
+		, "unit_value" : { "description" : "Unit of value", "exampleValue" : "10"
+    		<include>000_common_txt/number_len0.txt</include>
 		}
 
 		//Product Homepage URL
@@ -136,11 +142,6 @@
 		//Product Image URL
 		, "url_file_product" : { "description" : "Product Image URL", "exampleValue" : "www.b2link.co.kr/product.img"
 			<include>000_common_txt/string_default.txt</include>
-		}
-
-		//Product Weight
-		, "weigth" : { "description" : "Product Weight", "exampleValue" : "0.5"
-			<include>000_common_txt/number_len0.txt</include>
 		}
 	}
 }
