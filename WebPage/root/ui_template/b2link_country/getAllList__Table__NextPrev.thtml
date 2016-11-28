@@ -1,0 +1,18 @@
+<div id="div__country-getAllList__Table__NextPrev">
+	<div class="btns_top">
+<include-html>./ui_include/btns/ltlt_lt_gt_gtgt.html</include-html>
+	</div>
+
+	</br>
+
+	<div>
+		<import-html class="table"
+			url_js="./ui_import/b2link_country/Table__NextPrev__getAllList.js">./ui_import/b2link_country/Table__NextPrev__getAllList.html</import-html>
+	</div>
+
+	</br>
+
+	<div class="btns_bottom">
+<include-html>./ui_include/btns/ltlt_lt_gt_gtgt.html</include-html>
+	</div>
+</div>

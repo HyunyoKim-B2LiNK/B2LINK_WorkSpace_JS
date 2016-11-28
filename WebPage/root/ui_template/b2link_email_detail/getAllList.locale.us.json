@@ -1,0 +1,8 @@
+{
+	"th___id" : "ID"
+	, "th__SLD" : "Second Level Domain"
+	, "th__TLD" : "Top Level Domain"
+	, "th__ccTLD" : "Country code Top Level Domain"
+	, "th__gTLD" : "Global Top level Domain"
+	, "th__c" : "Country Code"
+}

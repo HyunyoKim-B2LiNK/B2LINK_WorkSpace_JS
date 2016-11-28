@@ -1,0 +1,30 @@
+<div id="div__member_basic-update">
+	<H1> Update </H1>
+	<table>
+		<thead class="thead">
+			<tr>
+<include-html>./ui_include/b2link_member/ths__member_basic_checkAllList.html</include-html>
+			</tr>
+		</thead>
+
+		<tbody class="tbody">
+			<tr>
+<include-html>./ui_include/td/input_check___id.html</include-html>
+<include-html>./ui_include/td/_id.html</include-html>
+				<td><input type="text" class="bConn" value="{{bConn}}"></input></td>
+				<td><input type="text" class="email" value="{{email}}"></input></td>
+				<td><input type="text" class="nSignInFail" value="{{nSignInFail}}"></input></td>
+				<td><input type="text" class="nm" value="{{nm.a}}"></input></td>
+				<td><input type="text" class="nm_cn" value="{{nm_cn.a}}"></input></td>
+				<td><input type="text" class="nm_kr" value="{{nm_kr.a}}"></input></td>
+				<td><input type="text" class="nm_us" value="{{nm_us.a}}"></input></td>
+				<td><input type="text" class="rank" value="{{rank}}"></input></td>
+				<td><input type="text" class="mid" value="{{mid}}"></input></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br/>
+
+<include-html>./ui_include/div/btns__update_cancel.html</include-html>
+</div>
