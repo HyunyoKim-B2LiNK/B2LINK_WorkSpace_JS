@@ -43,7 +43,9 @@ var d = {
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : NumberInt( 0 )
+		"_id" : {
+			"description" : "Unique Key, Primary Key(PK)"
+			, "exampleValue" : NumberInt( 0 )
 			, "type" : "uint", "length" : NumberInt( 0 )
 			, "minValue" : NumberInt( 0 )
 			, "maxValue" : NumberInt( 999999999 )
@@ -65,9 +67,7 @@ var d = {
 		}
 
 		//Country Code Top Level Domain;
-		, "ccTLD" : { "description" : "Country Code Top Level Domain", "exampleValue" : "123qweasd"
-			, "type" : "string", "length" : NumberInt( 0 )
-		}
+		, "ccTLD" : { "description" : "Country Code Top Level Domain", "exampleValue" : "kr", "type" : "string", "length" : NumberInt( 0 ) }
 
 		//Generic Top Level Domain;
 		, "gTLD" : { "description" : "Generic Top Level Domain", "exampleValue" : "com"
@@ -77,19 +77,13 @@ var d = {
 		}
 
 		//Country Code(Number);
-		, "c_cd_n" : { "description" : "Country Code(Number)", "exampleValue" : "410"
-			, "type" : "uint", "length" : NumberInt( 3 )
-		}
+		, "c_cd_n" : { "description" : "Country Code(Number)", "exampleValue" : "410", "type" : "string", "length" : NumberInt( 3 ) }
 
 		//Country Code(US 2);
-		, "c_cd_us2" : { "description" : "Country Code(US 2)", "exampleValue" : "KR"
-			, "type" : "uint", "length" : NumberInt( 2 )
-		}
+		, "c_cd_us2" : { "description" : "Country Code(US 2)", "exampleValue" : "KR", "type" : "string", "length" : NumberInt( 2 ) }
 
 		//Country Code(US 3);
-		, "c_cd_us3" : { "description" : "Country Code(US 3)", "exampleValue" : "KOR"
-			, "type" : "uint", "length" : NumberInt( 3 )
-		}
+		, "c_cd_us3" : { "description" : "Country Code(US 3)", "exampleValue" : "KOR", "type" : "string", "length" : NumberInt( 3 ) }
 	}
 };
 

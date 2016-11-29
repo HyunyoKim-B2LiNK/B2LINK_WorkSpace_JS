@@ -1,0 +1,71 @@
+var d = {
+
+	"_id" : "product_cateogry"
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	, "dereference" : [
+		"product.product_basic"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"product_basic"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"product"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Code of Category // Array로 수정 ?
+		, "cd_category" : { "description" : "Code of Category(unique value) ", "exampleValue" : "100000000000"
+			, "type" : "string", "length" : NumberInt( 12 )
+		}
+
+		//Product Category description_us
+		, "description" : { "description" : "Product Category Description(Default)", "exampleValue" : "남성을 위한 화장품"<include>000_common_txt/string_default.txt</include> }
+
+		//Product Category Description(CN)
+		, "description_cn" : { "description" : "Product Category Description(CN)", "exampleValue" : "남성을 위한 화장품"<include>000_common_txt/string_default.txt</include> }
+
+		//Product Category Description(KR)
+		, "description_kr" : { "description" : "Product Category Description(KR)", "exampleValue" : "남성을 위한 화장품"<include>000_common_txt/string_default.txt</include> }
+
+		//Product Category Description(US)
+		, "description_us" : { "description" : "Product Category Description(US)", "exampleValue" : "Cosmetic for man"<include>000_common_txt/string_default.txt</include> }
+
+		//Product Category Name(Default)
+		, "nm" : { "description" : "Product Name(Default)", "exampleValue" : "남자화장품"<include>000_common_txt/string_default.txt</include> }
+
+		//Product Category Name(CN)
+		, "nm_cn" : { "description" : "Product Name(CN)", "exampleValue" : ""<include>000_common_txt/string_default.txt</include> }
+
+		//Product Category Name(KR)
+		, "nm_kr" : { "description" : "Product Name(KR)", "exampleValue" : "남자화장품"<include>000_common_txt/string_default.txt</include> }
+
+		//Product Category Name(US)
+		, "nm_us" : { "description" : "Product Name(US)", "exampleValue" : "For Man"<include>000_common_txt/string_default.txt</include> }
+	}
+};
+
+//----------------------------------------------------------------------------------------------------;
+
+db.getSiblingDB( "_schema" ).category.insert( d );

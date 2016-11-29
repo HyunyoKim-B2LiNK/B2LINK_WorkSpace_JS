@@ -1,0 +1,103 @@
+var d = {
+	"_id" : "member_basic"
+
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	, "dereference" : [
+		"member.member_session"
+		, "member.member_session_log"
+		, "member.member_date"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"member_session"
+		, "member_session_log"
+		, "member_date"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"member"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"member.member_session"
+		, "member.member_session_log"
+		, "member.member_date"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"member_session"
+		, "member_session_log"
+		, "member_date"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"member"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Member ID;
+		, "mid" : <include>member/mid.json</include>
+
+		//Member Password;
+		, "mpw" : <include>member/mpw.json</include>
+
+		//Boolean Member Connection;
+		, "bConn" : { "description" : "Boolean Member Connection", "exampleValue" : NumberInt( 0 )
+			<include>000_common_txt/uint_len1.txt</include>
+			, "default" : NumberInt( 0 )
+			, "minValue" : NumberInt( 0 )
+			, "maxValue" : NumberInt( 1 )
+			, "values" : <include>100_common_json/array/array__0, 1.json</include>
+			, "valuesMap" : { "0" : NumberInt( 1 ), "1" : NumberInt( 1 ) }
+		}
+
+		//Email;
+		, "email" : <include>100_common_json/email.json</include>
+
+		//Email's ID;
+		//, "email_id" : { "description" : "Email's ID", "exampleValue" : "thdtjsdn"
+		//	, "type" : "string", "length" : 0
+		//}
+
+		//Email's Domain;
+		//, "email_domain" : { "description" : "Email's Domain", "exampleValue" : "gmail.com"
+		//	, "type" : "string", "length" : 0
+		//}
+
+		//Name(Default);
+		, "nm" : <include>member/nm.json</include>
+
+		//Name(CN);
+		, "nm_cn" : <include>member/nm_cn.json</include>
+
+		//Name(KR);
+		, "nm_kr" : <include>member/nm_kr.json</include>
+
+		//Name(US);
+		, "nm_us" : <include>member/nm_us.json</include>
+
+		//Signin(Login) 실패 횟수;
+		, "nSignInFail" : { "description" : "Signin(Login) 실패 횟수", "exampleValue" : NumberInt( 1 )
+			, "type" : "uint", "length" : NumberInt( 1 ), "default" : NumberInt( 0 )
+			, "minValue" : NumberInt( 0 )
+			, "maxValue" : NumberInt( 1 )
+			, "values" : <include>100_common_json/array/array__0, 1.json</include>
+			, "valuesMap" : { "0" : NumberInt( 1 ), "1" : NumberInt( 1 ) }
+		}
+	}
+};
+
+//----------------------------------------------------------------------------------------------------;
+
+db.getSiblingDB( "_schema" ).member.insert( d );
