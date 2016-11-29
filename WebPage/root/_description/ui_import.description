@@ -1,3 +1,32 @@
 //----------------------------------------------------------------------------------------------------;
 
+//	ui_import;
+
 //----------------------------------------------------------------------------------------------------;
+
+- ./ui, ./ui_template에서 사용 할수 있는 Component형 HTML이다.
+
+- 구성요소
+ . html
+ . js
+ . json(locale label)
+
+
+- 사용법
+	<div class="div__table">
+		<import-html class="table"
+			url_js="./ui_import/b2link_country/Table__NextPrevRoll__getAllList.js">./ui_import/b2link_country/Table__NextPrevRoll__getAllList.html</import-html>
+	</div>
+
+	<div class="div__table">
+		<import-html class="table"
+			url_js="./ui_import/b2link_country/Table__NextPrevRoll__getAllList.js"
+			url_css="./css_ui/asdasd.css">./ui_import/b2link_country/Table__NextPrevRoll__getAllList.html</import-html>
+	</div>
+
+ . <import-html></import-html> tag를 사용한다.
+ . url 절대 경로를 사용한다.
+ . 다른 도메인에 존재시 http://프록시 사용 가능
+ . 'url_js', 'url_css' Attribute를 지원한다.
+ . <import-html>'내부'</import-html> Element '내부' 띄어쓰기 줄바꿈 금지
+ . <import-html '속성'></import-html> Element '속성' 줄바꿈 가능함.
