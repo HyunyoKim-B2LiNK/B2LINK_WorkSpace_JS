@@ -10,16 +10,16 @@
 //	Description;
 //--------------------------------------------------;
 
-@ all--createDescription.***
+@ _all--createDescription.***
  - *.description 파일을 폴더 구조와 동일하게 생성해준다.
 
 
-@ all--deleteDescription.***
+@ _all--deleteDescription.***
  - createDescription.bat로 생성된 *.description 파일들을 제거한다.
  - 단 내용이 작성되어 있는 *.description 파일은 제거하지 않는다.
 
 
-@ all--deleteDescription_ignore.***
+@ _all--deleteDescription_ignore.***
  - ./이하 모든 폴더에 존재하는 *.description 파일을 제거한다.
  - 내용이 작성되어있는 파일도 무시하고 제거한다.(원본 폴더 백업 후 사용)
 
@@ -88,20 +88,3 @@
   ./less_ui/*.css
   ./css/tmp_***.css
   ./css_ui/tmp_***.css
-
-//--------------------------------------------------;
-//--------------------------------------------------;
-
-@ createJS_CodeHinting.bat
- - ./js 의 *.js들에 대한 code hint용 .js를 만든다.
- - 공식 코멘트 및 인스턴스 또는 함수명과 파라메터 인자만 복사한 파일
- - 지원되는 IDE에 한하여 codeHint.js 파일을 열어 두게 되면 source typing시 code hint를 지원 받을 수 있다.
-  . Eclipse 계열 JavaScript 전용 개발 툴들(Eclipse 계열에서 Plugin을 설치해도 가능함.)
-  . jetbrain의 webstorm, aptana, ...
-  . atom.io 계열 adobe bracket, visual studio code등
-
-@ createJS_CodeMerge.bat
- - ./js의 모든 *.js들을 하나로 합쳐준다.
- - 아직 미개발
-
-@ createJSON__Locale.bat
