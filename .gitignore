@@ -50,6 +50,9 @@ jspm_packages
 *.turtle
 *.wt
 metrics.*
+__list.json
+__listDir.json
+__listPackage.json
 node.exe
 DataBase/B2LINK/0/WiredTiger
 DataBase_Schema/B2LINK/database-insert/__list.json
