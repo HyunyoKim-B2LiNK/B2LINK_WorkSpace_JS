@@ -1,0 +1,8 @@
+[
+	"window.b2link_service_member.member_public.getAllList",
+	"window.b2link_service_member.member_public.getAllList__nm",
+	"window.b2link_service_member.member_public.getList_Range__id",
+	"window.b2link_service_member.member_public.getProp_NameFromsid",
+	"window.b2link_service_member.member_public.getProp_NameFrom_id",
+	"window.b2link_service_member.member_public.getProp_NameFrom_idFromsid"
+]

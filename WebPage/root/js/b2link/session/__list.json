@@ -1,0 +1,6 @@
+[
+	"window.b2link.session.getSession",
+	"window.b2link.session.getSession__sid",
+	"window.b2link.session.removeSession",
+	"window.b2link.session.setSession"
+]

@@ -1,0 +1,7 @@
+[
+	"window.b2link_service_list_static.country.add",
+	"window.b2link_service_list_static.country.check__Overlap",
+	"window.b2link_service_list_static.country.getAllList",
+	"window.b2link_service_list_static.country.getCount",
+	"window.b2link_service_list_static.country.getList_Range__id"
+]

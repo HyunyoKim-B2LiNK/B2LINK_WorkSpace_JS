@@ -1,0 +1,11 @@
+[
+	"window.b2link.util.importHTML",
+	"window.b2link.util.importHTMLJS",
+	"window.b2link.util.importHTMLJSCSS",
+	"window.b2link.util.importHTMLJSCSS__And_Add_b2link_STATIC_UI",
+	"window.b2link.util.importHTMLJS__And_Add_b2link_STATIC_UI",
+	"window.b2link.util.importHTMLToEl",
+	"window.b2link.util.importHTMLToEl_Cache",
+	"window.b2link.util.importHTML_Cache",
+	"window.b2link.util.importJS"
+]

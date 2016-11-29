@@ -1,0 +1,9 @@
+[
+	"window.b2link_service_list_static.email_detail.add",
+	"window.b2link_service_list_static.email_detail.check__Overlap",
+	"window.b2link_service_list_static.email_detail.getAllList",
+	"window.b2link_service_list_static.email_detail.remove_id",
+	"window.b2link_service_list_static.email_detail.remove_ids",
+	"window.b2link_service_list_static.email_detail.update_id",
+	"window.b2link_service_list_static.email_detail.update_ids"
+]

@@ -1,0 +1,7 @@
+[
+	"global.b2link_validation.product.product_basic$addDoc",
+	"global.b2link_validation.product.product_basic$remove_id",
+	"global.b2link_validation.product.product_basic$remove_ids",
+	"global.b2link_validation.product.product_basic$update_id",
+	"global.b2link_validation.product.product_basic$update_ids"
+]

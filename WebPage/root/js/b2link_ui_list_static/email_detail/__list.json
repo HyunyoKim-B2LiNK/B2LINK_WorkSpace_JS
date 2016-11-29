@@ -1,0 +1,6 @@
+[
+	"window.b2link_ui_list_static.email_detail.add",
+	"window.b2link_ui_list_static.email_detail.getAllList",
+	"window.b2link_ui_list_static.email_detail.remove",
+	"window.b2link_ui_list_static.email_detail.update"
+]
