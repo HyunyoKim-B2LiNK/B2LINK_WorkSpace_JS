@@ -1,0 +1,69 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//은행 이름 (Local)
+		, "nm" : { "description" : "은행 이름(Local)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
+			, "type" : "string", "length" : 30
+		}
+
+		//은행이름 (한국)
+		, "nm_kr" : { "description" : "은행 이름(한국)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
+			, "type" : "string", "length" : 30
+		}
+
+		//은행이름 (중문)
+		, "nm_cn" : { "description" : "은행 이름(중문)", "exampleValue" : "恆豐銀行"
+			, "type" : "string", "length" : 30
+		}
+
+		//은행이름 (영문)
+		, "nm_en" : { "description" : "은행 이름(영문)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
+			, "type" : "string", "length" : 30
+		}
+
+		//city
+		, "city" : { "description" : "도시", "exampleValue" : "HOUSTON,TX"
+			, "type" : "string", "length" : 20
+		}
+
+		//branch
+		, "branch" : { "description" : "지점", "exampleValue" : ""
+			, "type" : "string", "length" : 50
+		}
+
+		//SWIFT CODE
+		, "swift_code" : { "description" : "SWIFT CODE", "exampleValue" : "AFNBUS4H"
+			, "type" : "string", "length" : 20
+		}
+
+	}
+}
