@@ -32,27 +32,27 @@
 
 		//Postal Code 중국
 		, "postal_code" : { "description" : "Postal Code 중국", "exampleValue" : "101200"
-			, "type" : "string", "length" : 6
+			<include>000_common_txt/string_len6.txt</include>
 		}
 
 		//ADDR0
 		, "addr0" : { "description" : "ADDR0", "exampleValue" : "北京市"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//ADDR1
 		, "addr1" : { "description" : "ADDR1", "exampleValue" : "北京市"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//ADDR2
 		, "addr2" : { "description" : "ADDR2", "exampleValue" : "东城区"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//ADDR
 		, "addr" : { "description" : "ADDR", "exampleValue" : "北京市东城区"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 	}

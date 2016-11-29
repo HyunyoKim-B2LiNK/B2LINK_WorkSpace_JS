@@ -1,4 +1,7 @@
-var a = [{"nm":"中国銀行","nm_kr":"중국은행","nm_cn":"中国銀行","nm_en":"BANK OF CHINA","city":"BEIJING","branch":"(BANK OF CHINA HEAD OFFICE BATCH PAYMENT SERVICE)","swift_code":"BKCHCNBJBPS"}];
+var a = [
+	  {"nm":"中国銀行","nm_kr":"중국은행","nm_cn":"中国銀行","nm_en":"BANK OF CHINA","city":"BEIJING","branch":"(BANK OF CHINA HEAD OFFICE BATCH PAYMENT SERVICE)","swift_code":"BKCHCNBJBPS"}
+	, {"nm":"北京银行","nm_kr":"북경은행","nm_cn":"北京银行","nm_en":"BANK OF BEIJING","city":"BEIJING","branch":"(BEIJING MANAGEMENT DEPT.)","swift_code":"BJCNCNBJ021"}
+];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "list_static" );
 var io;

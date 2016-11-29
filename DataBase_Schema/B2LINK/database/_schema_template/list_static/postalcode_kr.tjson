@@ -32,27 +32,27 @@
 
 		//Postal Code 한국
 		, "postal_code" : { "description" : "Postal Code 한국", "exampleValue" : "10120"
-			, "type" : "string", "length" : 5
+			<include>000_common_txt/string_len5.txt</include>
 		}
 
 		//ADDR0
 		, "addr0" : { "description" : "ADDR0", "exampleValue" : "서울시"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//ADDR1
 		, "addr1" : { "description" : "ADDR1", "exampleValue" : "서초구"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//ADDR2
 		, "addr2" : { "description" : "ADDR2", "exampleValue" : "서초동"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//ADDR
 		, "addr" : { "description" : "ADDR", "exampleValue" : "서울시 서초구 서초동"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 	}

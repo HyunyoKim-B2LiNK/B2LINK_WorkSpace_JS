@@ -32,27 +32,27 @@
 
 		//Zip Code 한국
 		, "zip_code" : { "description" : "ZIP Code 한국", "exampleValue" : "KS013"
-			, "type" : "string", "length" : 10
+			<include>000_common_txt/string_len10.txt</include>
 		}
 
 		//주소
 		, "addr" : { "description" : "ADDR0", "exampleValue" : "서초구"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//주소(한국어)
 		, "addr_kr" : { "description" : "ADDR0", "exampleValue" : "서초구"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//주소(영어)
 		, "addr_en" : { "description" : "ADDR1", "exampleValue" : "Seocho"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//주소(중국어)
-		, "addr_cn" : { "description" : "ADDR2", "exampleValue" : ""
-			, "type" : "string", "length" : 0
+		, "addr_cn" : { "description" : "ADDR2", "exampleValue" : "瑞草区"
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 	}
