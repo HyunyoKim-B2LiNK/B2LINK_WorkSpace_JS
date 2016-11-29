@@ -1,61 +1,78 @@
 <div id="div__partner_buyer-add">
 	<form>
 		<div class="inputs">
-			<!-- 
+
+			<!--
 				파트너 등록 날짜 출력 ( 작성 당일 날짜 )
-				년, 월, 일, ( 시, 분, 초 )???
+				년, 월, 일
 			-->
 			<span>((date_regist))</span>
-			<input type="date" class="date_regist" readonly="readonly" placeholder="" required></input>
-			<!-- 
+			<input type="date" class="date_regist" readonly="readonly" required></input>
+
+			<!--
+				국가 선택
+				reference : list_static.country
+			-->
+			<span>((country))</span>
+			<select class="country" required></select>
+
+			<br/>
+
+			<!--
 				해당 파트너사를 담당하는 비투링크 멤버 선택하여 정보 불러오기
 				새창으로 열기
 				reference : member.member_public
 			-->
 			<span>파트너 담당 비투링크 멤버</span>
+			<br/>
 			<button class="">((btn__load_member))</button>
-			<!-- 
+
+			<!--
 				위에서 선택한 멤버 정보가 출력
 				: 이름, 전화번호, 이메일
 			-->
+			<br/>
 			<span>((nm)) : </span><span>{{nm}}</span>
-			<span>((phone_tel)) : </span><sp an>{{phone_tel}}</span>
+			<br/>
+			<span>((phone_tel)) : </span><span>{{phone_tel}}</span>
+			<br/>
 			<span>((email)) : </span><span>{{email}}</span>
+			<br/>
+
 			<!--
+				개발하기 - 박종하 - 20161129
 				파트너 카테고리 선택
-				reference : ???
 			-->
 			<span>((partner_category))</span>
 			<select class="partner_category" required></select>
-			<!-- 
+
+			<br/>
+
+			<!--
 				회사 이름 입력
 			-->
 			<span>((nm_kr))</span>
 			<input type="text" class="nm_kr" placeholder="회사 이름" required></input>
 			<span>((nm_us))</span>
-			<input type="text" class="nm_us" placeholder="Company Name" required></input>
+			<input type="text" class="nm_us" placeholder="Company Name(US)" required></input>
 			<span>((nm_cn))</span>
-			<input type="text" class="nm_cn" placeholder="Company Name" required></input>
-			<!-- 
+			<input type="text" class="nm_cn" placeholder="Company Name(CN)" required></input>
+
+			<!--
 				대표 이름 입력
 			-->
 			<span>((nm_ceo_kr))</span>
-			<input type="text" class="nm_ceo_kr" placeholder="First Name" required></input>
-			<input type="text" class="nm_ceo_kr" placeholder="Last Name" required></input>
+			<input type="text" class="nm_ceo_kr0" placeholder="First Name" required></input>
+			<input type="text" class="nm_ceo_kr1" placeholder="Last Name" required></input>
 			<span>((nm_ceo_us))</span>
-			<input type="text" class="nm_ceo_us" placeholder="First Name" required></input>
-			<input type="text" class="nm_ceo_us" placeholder="Last Name" required></input>
-			<input type="text" class="nm_ceo_us" placeholder="Middle Name" required></input>
+			<input type="text" class="nm_ceo_us0" placeholder="First Name" required></input>
+			<input type="text" class="nm_ceo_us1" placeholder="Last Name" required></input>
+			<input type="text" class="nm_ceo_us2" placeholder="Middle Name" required></input>
 			<span>((nm_ceo_cn))</span>
-			<input type="text" class="nm_ceo_cn" placeholder="First Name" required></input>
-			<input type="text" class="nm_ceo_cn" placeholder="Last Name" required></input>
-			<!-- 
-				국가 선택 
-				reference : list_static.country 
-			-->
-			<span>((country))</span>
-			<select class="country" required></select>
-			<!-- 
+			<input type="text" class="nm_ceo_cn0" placeholder="First Name" required></input>
+			<input type="text" class="nm_ceo_cn1" placeholder="Last Name" required></input>
+
+			<!--
 				주소 입력
 			-->
 			<span>((address_kr))</span>
@@ -64,47 +81,74 @@
 			<input type="text" class="address_us" placeholder="Address" required></input>
 			<span>((address_cn))</span>
 			<input type="text" class="address_cn" placeholder="Address" required></input>
-			<!-- 
-				사업자등록번호 입력 
+
+			<!--
+				사업자등록번호 입력
 			-->
 			<span>((company_registration_number))</span>
-			<input type="number" class="company_registration_number" placeholder="" required></input>
-			<!-- 
+			<input class="company_registration_number" placeholder="111-1111-1111" required></input>
+
+			<!--
 				대표 전화번호 입력
 				+82-2-1899-0534
-				+2자리-1자리-4자리-4자리 
-				숫자 입력하면 자동으로 - 생성 
 			-->
 			<span>((phone_tel))</span>
-			<input type="tel" class="phone_tel" placeholder="tel" required></input>
-			<!-- 
+			<section>
+				<input type="tel" class="phone_tel0" placeholder="+82" required></input>
+				<span>-</span>
+				<input type="tel" class="phone_tel1" placeholder="2" required></input>
+				<span>-</span>
+				<input type="tel" class="phone_tel2" placeholder="1234" required></input>
+				<span>-</span>
+				<input type="tel" class="phone_tel3" placeholder="5678" required></input>
+			</section>
+
+			<!--
 				Fax 입력
 				+82-2-1899-0534
-				+2자리-1자리-4자리-4자리 
-				숫자 입력하면 자동으로 - 생성 
 			-->
 			<span>((phone_fax))</span>
-			<input type="tel" class="phone_fax" placeholder="fax" required></input>
-			<!-- 
+			<section>
+				<input type="tel" class="phone_fax0" placeholder="+82" required></input>
+				<span>-</span>
+				<input type="tel" class="phone_fax1" placeholder="2" required></input>
+				<span>-</span>
+				<input type="tel" class="phone_fax2" placeholder="1234" required></input>
+				<span>-</span>
+				<input type="tel" class="phone_fax3" placeholder="5678" required></input>
+			</section>
+
+			<!--
 				회사 전자메일 입력
 			-->
 			<span>((email))</span>
-			<input type="email" class="email" placeholder="email" required></input>
-			<!-- 
+			<section>
+				<input class="email_f" placeholder="qweasdzxc" required></input>
+				<span>@</span>
+				<input class="email_e" placeholder="b2link.co.kr" required></input>
+			</section>
+
+			<!--
 				웹사이트 url 입력
 				Validation : 영어, 숫자로만 입력되게 js로 체크
 			-->
 			<span>((url))</span>
-			<input type="text" class="url" placeholder="website url" required></input>
-			<!-- 
+			<input type="text" class="url" placeholder="http://www.b2link.co.kr" required></input>
+
+			<!--
 				회사 설명 입력
 			-->
 			<span>((description_kr))</span>
+			<br/>
 			<textarea class="description_kr" placeholder="회사 설명" required></textarea>
+			<br/>
 			<span>((description_us))</span>
-			<textarea class="description_us" placeholder="description" required></textarea>
+			<br/>
+			<textarea class="description_us" placeholder="Description(US)" required></textarea>
+			<br/>
 			<span>((description_cn))</span>
-			<textarea class="description_cn" placeholder="description" required></textarea>
+			<br/>
+			<textarea class="description_cn" placeholder="Description(CN)" required></textarea>
 		</div>
 	</form>
 
