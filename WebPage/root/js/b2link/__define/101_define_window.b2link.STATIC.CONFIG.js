@@ -53,6 +53,7 @@ $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_COUNTRY = _ + "b2link_country/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_EMAIL_DETAIL = _ + "b2link_email_detail/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MASHUP = _ + "b2link_mashup/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MEMBER = _ + "b2link_member/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_BUYER = _ + "b2link_partner_buyer/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODUCT_BASIC = _ + "b2link_product_basic/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCM = _ + "b2link_scm/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_SCRAP = _ + "b2link_scrap/";

@@ -1,0 +1,147 @@
+<div id="div__request_for_provision_estimate_sale">
+	<h1>판매 가견적 요청서</h1>
+	<form>
+		<div class="inputs">
+
+			<!-- 
+				판매 가견적 요청서 등록 날짜 출력 ( 작성 당일 날짜 )
+				년, 월, 일, ( 시, 분, 초 )???
+			-->
+			<span>((date_regist))</span>
+			<br/>
+			<input type="date" class="date_regist" readonly="readonly" placeholder=""></input>
+
+			<!-- 
+				작성자 : 현재 로그인 된 비투링크 멤버 정보 출력
+				reference : member.member_public 
+				: 이름, 전화번호, 이메일
+			-->
+			<span>작성자</span>
+			<br/>
+			<span>((nm))</span><span>{{nm}}</span>
+			<br/>
+			<span>((phone_tel))</span><span>{{phone_tel}}</span>
+			<br/>
+			<span>((email))</span><span>{{email}}</span>
+
+			<!-- 
+				가견적을 요청하는 파트너사, 업체 담당자 선택하여 정보 불러오기
+				새창으로 열기
+				reference : 
+			-->
+			<button class="btn__load_partner_buyer">((btn__load_partner_buyer))</button>
+
+			<!-- 
+				위에서 선택한 파트너사, 업체 담당자 정보가 출력
+				: 파트너 이름, 주소, 전화번호, 팩스
+				  파트너담당자 이름, 전화번호, 메신저, 이메일
+			-->
+			<table>
+				<thead>
+					<tr>
+						<!--
+							업체 정보
+						-->
+						<th>((th__nm))</th>
+						<th>((th__address))</th>
+						<th>((th__phone_tel))</th>
+						<th>((th__phone_fax))</th>
+						<!--
+							업체 담당자 정보
+						-->
+						<th>((th__nm))</th>
+						<th>((th__phone))</th>
+						<!--
+							수정하기 - 김찬미, 박종하 - 20161129
+							메신저 다양성 고려
+						-->
+						<th>((th__msg))</th>
+						<th>((th__email))</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{nm.a}}</td>
+						<td>{{address}}</td>
+						<td>{{phone_tel}}</td>
+						<td>{{phone_fax}}</td>
+
+						<td>{{userInfo.NAME}}</td>
+						<td>{{userInfo.PHONE}}</td>
+						<td>{{userInfo.MSG}}</td>
+						<td>{{userInfo.EMAIL}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 
+				상품을 선택하여 정보 불러오기
+				새창으로 열기
+				reference : 
+			-->
+			<button class="btn__load_product_info">((btn__load_product_info))</button>
+
+			<!-- 
+				위에서 선택한 상품 정보가 출력
+				: 브랜드이름, 상품이름
+			-->
+
+			<!--
+				요청 수량 입력
+			-->
+			<span>((quantity))</span>
+			<input type="number" class="quantity" placeholder="0" required></input>
+			
+			<!--
+				수량 단위 선택
+			-->
+			<span>((unit))</span>
+			<select class="unit" required></select>
+			<!--
+				옵션
+				희망 납기일 선택
+			-->
+			<span>(())</span>
+			<input type="date" class=""></input>
+			<!--
+				옵션
+				배송 주소 선택하여 정보 불러오기
+				새창으로 열기
+				reference : 
+			-->
+			<button class="">((btn__load_partner_buyer))</button>
+			<!-- 
+				위에서 선택한 배송 주소 출력
+			-->
+
+			<!--
+				옵션
+				거래 조건 선택 (FOB, CIF, EXW, DDP)
+			-->
+			<span>(())</span>
+			<select class=""></select>
+			<!--
+				옵션
+				배송 방법 선택 (항공, 해운, 택배, 퀵, 용달)
+			-->
+			<span>(())</span>
+			<select class=""></select>
+			<!-- 
+				옵션
+				배송비 결제 방법 선택
+			-->
+			<span>(())</span>
+			<select class=""></select>
+			<!--
+				옵션
+				메모 입력
+			-->
+			<span>((memo))</span>
+			<textarea class="memo"></textarea>
+		</div>
+	</form>
+
+	<br/>
+<!-- 가견적 요청하기 버튼 클릭 -> 작성 내용 다시 보여주기 -> 가견적 요청하기 버튼 -->
+<include-html>./ui_include/div/btns__checkOverlap_add_cancel.html</include-html>
+</div>

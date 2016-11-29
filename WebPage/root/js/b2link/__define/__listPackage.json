@@ -1,0 +1,21 @@
+[
+	"common",
+	"console",
+	"date",
+	"dom",
+	"element",
+	"el_input",
+	"el_tbody",
+	"fn",
+	"html",
+	"log",
+	"math",
+	"obj",
+	"service",
+	"session",
+	"ui",
+	"ui_resource",
+	"url",
+	"util",
+	"xhr"
+]

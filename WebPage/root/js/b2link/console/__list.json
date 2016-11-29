@@ -1,0 +1,8 @@
+[
+	"window.b2link.console.getMemory",
+	"window.b2link.console.initialize",
+	"window.b2link.console.nameAndObject",
+	"window.b2link.console.objInfo",
+	"window.b2link.console.objStyle_BottomLeftRightTop",
+	"window.b2link.console.objStyle_LeftTopRightBottom"
+]

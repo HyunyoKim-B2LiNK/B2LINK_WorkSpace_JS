@@ -1,0 +1,23 @@
+[
+	"window.b2link.element.appendChild",
+	"window.b2link.element.getElementByClassName",
+	"window.b2link.element.hide",
+	"window.b2link.element.mouseDisable",
+	"window.b2link.element.mouseDisable__ID",
+	"window.b2link.element.mouseEnable",
+	"window.b2link.element.mouseEnable__ID",
+	"window.b2link.element.removeChildFromParentElement",
+	"window.b2link.element.setClassName__tbody_tr_td",
+	"window.b2link.element.setClassName__tbody_tr_th",
+	"window.b2link.element.setPosition_CenterMiddle_FromParent",
+	"window.b2link.element.setPosition_CenterMiddle_FromParent__NMinus",
+	"window.b2link.element.setPosition_CenterMiddle_FromWindow",
+	"window.b2link.element.setPosition_CenterMiddle_FromWindow__NMinus",
+	"window.b2link.element.setPosition_Center_FromParent",
+	"window.b2link.element.setPosition_Center_FromWindow",
+	"window.b2link.element.setPosition_LeftBottom",
+	"window.b2link.element.setPosition_LeftTop",
+	"window.b2link.element.setPosition_RightBottom",
+	"window.b2link.element.setPosition_RightTop",
+	"window.b2link.element.show"
+]

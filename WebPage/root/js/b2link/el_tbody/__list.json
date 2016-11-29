@@ -1,0 +1,18 @@
+[
+	"window.b2link.el_tbody.change_tbody_child",
+	"window.b2link.el_tbody.getInputFromTBody_CheckBoxSelected",
+	"window.b2link.el_tbody.getInputValueFromTBody_CheckBoxSelected",
+	"window.b2link.el_tbody.getInputValueFromTR",
+	"window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected",
+	"window.b2link.el_tbody.getTDFromTBody_CheckBoxSelected",
+	"window.b2link.el_tbody.getTD_innerHTML__FirstTRFirstTD",
+	"window.b2link.el_tbody.getTD_innerHTML__LastTRFirstTD",
+	"window.b2link.el_tbody.getTD_innerText_Int__FirstTRFirstTD",
+	"window.b2link.el_tbody.getTD_innerText_Int__LastTRFirstTD",
+	"window.b2link.el_tbody.getTD_innerText__FirstTRFirstTD",
+	"window.b2link.el_tbody.getTD_innerText__LastTRFirstTD",
+	"window.b2link.el_tbody.getTD__FirstTRFirstTD",
+	"window.b2link.el_tbody.getTD__LastTRFirstTD",
+	"window.b2link.el_tbody.push_tbody_child",
+	"window.b2link.el_tbody.unshift_tbody_child"
+]
