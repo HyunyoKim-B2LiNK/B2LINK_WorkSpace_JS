@@ -43,7 +43,7 @@
 		"_id" : <include>100_common_json/_id.json</include>
 
 		//Partner_Delivery Country Code
-		, "_id$country" : <include>partner/_id$country.json</include>
+		, "_id$country" : <include>list_static/country/_id$country.json</include>
 
 		//Member ID Collection
 		, "_ids$member" : <include>partner/_ids$member.json</include>

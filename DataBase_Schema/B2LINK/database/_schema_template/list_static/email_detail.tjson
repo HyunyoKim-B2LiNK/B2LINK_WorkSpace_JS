@@ -48,30 +48,22 @@
 		}
 
 		//Country Code Top Level Domain;
-		, "ccTLD" : { "description" : "Country Code Top Level Domain", "exampleValue" : "123qweasd"
-			, "type" : "string", "length" : 0
-		}
+		, "ccTLD" : { "description" : "Country Code Top Level Domain", "exampleValue" : "kr"<include>000_common_txt/string_default.txt</include> }
 
 		//Generic Top Level Domain;
 		, "gTLD" : { "description" : "Generic Top Level Domain", "exampleValue" : "com"
-			, "type" : "string", "length" : 0
+			<include>000_common_txt/string_default.txt</include>
 			, "values" : [ "com", "net", "org" ]
 			, "valuesMap" : { "com" : 1, "net" : 1, "org" : 1 }
 		}
 
 		//Country Code(Number);
-		, "c_cd_n" : { "description" : "Country Code(Number)", "exampleValue" : "410"
-			, "type" : "uint", "length" : 3
-		}
+		, "c_cd_n" : { "description" : "Country Code(Number)", "exampleValue" : "410"<include>000_common_txt/uint_len3.txt</include> }
 
 		//Country Code(US 2);
-		, "c_cd_us2" : { "description" : "Country Code(US 2)", "exampleValue" : "KR"
-			, "type" : "uint", "length" : 2
-		}
+		, "c_cd_us2" : { "description" : "Country Code(US 2)", "exampleValue" : "KR"<include>000_common_txt/string_len2.txt</include> }
 
 		//Country Code(US 3);
-		, "c_cd_us3" : { "description" : "Country Code(US 3)", "exampleValue" : "KOR"
-			, "type" : "uint", "length" : 3
-		}
+		, "c_cd_us3" : { "description" : "Country Code(US 3)", "exampleValue" : "KOR"<include>000_common_txt/string_len3.txt</include> }
 	}
 }

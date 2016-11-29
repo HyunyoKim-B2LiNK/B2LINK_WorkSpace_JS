@@ -2,7 +2,7 @@ var a = [
 	{
 		"_id$member" : NumberInt( 0 )
 		, "_id$title" : NumberInt( 0 )
-		, "date_regist" : [ NumberInt(2016), NumberInt(0), NumberInt(27), NumberInt(12), NumberInt(20), NumberInt(30) ]
+		, "date_regist" : [ NumberInt( 2016 ), NumberInt( 0 ), NumberInt( 27 ), NumberInt( 12 ), NumberInt( 20 ), NumberInt( 30 ) ]
 		, "description" : "대표"
 		, "description_kr" : "대표"
 		, "description_cn" : "대표"
@@ -21,7 +21,7 @@ var a = [
 	, {
 		"_id$member" : NumberInt( 0 )
 		, "_id$title" : NumberInt( 0 )
-		, "date_regist" : [ NumberInt(2016), NumberInt(0), NumberInt(27), NumberInt(12), NumberInt(20), NumberInt(30) ]
+		, "date_regist" : [ NumberInt( 2016 ), NumberInt( 0 ), NumberInt( 27 ), NumberInt( 12 ), NumberInt( 20 ), NumberInt( 30 ) ]
 		, "description" : "대표"
 		, "description_kr" : "대표"
 		, "description_cn" : "대표"

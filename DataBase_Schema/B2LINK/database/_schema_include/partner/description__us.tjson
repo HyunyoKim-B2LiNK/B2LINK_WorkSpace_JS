@@ -1,4 +1,4 @@
 {
 	"description" : "Partner Description(US)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
-	, "type" : "string", "length" : 0
+		<include>000_common_txt/string_default.txt</include>
 }

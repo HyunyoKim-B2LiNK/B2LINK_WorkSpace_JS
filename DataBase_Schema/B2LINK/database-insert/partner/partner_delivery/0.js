@@ -12,7 +12,7 @@ var a = [
 
 		, "company_registration_number" : "1234586789"
 
-		, "date_regist" : [ NumberInt(2016), NumberInt(0), NumberInt(27), NumberInt(12), NumberInt(20), NumberInt(30) ]
+		, "date_regist" : [ NumberInt( 2016 ), NumberInt( 0 ), NumberInt( 27 ), NumberInt( 12 ), NumberInt( 20 ), NumberInt( 30 ) ]
 		, "description" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
 		, "description_kr" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
 		, "description_cn" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
@@ -46,7 +46,7 @@ var a = [
 
 		, "company_registration_number" : "1234582389"
 
-		, "date_regist" : [ NumberInt(2016), NumberInt(0), NumberInt(27), NumberInt(12), NumberInt(20), NumberInt(30) ]
+		, "date_regist" : [ NumberInt( 2016 ), NumberInt( 0 ), NumberInt( 27 ), NumberInt( 12 ), NumberInt( 20 ), NumberInt( 30 ) ]
 
 		, "description" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
 		, "description_kr" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
