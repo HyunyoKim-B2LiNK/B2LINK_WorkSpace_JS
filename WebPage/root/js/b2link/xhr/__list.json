@@ -1,6 +1,5 @@
 [
 	"window.b2link.xhr.req",
-	"window.b2link.xhr.req2",
 	"window.b2link.xhr.reqSync",
 	"window.b2link.xhr.reqSyncReturn",
 	"window.b2link.xhr.reqSync_JSON",

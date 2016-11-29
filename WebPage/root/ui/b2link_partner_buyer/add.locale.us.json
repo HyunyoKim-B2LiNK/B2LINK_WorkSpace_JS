@@ -1,0 +1,16 @@
+{
+	"description" : "Description"
+	, "nm_cn" : "Name(CN)"
+	, "nm_kr" : "Name(KR)"
+	, "nm_us" : "Name(US)"
+
+	, "nm_register" : "Register"
+
+	, "url" : "URL"
+	, "url_logo" : "Logo URL"
+	, "url_trademark" : "Tradmark URL"
+
+	, "btn__overlap_check" : "Overlap Check"
+	, "btn__add" : "Add"
+	, "btn__cancel" : "Cancel"
+}

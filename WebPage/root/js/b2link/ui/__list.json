@@ -13,8 +13,6 @@
 	"window.b2link.ui.getObject_Element_IDFromParentElement__Input",
 	"window.b2link.ui.getObject_IDAndValueFromParentElement__Input",
 	"window.b2link.ui.staticUIMap_Add",
-	"window.b2link.ui.staticUIMap_AllHide",
-	"window.b2link.ui.staticUIMap_AllShow",
 	"window.b2link.ui.staticUIMap_checkObject",
 	"window.b2link.ui.staticUIMap_Remove",
 	"window.b2link.ui.__getFileNM_CSS",

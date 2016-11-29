@@ -18,10 +18,8 @@ window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input = function(
 	var i=0, iLen=a.length;
 	for( ; i<iLen; ++i )
 	{
-
 		io = a[ i ];
 		if( "INPUT" == io.tagName ) r[ io.className ] = io.value;
-
 	}
 
 	window.TtwLog.timeStamp( "---- [ E ] - window.b2link.ui.getObject_ClassNameAndValueFromParentElement__Input():{Object}----------" );

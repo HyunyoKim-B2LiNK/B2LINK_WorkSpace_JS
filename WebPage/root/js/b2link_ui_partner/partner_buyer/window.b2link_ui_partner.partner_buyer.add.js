@@ -11,7 +11,7 @@ window.b2link_ui_partner.partner_buyer.add = function()
 {
 	window.RayLog.timeStamp( "---- [ S ] - window.b2link_ui_partner.partner_buyer.add():{Array}----------" );
 	var d = {
-		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_partner_buyer
+		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_BUYER
 		, nm : "add"
 		, css_url : "./css_ui/"
 		, css_front_nm : "div__partner_buyer-"
