@@ -1,0 +1,21 @@
+{
+	"th___check" : "선택"
+	, "th___id" : "번호"
+
+	, "th__nm_cn" : "이름(중문)"
+	, "th__nm_kr" : "이름(한글)"
+	, "th__nm_us" : "이름(영문)"
+
+	, "th__url" : "홈페이지"
+	, "th__url_logo" : "로고 파일"
+	, "th__url_trademark" : "상표등록증"
+
+	, "th__date_regist" : "등록일"
+
+	, "th___id$member_public" : "등록자"
+
+	, "th__description" : "상세 설명"
+
+	, "btn__cancel" : "취소"
+	, "btn__update" : "수정"
+}
