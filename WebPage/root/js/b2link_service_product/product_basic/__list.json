@@ -1,0 +1,9 @@
+[
+	"window.b2link_service_product.product_basic.add",
+	"window.b2link_service_product.product_basic.getAllList",
+	"window.b2link_service_product.product_basic.joinCol__getAllList",
+	"window.b2link_service_product.product_basic.remove_id",
+	"window.b2link_service_product.product_basic.remove_ids",
+	"window.b2link_service_product.product_basic.update_id",
+	"window.b2link_service_product.product_basic.update_ids"
+]

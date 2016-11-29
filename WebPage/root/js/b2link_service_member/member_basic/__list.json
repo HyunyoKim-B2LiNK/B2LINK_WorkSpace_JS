@@ -1,0 +1,10 @@
+[
+	"window.b2link_service_member.member_basic.getAllList",
+	"window.b2link_service_member.member_basic.getAllList__nm",
+	"window.b2link_service_member.member_basic.remove_id",
+	"window.b2link_service_member.member_basic.remove_ids",
+	"window.b2link_service_member.member_basic.remove_ids__AllCols",
+	"window.b2link_service_member.member_basic.remove_id__AllCols",
+	"window.b2link_service_member.member_basic.update_id",
+	"window.b2link_service_member.member_basic.update_ids"
+]

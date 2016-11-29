@@ -1,0 +1,7 @@
+[
+	"window.b2link_ui_product.product_basic.add",
+	"window.b2link_ui_product.product_basic.getAllList",
+	"window.b2link_ui_product.product_basic.joinCol__getAllList",
+	"window.b2link_ui_product.product_basic.remove",
+	"window.b2link_ui_product.product_basic.update"
+]

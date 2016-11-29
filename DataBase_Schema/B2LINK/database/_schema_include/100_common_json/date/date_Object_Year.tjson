@@ -1,6 +1,6 @@
 {
-	"description" : "Date - Year", "exampleValue" : "2016"
-	<include>000_common_txt/string_len4.txt</include>
+	"description" : "Date - Year", "exampleValue" : 2016
+	<include>000_common_txt/uint_len4.txt</include>
 	, "minValue" : 1900
 	, "maxValue" : 3000
 }
