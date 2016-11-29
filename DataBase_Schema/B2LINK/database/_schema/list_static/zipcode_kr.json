@@ -1,0 +1,48 @@
+{
+	"dereference": [],
+	"dereference_collection": [],
+	"dereference_database": [],
+	"reference": [],
+	"reference_collection": [],
+	"reference_database": [],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"zip_code": {
+			"description": "ZIP Code 한국",
+			"exampleValue": "KS013",
+			"type": "string",
+			"length": 10
+		},
+		"addr": {
+			"description": "ADDR0",
+			"exampleValue": "서초구",
+			"type": "string",
+			"length": 0
+		},
+		"addr_kr": {
+			"description": "ADDR0",
+			"exampleValue": "서초구",
+			"type": "string",
+			"length": 0
+		},
+		"addr_en": {
+			"description": "ADDR1",
+			"exampleValue": "Seocho",
+			"type": "string",
+			"length": 0
+		},
+		"addr_cn": {
+			"description": "ADDR2",
+			"exampleValue": "瑞草区",
+			"type": "string",
+			"length": 0
+		}
+	}
+}

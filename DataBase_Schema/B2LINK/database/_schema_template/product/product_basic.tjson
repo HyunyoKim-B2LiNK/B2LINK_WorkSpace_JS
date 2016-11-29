@@ -67,7 +67,7 @@
 		, "description_us" : { "description" : "Product Description(US)", "exampleValue" : "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"<include>000_common_txt/string_default.txt</include> }
 
 		//Boolean Has MSDS
-		, "msds" : { "description" : "Boolean Has MSDS", <include>000_common_txt/boolean.txt</include> }
+		, "msds" : { "description" : "Boolean Has MSDS"<include>000_common_txt/boolean.txt</include> }
 
 		//Product Name(Default)
 		, "nm" : { "description" : "Product Name(Default)", "exampleValue" : "비투링크"<include>000_common_txt/string_default.txt</include> }

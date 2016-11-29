@@ -9,5 +9,5 @@ var i=0, iLen=a.length;
 for( ; i<iLen; ++i ){
 	var io = a[ i ];
 		io._id = NumberInt( i );
-	db0.bank_swift_en.insert( io );
+	db0.bank_swift_us.insert( io );
 };

@@ -1,0 +1,60 @@
+{
+	"dereference": [],
+	"dereference_collection": [],
+	"dereference_database": [],
+	"reference": [],
+	"reference_collection": [],
+	"reference_database": [],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"nm": {
+			"description": "은행 이름(Local)",
+			"exampleValue": "AMERICAN FIRST NATIONAL BANK",
+			"type": "string",
+			"length": 30
+		},
+		"nm_kr": {
+			"description": "은행 이름(한국)",
+			"exampleValue": "AMERICAN FIRST NATIONAL BANK",
+			"type": "string",
+			"length": 30
+		},
+		"nm_cn": {
+			"description": "은행 이름(중문)",
+			"exampleValue": "恆豐銀行",
+			"type": "string",
+			"length": 30
+		},
+		"nm_en": {
+			"description": "은행 이름(영문)",
+			"exampleValue": "AMERICAN FIRST NATIONAL BANK",
+			"type": "string",
+			"length": 30
+		},
+		"city": {
+			"description": "도시",
+			"exampleValue": "HOUSTON,TX",
+			"type": "string",
+			"length": 30
+		},
+		"branch": {
+			"description": "지점",
+			"exampleValue": "",
+			"type": "string",
+			"length": 50
+		},
+		"swift_code": {
+			"description": "SWIFT CODE",
+			"exampleValue": "AFNBUS4H",
+			"type": "string",
+			"length": 30
+		}
+	}
+}

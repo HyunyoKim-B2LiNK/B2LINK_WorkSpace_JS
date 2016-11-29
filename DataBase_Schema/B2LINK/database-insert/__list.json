@@ -5,7 +5,5 @@
 	"member",
 	"partner",
 	"product",
-	"_schema",
-	"_schema_include",
-	"_schema_template"
+	"_schema"
 ]

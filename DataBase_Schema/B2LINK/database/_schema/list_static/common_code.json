@@ -1,0 +1,65 @@
+{
+	"dereference": [],
+	"dereference_collection": [],
+	"dereference_database": [],
+	"reference": [],
+	"reference_collection": [],
+	"reference_database": [],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"code0": {
+			"description": "CODE0",
+			"exampleValue": 1000,
+			"type": "uint",
+			"length": 4
+		},
+		"code1": {
+			"description": "CODE1",
+			"exampleValue": 1000,
+			"type": "uint",
+			"length": 4
+		},
+		"code2": {
+			"description": "CODE2",
+			"exampleValue": 1000,
+			"type": "uint",
+			"length": 4
+		},
+		"code": {
+			"description": "CODE",
+			"exampleValue": "100010001000",
+			"type": "string",
+			"length": 12
+		},
+		"desc": {
+			"description": "Description",
+			"exampleValue": "카테고리관리",
+			"type": "string",
+			"length": 0
+		},
+		"bUse": {
+			"description": "사용여부",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 1,
+			"default": 0,
+			"minValue": 0,
+			"maxValue": 1,
+			"values": [
+				0,
+				1
+			],
+			"valuesMap": {
+				"0": 0,
+				"1": 1
+			}
+		}
+	}
+}
