@@ -1,0 +1,138 @@
+<div class="window" id="div_1__member_profile_status" style="top: 100px; left: 10px; right: 10px; bottom: 10px; position:absolute;">
+
+    
+    
+    <div class="head">
+        <div class="left">Member Profile</div>
+        <div class="right">
+            <!--
+            <a href="javascript:alert("plus");"><i class="icon-plus"></i></a>
+            <a href="javascript:alert("search");"><i class="icon-search"></i></a>
+            -->
+            <a href="#" class="close"><i class="icon-close"></i></a>
+        </div>
+    </div>
+    
+    
+    
+    <div class="body">
+        <section id="page-title">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1 class="mainTitle" translate="sidebar.nav.pages.USERPROFILE">{{ mainTitle }}</h1>
+                    <span class="mainDescription">There are many systems which have a need for user profile pages which display personal information on each member.</span>
+                </div>
+                <div ncy-breadcrumb></div>
+            </div>
+        </section>
+        
+        
+        
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th colspan="3">Contact Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>name</td>
+                    <td><a href="#">{{userInfo.NAME}}</a></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td><a href="#">{{userInfo.EMAIL}}</a></td>
+                </tr>
+                <tr>
+                    <td>phone</td>
+                    <td>{{userInfo.PHONE | phone}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th colspan="3">General information</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr ng-if="userInfo.ROLE == 'vendor' || userInfo.ROLE == 'brand'">
+                    <td>Business Registration Number</td>
+                    <td>{{userInfo.B_NUM}}</td>
+                </tr>
+                <tr ng-if="userInfo.ROLE == 'vendor' || userInfo.ROLE == 'brand'">
+                    <td>company</td>
+                    <td>{{userInfo.B_NAME}}</td>
+                </tr>
+                <tr ng-if="userInfo.ROLE == 'vendor' || userInfo.ROLE == 'brand'">
+                    <td>company tel</td>
+                    <td>{{userInfo.B_TEL | phone}}</td>
+                </tr>
+                <tr ng-if="userInfo.ROLE == 'vendor' || userInfo.ROLE == 'brand'">
+                    <td>company fax</td>
+                    <td>{{userInfo.B_FAX | phone}}</td>
+                </tr>
+                <tr ng-if="userInfo.ROLE == 'vendor' || userInfo.ROLE == 'brand'">
+                    <td>company addr</td>
+                    <td>{{userInfo.B_ADDR}}</td>
+                </tr>
+
+                <tr>
+                    <td>Position</td>
+                    <td>{{userInfo.B_PART}}</td>
+                </tr>
+                <tr>
+                    <td>Last Logged In</td>
+                    <td>{{userInfo.L_DT}}</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td><span class="label label-sm label-info">{{userInfo.ROLE}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th colspan="3">Additional information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>login count</td>
+                    <td>{{userInfo.L_CNT | number}}</td>
+                </tr>
+                <tr>
+                    <td>confirm date</td>
+                    <td>{{userInfo.U_ST_DT}}</td>
+                </tr>
+                <tr>
+                    <td>use last date</td>
+                    <td>{{userInfo.U_ED_DT}}</td>
+                </tr>
+                <tr>
+                    <td>use update date</td>
+                    <td>{{userInfo.U_REQ_DT}}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="col-md-8">
+            <div class="panel panel-white" id="activities">
+                <h4 class="panel-title text-primary center">UI 회의중</h4>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="foot">
+        <a href="#" class="btn focus" id="btn__member_session$checkSession__Sign_In" type="button">Sign In</a>
+        <a href="#" class="btn" id="btn__member_session$checkSession__Cancle">Cancle</a>
+    </div>
+
+
+    
+<div>

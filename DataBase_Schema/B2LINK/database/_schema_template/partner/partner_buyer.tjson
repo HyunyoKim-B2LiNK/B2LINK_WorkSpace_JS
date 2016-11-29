@@ -1,0 +1,133 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"contract.contract_basic"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"contract_basic"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"contract"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"list_static.country"
+		,"member.member_public"
+		,"partner.partner_person"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"country"
+		,"member_public"
+		,"partner_person"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"list_static"
+		,"member"
+		,"partner"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Partner_Buyer Country Code
+		, "_id$country" : <include>list_static/country/_id$country.json</include>
+
+		//Member ID Collection
+		, "_ids$member" : <include>partner/_ids$member.json</include>
+
+		//Partner_Buyer Manger Person ID
+		, "_id$partner_person" : <include>partner/_id$partner_person.json</include>
+
+		//Partner_Buyer  Address(Default)
+		, "address" : <include>partner/address.json</include>
+
+		//Partner_Buyer  Address(CN)
+		, "address_cn" : <include>partner/address__cn.json</include>
+
+		//Partner_Buyer  Address(KR)
+		, "address_kr" : <include>partner/address__kr.json</include>
+
+		//Partner_Buyer  Address(US)
+		, "address_us" : <include>partner/address__us.json</include>
+
+		//Company Registration Number
+		, "company_registration_number " : <include>partner/company_registration_number.json</include>
+
+		//Register Date
+		, "date_regist" : { "description" : "Register Date"
+			<include>000_common_txt/date/date__Array__YMD_HoMiSe.txt</include>
+		}
+
+		//Partner_Buyer Description
+		, "description" : <include>partner/description.json</include>
+
+		//Partner_Buyer Description(CN)
+		, "description_cn" : <include>partner/description__cn.json</include>
+
+		//Partner_Buyer Description(KR)
+		, "description_kr" : <include>partner/description__kr.json</include>
+
+		//Partner_Buyer Description(US)
+		, "description_us" : <include>partner/description__us.json</include>
+
+		//Partner_Buyer Email
+		, "email" : <include>100_common_json/email.json</include>
+
+		//Partner_Buyer Name(Default)
+		, "nm" : <include>100_common_json/name/nm.json</include>
+
+		//Partner_Buyer Name(CN)
+		, "nm_cn" : <include>100_common_json/name/nm__cn.json</include>
+
+		//Partner_Buyer Name(KR)
+		, "nm_kr" : <include>100_common_json/name/nm__kr.json</include>
+
+		//Partner_Buyer Name(US)
+		, "nm_us" : <include>100_common_json/name/nm__us.json</include>
+
+		//Partner_Buyer CEO Name(Default)
+		, "nm_ceo" : { "description" : "CEO Name(Default)"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/name_person/nm__default.json</include>
+		}
+
+		//Partner_Buyer  CEO Name(CN)
+		, "nm_ceo_cn" : { "description" : "CEO Name(CN)"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/name_person/nm__cn.json</include>
+		}
+
+		//Partner_Buyer  CEO Name(KR)
+		, "nm_ceo_kr" : { "description" : "CEO Name(KR)"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/name_person/nm__kr.json</include>
+		}
+
+		//Partner_Buyer  CEO Name(US)
+		, "nm_ceo_us" : { "description" : "CEO Name(US)"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/name_person/nm__us.json</include>
+		}
+		//Partner_Buyer Fax Number
+		, "phone_fax" : <include>100_common_json/contact/phone__fax.json</include>
+
+		//Partner_Buyer Telephone Number
+		, "phone_tel" : <include>100_common_json/contact/phone__tel.json</include>
+
+		//Partner_Buyer Homepage URL
+		, "url" : <include>100_common_json/contact/url.json</include>
+	}
+}

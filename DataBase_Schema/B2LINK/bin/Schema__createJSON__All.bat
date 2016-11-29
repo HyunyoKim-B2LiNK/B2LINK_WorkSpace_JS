@@ -1,3 +1,0 @@
-call Schema__createJSON__IncludeTemplateToInclude.bat
-
-call Schema__createJSON__FromTemplate.bat

@@ -1,0 +1,22 @@
+<div id="div__email_detail-update">
+	<H1> Update </H1>
+	<table>
+<include-html>./ui_include/b2link_email_detail/thead__checkAllList.html</include-html>
+
+		<tbody class="tbody">
+			<tr>
+<include-html>./ui_include/td/input_check___id.html</include-html>
+<include-html>./ui_include/td/_id.html</include-html>
+				<td><input type="text" class="SLD" value="{{SLD}}"></input></td>
+				<td><input type="text" class="TLD" value="{{TLD}}"></input></td>
+				<td><input type="text" class="ccTLD" value="{{ccTLD}}"></input></td>
+				<td><input type="text" class="gTLD" value="{{gTLD}}"></input></td>
+				<td><input type="text" class="c" value="{{c}}"></input></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br/>
+
+<include-html>./ui_include/div/btns__update_cancel.html</include-html>
+</div>

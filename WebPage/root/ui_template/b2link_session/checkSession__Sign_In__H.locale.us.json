@@ -1,0 +1,10 @@
+{
+	"member_id" : "ID"
+	, "email_or_id" : "Email or ID"
+
+	, "member_pw" : "PW"
+	, "pw" : "Password"
+
+	, "btn__signin" : "SignIn"
+	, "btn__cancel" : "Cancel"
+}

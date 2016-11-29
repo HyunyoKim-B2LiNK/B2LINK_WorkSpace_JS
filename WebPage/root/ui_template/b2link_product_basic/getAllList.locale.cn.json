@@ -1,0 +1,12 @@
+{
+	"th___id" : "No"
+	, "th__brand" : "Brand"
+	, "th__product_category" : "Category"
+
+	, "th__nm_kr" : "Name(kr)"
+	, "th__nm_cn" : "Name(cn)"
+	, "th__nm_us" : "Name(us)"
+	, "th__nm_register" : "register"
+
+	, "th__date_regist" : "regist_date"
+}
