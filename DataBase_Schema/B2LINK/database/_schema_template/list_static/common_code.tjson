@@ -50,6 +50,10 @@
 			, "type" : "string", "length" : 12
 		}
 
+		, "desc" : { "description" : "Description", "exampleValue" : "카테고리관리"
+			, "type" : "string", "length" : 0
+		}
+
 		//사용여부
 		, "bUse" : { "description" : "사용여부", "exampleValue" : 0
 			, "type" : "uint", "length" : 1, "default" : 0
