@@ -1,0 +1,200 @@
+{
+	"dereference": [
+		"member.member_session",
+		"member.member_session_log",
+		"member.member_date"
+	],
+	"dereference_collection": [
+		"member_session",
+		"member_session_log",
+		"member_date"
+	],
+	"dereference_database": [
+		"member"
+	],
+	"reference": [
+		"member.member_session",
+		"member.member_session_log",
+		"member.member_date"
+	],
+	"reference_collection": [
+		"member_session",
+		"member_session_log",
+		"member_date"
+	],
+	"reference_database": [
+		"member"
+	],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"mid": {
+			"description": "Member ID",
+			"exampleValue": "thdtjsdn@gmail.com",
+			"type": "string",
+			"length": 0
+		},
+		"mpw": {
+			"description": "Member Password",
+			"exampleValue": "123qweasd",
+			"type": "string",
+			"length": 0
+		},
+		"bConn": {
+			"description": "Boolean Member Connection",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 1,
+			"default": 0,
+			"minValue": 0,
+			"maxValue": 1,
+			"values": [
+				0,
+				1
+			],
+			"valuesMap": {
+				"0": 1,
+				"1": 1
+			}
+		},
+		"email": {
+			"description": "Email",
+			"exampleValue": "thdtjsdn@gmail.com",
+			"type": "string",
+			"length": 0
+		},
+		"nm": {
+			"description": "Name(Default)",
+			"type": "object",
+			"properties": {
+				"a": {
+					"description": "All Name(Default)",
+					"exampleValue": "송선우",
+					"type": "string",
+					"length": 0
+				},
+				"f": {
+					"description": "First Name(Default)",
+					"exampleValue": "선우",
+					"type": "string",
+					"length": 0
+				},
+				"l": {
+					"description": "Last Name(Default)",
+					"exampleValue": "송",
+					"type": "string",
+					"length": 0
+				}
+			}
+		},
+		"nm_cn": {
+			"description": "Name(CN)",
+			"type": "object",
+			"properties": {
+				"a": {
+					"description": "All Name(CN)",
+					"exampleValue": "宋善雨",
+					"type": "string",
+					"length": 0
+				},
+				"f": {
+					"description": "First Name(CN)",
+					"exampleValue": "善雨",
+					"type": "string",
+					"length": 0
+				},
+				"l": {
+					"description": "Last Name(CN)",
+					"exampleValue": "宋",
+					"type": "string",
+					"length": 0
+				}
+			}
+		},
+		"nm_kr": {
+			"description": "Name(KR)",
+			"type": "object",
+			"properties": {
+				"a": {
+					"description": "All Name(KR)",
+					"exampleValue": "송선우",
+					"type": "string",
+					"length": 0
+				},
+				"f": {
+					"description": "First Name(KR)",
+					"exampleValue": "선우",
+					"type": "string",
+					"length": 0
+				},
+				"l": {
+					"description": "Last Name(KR)",
+					"exampleValue": "송",
+					"type": "string",
+					"length": 0
+				}
+			}
+		},
+		"nm_us": {
+			"description": "Name(US)",
+			"type": "object",
+			"properties": {
+				"a": {
+					"description": "All Name(US)",
+					"exampleValue": "SunWoo Song",
+					"type": "string",
+					"length": 0
+				},
+				"f": {
+					"description": "First Name(US)",
+					"exampleValue": "SunWoo",
+					"type": "string",
+					"length": 0
+				},
+				"l": {
+					"description": "Last Name(US)",
+					"exampleValue": "Song",
+					"type": "string",
+					"length": 0
+				},
+				"m": {
+					"description": "Middle Name(US)",
+					"exampleValue": "",
+					"type": "string",
+					"length": 0
+				}
+			}
+		},
+		"nSignInFail": {
+			"description": "Signin(Login) 실패 횟수\n5회 실패시 SignIn 불가능",
+			"exampleValue": 1,
+			"type": "uint",
+			"length": 1,
+			"default": 0,
+			"minValue": 0,
+			"maxValue": 5,
+			"values": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"valuesMap": {
+				"0": 1,
+				"1": 1,
+				"2": 1,
+				"3": 1,
+				"4": 1,
+				"5": 1
+			}
+		}
+	}
+}

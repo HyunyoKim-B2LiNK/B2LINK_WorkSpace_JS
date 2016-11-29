@@ -48,8 +48,9 @@
 		//Member ID Collection
 		, "_ids$member" : <include>partner/_ids$member.json</include>
 
+		//수정 - 김찬미 - 20161129
 		//Partner_Buyer Manger Person ID
-		, "_id$partner_person" : <include>partner/_id$partner_person.json</include>
+		//, "_id$partner_person" : <include>partner/_id$partner_person.json</include>
 
 		//Partner_Buyer  Address(Default)
 		, "address" : <include>partner/address.json</include>
