@@ -1,0 +1,68 @@
+{
+	"dereference": [
+		"member.member_public"
+	],
+	"dereference_collection": [
+		"member_public"
+	],
+	"dereference_database": [
+		"member"
+	],
+	"reference": [
+		"member.member_basic",
+		"member.member_session"
+	],
+	"reference_collection": [
+		"member_basic",
+		"member_session"
+	],
+	"reference_database": [
+		"member"
+	],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"count": {
+			"description": "Member Career count",
+			"exampleValue": "1",
+			"type": "uint",
+			"length": 0
+		},
+		"career0": {
+			"description": "Member Career 0",
+			"type": "object",
+			"properties": {
+				"nm_company": {
+					"description": "Company Name",
+					"exampleValue": "B2LINK",
+					"type": "string",
+					"length": 0
+				},
+				"d_enter": {
+					"description": "Date - Entering",
+					"exampleValue": [
+						2016,
+						8,
+						27
+					],
+					"type": "array"
+				},
+				"d_leave": {
+					"description": "Date - Leave",
+					"exampleValue": [
+						2016,
+						12,
+						31
+					],
+					"type": "array"
+				}
+			}
+		}
+	}
+}

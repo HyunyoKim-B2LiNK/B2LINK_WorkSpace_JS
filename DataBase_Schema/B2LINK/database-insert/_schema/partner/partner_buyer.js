@@ -52,10 +52,12 @@ var d = {
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : NumberInt( 0 )
-			, "type" : "uint", "length" : 0
-			, "minValue" : 0
-			, "maxValue" : 999999999
+		"_id" : {
+			"description" : "Unique Key, Primary Key(PK)"
+			, "exampleValue" : NumberInt( 0 )
+			, "type" : "uint", "length" : NumberInt( 0 )
+			, "minValue" : NumberInt( 0 )
+			, "maxValue" : NumberInt( 999999999 )
 		}
 
 		//Partner_buyer Country Code
