@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "createJSON__CSS__Mac.js";
+var fileNm = "ui_template__ui--createHTML__FromTemplateHTML.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,13 +7,14 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 
 //----------------------------------------------------------------------------------------------------;
 
-//----------------------------------------------------------------------------------------------------;
+var rootPath = "E:/WorkSpace_B2LINK/WebPage/root/";
+var templatePath = rootPath + "ui_template/";
 
-var rootPath = "../css/";
+//.thtml만 존재;
+SUtilFsWriteStream_Extension_Dev.create_HTMLFromTemplateHTMLPath( rootPath, templatePath, false, true );
 
-//css 폴더에 __list.json, __listDir.json 파일을 생성한다.;
-try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__CSS( rootPath ); }
-catch( er ){ console.error( "try catch Error : " + er ); }
+//.html만 존재 .thtml은 미존재;
+//SUtilFsWriteStream_Extension_Dev.create_HTMLFromTemplateHTMLPath( rootPath, templatePath, true, false );
 
 //----------------------------------------------------------------------------------------------------;
 

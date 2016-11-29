@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "createHTML__FromTemplateHTML.js";
+var fileNm = "ui--createJSON__Locale.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,14 +7,16 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 
 //----------------------------------------------------------------------------------------------------;
 
-var rootPath = "E:/WorkSpace_B2LINK/WebPage/root/";
-var templatePath = rootPath + "ui_template/";
+//var rootPath = "E:/WorkSpace_B2LINK/WebPage/root/ui/";
+var rootPath = "E:/WorkSpace_B2LINK/WebPage/root/ui__Test_LocalJSON/";
+var extension = ".html";
+var bOverWrite = false;
 
-//.thtml만 존재;
-SUtilFsWriteStream_Extension_Dev.create_HTMLFromTemplateHTMLPath( rootPath, templatePath, false, true );
+//지정 폴더;
+SUtilFsWriteStream_Extension_Dev.create_TemplateJSON_FromHTMLDirectory( rootPath, extension, bOverWrite );
 
-//.html만 존재 .thtml은 미존재;
-//SUtilFsWriteStream_Extension_Dev.create_HTMLFromTemplateHTMLPath( rootPath, templatePath, true, false );
+//하위폴더 모두 포함;
+SUtilFsWriteStream_Extension_Dev.create_TemplateJSON_FromHTMLDirectory__SubDirectories( rootPath, extension, bOverWrite );
 
 //----------------------------------------------------------------------------------------------------;
 
