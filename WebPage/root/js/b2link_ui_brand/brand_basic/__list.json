@@ -1,0 +1,6 @@
+[
+	"window.b2link_ui_brand.brand_basic.add",
+	"window.b2link_ui_brand.brand_basic.getAllList",
+	"window.b2link_ui_brand.brand_basic.remove",
+	"window.b2link_ui_brand.brand_basic.update"
+]

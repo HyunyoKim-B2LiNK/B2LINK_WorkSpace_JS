@@ -1,0 +1,7 @@
+[
+	"000_define_window.b2link_service_member",
+	"200_define_window.b2link_service_member.member_basic",
+	"200_define_window.b2link_service_member.member_public",
+	"200_define_window.b2link_service_member.member_session",
+	"200_define_window.b2link_service_member.member_session_log"
+]
