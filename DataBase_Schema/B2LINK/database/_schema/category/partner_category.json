@@ -1,0 +1,18 @@
+{
+	"dereference": [],
+	"dereference_collection": [],
+	"dereference_database": [],
+	"reference": [],
+	"reference_collection": [],
+	"reference_database": [],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		}
+	}
+}

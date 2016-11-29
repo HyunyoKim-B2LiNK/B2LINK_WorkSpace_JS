@@ -32,7 +32,7 @@
 			"type": "string",
 			"length": 0
 		},
-		"addr_en": {
+		"addr_us": {
 			"description": "ADDR1",
 			"exampleValue": "Seocho",
 			"type": "string",

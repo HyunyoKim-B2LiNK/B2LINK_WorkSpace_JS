@@ -46,7 +46,7 @@
 		}
 
 		//은행이름 (영문)
-		, "nm_en" : { "description" : "은행 이름(영문)", "exampleValue" : "KookMin Bank"
+		, "nm_us" : { "description" : "은행 이름(영문)", "exampleValue" : "KookMin Bank"
 			<include>000_common_txt/string_len30.txt</include>
 		}
 

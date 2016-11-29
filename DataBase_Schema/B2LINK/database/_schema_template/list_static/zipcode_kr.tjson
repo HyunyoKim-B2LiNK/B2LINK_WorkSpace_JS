@@ -36,22 +36,22 @@
 		}
 
 		//주소
-		, "addr" : { "description" : "ADDR0", "exampleValue" : "서초구"
+		, "addr" : { "description" : "주소", "exampleValue" : "서초구"
 			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//주소(한국어)
-		, "addr_kr" : { "description" : "ADDR0", "exampleValue" : "서초구"
+		, "addr_kr" : { "description" : "주소(한국어)", "exampleValue" : "서초구"
 			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//주소(영어)
-		, "addr_en" : { "description" : "ADDR1", "exampleValue" : "Seocho"
+		, "addr_us" : { "description" : "주소(영어)", "exampleValue" : "Seocho"
 			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//주소(중국어)
-		, "addr_cn" : { "description" : "ADDR2", "exampleValue" : "瑞草区"
+		, "addr_cn" : { "description" : "주소(중국어)", "exampleValue" : "瑞草区"
 			<include>000_common_txt/string_default.txt</include>
 		}
 
