@@ -9,7 +9,7 @@ function getIntArray( a ){
 //----------------------------------------------------------------------------------------------------;
 
 var d = {
-	"_id" : "partner_delivery"
+	"_id" : "partner_logistics"
 
 	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
 	,"dereference": [
@@ -58,7 +58,7 @@ var d = {
 			, "maxValue" : NumberInt( 999999999 )
 		}
 
-		//Partner_Delivery Country Code
+		//Partner_Logistics Country Code
 		, "_id$country": {
 			"description": "회사 국적"
 			, "exampleValue": NumberInt( 0 )
@@ -86,7 +86,7 @@ var d = {
 			}
 		}
 
-		//Partner_Delivery Manger Person ID
+		//Partner_Logistics Manger Person ID
 		, "_id$partner_person": {
 			"description": "파트너사 담당자 ID(FK)"
 			, "exampleValue": NumberInt( 0 )
@@ -94,7 +94,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery  Address(Default)
+		//Partner_Logistics  Address(Default)
 		, "address": {
 			"description": "회사 주소"
 			, "exampleValue": "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
@@ -102,7 +102,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery  Address(CN)
+		//Partner_Logistics  Address(CN)
 		, "address_cn": {
 			"description": "회사 주소(CN)"
 			, "exampleValue": "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
@@ -110,7 +110,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery  Address(KR)
+		//Partner_Logistics  Address(KR)
 		, "address_kr": {
 			"description": "회사 주소(KR)"
 			, "exampleValue": "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
@@ -118,7 +118,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery  Address(US)
+		//Partner_Logistics  Address(US)
 		, "address_us": {
 			"description": "회사 주소(US)"
 			, "exampleValue": "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
@@ -149,7 +149,7 @@ var d = {
 			, "length": 6
 		}
 
-		//Partner_Delivery Description
+		//Partner_Logistics Description
 		, "description": {
 			"description": "Partner Description"
 			, "exampleValue": "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
@@ -157,7 +157,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Description(CN)
+		//Partner_Logistics Description(CN)
 		, "description_cn": {
 			"description": "Partner Description(CN)"
 			, "exampleValue": "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
@@ -165,7 +165,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Description(KR)
+		//Partner_Logistics Description(KR)
 		, "description_kr": {
 			"description": "Partner Description(KR)"
 			, "exampleValue": "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
@@ -173,7 +173,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Description(US)
+		//Partner_Logistics Description(US)
 		, "description_us": {
 			"description": "Partner Description(US)"
 			, "exampleValue": "비투링크는 아시아 Kbeauty시장에서 가장영향력 있는 IT 회사"
@@ -181,7 +181,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Email
+		//Partner_Logistics Email
 		, "email": {
 			"description": "Email"
 			, "exampleValue": "thdtjsdn@gmail.com"
@@ -189,7 +189,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Name(Default)
+		//Partner_Logistics Name(Default)
 		, "nm": {
 			"description": "Name(Default)"
 			, "exampleValue": "비투링크"
@@ -197,7 +197,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Name(CN)
+		//Partner_Logistics Name(CN)
 		, "nm_cn": {
 			"description": "Name(CN)"
 			, "exampleValue": "비투링크"
@@ -205,7 +205,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Name(KR)
+		//Partner_Logistics Name(KR)
 		, "nm_kr": {
 			"description": "Name(KR)"
 			, "exampleValue": "비투링크"
@@ -213,7 +213,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Name(US)
+		//Partner_Logistics Name(US)
 		, "nm_us": {
 			"description": "Name(US)"
 			, "exampleValue": "비투링크"
@@ -221,7 +221,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery CEO Name(Default)
+		//Partner_Logistics CEO Name(Default)
 		, "nm_ceo": {
 			"description": "CEO Name(Default)"
 			, "type": "object"
@@ -252,7 +252,7 @@ var d = {
 			}
 		}
 
-		//Partner_Delivery  CEO Name(CN)
+		//Partner_Logistics  CEO Name(CN)
 		, "nm_ceo_cn": {
 			"description": "CEO Name(CN)"
 			, "type": "object"
@@ -283,7 +283,7 @@ var d = {
 			}
 		}
 
-		//Partner_Delivery  CEO Name(KR)
+		//Partner_Logistics  CEO Name(KR)
 		, "nm_ceo_kr": {
 			"description": "CEO Name(KR)"
 			, "type": "object"
@@ -315,7 +315,7 @@ var d = {
 			}
 		}
 
-		//Partner_Delivery  CEO Name(US)
+		//Partner_Logistics  CEO Name(US)
 		, "nm_ceo_us": {
 			"description": "CEO Name(US)"
 			, "type": "object"
@@ -354,7 +354,7 @@ var d = {
 			}
 		}
 
-		//Partner_Delivery Fax Number
+		//Partner_Logistics Fax Number
 		, "phone_fax": {
 			"description": "Fax Number"
 			, "exampleValue": "+82-2-1899-0534"
@@ -362,7 +362,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Telephone Number
+		//Partner_Logistics Telephone Number
 		, "phone_tel": {
 			"description": "Phone Number"
 			, "exampleValue": "+82-2-1899-0534"
@@ -370,7 +370,7 @@ var d = {
 			, "length": NumberInt( 0 )
 		}
 
-		//Partner_Delivery Homepage URL
+		//Partner_Logistics Homepage URL
 		, "url": {
 			"description": "Hompage URL"
 			, "exampleValue": "www.b2link.co.kr"

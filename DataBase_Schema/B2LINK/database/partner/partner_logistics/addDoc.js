@@ -1,23 +1,23 @@
 function( d )
 {
-	print( "-- [ S ] - partner_delivery$addDoc():{uint}----------" );
+	print( "-- [ S ] - partner_logistics$addDoc():{uint}----------" );
 
-	var col = partner_delivery$_getCol();
-	var len = partner_delivery$_findAll().count();
-	var r = partner_delivery$validation__addDoc( d );
+	var col = partner_logistics$_getCol();
+	var len = partner_logistics$_findAll().count();
+	var r = partner_logistics$validation__addDoc( d );
 
 	print( "r : " + r );
 	printjson( r );
 
 	if( 0 == r )
 	{
-		print( "-- [ E ] - partner_delivery$addDoc():{uint}----------return 0;" );
+		print( "-- [ E ] - partner_logistics$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
 
-	if( partner_delivery$check__Overlap( r ) )
+	if( partner_logistics$check__Overlap( r ) )
 	{
-		print( "-- [ E ] - partner_delivery$addDoc():{uint}----------return 0;" );
+		print( "-- [ E ] - partner_logistics$addDoc():{uint}----------return 0;" );
 		return 0;
 	}
 	else
@@ -51,7 +51,7 @@ function( d )
 			, url : r.url
 		});
 
-		print( "-- [ E ] - partner_delivery$addDoc():{uint}----------return 1;" );
+		print( "-- [ E ] - partner_logistics$addDoc():{uint}----------return 1;" );
 		return 1;
 	}
 }

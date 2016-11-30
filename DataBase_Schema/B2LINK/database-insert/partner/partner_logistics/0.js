@@ -74,7 +74,7 @@ var a = [
 //----------------------------------------------------------------------------------------------------;
 
 var db0 = db.getSiblingDB( "partner" );
-	db0.partner_delivery.remove({});
+	db0.partner_logistics.remove({});
 var io;
 var i=0, iLen=a.length;
 for( ; i<iLen; ++i )
@@ -82,5 +82,5 @@ for( ; i<iLen; ++i )
 	var io = a[ i ];
 		io._id = NumberInt( i );
 	//db0.brand_basic.insert( io );
-	db0.exec( "partner_delivery$addDoc( " + JSON.stringify( io ) + " );" );
+	db0.exec( "partner_logistics$addDoc( " + JSON.stringify( io ) + " );" );
 };
