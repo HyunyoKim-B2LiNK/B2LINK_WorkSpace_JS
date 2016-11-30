@@ -114,8 +114,17 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
 "atom-text-editor" :
-  "ctrl-d" : "editor:delete-line"
   "ctrl-q" : "window:close"
+  "ctrl-n" : "application:new-file"
+  "ctrl-l" : "go-to-line:toggle"
+  "ctrl-alt-down" : "editor:duplicate-lines"
+  "ctrl-d" : "editor:delete-line"
   "ctrl-shift-x" : "editor:upper-case"
   "ctrl-shift-y" : "editor:lower-case"
   "ctrl-i" : "encoding-selector:show"
+  "ctrl-k" : "find-and-replace:find-next-selected"
+  "ctrl-shift-k" : "find-and-replace:find-previous-selected"
+  "f12" : "pane:show-previous-item"
+  "ctrl-r" : "find-and-replace:show"
+  "ctrl-up" : "editor:move-line-up"
+  "ctrl-down" : "editor:move-line-down"
