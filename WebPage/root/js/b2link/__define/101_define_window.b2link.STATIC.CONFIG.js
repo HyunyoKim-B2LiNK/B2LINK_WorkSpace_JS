@@ -55,7 +55,8 @@ $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MASHUP = _ + "b2link_mashup/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_MEMBER = _ + "b2link_member/";
 
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_BUYER = _ + "b2link_partner_buyer/";
-$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_DELIVERY = _ + "b2link_partner_delivery/";
+//$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_DELIVERY = _ + "b2link_partner_delivery/";
+$w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_LOGISTICS = _ + "b2link_partner_logistics/";
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_SUPPLIER = _ + "b2link_partner_supplier/";
 
 $w.b2link.STATIC.CONFIG.URL.UI.B2LINK_PRODUCT_BASIC = _ + "b2link_product_basic/";
