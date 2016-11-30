@@ -59,7 +59,9 @@ B2LINK_WorkSpace_JS
 
 #### <i class="icon-folder-open"></i> MongoDB
  - MongoDB의 Binary들이 모여있는 폴더
+
  - 사용 버전
+
 > **Note:**
 > - 3.2.10_x64
 > - 3.2.11_x64
@@ -67,5 +69,6 @@ B2LINK_WorkSpace_JS
 
 #### <i class="icon-folder-open"></i> WebPage
  - Client Web Page 다.
+
 > **Note:**
- - WebPage/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+> - WebPage/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
