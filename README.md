@@ -2,6 +2,8 @@
 ===================
 
 
+-------------
+
 #### :file_folder: *.zip
  - 각 폴더에 들어있는 node_modules.zip과 bin.zip은 압축을 풀어준다.
  - 압축푼 후 소스 동기화 시 zip에 해당한 파일들은 git의 .gitignore 설정에 의거해서 Commit이 되지 않는다.
