@@ -5,5 +5,5 @@
  * @param {uint} _id_gt start index
  * @param {uint} _id_lt end index
  * @param {uint} nLimit
- * @return {Array} [ { partner_delivery }, { partner_delivery }, ... ]
+ * @return {Array} [ { partner_logistics }, { partner_logistics }, ... ]
  */
