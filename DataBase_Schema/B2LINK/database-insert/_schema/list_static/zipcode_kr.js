@@ -48,7 +48,7 @@ var d = {
 
 		//ZIP Code 한국;
 		, "zip_code" : { "description" : "ZIP Code 한국", "exampleValue" : "KS013"
-			, "type" : "string", "length" : NumberInt( 10 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//주소;

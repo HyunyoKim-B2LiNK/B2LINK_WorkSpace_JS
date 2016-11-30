@@ -48,37 +48,37 @@ var d = {
 
 		//은행 이름 (Local);
 		, "nm" : { "description" : "은행 이름(Local)", "exampleValue" : "中国銀行"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//은행 이름 (한국);
 		, "nm_kr" : { "description" : "은행 이름(한국)", "exampleValue" : "중국은행"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//은행 이름 (중문);
 		, "nm_cn" : { "description" : "은행 이름(중문)", "exampleValue" : "中国銀行"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//은행 이름 (영문);
 		, "nm_en" : { "description" : "은행 이름(영문)", "exampleValue" : "BANK OF CHINA"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//도시;
 		, "city" : { "description" : "도시", "exampleValue" : "BEIJING"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//지점;
 		, "branch" : { "description" : "지점", "exampleValue" : "(BANK OF CHINA HEAD OFFICE BATCH PAYMENT SERVICE)"
-			, "type" : "string", "length" : NumberInt( 50 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//SWIFT CODE;
 		, "swift_code" : { "description" : "SWIFT CODE", "exampleValue" : "BKCHCNBJBPS"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 	}
 };

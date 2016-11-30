@@ -32,37 +32,37 @@
 
 		//은행 이름 (Local)
 		, "nm" : { "description" : "은행 이름(Local)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
-			<include>000_common_txt/string_len30.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//은행이름 (한국)
 		, "nm_kr" : { "description" : "은행 이름(한국)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
-			<include>000_common_txt/string_len30.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//은행이름 (중문)
 		, "nm_cn" : { "description" : "은행 이름(중문)", "exampleValue" : "恆豐銀行"
-			<include>000_common_txt/string_len30.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//은행이름 (영문)
 		, "nm_us" : { "description" : "은행 이름(영문)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
-			<include>000_common_txt/string_len30.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//city
 		, "city" : { "description" : "도시", "exampleValue" : "HOUSTON,TX"
-			<include>000_common_txt/string_len30.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//branch
 		, "branch" : { "description" : "지점", "exampleValue" : ""
-			<include>000_common_txt/string_len50.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 		//SWIFT CODE
 		, "swift_code" : { "description" : "SWIFT CODE", "exampleValue" : "AFNBUS4H"
-			<include>000_common_txt/string_len30.txt</include>
+			<include>000_common_txt/string_default.txt</include>
 		}
 
 	}
