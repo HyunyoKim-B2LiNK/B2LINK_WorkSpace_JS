@@ -23,10 +23,10 @@
 
 #### :open_file_folder: _Tool
  - 개발에 사용되는 툴들에 대한 설명이 들어있는 폴더
- - 종류
-  . IDE
-  . Database
-  . Platform
+ * 종류
+  * IDE
+  * Database
+  * Platform
 
 
 #### :open_file_folder: bin
