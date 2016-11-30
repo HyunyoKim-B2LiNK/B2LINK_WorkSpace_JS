@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ {transaction_quote_sale_req}, {transaction_quote_sale_req}, ... ]
+ */

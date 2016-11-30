@@ -1,0 +1,11 @@
+/**
+ * transaction_quote_sale_req Overlap check
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ 	"quote_sale_req_no" : d.quote_sale_req_no
+ * }
+ * </code>
+ * @return {int} 0 or 1
+ */
