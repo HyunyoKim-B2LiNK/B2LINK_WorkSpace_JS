@@ -4,32 +4,9 @@
 * B2LINK Service를 위한 Base Framework
 * 개발 환경
  * MongoDB
-
-> **Note:**
-> - json
-> - js
-> - tjson
-
  * NodeJS
-
-> **Note:**
-> - json
-> - js
-> - tjson
-
  * HTTPServer_MongoDB_API - not express
-
-> **Note:**
-
- * Web
-
-> **Note:**
-> * html, thtml
->  * <include-html></include-html>
->  * <import-html></import-html>
-> * less, css
-> * js
-> * json
+ * HTML5, JS, LESS, CSS
 
 
 -------------
