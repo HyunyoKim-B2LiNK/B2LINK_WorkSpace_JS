@@ -1,0 +1,63 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//CODE0
+		, "code0" : { "description" : "CODE0", "exampleValue" : 1000
+			<include>000_common_txt/uint_len4.txt</include>
+		}
+
+		//CODE1
+		, "code1" : { "description" : "CODE1", "exampleValue" : 1000
+			<include>000_common_txt/uint_len4.txt</include>
+		}
+
+		//CODE2
+		, "code2" : { "description" : "CODE2", "exampleValue" : 1000
+			<include>000_common_txt/uint_len4.txt</include>
+		}
+
+		//CODE
+		, "code" : { "description" : "CODE", "exampleValue" : "100010001000"
+			<include>000_common_txt/string_len12.txt</include>
+		}
+
+		, "desc" : { "description" : "Description", "exampleValue" : "카테고리관리"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//사용여부
+		, "bUse" : { "description" : "사용여부"
+		 	<include>000_common_txt/boolean.txt</include>
+		}
+
+	}
+}

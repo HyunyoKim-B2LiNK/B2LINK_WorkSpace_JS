@@ -1,0 +1,60 @@
+{
+	"dereference": [],
+	"dereference_collection": [],
+	"dereference_database": [],
+	"reference": [],
+	"reference_collection": [],
+	"reference_database": [],
+	"properties": {
+		"_id": {
+			"description": "Unique Key, Primary Key(PK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0,
+			"minValue": 0,
+			"maxValue": 999999999
+		},
+		"nm": {
+			"description": "은행 이름(Local)",
+			"exampleValue": "中国銀行",
+			"type": "string",
+			"length": 30
+		},
+		"nm_kr": {
+			"description": "은행 이름(한국)",
+			"exampleValue": "중국은행",
+			"type": "string",
+			"length": 30
+		},
+		"nm_cn": {
+			"description": "은행 이름(중문)",
+			"exampleValue": "中国銀行",
+			"type": "string",
+			"length": 30
+		},
+		"nm_us": {
+			"description": "은행 이름(영문)",
+			"exampleValue": "BANK OF CHINA",
+			"type": "string",
+			"length": 30
+		},
+		"city": {
+			"description": "도시",
+			"exampleValue": "BEIJING",
+			"type": "string",
+			"length": 30
+		},
+		"branch": {
+			"description": "지점",
+			"exampleValue": "(BANK OF CHINA HEAD OFFICE BATCH PAYMENT SERVICE)",
+			"type": "string",
+			"length": 50
+		},
+		"swift_code": {
+			"description": "SWIFT CODE",
+			"exampleValue": "BKCHCNBJBPS",
+			"type": "string",
+			"length": 30
+		}
+	}
+}
