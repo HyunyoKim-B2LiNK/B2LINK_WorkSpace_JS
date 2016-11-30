@@ -1,4 +1,4 @@
-**B2LINK_WorkSpace_JS**
+:kr:**B2LINK_WorkSpace_JS**
 ===================
 
 * B2LINK Service를 위한 Base Framework
