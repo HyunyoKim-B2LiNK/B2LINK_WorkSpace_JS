@@ -26,6 +26,10 @@ B2LINK_WorkSpace_JS
 
 @ _Tool
  - 개발에 사용되는 툴들에 대한 설명이 들어있는 폴더
+ - 종류
+  . IDE
+  . Database
+  . Platform
 
 
 @ bin
@@ -49,17 +53,21 @@ B2LINK_WorkSpace_JS
  - DataBase_Schema/******/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
 
 
-@ HTTPServer_MongoDB
+@ HTTPServer_MongoDB(NodeJS)
  - MongoDB의 데이터 서비스 Server
  - HTTPServer_MongoDB/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
 
 
-@ HTTPServer_WebPage
- - WebPage를 서비스 하는 Server
+@ HTTPServer_WebPage(NodeJS)
+ - WebPage/******/를 서비스 하는 HTTPServer
+ - NodeJS - Express 기반이다.
 
 
 @ MongoDB
  - MongoDB의 Binary들이 모여있는 폴더
+ - 사용 버전
+  . 3.2.10_x64
+  . 3.2.11_x64
 
 
 @ WebPage
