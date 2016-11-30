@@ -22,7 +22,7 @@ window.b2link_ui_list_static.email_detail.update = function()
 	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
 
 
-	if( !o[ 1 ].getEvt_Complete__Update() )
+    if( !o[ 1 ].getEvt_Complete__Update() )
 	{
 		o[ 1 ].setEvt_Complete__Update( function( result ){
 			window.RayLog.timeStamp( "[ S ] - o[ 1 ].getEvt_Complete__Update( function( result ){----------" );

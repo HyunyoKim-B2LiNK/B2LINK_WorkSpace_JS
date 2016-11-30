@@ -1,0 +1,6 @@
+{
+					"description" : "Date - Year", "exampleValue" : NumberInt( 2016 )
+					, "type" : "uint", "length" : NumberInt( 4 )
+					, "minValue" : NumberInt( 1900 )
+					, "maxValue" : NumberInt( 3000 )
+				}

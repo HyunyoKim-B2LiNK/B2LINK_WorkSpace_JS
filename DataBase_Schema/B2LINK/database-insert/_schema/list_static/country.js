@@ -51,41 +51,31 @@ var d = {
 	//이 Collection의 Properties;
 	, "properties" : {
 		//Unique Key, Primary Key(PK);
-		"_id" : { "description" : "Unique Key, Primary Key(PK)", "exampleValue" : NumberInt( 0 )
+		"_id" : {
+			"description" : "Unique Key, Primary Key(PK)"
+			, "exampleValue" : NumberInt( 0 )
 			, "type" : "uint", "length" : NumberInt( 0 )
 			, "minValue" : NumberInt( 0 )
 			, "maxValue" : NumberInt( 999999999 )
 		}
 
 		//Code - Number;
-		, "cd_n" : { "description" : "Code - Number", "exampleValue" : "410"
-			, "type" : "int", "length" : NumberInt( 3 )
-		}
+		, "cd_n" : { "description" : "Code - Number", "exampleValue" : "410", "type" : "string", "length" : NumberInt( 3 ) }
 
 		//Code - String - 2;
-		, "cd_us2" : { "description" : "Code - String - 2", "exampleValue" : "KR"
-			, "type" : "string", "length" : NumberInt( 2 )
-		}
+		, "cd_us2" : { "description" : "Code - String - 2", "exampleValue" : "KR", "type" : "string", "length" : NumberInt( 2 ) }
 
 		//Code - String - 3;
-		, "cd_us3" : { "description" : "Code - String - 3", "exampleValue" : "KOR"
-			, "type" : "string", "length" : NumberInt( 3 )
-		}
+		, "cd_us3" : { "description" : "Code - String - 3", "exampleValue" : "KOR", "type" : "string", "length" : NumberInt( 3 ) }
 
 		//Name(CN);
-		, "nm_cn" : { "description" : "Name(CN)", "exampleValue" : "韓國"
-			, "type" : "string", "length" : NumberInt( 0 )
-		}
+		, "nm_cn" : { "description" : "Name(CN)", "exampleValue" : "韓國", "type" : "string", "length" : NumberInt( 0 ) }
 
 		//Name(KR);
-		, "nm_kr" : { "description" : "Name(KR)", "exampleValue" : "대한민국"
-			, "type" : "string", "length" : NumberInt( 0 )
-		}
+		, "nm_kr" : { "description" : "Name(KR)", "exampleValue" : "대한민국", "type" : "string", "length" : NumberInt( 0 ) }
 
 		//Name(US);
-		, "nm_us" : { "description" : "Name(US)", "exampleValue" : "Republic of Korea"
-			, "type" : "string", "length" : NumberInt( 0 )
-		}
+		, "nm_us" : { "description" : "Name(US)", "exampleValue" : "Republic of Korea", "type" : "string", "length" : NumberInt( 0 ) }
 	}
 };
 

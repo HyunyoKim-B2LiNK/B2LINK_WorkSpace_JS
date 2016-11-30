@@ -1,0 +1,9 @@
+{
+	"th___id" : "ID"
+
+	, "th__nm_cn" : "Name(CN)"
+	, "th__nm_kr" : "Name(KR)"
+	, "th__nm_us" : "Name(US)"
+	
+	, "th__url" : "URL"
+}
