@@ -49,14 +49,10 @@ B2LINK_WorkSpace_JS
  - MongoDB의 Schema 및 Procedure를 개발하는 Workspace
  - MongoDB의 Procedure가 주를 이룬다.
 
- > **Note:**
+> **Note:**
 
-> - StackEdit is accessible offline after the application has been loaded for the first time.
-> - Your local documents are not shared between different browsers or computers.
-> - Clearing your browser's data may **delete all your local documents!** Make sure your documents are synchronized with **Google Drive** or **Dropbox** (check out the [<i class="icon-refresh"></i> Synchronization](#synchronization) section).
-
- - DataBase_Schema/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
- - DataBase_Schema/******/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
+> - DataBase_Schema/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+> - DataBase_Schema/******/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
 
 
 -------------
