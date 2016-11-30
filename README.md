@@ -1,14 +1,35 @@
 **B2LINK_WorkSpace_JS**
 ===================
 
+* B2LINK Service를 위한 Base Framework
+* 개발 환경
+ * MongoDB
+  * json
+  * js
+  * tjson
 
+ * NodeJS
+
+ * HTTPServer_MongoDB_API - not express
+
+ * Web
+  * html, thtml
+   * <include-html></include-html>
+   * <import-html></import-html>
+  * less, css
+  * js
+  * json
+
+
+-------------
+파일 설명
 -------------
 
 #### :file_folder: *.zip
  - 각 폴더에 들어있는 node_modules.zip과 bin.zip은 압축을 풀어준다.
  - 압축푼 후 소스 동기화 시 zip에 해당한 파일들은 git의 .gitignore 설정에 의거해서 Commit이 되지 않는다.
 
- > **Note:**
+> **Note:**
 > -   차후 필요에 의한 동기화 기능 추가 가능함
 
 -------------
