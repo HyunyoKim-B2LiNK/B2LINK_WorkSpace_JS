@@ -1,13 +1,13 @@
-cd /Users/thdtjsdn/Downloads/GitHub/B2LINK_WorkSpace_JS
+cd /Users/thdtjsdn/Downloads/GitHub/B2LINK_WorkSpace_JS/bin/
 
-sudo chmod 755 -R ../DataBase_Schema/B2LINK/bin
+sudo chmod -R 755 ../DataBase_Schema/B2LINK/bin/
 
-sudo chmod 755 -R ../DataBase_Schema/node_modules
+sudo chmod -R 755 ../DataBase_Schema/B2LINK/node_modules/
 
-sudo chmod 755 -R ../HTTPServer_MongoDB/MemberSession/bin
+sudo chmod -R 755 ../HTTPServer_MongoDB/MemberSession/bin/
 
-sudo chmod 755 -R ../HTTPServer_MongoDB/MemberSession/node_modules
+sudo chmod -R 755 ../HTTPServer_MongoDB/MemberSession/node_modules/
 
-sudo chmod 755 -R ../WebPage/root/bin
+sudo chmod -R 755 ../WebPage/root/bin/
 
-sudo chmod 755 -R ../WebPage/root/node_modules
+sudo chmod -R 755 ../WebPage/root/node_modules/
