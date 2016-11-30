@@ -1,0 +1,14 @@
+// 키 바인딩을 이 파일에 넣어서 기본값을 덮어씁니다.
+[
+	{ "key": "ctrl+q", "command":"workbench.action.closeWindow"}
+	, { "key": "ctrl+w", "command":"workbench.action.closeActiveEditor"}
+	, { "key": "ctrl+n", "command": "workbench.action.files.newUntitledFile" }
+	, { "key": "ctrl+d", "command": "editor.action.deleteLines" }
+	, { "key": "ctrl+k", "command": "editor.action.nextMatchFindAction"}
+	, { "key": "ctrl+shift+k", "command": "editor.action.previousMatchFindAction"}
+	, { "key": "ctrl+f", "command": "actions.find" }
+	, { "key": "ctrl+h", "command": "workbench.action.findInFiles" }
+	, { "key": "ctrl+up", "command": "editor.action.moveLinesUpAction" }
+	, { "key": "ctrl+down", "command": "editor.action.moveLinesDownAction" }
+	, { "key": "ctrl+l", "command": "workbench.action.gotoLine" }
+]
