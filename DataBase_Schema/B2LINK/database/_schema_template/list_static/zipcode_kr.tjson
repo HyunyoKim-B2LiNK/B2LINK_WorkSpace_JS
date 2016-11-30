@@ -32,7 +32,7 @@
 
 		//Zip Code 한국
 		, "zip_code" : { "description" : "ZIP Code 한국", "exampleValue" : "KS013"
-			<include>000_common_txt/string_default.txt</include>
+			<include>000_common_txt/string_len10.txt</include>
 		}
 
 		//주소

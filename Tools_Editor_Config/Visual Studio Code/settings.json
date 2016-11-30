@@ -1,0 +1,28 @@
+{
+	"editor.detectIndentation": false,
+
+	"editor.folding": true,
+
+	"editor.insertSpaces": false,
+
+	"editor.mouseWheelZoom": true,
+
+	"editor.tabCompletion": false,
+
+	"editor.tabSize": 4,
+
+	"files.encoding": "utf8",
+
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/*.description" : true,
+		"*.bat" : true
+	},
+
+	"less.validate": true,
+
+	"typescript.check.tscVersion": false
+}
