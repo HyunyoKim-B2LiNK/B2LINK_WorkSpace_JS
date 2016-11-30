@@ -6,6 +6,8 @@
 
 . 도움 또는 기능상 필요한 실행용 script들이 들어있다.
 
+. __list.json과 __listPackage.json __listDir.json은 깃헙 충동시 Discard 시켜버리고 로컬에서 다시 구동해도 상관 없음.
+
 //--------------------------------------------------;
 //	Description;
 //--------------------------------------------------;
@@ -43,6 +45,7 @@
  - __list.json과 __listPackage.json을 생성/갱신 해준다.
  - *.js 내부의 소스가 변화 할 시에는 상관 없움.
 
+ - __list.json과 __listPackage.json __listDir.json은 깃헙 충동시 Discard 시켜버리고 로컬에서 다시 구동해도 상관 없음.
 
 @ js--createJS__js.namespace.__define.200_define__files.template
  - 신경 쓰지 않아도 되는 파일
@@ -68,6 +71,8 @@
  
 @ css--createJSON.***
  - ./css의 __list.json와 __listDir 파일을 생성한다.
+
+ - __list.json과 __listPackage.json __listDir.json은 깃헙 충동시 Discard 시켜버리고 로컬에서 다시 구동해도 상관 없음.
 
 
 @ css--deleteJSON.***
