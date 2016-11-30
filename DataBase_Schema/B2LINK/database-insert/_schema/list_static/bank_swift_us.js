@@ -48,37 +48,37 @@ var d = {
 
 		//은행 이름 (Local);
 		, "nm" : { "description" : "은행 이름(Local)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//은행 이름 (한국);
 		, "nm_kr" : { "description" : "은행 이름(한국)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//은행 이름 (중문);
 		, "nm_cn" : { "description" : "은행 이름(중문)", "exampleValue" : "恆豐銀行"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//은행 이름 (영문);
 		, "nm_en" : { "description" : "은행 이름(영문)", "exampleValue" : "AMERICAN FIRST NATIONAL BANK"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//도시;
 		, "city" : { "description" : "도시", "exampleValue" : "HOUSTON,TX"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//지점;
 		, "branch" : { "description" : "지점", "exampleValue" : ""
-			, "type" : "string", "length" : NumberInt( 50 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 
 		//SWIFT CODE;
 		, "swift_code" : { "description" : "SWIFT CODE", "exampleValue" : "AFNBUS4H"
-			, "type" : "string", "length" : NumberInt( 30 )
+			, "type" : "string", "length" : NumberInt( 0 )
 		}
 	}
 };
