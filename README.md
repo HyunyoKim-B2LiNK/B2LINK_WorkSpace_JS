@@ -4,7 +4,7 @@
 
 //----------------------------------------------------------------------------------------------------;
 
-# B2LINK_WorkSpace_JS
+B2LINK_WorkSpace_JS
 
 //--------------------------------------------------;
 
@@ -16,7 +16,7 @@
 //--------------------------------------------------;
 
 
-@ _Coding_Convention;
+@ _Coding_Convention
  - 코딩 규칙 문서폴더
 
 
@@ -29,6 +29,9 @@
 
 
 @ bin
+ - 필요한 포괄적인 Build Script가 생성될 예정
+
+ - 현재 만들어진 Build Script는 없다.
 
 
 @ DataBase
@@ -42,11 +45,13 @@
  - MongoDB의 Schema 및 Procedure를 개발하는 Workspace
  - MongoDB의 Procedure가 주를 이룬다.
 
- - DataBase_Schema/B2LINK/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
+ - DataBase_Schema/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+ - DataBase_Schema/******/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
 
 
 @ HTTPServer_MongoDB
  - MongoDB의 데이터 서비스 Server
+ - HTTPServer_MongoDB/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
 
 
 @ HTTPServer_WebPage
@@ -59,4 +64,4 @@
 
 @ WebPage
  - Client Web Page 다.
- - bin에 있는 명령어 파일로 몇몇 작동을 시킨다.
+ - WebPage/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
