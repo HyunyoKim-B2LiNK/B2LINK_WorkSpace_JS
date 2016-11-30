@@ -7,9 +7,6 @@ B2LINK_WorkSpace_JS
  - 압축푼 후 소스 동기화 시 zip에 해당한 파일들은 git의 .gitignore 설정에 의거해서 Commit이 되지 않는다.
   . 차후 필요에 의한 동기화 기능 추가 가능함
 
-----------
-
-
 -------------
 @ _Coding_Convention
  - 코딩 규칙 문서폴더
@@ -50,7 +47,6 @@ B2LINK_WorkSpace_JS
  - MongoDB의 Procedure가 주를 이룬다.
 
 > **Note:**
-
 > - DataBase_Schema/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
 > - DataBase_Schema/******/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
 
@@ -71,11 +67,13 @@ B2LINK_WorkSpace_JS
 @ MongoDB
  - MongoDB의 Binary들이 모여있는 폴더
  - 사용 버전
-  . 3.2.10_x64
-  . 3.2.11_x64
+> **Note:**
+> - 3.2.10_x64
+> - 3.2.11_x64
 
 
 -------------
 @ WebPage
  - Client Web Page 다.
- - WebPage/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+> **Note:**
+> - WebPage/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
