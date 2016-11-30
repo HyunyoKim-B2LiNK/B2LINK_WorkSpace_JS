@@ -1,0 +1,4 @@
+{
+	"description" : "회사 주소(KR)", "exampleValue" : "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
+		<include>000_common_txt/string_default.txt</include>
+}

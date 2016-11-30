@@ -1,0 +1,133 @@
+var d = {
+	"_id" : "transaction_quote_sale_req"
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	, "dereference" : [
+		"transaction_quote_sale.transaction_quote_sale_res"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"transaction_quote_sale_res"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"transaction_quote_sale"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"member.member_public"
+		, "partner.partner_buyer"
+		, "partner.partner_person"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"member_public"
+		, "partner_buyer"
+		, "partner_person"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"member"
+		, "partner"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//currency ID(FK).
+		, "_id$currency" : { "description" : "Currency ID (FK)" , "exampleValue" : 0
+			, "type" : "uint" , "length" : 0
+			, "values" : []
+			, "valuesMap" : []
+		}
+
+		//delivery_type id (FK).
+		, "_id$delivery_type" : { "description" : "Delivery_type ID (FK)" , "exampleValue" : 0
+			, "type" : "uint" , "length" : 0
+			, "values" : []
+			, "valuesMap" : []
+		}
+
+		//담당자 및 등록자 Register Member ID (FK)
+		, "_id$member" : <include>100_common_json/_id$member.json</include>
+
+
+		//Partner_Buyer ID (FK)
+		, "_id$partner_buyer" : <include>partner/_id$partner_buyer.json</include>
+
+		//Partner_person ID (FK)
+		, "_id$partner_person" : <include>partner/_id$partner_person.json</include>
+
+		//거래 조건
+		, "_id$trade_terms" : { "description" : "trade_terms" , "exampleValue" : 0
+			<include>000_common_txt/uint_len0.txt</include>
+			, "values" : [ "CFR", "CIF", "CIP", "CPT", "DAT", "DAP", "DDP", "EXW", "FOB", "FCA", "FAS" ]
+			, "valuesMap" : { "CFR" : 1, "CIF" : 1, "CIP" : 1, "CPT" : 1, "DAT" : 1, "DAP" : 1, "DDP" : 1, "EXW" : 1, "FAS" : 1, "FCA" : 1, "FOB" : 1 }
+		}
+
+		//Create Date
+		, "date_create" : { "description" : "Create Date"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/properties__Date_Object.json</include>
+		}
+
+		//납기일
+		, "due_date" : { "description" : "납기일"
+		 	, "type" : "object"
+			, "properties" : <include>100_common_json/properties__Date_Object.json</include>
+		}
+
+		//ITEMS
+		, "items" : { "description" : "판매 품목"
+			, "type" : "array"
+			, "properties" : [
+				{
+					//Brand ID(FK)
+					"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+					//Product ID(FK)
+					, "_id$product_basic" : {"description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
+					//Product quantity( UOM * quantity_of_unit)
+					, "quantity" : { "description" : "총 수량" <include>000_common_txt/uint_len0.txt</include> }
+					//Product quantity( UOM * quantity_of_unit)
+					, "quantity_of_unit" : { "description" : "단위수량" <include>000_common_txt/uint_len0.txt</include> }
+					, "UOM" : { "description" : "수량 단위(unit_of_measurement)", "exampleValue": { "nm" : "pkg" , "quantity" : 10 }
+					 	, "type" : "object"
+						, "properties" : {
+							//표시 문자
+							"nm" : { "description" : "표시문자" ,  "exampleValue" : "pkg"
+								<include>000_common_txt/string_default.txt</include>
+							}
+							//수량 quantity
+							, "quantity" : { "description" : "해당 단위에 포함된 수량", "exampleValue" : 10
+								<include>000_common_txt/uint_len3.txt</include>
+							}
+						}
+					}
+				}
+			]
+		}
+
+		//가견적요청서 번호
+		, "quote_sale_req_no" : { "description" : "가견적 요청서 번호(QSR YYYYMMDD PARTNER_ID Number)" , "exampleValue" : "QSR20161130P11"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+
+		//배송주소
+		, "shipping_address" : { "description" : " 배송주소"
+			<include>000_common_txt/string_default.txt</include>
+		}
+	}
+};
+
+//----------------------------------------------------------------------------------------------------;
+
+db.getSiblingDB( "_schema" ).transaction_quote_sale.insert( d );
