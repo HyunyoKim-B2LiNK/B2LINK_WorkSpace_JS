@@ -2,24 +2,24 @@ B2LINK_WorkSpace_JS
 ===================
 
 
-@ *.zip
+#### *.zip
 -------------
  - 각 폴더에 들어있는 node_modules.zip과 bin.zip은 압축을 풀어준다.
  - 압축푼 후 소스 동기화 시 zip에 해당한 파일들은 git의 .gitignore 설정에 의거해서 Commit이 되지 않는다.
   . 차후 필요에 의한 동기화 기능 추가 가능함
 
 
-@ _Coding_Convention
+#### _Coding_Convention
 -------------
  - 코딩 규칙 문서폴더
 
 
-@ _Description
+#### _Description
 -------------
  - 폴더별 상세 설명 문서가 들어있는 폴더
 
 
-@ _Tool
+#### _Tool
 -------------
  - 개발에 사용되는 툴들에 대한 설명이 들어있는 폴더
  - 종류
@@ -28,21 +28,21 @@ B2LINK_WorkSpace_JS
   . Platform
 
 
-@ bin
+#### bin
 -------------
  - 필요한 포괄적인 Build Script가 생성될 예정
 
  - 현재 만들어진 Build Script는 없다.
 
 
-@ DataBase
+#### DataBase
 -------------
  - MongoDB의 실제 db 파일들이 존재하는 폴더
 
  - bin.zip 압축 해제 한다.
 
 
-@ DataBase_Schema
+#### DataBase_Schema
 -------------
  - WorkSpace
  - MongoDB의 Schema 및 Procedure를 개발하는 Workspace
@@ -53,19 +53,19 @@ B2LINK_WorkSpace_JS
 > - DataBase_Schema/******/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
 
 
-@ HTTPServer_MongoDB(NodeJS)
+#### HTTPServer_MongoDB(NodeJS)
 -------------
  - MongoDB의 데이터 서비스 Server
  - HTTPServer_MongoDB/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
 
 
-@ HTTPServer_WebPage(NodeJS)
+#### HTTPServer_WebPage(NodeJS)
 -------------
  - WebPage/******/를 서비스 하는 HTTPServer
  - NodeJS - Express 기반이다.
 
 
-@ MongoDB
+#### MongoDB
 -------------
  - MongoDB의 Binary들이 모여있는 폴더
  - 사용 버전
@@ -74,7 +74,7 @@ B2LINK_WorkSpace_JS
 > - 3.2.11_x64
 
 
-@ WebPage
+#### WebPage
 -------------
  - Client Web Page 다.
 > **Note:**
