@@ -1,3 +1,5 @@
+cd /Users/thdtjsdn/Downloads/GitHub/B2LINK_WorkSpace_JS
+
 sudo chmod 755 -R ../DataBase_Schema/B2LINK/bin
 
 sudo chmod 755 -R ../DataBase_Schema/node_modules
