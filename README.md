@@ -4,21 +4,32 @@
 * B2LINK Service를 위한 Base Framework
 * 개발 환경
  * MongoDB
-  * json
-  * js
-  * tjson
+
+> **Note:**
+> - json
+> - js
+> - tjson
 
  * NodeJS
 
+> **Note:**
+> - json
+> - js
+> - tjson
+
  * HTTPServer_MongoDB_API - not express
 
+> **Note:**
+
  * Web
-  * html, thtml
-   * <include-html></include-html>
-   * <import-html></import-html>
-  * less, css
-  * js
-  * json
+
+> **Note:**
+> * html, thtml
+>  * <include-html></include-html>
+>  * <import-html></import-html>
+> * less, css
+> * js
+> * json
 
 
 -------------
@@ -30,7 +41,7 @@
  - 압축푼 후 소스 동기화 시 zip에 해당한 파일들은 git의 .gitignore 설정에 의거해서 Commit이 되지 않는다.
 
 > **Note:**
-> -   차후 필요에 의한 동기화 기능 추가 가능함
+> - 차후 필요에 의한 동기화 기능 추가 가능함
 
 -------------
 폴더 설명
