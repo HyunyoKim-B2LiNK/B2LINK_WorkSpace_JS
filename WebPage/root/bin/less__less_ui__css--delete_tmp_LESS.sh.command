@@ -1,3 +1,5 @@
+./cd0.sh
+
 call del /s /q ..\css\tmp_*.css
 call del /s /q ..\css_ui\tmp_*.css
 
