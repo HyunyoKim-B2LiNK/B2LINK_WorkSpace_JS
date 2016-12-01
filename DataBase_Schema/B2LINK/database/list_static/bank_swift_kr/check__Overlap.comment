@@ -1,0 +1,6 @@
+/**
+ * email Overlap check
+ * @function
+ * @param {Object} d Request Object {"nm":"국민은행","nm_kr":"국민은행","nm_cn":"國民銀行","nm_us":"KookMin Bank","city":"SEOUL","branch":"","swift_code":"CZNBKRSE"}
+ * @return {int} 0 or 1
+ */

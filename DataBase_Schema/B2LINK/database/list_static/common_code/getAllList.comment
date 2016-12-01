@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ { common_code }, { common_code }, ... ]
+ */
