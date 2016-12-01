@@ -1,0 +1,4 @@
+ {
+	"description" : "Fax Number", "exampleValue" : "+82-2-1899-0534"
+	, "type" : "string", "length" : NumberInt( 0 )
+}

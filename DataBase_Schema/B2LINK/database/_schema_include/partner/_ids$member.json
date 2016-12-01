@@ -1,0 +1,18 @@
+{
+	"description": "자사 member ID collection",
+	"type": "object",
+	"properties": {
+		"manager": {
+			"description": "자사 담당자 member ID (FK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0
+		},
+		"register": {
+			"description": "해당 파트너사 등록자 (FK)",
+			"exampleValue": 0,
+			"type": "uint",
+			"length": 0
+		}
+	}
+}

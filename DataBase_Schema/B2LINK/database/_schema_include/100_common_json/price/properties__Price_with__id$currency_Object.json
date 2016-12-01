@@ -1,0 +1,14 @@
+{
+	"price": {
+		"description": "Price",
+		"exampleValue": 100,
+		"type": "number",
+		"length": 0
+	},
+	"_id$currency": {
+		"description": "Currency",
+		"exampleValue": 0,
+		"type": "uint",
+		"length": 0
+	}
+}

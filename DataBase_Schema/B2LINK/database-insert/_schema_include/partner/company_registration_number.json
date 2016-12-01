@@ -1,0 +1,4 @@
+{
+	"description" : "사업자등록번호", "exampleValue" : "123456789"
+		, "type" : "string", "length" : NumberInt( 0 )
+}
