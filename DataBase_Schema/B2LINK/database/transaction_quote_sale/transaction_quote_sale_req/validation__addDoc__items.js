@@ -11,6 +11,12 @@ function( d )
 			print( "-- [ E ] - transaction_quote_sale_req$validation__addDoc__itmes():{Object}----------return 0;" );
 			return 0;
 		}
+
+		io._id$brand_basic = NumberInt( io._id$brand_basic );
+		io._id$product_basic = NumberInt( io._id$product_basic );
+		io.quantity = NumberInt( io.quantity );
+		io.quantity_of_unit = NumberInt( io.quantity_of_unit );
+		io.UOM.quantity = NumberInt( io.UOM.quantity );
 	}
 	print( "-- [ E ] - transaction_quote_sale_req$validation__addDoc__itmes():{Object}----------" );
 	return d;
