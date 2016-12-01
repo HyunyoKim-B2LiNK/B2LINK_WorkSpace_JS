@@ -1,4 +1,0 @@
-{
-	"description" : "회사 주소(CN)", "exampleValue" : "서울시 강남구 테헤란로 4길 14 (역삼동, 미림타워)"
-		, "type" : "string", "length" : NumberInt( 0 )
-}

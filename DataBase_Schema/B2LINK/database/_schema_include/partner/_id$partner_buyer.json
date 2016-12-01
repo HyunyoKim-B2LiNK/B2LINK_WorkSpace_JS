@@ -1,6 +1,0 @@
-{
-	"description": "Partner Buyer ID(FK)",
-	"exampleValue": 0,
-	"type": "uint",
-	"length": 0
-}

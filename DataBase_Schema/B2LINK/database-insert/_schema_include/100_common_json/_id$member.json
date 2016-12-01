@@ -1,4 +1,0 @@
-{
-			"description" : "member ID(FK)", "exampleValue" : NumberInt( 0 )
-			, "type" : "uint", "length" : NumberInt( 0 )
-		}
