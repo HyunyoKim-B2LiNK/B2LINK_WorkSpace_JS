@@ -26,9 +26,9 @@ function( d )
 			_id : NumberInt( len )
 			, _id$currency : NumberInt( r._id$currency )
 			, _id$delivery_type : NumberInt( r._id$delivery_type )
-			, _id$member : r._id$member
-			, _id$partner_buyer : r._id$partner_buyer
-			, _id$trade_terms : r._id$trade_terms
+			, _id$member : NumberInt( r._id$member )
+			, _id$partner_buyer : NumberInt( r._id$partner_buyer )
+			, _id$trade_terms : NumberInt( r._id$trade_terms )
 			, items : r.items
 			, date_create : r.date_create
 			, due_date : r.due_date

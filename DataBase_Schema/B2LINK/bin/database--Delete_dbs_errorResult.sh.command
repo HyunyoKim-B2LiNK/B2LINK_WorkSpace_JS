@@ -1,3 +1,3 @@
-rm -f ../database/*.dbs
+find ../database/ -name *.dbs -exec rm -f {} \;
 
-rm -f ../database/*.errorResult
+find ../database/ -name *.errorResult -exec rm -f {} \;

@@ -1,1 +1,1 @@
-rm -f ../database-insert/_schema/*.js
+find ../database-insert/_schema -name *.js -exec rm -f {} \;
