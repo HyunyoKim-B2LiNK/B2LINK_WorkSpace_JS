@@ -1,0 +1,12 @@
+{
+	//Price
+	"price" : { "description" : "Price", "exampleValue" : 100
+		, "type" : "number", "length" : NumberInt( 0 )
+
+	}
+
+	//currency
+	, "_id$currency" : { "description" : "Currency", "exampleValue" : NumberInt( 0 )
+		, "type" : "uint", "length" : NumberInt( 0 )
+	}
+}

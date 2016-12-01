@@ -1,0 +1,4 @@
+{
+	"description" : "파트너사 담당자 ID(FK)", "exampleValue" : 0
+		, "type" : "uint", "length" : NumberInt( 0 )
+}
