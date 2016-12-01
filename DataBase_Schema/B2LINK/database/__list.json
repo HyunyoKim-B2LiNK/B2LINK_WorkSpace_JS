@@ -6,6 +6,7 @@
 	"partner",
 	"product",
 	"stock",
+	"transaction_quote_sale",
 	"_schema",
 	"_schema_include",
 	"_schema_template"
