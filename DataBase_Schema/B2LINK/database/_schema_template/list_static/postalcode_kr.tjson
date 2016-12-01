@@ -1,0 +1,59 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Postal Code 한국
+		, "postal_code" : { "description" : "Postal Code 한국", "exampleValue" : "10120"
+			<include>000_common_txt/string_len5.txt</include>
+		}
+
+		//ADDR0
+		, "addr0" : { "description" : "ADDR0", "exampleValue" : "서울시"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//ADDR1
+		, "addr1" : { "description" : "ADDR1", "exampleValue" : "서초구"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//ADDR2
+		, "addr2" : { "description" : "ADDR2", "exampleValue" : "서초동"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//ADDR
+		, "addr" : { "description" : "ADDR", "exampleValue" : "서울시 서초구 서초동"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+	}
+}

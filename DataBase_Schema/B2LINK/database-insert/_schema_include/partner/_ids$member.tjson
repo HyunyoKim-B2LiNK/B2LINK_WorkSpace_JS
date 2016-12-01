@@ -1,0 +1,16 @@
+{
+	"description" : "자사 member ID collection"
+	, "type" : "object"
+	, "properties" : {
+		//담당자 Member ID (FK)
+		"manager" : {
+			"description" : "자사 담당자 member ID (FK)", "exampleValue" : 0
+				<include>000_common_txt/uint_len0.txt</include>
+			}
+		//등록자 Member ID (FK)
+		, "register" : {
+			"description" : "해당 파트너사 등록자 (FK)", "exampleValue" : 0
+				<include>000_common_txt/uint_len0.txt</include>
+		}
+	}
+}

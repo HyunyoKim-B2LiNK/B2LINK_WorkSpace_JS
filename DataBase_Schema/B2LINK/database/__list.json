@@ -1,15 +1,12 @@
 [
 	"brand",
 	"category",
-	"contract",
 	"list_static",
 	"member",
 	"partner",
-	"partner_buyer",
-	"partner_delivery",
-	"partner_supplier",
 	"product",
 	"stock",
+	"transaction_quote_sale",
 	"_schema",
 	"_schema_include",
 	"_schema_template"

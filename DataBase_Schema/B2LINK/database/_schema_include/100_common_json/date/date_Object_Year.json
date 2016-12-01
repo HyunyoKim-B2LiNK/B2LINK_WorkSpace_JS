@@ -1,8 +1,0 @@
-{
-	"description": "Date - Year",
-	"exampleValue": 2016,
-	"type": "uint",
-	"length": 4,
-	"minValue": 1900,
-	"maxValue": 3000
-}
