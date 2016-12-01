@@ -1,4 +1,4 @@
  {
-	"description" : "Phone Number", "exampleValue" : "+82-2-1899-0534"
-	<include>000_common_txt/string_default.txt</include>
-}
+			"description" : "Phone Number", "exampleValue" : "+82-2-1899-0534"
+			<include>000_common_txt/string_default.txt</include>
+		}
