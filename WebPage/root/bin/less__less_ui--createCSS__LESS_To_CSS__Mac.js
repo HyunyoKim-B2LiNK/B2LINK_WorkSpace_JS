@@ -30,7 +30,8 @@ try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS_SubDirectories( uiPath
 
 try
 {
-	STtwUtilCP.sExec( "createJSON__CSS.bat" );
+	//STtwUtilCP.sExec( "call css--createJSON.bat" );
+	STtwUtilCP.sExec( "call css--createJSON.sh.command" );
 }
 catch( er )
 {
