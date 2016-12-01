@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "less__less_ui--createCSS__LESS_To_CSS__Mac.js";
+var fileNm = "less__less_ui--createCSS__LESS_To_CSS.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -32,7 +32,8 @@ try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS_SubDirectories( uiPath
 
 try
 {
-	STtwUtilCP.sExec( "call createJSON__CSS.bat" );
+	STtwUtilCP.sExec( "call css--createJSON.bat" );
+	//STtwUtilCP.sExec( "call css--createJSON.sh.command" );
 }
 catch( er )
 {

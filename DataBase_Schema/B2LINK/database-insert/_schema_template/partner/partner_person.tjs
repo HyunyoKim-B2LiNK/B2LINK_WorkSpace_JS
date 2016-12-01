@@ -62,7 +62,7 @@ var d = {
 		}
 
 		//Partner_Person 등록일
-		, "date_regist" : { "description": "Register Date",
+		, "date_regist" : { "description" : "Register Date",
 			"exampleValue": getIntArray( [
 				2016,
 				10,
@@ -71,38 +71,38 @@ var d = {
 				20,
 				30
 			] )
-			, "type": "array"
+			, "type" : "array"
 			, "length": NumberInt( 6 )
 		}
 		//Partner_Person Description(Default)
 		, "description": {
-			"description": "Partner_person Description",
-			"exampleValue": "",
-			"type": "string",
+			"description" : "Partner_person Description",
+			"exampleValue" : "",
+			"type" : "string",
 			"length": NumberInt( 0 )
 		}
 
 		//Partner_Person Description(CN)
 		, "description_cn": {
-			"description": "Partner_person Description(CN)",
-			"exampleValue": "",
-			"type": "string",
+			"description" : "Partner_person Description(CN)",
+			"exampleValue" : "",
+			"type" : "string",
 			"length": NumberInt( 0 )
 		}
 
 		//Partner_Person Description(KR)
 		, "description_kr": {
-			"description": "Partner_person Description(KR)",
-			"exampleValue": "",
-			"type": "string",
+			"description" : "Partner_person Description(KR)",
+			"exampleValue" : "",
+			"type" : "string",
 			"length": NumberInt( 0 )
 		}
 
 		//Partner_Person Description(US)
 		, "description_us": {
-			"description": "Partner_person Description(US)",
-			"exampleValue": "",
-			"type": "string",
+			"description" : "Partner_person Description(US)",
+			"exampleValue" : "",
+			"type" : "string",
 			"length": NumberInt( 0 )
 		}
 

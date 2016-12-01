@@ -1,6 +1,6 @@
 call database--_schema_include--Delete_JSON.bat
 
-call database--_schema--Delete_JSON--_schema.bat
+call database--_schema--Delete_JSON.bat
 
 call database-insert--_schema_include--Delete_File.bat
 
