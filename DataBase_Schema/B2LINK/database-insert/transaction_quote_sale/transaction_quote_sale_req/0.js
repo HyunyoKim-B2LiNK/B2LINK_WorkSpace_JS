@@ -1,49 +1,49 @@
 var a = [
 	{
-		"_id$currency" : NumberInt( 0 )
-		, "_id$delivery_type" : NumberInt( 0 )
-		, "_id$member" : NumberInt( 0 )
-		, "_id$partner_buyer" : NumberInt( 0 )
-		, "_id$trade_terms" : NumberInt( 0 )
+		"_id$currency" : 0
+		, "_id$delivery_type" : 0
+		, "_id$member" : 0
+		, "_id$partner_buyer" : 0
+		, "_id$trade_terms" : 0
 		, "items" : [
 			{
-	    		"_id$brand_basic" : NumberInt( 0 ), "_id$product_basic" : NumberInt( 0 ), "quantity" : NumberInt( 100 ) , "quantity_of_unit" : NumberInt( 10 )
-	   			, "UOM" : { "nm" : "pkg" , "quantity" : NumberInt( 10 ) }
+	    		"_id$brand_basic" : 0, "_id$product_basic" : 0, "quantity" : 100 , "quantity_of_unit" : 10
+	   			, "UOM" : { "nm" : "pkg" , "quantity" : 10 }
 			}
 			,{
-				"_id$brand_basic" : NumberInt( 1 ), "_id$product_basic" : NumberInt( 1 ), "quantity" : NumberInt( 100 ) , "quantity_of_unit" : NumberInt( 5 )
-	   			, "UOM" : { "nm" : "pkg" , "quantity" : NumberInt( 20 ) }
+				"_id$brand_basic" : 1, "_id$product_basic" : 1, "quantity" : 100 , "quantity_of_unit" : 5
+	   			, "UOM" : { "nm" : "pkg" , "quantity" : 20 }
 			}
-	   		, { "_id$brand_basic" : NumberInt( 1 ), "_id$product_basic" : NumberInt( 1 ), "quantity" : NumberInt( 100 ) , "quantity_of_unit" : NumberInt( 5 )
-	   			, "UOM" : { "nm" : "pkg" , "quantity" : NumberInt( 20 ) }
+	   		, { "_id$brand_basic" : 1, "_id$product_basic" : 1, "quantity" : 100 , "quantity_of_unit" : 5
+	   			, "UOM" : { "nm" : "pkg" , "quantity" : 20 }
 			}
 			]
-		, "date_create" : [ NumberInt( 2016 ), NumberInt( 11 ), NumberInt( 30 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
-		, "due_date" : [ NumberInt( 2016 ), NumberInt( 12 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
+		, "date_create" : [ 2016, 11, 30, 21, 9, 55 ]
+		, "due_date" : [ 2016, 12, 6, 21, 9, 55 ]
 		, "quote_sale_req_no" : "QSR20161130P01"
 		, "shipping_address" : "서울특별시"
 	}
 	, {
-		"_id$currency" : NumberInt( 0 )
-		, "_id$delivery_type" : NumberInt( 0 )
-		, "_id$member" : NumberInt( 0 )
-		, "_id$partner_buyer" : NumberInt( 0 )
-		, "_id$trade_terms" : NumberInt( 0 )
+		"_id$currency" : 0
+		, "_id$delivery_type" : 0
+		, "_id$member" : 0
+		, "_id$partner_buyer" : 0
+		, "_id$trade_terms" : 0
 		, "items" : [
 			{
-	    		"_id$brand_basic" : NumberInt( 0 ), "_id$product_basic" : NumberInt( 0 ), "quantity" : NumberInt( 100 ) , "quantity_of_unit" : NumberInt( 10 )
-	   			, "UOM" : { "nm" : "pkg" , "quantity" : NumberInt( 10 ) }
+	    		"_id$brand_basic" : 0, "_id$product_basic" : 0, "quantity" : 100 , "quantity_of_unit" : 10
+	   			, "UOM" : { "nm" : "pkg" , "quantity" : 10 }
 			}
 			,{
-				"_id$brand_basic" : NumberInt( 1 ), "_id$product_basic" : NumberInt( 1 ), "quantity" : NumberInt( 100 ) , "quantity_of_unit" : NumberInt( 5 )
-	   			, "UOM" : { "nm" : "pkg" , "quantity" : NumberInt( 20 ) }
+				"_id$brand_basic" : 1, "_id$product_basic" : 1, "quantity" : 100 , "quantity_of_unit" : 5
+	   			, "UOM" : { "nm" : "pkg" , "quantity" : 20 }
 			}
-	   		, { "_id$brand_basic" : NumberInt( 1 ), "_id$product_basic" : NumberInt( 1 ), "quantity" : NumberInt( 100 ) , "quantity_of_unit" : NumberInt( 5 )
-	   			, "UOM" : { "nm" : "pkg" , "quantity" : NumberInt( 20 ) }
+	   		, { "_id$brand_basic" : 1, "_id$product_basic" : 1, "quantity" : 100 , "quantity_of_unit" : 5
+	   			, "UOM" : { "nm" : "pkg" , "quantity" : 20 }
 			}
 			]
-		, "date_create" : [ NumberInt( 2016 ), NumberInt( 11 ), NumberInt( 30 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
-		, "due_date" : [ NumberInt( 2016 ), NumberInt( 12 ), NumberInt( 6 ), NumberInt( 21 ), NumberInt( 9 ), NumberInt( 55 ) ]
+		, "date_create" : [ 2016, 11, 30, 21, 9, 55 ]
+		, "due_date" : [ 2016, 12, 6, 21, 9, 55 ]
 		, "quote_sale_req_no" : "QSR20161130P02"
 		, "shipping_address" : "서울특별시"
 	}

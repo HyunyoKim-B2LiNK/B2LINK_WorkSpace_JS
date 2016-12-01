@@ -26,11 +26,10 @@ function( d )
 			_id : NumberInt( len )
 			, _id$currency : NumberInt( r._id$currency )
 			, _id$delivery_type : NumberInt( r._id$delivery_type )
-			, _id$member : r._id$member
-			, _id$partner_buyer : r._id$partner_buyer
-			, _id$trade_terms : r._id$trade_terms
+			, _id$member : NumberInt( r._id$member )
+			, _id$partner_buyer : NumberInt( r._id$partner_buyer )
+			, _id$trade_terms :  NumberInt( r._id$trade_terms )
 			, date_create : r.date_create
-			, due_date : r.due_date
 			, items : r.items
 			, logistic_fee : r.logistic_fee
 			, quote_sale_res_no : r.quote_sale_res_no
