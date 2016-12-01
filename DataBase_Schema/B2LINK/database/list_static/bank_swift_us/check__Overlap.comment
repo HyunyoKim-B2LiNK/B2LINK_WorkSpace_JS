@@ -1,0 +1,6 @@
+/**
+ * email Overlap check
+ * @function
+ * @param {Object} d Request Object {"nm":"AMERICAN FIRST NATIONAL BANK","nm_kr":"AMERICAN FIRST NATIONAL BANK","nm_cn":"恆豐銀行","nm_us":"AMERICAN FIRST NATIONAL BANK","city":"HOUSTON,TX","branch":"","swift_code":"AFNBUS4H"}
+ * @return {int} 0 or 1
+ */

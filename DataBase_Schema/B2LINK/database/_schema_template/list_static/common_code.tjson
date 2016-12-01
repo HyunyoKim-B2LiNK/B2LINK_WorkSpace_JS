@@ -50,7 +50,7 @@
 			<include>000_common_txt/string_len12.txt</include>
 		}
 
-		, "desc" : { "description" : "Description", "exampleValue" : "카테고리관리"
+		, "description" : { "description" : "Description", "exampleValue" : "카테고리관리"
 			<include>000_common_txt/string_default.txt</include>
 		}
 

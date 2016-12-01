@@ -1,0 +1,6 @@
+/**
+ * email Overlap check
+ * @function
+ * @param {Object} d Request Object {"code0": 1000,"code1": 0,"code2": 0,"code":"100000000000","desc":"카테고리관리","bUse":1}
+ * @return {int} 0 or 1
+ */

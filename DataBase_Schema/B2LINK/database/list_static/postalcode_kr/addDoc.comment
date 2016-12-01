@@ -1,0 +1,8 @@
+/**
+ * @function
+ * @param {Object} d {"postal_code":"06596","addr0":"서울시","addr1":"서초구","addr2":"서초동","addr":"서울시 서초구 서초동"}
+ * @return {uint} 0 or 1
+ *
+ * @example
+ * postalcode_kr$addDoc( {"postal_code":"06596","addr0":"서울시","addr1":"서초구","addr2":"서초동","addr":"서울시 서초구 서초동"} );
+ */
