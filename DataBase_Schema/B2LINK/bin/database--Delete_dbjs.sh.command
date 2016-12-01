@@ -1,1 +1,1 @@
-rm -f ../database/*.dbjs
+find ../database/ -name *.dbjs -exec rm -f {} \;

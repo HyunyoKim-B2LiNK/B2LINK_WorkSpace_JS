@@ -1,1 +1,1 @@
-rm -f ../database/_schema_include/*.json
+find ../database/_schema_include -name *.json -exec rm -f {} \;
