@@ -1,0 +1,13 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	cd_n : "840"
+ *	, cd_us3 : "USD"
+ *	, currency : "United States dollar"
+ *	, e : 2
+ * 	, locations : [ 0 ]
+ * }
+ * </code>
+ */
