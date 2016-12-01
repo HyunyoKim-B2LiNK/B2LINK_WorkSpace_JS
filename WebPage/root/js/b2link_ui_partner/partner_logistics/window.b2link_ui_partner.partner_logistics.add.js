@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_ui_partner/partner_delivery/window.b2link_ui_partner.partner_delivery.add.js";
+var fileNm = "js/b2link_ui_partner/partner_logistics/window.b2link_ui_partner.partner_logistics.add.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,15 +7,15 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
-window.b2link_ui_partner.partner_delivery.add = function()
+window.b2link_ui_partner.partner_logistics.add = function()
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui_partner.partner_delivery.add():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui_partner.partner_logistics.add():{Array}----------" );
 	var d = {
-		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_DELIVERY
+		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_LOGISTICS
 		, nm : "add"
 		, css_url : "./css_ui/"
-		, css_front_nm : "div__partner_delivery-"
-		, key : "partner_delivery$add"
+		, css_front_nm : "div__partner_logistics-"
+		, key : "partner_logistics$add"
 	};
 
 	//var o = window.b2link.ui.add_HTML_JS_CSS( d );
@@ -34,7 +34,7 @@ window.b2link_ui_partner.partner_delivery.add = function()
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
 
-				window.b2link_ui_partner.partner_delivery.getAllList();
+				window.b2link_ui_partner.partner_logistics.getAllList();
 			}
 			else alert( "등록 실패." );
 
@@ -42,7 +42,7 @@ window.b2link_ui_partner.partner_delivery.add = function()
 		});
 	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui_partner.partner_delivery.add():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui_partner.partner_logistics.add():{Array}----------" );
 
 	return o;
 };

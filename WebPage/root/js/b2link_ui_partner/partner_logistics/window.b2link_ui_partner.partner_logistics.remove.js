@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_ui_partner/partner_delivery/window.b2link_ui_partner.partner_delivery.update.js";
+var fileNm = "js/b2link_ui_partner/partner_logistics/window.b2link_ui_partner.partner_logistics.remove.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,42 +7,42 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
-window.b2link_ui_partner.partner_delivery.update = function()
+window.b2link_ui_partner.partner_logistics.remove = function()
 {
-	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui_partner.partner_delivery.update():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ S ] - window.b2link_ui_partner.partner_logistics.remove():{Array}----------" );
 	var d = {
-		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_BUYER
-		, nm : "update"
+		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_PARTNER_LOGISTICS
+		, nm : "remove"
 		, css_url : "./css_ui/"
-		, css_front_nm : "div__partner_delivery-"
-		, key : "partner_delivery$update"
+		, css_front_nm : "div__partner_logistics-"
+		, key : "partner_logistics$remove"
 	};
 
 	//var o = window.b2link.ui.add_HTML_JS_CSS( d );
 	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
 
-	if( !o[ 1 ].getEvt_Complete__Update() )
+	if( !o[ 1 ].getEvt_Complete__Delete() )
 	{
-		o[ 1 ].setEvt_Complete__Update( function( result )
+		o[ 1 ].setEvt_Complete__Delete( function( result )
 		{
-			window.TtwLog.timeStamp( "[ S ] - o[ 1 ].setEvt_Complete__Update( function( result ){----------" );
+			window.TtwLog.timeStamp( "[ S ] - o[ 1 ].setEvt_Complete__Delete( function( result ){----------" );
 			if( window.b2link.fn.getResultStatus( result ) )
 			{
 				/*/
 				//o[ 1 ].hide();
 				////window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
-				//window.b2link_ui_partner.partner_delivery.getAllList();
+				//window.b2link_ui_partner.partner_logistics.getAllList();
 				/*/
 				o[ 1 ].req_Data();
 				//*/
 			}
-			else alert( "수정 실패." );
+			else alert( "삭제 실패." );
 
-			window.TtwLog.timeStamp( "[ E ] - o[ 1 ].setEvt_Complete__Update( function( result ){----------" );
+			window.TtwLog.timeStamp( "[ E ] - o[ 1 ].setEvt_Complete__Delete( function( result ){----------" );
 		});
 	}
 
-	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui_partner.partner_delivery.update():{Array}----------" );
+	window.TtwLog.timeStamp( "---- [ E ] - window.b2link_ui_partner.partner_logistics.remove():{Array}----------" );
 
 	return o;
 };
