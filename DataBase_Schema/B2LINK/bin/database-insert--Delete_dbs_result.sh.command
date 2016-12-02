@@ -1,3 +1,3 @@
-rm -f ../database-insert/*.dbs
+find ../database-insert/ -name *.dbs -exec rm -f {} \;
 
-rm -f ../database-insert/*.result
+find ../database-insert/ -name *.result -exec rm -f {} \;

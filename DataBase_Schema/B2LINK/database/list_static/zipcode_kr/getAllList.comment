@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ { zipcode_kr }, { zipcode_kr }, ... ]
+ */

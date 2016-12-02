@@ -1,1 +1,1 @@
-rm -f ../database/_schema/*.json
+find ../database/_schema -name *.json -exec rm -f {} \;

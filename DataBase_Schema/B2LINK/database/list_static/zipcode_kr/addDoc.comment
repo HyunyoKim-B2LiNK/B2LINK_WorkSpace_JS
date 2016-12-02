@@ -1,0 +1,8 @@
+/**
+ * @function
+ * @param {Object} d {"zip_code":"KS013","addr":"서초구","addr_kr":"서초구","addr_us":"Seocho","addr_cn":"瑞草区"}
+ * @return {uint} 0 or 1
+ *
+ * @example
+ * zipcode_kr$addDoc( {"zip_code":"KS013","addr":"서초구","addr_kr":"서초구","addr_us":"Seocho","addr_cn":"瑞草区"} );
+ */

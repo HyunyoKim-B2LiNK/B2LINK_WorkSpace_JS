@@ -1,0 +1,8 @@
+/**
+ * @function
+ * @param {Object} d {"nm":"AMERICAN FIRST NATIONAL BANK","nm_kr":"AMERICAN FIRST NATIONAL BANK","nm_cn":"恆豐銀行","nm_us":"AMERICAN FIRST NATIONAL BANK","city":"HOUSTON,TX","branch":"","swift_code":"AFNBUS4H"}
+ * @return {uint} 0 or 1
+ *
+ * @example
+ * bank_swift_us$addDoc( {"nm":"AMERICAN FIRST NATIONAL BANK","nm_kr":"AMERICAN FIRST NATIONAL BANK","nm_cn":"恆豐銀行","nm_us":"AMERICAN FIRST NATIONAL BANK","city":"HOUSTON,TX","branch":"","swift_code":"AFNBUS4H"} );
+ */

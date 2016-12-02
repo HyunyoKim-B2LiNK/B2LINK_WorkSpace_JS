@@ -1,0 +1,5 @@
+/**
+ * @function
+ * @param {Object} d {"nm":"中国銀行","nm_kr":"중국은행","nm_cn":"中国銀行","nm_us":"BANK OF CHINA","city":"BEIJING","branch":"(BANK OF CHINA HEAD OFFICE BATCH PAYMENT SERVICE)","swift_code":"BKCHCNBJBPS"}
+ * @return {Object}
+ */
