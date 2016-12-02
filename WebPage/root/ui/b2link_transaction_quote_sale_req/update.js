@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_brand/update.js";
+var fileNm = "./ui/b2link_transaction_quote_sale_req/update.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -203,6 +203,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				{
 					var ioc = io.children[ j ];
 					if( "INPUT" == ioc.tagName ) of[ "_fn_" + ioc.type ]( r, ioc )
+
 				}
 			}
 			else r[ io.className ] = io.innerText;
