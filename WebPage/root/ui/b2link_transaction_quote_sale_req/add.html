@@ -1,5 +1,5 @@
-<div id="div__transaction_quote_sale_req">
-	<h1>판매 가견적 요청서</h1>
+<div id="div__transaction_quote_sale_req-add">
+	<h1>판매 가견적 요청</h1>
 	<form>
 		<div class="inputs">
 
@@ -7,34 +7,32 @@
 				판매 가견적 요청서 등록 날짜 출력 ( 작성 당일 날짜 )
 				년, 월, 일
 			-->
-			<span>((date_regist))</span>
-			<br/>
-			<input type="date" class="date_regist" readonly="readonly" placeholder=""></input>
+			<span>((date_regist))</span> : <span>{{date_regist}}</span>
 
 			<!-- 
 				작성자 : 현재 로그인 된 비투링크 멤버 정보 출력
-				reference : member.member_public 
 				: 이름, 전화번호, 이메일
 			-->
-			<span>작성자</span>
-			<br/>
-			<span>((nm))</span><span>{{nm}}</span>
-			<br/>
-			<span>((phone_tel))</span><span>{{phone_tel}}</span>
-			<br/>
-			<span>((email))</span><span>{{email}}</span>
+			<section>
+				<span>((작성자))</span> : <span>((nm))</span><span>{{nm}}</span>
+				<br/>
+				<span>((department))</span> : <span>{{department}}</span>
+				<br/>
+				<span>((phone_tel))</span> : <span>{{phone_tel}}</span>
+				<br/>
+				<span>((email))</span> : <span>{{email}}</span>
+			</section>
 
 			<hr>
 
 			<!-- 
 				가견적을 요청하는 파트너사, 업체 담당자 선택하여 정보 불러오기
-				새창으로 열기
-				reference : 
+				모달처리가 된 패널로 열기
 			-->
-			<button class="btn__load_partner_buyer">((btn__load_partner_buyer))</button>
+			<button class="btn__load_partner_and_person">((btn__load_partner_and_person))</button>
 
 			<!-- 
-				위에서 선택한 파트너사, 업체 담당자 정보가 출력
+				위에서 선택한 파트너사, 업체 담당자 정보 출력
 				: 파트너 이름, 주소, 전화번호, 팩스
 				  파트너담당자 이름, 전화번호, 메신저, 이메일
 			-->
@@ -78,55 +76,54 @@
 
 			<hr>
 
+			<!--
+				배송 정보 : 배송 주소 입력, 거래 조건 선택, 배송 방법 선택
+				모달처리가 된 패널로 열기
+			-->
+			<button class="btn__input_shipment_data">((btn__input_shipment_data))</button>
+
+			<!-- 
+				입력한 정보 출력 : 배송주소, 거래조건, 배송방법
+			-->
+			<table>
+				<thead>
+					<tr>
+						<th>((th__shipping_address))</th>
+						<th>((th__trade_terms))</th>
+						<th>((th__delivery_type))</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{shipping_address}}</td>
+						<td>{{trade_terms}}</td>
+						<td>{{delivery_type}}</td>
+					</tr>
+				</tbody>
+			</table>
+
 			<!-- 
 				상품을 선택하여 정보 불러오기
-				새창으로 열기
+				모달처리가 된 패널로 열기
 				reference : brand_basic, product_basic
 			-->
-			<button class="btn__load_info">((btn__load_info))</button>
+			<button class="btn__load_item">((btn__load_item))</button>
 
 			<!-- 
 				수량 정보 입력 : 요청 수량 입력, 수량의 단위 선택, 단위의 수량 입력
-				새창으로 열기
-				<form>
-					<span>((quantity))</span>
-					<input type="number" class="quantity" placeholder="0" required></input>
-					<span>((UOM))</span>
-					<select class="UOM" required></select>
-					<span>((quantity_of_unit))</span>
-					<input type="number" class="quantity_of_unit" placeholder="1" required></input>
-				</form>
-				
+				모달처리가 된 패널로 열기
 			-->
 			<button class="btn__input_quantity_data">((btn__input_quantity_data))</button>
 
 			<!--
 				요청 납기일 입력
-				새창으로 열기
-				<input type="date" class="due_date"></input>
+				모달처리가 된 패널로 열기
 			-->
 			<button class="btn__input_due_date_data">((btn__input_due_date_data))</button>
 
-			<!--
-				배송 정보 : 배송 주소 입력, 거래 조건 선택, 배송 방법 선택, 배송비 결제 방법 선택
-				새창으로 열기
-				모든 값은 입력되어야 한다.
-				<form>
-					<span>((배송주소))</span>
-					<input class="" placeholder="" required></input>
-					<span>((trade_terms))</span> 
-					<select class=""></select> ( 미정, FOB, CIF, EXW, DDP )
-					<span>((배송방법))</span>
-					<select class=""></select> ( 미정, 항공, 해운, 택배, 퀵, 용달 )
-					<span>((배송비결제방법))</span>
-					<select class=""></select> ( 미정, 카드결제, 계좌이체, ??? )
-				</form>
-			-->
-			<button class="btn__input_shipment_data">((btn__input_shipment_data))</button>
-
 			<!-- 
 				선택해서 불러온 상품 정보 출력 : 브랜드이름, 상품이름
-				입력한 정보 출력 : 수량, 수량단위, 단위수량, 요청납기일, 배송주소, 거래조건, 배송방법, 배송비결제방법
+				입력한 정보 출력 : 수량, 수량단위, 단위수량, 요청납기일
 			-->
 			<table>
 				<thead>
@@ -137,10 +134,6 @@
 						<th>((th__UOM))</th>
 						<th>((th__quantity_of_unit))</th>
 						<th>((th__due_date))</th>
-						<th>((th__배송주소))</th>
-						<th>((th__trade_terms))</th>
-						<th>((th__배송방법))</th>
-						<th>((th__배송비결제방법))</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -151,24 +144,24 @@
 						<td>{{UOM}}</td>
 						<td>{{quantity_of_unit}}</td>
 						<td>{{due_date}}</td>
-						<td>{{배송주소}}</td>
-						<td>{{trade_terms}}</td>
-						<td>{{배송방법}}</td>
-						<td>{{배송비결제방법}}</td>
 					</tr>
 				</tbody>
 			</table>
 
+			<hr>
+
 			<!--
-				옵션
 				메모 입력
 			-->
 			<span>((memo))</span>
+			<br/>
 			<textarea class="memo"></textarea>
 		</div>
 	</form>
 
 	<br/>
-<!-- 가견적 요청하기 버튼 클릭 -> 작성 내용 다시 보여주기 -> 가견적 요청하기 버튼 -->
-<include-html>./ui_include/div/btns__checkOverlap_add_cancel.html</include-html>
+
+<!-- btn__작성완료, btn__취소 -->
+<!-- 모달패널 : 작성완료 하시겠습니까?, 취소 하시겠습니까? [확인][취소] -->
+<include-html>./ui_include/div/btns__add_cancel.html</include-html>
 </div>
