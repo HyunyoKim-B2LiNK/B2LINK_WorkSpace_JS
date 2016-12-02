@@ -1,0 +1,17 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	"cd_category" : "012345678901"
+ *	, "description" : "이커머스"
+ *	, "description_cn" : "이커머스"
+ *	, "description_kr" : "이커머스"
+ *	, "description_us" : "e-commerce"
+ *	, "nm" : "이커머스"
+ *	, "nm_kr" : "이커머스"
+ *	, "nm_cn" : "이커머스"
+ *	, "nm_us" : "e-commerce"
+ * }
+ * </code>
+ */
