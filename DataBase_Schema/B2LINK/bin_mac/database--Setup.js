@@ -17,8 +17,8 @@ g.FILE_NM__DB_SYSTEM_JS_REMOVE = "_db.system.js.remove.js";
 g.FILE_NM__CREATE_DB_AND_USER = "_create_DB_And_User";
 
 //g.PATH_BIN = "E:/WorkSpace_B2LINK/DataBase_Schema/B2LINK/bin/";//Folder;
-g.PATH_BIN_ADMIN = "execute_mongoclient_js__admin ";//BAT File;
-g.PATH_BIN_DATABASE = "execute_mongoclient_js__database ";//BAT File;
+g.PATH_BIN_ADMIN = "./execute_mongoclient_js__admin.sh ";//BAT File;
+g.PATH_BIN_DATABASE = "./execute_mongoclient_js__database.sh ";//BAT File;
 
 g.PASSWORD_R = "_r_qlxnfldzmdkfEjqmffb!";
 g.PASSWORD_RW = "_rw_qlxnfldzmdkfEjqmffb!";
@@ -47,7 +47,7 @@ g.execute_mongoclient__AddProcedure = function( dbNm, filePath )
 		//global.TtwLog.timeStamp( "idError : " + idError );
 		if( idError > -1 )
 		{
-			//console.error( r );
+			global.TtwLog.error( r );
 			STtwUtilFsWriteStream.writeFile( filePath + ".errorResult", r );
 		}
 	}
@@ -78,7 +78,7 @@ g.execute_mongoclient__CreateDBAndUser = function( dbNm, path )
 		//global.TtwLog.timeStamp( "idError : " + idError );
 		if( idError > -1 )
 		{
-			//console.error( r );
+			global.TtwLog.error( r );
 			SUtilFsWriteStream.writeFile( filePath + ".errorResult", r );
 		}
 	}

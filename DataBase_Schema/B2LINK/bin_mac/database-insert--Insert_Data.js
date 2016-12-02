@@ -14,7 +14,7 @@ var g = global;
 //----------------------------------------------------------------------------------------------------;
 
 //g.PATH_BIN = "E:/WorkSpace_B2LINK/DataBase_Schema/B2LINK/bin/";//Folder;
-g.PATH_BIN_ADMIN = "execute_mongoclient_js__admin ";//BAT File;
+g.PATH_BIN_ADMIN = "./execute_mongoclient_js__admin.sh ";//BAT File;
 
 g.PASSWORD_R = "_r_qlxnfldzmdkfEjqmffb!";
 g.PASSWORD_RW = "_rw_qlxnfldzmdkfEjqmffb!";
@@ -23,17 +23,17 @@ g.PASSWORD_RW = "_rw_qlxnfldzmdkfEjqmffb!";
 
 g.execute_mongoclient = function( dbNm, filePath )
 {
-	//////////console.log( "-- [ S ] - g.execute_mongoclient():void----------" );
-	var sExec = g.PATH_BIN_ADMIN + filePath + " > " + filePath + ".result";console.log( "sExec : " + sExec );
-	var r = STtwUtilCP.sExec( sExec );//console.log( "r : " + r );
-	var idError = r.indexOf( "error" );//console.log( "idError : " + idError );
+	//////////global.TtwLog.log( "-- [ S ] - g.execute_mongoclient():void----------" );
+	var sExec = g.PATH_BIN_ADMIN + filePath + " > " + filePath + ".result";global.TtwLog.log( "sExec : " + sExec );
+	var r = STtwUtilCP.sExec( sExec );//global.TtwLog.log( "r : " + r );
+	var idError = r.indexOf( "error" );//global.TtwLog.log( "idError : " + idError );
 
 	if( idError > -1 )
 	{
-		console.error( r );
+		global.TtwLog.error( r );
 		STtwUtilFsWriteStream.writeFile( filePath + ".errorResult", r );
 	}
-	//////////console.log( "-- [ E ] - g.execute_mongoclient():void----------" );
+	//////////global.TtwLog.log( "-- [ E ] - g.execute_mongoclient():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;
@@ -62,13 +62,13 @@ var i=0, iLen=aCPath0.length;
 for( ; i<iLen; ++i )
 {
 	io = aCPath0[ i ];
-	console.log( "----------[ S ] - DataBase Name : " + i + " - " + io + "----------" );
+	global.TtwLog.log( "----------[ S ] - DataBase Name : " + i + " - " + io + "----------" );
 
 	//g.fileSave_dbjs_createDBAndUser( io, path0 );
 	//g.fileSave_dbjs_removeAllProcesure( io, path0 );
 
 	path1 = path0 + io + "/";
-	console.log( "path1 : " + path1 );
+	global.TtwLog.log( "path1 : " + path1 );
 
 	//g.execute_mongoclient__CreateDBAndUser( io, path1 );
 	//g.execute_mongoclient__DB_JS_Remove( io, path1 );
@@ -82,25 +82,25 @@ for( ; i<iLen; ++i )
 	for( ; j<jLen; ++j )
 	{
 		jo = aCPath1[ j ];
-		console.log( "--------------------[ S ] - Collection Name : " + j + " - " + jo + "--------------------" );
+		global.TtwLog.log( "--------------------[ S ] - Collection Name : " + j + " - " + jo + "--------------------" );
 		path2 = path1 + jo + "/";
-		console.log( "path2 : " + path2 );
+		global.TtwLog.log( "path2 : " + path2 );
 
 		try{ a = f0( path2, ".js" ); }
 		catch( er )
 		{
-			console.error( "er : " + er );
+			global.TtwLog.error( "er : " + er );
 			continue;
 		}
 
 		var ko;
-		var k=0, kLen=a.length;console.log( "Procesure Length : " + kLen );
+		var k=0, kLen=a.length;global.TtwLog.log( "Procesure Length : " + kLen );
 		for( ; k<kLen; ++k )
 		{
 			ko = a[ k ];
-			console.log( "------------------------------Procedure Name : " + k + " - " + ko + "------------------------------" );
-			//console.log( "------------------------------[ S ] - Procedure Name : " + ko + "------------------------------" );
-			//console.log( "------------------------------[ E ] - Procedure Name : " + ko + "------------------------------" );
+			global.TtwLog.log( "------------------------------Procedure Name : " + k + " - " + ko + "------------------------------" );
+			//global.TtwLog.log( "------------------------------[ S ] - Procedure Name : " + ko + "------------------------------" );
+			//global.TtwLog.log( "------------------------------[ E ] - Procedure Name : " + ko + "------------------------------" );
 			path3 = path2 + ko;
 			//var sJS = f2( path3 ).toString( "utf8" );
 
@@ -116,19 +116,18 @@ for( ; i<iLen; ++i )
 			}
 			catch( er )
 			{
-				//console.error( er );
-				//console.log( er );
-				//console.logObjectInformation( er );
+				global.TtwLog.error( er );
+				//global.TtwLog.logObjectInformation( er );
 				//f1( path3 + ".errorResult", er );
 			}
 		}
 		a.length = 0;
-		console.log( "--------------------[ E ] - Collection Name : " + j + " - " + jo + "--------------------" );
-		console.log( "" );console.log( "" );console.log( "" );
+		global.TtwLog.log( "--------------------[ E ] - Collection Name : " + j + " - " + jo + "--------------------" );
+		global.TtwLog.log( "" );global.TtwLog.log( "" );global.TtwLog.log( "" );
 	}
 	aCPath1.length = 0;
-	console.log( "----------[ S ] - DataBase Name : " + i + " - " + io + "----------" );
-	console.log( "" );console.log( "" );console.log( "" );
+	global.TtwLog.log( "----------[ S ] - DataBase Name : " + i + " - " + io + "----------" );
+	global.TtwLog.log( "" );global.TtwLog.log( "" );global.TtwLog.log( "" );
 	//*/
 }
 aCPath0.length = 0;
