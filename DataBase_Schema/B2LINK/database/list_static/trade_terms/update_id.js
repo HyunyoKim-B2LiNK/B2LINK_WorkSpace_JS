@@ -10,10 +10,11 @@ function( d )
 	if ( 0 == r )
 	{
 		print( "-- [ S ] - trade_terms$update_id():{uint}---------- return 0" );
+		return 0;
 	}
 
 	trade_terms$_getCol().update(
-		{ _id : NumberInt( d._id ) }//search Object;
+		{ _id : NumberInt( r._id ) }//search Object;
 		, {
 			$set : {
 			   description : r.description

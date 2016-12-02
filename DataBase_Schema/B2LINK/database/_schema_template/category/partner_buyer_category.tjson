@@ -1,0 +1,81 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"partner.partner_buyer"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"partner_buyer"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"partner"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		///Code of Category // Array로 수정 ?
+		, "cd_category" : { "description" : "Code of Category(unique value) ", "exampleValue" : "100000000000"
+			<include>000_common_txt/string_len12.txt</include>
+		}
+
+		//Partner Buyer Category Description
+		, "description" : { "description" : "Partner Buyer Category Description(Default)", "exampleValue" : "이커머스"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Buyer Category Description(CN)
+		, "description_cn" : { "description" : "Partner Buyer Category Description(CN)", "exampleValue" : "E-Commerce"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Buyer Category Description(KR)
+		, "description_kr" : { "description" : "Partner Buyer Category Description(KR)", "exampleValue" : "E-Commerce"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Buyer Category Description(US)
+		, "description_us" : { "description" : "Partner Buyer Category Description(US)", "exampleValue" : "E-Commerce"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Buyer Category Name(Default)
+		, "nm" : { "description" : "Partner Buyer Category Name(Default)", "exampleValue" : "E-Commerce"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Buyer Category Name(CN)
+		, "nm_cn" : { "description" : "Partner Buyer Category Name(CN)", "exampleValue" : ""
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Buyer Category Name(KR)
+		, "nm_kr" : { "description" : "Partner Buyer Category Name(KR)", "exampleValue" : "이커머스"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Buyer Category Name(US)
+		, "nm_us" : { "description" : "Partner Buyer Category Name(US)", "exampleValue" : "E-Commerce"
+			<include>000_common_txt/string_default.txt</include>
+		}
+	}
+}
