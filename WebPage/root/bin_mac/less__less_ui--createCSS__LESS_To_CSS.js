@@ -17,6 +17,8 @@ var uiPath = "../ui/";
 
 var sConstantValue = STtwUtilFsReadStream.getFile( filePath_Const ).toString( "utf8" );
 
+SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS.o_Command.lessc = "lessc ";
+
 //LESS Path에서 CSS를 만든 후 CSS 폴더로 복사 한다.;
 try{ SUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS( lessPath, cssPath, sConstantValue, true ); }catch( er ){ console.error( "try catch Error0 : " + er ); }
 
@@ -39,6 +41,7 @@ catch( er )
 }
 
 //----------------------------------------------------------------------------------------------------;
+console.log( STtwUtilFsWriteStream_Extension_Dev.create_CSS_FromLESS.o_Command );
 
 global.process.exit();
 
