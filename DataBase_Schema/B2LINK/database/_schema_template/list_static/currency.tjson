@@ -1,0 +1,53 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;;
+	, "reference" : [
+		"list_static.country"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"country"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"list_static"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Code - Number; https://en.wikipedia.org/wiki/ISO_4217#cite_note-ReferenceA-6
+		, "cd_n" : { "description" : "Code - Number", "exampleValue" : "840"<include>000_common_txt/string_len3.txt</include> }
+
+		//Code - String - 3;
+		, "cd_us3" : { "description" : "Code - String - 3", "exampleValue" : "KRW"<include>000_common_txt/string_len3.txt</include> }
+
+		//currency;
+		, "currency" : { "description" : "Currency", "exampleValue" : "United States dollar"<include>000_common_txt/string_default.txt</include> }
+
+		//Number of digits after the decimal separator.
+		, "e" : { "description" : "Number of digits after the decimal separator.", "exampleValue" : 2<include>000_common_txt/uint_len1.txt</include> }
+
+		//location using this currency;
+		, "locations" : { "description" : "Locations using this currency"
+			, "type" : "array" , "length" : 0
+		 }
+	}
+}
