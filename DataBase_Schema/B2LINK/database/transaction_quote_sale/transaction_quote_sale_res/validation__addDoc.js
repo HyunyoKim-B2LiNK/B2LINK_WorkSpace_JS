@@ -15,8 +15,8 @@ function( d )
 
 	d.logistic_fee._id$currency = NumberInt( d.logistic_fee._id$currency );
 	d.total_supply_price._id$currency = NumberInt( d.total_supply_price._id$currency );
-	var id = 0, date_create_length = d.date_create.length;
-	for ( ; id < date_create_length ; ++id) d.date_create[ id ] = NumberInt( d.date_create[ id ] );
+	var id=0, date_create_length=d.date_create.length;
+	for( ; id<date_create_length; ++id ) d.date_create[ id ] = NumberInt( d.date_create[ id ] );
 
 	print( "-- [ E ] - transaction_quote_sale_res$validation__addDoc():{Object}----------" );
 	return d;
