@@ -1,0 +1,124 @@
+<div id="div__load_partner_and_person">
+	<h1>파트너 및 파트너 담당자 선택</h1>
+	<form>
+
+		<!--
+			파트너 검색  
+		-->
+		<span>((파트너 검색))</span>
+		<input type="search"></input>
+		<button type="submit">검색</button>
+
+		<!--
+			파트너 검색 결과 출력
+			라디오 버튼 선택
+		-->
+		<table>
+			<thead>
+				<tr>
+					<th>(())</th>
+					<th>((th__nm))</th>
+					<th>((th__nm_ceo))</th>
+					<th>((th__country))</th>
+					<th>((th__address))</th>
+					<th>((th__phone_tel))</th>
+					<th>((th__Description))</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="radio" name="partner_info"></input>
+					</td>
+					<td>{{nm}}</td>
+					<td>{{nm_ceo}}</td>
+					<td>{{country}}</td>
+					<td>{{address}}</td>
+					<td>{{phone_tel}}</td>
+					<td>{{Description}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!--
+			선택한 파트너의 담당자 출력
+			라디오 버튼 선택
+		-->
+		<h3>선택하신 파트너의 담당자</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>(())</th>
+					<th>((th__nm))</th>
+					<th>((th__phone))</th>
+					<th>((th__msg))</th>
+					<th>((th__email))</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="radio" name="partner_person_info"></input>
+					</td>
+					<td>{{nm}}</td>
+					<td>{{phone}}</td>
+					<td>{{msg}}</td>
+					<td>{{email}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!--
+			선택한 파트너, 파트너 담당자 정보 출력
+		-->
+		<h3>선택하신 파트너 내역</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>((th__nm))</th>
+					<th>((th__nm_ceo))</th>
+					<th>((th__country))</th>
+					<th>((th__address))</th>
+					<th>((th__phone_tel))</th>
+					<th>((th__Description))</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{nm}}</td>
+					<td>{{nm_ceo}}</td>
+					<td>{{country}}</td>
+					<td>{{address}}</td>
+					<td>{{phone_tel}}</td>
+					<td>{{Description}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>선택하신 파트너 담당자 내역</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>((th__nm))</th>
+					<th>((th__phone))</th>
+					<th>((th__msg))</th>
+					<th>((th__email))</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{nm}}</td>
+					<td>{{phone}}</td>
+					<td>{{msg}}</td>
+					<td>{{email}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+	<br/>
+
+<!--
+	버튼 : 확인, 취소
+-->
+<include-html>./ui_include/div/btns__add_cancel.html</include-html>
+</div>
