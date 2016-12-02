@@ -1,0 +1,19 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	"_id" : 0
+ *	 , "cd_category" : "112345678901"
+ *	 , "description" : "재조판매업자"
+ *	 , "description_cn" : "재조판매업자"
+ *	 , "description_kr" : "재조판매업자"
+ *	 , "description_us" : "재조판매업자"
+ *	 , "nm" : "재조판매업자"
+ *	 , "nm_kr" : "재조판매업자"
+ *	 , "nm_cn" : "재조판매업자"
+ *	 , "nm_us" : "재조판매업자"
+ * }
+ * </code>
+ * return {Object}
+ */

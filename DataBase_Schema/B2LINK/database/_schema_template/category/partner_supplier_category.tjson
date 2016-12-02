@@ -1,0 +1,81 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"partner.partner_supplier"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"partner_supplier"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"partner"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		///Code of Category // Array로 수정 ?
+		, "cd_category" : { "description" : "Code of Category(unique value) ", "exampleValue" : "100000000000"
+			<include>000_common_txt/string_len12.txt</include>
+		}
+
+		//Partner Supplier Category Description
+		, "description" : { "description" : "Partner Supplier Category Description(Default)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Supplier Category Description(CN)
+		, "description_cn" : { "description" : "Partner Supplier Category Description(CN)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Supplier Category Description(KR)
+		, "description_kr" : { "description" : "Partner Supplier Category Description(KR)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Supplier Category Description(US)
+		, "description_us" : { "description" : "Partner Supplier Category Description(US)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Supplier Category Name(Default)
+		, "nm" : { "description" : "Partner Supplier Category Name(Default)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Supplier Category Name(CN)
+		, "nm_cn" : { "description" : "Partner Supplier Category Name(CN)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Supplier Category Name(KR)
+		, "nm_kr" : { "description" : "Partner Supplier Category Name(KR)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Partner Supplier Category Name(US)
+		, "nm_us" : { "description" : "Partner Supplier Category Name(US)", "exampleValue" : "해운사"
+			<include>000_common_txt/string_default.txt</include>
+		}
+	}
+}
