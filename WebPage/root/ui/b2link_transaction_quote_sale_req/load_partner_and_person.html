@@ -1,13 +1,15 @@
 <div id="div__load_partner_and_person">
-	<h1>파트너 및 파트너 담당자 선택</h1>
+	<h1>((h1__load_partner_and_person))</h1>
 	<form>
 
 		<!--
 			파트너 검색  
 		-->
-		<span>((파트너 검색))</span>
+		<h3>((h3__search_partner))</h3>
+
 		<input type="search"></input>
-		<button type="submit">검색</button>
+		<button type="submit">((search))</button>
+		<br/>
 
 		<!--
 			파트너 검색 결과 출력
@@ -44,7 +46,8 @@
 			선택한 파트너의 담당자 출력
 			라디오 버튼 선택
 		-->
-		<h3>선택하신 파트너의 담당자</h3>
+		<h3>((h3__select_partner_person))</h3>
+
 		<table>
 			<thead>
 				<tr>
@@ -69,9 +72,10 @@
 		</table>
 
 		<!--
-			선택한 파트너, 파트너 담당자 정보 출력
+			선택한 파트너 정보 출력
 		-->
-		<h3>선택하신 파트너 내역</h3>
+		<h3>((h3__result_partner))</h3>
+
 		<table>
 			<thead>
 				<tr>
@@ -94,7 +98,12 @@
 				</tr>
 			</tbody>
 		</table>
-		<h3>선택하신 파트너 담당자 내역</h3>
+		
+		<!--
+			선택한 파트너 담당자 정보 출력
+		-->
+		<h3>((h3__result_partner_person))</h3>
+
 		<table>
 			<thead>
 				<tr>
@@ -114,7 +123,6 @@
 			</tbody>
 		</table>
 	</form>
-
 	<br/>
 
 <!--

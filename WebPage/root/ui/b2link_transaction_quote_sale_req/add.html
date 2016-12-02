@@ -1,5 +1,5 @@
 <div id="div__transaction_quote_sale_req-add">
-	<h1>판매 가견적 요청</h1>
+	<h1>((h1__transaction_quote_sale_req))</h1>
 	<form>
 		<div class="inputs">
 
@@ -7,14 +7,17 @@
 				판매 가견적 요청서 등록 날짜 출력 ( 작성 당일 날짜 )
 				년, 월, 일
 			-->
-			<span>((date_regist))</span> : <span>{{date_regist}}</span>
+			<span>((date_create))</span> : <span>{{date_create}}</span>
+			<br/>
 
 			<!-- 
-				작성자 : 현재 로그인 된 비투링크 멤버 정보 출력
+				작성자 : 현재 로그인 된 비투링크 멤버 정보 출력 _id$member
 				: 이름, 전화번호, 이메일
 			-->
+			<h3>((h3__author))</h3>
+			
 			<section>
-				<span>((작성자))</span> : <span>((nm))</span><span>{{nm}}</span>
+				<span>((nm))</span> : <span>{{nm}}</span>
 				<br/>
 				<span>((department))</span> : <span>{{department}}</span>
 				<br/>
@@ -25,11 +28,14 @@
 
 			<hr>
 
+			<h3>((h3__partner_and_person))</h3>
+
 			<!-- 
 				가견적을 요청하는 파트너사, 업체 담당자 선택하여 정보 불러오기
 				모달처리가 된 패널로 열기
 			-->
 			<button class="btn__load_partner_and_person">((btn__load_partner_and_person))</button>
+			<br/>
 
 			<!-- 
 				위에서 선택한 파트너사, 업체 담당자 정보 출력
@@ -76,11 +82,13 @@
 
 			<hr>
 
+			<h3>((h3__shipment))</h3>
+
 			<!--
 				배송 정보 : 배송 주소 입력, 거래 조건 선택, 배송 방법 선택
 				모달처리가 된 패널로 열기
 			-->
-			<button class="btn__input_shipment_data">((btn__input_shipment_data))</button>
+			<button class="btn__input_shipment">((btn__input_shipment))</button>
 
 			<!-- 
 				입력한 정보 출력 : 배송주소, 거래조건, 배송방법
@@ -102,6 +110,8 @@
 				</tbody>
 			</table>
 
+			<h3>((h3__item))</h3>
+
 			<!-- 
 				상품을 선택하여 정보 불러오기
 				모달처리가 된 패널로 열기
@@ -113,13 +123,14 @@
 				수량 정보 입력 : 요청 수량 입력, 수량의 단위 선택, 단위의 수량 입력
 				모달처리가 된 패널로 열기
 			-->
-			<button class="btn__input_quantity_data">((btn__input_quantity_data))</button>
+			<button class="btn__input_quantity">((btn__input_quantity))</button>
 
 			<!--
 				요청 납기일 입력
 				모달처리가 된 패널로 열기
 			-->
-			<button class="btn__input_due_date_data">((btn__input_due_date_data))</button>
+			<button class="btn__input_date">((btn__input_date))</button>
+			<br/>
 
 			<!-- 
 				선택해서 불러온 상품 정보 출력 : 브랜드이름, 상품이름
@@ -153,8 +164,7 @@
 			<!--
 				메모 입력
 			-->
-			<span>((memo))</span>
-			<br/>
+			<h3>((h3__memo))</h3>
 			<textarea class="memo"></textarea>
 		</div>
 	</form>

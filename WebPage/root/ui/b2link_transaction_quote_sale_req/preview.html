@@ -1,18 +1,20 @@
 <div id="div__transaction_quote_sale_req-add">
-	<h1>판매 가견적 요청</h1>
+	<h1>((h1__transaction_quote_sale_req))</h1>
 	<form>
 		<div class="inputs">
 
 			<!-- 
 				판매 가견적 요청서 등록 날짜 
 			-->
-			<span>((date_regist))</span> : <span>{{date_regist}}</span>
+			<span>((date_create))</span> : <span>{{date_create}}</span>
 
 			<!-- 
 				작성자이름, 전화번호, 이메일
 			-->
+			<h3>((h3__author))</h3>
+			
 			<section>
-				<span>((작성자))</span> : <span>((nm))</span><span>{{nm}}</span>
+				<span>((nm))</span> : <span>{{nm}}</span>
 				<br/>
 				<span>((department))</span> : <span>{{department}}</span>
 				<br/>
@@ -22,6 +24,8 @@
 			</section>
 
 			<hr>
+
+			<h3>((h3__partner_and_person))</h3>
 
 			<!-- 
 				파트너 이름, 주소, 전화번호, 팩스
@@ -63,6 +67,8 @@
 
 			<hr>
 
+			<h3>((h3__shipment))</h3>
+
 			<!-- 
 				배송주소, 거래조건, 배송방법
 			-->
@@ -82,6 +88,8 @@
 					</tr>
 				</tbody>
 			</table>
+
+			<h3>((h3__item))</h3>
 
 			<!-- 
 				브랜드이름, 상품이름
@@ -115,8 +123,7 @@
 			<!--
 				메모
 			-->
-			<span>((memo))</span>
-			<br/>
+			<h3>((h3__memo))</h3>
 			<span>{{memo}}</span>
 		</div>
 	</form>
