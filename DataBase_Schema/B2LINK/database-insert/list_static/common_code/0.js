@@ -5,6 +5,7 @@ var a = [
 ];
 //----------------------------------------------------------------------------------------------------;
 var db0 = db.getSiblingDB( "list_static" );
+	db0.common_code.remove({});
 var io;
 var i=0, iLen=a.length;
 for( ; i<iLen; ++i ){
