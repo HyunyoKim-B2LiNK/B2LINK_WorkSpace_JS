@@ -1,1 +1,1 @@
-..\node_modules\exes\exes100 database--Setup.js
+./database--Setup.sh.command
