@@ -14,8 +14,8 @@ function( d )
 		io._id$brand_basic = NumberInt( io._id$brand_basic );
 		io._id$product_basic = NumberInt( io._id$product_basic );
 		io.item_total_price._id$currency = NumberInt( io.item_total_price._id$currenc );
-		var id = 0, due_date_length = io.due_date.length;
-		for ( ; id < due_date_length ; ++id) io.due_date[ id ] = NumberInt( io.due_date[ id ] );
+		var id=0, due_date_length=io.due_date.length;
+		for( ; id<due_date_length; ++id ) io.due_date[ id ] = NumberInt( io.due_date[ id ] );
 		io.price_quantity._id$currency = NumberInt( io.price_quantity._id$currency );
 		io.price_quantity_of_unit._id$currency = NumberInt( io.price_quantity_of_unit._id$currency );
 		io.quantity = NumberInt( io.quantity );
