@@ -1,19 +1,19 @@
 function( d )
 {
-	print( "-- [ S ] - trade_terms$update_id():{uint}----------" );
+	print( "-- [ S ] - partner_buyer_category$update_id():{uint}----------" );
 
 	print( "d._id :" + d._id );
 	printjson( d );
 
-	var r = trade_terms$validation__update_id( d );
+	var r = partner_buyer_category$validation__update_id( d );
 
 	if ( 0 == r )
 	{
-		print( "-- [ S ] - trade_terms$update_id():{uint}---------- return 0" );
+		print( "-- [ S ] - partner_buyer_category$update_id():{uint}---------- return 0" );
 		return 0;
 	}
 
-	trade_terms$_getCol().update(
+	partner_buyer_category$_getCol().update(
 		{ _id : NumberInt( r._id ) }//search Object;
 		, {
 			$set : {
@@ -30,6 +30,6 @@ function( d )
 		}
 	);
 
-	print( "-- [ S ] - trade_terms$update_id():{uint}---------- return 1" );
+	print( "-- [ S ] - partner_buyer_category$update_id():{uint}---------- return 1" );
 	return 1;
 }

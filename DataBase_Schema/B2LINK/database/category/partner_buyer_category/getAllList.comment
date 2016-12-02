@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ {partner_buyer_category}, {partner_buyer_category}, ... ]
+ */
