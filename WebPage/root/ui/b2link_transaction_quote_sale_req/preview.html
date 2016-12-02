@@ -1,0 +1,136 @@
+<div id="div__transaction_quote_sale_req-add">
+	<h1>((h1__transaction_quote_sale_req))</h1>
+	<form>
+		<div class="inputs">
+
+			<!-- 
+				판매 가견적 요청서 등록 날짜 
+			-->
+			<span>((date_create))</span> : <span>{{date_create}}</span>
+
+			<!-- 
+				작성자이름, 전화번호, 이메일
+			-->
+			<h3>((h3__writer))</h3>
+			
+			<section>
+				<span>((nm))</span> : <span>{{nm}}</span>
+				<br/>
+				<span>((department))</span> : <span>{{department}}</span>
+				<br/>
+				<span>((phone_tel))</span> : <span>{{phone_tel}}</span>
+				<br/>
+				<span>((email))</span> : <span>{{email}}</span>
+			</section>
+
+			<hr>
+
+			<h3>((h3__partner_and_person))</h3>
+
+			<!-- 
+				파트너 이름, 주소, 전화번호, 팩스
+				파트너담당자 이름, 전화번호, 메신저, 이메일
+			-->
+			<table>
+				<thead>
+					<tr>
+						<!--
+							파트너사 정보
+						-->
+						<th>((th__nm))</th>
+						<th>((th__address))</th>
+						<th>((th__phone_tel))</th>
+						<th>((th__phone_fax))</th>
+						<!--
+							파트너사 담당자 정보
+						-->
+						<th>((th__nm))</th>
+						<th>((th__phone))</th>
+						<th>((th__msg))</th>
+						<th>((th__email))</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{nm.a}}</td>
+						<td>{{address}}</td>
+						<td>{{phone_tel}}</td>
+						<td>{{phone_fax}}</td>
+
+						<td>{{userInfo.NAME}}</td>
+						<td>{{userInfo.PHONE}}</td>
+						<td>{{userInfo.MSG}}</td>
+						<td>{{userInfo.EMAIL}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr>
+
+			<h3>((h3__shipment))</h3>
+
+			<!-- 
+				배송주소, 거래조건, 배송방법
+			-->
+			<table>
+				<thead>
+					<tr>
+						<th>((th__shipping_address))</th>
+						<th>((th__trade_terms))</th>
+						<th>((th__delivery_type))</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{shipping_address}}</td>
+						<td>{{trade_terms}}</td>
+						<td>{{delivery_type}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>((h3__item))</h3>
+
+			<!-- 
+				브랜드이름, 상품이름
+				수량, 수량단위, 단위수량, 요청납기일
+			-->
+			<table>
+				<thead>
+					<tr>
+						<th>((th__brand_basic.nm))</th>
+						<th>((th__product_basic.nm))</th>
+						<th>((th__quantity))</th>
+						<th>((th__UOM))</th>
+						<th>((th__quantity_of_unit))</th>
+						<th>((th__due_date))</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{brand_basic.nm}}</td>
+						<td>{{product_basic.nm}}</td>
+						<td>{{quantity}}</td>
+						<td>{{UOM}}</td>
+						<td>{{quantity_of_unit}}</td>
+						<td>{{due_date}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr>
+
+			<!--
+				메모
+			-->
+			<h3>((h3__memo))</h3>
+			<span>{{memo}}</span>
+		</div>
+	</form>
+
+	<br/>
+
+<!-- btn__발송, btn__취소 -->
+<!-- 모달패널 : 발송 하시겠습니까?, 취소 하시겠습니까? [확인][취소] -->
+<include-html>./ui_include/div/btns__add_cancel.html</include-html>
+</div>
