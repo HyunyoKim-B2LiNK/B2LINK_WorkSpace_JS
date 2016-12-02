@@ -1,0 +1,5 @@
+/**
+ * @function
+ * @param {Object} d {"code0": 1000,"code1": 0,"code2": 0,"code":"100000000000","desc":"카테고리관리","bUse":1}
+ * @return {Object}
+ */

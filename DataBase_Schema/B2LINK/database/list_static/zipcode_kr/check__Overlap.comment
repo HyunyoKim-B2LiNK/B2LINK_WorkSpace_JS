@@ -1,0 +1,6 @@
+/**
+ * email Overlap check
+ * @function
+ * @param {Object} d Request Object {"zip_code":"KS013","addr":"서초구","addr_kr":"서초구","addr_en":"Seocho","addr_cn":"瑞草区"}
+ * @return {int} 0 or 1
+ */

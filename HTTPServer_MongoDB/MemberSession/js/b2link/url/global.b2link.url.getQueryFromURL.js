@@ -6,11 +6,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 /**
  * @function
  * @param {String} url
+ * @return {String}
  */
 global.b2link.url.getQueryFromURL = function( url )
 {
-	console.log( "---- [ S ] - global.b2link.url.getQueryFromURL():void----------" );
-	console.log( "---- [ E ] - global.b2link.url.getQueryFromURL():void----------" );
+	global.TtwLog.timeStamp( "---- [ S ] - global.b2link.url.getQueryFromURL():{String}----------" );
+	global.TtwLog.timeStamp( "---- [ E ] - global.b2link.url.getQueryFromURL():{String}----------" );
 	return global.server.getQueryFromURL( url );
 };
 

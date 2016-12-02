@@ -58,7 +58,7 @@ var d = {
 		}
 
 		//은행 이름 (영문);
-		, "nm_en" : { "description" : "은행 이름(영문)", "exampleValue" : "BANK OF CHINA"
+		, "nm_us" : { "description" : "은행 이름(영문)", "exampleValue" : "BANK OF CHINA"
 			<include>000_common_txt/string_default.txt</include>
 		}
 

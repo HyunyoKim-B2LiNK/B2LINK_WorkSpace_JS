@@ -1,20 +1,23 @@
 [
 	{ "keys": ["ctrl+n"], "command": "new_file" }
-    , { "keys": ["alt+d"], "command": "toggle_show_open_files" }
-    , { "keys": ["alt+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} }
+	, { "keys": ["alt+d"], "command": "toggle_show_open_files" }
+	, { "keys": ["alt+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} }
 	, { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} }
-    , { "keys": ["ctrl+w"], "command": "close_file" }
+	, { "keys": ["ctrl+w"], "command": "close_file" }
+	, { "keys": ["ctrl+s"], "command": "save" }
+	, { "keys": ["ctrl+c"], "command": "copy" }
+	, { "keys": ["ctrl+v"], "command": "paste" }
 	, { "keys": ["ctrl+q"], "command": "exit" }
-    , { "keys": ["ctrl+shift+r"], "command": "reload_file" }
-    , { "keys": ["ctrl+l"], "command": "show_overlay","args": {"overlay": "goto", "text": ":"} }
-    , { "keys": ["ctrl+alt+down"], "command": "duplicate_line" }
-    , { "keys": ["ctrl+shift+k"], "command": "find_prev" }
-    , { "keys": ["ctrl+k"], "command": "find_next" }
-    , { "keys": ["ctrl+shift+x"], "command": "upper_case" }
-    , { "keys": ["ctrl+shift+y"], "command": "lower_case" }
-    , { "keys": ["ctrl+shift+z"], "command": "swap_case" }
-    , { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} }
-    , { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} }
-    , { "keys": ["ctrl+up"], "command": "swap_line_up" }
-    , { "keys": ["ctrl+down"], "command": "swap_line_down" }
+	, { "keys": ["ctrl+shift+r"], "command": "reload_file" }
+	, { "keys": ["ctrl+l"], "command": "show_overlay","args": {"overlay": "goto", "text": ":"} }
+	, { "keys": ["ctrl+alt+down"], "command": "duplicate_line" }
+	, { "keys": ["ctrl+shift+k"], "command": "find_prev" }
+	, { "keys": ["ctrl+k"], "command": "find_next" }
+	, { "keys": ["ctrl+shift+x"], "command": "upper_case" }
+	, { "keys": ["ctrl+shift+y"], "command": "lower_case" }
+	, { "keys": ["ctrl+shift+z"], "command": "swap_case" }
+	, { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} }
+	, { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} }
+	, { "keys": ["ctrl+up"], "command": "swap_line_up" }
+	, { "keys": ["ctrl+down"], "command": "swap_line_down" }
 ]

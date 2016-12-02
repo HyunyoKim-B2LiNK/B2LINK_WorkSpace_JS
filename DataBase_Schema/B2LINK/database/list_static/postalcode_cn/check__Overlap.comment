@@ -1,0 +1,6 @@
+/**
+ * email Overlap check
+ * @function
+ * @param {Object} d Request Object {"postal_code":"101200","addr0":"北京市","addr1":"北京市","addr2":"东城区","addr":"北京市东城区"}
+ * @return {int} 0 or 1
+ */

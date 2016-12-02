@@ -10,11 +10,11 @@
  *	, _id$partner_buyer : 0
  *	, _id$trade_terms : 0
  *	, date_create : [2016, 11, 30, 12, 12, 30]
- *	, due_date : [2016, 12, 10, 12, 12, 30]
  *	, items :	[
  *				{
  *				_id$brand_basic : 0, _id$product_basic : 0
  *				 , item_total_price : { price : 100 , _id$currency : 0 }
+ *				 , due_date : [2016, 12, 10, 12, 12, 30]
  *				 , price_quantity : { price : 1 , _id$currency : 0 }
  *				 , price_quantity_of_unit : { price : 10 , _id$currency : 0 }
  *				 , quantity : 100 , quantity_of_unit : 10
@@ -22,6 +22,7 @@
  *				}
  *				,{
  *				_id$brand_basic : 1, _id$product_basic : 1
+ *				 , due_date : [2016, 12, 10, 12, 12, 30]
  *				 , item_total_price : { price : 100 , _id$currency : 0 }
  *				 , price_quantity : { price : 1 , _id$currency : 0 }
  *				 , price_quantity_of_unit : { price : 20 , _id$currency : 0 }
@@ -30,6 +31,7 @@
  *				}
  *				,{
  *				 _id$brand_basic : 1, _id$product_basic : 1
+ *				 , due_date : [2016, 12, 10, 12, 12, 30]
  *				 , item_total_price : { price : 100 , _id$currency : 0 }
  *				 , price_quantity : { price : 1 , _id$currency : 0 }
  *				 , price_quantity_of_unit : { price : 20 , _id$currency : 0 }

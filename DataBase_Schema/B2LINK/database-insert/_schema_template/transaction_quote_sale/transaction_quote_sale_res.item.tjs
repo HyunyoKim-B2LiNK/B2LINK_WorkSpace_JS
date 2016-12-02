@@ -34,6 +34,11 @@ var d = {
 	, "properties" : {
 		"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
 		, "_id$product_basic" : { "description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
+		//납기일
+		, "due_date" : { "description" : "납기일"
+		 	, "type" : "object"
+			, "properties" : <include>100_common_json/properties__Date_Object.json</include>
+		}
 		, "item_total_price" : { "description" : "총가격 ( price * quantity)"
 			, "type" : "object"
 			, "properties" : <include>100_common_json/price/properties__Price_with__id$currency_Object.json</include>

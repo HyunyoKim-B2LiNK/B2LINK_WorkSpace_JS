@@ -1,8 +1,8 @@
 console.log(1);STtwUtilBuffer.iconv=require("iconv-lite"),STtwUtilWeb_Express=Lib.Ttw.fnWeb_Express,STtwUtilWeb_Express.express=require("express"),STtwUtilWeb_Express.compression=require("compression"),STtwUtilWeb_Express.request=require("request"),STtwUtilWeb_Express.url=require("url");
 global._$TATIC_CONST_SERVER_HTTP_EXPRESS__HOST = "localhost";
-global._$TATIC_CONST_SERVER_HTTP_EXPRESS__PORT = 80;
+global._$TATIC_CONST_SERVER_HTTP_EXPRESS__PORT = 49321;
 //global._$TATIC_CONST_SERVER_HTTP_EXPRESS__ROOT = global.process.cwd() + "/__root";
-global._$TATIC_CONST_SERVER_HTTP_EXPRESS__ROOT = "/Users/chanmi/Documents/WorkSpaces/B2LINK_WorkSpace_JS/WebPage/root";
+global._$TATIC_CONST_SERVER_HTTP_EXPRESS__ROOT = "../WebPage/root/";
 console.log( global.process.cwd() );
 
 global._$TATIC_CONST_SERVER_HTTP_MIME_TYPES = {

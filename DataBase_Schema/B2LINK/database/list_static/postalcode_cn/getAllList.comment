@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ { postalcode_cn }, { postalcode_cn }, ... ]
+ */

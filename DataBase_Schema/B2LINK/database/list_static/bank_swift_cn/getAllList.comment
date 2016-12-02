@@ -1,0 +1,4 @@
+/**
+ * @function
+ * @return {Array} [ { bank_swift_cn }, { bank_swift_cn }, ... ]
+ */
