@@ -1,1 +1,1 @@
-call less__less_ui__css--delete_tmp_LESS.bat
+./less__less_ui__css--delete_tmp_LESS.sh.command
