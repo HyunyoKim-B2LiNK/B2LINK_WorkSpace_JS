@@ -6,11 +6,12 @@ function( d )
 	for ( ; i < iLen ; ++i )
 	{
 		io = d[i];
-		if( !io.hasOwnProperty( "_id$brand_basic" ) || !io.hasOwnProperty( "_id$product_basic" ) || !io.hasOwnProperty( "quantity" ) )
+		if( !io.hasOwnProperty( "_id$transaction_quote_purchase_res" ) || !io.hasOwnProperty( "_id$brand_basic" ) || !io.hasOwnProperty( "_id$product_basic" ) || !io.hasOwnProperty( "quantity" ) )
 		{
 			print( "-- [ E ] - transaction_quote_sale_res$validation__addDoc__itmes():{Object}----------return 0;" );
 			return 0;
 		}
+		io._id$transaction_quote_purchase_res = NumberInt(io._id$transaction_quote_purchase_res);
 		io._id$brand_basic = NumberInt( io._id$brand_basic );
 		io._id$product_basic = NumberInt( io._id$product_basic );
 		io.item_total_price._id$currency = NumberInt( io.item_total_price._id$currenc );
