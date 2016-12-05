@@ -100,10 +100,10 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 * @function
 	 * @param {String}
 	 */
-	var _req_Data = function( countryCode )
+	var _req_Data = function( iso3166_us2 )
 	{
 		window.Rh2Log.timeStamp( "-- [ S ] - _req_Data():void----------" );
-		window.b2link_service_list_static.bank_swift.getAllList( countryCode, _res_Data );
+		window.b2link_service_list_static.bank_swift.getAllList( iso3166_us2, _res_Data );
 		window.Rh2Log.timeStamp( "-- [ E ] - _req_Data():void----------" );
 	};
 
