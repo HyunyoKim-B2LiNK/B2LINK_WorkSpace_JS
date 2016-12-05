@@ -5,6 +5,10 @@
 	* MongoDB와 연동하여 Service를 처리한다.
 	* Client의 Request를 기반으로 MongoDB에 데이터를 요청하고 가공 및 정제하여 Response한다.
 
+> **Note:**
+> - View 소스는 존재하지 않는다.
+> - API Service 전용 서버
+
 * 개발 환경
 	* MongoDB
 	* NodeJS

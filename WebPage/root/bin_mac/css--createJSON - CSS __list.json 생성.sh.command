@@ -1,1 +1,1 @@
-call css--createJSON.bat
+./css--createJSON.sh.command
