@@ -3,10 +3,10 @@
 
 * B2LINK Service를 위한 Base Framework
 * 개발 환경
- * MongoDB
- * NodeJS
- * HTTPServer_MongoDB_API - not express
- * HTML5, JS, LESS, CSS
+	* MongoDB
+	* NodeJS
+	* HTTPServer_MongoDB_API - not express
+	* HTML5, JS, LESS, CSS
 
 
 -------------
@@ -35,9 +35,9 @@
 #### :open_file_folder: _Tool [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/_Tool/README.md)
  * 개발에 사용되는 툴들에 대한 설명이 들어있는 폴더
  * 종류
-  * IDE
-  * Database
-  * Platform
+	* IDE
+	* Database
+	* Platform
 
 
 #### :open_file_folder: bin_mac [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/bin_mac/README.md)

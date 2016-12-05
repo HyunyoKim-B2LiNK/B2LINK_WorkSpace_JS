@@ -1,4 +1,4 @@
-**HTTPServer_MongoDB**
+**DataBase_Schema**
 ===================
 
 * B2LINK Service를 위한 Server Application
@@ -30,7 +30,7 @@
 폴더 설명
 -------------
 
-#### :open_file_folder: MemberSession [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/HTTPServer_MongoDB/MemberSession/README.md)
+#### :open_file_folder: B2LINK [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/DataBase_Schema/B2LINK/README.md)
  * Member 정보와 Session 정보를 관리하는 Server Application.
  * Client의 Request를 기반으로 MongoDB에 데이터를 요청하고 가공 및 정제하여 Response한다.
 
