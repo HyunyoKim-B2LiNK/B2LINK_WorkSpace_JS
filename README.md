@@ -85,3 +85,5 @@
 
 > **Note:**
 > - WebPage/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+
+[WebPage](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/WebPage/root/README.md)
