@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui_import/b2link_bank_swift/Table__NextPrevRoll__getAllList.js";
+var fileNm = "./ui_import/b2link_country/Table__NextPrevAdd__getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -9,7 +9,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_table );
 	//window.b2link.ui_resource.applyParentheses_LocaleLabel_Children( url, $el_table );
 
-	var _this = window.b2linkUIClass.Table.NextPrevRoll__getAllList( url, $el_table );
+	var _this = window.b2linkUIClass.Table.NextPrevAdd__getAllList( url, $el_table );
 		console.log( _this );
 
 	return _this;
