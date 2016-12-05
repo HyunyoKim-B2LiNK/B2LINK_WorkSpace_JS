@@ -19,7 +19,9 @@
 #### :file_folder: _Commit 하기 전 실행.sh.command
 
 #### :file_folder: _MongoDB의 Procedure 갱신 - database--Setup.sh.command
-database-insert--_schema--CreateFile__All__FromTemplate..sh.command
+	* database--_schema--CreateJSON__All__FromTemplate.*** 실행 후
+	* database-insert--_schema--CreateFile__All__FromTemplate.*** 실행 후
+
 #### :file_folder: _MongoDB의 Sample Data 재삽입 - database-insert--Insert_Data.sh
 
 
