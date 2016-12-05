@@ -1,7 +1,7 @@
 function( d )
 {
 	print( "-- [ S ] - transaction_quote_sale_res$validation__addDoc():{Object}----------" );
-	if( !d.hasOwnProperty( "_id$member" ) || !d.hasOwnProperty( "items" ) || !d.hasOwnProperty( "quote_sale_res_no" ) )
+	if( !d.hasOwnProperty( "_id$transaction_quote_sale_req" ) || !d.hasOwnProperty( "_id$member" ) || !d.hasOwnProperty( "items" ) || !d.hasOwnProperty( "quote_sale_res_no" ) )
 	{
 		print( "-- [ E ] - transaction_quote_sale_res$validation__addDoc():{Object}----------return 0;" );
 		return 0;
@@ -12,7 +12,7 @@ function( d )
 		print( "-- [ E ] - transaction_quote_sale_res$validation__addDoc():{Object}----------return 0;" );
 		return 0;
 	}
-
+	d._id$transaction_quote_sale_req = NumberInt(d._id$transaction_quote_sale_req );
 	d.logistic_fee._id$currency = NumberInt( d.logistic_fee._id$currency );
 	d.total_supply_price._id$currency = NumberInt( d.total_supply_price._id$currency );
 	var id=0, date_create_length=d.date_create.length;
