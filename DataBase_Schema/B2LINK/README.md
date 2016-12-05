@@ -15,12 +15,6 @@
  * Custom Node Binary
 	* node_modules/exes/exes100.exe, node_modules/exes/exes100을 node.exe 대신 사용한다.
 
-#### :page_facing_up: MemberSession.bat
- * Windows용 Server 구동 파일
-
-#### :page_facing_up: MemberSession.sh.command
- * Mac용 Server 구동 파일
-
 -------------
 폴더 설명
 -------------
