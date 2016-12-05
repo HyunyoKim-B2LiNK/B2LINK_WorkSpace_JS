@@ -32,7 +32,7 @@
  * 폴더별 상세 설명 문서가 들어있는 폴더
 
 
-#### :open_file_folder: _Tool [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/_Tool/README.md)
+#### :open_file_folder: _Tool [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/_Tools/README.md)
  * 개발에 사용되는 툴들에 대한 설명이 들어있는 폴더
  * 종류
 	* IDE
