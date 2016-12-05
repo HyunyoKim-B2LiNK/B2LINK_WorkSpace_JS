@@ -47,7 +47,6 @@
 
 #### :open_file_folder: DataBase
  - MongoDB의 실제 db 파일들이 존재하는 폴더
- - bin.zip 압축 해제 한다.
 
 
 #### :open_file_folder: DataBase_Schema
@@ -56,13 +55,15 @@
  - MongoDB의 Procedure가 주를 이룬다.
 
 > **Note:**
-> - DataBase_Schema/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
-> - DataBase_Schema/******/bin에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
+> - DataBase_Schema/******/bin_***에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+> - DataBase_Schema/******/bin_***에 있는 BatchFile 구동을 통해 MongoDB에 추가된다.
 
 
-#### :open_file_folder: HTTPServer_MongoDB(NodeJS)
+#### :open_file_folder: HTTPServer_MongoDB(NodeJS)[상세 설명 - README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/HTTPServer_MongoDB/README.md)
  - MongoDB의 데이터 서비스 Server
- - HTTPServer_MongoDB/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+ - HTTPServer_MongoDB/******/bin_***에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+
+ - :open_file_folder: HTTPServer_MongoDB/MemberSession[상세 설명 - README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/HTTPServer_MongoDB/MemberSession/README.md)
 
 
 #### :open_file_folder: HTTPServer_WebPage(NodeJS)
@@ -70,20 +71,20 @@
  - NodeJS - Express 기반이다.
 
 
-#### :open_file_folder: MongoDB
+#### :open_file_folder: MongoDB [상세 설명 - README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/MongoDB/README.md)
  - MongoDB의 Binary들이 모여있는 폴더
 
  - 사용 버전
 
 > **Note:**
-> - 3.2.10_x64
 > - 3.2.11_x64
+> - 3.4.0_x64
+> - 3.4.0_x64__Mac
 
 
-#### :open_file_folder: WebPage
+#### :open_file_folder: WebPage [상세 설명 - README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/WebPage/root/README.md)
  - Client Web Page 다.
 
 > **Note:**
-> - WebPage/******/bin에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+> - WebPage/******/bin_***에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
 
-[WebPage](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/WebPage/root/README.md)

@@ -11,7 +11,7 @@
 -------------
 
 #### node_modules.zip
- - 압축 해제
+ - 압축 해제.
  - Custom Node Binary
   . node_modules/exes/exes100.exe, node_modules/exes/exes100을 node.exe 대신 사용한다.
 
@@ -49,6 +49,10 @@
 
 #### :open_file_folder: libs
  - Libraries 폴더
+
+#### :open_file_folder: node_modules
+ - node_modules/exes/exes100 : NodeJS Binary
+ - less Node Module이 설치 되어있다.
 
 #### :open_file_folder: ui
  - Database Schema 별 구성 폴더가 존재한다.
