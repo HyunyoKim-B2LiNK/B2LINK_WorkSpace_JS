@@ -12,14 +12,14 @@
 파일 설명
 -------------
 
-#### node_modules.zip
+#### _NPM INSTALL.***
+ * node_modules 설치 파일
+ * npm install -g less
+
+#### :file_folder: node_modules.zip
  * 압축 해제.
  * Custom Node Binary
 	* node_modules/exes/exes100.exe, node_modules/exes/exes100을 node.exe 대신 사용한다.
-
-#### NPM INSTALL.bat
- * node_modules 설치 파일
- * npm install -g less
 
 -------------
 폴더 설명
@@ -59,10 +59,10 @@
  * index.js가 존재하는 폴더
 
  * *.js 모여있는 폴더
-	* b2link
-	* b2link_service_***
-	* b2link_ui_***
-	* b2link_url_***
+	* ./js/b2link
+	* ./js/b2link_service_***
+	* ./js/b2link_ui_***
+	* ./js/b2link_url_***
 
 
 #### :open_file_folder: libs
