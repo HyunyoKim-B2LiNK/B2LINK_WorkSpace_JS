@@ -69,8 +69,6 @@ var d = {
 
 		, "_id$transaction_quote_purchase_req" : { "description" : "가견적 요청서 ID (FK)" , "exampleValue" : 0
 			<include>000_common_txt/uint_len0.txt</include>
-			, "values" : []
-			, "valuesMap" : []
 		}
 
 		//Create Date

@@ -67,8 +67,6 @@
 
 		, "_id$transaction_quote_sale_req" : { "description" : "가견적 요청서 ID (FK)" , "exampleValue" : 0
 			, "type" : "uint" , "length" : 0
-			, "values" : []
-			, "valuesMap" : []
 		}
 
 		//Create Date
