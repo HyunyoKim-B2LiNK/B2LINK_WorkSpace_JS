@@ -34,7 +34,7 @@
  * Member 정보와 Session 정보를 관리하는 Server Application.
  * Client의 Request를 기반으로 MongoDB에 데이터를 요청하고 가공 및 정제하여 Response한다.
 
- * 현재는 전체 Business 기능이 전부 포함되어있다.
-  * 차후 MSA를 지향하기 위해 기능별 분리가 용이하게 개발하는 것에 중점을 둠.
+ * 현재는 전체 Business 기능이 전부 포함.
+  * 차후 MSA를 지향하기 위해 기능별 분리가 용이하게 개발하는 것에 중점을 둔다.
 
  * 필요에 따라 Server Application 폴더가 여러개로 분리 될 수 있다.
