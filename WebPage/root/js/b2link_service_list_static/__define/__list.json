@@ -1,5 +1,13 @@
 [
 	"000_define_window.b2link_service_list_static",
+	"200_define_window.b2link_service_list_static.bank_swift",
+	"200_define_window.b2link_service_list_static.bank_swift_cn",
+	"200_define_window.b2link_service_list_static.bank_swift_kr",
+	"200_define_window.b2link_service_list_static.bank_swift_us",
+	"200_define_window.b2link_service_list_static.common_code",
 	"200_define_window.b2link_service_list_static.country",
-	"200_define_window.b2link_service_list_static.email_detail"
+	"200_define_window.b2link_service_list_static.email_detail",
+	"200_define_window.b2link_service_list_static.postalcode_cn",
+	"200_define_window.b2link_service_list_static.postalcode_kr",
+	"200_define_window.b2link_service_list_static.zipcode_kr"
 ]

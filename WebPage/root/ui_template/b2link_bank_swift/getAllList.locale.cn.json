@@ -1,0 +1,12 @@
+{
+	"th___id" : "번호"
+
+	, "th__nm" : "은행"
+	, "th__nm_kr" : "은행(한글)"
+	, "th__nm_us" : "은행(영문)"
+	, "th__nm_cn" : "은행(중문)"
+
+	, "th__city" : "도시"
+	, "th__branch" : "지점"
+	, "th__swift_code" : "SWIFT CODE"
+}

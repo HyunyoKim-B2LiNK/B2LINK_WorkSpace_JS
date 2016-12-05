@@ -1,8 +1,15 @@
 [
+	"global.b2link_validation.list_static.bank_swift_cn$check__Overlap",
+	"global.b2link_validation.list_static.bank_swift_kr$check__Overlap",
+	"global.b2link_validation.list_static.bank_swift_us$check__Overlap",
+	"global.b2link_validation.list_static.common_code$check__Overlap",
 	"global.b2link_validation.list_static.country$check__Overlap",
 	"global.b2link_validation.list_static.email_detail$check__Overlap",
 	"global.b2link_validation.list_static.email_detail$remove_id",
 	"global.b2link_validation.list_static.email_detail$remove_ids",
 	"global.b2link_validation.list_static.email_detail$update_id",
-	"global.b2link_validation.list_static.email_detail$update_ids"
+	"global.b2link_validation.list_static.email_detail$update_ids",
+	"global.b2link_validation.list_static.postalcode_cn$check__Overlap",
+	"global.b2link_validation.list_static.postalcode_kr$check__Overlap",
+	"global.b2link_validation.list_static.zipcode_kr$check__Overlap"
 ]

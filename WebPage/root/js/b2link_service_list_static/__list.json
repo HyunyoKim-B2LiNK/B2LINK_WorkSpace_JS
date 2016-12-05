@@ -1,5 +1,13 @@
 [
 	"__define",
+	"bank_swift",
+	"bank_swift_cn",
+	"bank_swift_kr",
+	"bank_swift_us",
+	"common_code",
 	"country",
-	"email_detail"
+	"email_detail",
+	"postalcode_cn",
+	"postalcode_kr",
+	"zipcode_kr"
 ]

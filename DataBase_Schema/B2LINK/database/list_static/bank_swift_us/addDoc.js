@@ -18,7 +18,6 @@ function( d )
 		, nm_cn : r.nm_cn
 		, nm_us : r.nm_us
 		, city : r.city
-		, nm_us : r.nm_us
 		, branch : r.branch
 		, swift_code : r.swift_code
 	});

@@ -1,0 +1,14 @@
+{
+	"nm" : "이름"
+	, "nm_cn" : "이름(중문)"
+	, "nm_kr" : "이름(한글)"
+	, "nm_us" : "이름(영문)"
+
+	, "city" : "도시"
+	, "branch" : "지점"
+	, "swift_code" : "SWIFT_CODE"
+
+	, "btn__overlap_check" : "중복 체크"
+	, "btn__add" : "추가"
+	, "btn__cancel" : "취소"
+}
