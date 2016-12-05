@@ -32,7 +32,7 @@
  * 폴더별 상세 설명 문서가 들어있는 폴더
 
 
-#### :open_file_folder: _Tool [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/_Tool/README.md)
+#### :open_file_folder: _Tool [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/_Tools/README.md)
  * 개발에 사용되는 툴들에 대한 설명이 들어있는 폴더
  * 종류
 	* IDE
@@ -65,7 +65,9 @@
 
 #### :open_file_folder: HTTPServer_MongoDB(NodeJS) [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/HTTPServer_MongoDB/README.md)
  * MongoDB의 데이터 서비스 Server
- * HTTPServer_MongoDB/******/bin_***에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
+
+> **Note:**
+> - HTTPServer_MongoDB/******/bin_***에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
 
  * :open_file_folder: HTTPServer_MongoDB/MemberSession [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/HTTPServer_MongoDB/MemberSession/README.md)
 
