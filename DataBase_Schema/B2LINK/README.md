@@ -38,22 +38,17 @@
 
 
 #### :open_file_folder: database
+
  * Schema(*.json) 파일이 존재한다.
 	* database/_schema : 최종 Schema JSON 파일
-
-> **Note:**
-> - 아무런 파일이 존재하지 않는다.
-> - batch 파일을 통해 _schema_template의 *.tjson을 참조하여 *.json이 생성된다.
+		* 아무런 파일이 존재하지 않는다.
+		* batch 파일을 통해 _schema_template의 *.tjson을 참조하여 *.json이 생성된다.
 
 	* database/_schema_include
-
-> **Note:**
-> -  *.txt, *.tjson 파일이 존재한다.
+		*.txt, *.tjson 파일이 존재한다.
 
 	* database/_schema_template
-
-> **Note:**
-> -  *.tjson 파일이 존재한다.
+		*.tjson 파일이 존재한다.
 
  * Procedure(*.js)
 	* DatabaseName/CollectionName/procedure.js 형태로 구성된다.
