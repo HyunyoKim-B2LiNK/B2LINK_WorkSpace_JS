@@ -1,0 +1,73 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"member.member_basic"
+		, "member.member_public"
+		, "partner.partner_person"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"member_basic"
+		, "member_public"
+		, "partner_person"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"member"
+		, "partner"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Name(Default);
+		, "nm" : { "description" : "Name", "exampleValue" : "카카오톡"<include>000_common_txt/string_default.txt</include> }
+
+		//Name(CN);
+		, "nm_cn" : { "description" : "Name(CN)", "exampleValue" : ""<include>000_common_txt/string_default.txt</include> }
+
+		//Name(KR);
+		, "nm_kr" : { "description" : "Name(KR)", "exampleValue" : "카카오톡"<include>000_common_txt/string_default.txt</include> }
+
+		//Name(US);
+		, "nm_us" : { "description" : "Name(US)", "exampleValue" : "KakaoTalk"<include>000_common_txt/string_default.txt</include> }
+
+		//Description
+		, "description" : { "description" : "Messenger Description", "exampleValue" : "www.kakaotalk.co.kr"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Description(CN)
+		, "description_cn" : { "description" : "Messenger Description(CN)", "exampleValue" : "www.kakaotalk.co.kr"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Description(KR)
+		, "description_kr" : { "description" : "Messenger Description(KR)", "exampleValue" : "www.kakaotalk.co.kr"
+			<include>000_common_txt/string_default.txt</include>
+		}
+
+		//Description(US)
+		, "description_us" : { "description" : "Messenger Description(US)", "exampleValue" : "www.kakaotalk.co.kr"
+			<include>000_common_txt/string_default.txt</include>
+		}
+	}
+}

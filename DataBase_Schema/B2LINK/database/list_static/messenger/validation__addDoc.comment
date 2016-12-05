@@ -1,0 +1,18 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	"_id" : 0
+ *	, "nm" :  "카카오톡"
+ *	, "nm_cn" : ""
+ *	, "nm_kr" : "카카오톡"
+ *	, "nm_us" : "kakaotalk"
+ *	, "description" : "www.kakaotalk.co.kr"
+ *	, "description_cn" : "www.kakaotalk.co.kr"
+ *	, "description_kr" : "www.kakaotalk.co.kr"
+ *	, "description_us" : "www.kakaotalk.co.kr"
+ * }
+ * </code>
+ * return {Object}
+ */
