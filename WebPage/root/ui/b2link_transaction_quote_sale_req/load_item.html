@@ -1,0 +1,96 @@
+<div id="div__load_item">
+	<h1>((h1__load_item))</h1>
+	<form>
+
+		<!--
+			상품 검색  
+		-->
+		<h3>((h3__search_product))</h3>
+		<input type="search"></input>
+		<button type="submit">((search))</button>
+		<br/>
+
+		<!--
+			상품 검색 결과 
+			출력
+			체크박스 다중 선택
+		-->
+		<table>
+			<thead>
+				<tr>
+					<th>
+						<!--
+							체크박스 전체선택
+						-->
+						<input type="checkbox" name="product_info"></input>
+					</th>
+					<th>((th__brand_basic.nm))</th>
+					<th>((th__product_basic.nm))</th>
+					<th>((th__product_category))</th>
+					<th>((th__quantity))</th>
+					<th>((th__UOM))</th>
+					<th>((th__quantity_of_unit))</th>
+					<th>((th__barcode))</th>
+					<th>((th__msds))</th>
+					<th>((th__description))</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="checkbox" name="product_info"></input>
+					</td>
+					<td>{{brand_basic.nm}}</td>
+					<td>{{product_basic.nm}}</td>
+					<td>{{product_category}}</td>
+					<td>{{quantity}}</td>
+					<td>{{UOM}}</td>
+					<td>{{quantity_of_unit}}</td>
+					<td>{{barcode}}</td>
+					<td>{{msds}}</td>
+					<td>{{description}}</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!--
+			선택한 상품 정보 출력
+		-->
+		<h3>((h3__result_product))</h3>
+
+		<table>
+			<thead>
+				<tr>
+					<th>((th__brand_basic.nm))</th>
+					<th>((th__product_basic.nm))</th>
+					<th>((th__product_category))</th>
+					<th>((th__quantity))</th>
+					<th>((th__UOM))</th>
+					<th>((th__quantity_of_unit))</th>
+					<th>((th__barcode))</th>
+					<th>((th__msds))</th>
+					<th>((th__description))</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{brand_basic.nm}}</td>
+					<td>{{product_basic.nm}}</td>
+					<td>{{product_category}}</td>
+					<td>{{quantity}}</td>
+					<td>{{UOM}}</td>
+					<td>{{quantity_of_unit}}</td>
+					<td>{{barcode}}</td>
+					<td>{{msds}}</td>
+					<td>{{description}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	<br/>
+
+<!--
+	버튼 : 확인, 취소
+-->
+<include-html>./ui_include/div/btns__add_cancel.html</include-html>
+</div>

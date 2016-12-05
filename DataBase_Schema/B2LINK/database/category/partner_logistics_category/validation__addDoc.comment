@@ -1,0 +1,18 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	"cd_category" : "112345678901"
+ *	 , "description" : "항공사"
+ *	 , "description_cn" : "항공사"
+ *	 , "description_kr" : "항공사"
+ *	 , "description_us" : "항공사"
+ *	 , "nm" : "항공사"
+ *	 , "nm_kr" : "항공사"
+ *	 , "nm_cn" : "항공사"
+ *	 , "nm_us" : "항공사"
+ * }
+ * </code>
+ * return {Object}
+ */

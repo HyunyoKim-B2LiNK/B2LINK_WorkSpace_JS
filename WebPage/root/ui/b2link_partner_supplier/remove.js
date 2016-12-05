@@ -8,6 +8,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 	window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_div );
 
+	//*/
+	var _this = { __url : url };
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	return _this;
+	//*/
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;

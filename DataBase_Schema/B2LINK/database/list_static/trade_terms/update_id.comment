@@ -1,0 +1,19 @@
+/**
+ * //작성하기 - 박종하 - 20161110
+ * @function
+ * <code>
+ * {
+ * 	"_id" : 0
+ *	, "nm" :  "CIF"
+ *	, "nm_f" : "Cost, Insurance & Freight"
+ *	, "nm_f_cn" : "運保費在內條件"
+ *	, "nm_f_kr" : "운임, 보험료 포함인도"
+ *	, "nm_f_us" : "Cost, Insurance & Freight"
+ *	, "description" : "매도인이 매수인을 위해 보험계약을 체결하고 보험료를 부담하는 것을 제외하고는 CFR 조건과 동일하다. 해상운송에만 적합한 거래조건이다."
+ *	, "description_cn" : "賣方須負擔貨物運至指定目的港為止所需的費用、運費及海上保險費用，但貨物滅失或毀損的風險及貨物在船上交付後由於事故而生的任額外費用，則自貨物在裝船港越過船舷時起，由賣方移轉予買方負擔。本條件與上述CFR條件比較，多出 Insurance一字。這個字是說賣方有義務投保貨物運至目的港為止的海上運輸保險，並且負擔保險費，故又稱至目的港運保費在內條件。"
+ *	, "description_kr" : "매도인이 매수인을 위해 보험계약을 체결하고 보험료를 부담하는 것을 제외하고는 CFR 조건과 동일하다. 해상운송에만 적합한 거래조건이다."
+ *	, "description_us" : "This arrangement similar to CFR, but instead of the buyer insuring the goods for the maritime phase of the voyage, the shipper/seller will insure the merchandise. In this arrangement, the seller usually chooses the forwarder. Delivery as above, is accomplished at the port of destination."
+ * }
+ * </code>
+ * @return {uint} 0 or 1
+ */

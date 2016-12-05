@@ -1,0 +1,65 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+		"transaction_quote_sale.transaction_quto_sale_req"
+		, "transaction_quote_sale.transaction_quto_sale_res"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"transaction_quto_sale_req"
+		, "transaction_quto_sale_res"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"transaction_quote_sale"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		//Unique Key, Primary Key(PK);
+		"_id" : <include>100_common_json/_id.json</include>
+
+		//Name 약어;
+		, "nm" : { "description" : "Name(Abbreviation)", "exampleValue" : "CIF"<include>000_common_txt/string_default.txt</include> }
+
+		//Name Full;
+		, "nm_f" : { "description" : "Name(Full Name)_default", "exampleValue" : "Cost, Insurance & Freight"<include>000_common_txt/string_default.txt</include> }
+
+		//Name Full CN;
+		, "nm_f_cn" : { "description" : "Name(Full Name CN)", "exampleValue" : "運保費在內條件"<include>000_common_txt/string_default.txt</include> }
+
+		//Name Full KR;
+		, "nm_f_kr" : { "description" : "Name(Full Name KR)", "exampleValue" : "운임, 보험료 포함인도"<include>000_common_txt/string_default.txt</include> }
+
+		//Name Full US;
+		, "nm_f_us" : { "description" : "Name(Full Name US)", "exampleValue" : "Cost, Insurance & Freight (named port of destination)"<include>000_common_txt/string_default.txt</include> }
+
+		//description;
+		, "description" : { "description" : "Description(Default)", "exampleValue" : "매도인이 매수인을 위해 보험계약을 체결하고 보험료를 부담하는 것을 제외하고는 CFR 조건과 동일하다. 해상운송에만 적합한 거래조건이다."<include>000_common_txt/string_default.txt</include> }
+
+		//description;
+		, "description_cn" : { "description" : "Description(CN)", "exampleValue" : "賣方須負擔貨物運至指定目的港為止所需的費用、運費及海上保險費用，但貨物滅失或毀損的風險及貨物在船上交付後由於事故而生的任額外費用，則自貨物在裝船港越過船舷時起，由賣方移轉予買方負擔。本條件與上述CFR條件比較，多出 Insurance一字。這個字是說賣方有義務投保貨物運至目的港為止的海上運輸保險，並且負擔保險費，故又稱至目的港運保費在內條件。"<include>000_common_txt/string_default.txt</include> }
+
+		//description;
+		, "description_kr" : { "description" : "Description(KR)", "exampleValue" : "매도인이 매수인을 위해 보험계약을 체결하고 보험료를 부담하는 것을 제외하고는 CFR 조건과 동일하다. 해상운송에만 적합한 거래조건이다."<include>000_common_txt/string_default.txt</include> }
+
+		//description;
+		, "description_us" : { "description" : "Description(US)", "exampleValue" : "This arrangement similar to CFR, but instead of the buyer insuring the goods for the maritime phase of the voyage, the shipper/seller will insure the merchandise. In this arrangement, the seller usually chooses the forwarder. Delivery as above, is accomplished at the port of destination."<include>000_common_txt/string_default.txt</include> }
+	}
+}
