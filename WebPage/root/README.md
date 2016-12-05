@@ -28,11 +28,14 @@
 #### :open_file_folder: ./_description
  * Project 폴더별 설명 파일
 
+
 #### :open_file_folder: ./bin_mac
  * Mac용 Build Script가 존재한다.
 
+
 #### :open_file_folder: ./bin_win
  * Windows용 Build Script가 존재한다.
+
 
 #### :open_file_folder: ./css
  * 공통 css를 정의한다.
@@ -41,32 +44,50 @@
 #### :open_file_folder: ./css_ui
  * 코딩 규칙 문서폴더
 
+
 #### :open_file_folder: ./less
  * 공통 css를 정의한다.
  * *.less 파일을 사용한다.
+
 
 #### :open_file_folder: ./less_ui
  * *.less 파일을 사용한다.
  * node_modules의 less 모듈을 활용해서 *.css로 변환한다.
 
+
+#### :open_file_folder: js
+ * index.js가 존재하는 폴더
+
+ * *.js 모여있는 폴더
+	* b2link
+	* b2link_service_***
+	* b2link_ui_***
+	* b2link_url_***
+
+
 #### :open_file_folder: libs
  * Libraries 폴더
+
 
 #### :open_file_folder: node_modules
  * node_modules/exes/exes100 : NodeJS Binary
  * less Node Module이 설치 되어있다.
 
+
 #### :open_file_folder: ui
  * Database Schema 별 구성 폴더가 존재한다.
+
 
 #### :open_file_folder: ui_import
  * 공통 폴더들이 존재한다.
  * Database Schema 별 구성 폴더가 존재한다.
 
+
 #### :open_file_folder: ui_include
  * *.html을 사용한다.
  * 공통 폴더들이 존재한다.
  * Database Schema 별 구성 폴더가 존재한다.
+
 
 #### :open_file_folder: ui_template
  * *.thtml을 사용한다.
