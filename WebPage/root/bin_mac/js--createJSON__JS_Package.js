@@ -15,7 +15,7 @@ var filePath_Template = "js--createJS__js.namespace.__define.200_define__files.t
 var rootInstanceKey = "window.";
 
 //__list.json, __listPackage.json 생성;
-try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__JS( jsPath ); }catch( er ){ console.error( "try catch Error0 : " + er ); }
+try{ SUtilFsWriteStream_Extension_Dev.create_DirectoryAndFileList_JSON__JS__Mac( jsPath ); }catch( er ){ console.error( "try catch Error0 : " + er ); }
 
 //__***define***.js 생성;
 try{ SUtilFsWriteStream_Extension_Dev.create_Package_Define__JS( jsPath, filePath_Template, rootInstanceKey ); }catch( er ){ console.error( "try catch Error1 : " + er ); }
