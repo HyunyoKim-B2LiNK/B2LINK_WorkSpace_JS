@@ -28,7 +28,7 @@
  - 코딩 규칙 문서폴더
 
 
-#### :open_file_folder: _Description [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/_Description/README.md)
+#### :open_file_folder: _Description
  - 폴더별 상세 설명 문서가 들어있는 폴더
 
 
@@ -86,8 +86,9 @@
 > - 3.4.0_x64__Mac
 
 
-#### :open_file_folder: WebPage [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/WebPage/root/README.md)
- - Client Web Page 다.
+#### :open_file_folder: WebPage [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/WebPage/README.md)
+ * Client Web Application 다.
+ * ./WebPage/root [- README.md](https://github.com/thdtjsdn/B2LINK_WorkSpace_JS/blob/master/WebPage/root/README.md)
 
 > **Note:**
 > - WebPage/******/bin_***에 있는 BatchFile에 특정 개발을 위한 기능들이 존재한다.
