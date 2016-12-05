@@ -8,7 +8,6 @@
  *	, _id$delivery_type : 0
  *	, _id$member : 0
  *	, _id$partner_buyer : 0
- *	, _id$partner_person : 0
  *	, _id$trade_terms : 0
  *	, items :	[
  *				{
@@ -26,8 +25,9 @@
  *	 			]
  *	, date_create : [2016, 11, 30, 12, 12, 30]
  *	, due_date : [2016, 12, 10, 12, 12, 30]
- *	, quote_sale_req_no : "QSR20161130P01
+ *	, quote_purchase_req_no : "QPR20161130P01
  *	, shipping_address : "서울특별시"
  * }
  * </code>
+ * return {Object}
  */

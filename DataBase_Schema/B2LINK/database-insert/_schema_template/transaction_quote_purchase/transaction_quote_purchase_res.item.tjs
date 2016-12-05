@@ -1,17 +1,16 @@
-{
+var d = {
+	"_id" : "transaction_quote_purchase_res.item"
+
 	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
-	"dereference" : [
-		"transaction_quote_sale.transaction_quote_sale_res"
+	, "dereference" : [
 	]
 
 	//이 Collection을 참조하는 Collections - Collection Name;
 	, "dereference_collection" : [
-		"transaction_quote_sale_res"
 	]
 
 	//이 Collection을 참조하는 Database;
 	, "dereference_database" : [
-		"transaction_quote_sale"
 	]
 
 	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
@@ -39,8 +38,7 @@
 
 	//이 Collection의 Properties;
 	, "properties" : {
-		"_id$transaction_quote_purchase_res" : { "description" : "구매 가견적서 ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
-		, "_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+		"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
 		, "_id$product_basic" : { "description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
 		, "due_date" : { "description" : "납기일"
 			, "type" : "object"
@@ -74,4 +72,8 @@
 			}
 		}
 	}
-}
+};
+
+//----------------------------------------------------------------------------------------------------;
+
+db.getSiblingDB( "_schema" ).transaction_quote_purchase.insert( d );

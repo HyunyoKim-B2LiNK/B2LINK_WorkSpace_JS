@@ -1,8 +1,6 @@
-var d = {
-	"_id" : "transaction_quote_sale_res"
-
+{
 	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
-	, "dereference" : [
+	"dereference" : [
 	]
 
 	//이 Collection을 참조하는 Collections - Collection Name;
@@ -18,7 +16,7 @@ var d = {
 		"list_static.currency"
 		, "member.member_public"
 		, "partner.partner_buyer"
-		, "transaction_quote_sale.transaction_quote_sale_req"
+		, "transaction_quote_purchase.transaction_quote_purchase_req"
 	]
 
 	//이 Collection이 참조하는 Collections - Collection Name;
@@ -26,7 +24,7 @@ var d = {
 		"currency"
 		, "member_public"
 		, "partner_person"
-		, "transaction_quote_sale_req"
+		, "transaction_quote_purchase_req"
 	]
 
 	//이 Collection이 참조하는 Database;
@@ -34,7 +32,7 @@ var d = {
 		"list_static"
 		, "member"
 		, "partner"
-		, "transaction_quote_sale"
+		, "transaction_quote_purchase"
 	]
 
 	//--------------------------------------------------;
@@ -67,8 +65,8 @@ var d = {
 			, "valuesMap" : { "CFR" : 1, "CIF" : 1, "CIP" : 1, "CPT" : 1, "DAT" : 1, "DAP" : 1, "DDP" : 1, "EXW" : 1, "FAS" : 1, "FCA" : 1, "FOB" : 1 }
 		}
 
-		, "_id$transaction_quote_sale_req" : { "description" : "가견적 요청서 ID (FK)" , "exampleValue" : 0
-			, "type" : "uint" , "length" : 0
+		, "_id$transaction_quote_purchase_req" : { "description" : "가견적 요청서 ID (FK)" , "exampleValue" : 0
+			<include>000_common_txt/uint_len0.txt</include>
 		}
 
 		//Create Date
@@ -78,14 +76,12 @@ var d = {
 		}
 
 		//ITEMS
-		, "items" : { "description" : "판매 품목"
+		, "items" : { "description" : "구매 품목"
 			, "type" : "array"
 			, "properties" : [
 				{
-					"_id$transaction_quote_purchase_res" : { "description" : "구매 가견적서 ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
-					, "_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+					"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
 					, "_id$product_basic" : { "description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
-					//납기일
 					, "due_date" : { "description" : "납기일"
 					 	, "type" : "object"
 						, "properties" : <include>100_common_json/properties__Date_Object.json</include>
@@ -128,7 +124,7 @@ var d = {
 		}
 
 		//가견적서 번호
-		, "quote_sale_res_no" : { "description" : "가견적서 번호(QS YYYYMMDD PARTNER_ID Number)" , "exampleValue" : "QS20161130P11"
+		, "quote_purchase_res_no" : { "description" : "가견적서 번호(QP YYYYMMDD PARTNER_ID Number)" , "exampleValue" : "QP20161130P11"
 			<include>000_common_txt/string_default.txt</include>
 		}
 
@@ -143,8 +139,4 @@ var d = {
 			, "properties" : <include>100_common_json/price/properties__Price_with__id$currency_Object.json</include>
 		}
 	}
-};
-
-//----------------------------------------------------------------------------------------------------;
-
-db.getSiblingDB( "_schema" ).transaction_quote_sale.insert( d );
+}
