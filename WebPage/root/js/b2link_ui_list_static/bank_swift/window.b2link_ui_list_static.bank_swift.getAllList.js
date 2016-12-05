@@ -7,7 +7,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
-window.b2link_ui_list_static.bank_swift.getAllList = function( countryCode )
+window.b2link_ui_list_static.bank_swift.getAllList = function( iso3166_us2 )
 {
 	window.Rh2Log.timeStamp( "---- [ S ] - window.b2link_ui_list_static.bank_swift.getAllList():{Array}----------" );
 
@@ -20,7 +20,7 @@ window.b2link_ui_list_static.bank_swift.getAllList = function( countryCode )
 	};
 
 	var o = window.b2link.ui.add_HTML_JS_CSS__CheckStaticUI( d );
-	o[ 1 ].req_Data( countryCode );
+	o[ 1 ].req_Data( iso3166_us2 );
 
 	window.Rh2Log.timeStamp( "---- [ E ] - window.b2link_ui_list_static.bank_swift.getAllList():{Array}----------" );
 
