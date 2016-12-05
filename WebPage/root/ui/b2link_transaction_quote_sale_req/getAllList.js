@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "./ui/b2link_brand_basic/remove.js";
+var fileNm = "./ui/b2link_transaction_quote_sale_req/getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -40,16 +40,8 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	var $f0 = window.b2link.element.getElementByClassName;
 
-	var _el_btn_delete = $f0( $el_div, "btn_Delete" );
-	var _el_btn_cancel = $f0( $el_div, "btn_Cancel" );
-
 	var _el_tbody = $f0( $el_div, "tbody" );
 	var _el_thead = $f0( $el_div, "thead" );
-
-	/**
-	* @Property {Function} function( result ){}
-	*/
-	var _evt_Complete__Delete;
 
 	//--------------------------------------------------;
 
@@ -70,7 +62,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	{
 		_removeEvent();
 		$w.addEventListener( "resize", _evt_resize$parentElement, false, 0, true );
-		_el_btn_delete.addEventListener( "click", _evt_mClick__el_btn_delete, false, 0, true );
 	};
 
 	/**
@@ -79,7 +70,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	var _removeEvent = function()
 	{
 		$w.removeEventListener( "resize", _evt_resize$parentElement, false );
-		_el_btn_delete.removeEventListener( "click", _evt_mClick__el_btn_delete, false );
 	};
 
 	/**
@@ -88,41 +78,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _evt_resize$parentElement = function( e )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - evt_resize$parentElement():void----------");
-
+		window.RayLog.timeStamp( "-- [ S ] - _evt_resize$parentElement():void----------" );
 		_setPosition();
-
-		window.RayLog.timeStamp( "-- [ E ] - evt_resize$parentElement():void----------");
-	};
-
-	/**
-	 * @function
-	 * @param {MouseEvent} e event
-	 */
-	var _evt_mClick__el_btn_delete = function( e )
-	{
-		window.RayLog.timeStamp( "-- [ S ] - _evt_mClick__el_btn_delete():void----------");
-
-		var d = _getDataForQuery();
-			console.log( "d.length : " + d.length );
-
-		var t = window.b2link_service_brand.brand_basic;
-		if( 1 < d.length ) t.remove_ids( d, _evt_mClick__el_btn_delete._cb_f0 );
-		else if( 1 == d.length ) t.remove_id( d[ 0 ], _evt_mClick__el_btn_delete._cb_f0 );
-
-		window.RayLog.timeStamp( "-- [ E ] - _evt_mClick__el_btn_delete():void----------");
-	};
-
-	_evt_mClick__el_btn_delete._cb_f0 = function( result )
-	{
-		window.RayLog.timeStamp( "--- [ S ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
-
-		console.log( "result : " + result );
-
-		if( !window.b2link.fn.getResultStatus( result ) ) alert( "삭제 실패.");
-		else _evt_Complete__Delete( result );
-
-		window.RayLog.timeStamp( "--- [ E ] - _evt_mClick__el_btn_delete._cb_f0():void----------");
+		window.RayLog.timeStamp( "-- [ E ] - _evt_resize$parentElement():void----------" );
 	};
 
 	//----------------------------------------------------------------------------------------------------;
@@ -141,13 +99,9 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 		$d = null;
 
 		$f0 = null;
-		_el_btn_delete = null;
-		_el_btn_cancel = null;
 
-		_el_tbody = null;
-		_el_thead = null;
-
-		_evt_Complete__Delete = null;
+		$_el_tbody = null;
+		$_el_thead = null;
 	};
 
 	/**
@@ -168,12 +122,12 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _res_Data = function( result )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _res_Data:void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _res_Data():void----------" );
 
 		_setData__tbody( result );
 
-		window.RayLog.timeStamp( "-- [ E ] - _res_Data:void----------" );
-	}
+		window.RayLog.timeStamp( "-- [ E ] - _res_Data():void----------" );
+	};
 
 	//----------------------------------------------------------------------------------------------------;
 
@@ -182,22 +136,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//----------------------------------------------------------------------------------------------------;
 
 	//--------------------------------------------------;
-
-	/**
-	 * @function
-	 * @return {Object} {}
-	 */
-	var _getDataForQuery = function()
-	{
-		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
-
-		var r = window.b2link.el_tbody.getInputValue_IntFromTBody_CheckBoxSelected( _el_tbody );
-
-		console.logObjectInformation( r, "_getDataForQuery - r" );
-		return r;
-
-		window.TtwLog.timeStamp( "-- [ S ] - _getDataForQuery():{Object}----------" );
-	};
 
 	//--------------------------------------------------;
 
@@ -209,12 +147,13 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setData__tbody = function( data )
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setData_tbody():void----------" );
+		window.RayLog.timeStamp( "-- [ S ] - _setData__tbody():void----------" );
 
+		window.RayLog.timeStamp( "window.b2link_service_brand.brand_basic.getAllList result : " );
 		console.log( data );
 		window.b2link.html.apply_tbody_child( _el_tbody, data );
 
-		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------");
+		window.RayLog.timeStamp( "-- [ E ] - _setData__tbody():void----------" );
 	};
 
 	//------------------------------;
@@ -224,23 +163,17 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	 */
 	var _setPosition = function()
 	{
-		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------");
+		window.RayLog.timeStamp( "-- [ S ] - _setPosition():void----------" );
 		//var t = $el_div;
 		//window.b2link.element.setPosition_CenterMiddle_FromParent( t );
-
-		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------");
+		//_width = t.clientWidth;
+		//_height = t.clientHeight;
+		window.RayLog.timeStamp( "-- [ E ] - _setPosition():void----------" );
 	};
 
 	//--------------------------------------------------;
 
 	//--------------------------------------------------;
-
-	/**
-	 * @function
-	 * @return {Function}
-	 */
-	var _getEvt_Complete__Delete = function(){ return _evt_Complete__Delete; };
-	var _setEvt_Complete__Delete = function( fn ){ _evt_Complete__Delete = fn; };
 
 	//--------------------------------------------------;
 
@@ -256,7 +189,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 
 	//----------;
 	_addEvent();
-	_setPosition;
+	_setPosition();
 	//----------;
 
 	_req_Data();
@@ -270,9 +203,6 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	_.dispose = _dispose;
 
 	_.req_Data = _req_Data;
-
-	_.getEvt_Complete__Delete = _getEvt_Complete__Delete;
-	_.setEvt_Complete__Delete = _setEvt_Complete__Delete;
 	//--------------------------------------------------this;
 	return _this;
 });
