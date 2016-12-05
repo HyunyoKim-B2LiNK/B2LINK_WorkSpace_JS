@@ -1,0 +1,14 @@
+{
+	"nm" : "BANK NAME"
+	, "nm_cn" : "BANK NAME(CN)"
+	, "nm_kr" : "BANK NAME(KR)"
+	, "nm_us" : "BANK NAME(US)"
+
+	, "city" : "CITY"
+	, "branch" : "BRANCH"
+	, "swift_code" : "SWIFT_CODE"
+
+	, "btn__overlap_check" : "Check Overlap"
+	, "btn__add" : "Add"
+	, "btn__cancel" : "Cancel"
+}
