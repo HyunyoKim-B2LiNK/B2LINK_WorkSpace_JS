@@ -1,1 +1,1 @@
-call js--createJSON__JS_Package.bat
+./js--createJSON__JS_Package.sh.command
