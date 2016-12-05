@@ -78,7 +78,8 @@ var d = {
 			, "type" : "array"
 			, "properties" : [
 				{
-					"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+					"_id$transaction_quote_purchase_res" : { "description" : "구매 가견적서 ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+					, "_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
 					, "_id$product_basic" : { "description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
 					//납기일
 					, "due_date" : { "description" : "납기일"

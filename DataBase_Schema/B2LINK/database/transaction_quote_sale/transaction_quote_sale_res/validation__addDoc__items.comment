@@ -4,7 +4,8 @@
  * <code>
  * [
  *	{
- *		_id$brand_basic : 0, _id$product_basic : 0
+ *		_id$transaction_quote_purchase_res : 0
+ *		, _id$brand_basic : 0, _id$product_basic : 0
  *		, item_total_price : { price : 100 , _id$currency : 0 }
  *		, price_quantity : { price : 1 , _id$currency : 0 }
  *		, price_quantity_of_unit : { price : 10 , _id$currency : 0 }
@@ -12,7 +13,8 @@
  *		, UOM : { "nm" : "pkg" , quantity : 10 }
  *	}
  *	,{
- *		_id$brand_basic : 1, _id$product_basic : 1
+ *		_id$transaction_quote_purchase_res : 0
+ *		, _id$brand_basic : 1, _id$product_basic : 1
  *		, item_total_price : { price : 100 , _id$currency : 0 }
  *		, price_quantity : { price : 1 , _id$currency : 0 }
  *		, price_quantity_of_unit : { price : 20 , _id$currency : 0 }
@@ -20,7 +22,8 @@
  *		, UOM : { "nm" : "pkg" , quantity : 20 }
  *	}
  *	,{
- *		 _id$brand_basic : 1, _id$product_basic : 1
+ *		_id$transaction_quote_purchase_res : 0
+ *		, _id$brand_basic : 1, _id$product_basic : 1
  *		, item_total_price : { price : 100 , _id$currency : 0 }
  *		, price_quantity : { price : 1 , _id$currency : 0 }
  *		, price_quantity_of_unit : { price : 20 , _id$currency : 0 }
