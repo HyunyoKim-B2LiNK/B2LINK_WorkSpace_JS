@@ -1,1 +1,1 @@
-cd /Users/thdtjsdn/Downloads/GitHub/B2LINK_WorkSpace_JS/WebPage/root/bin
+cd /Users/thdtjsdn/Downloads/GitHub/B2LINK_WorkSpace_JS/WebPage/root/bin_mac

@@ -29,6 +29,7 @@ function( d )
 			, _id$member : NumberInt( r._id$member )
 			, _id$partner_buyer : NumberInt( r._id$partner_buyer )
 			, _id$trade_terms :  NumberInt( r._id$trade_terms )
+			, _id$transaction_quote_sale_req : NumberInt( r._id$transaction_quote_sale_req )
 			, date_create : r.date_create
 			, items : r.items
 			, logistic_fee : r.logistic_fee

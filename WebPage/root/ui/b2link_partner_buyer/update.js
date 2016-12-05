@@ -8,6 +8,14 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	//window.b2link.ui_resource.apply_LocaleLabel( url, $el_div );
 	window.b2link.ui_resource.applyParentheses_LocaleLabel( url, $el_div );
 
+	//*/
+	var _this = { __url : url };
+	var _ = _this;
+	window.b2linkExtends.extends.div_Panel( _this );
+	_.__el = $el_div;
+	return _this;
+	//*/
+
 	//----------------------------------------------------------------------------------------------------;
 
 	//	STATIC;
@@ -196,7 +204,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 				{
 					var ioc = io.children[ j ];
 					if( "INPUT" == ioc.tagName ) of[ "_fn_" + ioc.type ]( r, ioc )
-					
+
 				}
 			}
 			else r[ io.className ] = io.innerText;
@@ -207,7 +215,7 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 	};
 	__getDataForQuery__Tr._fn_checkbox = function( t, o ){ t[ o.className ] = o.checked; };
 	__getDataForQuery__Tr._fn_email = function( t, o ){ t[ o.className ] = o.value; };
-	__getDataForQuery__Tr._fn_text = function( t, o ){ t[ o.className ] = o.value; };	
+	__getDataForQuery__Tr._fn_text = function( t, o ){ t[ o.className ] = o.value; };
 
 	/**
 	 * @function

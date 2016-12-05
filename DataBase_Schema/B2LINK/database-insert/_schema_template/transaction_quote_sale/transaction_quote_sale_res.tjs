@@ -67,6 +67,12 @@ var d = {
 			, "valuesMap" : { "CFR" : 1, "CIF" : 1, "CIP" : 1, "CPT" : 1, "DAT" : 1, "DAP" : 1, "DDP" : 1, "EXW" : 1, "FAS" : 1, "FCA" : 1, "FOB" : 1 }
 		}
 
+		, "_id$transaction_quote_sale_req" : { "description" : "가견적 요청서 ID (FK)" , "exampleValue" : 0
+			, "type" : "uint" , "length" : 0
+			, "values" : []
+			, "valuesMap" : []
+		}
+
 		//Create Date
 		, "date_create" : { "description" : "Register Date"
 			, "type" : "object"
@@ -78,7 +84,8 @@ var d = {
 			, "type" : "array"
 			, "properties" : [
 				{
-					"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+					"_id$transaction_quote_purchase_res" : { "description" : "구매 가견적서 ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+					, "_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
 					, "_id$product_basic" : { "description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
 					//납기일
 					, "due_date" : { "description" : "납기일"

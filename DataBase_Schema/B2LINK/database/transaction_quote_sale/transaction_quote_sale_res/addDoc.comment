@@ -9,6 +9,7 @@
  *	, _id$member : 0
  *	, _id$partner_buyer : 0
  *	, _id$trade_terms : 0
+ *	, _id$transaction_quote_sale_req
  *	, date_create : [2016, 11, 30, 12, 12, 30]
  *	, items :	[
  *				{

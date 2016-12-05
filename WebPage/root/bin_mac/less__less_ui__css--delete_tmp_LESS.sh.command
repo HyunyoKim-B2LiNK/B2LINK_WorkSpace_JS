@@ -1,13 +1,13 @@
 ./cd0.sh
 
-call del /s /q ..\css\tmp_*.css
-call del /s /q ..\css_ui\tmp_*.css
+rm -f ../css/tmp_*.css
+rm -f ../css_ui/tmp_*.css
 
-call del /s /q ..\less\tmp_*.css
-call del /s /q ..\less_ui\tmp_*.css
+rm -f ../less/tmp_*.css
+rm -f ../less_ui/tmp_*.css
 
-call del /s /q ..\less\tmp_*.less
-call del /s /q ..\less_ui\tmp_*.less
+rm -f ../less/tmp_*.less
+rm -f ../less_ui/tmp_*.less
 
-call del /s /q ..\less\*.css
-call del /s /q ..\less_ui\*.css
+rm -f ../less/*.css
+rm -f ../less_ui/*.css
