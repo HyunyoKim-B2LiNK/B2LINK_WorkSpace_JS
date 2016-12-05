@@ -1,11 +1,11 @@
-call css--deleteJSON.bat
+./css--deleteJSON.sh.command
 
-call less__less_ui__css--delete_tmp_LESS.bat
+./less__less_ui__css--delete_tmp_LESS.sh.command
 
 
 
-call less__less_ui--createCSS__LESS_To_CSS.bat
+./less__less_ui--createCSS__LESS_To_CSS.sh.command
 
-call css--createJSON.bat
+./css--createJSON.sh.command
 
-call js--createJSON__JS_Package.bat
+./js--createJSON__JS_Package.sh.command
