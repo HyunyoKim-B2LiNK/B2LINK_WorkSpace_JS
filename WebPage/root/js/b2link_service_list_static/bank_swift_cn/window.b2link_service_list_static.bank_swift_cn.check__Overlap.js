@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_service_list_static/bank_swift_kr/window.b2link_service_list_static.bank_swift_kr.check__Overlap.js";
+var fileNm = "js/b2link_service_list_static/bank_swift_cn/window.b2link_service_list_static.bank_swift_cn.check__Overlap.js";
 if ( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 var _t = window.b2link.STATIC.CONFIG.URL;
-var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.bank_swift_kr + "check__Overlap?";
+var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.bank_swift_cn + "check__Overlap?";
 
 /**
  * @function
@@ -17,13 +17,13 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.bank_swift_kr + "check__Overlap?";
  * @function
  * @param {Function} cbFunction function( data ){};
  */
-window.b2link_service_list_static.bank_swift_kr.check__Overlap = function( d, cbFunction )
+window.b2link_service_list_static.bank_swift_cn.check__Overlap = function( d, cbFunction )
 {
-	window.Rh2Log.timeStamp( "---- [ S ] - window.b2link_service_list_static.bank_swift_kr.check__Overlap():void----------" );
+	window.Rh2Log.timeStamp( "---- [ S ] - window.b2link_service_list_static.bank_swift_cn.check__Overlap():void----------" );
 
-	window.b2link_service.common._fn_req( _url + window.b2link_url_list_static.bank_swift_kr.getParam( d ), cbFunction );
+	window.b2link_service.common._fn_req( _url + window.b2link_url_list_static.bank_swift_cn.getParam( d ), cbFunction );
 
-	window.Rh2Log.timeStamp( "---- [ E ] - window.b2link_service_list_static.bank_swift_kr.check__Overlap():void----------" );
+	window.Rh2Log.timeStamp( "---- [ E ] - window.b2link_service_list_static.bank_swift_cn.check__Overlap():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

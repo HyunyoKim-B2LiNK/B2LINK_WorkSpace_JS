@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_service_list_static/bank_swift_kr/window.b2link_service_list_static.bank_swift_kr.getList_Range__id.js";
+var fileNm = "js/b2link_service_list_static/bank_swift_us/window.b2link_service_list_static.bank_swift_us.getAllList.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
 var _t = window.b2link.STATIC.CONFIG.URL;
-var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.bank_swift_kr + "getList_Range__id?";
+var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.bank_swift_us + "getAllList?";
 
 /**
  * @function
@@ -15,19 +15,15 @@ var _url = _t.PROXY + _t.MONGODB.LIST_STATIC.bank_swift_kr + "getList_Range__id?
 
 /**
  * @function
- * @param {uint} _id_gt
- * @param {uint} _id_lt
  * @param {Function} cbFunction function( data ){};
  */
-window.b2link_service_list_static.bank_swift_kr.getList_Range__id = function( _id_gt, _id_lt, cbFunction )
+window.b2link_service_list_static.bank_swift_us.getAllList = function( d, cbFunction )
 {
-	window.Rh2Log.timeStamp( "---- [ S ] - window.b2link_service_list_static.bank_swift_kr.getList_Range__id():void----------" );
+	window.Rh2Log.timeStamp( "---- [ S ] - window.b2link_service_list_static.bank_swift_us.getAllList():void----------" );
 
-	window.b2link_service.common._fn_req( _url
-		+ "&_id_gt=" + _id_gt + "&_id_lt=" + _id_lt
-		, cbFunction );
+	window.b2link_service.common._fn_req( _url + "&co=" + d, cbFunction );
 
-	window.Rh2Log.timeStamp( "---- [ E ] - window.b2link_service_list_static.bank_swift_kr.getList_Range__id():void----------" );
+	window.Rh2Log.timeStamp( "---- [ E ] - window.b2link_service_list_static.bank_swift_us.getAllList():void----------" );
 };
 
 //----------------------------------------------------------------------------------------------------;

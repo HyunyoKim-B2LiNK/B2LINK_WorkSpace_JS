@@ -7,7 +7,7 @@ require( "./_$TATIC_CONST_TtwApplicationCommon.js" );
 
 //----------------------------------------------------------------------------------------------------;
 
-var rootPath = "E:/WorkSpace_B2LINK/WebPage/root/";
+var rootPath = "../";
 var templatePath = rootPath + "ui_template/";
 
 //.thtml만 존재;

@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------------------------------;
-var fileNm = "js/b2link_ui_list_static/window.b2link_ui_list_static.bank_swift.add.js";
+var fileNm = "js/b2link_ui_list_static/window.b2link_ui_list_static.bank_swift_kr.add.js";
 if( console ) console.log( "[ S ] - " + fileNm + "----------" );
 //----------------------------------------------------------------------------------------------------;
 
@@ -7,16 +7,16 @@ if( console ) console.log( "[ S ] - " + fileNm + "----------" );
  * @function
  * @return {Array} [ {HTMLElement}, {HTMLElementController} ]
  */
-window.b2link_ui_list_static.bank_swift.add = function()
+window.b2link_ui_list_static.bank_swift_kr.add = function()
 {
-	window.Rh2Log.timeStamp( "---- [ S ] - window.b2link_ui_list_static.bank_swift.add():{Array}----------" );
+	window.Rh2Log.timeStamp( "---- [ S ] - window.b2link_ui_list_static.bank_swift_kr.add():{Array}----------" );
 
 	var d = {
-		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_BANK_SWIFT
+		url : window.b2link.STATIC.CONFIG.URL.UI.B2LINK_BANK_SWIFT_KR
 		, nm : "add"
 		, css_url : "./css_ui/"
-		, css_front_nm : "div__bank_swift-"
-		, key : "bank_swift$add"
+		, css_front_nm : "div__bank_swift_kr-"
+		, key : "bank_swift_kr$add"
 	};
 
 	//var o = window.b2link.ui.add_HTML_JS_CSS( d );
@@ -33,7 +33,7 @@ window.b2link_ui_list_static.bank_swift.add = function()
 				window.b2link.element.setPosition_RightTop( o[ 0 ], 10, 300 );
 				//*/
 
-				window.b2link_ui_list_static.bank_swift.getAllList();
+				window.b2link_ui_list_static.bank_swift_kr.getAllList();
 			}
 			else alert( "등록 실패." );
 
@@ -41,7 +41,7 @@ window.b2link_ui_list_static.bank_swift.add = function()
 		});
 	}
 
-	window.Rh2Log.timeStamp( "---- [ E ] - window.b2link_ui_list_static.bank_swift.add():{Array}----------" );
+	window.Rh2Log.timeStamp( "---- [ E ] - window.b2link_ui_list_static.bank_swift_kr.add():{Array}----------" );
 
 	return o;
 };
