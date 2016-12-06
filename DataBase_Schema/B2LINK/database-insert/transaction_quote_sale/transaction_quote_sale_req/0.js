@@ -4,6 +4,7 @@ var a = [
 		, "_id$delivery_type" : 0
 		, "_id$member" : 0
 		, "_id$partner_buyer" : 0
+		, "_id$partner_person" : 0
 		, "_id$trade_terms" : 0
 		, "items" : [
 			{

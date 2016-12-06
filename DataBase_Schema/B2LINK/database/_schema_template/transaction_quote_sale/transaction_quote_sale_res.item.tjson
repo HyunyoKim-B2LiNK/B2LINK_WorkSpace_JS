@@ -1,29 +1,38 @@
 {
 	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
 	"dereference" : [
-		"sell_provisional_estimate.req_for_provisional_estimate"
+		"transaction_quote_sale.transaction_quote_sale_res"
 	]
 
 	//이 Collection을 참조하는 Collections - Collection Name;
 	, "dereference_collection" : [
-		"req_for_provisional_estimate"
+		"transaction_quote_sale_res"
 	]
 
 	//이 Collection을 참조하는 Database;
 	, "dereference_database" : [
-		"sell_provisional_estimate"
+		"transaction_quote_sale"
 	]
 
 	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
 	, "reference" : [
+		"brand.brand_basic"
+		, "product.product_basic"
+		, "transaction_quote_purchase.transaction_quote_purchase_res"
 	]
 
 	//이 Collection이 참조하는 Collections - Collection Name;
 	, "reference_collection" : [
+		"brand_basic"
+		, "product_basic"
+		, "transaction_quote_purchase_res"
 	]
 
 	//이 Collection이 참조하는 Database;
 	, "reference_database" : [
+		"brand"
+		, "product"
+		, "transaction_quote_purchase"
 	]
 
 	//--------------------------------------------------;

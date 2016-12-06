@@ -4,6 +4,7 @@ var a = [
 		, "_id$delivery_type" : 0
 		, "_id$member" : 0
 		, "_id$partner_buyer" : 0
+		, "_id$partner_person" : 0
 		, "_id$trade_terms" : 0
 		, "_id$transaction_quote_sale_req" : 0
 		, "date_create" : [  2016,  11 ,  30 ,  21 ,  9 ,  55 ]
@@ -50,6 +51,7 @@ var a = [
 		, "_id$delivery_type" : 0
 		, "_id$member" : 0
 		, "_id$partner_buyer" : 0
+		, "_id$partner_person" : 0
 		, "_id$trade_terms" : 0
 		, "_id$transaction_quote_sale_req" : 1
 		, "date_create" : [ 2016, 11, 30, 21, 9, 55 ]

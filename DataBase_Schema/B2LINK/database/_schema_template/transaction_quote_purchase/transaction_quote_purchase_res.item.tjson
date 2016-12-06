@@ -1,0 +1,73 @@
+{
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	"dereference" : [
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+		"brand.brand_basic"
+		, "product.product_basic"
+		, "transaction_quote_purchase.transaction_quote_purchase_res"
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+		"brand_basic"
+		, "product_basic"
+		, "transaction_quote_purchase_res"
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+		"brand"
+		, "product"
+		, "transaction_quote_purchase"
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+		, "_id$product_basic" : { "description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
+		, "due_date" : { "description" : "납기일"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/properties__Date_Object.json</include>
+		}
+		, "item_total_price" : { "description" : "총가격 ( price * quantity)"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/price/properties__Price_with__id$currency_Object.json</include>
+		 }
+		, "price_quantity" : { "description" : "단가"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/price/properties__Price_with__id$currency_Object.json</include>
+		 }
+		, "price_quantity_of_unit" : { "description" : "수량단가"
+			, "type" : "object"
+			, "properties" : <include>100_common_json/price/properties__Price_with__id$currency_Object.json</include>
+		 }
+		, "quantity" : { "description" : "총 수량(quantity_of_unit * quantity)" <include>000_common_txt/uint_len0.txt</include> }
+		, "quantity_of_unit" : { "description" : "단위 수량" <include>000_common_txt/uint_len0.txt</include> }
+		, "UOM" : { "description" : "수량 단위(unit_of_measurement)", "exampleValue" : { "nm" : "pkg" , "quantity" : 10 }
+			, "type" : "object"
+			, "properties" : {
+				//표시 문자
+				"nm" : { "description" : "표시문자" ,  "exampleValue" : "pkg"
+					<include>000_common_txt/string_default.txt</include>
+				}
+				//수량 quantity
+				, "quantity" : { "description" : "해당 단위에 포함된 수량", "exampleValue" : 10
+					<include>000_common_txt/uint_len0.txt</include>
+				}
+			}
+		}
+	}
+}
