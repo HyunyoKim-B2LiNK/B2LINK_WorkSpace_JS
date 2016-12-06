@@ -1,17 +1,17 @@
 {
 	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
 	"dereference" : [
-		"sell_provisional_estimate.req_for_provisional_estimate"
+		"transaction_quote_sale.transaction_quote_sale_req"
 	]
 
 	//이 Collection을 참조하는 Collections - Collection Name;
 	, "dereference_collection" : [
-		"req_for_provisional_estimate"
+		"transaction_quote_sale_req"
 	]
 
 	//이 Collection을 참조하는 Database;
 	, "dereference_database" : [
-		"sell_provisional_estimate"
+		"transaction_quote_sale"
 	]
 
 	//이 Collection이 참조하는 Collections - Database Name And Collection Name;

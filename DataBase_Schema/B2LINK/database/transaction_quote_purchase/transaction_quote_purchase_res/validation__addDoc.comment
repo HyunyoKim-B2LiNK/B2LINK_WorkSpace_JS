@@ -1,0 +1,49 @@
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ *	_id : 0
+ *	, _id$currency : 0
+ *	, _id$delivery_type : 0
+ *	, _id$member : 0
+ *	, _id$partner_buyer : 0
+ *	, _id$partner_person : 0
+ *	, _id$trade_terms : 0
+ *	, _id$transaction_quote_purchase_req : 0
+ *	, date_create : [2016, 11, 30, 12, 12, 30]
+ *	, due_date : [2016, 12, 10, 12, 12, 30]
+ *	, items :	[
+ *				{
+ *				 _id$brand_basic : 0, _id$product_basic : 0
+ *				 , item_total_price : { price : 100 , _id$currency : 0 }
+ *				 , price_quantity : { price : 1 , _id$currency : 0 }
+ *				 , price_quantity_of_unit : { price : 10 , _id$currency : 0 }
+ *				 , quantity : 100 , quantity_of_unit : 10
+ *				 , UOM : { "nm" : "pkg" , quantity : 10 }
+ *				}
+ *				, {
+ *				  _id$brand_basic : 1, _id$product_basic : 1
+ *				 , item_total_price : { price : 100 , _id$currency : 0 }
+ *				 , price_quantity : { price : 1 , _id$currency : 0 }
+ *				 , price_quantity_of_unit : { price : 20 , _id$currency : 0 }
+ *				 , quantity : 100 , quantity_of_unit : 5
+ *				 , UOM : { "nm" : "pkg" , quantity : 20 }
+ *				}
+ *				, {
+ *				  _id$brand_basic : 1, _id$product_basic : 1
+ *				 , item_total_price : { price : 100 , _id$currency : 0 }
+ *				 , price_quantity : { price : 1 , _id$currency : 0 }
+ *				 , price_quantity_of_unit : { price : 20 , _id$currency : 0 }
+ *				 , quantity : 100 , quantity_of_unit : 5
+ *				 , UOM : { "nm" : "pkg" , quantity : 20 }
+ *				}
+ *				]
+ *	, logistic_fee : { price : 100 , _id$currency : 0 }
+ *	, quote_purchase_res_no : "QP20161130P01
+ *	, shipping_address : "서울특별시"
+ *	, total_supply_price : { price : 400 , _id$currency : 0 }
+ * }
+ * </code>
+ * return {Object}
+ */

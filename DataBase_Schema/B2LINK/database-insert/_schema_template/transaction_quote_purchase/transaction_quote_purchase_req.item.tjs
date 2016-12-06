@@ -1,0 +1,45 @@
+var d = {
+	"_id" : "transaction_quote_purchase_req.item"
+	//이 Collection을 참조하는 Collections - Database Name And Collection Name;
+	, "dereference" : [
+		"transaction_quote_purchase.transaction_quote_sale_req"
+	]
+
+	//이 Collection을 참조하는 Collections - Collection Name;
+	, "dereference_collection" : [
+		"transaction_quote_purchase_req"
+	]
+
+	//이 Collection을 참조하는 Database;
+	, "dereference_database" : [
+		"transaction_quote_purchase"
+	]
+
+	//이 Collection이 참조하는 Collections - Database Name And Collection Name;
+	, "reference" : [
+	]
+
+	//이 Collection이 참조하는 Collections - Collection Name;
+	, "reference_collection" : [
+	]
+
+	//이 Collection이 참조하는 Database;
+	, "reference_database" : [
+	]
+
+	//--------------------------------------------------;
+
+	//이 Collection의 Properties;
+	, "properties" : {
+		// Brand ID
+		"_id$brand_basic" : { "description" : "Brand ID (FK)" <include>000_common_txt/uint_len0.txt</include> }
+		, "_id$product_basic" : {"description" : "Product ID(FK)" <include>000_common_txt/uint_len0.txt</include> }
+		, "quantity" : { "description" : "총 수량" <include>000_common_txt/uint_len0.txt</include> }
+		, "UOM" : { "description" : "수량 단위(unit_of_measurement)" <include>000_common_txt/uint_len0.txt</include> }
+		, "quantity_of_unit" : { "description" : "단위수량" <include>000_common_txt/uint_len0.txt</include> }
+	}
+};
+
+//----------------------------------------------------------------------------------------------------;
+
+db.getSiblingDB( "_schema" ).transaction_quote_purchase.insert( d );

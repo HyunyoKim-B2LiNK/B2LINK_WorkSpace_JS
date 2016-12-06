@@ -1,0 +1,11 @@
+/**
+ * transaction_quote_purchase_res Overlap check
+ * @function
+ * @param {Object} d
+ * <code>
+ * {
+ 	"quote_purchase_no" : d.quote_purchase_res_no
+ * }
+ * </code>
+ * @return {int} 0 or 1
+ */
